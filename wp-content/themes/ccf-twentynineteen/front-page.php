@@ -176,7 +176,7 @@
             $image = get_sub_field('image');
             $link = get_sub_field('link');
 
-            ?>
+            ?> 
 
             <div class="featured-block col-md-6 col-xl-12">
             
