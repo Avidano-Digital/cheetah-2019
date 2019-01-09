@@ -27796,7 +27796,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "cheetah-2019",
+	"externalServerAddress": "cheetah-2019/",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
