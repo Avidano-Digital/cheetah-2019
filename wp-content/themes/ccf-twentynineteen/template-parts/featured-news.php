@@ -18,11 +18,11 @@
 
                 <span><?php the_date(); ?></span>
 
-                <?php $featured_image = get_field('featured_image');
-
-                if( $featured_image ): ?>
-                
-                <img class="w-100" src="<?php echo $featured_image['image']; ?>" alt="<?php the_title(); ?>">
+                <?php if( has_post_thumbnail() ):
+                    $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
+                ?>
+                                
+                <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
                 
                 <?php endif; /* featured_image */ ?>
 

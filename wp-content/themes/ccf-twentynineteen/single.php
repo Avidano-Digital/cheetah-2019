@@ -48,6 +48,26 @@ get_header(); ?>
 
         </header>
 
+
+        <?php if( has_post_thumbnail() ):
+            $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
+        ?>
+
+        <div class="medium mb-5">
+
+        <figure class="figure my-0">
+            <img class="figure-img" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>" />
+            <?php if( $featured_image_caption ): ?>
+                <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
+            <?php endif; ?>
+        </figure>
+
+        </div>
+        <!-- .narrow -->
+
+        <?php endif; /* has_post_thumbnail */ ?>
+
+
         <?php $featured_image = get_field('featured_image');	
         
         if( $featured_image ): ?>
