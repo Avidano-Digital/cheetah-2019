@@ -20,7 +20,7 @@
                     <?php if ( $image ) : ?>
                         <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                     <?php else : ?>
-                        <img class="card-img" src="http://via.placeholder.com/500x250/000000/333333/.jpg" alt="Placeholder">
+                        <img class="card-img" src="http://via.placeholder.com/500x250.jpg" alt="Placeholder">
                     <?php endif; ?>
 
                 </div>
