@@ -14380,6 +14380,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c36fde166e88.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c36fde166e88-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/wp-content/themes/ccf-twentynineteen/acf-json/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -16977,6 +16985,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/wp-content/themes/twentynineteen/style.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/themes/twentynineteen/style.css.map",
+		"oF": 0
+		},
 	"/wp-content/themes/twentynineteen/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -17213,6 +17228,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/01/dr-laurie-landrover-250x250.jpg": {
+		"ft": 16384,
+		"iS": 20617,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/01/dr-laurie-landrover-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/01/dr-laurie-landrover.jpg": {
+		"ft": 16384,
+		"iS": 205976,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/01/dr-laurie-landrover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2019/01/dr.-laurie-marker-giving-a-rescued-cheetah-treat-from-spoon-250x250.jpg": {
 		"ft": 16384,
 		"iS": 14360,
@@ -17230,6 +17267,50 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/01/dr.-laurie-marker-giving-a-rescued-cheetah-treat-from-spoon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/01/Laurie-Marker-at-Wildlife-Safari-in-Oregon-01-250x250.jpg": {
+		"ft": 16384,
+		"iS": 22419,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/01/Laurie-Marker-at-Wildlife-Safari-in-Oregon-01-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/01/Laurie-Marker-at-Wildlife-Safari-in-Oregon-01.jpg": {
+		"ft": 16384,
+		"iS": 334258,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/01/Laurie-Marker-at-Wildlife-Safari-in-Oregon-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/01/Laurie-Marker-at-Wildlife-Safari-in-Oregon-02-250x250.jpg": {
+		"ft": 16384,
+		"iS": 17539,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/01/Laurie-Marker-at-Wildlife-Safari-in-Oregon-02-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/01/Laurie-Marker-at-Wildlife-Safari-in-Oregon-02.jpg": {
+		"ft": 16384,
+		"iS": 331988,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/01/Laurie-Marker-at-Wildlife-Safari-in-Oregon-02.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

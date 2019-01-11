@@ -203,13 +203,13 @@
 
     $image_a = $figure_a['image'];
     $caption_a = $figure_a['caption'];
-    $enlarge_a = $figure['enlarge'];
+    $enlarge_a = $figure_a['enlarge'];
 
     $figure_b = get_sub_field('figure_b');
 
     $image_b = $figure_b['image'];
     $caption_b = $figure_b['caption'];
-    $enlarge_b = $figure['enlarge'];
+    $enlarge_b = $figure_b['enlarge'];
 
     ?>
 
@@ -224,13 +224,23 @@
                     <?php if( $enlarge_a ): ?>
 
                     <a class="figure-img enlarge" href="<?php echo $image_a['url']; ?>" title="<?php echo $caption; ?>" data-toggle="lightbox" data-footer="<?php echo $caption_a; ?>">
-                        <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
+                        
+                        <?php if( $image_a ): ?>
+                            <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
+                        <?php else : ?>
+                            <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
+                        <?php endif; ?>
+
                         <span class="fas fa-expand"></span>
                     </a>
                         
                     <?php else : ?>
 
-                    <img class="figure-img" src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
+                        <?php if( $image_a ): ?>
+                            <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
+                        <?php else : ?>
+                            <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
+                        <?php endif; ?>
 
                     <?php endif; ?>
 
@@ -252,13 +262,23 @@
                     <?php if( $enlarge_b ): ?>
 
                     <a class="figure-img enlarge" href="<?php echo $image_b['url']; ?>" title="<?php echo $caption; ?>" data-toggle="lightbox" data-footer="<?php echo $caption_b; ?>">
-                        <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
+                        
+                        <?php if( $image_b ): ?>
+                            <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
+                        <?php else : ?>
+                            <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
+                        <?php endif; ?>
+                        
                         <span class="fas fa-expand"></span>
                     </a>
                         
                     <?php else : ?>
 
-                    <img class="figure-img" src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
+                        <?php if( $image_b ): ?>
+                            <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
+                        <?php else : ?>
+                            <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
+                        <?php endif; ?>
 
                     <?php endif; ?>
 
@@ -328,10 +348,6 @@
                             <p>
                                 <?php echo $image['caption']; ?>
                             </p>
-                            <? else : ?>
-                            <p>
-                                A caption for the image.
-                            </p>
                             <?php endif; ?>
                         </div>
                     </div>
@@ -389,7 +405,7 @@
 
     <?php endif; ?>
 
-    <?php elseif( get_row_layout() == 'thumnail_links_block' ): ?>
+    <?php elseif( get_row_layout() == 'thumbnail_links_block' ): ?>
 
     <?php if( have_rows('links') ): ?>
 
@@ -409,7 +425,11 @@
 
                 <div class="col-sm-6 col-lg-4">
                     <a class="text-body" href="<?php echo $link['url']; ?>">
-                        <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+                    <?php if( $image ): ?>
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+                    <?php else : ?>
+                        <img src="https://placehold.it/600x400.jpg" alt="Placeholder">
+                    <?php endif; ?>
                         <p class="h6 bg-primary p-2"><?php echo $link['title']; ?></p>
                     </a>
                 </div>
@@ -570,7 +590,7 @@
 
     <?php endwhile; endif; /* article_content */ ?>
 
-    <?php if ( is_single( 'article-tearsheet' ) ) : ?>
+    <?php if ( is_single( 'article-tearsheets' ) ) : ?>
 
     <div class="narrow mb-5">
         <p>
