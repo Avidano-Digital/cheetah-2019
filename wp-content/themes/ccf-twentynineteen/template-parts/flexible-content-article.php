@@ -581,6 +581,22 @@
         
         </ul>
 
+        <div class="row matrix-border">
+
+        <?php while ( have_rows('buttons') ) : the_row();
+
+        // vars
+        $link = get_sub_field('link');
+
+        ?>
+        <div class="col-md">
+            <a class="btn btn-block btn-primary btn-lg" href="<?php echo $link['url'] ?>"><?php echo $link['title'] ?></a>
+        </div>
+
+        <?php endwhile; ?>
+
+        </div>
+
     </div>
     <!-- .narrow -->
 

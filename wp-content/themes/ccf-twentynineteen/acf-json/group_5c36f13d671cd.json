@@ -573,9 +573,55 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5c386cd4b557a": {
+                    "key": "layout_5c386cd4b557a",
+                    "name": "horizontal_button_block",
+                    "label": "Horizontal Button Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c386d01b557b",
+                            "label": "buttons",
+                            "name": "buttons",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_5c386d14b557c",
+                            "min": 1,
+                            "max": 3,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5c386d14b557c",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
-            "button_label": "Add Article Block",
+            "button_label": "New Article Item",
             "min": "",
             "max": ""
         }
@@ -609,5 +655,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1547201462
+    "modified": 1547201853
 }
