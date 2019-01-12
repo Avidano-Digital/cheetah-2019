@@ -52,11 +52,11 @@
     $image = get_sub_field('image');
     $caption = get_sub_field('caption');
 
-    $page_summary = get_sub_field('page_summary');
+    $summary = get_sub_field('summary');
 
-    $page_summary_headline = $page_summary['headline'];
-    $page_summary_text = $page_summary['text'];
-    $page_summary_link = $page_summary['link'];
+    $summary_headline = $summary['headline'];
+    $summary_text = $summary['text'];
+    $summary_link = $summary['link'];
 
     $quote = get_sub_field('quote');
     
@@ -89,20 +89,20 @@
                             <div class="container px-0 py-3">
                                 <div class="narrow text-shadow">
 
-                                    <?php if( $type == 'Page Summary' ) : ?>
+                                    <?php if( $type == 'Summary' ) : ?>
 
                                         <h3 class="text-primary">
-                                            <?php echo $page_summary_headline; ?>
+                                            <?php echo $summary_headline; ?>
                                         </h3>
 
                                         <div class="text-white">
 
                                             <div class="fs-lg mb-2">
-                                                <?php echo $page_summary_text; ?>
+                                                <?php echo $summary_text; ?>
                                             </div>
 
                                             <a class="link text-primary" href="<?php echo $link['url']; ?>">
-                                                <?php echo $page_summary_link['title']; ?>
+                                                <?php echo $summary_link['title']; ?>
                                             </a>
 
                                         </div>
