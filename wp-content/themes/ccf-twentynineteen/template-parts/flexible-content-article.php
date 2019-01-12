@@ -312,7 +312,7 @@
 
     <div class="gallery-carousel-block offset-gutter-x my-7">
 
-        <div class="carousel slide" data-ride="carousel" data-keyboard="true" data-interval="false" id="carousel-gallery" dir="ltr">
+        <div class="carousel slide carousel-fade" data-ride="carousel" data-keyboard="true" data-interval="false" id="carousel-gallery" dir="ltr">
 
             <div class="carousel-outer">
 
