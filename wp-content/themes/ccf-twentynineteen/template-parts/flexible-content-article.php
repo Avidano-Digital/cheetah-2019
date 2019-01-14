@@ -567,20 +567,6 @@
 
     <div class="narrow my-5">
 
-        <ul class="extensible-list horizontal justify-content-center">
-
-            <?php while ( have_rows('buttons') ) : the_row();
-
-            // vars
-            $link = get_sub_field('link');
-
-            ?>
-                <li><a class="btn btn-primary btn-lg" href="<?php echo $link['url'] ?>"><?php echo $link['title'] ?></a></li>
-            
-            <?php endwhile; ?>
-        
-        </ul>
-
         <div class="row matrix-border">
 
         <?php while ( have_rows('buttons') ) : the_row();
@@ -589,6 +575,7 @@
         $link = get_sub_field('link');
 
         ?>
+
         <div class="col-md">
             <a class="btn btn-block btn-primary btn-lg" href="<?php echo $link['url'] ?>"><?php echo $link['title'] ?></a>
         </div>
@@ -606,85 +593,7 @@
 
     <?php endwhile; endif; /* article_content */ ?>
 
-    <?php if ( is_single( 'article-tearsheets' ) ) : ?>
-
-    <div class="narrow mb-5">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue ultricies lacinia. Suspendisse
-            pharetra vulputate augue sed pharetra. Etiam pharetra tortor sed tortor eleifend, non varius tortor sodales.
-            Duis et molestie diam, id facilisis ligula. Sed eleifend erat orci, sit amet laoreet eros pretium ut. Nullam
-            luctus blandit mollis. Pellentesque lacinia magna quis malesuada accumsan. Suspendisse gravida non tortor eu
-            tempus. Cras at nunc ac lectus iaculis aliquam ut posuere nibh.
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue ultricies lacinia. Suspendisse
-            pharetra vulputate augue sed pharetra. Etiam pharetra tortor sed tortor eleifend, non varius tortor sodales.
-            Duis et molestie diam, id facilisis ligula. Sed eleifend erat orci, sit amet laoreet eros pretium ut. Nullam
-            luctus blandit mollis. Pellentesque lacinia magna quis malesuada accumsan. Suspendisse gravida non tortor eu
-            tempus. Cras at nunc ac lectus iaculis aliquam ut posuere nibh.
-        </p>
-    </div>
-    <!-- .narrow -->
-
-    <div class="offset-gutter-x my-7">
-
-        <div class="medium">
-
-            <div class="row matrix-gutter">
-
-                <div class="col-sm-6 col-lg-4">
-                    <a class=" text-body" href="#1">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <p class="h6 bg-primary p-2">Link Title</p>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6 col-lg-4">
-                    <a class=" text-body" href="#1">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <p class="h6 bg-primary p-2">Link Title</p>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6 col-lg-4">
-                    <a class=" text-body" href="#1">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <p class="h6 bg-primary p-2">Link Title</p>
-                    </a>
-                </div>
-                <!-- .col -->
-                <div class="col-sm-6 col-lg-4">
-                    <a class=" text-body" href="#1">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <p class="h6 bg-primary p-2">Link Title</p>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6 col-lg-4">
-                    <a class=" text-body" href="#1">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <p class="h6 bg-primary p-2">Link Title</p>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6 col-lg-4">
-                    <a class=" text-body" href="#1">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <p class="h6 bg-primary p-2">Link Title</p>
-                    </a>
-                </div>
-                <!-- .col -->
-
-            </div>
-            <!-- .row -->
-
-        </div>
-        <!-- .medium -->
-    </div>
-    <!-- .offset-gutter-x -->
+    <?php if ( is_single( 'article-tearsheet' ) ) : ?>
 
     <div class="narrow mb-5">
         <p>
@@ -746,87 +655,8 @@
             luctus blandit mollis. Pellentesque lacinia magna quis malesuada accumsan. Suspendisse gravida non tortor eu
             tempus. Cras at nunc ac lectus iaculis aliquam ut posuere nibh.
         </p>
+
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue ultricies lacinia. Suspendisse
-            pharetra vulputate augue sed pharetra. Etiam pharetra tortor sed tortor eleifend, non varius tortor sodales.
-            Duis et molestie diam, id facilisis ligula. Sed eleifend erat orci, sit amet laoreet eros pretium ut. Nullam
-            luctus blandit mollis. Pellentesque lacinia magna quis malesuada accumsan. Suspendisse gravida non tortor eu
-            tempus. Cras at nunc ac lectus iaculis aliquam ut posuere nibh.
-        </p>
-    </div>
-    <!-- .narrow -->
-
-    <div class="offset-gutter-x my-7">
-
-        <div class="medium gallery-thumbnails">
-
-            <div class="row matrix-gutter">
-
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
-
-            </div>
-            <!-- .row -->
-
-        </div>
-        <!-- .medium -->
-    
-    </div>
-    <!-- .offset-gutter-x -->
-
-    <div class="narrow mb-5">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue ultricies lacinia. Suspendisse
-            pharetra vulputate augue sed pharetra. Etiam pharetra tortor sed tortor eleifend, non varius tortor sodales.
-            Duis et molestie diam, id facilisis ligula. Sed eleifend erat orci, sit amet laoreet eros pretium ut. Nullam
-            luctus blandit mollis. Pellentesque lacinia magna quis malesuada accumsan. Suspendisse gravida non tortor eu
-            tempus. Cras at nunc ac lectus iaculis aliquam ut posuere nibh.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue ultricies lacinia. Suspendisse
             pharetra vulputate augue sed pharetra. Etiam pharetra tortor sed tortor eleifend, non varius tortor sodales.
             Duis et molestie diam, id facilisis ligula. Sed eleifend erat orci, sit amet laoreet eros pretium ut. Nullam
             luctus blandit mollis. Pellentesque lacinia magna quis malesuada accumsan. Suspendisse gravida non tortor eu
@@ -869,142 +699,6 @@
             luctus blandit mollis. Pellentesque lacinia magna quis malesuada accumsan. Suspendisse gravida non tortor eu
             tempus. Cras at nunc ac lectus iaculis aliquam ut posuere nibh.
         </p>
-    </div>
-    <!-- .narrow -->
-
-    <div class="offset-gutter-x my-7">
-
-        <div class="row no-gutters">
-
-            <div class="col-lg-6">
-                <img src="https://placehold.it/1000x800.jpg" alt="Placeholder">
-            </div>
-            <!-- .col -->
-
-            <div class="col-lg-6 d-flex bg-info text-white">
-                <div class="narrow align-self-center p-3">
-                    <h3 class="h4 text-primary">Cheetah Museum</h3>
-                    <p class=" fs-md f-sans-serif">
-                        Displays at our Cheetah Museum are designed around CCF’s scientific research findings and provide detailed
-                        information about the cheetah: its history, physiology, importance within the ecosystem, conflict with humans,
-                        and what CCF is doing to ensure the species’ survival for future generations.
-                    </p>
-                    <a class="fs-md text-primary" href="#1">
-                        <span class="far fa-images fa-lg"></span>
-                        <span><strong>Explore</strong></span>
-                    </a>
-                </div>
-            </div>
-            <!-- .col -->
-
-        </div>
-        <!-- .row -->
-
-        <div class="row no-gutters">
-
-            <div class="col-lg-6">
-                <img src="https://placehold.it/1000x800.jpg" alt="Placeholder">
-            </div>
-            <!-- .col -->
-
-            <div class="col-lg-6 d-flex bg-tertiary text-white">
-                <div class="narrow align-self-center p-3">
-                    <h3 class="h4 text-primary">Model Farm</h3>
-                    <p class=" fs-md f-sans-serif">
-                        Displays at our Cheetah Museum are designed around CCF’s scientific research findings and provide detailed
-                        information about the cheetah: its history, physiology, importance within the ecosystem, conflict with humans,
-                        and what CCF is doing to ensure the species’ survival for future generations.
-                    </p>
-                    <a class="fs-md text-primary" href="#1">
-                        <span class="far fa-images fa-lg"></span>
-                        <span><strong>Explore</strong></span>
-                    </a>
-                </div>
-            </div>
-            <!-- .col -->
-
-        </div>
-        <!-- .row -->
-
-        <div class="row no-gutters">
-
-            <div class="col-lg-6">
-                <img src="https://placehold.it/1000x800.jpg" alt="Placeholder">
-            </div>
-            <!-- .col -->
-
-            <div class="col-lg-6 d-flex bg-info text-white">
-                <div class="narrow align-self-center p-3">
-                    <h3 class="h4 text-primary">Camp Lightfoot</h3>
-                    <p class=" fs-md f-sans-serif">
-                        Displays at our Cheetah Museum are designed around CCF’s scientific research findings and provide detailed
-                        information about the cheetah: its history, physiology, importance within the ecosystem, conflict with humans,
-                        and what CCF is doing to ensure the species’ survival for future generations.
-                    </p>
-                    <a class="fs-md text-primary" href="#1">
-                        <span class="far fa-images fa-lg"></span>
-                        <span><strong>Explore</strong></span>
-                    </a>
-                </div>
-            </div>
-            <!-- .col -->
-
-        </div>
-        <!-- .row -->
-
-        <div class="row no-gutters">
-            <div class="col-lg-6">
-                <img src="https://placehold.it/1000x800.jpg" alt="Placeholder">
-            </div>
-            <!-- .col -->
-
-            <div class="col-lg-6 d-flex bg-tertiary text-white">
-                <div class="narrow align-self-center p-3">
-                    <h3 class="h4 text-primary">Biomass Technology Demonstration Center</h3>
-                    <p class=" fs-md f-sans-serif">
-                        Displays at our Cheetah Museum are designed around CCF’s scientific research findings and provide detailed
-                        information about the cheetah: its history, physiology, importance within the ecosystem, conflict with humans,
-                        and what CCF is doing to ensure the species’ survival for future generations.
-                    </p>
-                    <a class="fs-md text-primary" href="#1">
-                        <span class="far fa-images fa-lg"></span>
-                        <span><strong>Explore</strong></span>
-                    </a>
-                </div>
-            </div>
-            <!-- .col -->
-
-        </div>
-        <!-- .row -->
-        
-    </div>
-    <!-- .offset-gutter-x -->
-
-    <div class="narrow mb-5">
-        <h2>Here is another headline</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue ultricies lacinia. Suspendisse
-            pharetra vulputate augue sed pharetra. Etiam pharetra tortor sed tortor eleifend, non varius tortor sodales.
-            Duis et molestie diam, id facilisis ligula. Sed eleifend erat orci, sit amet laoreet eros pretium ut. Nullam
-            luctus blandit mollis. Pellentesque lacinia magna quis malesuada accumsan. Suspendisse gravida non tortor eu
-            tempus. Cras at nunc ac lectus iaculis aliquam ut posuere nibh.
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue ultricies lacinia. Suspendisse
-            pharetra vulputate augue sed pharetra. Etiam pharetra tortor sed tortor eleifend, non varius tortor sodales.
-            Duis et molestie diam, id facilisis ligula. Sed eleifend erat orci, sit amet laoreet eros pretium ut. Nullam
-            luctus blandit mollis. Pellentesque lacinia magna quis malesuada accumsan. Suspendisse gravida non tortor eu
-            tempus. Cras at nunc ac lectus iaculis aliquam ut posuere nibh.
-        </p>
-    </div>
-    <!-- .narrow -->
-
-    <div class="narrow my-5">
-
-        <ul class="extensible-list horizontal justify-content-center">
-            <li><a class="btn btn-primary btn-lg" href="#1">Button Link</a></li>
-            <li><a class="btn btn-primary btn-lg" href="#1">Button Link</a></li>
-        </ul>
-
     </div>
     <!-- .narrow -->
 
