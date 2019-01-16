@@ -345,12 +345,14 @@
 
                         <div class="carousel-caption bg-opacity-black-60">
                             <?php if ($image['caption']) : ?>
-                            <p>
+                            <p class="f-sans-serif text-body shadow-sm rounded fs-md ">
                                 <?php echo $image['caption']; ?>
                             </p>
                             <?php endif; ?>
                         </div>
+
                     </div>
+                    <!-- .carousel-item -->
 
                     <?php $count_a++; endforeach; ?>
 

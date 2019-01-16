@@ -1,40 +1,47 @@
-%fa-icon{
-  font-family: $font-awesome;
-  font-weight: 900;
-  font-size: inherit;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  color: currentColor;
-}
+/*
 
-////////////////////////////////////////////////////////////////////////////////
-//
-// Local Header and primary navigation 
-//
-////////////////////////////////////////////////////////////////////////////////
+In this file:
+
+// A. Tab skipper
+// B. Custom Link
+// C. Gradients
+// D. Featured panels
+// E. Background image cover
+// F. Extensible lists
+// G. Matrix rows
+// H. Accordion and button toggle
+// I. Responsive nav tabs and pills
+// J. Side by side
+// K. Card
+// L. Circle
+// M. Carousel
+// N. Gallery
+
+*/
 
 ////////////////////////////////////////
-// Skip to Content
+// A. Tab skipper
 ////////////////////////////////////////
 
-// Note : Skip to Content is visible on keyboard tabs
+// Visible only on keyboard tabbing
 
 .tab-skipper{
+  @extend .position-absolute;
+  @extend .shadow;
+
   top: $spacer;
   left: $spacer;
+  z-index: 900;
+  padding: $spacer-2;
+  font-size: $fs-md;
+  background: theme-color("light");
+  color: $body-color;
 
-  @extend .position-absolute;
-  @extend .z-index-900;
-  @extend .p-2; 
-  @extend .fs-md; 
-  @extend .bg-light;
-  @extend .text-body; 
-  @extend .shadow;
+  &:hover{ color: currentColor; }
 }
 
 ////////////////////////////////////////
-// Custom Link
+// B. Custom Link
 ////////////////////////////////////////
 
 $custom-link: true;
@@ -57,29 +64,26 @@ $custom-link: true;
 } // end if
 
 ////////////////////////////////////////
-// Gradient Classes
+// C. Gradients
 ////////////////////////////////////////
 
-// Note: Gradients call a custom mixin in '_c-custom-mixins.scss'
+// Gradients call a custom mixin in '_c-custom-mixins.scss'
 
 $gradients: true;
 
 @if($gradients){
 
   [class*="overlay-gradient-"]{
-    @extend .position-relative;
-    overflow: hidden;
+    position: relative; 
   
     &::before {
-      content: "\00a0";
-      @extend .position-absolute;
-      width:102%;
-      @extend .h-100;
-      margin-left:-1%;
-      margin-right:-1%;
-      bottom: -1px;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left:0;
+      right: 0;
     }
-
   }
 
   // Gradient Overlays
@@ -142,7 +146,7 @@ $gradients: true;
 } // end if
 
 ////////////////////////////////////////
-// Featured Panel
+// D. Featured panels
 ////////////////////////////////////////
 
 @mixin featured-panel-responsive-settings(){
@@ -180,69 +184,25 @@ $featured-panel: true;
     .card-img,
     .align-self-end, 
     .align-self-center
-    { @extend .w-100; }
+    { width: 100%; }
   }
 
   .featured-panel{
 
     .align-self-end{
+
       > div{ 
         max-width: $grid-bp-xl;
-        @extend .p-lg-2;
-      // @extend .py-;
-      }
-    }
-
-    .bg-white{
-      h1, h2, h3, h4, p, a.link{ @extend .text-shadow;  }
-    }
-
-    &.bg-cover{
-
-      @extend .position-relative;
-      @extend .d-flex;
-
-      height: $bg-fixed-height;
-
-      > div{
-        @extend .position-relative;
-        @extend .z-index-100;
-        @extend .align-self-center;
-      }
-
-      &::before{
-        content: "\00a0";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        left:0;
-        right: 0;
-        z-index: auto;
-
-        @include opacity($bg-fixed-image-opacity);
-        @include apply-background-image;
-
-      }
-
-      // Add your own backround classes and append them to '.bg-fixed'
-
-      &.cheetahs{
-        &::before{
-          @include apply-background-image(
-            $image: 'ccf-blog', 
-            $extension: '.jpg', 
-            $repeat: false,  
-            $cover: true, 
-            );
+        @include media-breakpoint-up(lg) {
+          padding: $spacer-2;
         }
       }
 
     }
 
-
-
-
-
+    .bg-white{
+      h1, h2, h3, h4, p, a.link{ @extend .text-shadow;  }
+    }
     
     @each $breakpoint in map-keys($grid-breakpoints) {
       $next: breakpoint-next($breakpoint, $grid-breakpoints);
@@ -256,19 +216,20 @@ $featured-panel: true;
         }
       }
     }
-
   }
 
   .featured-block{
 
-    .card-img-overlay{ 
-      @extend .p-0;
-      @extend .p-md-3;
+    .card-img-overlay{ padding: 0; }
+
+    @include media-breakpoint-up(md) {
+      .card-img-overlay{ padding: $spacer-3 }
     }
 
     @include media-breakpoint-down(sm) {
       margin-bottom: $border-width;
     }
+
   }
 
   .banner{
@@ -276,14 +237,11 @@ $featured-panel: true;
 
     h1{ 
       @extend .display-1;
-      // line-height: 1;
       font-size: 8rem;
       font-style: italic;
     }
 
-    .card-img-overlay{ @extend .p-0; }
-
-    .align-self-end{ @extend .opacity-70; }
+    .card-img-overlay{ padding: 0; }
     
     @include media-breakpoint-down(lg) {
       h1{ display: none; }
@@ -293,7 +251,143 @@ $featured-panel: true;
 } // end if
 
 ////////////////////////////////////////
-// Matrix
+// E. Background image cover
+////////////////////////////////////////
+
+$bg-cover: false;
+
+@if($bg-cover){
+
+  $bg-fixed-image-opacity: 0.4;
+  $bg-fixed-height: 350px;
+
+  .bg-cover{
+    position: relative;
+
+    &.fixed-height{
+      display: flex;
+      align-items: center;
+      min-height: $bg-fixed-height;
+    }
+
+    > div{
+      position: relative;
+      z-index: 100;
+      align-self: center;
+    }
+
+    &::before{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left:0;
+      right: 0;
+      z-index: auto;
+
+      @include opacity( $bg-fixed-image-opacity );
+      @include apply-background-image;
+
+    }
+
+    // Add your own backround classes and append them to the '.bg-cover' selector
+
+    &.bridge{
+      &::before{
+        @include apply-background-image($image: 'bridge-lights');
+      }
+    }
+  }
+  
+} // end if
+
+////////////////////////////////////////
+// F. Extensible lists
+////////////////////////////////////////
+
+// Note: Link lists can be used in place of Bootstrap's .nav when Link padding is unneeded.
+// Link lists are ideal for horizontal navs when supporting 'rtl' 
+
+$extensible-list: true;
+$extensible-list-margin: 0.5em;
+
+@mixin extensible-list-stack {
+  margin-bottom: $extensible-list-margin;
+  &:last-child{ margin-bottom: 0; }
+}
+
+@mixin responsive-extensible-list-settings(){ 
+  
+  // Remove flex properties
+  display: block !important;
+
+  // Remove side margin and padding 
+  margin-right:  0;
+  margin-left:  0;
+  padding-right:  0;
+  padding-left:  0;
+
+  li{ 
+    @include extensible-list-stack;
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+   }
+}
+
+@if($extensible-list){
+
+  .extensible-list{
+    @include list-unstyled();
+    
+    // fixed padding added by user agent stylesheet after translation
+    -webkit-padding-start: 0;
+
+    li > ul{ 
+
+      margin-top: $extensible-list-margin;
+
+      // Nested lists indent by default
+      padding-left: $nav-link-padding-x;
+      padding-right: $nav-link-padding-x; 
+
+    }
+
+    li{ @include extensible-list-stack; }
+
+    &.horizontal{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      margin-left: -($extensible-list-margin);
+      margin-right: -($extensible-list-margin);
+
+      li{
+        margin-bottom: 0;
+        margin-left: $extensible-list-margin;
+        margin-right: $extensible-list-margin;
+      }
+
+      @each $breakpoint in map-keys($grid-breakpoints) {
+        $next: breakpoint-next($breakpoint, $grid-breakpoints);
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @if $next {
+          &.responsive-#{$next}{
+            @include media-breakpoint-down($breakpoint) {
+              @include responsive-extensible-list-settings();
+            }
+          }
+        }
+      }
+    }
+  }
+  
+} // end if
+
+////////////////////////////////////////
+// G. Matrix rows
 ////////////////////////////////////////
 
 // Note: Add to '.row' class to create a grid of colums
@@ -321,8 +415,18 @@ $matrix-gutter-padding: ($grid-gutter-width / 4);
 }
 
 ////////////////////////////////////////
-// Accordions and Toggle Buttons 
+// H. Accordion and button toggle 
 ////////////////////////////////////////
+
+%fa-icon{
+  font-family: $font-awesome;
+  font-weight: 900;
+  font-size: inherit;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: currentColor;
+}
 
 $toggles-and-accordions: true;
 
@@ -334,7 +438,7 @@ $toggles-and-accordions: true;
   $accordion-button-shadow: false;
 
   $accordion-title-color: theme-color("primary");
-  $accordion-bg: theme-color("light");
+  $accordion-bg-color: theme-color("light");
 
   .btn-toggle a,
   .accordion-group a
@@ -357,6 +461,9 @@ $toggles-and-accordions: true;
 
       // @extend .ml-auto;
     }
+
+    // Change the right icon here. Go to https://fontawesome.com/icons
+    // Find your icons and paste the unicode below
 
     &[aria-expanded="true"]::after {
       content: "\f068";
@@ -383,15 +490,7 @@ $toggles-and-accordions: true;
       }
     }
 
-    .card { background-color: $accordion-bg; }
-
-    .card-header{
-      &:focus,
-      &.focus {
-        outline: 0;
-        box-shadow: $btn-focus-box-shadow;
-      }
-    }
+    .card { background-color: $accordion-bg-color; }
 
     a[data-toggle="collapse"]{
       
@@ -426,7 +525,7 @@ $toggles-and-accordions: true;
 } // end if
 
 ////////////////////////////////////////
-// Responsive Nav Tabs and Pills
+// I. Responsive nav tabs and pills
 ////////////////////////////////////////
 
 @mixin responsive-nav-pills-and-tabs-settings(){
@@ -443,7 +542,7 @@ $toggles-and-accordions: true;
   }
 }
 
-$responsive-nav-pills-and-tabs: true;
+$responsive-nav-pills-and-tabs: false;
 
 @if($responsive-nav-pills-and-tabs){
 
@@ -488,114 +587,29 @@ $responsive-nav-pills-and-tabs: true;
 } // end if
 
 ////////////////////////////////////////
-// Extensible Lists
+// J. Side by side
 ////////////////////////////////////////
 
-// Note: Extensible lists can be used in place of Bootstrap's .nav when Link padding is unneeded.
-// Extensible lists are ideal for horizontal navs when supporting 'rtl' 
+$side-by-side: false;
+$side-by-side-margin: 0.25em;
 
-$extensible-lists: true;
-$extensible-list-margin: 0.5em;
+@if($side-by-side){
+  .side-by-side{
+    display: flex;
+    flex-direction: row;
 
-@mixin extensible-list-stack {
-  margin-bottom: $extensible-list-margin;
-  &:last-child{ margin-bottom: 0; }
-}
+    margin-left: -($side-by-side-margin);
+    margin-right: -($side-by-side-margin);
 
-@mixin responsive-extensible-list-settings(){ 
-  
-  // Remove flex properties
-  display: block !important;
-
-  // Remove side margin and padding 
-  margin-right:  0;
-  margin-left:  0;
-  padding-right:  0;
-  padding-left:  0;
-
-  li{ 
-    @include extensible-list-stack;
-    display: block !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-   }
-}
-
-@if($extensible-lists){
-
-  .extensible-list{
-    @include list-unstyled();
-    
-    // fixed padding added by user agent stylesheet after translation
-    -webkit-padding-start: 0;
-
-    li > ul{ 
-
-      margin-top: $extensible-list-margin;
-
-      // Nested lists indent by default
-      padding-left: $nav-link-padding-x;
-      padding-right: $nav-link-padding-x; 
-
+    > span{
+      margin-left: $side-by-side-margin;
+      margin-right: $side-by-side-margin;
     }
-
-    li{ @include extensible-list-stack; }
-
-    &.horizontal{
-      @extend .d-flex;
-      @extend .align-items-center;
-      @extend .flex-row;
-
-      margin-left: -($extensible-list-margin);
-      margin-right: -($extensible-list-margin);
-
-      li{
-        margin-bottom: 0;
-        margin-left: $extensible-list-margin;
-        margin-right: $extensible-list-margin;
-      }
-
-      @each $breakpoint in map-keys($grid-breakpoints) {
-        $next: breakpoint-next($breakpoint, $grid-breakpoints);
-        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-        @if $next {
-          &.responsive-#{$next}{
-            @include media-breakpoint-down($breakpoint) {
-              @include responsive-extensible-list-settings();
-            }
-          }
-        }
-      }
-    }
-  }
-
-
+  } 
 } // end if
 
 ////////////////////////////////////////
-// Side by Side
-////////////////////////////////////////
-
-$side-by-side: true;
-$side-by-side-margin: 0.25em;
-
-.side-by-side{
-
-  @extend .d-flex;
-  @extend .flex-row;
-
-  margin-left: -($side-by-side-margin);
-  margin-right: -($side-by-side-margin);
-
-  > span{
-    margin-left: $side-by-side-margin;
-    margin-right: $side-by-side-margin;
-  }
-} 
-
-////////////////////////////////////////
-// Cards
+// K. Card
 ////////////////////////////////////////
 
 $default-card-borders: false;
@@ -608,16 +622,15 @@ $default-card-backgrounds: false;
   { border: none; }
 } // end if
 
-@if ($default-card-backgrounds == false) {
+@if ( $default-card-backgrounds == false ) {
   .card, 
   .card-header,
   .card-footer
   { background-color: transparent; }
 } // end if
 
-
 ////////////////////////////////////////
-// Circle
+// L. Circle
 ////////////////////////////////////////
 
 $circle-size: 50px;
@@ -661,9 +674,8 @@ $gallery-button-background: rgba($black, 0.8);
 
 } // end half-circle
 
-
 ////////////////////////////////////////
-// Carousel
+// M. Carousel
 ////////////////////////////////////////
  
 $carousel: true;
@@ -674,16 +686,15 @@ $carousel: true;
   $carousel-indicator-height: auto;
 
   .carousel-outer{
-    @extend .position-relative;
-    @extend .d-flex;
+    display: flex;
+    position: relative;
   }
 
   .carousel-arrows{
-    @extend .position-absolute;
-    @extend .z-index-900;
-    @extend .w-100;
-    @extend .h-100;
-
+    position: absolute;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
 
@@ -691,13 +702,13 @@ $carousel: true;
       @extend .list-unstyled; 
       @extend .d-flex; 
       @extend .justify-content-between; 
-      @extend .align-items-center; 
-      @extend .w-100; 
-      @extend .h-100;
+      align-items: center; 
+      width: 100%;
+      height: 100%;
 
       li > a{
-        @extend .text-white;
-        @extend .d-flex;
+        @extend .d-flex; 
+        color: white;
         @include hover-focus{
           text-decoration: none;
         }
@@ -707,27 +718,24 @@ $carousel: true;
   }
 
   .carousel-indicators{
-    @extend .position-static;
     @extend .extensible-list;
     @extend .horizontal;
-    @extend .justify-content-center;
-    @extend .mb-0;
+    position: static;
+    justify-content: center;
+    margin-bottom: 0;
 
     > li{
-      @extend .d-inline-block;
-    
+      display: inline-block;
       width: $carousel-indicator-width !important;
       height: $carousel-indicator-height !important;
       text-indent: 0;
       
       &::before,
       &::after {
-        @extend .d-none;
+        display: none;
       }
 
-      button{
-        outline: none;
-      }
+      button{ outline: none; }
     }
 
     li.active{
@@ -737,17 +745,12 @@ $carousel: true;
 
   .carousel-caption{
     bottom: 0.1.25rem;
-    @extend .p-0;
+    padding: 0;
 
     > p{ 
-      @extend .d-inline-block;
-      @extend .f-sans-serif;
-      @extend .shadow-sm;
-      @extend .rounded;
-      @extend .py-2;
-      @extend .px-3;
-      @extend .fs-md;
-      @extend .text-body;
+      display: inline-block;
+      padding: $spacer-2 $spacer-3;
+      
       @include background-opacity($white, 0.9);
     }
   }
@@ -767,29 +770,29 @@ $carousel: true;
 } // end if
 
 ////////////////////////////////////////
-// Gallery
+// N. Gallery
 ////////////////////////////////////////
 
 %enlarge{
 
   a.enlarge{
-    @extend .position-relative;
-    @extend .d-block;
+    position: relative;
+    display: block;
 
     > span{ 
-      @extend .position-absolute;
+      position: absolute;
       bottom: 0;
       right: 0;
 
       background: $gallery-button-background;
 
-      @extend .p-1;
-      @extend .m-1;
-      @extend .text-white;
+      padding: $spacer-1;
+      margin: $spacer-1;
+      color: white;
     }
 
     &:focus{
-      > span{ @extend .bg-black; }
+      > span{ background: black; }
     }
   }
 }
@@ -801,7 +804,7 @@ $gallery: true;
   .gallery-thumbnails{
     a, 
     img
-    { @extend .m-0; }
+    { margin: 0 }
   }
 
   .gallery-thumbnails, 
@@ -811,4 +814,3 @@ $gallery: true;
 } @else {
   figure{ @extend %enlarge; }
 } // end if else
-

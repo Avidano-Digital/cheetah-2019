@@ -43,7 +43,7 @@ get_header(); ?>
             </div>
 
             <div class="card-img-overlay d-flex">
-                <div class="align-self-end container-fluid">
+                <div class="container-fluid align-self-end opacity-70">
                     <h1 class="text-right text-secondary">
                         <em><?php echo $parent_title; ?></em>
                     </h1>
