@@ -45,79 +45,49 @@ p{ @extend .f-serif; }
 #mobile-menu,
 #primary-navigation-desktop{
   li.leader{
-    @extend .font-weight-bold;
-    @extend .text-primary;
+    font-weight: $font-weight-bold;
+    color: $primary;
   }
 }
 
 #mobile-menu,
 #all-links{
-
   ul:not(.horizontal){ 
-    @extend .list-unstyled;
-    @extend .fs-md;
+    font-size: $fs-md;
   }
 
-}
-
-#secondary-navigation{
-  a { @extend .text-body; }
 }
 
 #primary-navigation-desktop{
 
-  ul{ @extend .extensible-list; }
-
-  > ul{ 
-    @extend .horizontal;
-    margin-left: -($extensible-list-margin * 1.25);
-    margin-right: -($extensible-list-margin * 1.25);
-  }
-
-  > ul > li{ 
-    @extend .position-relative; 
-    margin-left: ($extensible-list-margin * 1.25);
-    margin-right: ($extensible-list-margin * 1.25);
-  }
+  > ul > li{ position: relative; }
 
   > ul > li > a{
-    @extend .text-body;
-    @extend .fs-lg;
+    color: $body-color;
+    font-size: $fs-lg;
 
-    &.active{ @extend .text-muted; }
+    // &.active{ @extend .text-muted; }
   }
 
-  a.donate{
-    @extend .font-weight-normal;
-  }
+  a.donate{ font-weight: $font-weight-normal; }
 
   .sub{
-    @extend .position-absolute;
-    @extend .px-2;
-    @extend .py-3;
-    @extend .fs-md;
-    @extend .extensible-list;
+    @extend .shadow;
+
+    background: $dark;
+    position: absolute;
+    padding: $spacer-3 ;
+    font-size: $fs-md;
+    min-width: 200px;
 
     top: 100%;
     left: -($spacer-3);
 
-    @extend .bg-dark;
-    @extend .shadow;
-
-    a{
-      white-space: nowrap;
-      @extend .text-white;
-      @extend .text-left;
-      line-height: 1.25rem;
-    }
-
-    > div a{ white-space: wrap;  }
+    a{ color: white; }
 
     display: none;
 
-    &.active{
-      display: block;
-    }
+    &.active{ display: block; }
   }
 }
 
@@ -127,23 +97,23 @@ p{ @extend .f-serif; }
   
   // Child links (accordion)
   
-  ul > li > a { @extend .text-white; }
+  ul > li > a { color: white; }
 
   // Child links (accordion)
 
   .card-header{
-    @extend .border-bottom;
-    @extend .text-body;
-    @extend .fs-lg;
-    @extend .py-1;
+    @extend .border-bottom; 
+
+    color: $body-color;
+    font-size: $fs-lg;
+    padding-top: $spacer-1;
+    padding-bottom: $spacer-1;
     
     background: white;
 
-    .title{ @extend .font-weight-normal; }
+    .title{ font-weight: $font-weight-normal; }
 
-    &:last-child,
-    &[data-target="#events"]
-    { @extend .border-bottom-0; }
+    &:last-child{ @extend .border-bottom-0; }
   }
 }
 
