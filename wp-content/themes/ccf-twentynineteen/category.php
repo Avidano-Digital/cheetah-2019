@@ -38,56 +38,54 @@ get_header(); ?>
     </section>
     <!-- .featured-panel -->
 
-    <div class="container-fluid py-7">
+    <div class="container-fluid posts-filter bg-info py-3">
+
+        <div class="narrow">
+
+            <div class="row matrix-gutter">
+
+                <div class="col-md">
+                    <select class="form-control" id="borough" required>
+                        <option>Filter by Topic</option>
+                        <option value="Camera Traps">Camera Traps</option>
+                        <option value="Cheetahs in the News">Cheetahs in the News</option>
+                        <option value="Conservation">Conservation</option>
+                        <option value="Education">Education</option>
+                        <option value="Life at CCF">Life at CCF</option>
+                        <option value="Science &amp; Research">Science &amp; Research</option>
+                        <option value="Success Stories">Success Stories</option>
+                        <option value="Life at CCF">Life at CCF</option>
+                        <option value="Visitor Stories">Visitor Stories</option>
+                    </select>
+                </div>
+                <!-- .col -->
+
+                <div class="col-md">
+                    <select class="form-control" id="borough" required>
+                        <option>Filter by Author</option>
+                        <option value="...">...</option>
+                        <option value="...">...</option>
+                        <option value="...">...</option>
+                    </select>
+                </div>
+                <!-- .col -->
+
+            </div>
+            <!-- .row -->
+
+        </div>
+        <!-- .narrow -->
+
+    </div>
+    <!-- .posts-filter -->
+
+    <div class="container-fluid py-6">
 
         <div class="wide px-lg-2">
 
             <div class="row">
 
                 <div class="col-xl-9">
-
-                    <div class="posts-filter bg-light py-2 mb-4">
-
-                        <div class="narrow">
-
-                            <div class="row matrix-gutter">
-
-                                <div class="col-md">
-                                    <select class="form-control" id="borough" required>
-                                        <option value="">Filter by Topic</option>
-                                        <option value="Camera Traps">Camera Traps</option>
-                                        <option value="Cheetahs in the News">Cheetahs in the News</option>
-                                        <option value="Conservation">Conservation</option>
-                                        <option value="Education">Education</option>
-                                        <option value="Life at CCF">Life at CCF</option>
-                                        <option value="Science &amp; Research">Science &amp; Research</option>
-                                        <option value="Success Stories">Success Stories</option>
-                                        <option value="Life at CCF">Life at CCF</option>
-                                        <option value="Visitor Stories">Visitor Stories</option>
-                                    </select>
-                                </div>
-                                <!-- .col -->
-
-                                <div class="col-md">
-                                    <select class="form-control" id="borough" required>
-                                        <option value="">Filter by Author</option>
-                                        <option value="Bronx">Bronx</option>
-                                        <option value="Brooklyn">Brooklyn</option>
-                                        <option value="Manhattan">Manhattan</option>
-                                        <option value="Staten Island">Staten Island</option>
-                                        <option value="Queens">Queens</option>
-                                    </select>
-                                </div>
-                                <!-- .col -->
-
-                            </div>
-                            <!-- .row -->
-
-                        </div>
-                        <!-- .narrow -->
-
-                    </div>
-                    <!-- .posts-filter -->
 
                     <?php if ( have_posts() ) : ?>
 
@@ -102,14 +100,18 @@ get_header(); ?>
 
                         <div class="row align-items-center mb-3">
 
+                            <?php if( has_post_thumbnail() ):
+                                $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
+                            ?>
+
                             <div class="col-lg-6 mb-3 mb-lg-0">
-                                <?php $featured_image = get_field('featured_image'); if( $featured_image ): ?>
-                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"> 
-                                        <img class="w-100" src="<?php echo $featured_image['image']; ?>" alt="<?php the_title(); ?>">
+                                   <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"> 
+                                        <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
                                     </a>
-                                <?php endif; /* featured_image */ ?>
                             </div>
                             <!-- .col -->
+
+                            <?php endif; ?>
 
                             <div class="col-lg-6">
                                 <p class="f-sans-serif fs-md fs-muted mb-0">

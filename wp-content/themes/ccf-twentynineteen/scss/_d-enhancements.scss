@@ -1,272 +1,58 @@
-////////////////////////////////////////////////////////////////////////////////
-//
-// General HTML Tags
-//
-////////////////////////////////////////////////////////////////////////////////
+/*
+
+In this file:
+
+// A. Generic tags
+// B. Margins
+// C. Accessibility
+// D. Forms
+// E. Font size media queries
+// F. Sticky top
+// G. Internet Explorer
+
+*/
 
 ////////////////////////////////////////
-// Generic Tags
+// A. Generic Tags
 ////////////////////////////////////////
 
-html{ 
-  @extend .bg-dark;
-
-  // Note: RTL Language Translation
-
-  &[dir="rtl"]{
-
-    .text-right{ @extend .text-left; }
-    .float-left{ @extend .float-right; }
-
-    // Flip Select tag background from left to right
-    
-    select:not(.notranslate):not(.goog-te-combo){
-      background-position-x: 0.75rem !important;
-      padding: 0.375rem 0.75rem 0.375rem 1.75rem;
-    }
-
-    select.notranslate{
-      @extend .text-left;
-    }
-
-    body,
-    .dropdown-item
-    { @extend .text-right; }
-
-    .extensible-list:not(.justify-content-center){
-      .horizontal{
-        @extend .justify-content-start;
-      }
-    }
-
-    // Note: Remove Google's added padding and margin for rtl translation
-
-    ul, 
-    ol, 
-    dl 
-    { -webkit-padding-start: 0 !important;  }
-
-    dd { -webkit-margin-start: 0 !important; }
-
-    // Note: Remove Google's added line-height on font selectors inside of buttons
-    
-    .btn{
-      > font{ line-height: 0; }
-    }
-
-    // Mobile Menu Float
-
-    #device-menu a.dropdown-item{ @extend .float-right; }
-
-    // Note: Flip Custom Control Background from left to right
-
-    .custom-control-label{
-      &::before, 
-      &::after
-      {
-        right: -$custom-control-gutter;
-      }
-    }
-  }
-}
+html{ background: $dark; }
 
 body{
-  @extend .position-relative;
+  position: relative;
 
   // Font smoothing
+
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
   // Set Overflow (optional) 
+  
   overflow-x: hidden;
 
   // Set min and max width of body
+
 	min-width: 350px;
   max-width: $site-width;
   
   // Set body font-size to accessible size
-  @extend .fs-rg;
+  
+  font-size: $fs-rg;
 
   // Center body
-	@extend .mx-auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Make all images responsive by default
+
 img{ @extend .img-fluid; }
 
-$no-class: ':not([class])';
-
-// article a#{$no-class}{
-
-//   text-decoration: underline;
-
-// }
-
 ////////////////////////////////////////
-// Sticky Top
+// B. Margins
 ////////////////////////////////////////
 
-// Use .stick-top with caution as it's not compatible with Google translate
-
-// Note: Fixes Bootstraps 'sticky-top' class in Safari
-
-@supports (position: -webkit-sticky) or (position: sticky) {
-  .sticky-top {
-    position: sticky;
-    position:-webkit-sticky;
-    top: 0;
-    z-index: 1020; 
-  }
-}
-
-////////////////////////////////////////
-// Forms
-////////////////////////////////////////
-
-// Note: Remove default styles on 'legend' selectors
-
-legend, 
-.legend{
-  @extend .d-table;
-  @extend .float-left;
-  @extend .m-0;
-  @extend .p-0;
-  @extend .w-100;
-  line-height: 1.5;
-  
-  + * { clear: both; }
-}
-
-fieldset{
-  @extend .border;
-  @extend .mb-5;
-  @extend .clearfix;
-}
-
-legend{
-  @extend .fs-md;
-  @extend .bg-primary;
-  @extend .text-white;
-  @extend .p-2;
-  @extend .font-weight-normal;
-  @extend .mb-0;
-}
-
-// Note: Add 'custom-select' class to all select boxes
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  @extend .custom-select;
-}
-
-label{ @extend .fs-md; }
-
-// Note: Add padding to custom checkboxes and radios '.custom-control selector'
-// to ensure spacing during rtl translation  
-
-.custom-control {
-  padding-left: $custom-control-gutter;
-  padding-right: $custom-control-gutter;
-}
-
-.custom-control-label{
-  &::before{ 
-    box-shadow: $accessible-box-shadow;
-  }
-}
-
-// Google Translate dropdown
-
-#google_translate_element{
-  @extend .text-center;
-
-  select{
-    @extend .text-left;
-    @extend .form-control;
-    @extend .form-control-lg;
-    @extend .mb-2;
-  }
-
-  .goog-logo-link{
-    @extend .mx-auto;
-  }
-}
-
-// Alerts
-
-.alert{
-
-  &.alert-danger{
-
-    &:focus{
-      outline: 0;
-      box-shadow: 0 0 0 $input-btn-focus-width theme-color("danger");
-    }
-  }
-
-}
-
-.alert-heading{ 
-  @extend .font-weight-bold; 
-  @extend .mb-1;
-}
-
-.alert-text{ @extend .fs-md; }
-
-// Custom Valdation for accessibility
-// Note: the following only works when custom validation.js is present in the footer of the form's page
-
-.form-group{
-
-  .invalid-feedback{
-      @extend .d-none; 
-      margin-bottom: 0.5rem;
-
-      .invalid-description{
-        @extend .font-weight-bold;
-        @extend .mx-1;
-      }
-  }
-
-  &.is-invalid{
-
-    label{ @extend .text-danger; }
-
-    .invalid-feedback{ @extend .d-block; }
-
-    .form-control:invalid{
-      &:focus{
-        box-shadow: 0 0 0 $input-btn-focus-width theme-color("danger");
-      }
-    }
-  }
-}
-
-////////////////////////////////////////
-// Mobile Margin Offset
-////////////////////////////////////////
-
-// Note: Make fieldsets go edge-to-edge on devices 
-
-.mobile-margin-offset-x{
-    
-  @include media-breakpoint-down('xs') {
-
-      fieldset{
-          margin-left: -(($grid-gutter-width/2) + $border-width);
-          margin-right: -(($grid-gutter-width/2) + $border-width);
-      }
-  }
-}
-
-////////////////////////////////////////////////////////////////////////////////
-//
-// Margin bottom 
-//
-////////////////////////////////////////////////////////////////////////////////
-
-// Note: Remove Bootstrap default bottom margins to 'last-child' selectors 
+// Remove bottom margins on ':last-child' selectors 
 
 h1, 
 h2, 
@@ -284,36 +70,102 @@ address
 	&:last-child{ margin-bottom: 0; }
 }
 
-// Remove Bootstrap default to <hr> tags 
+// Remove Bootstrap's default margin on <hr> tags 
 
 hr{ margin: 0; }
 
-.list-group-flush .list-group-item{
-  @extend .px-0;
+////////////////////////////////////////
+// C. Accessibility
+////////////////////////////////////////
 
-  &:first-child{ border-top: none; }
-}
+// Right-to-left language translation
 
-////////////////////////////////////////////////////////////////////////////////
-//
-// Accessibility (Tabbing and Visual Cues)
-//
-////////////////////////////////////////////////////////////////////////////////
+html[dir="rtl"]{ 
 
-// Note: We add 'text-decoration: underline' on particular :focus selectors
+  .text-right{ text-align: left !important; }
+  .text-left{ text-align: right !important; }
 
-$accessible-hover-focus: true;
+  // Flip select tags background (arrows) from right to left
+  
+  select:not(.notranslate):not(.goog-te-combo){
+    background-position-x: 0.75rem !important;
+    padding: 0.375rem 0.75rem 0.375rem 1.75rem;
+  }
+
+  select.notranslate{ text-align: left !important; }
+
+  // Apply right justification all text
+
+  body,
+  .dropdown-item
+  { text-align: right; }
+
+  // Apply left justification to all extensible-list selectors excluding those that are centered 
+
+  .extensible-list:not(.justify-content-center){
+    .horizontal{
+      justify-content: flex-start !important;
+    }
+  }
+    
+  // Flip accordion and button toggles (found in _e-ui-elements.scss) from right to left
+
+  .accordion-group,  
+  .btn-toggle
+  { 
+    a[data-toggle="collapse"]{
+      &::after {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+  }
+
+  // Remove Google's added padding and margin for rtl translation
+
+  ul, 
+  ol, 
+  dl 
+  { -webkit-padding-start: 0 !important;  }
+
+  dd { -webkit-margin-start: 0 !important; }
+
+  // Mobile Menu Float
+
+  #device-menu a.dropdown-item{ float: right !important; }
+
+  // Flip Custom Control Background from left to right
+
+  .custom-control-label{
+    &::before, 
+    &::after
+    {
+      right: -($custom-control-gutter + $custom-control-indicator-size);
+    }
+  }
+
+  // Add padding to custom checkboxes and radios '.custom-control selector' to ensure spacing during rtl translation  
+
+  .custom-control {
+    padding-right: ($custom-control-gutter + $custom-control-indicator-size);
+  }
+
+} // end RTL
+
+// Add 'text-decoration: underline' on particular ':focus' selectors
+
+$accessible-hover-focus: false;
 
 @if($accessible-hover-focus){
 
-  a:not(.link), 
+  a,
   .btn, 
   .nav-link,
-  .na-item, 
+  .nav-item, 
   .dropdown-item
   {
-    &:focus,
-    &:hover
+    &:hover,
+    &:focus
     { 
       text-decoration: underline; 
     }
@@ -322,10 +174,11 @@ $accessible-hover-focus: true;
   .btn-toggle a,
   .accordion-group a,
   .btn.d-flex.align-items-center
-  a.card
+  a.card,
+  #back-to-top a
   {
-    &:focus,
-    &:hover
+    &:hover,
+    &:focus
     { 
       text-decoration: none;
       > span.title{ text-decoration: underline; }
@@ -333,60 +186,101 @@ $accessible-hover-focus: true;
   }
 
   .disabled{
-    &:focus,
-    &:hover
+    &:hover,
+    &:focus
     { box-shadow: none;
       outline: none;
       text-decoration: none;
     }
-
   }
-
-  section p > a,
-  section p > a:hover,
-  section p > a:focus,
-  { text-decoration: underline; }
+  
+  .has-icon{
+    &:hover{
+        text-decoration: none;
+        span.title{ text-decoration: underline; }
+    }
+    &.active{
+        span.title{ text-decoration: underline; }
+    }
+  }
 
 } // end if
 
-section > ul{
-  li{ @extend .mb-2; }
-}
-
-// Allow .btn selectors to wrap
+// Override Bootstrap's default whitespace on '.btn' selectors
 
 .btn{ white-space: normal !important; }
 
-////////////////////////////////////////////////////////////////////////////////
-//
-// Supplementary classes 
-//
-////////////////////////////////////////////////////////////////////////////////
+// Add visible underline to links within the #primary-content area
+
+#primary-content{
+  p > a:not([class]){ text-decoration: underline; }
+} 
 
 ////////////////////////////////////////
-// Fonts and Sizes
+// D. Forms
 ////////////////////////////////////////
 
-// Note: Define Font Awesome for use in psuedo classes
+legend, 
+.legend{
 
-.font-awesome{
-	font-family: $font-awesome;
-	font-weight: 900;
-	font-style: normal;
-	font-size: inherit;
+  // Remove strange default styles on 'legend' selectors
+  // Styles for fieldset and legend are found in _f-ui-elements.scss
+  
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 1.5;
+  + * { clear: both; }
+  
 }
 
-// Font-size classes
-// Note: Define Font Awesome for use in psuedo classes
+fieldset{
+  border: $border-width solid $border-color;
+  margin-bottom: $spacer-5;
+}
 
-.fs-sm{ font-size: $fs-sm; }
-.fs-md{ font-size: $fs-md; }
-.fs-rg{ font-size: $fs-rg; }
-.fs-lg{ font-size: $fs-lg; }
-.fs-xl{ font-size: $fs-xl; }
+// Add 'custom-select' class to all <select> tags
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  @extend .custom-select;
+}
+
+label, 
+.label
+{ 
+  font-size: $fs-md;
+  margin-bottom: $label-margin-bottom;
+}
+
+.custom-control-label{
+  &::before{ 
+    box-shadow: $accessible-box-shadow;
+  }
+}
+
+// Google Translate dropdown
+
+#google_translate_element{
+  text-align: center;
+
+  select{
+    @extend .form-control-lg;
+    margin-bottom: $spacer-1;
+  }
+
+  .goog-logo-link{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
 
 ////////////////////////////////////////
-// Font Size Media Queries
+// E. Font size media queries
 ////////////////////////////////////////
 
 @include media-breakpoint-down(md){
@@ -404,153 +298,23 @@ section > ul{
 }
 
 ////////////////////////////////////////
-// Opacity
+// F. Sticky top
 ////////////////////////////////////////
 
-.opacity-10{ @include opacity(0.10); }
-.opacity-20{ @include opacity(0.20); }
-.opacity-30{ @include opacity(0.30); }
-.opacity-40{ @include opacity(0.40); }
-.opacity-50{ @include opacity(0.50); }
-.opacity-60{ @include opacity(0.60); }
-.opacity-70{ @include opacity(0.70); }
-.opacity-80{ @include opacity(0.80); }
-.opacity-90{ @include opacity(0.90); }
+// Fix Bootstrap's 'sticky-top' class in Safari
+// Use '.stick-top' with caution as it's not compatible with Google translate
 
-////////////////////////////////////////
-// Z-index
-////////////////////////////////////////
-
-.z-index-100,
-.z-index-200,
-.z-index-300,
-.z-index-400,
-.z-index-500,
-.z-index-600,
-.z-index-700,
-.z-index-800,
-.z-index-900
-
-{ position: relative; }
-
-.z-index-100{ z-index: 100; }
-.z-index-200{ z-index: 200; }
-.z-index-300{ z-index: 300; }
-.z-index-400{ z-index: 400; }
-.z-index-500{ z-index: 500; }
-.z-index-600{ z-index: 600; }
-.z-index-700{ z-index: 700; }
-.z-index-800{ z-index: 800; }
-.z-index-900{ z-index: 900; }
-
-////////////////////////////////////////
-// Background Opacity Classes
-////////////////////////////////////////
-
-.bg-opacity-black-10{ @include background-opacity(black, 0.1); }
-.bg-opacity-black-20{ @include background-opacity(black, 0.2); }
-.bg-opacity-black-30{ @include background-opacity(black, 0.3); }
-.bg-opacity-black-70{ @include background-opacity(black, 0.7); }
-.bg-opacity-black-80{ @include background-opacity(black, 0.8); }
-.bg-opacity-black-90{ @include background-opacity(black, 0.9); }
-
-.bg-opacity-white-80{ @include background-opacity(white, 0.8); }
-
-////////////////////////////////////////
-// Narrow, Meduim, and Wide Classes
-////////////////////////////////////////
-
-.narrow,
-.wide,
-.narrow, 
-.medium
-{ @extend .mx-auto; }
-
-.narrow{ max-width: $narrow-width; }
-.medium{ max-width: $medium-width; }
-.wide{ max-width: $wide-width; }
-
-////////////////////////////////////////
-// Text Shadow
-////////////////////////////////////////
-
-.text-shadow{ @include text-shadow; }
-
-.text-shadow-border{ @include text-shadow( 0, 0, $border-width, black ); }
-
-////////////////////////////////////////
-// Border Offset (Left and Right)
-////////////////////////////////////////
-
-// Note: Apply left and right negative margin to parent selector
-// when child selectors have border applied 
-
-.offset-border-x{
-  margin-left: -$border-width;
-  margin-right: -$border-width;
-}
-// Note: Apply left and right negative margin to selector
-// for edge to edge look witout using 'no-gutters' on '.row' 
-
-.offset-gutter-x{
-  margin-left: -$grid-gutter-width/2;
-  margin-right: -$grid-gutter-width/2;
-}
-
-.offset-x-gutter-x-twice{
-
-  @include media-breakpoint-up(lg) {
-      margin-left: -$grid-gutter-width*2;
-      margin-right: -$grid-gutter-width*2;
+@supports (position: -webkit-sticky) or (position: sticky) {
+  .sticky-top {
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+    z-index: 1020; 
   }
-
 }
 
 ////////////////////////////////////////
-// No Button Style
-////////////////////////////////////////
-
-// Note: Remove Bootstrap default padding, color, hover, and focus states to '.btn' class
-
-.no-btn-style{
-  color: currentColor;
-  font-weight: inherit;
-  border-color: transparent;
-  background-color: transparent;
-  line-height: 100%;
-  cursor:  pointer;
-  @extend .p-0;
-}
-
-////////////////////////////////////////
-// Buttons, links, and lists
-////////////////////////////////////////
-
-// Blended Link
-// Note: Apply to <a> to inherit color from parent and add text decoration 
-
-.blended-link,
-.blended-link:hover{
-  color: currentColor;
-  text-decoration: underline;
-}
-
-////////////////////////////////////////
-// Blockquotes and Figures
-////////////////////////////////////////
-
-figure{
-  @extend .my-0; 
-}
-
-.figure-img, 
-.figure-info 
-{ @extend .mb-1; }
-
-figcaption a { @extend .blended-link; }
-
-////////////////////////////////////////
-// IE 10 and 11 Fixes 
+// G. Internet Explorer 
 ////////////////////////////////////////
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {

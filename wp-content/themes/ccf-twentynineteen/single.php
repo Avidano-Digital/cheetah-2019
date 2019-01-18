@@ -9,23 +9,23 @@ get_header(); ?>
 
 <main id="content">
 
-    <div class="container-fluid bg-dark py-3">
+    <div class="container-fluid bg-info py-3">
 
         <div class="narrow">
-    <ul class="extensible-list horizontal fs-md text-white">
-        <li>News</li>
-        <li> <i class="fas fa-caret-right"></i></li>
-        <li>CCF Blog</i></li>
-    </ul>
+            <ul class="extensible-list horizontal fs-md text-white">
+                <li>News</li>
+                <li> <i class="fas fa-caret-right"></i></li>
+                <li>CCF Blog</i></li>
+            </ul>
 
         </div>
 
-    
     </div>
+    <!-- .container-fluid -->
 
     <?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
 
-    <article class="container-fluid blog py-8" id="primary-content">
+    <article class="container-fluid blog py-6" id="primary-content">
 
         <header class="narrow mb-5">
 
@@ -37,6 +37,7 @@ get_header(); ?>
             <?php endif; endforeach; ?> 
 
             <h1 class="display-3"><?php the_title(); ?></h1>
+
             <ul class="extensible-list horizontal fs-md">
                 <?php $author = get_field('author'); ?>
 
@@ -44,8 +45,7 @@ get_header(); ?>
                 
                 <li><?php the_date(); ?></li>
             </ul>
-            <p class="f-sans-serif "> </p>
-
+    
         </header>
 
 
@@ -159,7 +159,7 @@ get_header(); ?>
 
                 <div class="narrow mb-5">
 
-                    <figure class="figure my-0">
+                    <figure class="figure my-0" style="border:12px solid red">
                         <img class="figure-img" src="<?php echo $featured_image['image']; ?>" alt="<?php the_title(); ?>" />
                         <?php if( $featured_image['caption'] ): ?>
                             <figcaption class="figure-caption"><?php echo $featured_image['caption'] ?></figcaption>

@@ -50,7 +50,7 @@ $custom-link: true;
 
   .link{
     @extend .f-sans-serif;
-    @extend .font-weight-bold;
+    font-weight: $font-weight-bold;
     color: currentColor;
     cursor: pointer;
 
@@ -58,6 +58,7 @@ $custom-link: true;
 
     @include hover-focus {
       color: currentColor;
+      @include custom-underline;
     }
   }
 
