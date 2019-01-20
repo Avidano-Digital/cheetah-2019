@@ -3,7 +3,7 @@ Contributors: TigrouMeow, amekusa
 Tags: rename, seo, file, files, media, manager, image, renamer, optimize, backup, gutenberg, explorer
 Requires at least: 4.8
 Tested up to: 5.0
-Stable tag: 4.4.2
+Stable tag: 4.5.2
 
 File renamer with many options. For more information, please check https://meowapps.com/media-file-renamer.
 
@@ -13,7 +13,8 @@ File renamer with many options. For more information, please check https://meowa
 
 == Changelog ==
 
-= 4.4.2 =
+= 4.5.2 =
+* Update: Code cleaning, Youtube video.
 * Fix: Issue with updating the ALT field.
 
 = 4.4.0 =

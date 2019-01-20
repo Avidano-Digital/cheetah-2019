@@ -85,6 +85,32 @@
             'menu_icon' => 'dashicons-video-alt3'
             )
         );
+
+        register_post_type( 'Infographics',
+            array(
+                'labels' => array(
+                'name' => __( 'Infographics' ),
+                'singular_name' => __( 'Infographic' )
+            ),
+
+            'public' => true,
+            'rewrite' => array( 'slug' => 'infographics'),
+            'menu_icon' => 'dashicons-info'
+            )
+        );
+
+        register_post_type( 'Partnerships',
+            array(
+                'labels' => array(
+                'name' => __( 'Partnerships' ),
+                'singular_name' => __( 'Partnerships' )
+            ),
+
+            'public' => true,
+            'rewrite' => array( 'slug' => 'Partnerships'),
+            'menu_icon' => 'dashicons-groups'
+            )
+        );
     }
 
     add_action( 'init', __NAMESPACE__ . '\customize_post_object' );

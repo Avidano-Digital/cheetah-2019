@@ -591,6 +591,53 @@
 
     <?php endif; ?>
 
+    
+    <?php elseif( get_row_layout() == 'infographic_block' ):
+
+    $info = get_sub_field( 'content');
+    $post_object = $info;
+
+    ?>
+
+    <?php if( $post_object ): 
+
+    $post = $post_object;
+    setup_postdata( $post );
+
+    // custom field vars here
+
+    // $video_url = get_field('video_url');
+    // $video_id = substr( strrchr( $video_url, '/' ), 1 );
+
+    ?>
+
+        <div class="offset-gutter-x my-7">
+        
+        
+        
+        
+        
+        
+
+    <div class="bg-danger">
+        <div class="narrow">
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <span>Post Object Custom Field: </span>
+        </div>
+    </div>
+
+<?php the_content(); ?>
+
+
+    </div>
+        <!-- .offset-gutter-x -->
+
+
+
+    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+    
+    <?php endif; ?>
+
     <?php endif; /* text_block | video_block | banner_block | figure_block | two_figure_block | gallery_carousel_block  | thumnail_links_block | gallery_thumbnail_block */ ?>
 
     <?php endwhile; endif; /* article_content */ ?>

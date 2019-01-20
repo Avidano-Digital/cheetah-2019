@@ -251,6 +251,66 @@ get_header(); ?>
                                 
                 <?php endif; ?>
 
+                <?php $partnership_group = get_field('partnership_group');
+                
+                $post_object = $partnership_group; 
+
+                if( $post_object ): 
+
+                    // override $post
+                    $post = $post_object;
+                    setup_postdata( $post ); 
+
+                    $description = get_field('description');
+
+                    ?>
+
+                    <div class="narrow mb-6">
+
+                        <h3><?php the_title(); ?></h3>
+
+                        <p><?php echo $description; ?></p>
+
+                        <?php if( have_rows('partners') ): ?>
+
+                        <div class="my-3">
+
+                            <?php while( have_rows('partners') ): the_row(); 
+
+                            // vars
+                            $name = get_sub_field('name');
+                            $link = get_sub_field('link');
+
+                            ?>
+
+                            <dl class="row no-gutters justify-content-between border-top py-2 mb-0 fs-md">
+
+                                <dt class="col-md">
+                                    <?php echo $name; ?>
+                                </dt>
+
+                                <dd class="col-md-auto">
+                                    <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+                                </dd>
+
+                            </dl>
+
+                        <?php endwhile; ?>
+
+                        </div>
+                        <!-- .my-4 -->
+
+                        <a href="#" class="btn btn-primary">CCF Partnerships</a>
+
+                        <?php endif; ?>
+
+                    </div>
+                    <!-- .narrow -->
+
+                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+                    
+                <?php endif; ?>
+
                 </section>
                 <!-- end article -->
 
