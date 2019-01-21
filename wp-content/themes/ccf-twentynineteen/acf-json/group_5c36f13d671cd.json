@@ -1,6 +1,6 @@
 {
     "key": "group_5c36f13d671cd",
-    "title": "About Us",
+    "title": "Article Content",
     "fields": [
         {
             "key": "field_5c36f14f739be",
@@ -742,6 +742,13 @@
                 "operator": "==",
                 "value": "aboutus"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
         ]
     ],
     "menu_order": 10,
@@ -756,13 +763,11 @@
         "comments",
         "revisions",
         "slug",
-        "author",
         "format",
-        "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1548067215
+    "modified": 1548080435
 }

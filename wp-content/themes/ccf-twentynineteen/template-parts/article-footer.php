@@ -1,8 +1,8 @@
-<footer class="offset-gutter-x pattern-border-top">
+<footer>
 
-    <div class="container-fluid py-6">
+    <div class="container-fluid">
 
-        <div class="narrow">
+        <div class="narrow border-top pt-3 mb-6">
 
             <p class="f-sans-serif fs-md">
                 <em>Share with friends</em>

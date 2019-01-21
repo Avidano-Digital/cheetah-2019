@@ -300,8 +300,6 @@ get_header(); ?>
                         </div>
                         <!-- .my-4 -->
 
-                        <a href="#" class="btn btn-primary">CCF Partnerships</a>
-
                         <?php endif; ?>
 
                     </div>
@@ -315,6 +313,78 @@ get_header(); ?>
                 <!-- end article -->
 
                 <?php get_template_part('template-parts/article-footer'); ?>
+
+                <div class="pattern-border-top pt-8 pb-7 offset-gutter-x" id="related-news">
+                
+                    <div class="narrow">
+
+                        <p class="fs-rg f-sans-serif font-weight-light">Related Articles</p>
+
+                        <div class="row no-gutters py-2 border-top">
+
+                            <div class="col-4-auto order-last">
+                                <img src="https://via.placeholder.com/125x125" alt="">
+                            </div>
+                            <!-- .col -->
+
+                            <div class="col d-flex order-first">
+                                <div class="align-self-center">
+                                    <p class="fs-md mb-0">Date</p>
+                                    <h5>Post Headline</h5>
+                                </div>
+                            </div>
+                            <!-- .col -->
+
+                        </div>
+                        <!-- .row -->
+
+                        <div class="row no-gutters py-2 border-top">
+
+                            <div class="col-4-auto order-last">
+                                <img src="https://via.placeholder.com/125x125" alt="">
+                            </div>
+                            <!-- .col -->
+
+                            <div class="col d-flex order-first">
+                                <div class="align-self-center">
+                                    <p class="fs-md mb-0">Date</p>
+                                    <h5>Post Headline</h5>
+                                </div>
+                            </div>
+                            <!-- .col -->
+
+                        </div>
+                        <!-- .row -->
+
+                        <div class="row no-gutters py-2 border-top">
+
+                            <div class="col-4-auto order-last">
+                                <img src="https://via.placeholder.com/125x125" alt="">
+                            </div>
+                            <!-- .col -->
+
+                            <div class="col d-flex order-first">
+                                <div class="align-self-center">
+                                    <p class="fs-md mb-0">Date</p>
+                                    <h5>Post Headline</h5>
+                                </div>
+                            </div>
+                            <!-- .col -->
+
+                        </div>
+                        <!-- .row -->
+
+
+
+
+
+
+                    </div>
+
+                </div>
+                <!-- #related-news -->
+
+
 
             </div>
             <!-- .col -->

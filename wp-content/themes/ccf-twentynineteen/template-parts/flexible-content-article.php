@@ -1,4 +1,4 @@
-<section class="mb-7">
+<section>
 
     <?php if( have_rows('article_content') ): while ( have_rows('article_content') ) : the_row(); ?>
 
