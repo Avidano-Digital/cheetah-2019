@@ -450,60 +450,31 @@
 
     <?php endif; ?>
 
-    <?php elseif( get_row_layout() == 'gallery_thumbnail_block' ): ?>
+    <?php elseif( get_row_layout() == 'gallery_thumbnail_block' ):
 
+    $images = get_sub_field('images');
+        
+    ?>
+
+    <?php if( $images ): ?>
+    
     <div class="offset-gutter-x my-7">
 
         <div class="medium gallery-thumbnails">
 
             <div class="row matrix-gutter">
-
+                
+                <?php foreach( $images as $image ): ?>
+                
                 <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
+                    <a class="enlarge" href="<?php echo $image['url']; ?>" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<?php echo $image['alt']; ?>">
+                        <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                         <span class="fas fa-expand"></span>
                     </a>
                 </div>
                 <!-- .col -->
 
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-6">
-                    <a class="enlarge" href="https://placehold.it/1200x800.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="A custom footer text">
-                        <img src="https://placehold.it/600x400.jpg" class="img-fluid">
-                        <span class="fas fa-expand"></span>
-                    </a>
-                </div>
-                <!-- .col -->
+                <?php endforeach; ?>
 
             </div>
             <!-- .row -->
@@ -513,6 +484,8 @@
     
     </div>
     <!-- .offset-gutter-x -->
+
+    <?php endif; ?>
 
     <?php elseif( get_row_layout() == 'color_callout_block' ): ?>
 
