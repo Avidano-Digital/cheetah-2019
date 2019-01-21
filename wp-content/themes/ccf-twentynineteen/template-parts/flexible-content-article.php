@@ -202,13 +202,13 @@
     $figure_a = get_sub_field('figure_a');
 
     $image_a = $figure_a['image'];
-    $caption_a = $figure_a['caption'];
+    $caption_a = $image_a['caption'];
     $enlarge_a = $figure_a['enlarge'];
 
     $figure_b = get_sub_field('figure_b');
 
     $image_b = $figure_b['image'];
-    $caption_b = $figure_b['caption'];
+    $caption_b = $image_b['caption'];
     $enlarge_b = $figure_b['enlarge'];
 
     ?>
@@ -235,19 +235,17 @@
                     </a>
                         
                     <?php else : ?>
-
-                        <?php if( $image_a ): ?>
-                            <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
-                        <?php else : ?>
-                            <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
-                        <?php endif; ?>
-
+                        
+                    <?php if( $image_a ): ?>
+                        <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
+                    <?php else : ?>
+                        <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
                     <?php endif; ?>
 
+                    <?php endif; /* enlarge_a */ ?>
+
                     <?php if( $caption_a ): ?>
-
-                    <figcaption class="figure-caption px-2"><?php echo $caption_a; ?></figcaption>
-
+                        <figcaption class="figure-caption px-2"><?php echo $caption_a; ?></figcaption>
                     <?php endif; ?>
 
                 </figure>
@@ -268,24 +266,22 @@
                         <?php else : ?>
                             <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
                         <?php endif; ?>
-                        
+
                         <span class="fas fa-expand"></span>
                     </a>
                         
                     <?php else : ?>
-
-                        <?php if( $image_b ): ?>
-                            <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
-                        <?php else : ?>
-                            <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
-                        <?php endif; ?>
-
+                        
+                    <?php if( $image_b ): ?>
+                        <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
+                    <?php else : ?>
+                        <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
                     <?php endif; ?>
 
+                    <?php endif; /* enlarge_b */ ?>
+
                     <?php if( $caption_b ): ?>
-
-                    <figcaption class="figure-caption px-2"><?php echo $caption_b; ?></figcaption>
-
+                        <figcaption class="figure-caption px-2"><?php echo $caption_b; ?></figcaption>
                     <?php endif; ?>
 
                 </figure>

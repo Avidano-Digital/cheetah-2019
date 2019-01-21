@@ -371,9 +371,9 @@
                                 "group_5c36fde166e88"
                             ],
                             "display": "group",
-                            "layout": "row",
+                            "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0
+                            "prefix_name": 1
                         },
                         {
                             "key": "field_5c37021f21ff9",
@@ -392,9 +392,9 @@
                                 "group_5c36fde166e88"
                             ],
                             "display": "group",
-                            "layout": "row",
+                            "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0
+                            "prefix_name": 1
                         }
                     ],
                     "min": "",
@@ -764,5 +764,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1548001733
+    "modified": 1548067215
 }
