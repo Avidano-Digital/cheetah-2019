@@ -536,6 +536,21 @@
                             "delay": 0
                         }
                     ]
+                },
+                {
+                    "key": "field_5c45abf00b4ea",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
                 }
             ]
         }
@@ -571,5 +586,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1547279305
+    "modified": 1548069886
 }
