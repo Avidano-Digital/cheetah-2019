@@ -45,27 +45,17 @@ get_header(); ?>
             <div class="row matrix-gutter">
 
                 <div class="col-md">
-                    <select class="form-control" id="borough" required>
+                    <select class="form-control filter" id="topics" required>
                         <option>Filter by Topic</option>
-                        <option value="Camera Traps">Camera Traps</option>
-                        <option value="Cheetahs in the News">Cheetahs in the News</option>
-                        <option value="Conservation">Conservation</option>
-                        <option value="Education">Education</option>
-                        <option value="Life at CCF">Life at CCF</option>
-                        <option value="Science &amp; Research">Science &amp; Research</option>
-                        <option value="Success Stories">Success Stories</option>
-                        <option value="Life at CCF">Life at CCF</option>
-                        <option value="Visitor Stories">Visitor Stories</option>
+                        <?php showTopicFilters(); ?>
                     </select>
                 </div>
                 <!-- .col -->
 
                 <div class="col-md">
-                    <select class="form-control" id="borough" required>
+                    <select class="form-control filter" id="authors" required>
                         <option>Filter by Author</option>
-                        <option value="...">...</option>
-                        <option value="...">...</option>
-                        <option value="...">...</option>
+                        <?php showAuthorFilters(); ?>
                     </select>
                 </div>
                 <!-- .col -->
@@ -118,7 +108,7 @@ get_header(); ?>
                                     <span><em><?php echo $category_first; ?></em></span>
                                 </p>
                                 <h2 class="h4"><?php the_title(); ?></h2>
-                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex porro nostrum suscipit eaque nisi...</p>
+                                <p class="mb-0"><?php the_excerpt(); ?></p>
                                 <a class="link fs-md text-body" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Full Article</a>
                             </div>
                             <!-- .col -->

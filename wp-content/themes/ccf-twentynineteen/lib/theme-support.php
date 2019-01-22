@@ -179,3 +179,30 @@
         
         <?php endif;
     }
+
+    ////////////////////////////////////////
+    // News Article Filtering
+    ////////////////////////////////////////
+
+    function showTopicFilters() {
+
+        $current_query = get_queried_object();
+        $parent_category = $current_query->term_id;
+        $topics = get_categories(array( 'parent' => $parent_category ));
+
+        foreach ($topics as $topic) :
+            echo '<option data-category-id="'.$topic->cat_ID.'" value="'.$topic->cat_name.'">'.$topic->cat_name.'</option>';
+        endforeach;
+
+    }
+
+    function showAuthorFilters() {
+
+        $wp_user_query = new WP_User_Query(array('has_published_posts' => array('post')));
+        $authors = $wp_user_query->get_results();
+
+        foreach ($authors as $author) :
+            echo '<option data-author-id="'.$author->ID.'" value="'.$author->display_name.'">'.$author->display_name.'</option>';
+        endforeach;
+
+    }
