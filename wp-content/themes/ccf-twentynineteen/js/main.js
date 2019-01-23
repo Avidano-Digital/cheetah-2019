@@ -127,15 +127,38 @@ jQuery(document).ready(function ($) {
     ////////////////////////////////////////
 
     $('.filter').change(function() {
+
         var categoryID = $('#topics').find(':selected').data('category-id'),
+            year = $('#years').find(':selected').data('year'),
+            yearCategoryID = $('#years').data('category-id'),
             authorID = $('#authors').find(':selected').data('author-id'),
-            url = '/wp-json/wp/v2/posts/?_embed';
+            allCategoryIDs = [];
+
+        $('#topics option').each(function(){
+            id = $(this).data('category-id');
+            if (id) {
+                allCategoryIDs.push(id);
+            }
+        });
+
+        if (yearCategoryID) {
+            allCategoryIDs.push(yearCategoryID);            
+        }
+
+        allCategoryIDs.join(',');
+
+        url = '/wp-json/wp/v2/posts/?_embed&categories=' + allCategoryIDs;
+
         if (categoryID) {
-            url = url + '&categories=' + categoryID;
+            url = '/wp-json/wp/v2/posts/?_embed&categories=' + categoryID;
+        }
+        if (year) {
+            url = '/wp-json/wp/v2/posts/?_embed&after=' + year +'-01-01T00:00:00Z&before=' + year + '-12-31T23:59:59Z&categories=' + yearCategoryID;
         }
         if (authorID) {
             url = url + '&author=' + authorID;
         }
+
         $.ajax({
             type: 'GET',
             url: url,
@@ -147,8 +170,15 @@ jQuery(document).ready(function ($) {
                             title = this.title.rendered;
                             link = this.link;
                             excerpt = this.excerpt.rendered;
-                            image = this._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url;
-                            alt = this._embedded['wp:featuredmedia'][0].alt_text;
+                            image = '';
+                            alt = '';
+                            if (excerpt.length > 96) {
+                                excerpt = $.trim(excerpt).substring(0, 96) + "...";
+                            }
+                            if (this._embedded['wp:featuredmedia']) {
+                                image = this._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url;                                
+                                alt = this._embedded['wp:featuredmedia'][0].alt_text;
+                            }
                             category = this._embedded['wp:term'][0][0].name;
                             string = '<div class="row align-items-center mb-3"><div class="col-lg-6 mb-3 mb-lg-0"><a href="' + link + '" title="' + title + '"><img class="w-100" src="'+ image +'" alt="'+ alt +'"></a></div><!-- .col --><div class="col-lg-6"><p class="f-sans-serif fs-md fs-muted mb-0"><span><em>'+ category +'</em></span></p><h2 class="h4">' + title + '</h2><p class="mb-0">' + excerpt + '</p><a class="link fs-md text-body" href="' + link + '" title="' + title + '">Full Article</a></div><!-- .col --></div>';
                             $('.posts').append(string);

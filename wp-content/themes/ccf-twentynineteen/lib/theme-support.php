@@ -184,15 +184,50 @@
     // News Article Filtering
     ////////////////////////////////////////
 
-    function showTopicFilters() {
+    function showPrimaryFilters() {
 
-        $current_query = get_queried_object();
-        $parent_category = $current_query->term_id;
-        $topics = get_categories(array( 'parent' => $parent_category ));
+        $current_category = get_category(get_query_var('cat'));
+        $current_category_name = $current_category->name;
 
-        foreach ($topics as $topic) :
-            echo '<option data-category-id="'.$topic->cat_ID.'" value="'.$topic->cat_name.'">'.$topic->cat_name.'</option>';
-        endforeach;
+        if ($current_category_name == 'CCF Blog') {
+
+            $current_category_id = $current_category->cat_ID;
+            $topics = get_categories(array( 'parent' => $current_category_id ));
+
+            echo '<select class="form-control filter" id="topics" required><option>Filter by Topic</option>';
+
+            foreach ($topics as $topic) :
+                echo '<option data-category-id="'.$topic->cat_ID.'" value="'.$topic->cat_name.'">'.$topic->cat_name.'</option>';
+            endforeach;
+
+            echo '</select>';
+
+        }
+
+        if ($current_category_name != 'CCF Blog') {
+            $current_category_id = $current_category->cat_ID;
+            $news_posts = get_posts(
+                array(
+                    'category'=>$current_category_id,
+                    'orderby'=>'date'
+                )
+            );
+            $years = [];
+            foreach ($news_posts as $news_post) {
+                $date = substr($news_post->post_date, 0, 4);
+                if (!in_array($date,$years)) {
+                    array_push($years,$date);                
+                }
+            }
+
+            echo '<select class="form-control filter" id="years" data-category-id="'.$current_category_id.'" required><option>Filter by Year</option>';
+
+            foreach ($years as $year) {
+                echo '<option data-category-id="'.$current_category_id.'" data-year="'.$year.'" value="'.$year.'">'.$year.'</option>';
+            }
+
+            echo '</select>';            
+        }
 
     }
 
@@ -201,8 +236,43 @@
         $wp_user_query = new WP_User_Query(array('has_published_posts' => array('post')));
         $authors = $wp_user_query->get_results();
 
+        echo '<select class="form-control filter" id="authors" required><option>Filter by Author</option>';
+
         foreach ($authors as $author) :
             echo '<option data-author-id="'.$author->ID.'" value="'.$author->display_name.'">'.$author->display_name.'</option>';
         endforeach;
 
+        echo '</select>';
+
     }
+
+    ////////////////////////////////////////
+    // News Article Excerpts
+    ////////////////////////////////////////
+
+    function ccfExcerpt() {
+        $ccf_excerpt = get_the_excerpt();
+        $ccf_excerpt = (strlen($ccf_excerpt) > 96) ? substr($ccf_excerpt,0,93).'...' : $ccf_excerpt;
+        echo $ccf_excerpt;
+    }
+
+    ////////////////////////////////////////
+    // News Section Secondary Nav
+    ////////////////////////////////////////
+
+    function listParentCategoriesMenu() {
+        $categories = get_terms('category', array('parent' => 0));
+        $current_category = get_category(get_query_var('cat'));
+        $current_category_id = $current_category->cat_ID;
+        foreach ($categories as $category) {
+            $active = '';
+            if ($current_category_id == $category->term_id) {
+                $active = 'active';
+            }
+            echo '<li><a class="'. $active .'" href="/'. $category->slug .'">'. $category->name . '</a></li>';
+        }                
+    }
+
+
+
+

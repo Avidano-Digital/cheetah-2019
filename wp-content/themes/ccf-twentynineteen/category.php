@@ -19,15 +19,7 @@ get_header(); ?>
                             Cheetah News
                         </h1>
                         <ul class="extensible-list horizontal justify-content-center responsive-md" id="news-menu">
-                            <li>
-                                <a class="active"href="#1">CCF Blog</a>
-                            </li>
-                            <li>
-                                <a href="#1">Press Releases</a>
-                            </li>
-                            <li>
-                                <a href="#1">Press Kits</a>
-                            </li>
+                            <?php listParentCategoriesMenu(); ?>
                         </ul>
                     </div>
                     <!-- .narrow -->
@@ -45,18 +37,12 @@ get_header(); ?>
             <div class="row matrix-gutter">
 
                 <div class="col-md">
-                    <select class="form-control filter" id="topics" required>
-                        <option>Filter by Topic</option>
-                        <?php showTopicFilters(); ?>
-                    </select>
+                    <?php showPrimaryFilters(); ?>
                 </div>
                 <!-- .col -->
 
                 <div class="col-md">
-                    <select class="form-control filter" id="authors" required>
-                        <option>Filter by Author</option>
-                        <?php showAuthorFilters(); ?>
-                    </select>
+                    <?php showAuthorFilters(); ?>
                 </div>
                 <!-- .col -->
 
@@ -107,8 +93,8 @@ get_header(); ?>
                                 <p class="f-sans-serif fs-md fs-muted mb-0">
                                     <span><em><?php echo $category_first; ?></em></span>
                                 </p>
-                                <h2 class="h4"><?php the_title(); ?></h2>
-                                <p class="mb-0"><?php the_excerpt(); ?></p>
+                                <h2 class="h4"><?php the_title(); ?></h2>                        
+                                <p class="mb-0"><?php ccfExcerpt(); ?></p>
                                 <a class="link fs-md text-body" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Full Article</a>
                             </div>
                             <!-- .col -->
