@@ -13,7 +13,7 @@ get_header(); ?>
         <div class="card bg-dark">
             <img class="card-img opacity-40 show-on-mobile" src="<?php echo get_template_directory_uri(); ?>/images/ccf-blog.jpg" alt="Placeholder">
             <div class="card-img-overlay d-flex">
-                <div class="container align-self-center">
+                <div class="container-fluid align-self-center">
                     <div class="narrow text-white text-center text-shadow">
                         <h1 class="display-3 text-white mb-3">
                             Cheetah News

@@ -30,12 +30,12 @@ In this file:
 // Convert artbitrary breakpoints (i.e. 576px) to meaningful ones
 
 $grid-bp-xs:    0;
-$grid-bp-sm:    400px;
-$grid-bp-md:    800px;
-$grid-bp-lg:    1000px;
+$grid-bp-sm:    480px;
+$grid-bp-md:    720px;
+$grid-bp-lg:    960px;
 $grid-bp-xl:    1200px;
-$grid-bp-xxl:   1400px;
-$grid-bp-xxxl:  1600px;
+$grid-bp-xxl:   1420px;
+$grid-bp-xxxl:  1660px;
 
 $grid-breakpoints: (
   xs:   $grid-bp-xs,
@@ -46,6 +46,7 @@ $grid-breakpoints: (
   xxl:  $grid-bp-xxl,
   xxxl: $grid-bp-xxxl
 );
+
 ////////////////////////////////////////
 // B. Spacing utilities
 ////////////////////////////////////////
