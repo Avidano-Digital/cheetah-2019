@@ -43,25 +43,23 @@ get_header(); ?>
 
             <?php endif; endforeach; ?> 
 
-            <h1 class="display-3"><?php the_title(); ?></h1>
+            <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
 
-            <ul class="extensible-list horizontal fs-md">
+            <ul class="extensible-list horizontal ">
 
                 <li>
                 
-                <div class="rounded-circle" style="overflow:hidden;">
-                    <?php echo $author_avatar; ?>
-                </div> 
+                    <div class="rounded-circle" style="overflow:hidden;">
+                        <?php echo $author_avatar; ?>
+                    </div> 
                      
                 </li>
             
-                <li class="font-weight-bold">by&nbsp;<a href="#" class="blended-link">
-                    <?php echo $author_name; ?></a>
+                <li class="fs-md">
+                    <strong class="d-block">by&nbsp;<?php echo $author_name; ?></strong>
+                    <span class="text-muted"><?php the_date(); ?></span> 
                 </li>
                 
-                <li>
-                    <?php the_date(); ?>
-                </li>
             </ul>
     
         </header>
