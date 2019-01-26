@@ -8,7 +8,7 @@ get_header(); ?>
 
 <main id="content">
 
-    <div class="container-fluid bg-info py-3">
+    <div class="container-fluid bg-info cheetah-spots py-4">
 
         <div class="narrow">
             <ul class="extensible-list horizontal fs-md text-white">

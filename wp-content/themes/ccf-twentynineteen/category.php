@@ -55,7 +55,7 @@ get_header(); ?>
     </div>
     <!-- .posts-filter -->
 
-    <div class="container-fluid py-6">
+    <div class="container-fluid py-7">
 
         <div class="wide px-lg-2">
 
@@ -110,15 +110,6 @@ get_header(); ?>
 
                     <?php echo paginate_links(); ?>
 
-
-
-
-
-
-
-
-
-
                 </div>
                 <!-- .col -->
                 
@@ -127,7 +118,44 @@ get_header(); ?>
                     <div class="row matrix-gutter">
 
                         <div class="col-md-6 col-xl-12"> 
-                            <a href="#" target="_blank">
+
+                            <div class="row matrix-border mb-2">
+
+                                <div class="col-12">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/cta-sign-up.jpg" alt="Placeholder">
+                                </div>
+
+                                <div class="col-12">
+                                    <a class="btn btn-block btn-primary" href="#" title="CCF Newsletters">CCF Newsletters</a>
+                                </div>
+
+                            </div>
+                            <!-- .matrix-border -->
+
+                            <div class="row matrix-border mb-2">
+
+                                <div class="col-12">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/cta-huffpost.jpg" alt="Placeholder">
+                                </div>
+
+                                <div class="col-12">
+                                    <a class="btn btn-block btn-primary" href="#" title="Dr. Marker's Blog">Dr. Marker on HuffPost</a>
+                                </div>
+
+                            </div>
+                            <!-- .matrix-border -->
+
+
+
+
+
+
+
+
+
+
+
+                            <a class="d-none" href="#" target="_blank">
                                 <div class="card bg-dark">
                                     <img class="card-img opacity-40" src="<?php echo get_template_directory_uri(); ?>/images/cta-sign-up.jpg" alt="Placeholder">
                                     <div class="card-img-overlay d-flex">
@@ -146,28 +174,6 @@ get_header(); ?>
                         </div>
                         <!-- .col -->
 
-                        <div class="col-md-6 col-xl-12">
-                            <a href="#" target="_blank">
-                                <div class="card bg-dark">
-                                    <img class="card-img opacity-40" src="<?php echo get_template_directory_uri(); ?>/images/cta-huffpost.jpg" alt="Placeholder">
-                                    <div class="card-img-overlay d-flex">
-                                        <div class="align-self-end w-100">
-                                            <div class="text-white text-center">
-                                                <p class="f-sans-serif fs-md text-shadow">
-                                                    Dr. Laurie Marker is a contributing author to the news and opinion website Huffpost.
-                                                </p>
-                                                <span class="btn btn-primary">Dr. Marker's Blog</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            <!-- .card -->
-                            </a>
-                            <!-- .card -->
-                            </a>
-                            
-                        </div>
-                        <!-- .col -->
 
                     </div>
 

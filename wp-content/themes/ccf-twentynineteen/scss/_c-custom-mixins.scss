@@ -95,31 +95,21 @@ In this file:
 // E. Background image
 ////////////////////////////////////////
 
-$image_url: '/wp-content/themes/ccf-twentynineteen/images/';
+$background-image-path: '/wp-content/themes/ccf-twentynineteen/images/';
 
 @mixin apply-background-image(
-
     $image: '01', 
-    $extension: '.svg', 
-    $repeat: true, 
-    $cover: false, 
-    $width: null, 
-    $height: null
-  
+    $extension: '.svg',
+    $cover: false
   ){
-    
+  
   @if $extension == '.svg'{
-    background-image: url($image_url + $image + $extension);
-    background-image: url($image_url + $image + $extension), none;
-  } @else {
-    background-image: url($image_url + $image + $extension);
-  }
+    background-image: url($background-image-path + $image + $extension);
+    background-image: url($background-image-path + $image + $extension), none;
 
-  @if $repeat{
-    background-repeat: repeat;
-  } @else{
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size:auto;
+  } @else {
+    background-image: url($background-image-path + $image + $extension);
   }
 
   @if $cover{
@@ -129,5 +119,5 @@ $image_url: '/wp-content/themes/ccf-twentynineteen/images/';
   } @else{
     background-repeat: repeat;
   }
-  
+
 }

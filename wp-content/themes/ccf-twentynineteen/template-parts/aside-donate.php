@@ -18,6 +18,7 @@
                     </div>
                 </div>
             </div>
+            <!-- .card -->
         </div>
 
         <div class="col-xxxl-6">
@@ -27,6 +28,7 @@
             <a class="btn btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
         </div>
 
-    </div><!-- .matrix-border -->
+    </div>
+    <!-- .matrix-border -->
 
 </div>

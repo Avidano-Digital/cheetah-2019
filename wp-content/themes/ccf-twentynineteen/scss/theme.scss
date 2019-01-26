@@ -304,13 +304,13 @@ $leaflet-button-color: white;
   &::before {
     top: 0;
     
-    @include apply-background-image('pattern-01', '.svg');
+    @include apply-background-image('pattern-01');
   }
 
   &::after {
     bottom: 0;
     
-    @include apply-background-image('pattern-02', '.svg');
+    @include apply-background-image('pattern-02');
   }
 }
 
