@@ -6,7 +6,6 @@ Template Name: News
 
 get_header(); ?>
 
-
 <main id="content">
 
     <div class="container-fluid bg-info py-3">
@@ -14,8 +13,8 @@ get_header(); ?>
         <div class="narrow">
             <ul class="extensible-list horizontal fs-md text-white">
                 <li>News</li>
-                <li> <i class="fas fa-caret-right"></i></li>
-                <li>CCF Blog</i></li>
+                <li><span class="fas fa-caret-right"></span></li>
+                <li>CCF Blog</li>
             </ul>
 
         </div>
@@ -45,7 +44,7 @@ get_header(); ?>
 
             <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
 
-            <ul class="extensible-list horizontal ">
+            <ul class="extensible-list horizontal">
 
                 <li>
                 
@@ -149,10 +148,6 @@ get_header(); ?>
       </div>
 
     </section>
-
-
-
-
 
 </main>
 <!-- #content -->

@@ -7106,35 +7106,6 @@
 		"oAP": "/wp-content/plugins/enable-media-replace/enable-media-replace.php",
 		"oF": 0
 		},
-	"/wp-content/plugins/enable-media-replace/img/index.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/img/index.php",
-		"oF": 0
-		},
-	"/wp-content/plugins/enable-media-replace/img/shortpixel.png": {
-		"ft": 32768,
-		"iS": 5542,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/img/shortpixel.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/wp-content/plugins/enable-media-replace/img/sp.png": {
-		"ft": 32768,
-		"iS": 4736,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/img/sp.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/wp-content/plugins/enable-media-replace/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -7156,13 +7127,6 @@
 		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-da_DK.po",
 		"oF": 0
 		},
-	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace-de_DE.mo": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-de_DE.mo",
-		"oF": 0
-		},
 	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace-de_DE.po": {
 		"cB": 0,
 		"ft": 8192,
@@ -7175,20 +7139,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-fr_FR.mo",
-		"oF": 0
-		},
-	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace-fr_FR.po": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-fr_FR.po",
-		"oF": 0
-		},
-	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace-it_IT.mo": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-it_IT.mo",
 		"oF": 0
 		},
 	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace-it_IT.po": {
@@ -7219,25 +7169,11 @@
 		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-nl_NL.mo",
 		"oF": 0
 		},
-	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace-nl_NL.po": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-nl_NL.po",
-		"oF": 0
-		},
 	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace-pt_BR.mo": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-pt_BR.mo",
-		"oF": 0
-		},
-	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace-pt_BR.po": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-pt_BR.po",
 		"oF": 0
 		},
 	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace-pt_PT.mo": {
@@ -7289,13 +7225,6 @@
 		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-zh_CN.mo",
 		"oF": 0
 		},
-	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace-zh_CN.po": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/languages/enable-media-replace-zh_CN.po",
-		"oF": 0
-		},
 	"/wp-content/plugins/enable-media-replace/languages/enable-media-replace.mo": {
 		"cB": 0,
 		"ft": 8192,
@@ -7322,52 +7251,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/enable-media-replace/LICENSE",
-		"oF": 0
-		},
-	"/wp-content/plugins/enable-media-replace/notice.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/notice.php",
-		"oF": 0
-		},
-	"/wp-content/plugins/enable-media-replace/popup.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/popup.php",
-		"oF": 0
-		},
-	"/wp-content/plugins/enable-media-replace/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/wp-content/plugins/enable-media-replace/readme.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/readme.txt",
-		"oF": 0
-		},
-	"/wp-content/plugins/enable-media-replace/upload.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/enable-media-replace/upload.php",
 		"oF": 0
 		},
 	"/wp-content/plugins/gtranslate/16.png": {

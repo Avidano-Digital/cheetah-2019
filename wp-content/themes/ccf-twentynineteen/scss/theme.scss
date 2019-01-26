@@ -501,6 +501,16 @@ figure.right{
   }
 }
 
-.two-figure-block{
-  border:12px solid red; 
+  p:empty {
+    display: none !important;
+ }
+
+.blog{
+  .banner-block,
+  .two-figure-block{
+    max-width:1800px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
 }

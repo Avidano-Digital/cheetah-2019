@@ -66,30 +66,32 @@
 
     ?>
 
-    <div class="banner-block offset-gutter-x my-7">
+    <div class="offset-gutter-x">
+    
+        <div class="banner-block my-7">
 
-        <figure class="figure w-100">
+            <figure class="figure w-100">
 
-            <div class="featured-panel responsive-xl figure-info">
+                <div class="featured-panel responsive-xl figure-info">
 
-                <div class="card bg-info">
+                    <div class="card bg-info">
 
-                    <?php if( $image ): ?>
+                        <?php if( $image ): ?>
                         <div class="overlay-gradient-y-black-tall">
                             <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
                         </div>
-                    <?php else : ?>
+                        <?php else : ?>
                         <div class="overlay-gradient-y-black-tall">
                             <img class="card-img" src="https://via.placeholder.com/1200x800" alt="Placeholder">
                         </div>
-                    <?php endif; ?>
+                        <?php endif; ?>
 
-                    <div class="card-img-overlay d-flex">
-                        <div class="align-self-end">
-                            <div class="container px-0 py-3">
-                                <div class="narrow text-shadow">
+                        <div class="card-img-overlay d-flex">
+                            <div class="align-self-end">
+                                <div class="container px-0 py-3">
+                                    <div class="narrow text-shadow">
 
-                                    <?php if( $type == 'Summary' ) : ?>
+                                        <?php if( $type == 'Summary' ) : ?>
 
                                         <h3 class="text-primary">
                                             <?php echo $summary_headline; ?>
@@ -107,7 +109,7 @@
 
                                         </div>
 
-                                    <?php elseif( $type == 'Quote' ) : ?>
+                                        <?php elseif( $type == 'Quote' ) : ?>
 
                                         <blockquote class="blockquote text-white">
 
@@ -122,32 +124,35 @@
 
                                         </blockquote>
 
-                                    <?php endif; ?>
+                                        <?php endif; ?>
 
+                                    </div>
+                                    <!-- .narrow -->
                                 </div>
-                                <!-- .narrow -->
+                                <!-- .container -->
                             </div>
-                            <!-- .container -->
+                            <!-- .align-self-center -->
                         </div>
-                        <!-- .align-self-center -->
+                        <!-- .card-img-overlay -->
                     </div>
-                    <!-- .card-img-overlay -->
+                    <!-- .card -->
+
                 </div>
-                <!-- .card -->
+                <!-- .featured-panel -->
 
-            </div>
-            <!-- .featured-panel -->
-
-            <div class="container">
-                <div class="narrow">
-                    <figcaption class="figure-caption">
-                        <?php echo $caption; ?>
-                    </figcaption>
+                <div class="container">
+                    <div class="narrow">
+                        <figcaption class="figure-caption">
+                            <?php echo $caption; ?>
+                        </figcaption>
+                    </div>
                 </div>
-            </div>
-        </figure>
-        <!-- figure -->
+            </figure>
+            <!-- figure -->
 
+        </div>
+        <!-- .banner-block -->
+    
     </div>
     <!-- .offset-gutter-x -->
 
@@ -212,88 +217,93 @@
     $enlarge_b = $figure_b['enlarge'];
 
     ?>
+    
+    <div class="offset-gutter-x">
+    
+        <div class="two-figure-block my-7">
 
-    <div class="two-figure-block offset-gutter-x my-6">
+            <div class="row matrix-gutter">
 
-        <div class="row matrix-gutter">
+                <div class="col-sm-6">
 
-            <div class="col-sm-6">
+                    <figure class="figure my-0">
 
-                <figure class="figure my-0">
+                        <?php if( $enlarge_a ): ?>
 
-                    <?php if( $enlarge_a ): ?>
+                        <a class="figure-img enlarge" href="<?php echo $image_a['url']; ?>" title="<?php echo $caption; ?>" data-toggle="lightbox" data-footer="<?php echo $caption_a; ?>">
+                            
+                            <?php if( $image_a ): ?>
+                                <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
+                            <?php else : ?>
+                                <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
+                            <?php endif; ?>
 
-                    <a class="figure-img enlarge" href="<?php echo $image_a['url']; ?>" title="<?php echo $caption; ?>" data-toggle="lightbox" data-footer="<?php echo $caption_a; ?>">
-                        
+                            <span class="fas fa-expand"></span>
+                        </a>
+                            
+                        <?php else : ?>
+                            
                         <?php if( $image_a ): ?>
                             <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
                         <?php else : ?>
                             <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
                         <?php endif; ?>
 
-                        <span class="fas fa-expand"></span>
-                    </a>
-                        
-                    <?php else : ?>
-                        
-                    <?php if( $image_a ): ?>
-                        <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
-                    <?php else : ?>
-                        <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
-                    <?php endif; ?>
+                        <?php endif; /* enlarge_a */ ?>
 
-                    <?php endif; /* enlarge_a */ ?>
+                        <?php if( $caption_a ): ?>
+                            <figcaption class="figure-caption px-2"><?php echo $caption_a; ?></figcaption>
+                        <?php endif; ?>
 
-                    <?php if( $caption_a ): ?>
-                        <figcaption class="figure-caption px-2"><?php echo $caption_a; ?></figcaption>
-                    <?php endif; ?>
+                    </figure>
 
-                </figure>
+                </div>
+                <!-- .col -->
 
-            </div>
-            <!-- .col -->
+                <div class="col-sm-6">
 
-            <div class="col-sm-6">
+                    <figure class="figure my-0">
 
-                <figure class="figure my-0">
+                        <?php if( $enlarge_b ): ?>
 
-                    <?php if( $enlarge_b ): ?>
+                        <a class="figure-img enlarge" href="<?php echo $image_b['url']; ?>" title="<?php echo $caption; ?>" data-toggle="lightbox" data-footer="<?php echo $caption_b; ?>">
+                            
+                            <?php if( $image_b ): ?>
+                                <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
+                            <?php else : ?>
+                                <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
+                            <?php endif; ?>
 
-                    <a class="figure-img enlarge" href="<?php echo $image_b['url']; ?>" title="<?php echo $caption; ?>" data-toggle="lightbox" data-footer="<?php echo $caption_b; ?>">
-                        
+                            <span class="fas fa-expand"></span>
+                        </a>
+                            
+                        <?php else : ?>
+                            
                         <?php if( $image_b ): ?>
                             <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
                         <?php else : ?>
                             <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
                         <?php endif; ?>
 
-                        <span class="fas fa-expand"></span>
-                    </a>
-                        
-                    <?php else : ?>
-                        
-                    <?php if( $image_b ): ?>
-                        <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
-                    <?php else : ?>
-                        <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
-                    <?php endif; ?>
+                        <?php endif; /* enlarge_b */ ?>
 
-                    <?php endif; /* enlarge_b */ ?>
+                        <?php if( $caption_b ): ?>
+                            <figcaption class="figure-caption px-2"><?php echo $caption_b; ?></figcaption>
+                        <?php endif; ?>
 
-                    <?php if( $caption_b ): ?>
-                        <figcaption class="figure-caption px-2"><?php echo $caption_b; ?></figcaption>
-                    <?php endif; ?>
+                    </figure>
 
-                </figure>
+                </div>
+                <!-- .col -->
 
             </div>
-            <!-- .col -->
+            <!-- .row -->
 
         </div>
-        <!-- .row -->
+        <!-- .two-figure-block -->
 
     </div>
-    <!-- .two-figure-block -->
+    <!-- .offset-gutter-x -->
 
     <?php elseif( get_row_layout() == 'gallery_carousel_block' ): 
             
@@ -306,98 +316,106 @@
 
     <?php if( $images ): ?>
 
-    <div class="gallery-carousel-block offset-gutter-x my-7">
+    <div class="offset-gutter-x">
+    
+        <div class="gallery-carousel-block my-7">
 
-        <div class="carousel slide carousel-fade" data-ride="carousel" data-keyboard="true" data-interval="false" id="carousel-gallery" dir="ltr">
+            <div class="carousel slide carousel-fade" data-ride="carousel" data-keyboard="true" data-interval="false" id="carousel-gallery"
+                dir="ltr">
 
-            <div class="carousel-outer">
+                <div class="carousel-outer">
 
-                <div class="carousel-arrows d-none d-md-block">
+                    <div class="carousel-arrows d-none d-md-block">
 
-                    <ul>
-                        <li>
-                            <a class="half-circle right" href="#carousel-gallery" role="button" data-slide="prev">
-                                <span class="fas fa-arrow-left m-auto" title="Previous"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="half-circle left text-white d-flex" href="#carousel-gallery" role="button" data-slide="next">
-                                <span class="fas fa-arrow-right m-auto" title="Next"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- .row -->
-
-                </div>
-                <!-- .carousel-arrows -->
-
-                <div class="carousel-inner">
-
-                    <?php foreach( $images as $image ): ?>
-
-                    <div class="carousel-item <?php if($count_a == 0){ echo 'active'; } ?>">
-
-                        <img class="w-100" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-
-                        <div class="carousel-caption bg-opacity-black-60">
-                            <?php if ($image['caption']) : ?>
-                            <p class="f-sans-serif text-body shadow-sm rounded fs-md ">
-                                <?php echo $image['caption']; ?>
-                            </p>
-                            <?php endif; ?>
-                        </div>
+                        <ul>
+                            <li>
+                                <a class="half-circle right" href="#carousel-gallery" role="button" data-slide="prev">
+                                    <span class="fas fa-arrow-left m-auto" title="Previous"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="half-circle left text-white d-flex" href="#carousel-gallery" role="button" data-slide="next">
+                                    <span class="fas fa-arrow-right m-auto" title="Next"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- .row -->
 
                     </div>
-                    <!-- .carousel-item -->
+                    <!-- .carousel-arrows -->
 
-                    <?php $count_a++; endforeach; ?>
-
-                </div>
-                <!-- .carousel-inner -->
-
-            </div>
-            <!-- .carousel-outer  -->
-
-            <div class="row no-gutters align-items-center justify-content-between py-1">
-
-                <div class="col-auto text-left px-2 d-md-none">
-                    <a class="no-btn-style" href="#carousel-gallery" role="button" data-slide="prev">
-                        <span class="fas fa-arrow-left" title="Previous"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </div>
-                <!-- .col -->
-
-                <div class="col">
-
-                    <ol class="carousel-indicators">
+                    <div class="carousel-inner">
 
                         <?php foreach( $images as $image ): ?>
 
-                        <li class="<?php if($count_b == 0){ echo 'active'; } ?>" data-target="#carousel-gallery" data-slide-to="<?php echo $count_b; ?>" role="button">
-                            <button class="no-btn-style"> <?php echo ($count_b + 1); ?></button>
-                        </li>
+                        <div class="carousel-item <?php if($count_a == 0){ echo 'active'; } ?>">
 
-                        <?php $count_b++; endforeach; ?>
+                            <img class="w-100" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 
-                    </ol>
+                            <div class="carousel-caption bg-opacity-black-60">
+                                <?php if ($image['caption']) : ?>
+                                <p class="f-sans-serif text-body shadow-sm rounded fs-md ">
+                                    <?php echo $image['caption']; ?>
+                                </p>
+                                <?php endif; ?>
+                            </div>
+
+                        </div>
+                        <!-- .carousel-item -->
+
+                        <?php $count_a++; endforeach; ?>
+
+                    </div>
+                    <!-- .carousel-inner -->
 
                 </div>
-                <!-- .col -->
+                <!-- .carousel-outer  -->
 
-                <div class="col-auto text-right px-2 d-md-none">
-                    <a class="no-btn-style" href="#carousel-gallery" role="button" data-slide="next">
-                        <span class="fas fa-arrow-right" title="Next"></span>
-                    </a>
+                <div class="row no-gutters align-items-center justify-content-between py-1">
+
+                    <div class="col-auto text-left px-2 d-md-none">
+                        <a class="no-btn-style" href="#carousel-gallery" role="button" data-slide="prev">
+                            <span class="fas fa-arrow-left" title="Previous"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col">
+
+                        <ol class="carousel-indicators">
+
+                            <?php foreach( $images as $image ): ?>
+
+                            <li class="<?php if($count_b == 0){ echo 'active'; } ?>" data-target="#carousel-gallery"
+                                data-slide-to="<?php echo $count_b; ?>" role="button">
+                                <button class="no-btn-style">
+                                    <?php echo ($count_b + 1); ?></button>
+                            </li>
+
+                            <?php $count_b++; endforeach; ?>
+
+                        </ol>
+
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-auto text-right px-2 d-md-none">
+                        <a class="no-btn-style" href="#carousel-gallery" role="button" data-slide="next">
+                            <span class="fas fa-arrow-right" title="Next"></span>
+                        </a>
+                    </div>
+                    <!-- .col -->
+
                 </div>
-                <!-- .col -->
+                <!-- .row -->
 
             </div>
-            <!-- .row -->
+            <!-- #carousel-gallery -->
 
         </div>
-        <!-- #carousel-gallery -->
-
+        <!-- .gallery-carousel-block -->
+    
     </div>
     <!-- .offset-gutter-x -->
 
@@ -407,7 +425,7 @@
 
     <?php if( have_rows('links') ): ?>
 
-    <div class="thumbnail-links-block offset-gutter-x my-7">
+    <div class="thumbnail-links-block my-7">
 
         <div class="medium">
 
@@ -442,7 +460,7 @@
         <!-- .medium -->
 
     </div>
-    <!-- .offset-gutter-x -->
+    <!-- .thumbnail-links-block -->
 
     <?php endif; ?>
 

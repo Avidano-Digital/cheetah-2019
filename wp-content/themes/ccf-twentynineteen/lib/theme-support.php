@@ -194,7 +194,7 @@
             $current_category_id = $current_category->cat_ID;
             $topics = get_categories(array( 'parent' => $current_category_id ));
 
-            echo '<select class="form-control filter" id="topics" required><option>Filter by Topic</option>';
+            echo '<select class="form-control filter" id="topics" required><option>All Topics</option>';
 
             foreach ($topics as $topic) :
                 echo '<option data-category-id="'.$topic->cat_ID.'" value="'.$topic->cat_name.'">'.$topic->cat_name.'</option>';
@@ -236,7 +236,7 @@
         $wp_user_query = new WP_User_Query(array('has_published_posts' => array('post')));
         $authors = $wp_user_query->get_results();
 
-        echo '<select class="form-control filter" id="authors" required><option>Filter by Author</option>';
+        echo '<select class="form-control filter" id="authors" required><option>All Authors</option>';
 
         foreach ($authors as $author) :
             echo '<option data-author-id="'.$author->ID.'" value="'.$author->display_name.'">'.$author->display_name.'</option>';
@@ -252,9 +252,11 @@
 
     function ccfExcerpt() {
         $ccf_excerpt = get_the_excerpt();
-        $ccf_excerpt = (strlen($ccf_excerpt) > 96) ? substr($ccf_excerpt,0,93).'...' : $ccf_excerpt;
+        // $ccf_excerpt = ( strlen($ccf_excerpt ) > 200) ? substr($ccf_excerpt,0,93) . '...' : $ccf_excerpt;
         echo $ccf_excerpt;
     }
+
+    remove_filter( 'the_excerpt', 'wpautop' );
 
     ////////////////////////////////////////
     // News Section Secondary Nav
@@ -272,7 +274,3 @@
             echo '<li><a class="'. $active .'" href="/'. $category->slug .'">'. $category->name . '</a></li>';
         }                
     }
-
-
-
-

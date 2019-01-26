@@ -164,7 +164,9 @@ jQuery(document).ready(function ($) {
             url: url,
             success: function(data){
                 $('.posts').fadeOut('fast',function(){
+
                     $('.posts').html('');
+
                     if (!$.isEmptyObject(data)) {
                         $(data).each(function(){
                             title = this.title.rendered;
@@ -172,9 +174,9 @@ jQuery(document).ready(function ($) {
                             excerpt = this.excerpt.rendered;
                             image = '';
                             alt = '';
-                            if (excerpt.length > 96) {
-                                excerpt = $.trim(excerpt).substring(0, 96) + "...";
-                            }
+                            // if (excerpt.length > 96) {
+                            //     excerpt = $.trim(excerpt).substring(0, 96) + "...";
+                            // }
                             if (this._embedded['wp:featuredmedia']) {
                                 image = this._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url;                                
                                 alt = this._embedded['wp:featuredmedia'][0].alt_text;
@@ -184,11 +186,13 @@ jQuery(document).ready(function ($) {
                             $('.posts').append(string);
                         });
                     }
+                    
                     else {
                         string = '<div class="row align-items-center mb-3"><div class="col-lg-12 mb-3 mb-lg-0">Sorry, there are no news items that match your criteria.<!-- .col --></div></div>';
                         $('.posts').append(string);
                     }
                 });
+
                 $('.posts').fadeIn('fast');
             }
         });

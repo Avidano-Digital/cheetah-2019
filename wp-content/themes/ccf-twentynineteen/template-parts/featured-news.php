@@ -4,7 +4,7 @@
 
     global $post;
     
-    $args = array( 'category' => 'news', 'posts_per_page' => 3, 'orderby' => 'date' );
+    $args = array( 'category' => 'ccf-blog', 'posts_per_page' => 3, 'orderby' => 'date' );
     $postslist = get_posts( $args );
     
     foreach ( $postslist as $post ) :
