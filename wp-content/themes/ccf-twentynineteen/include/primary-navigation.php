@@ -63,11 +63,10 @@
         </ul>
     </li>
     <li> 
-        <a <?php if($inside_news !== false ) : ?> class="active" <?php endif; ?> href="#1" title="News">News</a>
+        <a <?php if( $inside_news !== false ) : ?> class="active" <?php endif; ?> href="#1" title="News">News</a>
         <ul class="extensible-list sub">
             <li><a href="/ccf-blog">CCF Blog</a></li>
             <li><a href="#1">Press Releases</a></li>
-            <li><a href="#1">Press Kit</a></li>
         </ul>
     </li>
     <li>
