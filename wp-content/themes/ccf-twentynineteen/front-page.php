@@ -220,13 +220,11 @@
     </section>
     <!-- #introduction -->
 
-    <section class="py-5 py-xl-7">
-
-      <h2 class="sr-only">News and Videos from CCF</h2>
+    <section class="py-7">
       
-      <section class="container-fluid mb-5" id="latest-news">
+      <div class="container mb-5" id="latest-news">
 
-        <div class="wide px-lg-2">
+        <div class="wides">
 
           <header class="row align-items-end justify-content-between mb-3">
             <div class="col-md-auto">
@@ -245,7 +243,7 @@
         </div>
         <!-- .wide -->
 
-      </section>
+      </div>
       <!-- #latest-news -->
 
       <?php get_template_part('template-parts/featured-video-group'); ?>
@@ -316,7 +314,7 @@
 
       ?>
 
-      <div class="container-fluid wide">
+      <div class="container">
 
         <?php if( $headline): ?>
         <h3 class="display-4 mb-5">

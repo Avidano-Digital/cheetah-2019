@@ -10,7 +10,7 @@
     foreach ( $postslist as $post ) :
     setup_postdata( $post ); ?>
 
-    <div class="col-md-4 mb-5">
+    <div class="col-lg-4 mb-5 mb-lg-0">
     
         <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
         
@@ -28,7 +28,7 @@
 
             </div>
 
-            <h5><?php the_title(); ?></h5>
+            <p class="h5"><?php the_title(); ?></p>
 
         </a>
 
@@ -39,101 +39,6 @@
     endforeach; 
     wp_reset_postdata();
     ?>
-
-    <?php if ( is_category( 'ccf-blog' ) ) : ?>
-
-    <div class="col-md-4 mb-5">
-        <a class="featured-article" href="#">
-            <div>
-                <span>November 12, 2018</span>
-                <img class="w-100" src="https://via.placeholder.com/900x525" alt="Placeholder">
-            </div>
-            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-        </a>
-    </div>
-    <!-- .col -->
-    <div class="col-md-4 mb-5">
-        <a class="featured-article" href="#">
-            <div>
-                <span>November 12, 2018</span>
-                <img class="w-100" src="https://via.placeholder.com/900x525" alt="Placeholder">
-            </div>
-            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-        </a>
-    </div>
-    <!-- .col -->
-    <div class="col-md-4 mb-5">
-        <a class="featured-article" href="#">
-            <div>
-                <span>November 12, 2018</span>
-                <img class="w-100" src="https://via.placeholder.com/900x525" alt="Placeholder">
-            </div>
-            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-        </a>
-    </div>
-    <!-- .col -->
-    <div class="col-md-4 mb-5">
-        <a class="featured-article" href="#">
-            <div>
-                <span>November 12, 2018</span>
-                <img class="w-100" src="https://via.placeholder.com/900x525" alt="Placeholder">
-            </div>
-            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-        </a>
-    </div>
-    <!-- .col -->
-    <div class="col-md-4 mb-5">
-        <a class="featured-article" href="#">
-            <div>
-                <span>November 12, 2018</span>
-                <img class="w-100" src="https://via.placeholder.com/900x525" alt="Placeholder">
-            </div>
-            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-        </a>
-    </div>
-    <!-- .col -->
-    <div class="col-md-4 mb-5">
-        <a class="featured-article" href="#">
-            <div>
-                <span>November 12, 2018</span>
-                <img class="w-100" src="https://via.placeholder.com/900x525" alt="Placeholder">
-            </div>
-            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-        </a>
-    </div>
-    <!-- .col -->
-    <div class="col-md-4 mb-5">
-        <a class="featured-article" href="#">
-            <div>
-                <span>November 12, 2018</span>
-                <img class="w-100" src="https://via.placeholder.com/900x525" alt="Placeholder">
-            </div>
-            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-        </a>
-    </div>
-    <!-- .col -->
-    <div class="col-md-4 mb-5">
-        <a class="featured-article" href="#">
-            <div>
-                <span>November 12, 2018</span>
-                <img class="w-100" src="https://via.placeholder.com/900x525" alt="Placeholder">
-            </div>
-            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-        </a>
-    </div>
-    <!-- .col -->
-    <div class="col-md-4 mb-5">
-        <a class="featured-article" href="#">
-            <div>
-                <span>November 12, 2018</span>
-                <img class="w-100" src="https://via.placeholder.com/900x525" alt="Placeholder">
-            </div>
-            <h5>Lorem ipsum dolor sit amet consectetur</h5>
-        </a>
-    </div>
-    <!-- .col -->
-
-    <?php endif; ?>
 
 </div>
 <!-- .row -->

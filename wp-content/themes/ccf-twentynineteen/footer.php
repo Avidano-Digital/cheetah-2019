@@ -43,13 +43,13 @@
 
     <?php endif; /* footer_features */ ?>
 
-    <div class="container-fluid wide" id="all-links">
+    <div class="py-7" id="all-links">
 
-        <div class="wide px-lg-2 py-6">
+        <div class="wides container">
 
             <nav class="row">
 
-                <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
+                <div class="col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
                     <ul class="extensible-list">
                         <li>
@@ -72,7 +72,7 @@
                 </div>
                 <!-- .col-* -->
 
-                <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
+                <div class="col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
                     <ul class="extensible-list">
                         <li>
@@ -98,7 +98,7 @@
                 </div>
                 <!-- .col-* -->
 
-                <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
+                <div class="col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
                     <ul class="extensible-list">
                         <li>
@@ -127,7 +127,7 @@
                 </div>
                 <!-- .col-* -->
 
-                <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
+                <div class="col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
                     <ul class="extensible-list">
                         <li>
@@ -156,7 +156,7 @@
                 </div>
                 <!-- .col-* -->
 
-                <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
+                <div class="col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
                     <ul class="extensible-list">
                         <li>
@@ -176,7 +176,7 @@
                 </div>
                 <!-- .col-* -->
 
-                <div class="col-sm-10 col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
+                <div class="col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
 
                     <ul class="extensible-list">
                         <li>
@@ -196,9 +196,9 @@
 
     </div>
 
-    <div class="container-fluid bg-light">
+    <div class="bg-light">
 
-        <div class="wide px-lg-2 py-6">
+        <div class="container">
 
             <div class="row">
 

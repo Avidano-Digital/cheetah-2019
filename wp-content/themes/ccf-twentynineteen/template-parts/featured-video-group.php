@@ -7,13 +7,13 @@ $post_objects = $videos;
 
 if( $featured_videos ): ?>
 
-<section class="container-fluid" id="videos">
+<div class="container" id="videos">
 
-    <div class="wide px-lg-2">
+    <div class="wides">
 
         <header class="row align-items-end justify-content-between mb-3">
             <div class="col-md-auto">
-                <h3 class="display-4"><?php echo $headline; ?></h3>
+                <h2 class="display-4"><?php echo $headline; ?></h2>
             </div>
             <div class="col-md-auto">
                 <a class="link text-body" href="#">All Videos</a>
@@ -32,7 +32,7 @@ if( $featured_videos ): ?>
             $video_id = substr( strrchr( $video_url, '/' ), 1 );
             ?>
 
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id;?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
                 </div>
@@ -47,7 +47,7 @@ if( $featured_videos ): ?>
     </div>
     <!-- .wide -->
 
-</section>
+</div>
 <!-- #videos -->
 
 <?php endif; /* featured_videos */ ?>
