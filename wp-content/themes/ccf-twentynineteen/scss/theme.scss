@@ -19,7 +19,7 @@ In this file:
 @import "d-enhancements.scss";
 @import "e-supplementary-classes.scss";
 @import "f-ui-elements.scss";
-// @import "g-dev-tools.scss";
+@import "g-dev-tools.scss";
 
 ////////////////////////////////////////
 // B. Theme styles
@@ -513,4 +513,9 @@ figure.right{
     margin-right: auto; 
   }
 
+}
+
+
+hr.dark{
+  border-top-color: rgba($dark, 0.5); 
 }

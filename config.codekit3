@@ -15999,6 +15999,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/themes/ccf-twentynineteen/images/cheetah-conservation-fund-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/cheetah-conservation-fund-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/images/cheetah-range-lg.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -16024,16 +16034,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/images/cheetah-spots.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/images/cheetah-spotsv.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/cheetah-spotsv.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
