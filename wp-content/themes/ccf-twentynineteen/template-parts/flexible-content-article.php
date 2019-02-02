@@ -631,6 +631,77 @@
 
     <?php if ( is_single( 'article-tearsheet' ) ) : ?>
 
+    <div class="offset-gutter-x mb-5">
+
+        <div class="row matrix-border">
+
+            <div class="col-sm-6 col-lg-4 col-xxl-2">
+                <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                    <div class="w-100 align-self-center">
+                        <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-scientific-papers.svg' ?>" alt="Placeholder">
+                        <span class="d-block" style="line-height:1.25;">Scientific Papers</span>                      
+                    </div>
+                </a>      
+            </div>
+            <!-- .col -->
+
+            <div class="col-sm-6 col-lg-4 col-xxl-2">
+                <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                    <div class="w-100 align-self-center">
+                        <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-fact-sheets.svg' ?>" alt="Placeholder">
+                        <span class="d-block" style="line-height:1.25;">Fact Sheets</span>                      
+                    </div>
+                </a>      
+            </div>
+            <!-- .col -->
+
+            <div class="col-sm-6 col-lg-4 col-xxl-2">
+                <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                    <div class="w-100 align-self-center">
+                        <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-lectures.svg' ?>" alt="Placeholder">
+                        <span class="d-block" style="line-height:1.25;">Lectures and Presentations</span>                      
+                    </div>
+                </a>      
+            </div>
+            <!-- .col -->
+
+            <div class="col-sm-6 col-lg-4 col-xxl-2">
+                <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                    <div class="w-100 align-self-center">
+                        <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-progress-reports.svg' ?>" alt="Placeholder">
+                        <span class="d-block" style="line-height:1.25;">Progress Reports</span>                      
+                    </div>
+                </a>      
+            </div>
+            <!-- .col -->
+
+            <div class="col-sm-6 col-lg-4 col-xxl-2">
+                <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                    <div class="w-100 align-self-center">
+                        <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-international-studbooks.svg' ?>" alt="Placeholder">
+                        <span class="d-block" style="line-height:1.25;">International Studbooks</span>                      
+                    </div>
+                </a>      
+            </div>
+            <!-- .col -->
+
+            <div class="col-sm-6 col-lg-4 col-xxl-2">
+                <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                    <div class="w-100 align-self-center">
+                        <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-cheetah-strides.svg' ?>" alt="Placeholder">
+                        <span class="d-block" style="line-height:1.25;">Cheetah Strides and Newsletters</span>                      
+                    </div>
+                </a>      
+            </div>
+            <!-- .col -->
+
+        </div>
+        <!-- .row -->
+
+    </div>
+    <!-- .narrow -->
+
+
     <div class="narrow mb-5">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue ultricies lacinia. Suspendisse
