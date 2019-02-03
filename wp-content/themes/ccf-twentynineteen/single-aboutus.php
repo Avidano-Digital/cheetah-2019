@@ -173,75 +173,75 @@ get_header(); ?>
 
                 <?php if ( is_single( 'resource-library' ) ) : ?>
 
-                <div class="narrow mb-5">
+                <div class="offset-gutter-x mb-5">
 
                     <div class="row matrix-border">
-                    
-                        <div class="col-sm-6 col-lg-4">
+
+                        <div class="col-sm-6 col-lg-4 col-xxl-2">
                             <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
                                 <div class="w-100 align-self-center">
-                                    <span class="fas fa-microscope d-block fa-2x mb-1"></span>
-                                    <span>Scientific Papers</span>                      
+                                    <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-scientific-papers.svg' ?>" alt="Placeholder">
+                                    <span class="d-block" style="line-height:1.25;">Scientific Papers</span>                      
                                 </div>
                             </a>      
                         </div>
                         <!-- .col -->
 
-                        <div class="col-sm-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-4 col-xxl-2">
                             <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
                                 <div class="w-100 align-self-center">
-                                    <span class="fas fa-chart-pie d-block fa-2x mb-1"></span>
-                                    <span>Fact Sheets</span>                
+                                    <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-fact-sheets.svg' ?>" alt="Placeholder">
+                                    <span class="d-block" style="line-height:1.25;">Fact Sheets</span>                      
                                 </div>
-                            </a>
-                        </div>
-                        <!-- .col -->
-
-                        <div class="col-sm-6 col-lg-4">
-                            <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
-                                <div class="w-100 align-self-center">
-                                    <span class="fas fa-microphone d-block fa-2x mb-1"></span>
-                                    <span>Lectures &amp; Presentations</span>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- .col -->
-                    
-                        <div class="col-sm-6 col-lg-4">
-                            <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
-                                <div class="w-100 align-self-center">
-                                    <span class="fas fa-chart-line d-block fa-2x mb-1"></span>
-                                    <span>Progress Reports</span>            
-                                </div>            
                             </a>      
                         </div>
                         <!-- .col -->
 
-                        <div class="col-sm-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-4 col-xxl-2">
                             <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
                                 <div class="w-100 align-self-center">
-                                    <span class="fas fa-globe-africa d-block fa-2x mb-1"></span>
-                                    <span>International Studbooks</span>            
-                                </div>            
-                            </a>
+                                    <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-lectures.svg' ?>" alt="Placeholder">
+                                    <span class="d-block" style="line-height:1.25;">Lectures and Presentations</span>                      
+                                </div>
+                            </a>      
                         </div>
                         <!-- .col -->
 
-                        <div class="col-sm-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-4 col-xxl-2">
                             <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
                                 <div class="w-100 align-self-center">
-                                    <span class="fas fa-paw d-block fa-2x mb-1"></span>
-                                    <span>Cheetah Strides &amp; Newsletters</span>            
-                                </div>                                        
-                            </a>
+                                    <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-progress-reports.svg' ?>" alt="Placeholder">
+                                    <span class="d-block" style="line-height:1.25;">Progress Reports</span>                      
+                                </div>
+                            </a>      
                         </div>
                         <!-- .col -->
-                    
+
+                        <div class="col-sm-6 col-lg-4 col-xxl-2">
+                            <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                                <div class="w-100 align-self-center">
+                                    <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-international-studbooks.svg' ?>" alt="Placeholder">
+                                    <span class="d-block" style="line-height:1.25;">International Studbooks</span>                      
+                                </div>
+                            </a>      
+                        </div>
+                        <!-- .col -->
+
+                        <div class="col-sm-6 col-lg-4 col-xxl-2">
+                            <a class="btn btn-primary btn-lg btn-block d-flex h-100 py-2 line-height-sm" href="#">
+                                <div class="w-100 align-self-center">
+                                    <img class="mb-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-resource-library-cheetah-strides.svg' ?>" alt="Placeholder">
+                                    <span class="d-block" style="line-height:1.25;">Cheetah Strides &amp; Newsletters</span>                      
+                                </div>
+                            </a>      
+                        </div>
+                        <!-- .col -->
+
                     </div>
                     <!-- .row -->
 
                 </div>
-                <!-- .narrow -->
+                <!-- .offset-gutter-x -->
 
                 <div class="narrow">
                 
