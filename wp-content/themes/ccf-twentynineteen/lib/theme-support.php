@@ -47,6 +47,16 @@
         
         });
 
+        // Add Menu Support
+
+        register_nav_menus(
+            array(
+                'Desktop' => esc_html__( 'Desktop', 'cheetah.org' ),
+                'Mobile' => esc_html__( 'Mobile', 'cheetah.org' ),
+                'Footer' => esc_html__( 'Footer', 'cheetah.org' )
+            )
+        );
+
     } // theme_support
 
     ////////////////////////////////////////
