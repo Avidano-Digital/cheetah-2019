@@ -71,13 +71,13 @@
 
     </div>
 
-    <div class="bg-light">
+    <div class="bg-light py-5">
 
         <div class="container">
 
-            <div class="row">
+            <div class="row mb-4">
 
-                <div class="col-sm-10 col-lg-6 col-xl-3 mb-4 mb-xl-0 mx-auto">
+                <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0">
                     <h5>Cheetah Conservation Fund</h5>
                     <p class="fs-md">Our Research and Education Centre is located in Otjiwarongo, Namibia. We encourage
                         visitors to see our facilities in person.</p>
@@ -85,7 +85,7 @@
                 </div>
                 <!-- .col -->
 
-                <div class="col-sm-10 col-lg-6 col-xl-3 mb-4 mb-xl-0 mx-auto">
+                <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0">
 
                     <h5>Where We Work</h5>
                     <p class="fs-md">CCF is an international non-profit organization with fundraising
@@ -98,10 +98,34 @@
                 </div>
                 <!-- .col -->
 
-                <div class="col-sm-10 col-lg-6 col-xl-3 mb-4 mb-xl-0 mx-auto">
+                <div class="col-lg-6 col-xl-4">
 
-                    <h5>Keep Up With the Cheetahs</h5>
-                    <p class="fs-md">Never miss an update.</p>
+                    <h5>Support CCF</h5>
+
+                    <p class="fs-md">
+                        You can help save the cheetah from exinction. Support our science-based, results-driven conservation initiatives. Together, we can save the cheetah.
+                    </p>
+
+                    <ul class="extensible-list horizontal">
+                        <li>
+                            <a class="btn btn-sm btn-block btn-primary" href="#" title="Donate">Donate</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-sm btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- .col -->
+
+            </div>
+            <!-- .row -->
+
+            <hr class="dark mb-3">
+
+            <div class="row justify-content-between">
+
+                <div class="col-lg-auto mb-2 mb-lg-0">
 
                     <ul class="extensible-list horizontal fs-lg">
                         <li>
@@ -131,32 +155,17 @@
                         </li>
                     </ul>
 
-                    <h6>CCF Newsletters</h6>
+                </div>
+                <!-- .col -->
+
+                <div class="col-lg-auto">
 
                     <ul class="extensible-list horizontal fs-lg">
                         <li>
                             <a class="no-btn-style text-body" href="#">
                                 <span class="far fa-envelope-open"></span>
-                                <span class="mx-1 font-weight-bold fs-md">Sign Up</span>
+                                <span class="mx-1 font-weight-bold fs-md">CCF Newsletters</span>
                             </a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- .col -->
-
-                <div class="col-sm-10 col-lg-6 col-xl-3 mx-auto">
-                    <h5>Support CCF</h5>
-                    <p class="fs-md">You can help save the cheetah from exinction!</p>
-
-                    <ul class="extensible-list horizontal">
-                        <li>
-
-                            <a class="btn btn-sm btn-block btn-primary" href="#" title="Donate">Donate</a>
-                        </li>
-                        <li>
-
-                            <a class="btn btn-sm btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
                         </li>
                     </ul>
 
@@ -167,19 +176,27 @@
             <!-- .row -->
 
         </div>
-        <!-- .wide -->
+        <!-- .container -->
 
     </div>
+    <!-- .bg-light -->
 
-    <div class="container-fluid bg-dark">
-        <div class="wide py-2">
+    <div class="bg-dark py-2">
+
+        <div class="container">
+
             <p class="fs-sm text-white">
                 <span class="d-block d-sm-inline-block">© 2019 Cheetah Conservation Fund</span>
                 <span class="d-none d-sm-inline-block mx-1">•</span>
                 <a class="blended-link" href="#">Privacy Policy</a>
             </p>
+        
         </div>
+        <!-- .container -->
+    
     </div>
+    <!-- .bg-dark -->
+
 
 </footer>
 

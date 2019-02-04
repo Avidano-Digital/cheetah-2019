@@ -30,7 +30,7 @@ get_header(); ?>
     </section>
     <!-- .featured-panel -->
 
-    <div class="container-fluid posts-filter bg-info py-3">
+    <div class="container-fluid posts-filter bg-info cheetah-spots py-3">
 
         <div class="narrow">
 
