@@ -16,6 +16,12 @@ Author URI: http://fullwindsor.co
     $menuitems = wp_get_nav_menu_items($menu->term_id, array());
     $reverse_menuitems = array_reverse($menuitems);
     $queried_object = get_queried_object();
+    
+    $current_post_type = $queried_object->post_type;
+    $current_term = $queried_object->term_id;
+
+    $current_section = explode("/", substr($_SERVER['REQUEST_URI'], 1), 2);
+    $current_section = $current_section[0];
 
     $count = 0;
     $submenu = false;
@@ -107,15 +113,35 @@ Author URI: http://fullwindsor.co
         $url = $menuitem->url;
         $classes = implode(' ',$menuitem->classes);
         $parent = $menuitem->menu_item_parent;
+        $xfn = $menuitem->xfn;
+        $current = '';
+
+        // Compare current menu item with the current section
+
+        if ($xfn == $current_section) {
+          $current = 'current';
+        }
+
+        // If we've picked up the news menu item and are on a post
+
+        elseif ($xfn == 'news' && $current_post_type == 'post') {
+          $current = 'current';
+        }
+
+        // If we've picked up the News menu item and are on a taxonomy page
+
+        elseif ($xfn == 'news' && $current_term) {
+          $current = 'current';
+        }
 
         if ($menuitem->item_type == 'childless_parent') {
-          echo '<li><a class="'.$classes.'" href="'.$url.'">'.$title.'</a></li>';
+          echo '<li class="'.$current.'"><a class="'.$classes.'" href="'.$url.'">'.$title.'</a></li>';
           $count++;
           continue;
         }
 
         if ($menuitem->item_type == 'grandparent') {
-          echo '<li><a href="'.$url.'" title="'.$title.'">'.$title.'</a><ul class="extensible-list sub"><li><div class="row no-gutters" style="width:480px;">';
+          echo '<li class="'.$current.'"><a href="'.$url.'" title="'.$title.'">'.$title.'</a><ul class="extensible-list sub"><li><div class="row no-gutters" style="width:480px;">';
           $grandparent_closing_tags = '</div></li></ul></li>';
           $count++;
           continue;
@@ -130,7 +156,7 @@ Author URI: http://fullwindsor.co
         }
 
         if ($menuitem->item_type == 'orphaned_parent') {
-          echo '<li><a href="'.$url.'" title="'.$title.'">'.$title.'</a><ul class="extensible-list sub">';
+          echo '<li class="'.$current.'"><a href="'.$url.'" title="'.$title.'">'.$title.'</a><ul class="extensible-list sub">';
           $closing_tags = '</ul></li>';
           $count++;
           continue;
