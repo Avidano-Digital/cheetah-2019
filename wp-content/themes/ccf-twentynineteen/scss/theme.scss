@@ -60,19 +60,35 @@ p{ @extend .f-serif; }
 
 #primary-navigation-desktop{
 
-  > ul > li{ position: relative; }
+  > ul, 
+  > ul > li{
+    display: flex;
+  }
+
+  > ul > li{ 
+    position: relative;
+    align-self: stretch;
+
+    &.current > a{
+      color: $secondary;
+    }
+  }
+  
+  > ul > li > a{ align-self: center; }
 
   > ul > li > a{
+    @extend .align-self-center; 
     color: $body-color;
     font-size: $fs-lg;
 
-    // &.active{ @extend .text-muted; }
+    &.active{ @extend .text-muted; }
   }
 
   a.donate{ font-weight: $font-weight-normal; }
 
   .sub{
     @extend .shadow;
+    margin-top: 0;
 
     background: $dark;
     position: absolute;

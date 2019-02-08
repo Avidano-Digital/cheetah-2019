@@ -45,7 +45,7 @@
 
     <div class="py-7" id="all-links">
 
-        <div class="wides container">
+        <div class="container">
 
             <nav class="row">
 

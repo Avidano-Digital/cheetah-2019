@@ -154,15 +154,13 @@ get_header(); ?>
                 <header class="narrow">
                     <h1 class="display-3 text-center mb-3"><?php the_title(); ?></h1>
                 </header>
-
-                <?php if ( is_single( 'ccf-global' ) ) : ?>
                 
+                <?php get_template_part('template-parts/flexible-content-article'); ?>
+                
+                <?php if ( is_single( 'ccf-global' ) ) : ?>
+
                     <?php get_template_part('template-parts/content-ccf-global'); ?>
-
-                <?php else : ?>
-
-                    <?php get_template_part('template-parts/flexible-content-article'); ?>
-
+                
                 <?php endif; ?>
 
                 <?php if ( is_single( 'dr-laurie-marker' ) ) : ?>
