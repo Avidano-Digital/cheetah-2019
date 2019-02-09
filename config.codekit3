@@ -16293,6 +16293,13 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/lib/theme-support.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/page-resource-library.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page-resource-library.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/screenshot.png": {
 		"ft": 32768,
 		"iS": 402479,

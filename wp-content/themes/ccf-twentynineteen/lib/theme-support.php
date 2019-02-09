@@ -96,6 +96,20 @@
             )
         );
 
+        register_post_type( 'Resource Library',
+            array(
+                'labels' => array(
+                'name' => __( 'Resource Library' ),
+                'singular_name' => __( 'Resource Library' )
+            ),
+
+            'public' => true,
+            'capability_type' => 'post', 
+            'rewrite' => array( 'slug' => 'resource-library', 'with_front'=> false ), 
+            'menu_icon' => 'dashicons-groups',
+            )
+        );
+
         register_post_type( 'Infographics',
             array(
                 'labels' => array(
@@ -117,7 +131,7 @@
             ),
 
             'public' => true,
-            'rewrite' => array( 'slug' => 'Partnerships'),
+            'rewrite' => array( 'slug' => 'partnerships'),
             'menu_icon' => 'dashicons-groups'
             )
         );
