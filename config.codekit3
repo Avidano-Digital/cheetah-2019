@@ -16154,7 +16154,7 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/images/resource-library-fact-sheets.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/themes/ccf-twentynineteen/images/resource-library-lectures.jpg": {
@@ -16163,6 +16163,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/images/resource-library-lectures.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/resource-library-progress-reports.jpg": {
+		"ft": 16384,
+		"iS": 87186,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/resource-library-progress-reports.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
