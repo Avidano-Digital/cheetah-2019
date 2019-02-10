@@ -16337,6 +16337,13 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/lib/theme-support.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/page-ccf-videos.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page-ccf-videos.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/page-resource-library.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -18469,6 +18476,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/02/cheetah-conservation-fund-resource-library.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/02/cheetah-conservation-fund-videos-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18391,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/02/cheetah-conservation-fund-videos-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/02/cheetah-conservation-fund-videos.jpg": {
+		"ft": 16384,
+		"iS": 161819,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/02/cheetah-conservation-fund-videos.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
