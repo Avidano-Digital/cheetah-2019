@@ -430,38 +430,35 @@ $matrix-gutter-padding: ($grid-gutter-width / 4);
   color: currentColor;
 }
 
-$toggles-and-accordions: true;
+// Accordion Preferences
 
-@if($toggles-and-accordions){
+$accordion-button-border: true;
+$accordion-button-shadow: false;
 
-  // Accordion Preferences
+$accordion-title-color: $body-color;
+$accordion-bg-color: transparent;
 
-  $accordion-button-border: false;
-  $accordion-button-shadow: false;
+.btn-toggle,
+.accordion-group
+{
+  [data-toggle="collapse"]{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  $accordion-title-color: theme-color("primary");
-  $accordion-bg-color: theme-color("light");
-
-  .btn-toggle a,
-  .accordion-group a
-  {
-    &[data-toggle="collapse"]{
-      @extend .d-flex;
-      @extend .align-items-center;
-      @extend .justify-content-between;
-    }
   }
+}
 
-  // Generic toggle button
+// Button toggle
 
-  a.btn[data-toggle="collapse"] {
+.btn-toggle {
+
+  [data-toggle="collapse"] {
     overflow: hidden;
 
     &::after {
       content: "\f067";
       @extend %fa-icon;
-
-      // @extend .ml-auto;
     }
 
     // Change the right icon here. Go to https://fontawesome.com/icons
@@ -475,56 +472,57 @@ $toggles-and-accordions: true;
       content: "\f067";
     }
   }
+}
 
-  // Accordions
+// Accordions
+  
+.accordion-group{
+
+  .card, 
+  .card-header
+  { 
+    border: 0;
     
-  .accordion-group{
-
-    .card, 
-    .card-header
-    { 
-      @extend .border-0;
-      
-      @if $enable-rounded {
-        @extend .rounded;
-      } @else{
-        @extend .rounded-0;
-      }
+    @if $enable-rounded {
+      border-radius: $border-radius;
+    } @else{
+      border-radius: 0;
     }
-
-    .card { background-color: $accordion-bg-color; }
-
-    a[data-toggle="collapse"]{
-      
-      @if $accordion-button-border { @extend .border; }
-      @if $accordion-button-shadow { @extend .shadow-sm; }
-
-      color: $accordion-title-color;
-    
-      &:after{ 
-        content: "\f067";
-        @extend %fa-icon;
-        // @extend .ml-auto;
-      }
-
-      &[aria-expanded="true"]{
-        
-        @if $accordion-button-shadow {
-          @extend .shadow;
-        }
-
-      }
-
-      // Change the right icon here. Go to https://fontawesome.com/icons
-      // Find your icons and paste the unicode below
-      
-      &[aria-expanded="true"]:after{ content: "\f106"; }
-      &[aria-expanded="false"]:after{ content: "\f107"; }
-    }
-    
   }
 
-} // end if
+  .card { background-color: $accordion-bg-color; }
+
+  a[data-toggle="collapse"]{
+    
+    @if $accordion-button-border { border-top: $border-width solid $border-color; }
+    @if $accordion-button-shadow { @extend .shadow-sm; }
+
+    color: $accordion-title-color;
+  
+    &:after{ 
+      content: "\f067";
+      @extend %fa-icon;
+    }
+
+    &[aria-expanded="true"]{
+      border-top-color: $primary;
+      background: $primary;
+      @include transition($transition-fade);
+      
+      @if $accordion-button-shadow {
+        @extend .shadow;
+      }
+
+    }
+
+    // Change the right icon here. Go to https://fontawesome.com/icons
+    // Find your icons and paste the unicode below
+    
+    &[aria-expanded="true"]:after{ content: "\f106"; }
+    &[aria-expanded="false"]:after{ content: "\f107"; }
+  }
+  
+}
 
 ////////////////////////////////////////
 // I. Responsive nav tabs and pills

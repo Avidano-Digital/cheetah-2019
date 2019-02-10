@@ -260,7 +260,7 @@ $dark: #212529;
 
 $theme-colors: (
   "white": $white,
-  "black": $black,
+  // "black": $black,
 
   "tertiary": $tertiary,
   "quaternary": $quaternary,
@@ -359,6 +359,14 @@ $component-active-bg: $secondary;
 $input-btn-padding-x: ($grid-gutter-width/2);
 $nav-link-padding-x: $input-btn-padding-x;
 $nav-link-padding-y: .75rem;
+
+// List Group
+
+$list-group-bg:                     transparent;
+$list-group-border-color:           $border-color;
+
+$list-group-item-padding-y:         .75rem !default;
+$list-group-item-padding-x:         0;
 
 ////////////////////////////////////////
 // M. Box shadows

@@ -86,6 +86,8 @@ get_header(); ?>
                     <?php get_template_part('template-parts/aside-donate'); ?>
 
                 </div>
+                <!-- .sticky-top -->
+
             </div>
             <!-- .col -->
 
@@ -96,14 +98,461 @@ get_header(); ?>
                 </header>
 
                 <div class="text-block narrow mb-5">
-                    <p>CCF’s research provides scientific support for its education and conservation activities. Our research focuses
-                        on a number of aspects of the cheetah’s life cycle, biology and genetics. We also research ecology,
-                        human/wildlife conflict, agriculture, and biomass energy.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore debitis provident natus, unde fugit
+                        voluptatibus quia molestias odit deleniti, maxime tempora quod magni sit praesentium ipsam neque
+                        consequatur voluptates.
+                    </p>
                 </div>
 
+                <div class="medium">
 
 
-                                
+                <div class="accordion-group offset-gutter-x my-6" role="tablist" id="acc-resource-library">
+
+                    <div class="card">
+
+                        <a class="card-header h4 collapse collapsed" id="acc-button-scientific-papers" data-toggle="collapse" href="#acc-panel-scientific-papers"
+                            role="tab" aria-expanded="true" aria-controls="acc-panel-scientific-papers">
+                            <span class="title" role="heading" aria-level="2">Scientific Papers</span>
+                        </a>
+
+                        <div class="collapse show" id="acc-panel-scientific-papers" role="tabpanel" aria-labelledby="acc-button-scientific-papers" data-parent="#acc-resource-library">
+
+                            <div class="card-body bg-light py-7">
+
+                                <div class="narrow">
+
+                                    <img class="mb-5 rounded d-none" src="https://via.placeholder.com/800x400" alt="Placeholder">
+                                    <img class="mb-5 rounded" src="<?php echo get_template_directory_uri(); ?>/images/resource-library-scientific-papers.jpg" alt="Placeholder">
+
+                                    <p class="mb-5">
+                                        Some of the publications listed below are available online for information and research purposes. We ask that you
+                                        observe copyright information. Visit our What We Do section for more information on CCF's programs.
+                                    </p>
+
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <a class="link text-secondary" href="#" class="link">
+                                        See All
+                                    </a>
+
+                                </div>
+                                <!-- .narrow -->
+
+                            </div>
+
+                        </div>
+                        <!-- .collapse -->
+
+                    </div>
+                    <!-- .card -->
+
+                    <div class="card">
+
+                        <a class="card-header h4 collapse collapsed" id="acc-button-fact-sheets" data-toggle="collapse" href="#acc-panel-fact-sheets"
+                            role="tab" aria-expanded="false" aria-controls="acc-panel-fact-sheets">
+                            <span class="title" role="heading" aria-level="2">Fact Sheets</span>
+                        </a>
+
+                        <div class="collapse" id="acc-panel-fact-sheets" role="tabpanel" aria-labelledby="acc-fact-sheets" data-parent="#acc-resource-library">
+
+                        <div class="card-body bg-light py-7">
+
+                            <div class="narrow">
+
+                                <img class="mb-5 rounded" src="<?php echo get_template_directory_uri(); ?>/images/resource-library-fact-sheets.jpg" alt="Placeholder">
+
+                                <p class="mb-5">
+                                    Cheetah Conservation Fact sheets are a collection of 2-page information sheets on the cheetah and different aspects of the work of CCF .
+                                </p>
+
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item">
+                                        <a class="text-body" href="#">
+                                            <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                            <strong>
+                                                The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                            </strong>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="text-body" href="#">
+                                            <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                            <strong>
+                                                The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                            </strong>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="text-body" href="#">
+                                            <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                            <strong>
+                                                The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                            </strong>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <a class="link text-secondary" href="#" class="link">
+                                    See All
+                                </a>
+
+                            </div>
+                            <!-- .narrow -->
+
+                        </div>
+                        <!-- .card-body -->
+
+                        </div>
+                        <!-- .collapse -->
+
+                    </div>
+                    <!-- .card -->
+
+                    <div class="card">
+
+                        <a class="card-header h4 collapse collapsed" id="acc-button-lectures-and-presentations" data-toggle="collapse" href="#acc-panel-lectures-and-presentations"
+                            role="tab" aria-expanded="false" aria-controls="acc-panel-lectures-and-presentations">
+                            <span class="title" role="heading" aria-level="2">Lectures and Presentations</span>
+                        </a>
+
+                        <div class="collapse" id="acc-panel-lectures-and-presentations" role="tabpanel" aria-labelledby="acc-button-lectures-and-presentations" data-parent="#acc-resource-library">
+
+                            <div class="card-body bg-light py-7">
+
+                                <div class="narrow">
+
+                                    <img class="mb-5 rounded" src="<?php echo get_template_directory_uri(); ?>/images/resource-library-lectures.jpg"
+                                        alt="Placeholder">
+
+                                    <p class="mb-5">
+                                        Recorded talks by CCF around the world and throughout the United States. Audiences range from elementary school
+                                        students to University Professors, from zoo attenders to international planning committees.
+                                    </p>
+
+                                    <ul class="list-group list-group-flush mb-3">
+
+                                        <li class="list-group-item">
+
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6 mb-3 mb-md-0">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                                                    </div>
+                                                </div>
+                                                <!-- .col -->
+
+                                                <div class="col-md-6">
+                                                    <a class="text-body" href="#">
+                                                        <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                        <strong>
+                                                            What if We Lost the Cheetah — TEDx Portland
+                                                        </strong>
+                                                    </a>
+                                                </div>
+                                                <!-- .col -->
+
+                                            </div>
+                                            <!-- .row -->
+
+                                        </li>
+
+                                        
+                                        <li class="list-group-item">
+
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6 mb-3 mb-md-0">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                                                    </div>
+                                                </div>
+                                                <!-- .col -->
+
+                                                <div class="col-md-6">
+                                                    <a class="text-body" href="#">
+                                                        <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                        <strong>
+                                                            What if We Lost the Cheetah — TEDx Portland
+                                                        </strong>
+                                                    </a>
+                                                </div>
+                                                <!-- .col -->
+
+                                            </div>
+                                            <!-- .row -->
+
+                                        </li>
+                                        
+                                        <li class="list-group-item">
+
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6 mb-3 mb-md-0">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                                                    </div>
+                                                </div>
+                                                <!-- .col -->
+
+                                                <div class="col-md-6">
+                                                    <a class="text-body" href="#">
+                                                        <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                        <strong>
+                                                            What if We Lost the Cheetah — TEDx Portland
+                                                        </strong>
+                                                    </a>
+                                                </div>
+                                                <!-- .col -->
+
+                                            </div>
+                                            <!-- .row -->
+
+                                        </li>
+
+                                    </ul>
+
+                                    <a class="link text-secondary" href="#" class="link">
+                                        See All
+                                    </a>
+
+                                </div>
+                                <!-- .narrow -->
+
+                            </div>
+                            <!-- .card-body -->
+
+                        </div>
+                        <!-- .collapse -->
+
+                    </div>
+                    <!-- .card -->
+
+                    <div class="card">
+
+                        <a class="card-header h4 collapse collapsed" id="acc-button-cheetah-strides-and-newsletters" data-toggle="collapse" href="#acc-panel-cheetah-strides-and-newsletters"
+                            role="tab" aria-expanded="false" aria-controls="acc-panel-cheetah-strides-and-newsletters">
+                            <span class="title" role="heading" aria-level="2">Cheetah Strides and Newsletters</span>
+                        </a>
+
+                        <div class="collapse" id="acc-panel-cheetah-strides-and-newsletters" role="tabpanel" aria-labelledby="acc-button-cheetah-strides-and-newsletters" data-parent="#acc-resource-library">
+
+                            <div class="card-body bg-light py-7">
+
+                                <div class="narrow">
+
+                                    <img class="mb-5 rounded " src="https://via.placeholder.com/800x400" alt="Placeholder">
+
+                                    <p class="mb-5">
+                                        Some of the publications listed below are available online for information and research purposes. We ask that you
+                                        observe copyright information. Visit our What We Do section for more information on CCF's programs.
+                                    </p>
+
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <a class="link text-secondary" href="#" class="link">
+                                        See All
+                                    </a>
+
+                                </div>
+                                <!-- .narrow -->
+
+                            </div>
+
+                        </div>
+                        <!-- .collapse -->
+
+                    </div>
+                    <!-- .card -->
+
+                    <div class="card">
+
+                        <a class="card-header h4 collapse collapsed" id="acc-button-progress-reports" data-toggle="collapse"
+                            href="#acc-panel-progress-reports" role="tab" aria-expanded="false" aria-controls="acc-panel-progress-reports">
+                            <span class="title" role="heading" aria-level="2">Progress Reports</span>
+                        </a>
+
+                        <div class="collapse" id="acc-panel-progress-reports" role="tabpanel" aria-labelledby="acc-button-progress-reports"
+                            data-parent="#acc-resource-library">
+
+                            <div class="card-body bg-light py-7">
+
+                                <div class="narrow">
+
+                                    <img class="mb-5 rounded " src="https://via.placeholder.com/800x400" alt="Placeholder">
+
+                                    <p class="mb-5">
+                                        Some of the publications listed below are available online for information and research purposes.
+                                        We ask that you
+                                        observe copyright information. Visit our What We Do section for more information on CCF's programs.
+                                    </p>
+
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their
+                                                    nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their
+                                                    nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their
+                                                    nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <a class="link text-secondary" href="#" class="link">
+                                        See All
+                                    </a>
+
+                                </div>
+                                <!-- .narrow -->
+
+                            </div>
+
+                        </div>
+                        <!-- .collapse -->
+
+                    </div>
+                    <!-- .card -->
+
+                    <div class="card">
+
+                        <a class="card-header h4 collapse collapsed" id="acc-button-international-studbooks" data-toggle="collapse"
+                            href="#acc-panel-international-studbooks" role="tab" aria-expanded="false" aria-controls="acc-panel-international-studbooks">
+                            <span class="title" role="heading" aria-level="2">International Studbooks</span>
+                        </a>
+
+                        <div class="collapse" id="acc-panel-international-studbooks" role="tabpanel" aria-labelledby="acc-button-international-studbooks"
+                            data-parent="#acc-resource-library">
+
+                            <div class="card-body bg-light py-7">
+
+                                <div class="narrow">
+
+                                    <img class="mb-5 rounded " src="https://via.placeholder.com/800x400" alt="Placeholder">
+
+                                    <p class="mb-5">
+                                        Some of the publications listed below are available online for information and research purposes.
+                                        We ask that you
+                                        observe copyright information. Visit our What We Do section for more information on CCF's programs.
+                                    </p>
+
+                                    <ul class="list-group list-group-flush mb-3">
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their
+                                                    nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their
+                                                    nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="text-body" href="#">
+                                                <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
+                                                <strong>
+                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their
+                                                    nest cavity
+                                                </strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <a class="link text-secondary" href="#" class="link">
+                                        See All
+                                    </a>
+
+                                </div>
+                                <!-- .narrow -->
+
+                            </div>
+
+                        </div>
+                        <!-- .collapse -->
+
+                    </div>
+                    <!-- .card -->
+
+                </div>
+                <!-- .accordion-group -->
+                   
+                </div>
+                <!-- .medium -->   
             </div>
             <!-- .col -->
 
