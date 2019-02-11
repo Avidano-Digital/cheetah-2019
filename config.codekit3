@@ -16,6 +16,13 @@
 		"oAP": "/.htaccess",
 		"oF": 0
 		},
+	"/ccf-site-map.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/ccf-site-map.xml",
+		"oF": 0
+		},
 	"/index.php": {
 		"cB": 0,
 		"ft": 8192,

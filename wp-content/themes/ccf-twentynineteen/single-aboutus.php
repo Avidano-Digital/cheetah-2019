@@ -73,7 +73,24 @@ get_header(); ?>
 
                     <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
 
-                        <?php if ( $parent_title == "Who We Are" ) : ?>
+                        <?php if ( $parent_title == "What We Do" ) : ?>
+
+                        <ul class="extensible-list text-white py-4 py-xl-0">
+                            <li class="page_item <?php if ( is_single( 'conservation' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="/about-us/what-we-do/conservation/">Conservation</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'research' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="/about-us/what-we-do/research/">Research</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'education' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="/about-us/what-we-do/education/">Education</a>
+                            </li>
+                            <li class="page_item <?php if ( is_single( 'international-cheetah-day' ) ) : ?>current_page_item<?php endif; ?>">
+                                <a href="/about-us/what-we-do/international-cheetah-day/">International Cheetah Day</a>
+                            </li>
+                        </ul>
+                        
+                        <?php elseif ( $parent_title == "Who We Are" ) : ?>
 
                         <ul class="extensible-list text-white py-4 py-xl-0">
                             <li class="page_item <?php if ( is_single( 'mission-and-vision' ) ) : ?>current_page_item<?php endif; ?>">
@@ -90,23 +107,6 @@ get_header(); ?>
                             </li>
                             <li class="page_item <?php if ( is_single( 'ccf-global' ) ) : ?>current_page_item<?php endif; ?>">
                                 <a href="/about-us/who-we-are/ccf-global/">CCF Global</a>
-                            </li>
-                        </ul>
-                        
-                        <?php elseif ( $parent_title == "What We Do" ) : ?>
-
-                        <ul class="extensible-list text-white py-4 py-xl-0">
-                            <li class="page_item <?php if ( is_single( 'research' ) ) : ?>current_page_item<?php endif; ?>">
-                                <a href="/about-us/what-we-do/research/">Research</a>
-                            </li>
-                            <li class="page_item <?php if ( is_single( 'education' ) ) : ?>current_page_item<?php endif; ?>">
-                                <a href="/about-us/what-we-do/education/">Education</a>
-                            </li>
-                            <li class="page_item <?php if ( is_single( 'conservation' ) ) : ?>current_page_item<?php endif; ?>">
-                                <a href="/about-us/what-we-do/conservation/">Conservation</a>
-                            </li>
-                            <li class="page_item <?php if ( is_single( 'international-cheetah-day' ) ) : ?>current_page_item<?php endif; ?>">
-                                <a href="/about-us/what-we-do/international-cheetah-day/">International Cheetah Day</a>
                             </li>
                         </ul>
 
