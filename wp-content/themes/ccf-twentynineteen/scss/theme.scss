@@ -117,19 +117,24 @@ p{ @extend .f-serif; }
 
   // Child links (accordion)
 
-  .card-header{
-    @extend .border-bottom; 
+  .card{ 
+    &:first-child a[data-toggle="collapse"]{ border: 0; }
+    background: $transparent;
+  }
 
+  .card-header{
     color: $body-color;
     font-size: $fs-lg;
     padding-top: $spacer-1;
     padding-bottom: $spacer-1;
     
-    background: white;
+
+    &[aria-expanded="true"]{
+      border-top-color: $border-color;
+      background: $transparent;
+    }
 
     .title{ font-weight: $font-weight-normal; }
-
-    &:last-child{ @extend .border-bottom-0; }
   }
 }
 

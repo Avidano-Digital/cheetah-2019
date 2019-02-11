@@ -107,7 +107,7 @@ get_header(); ?>
 
                 <div class="medium">
 
-                    <div class="accordion-group offset-gutter-x mt-6" role="tablist" id="acc-resource-library">
+                    <div class="accordion-group offset-gutter-x mt-6 border-bottom" role="tablist" id="acc-resource-library">
 
                         <div class="card">
 
@@ -196,7 +196,7 @@ get_header(); ?>
                                             <a class="text-body" href="#">
                                                 <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
                                                 <strong>
-                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                                    Combined Fact Sheets
                                                 </strong>
                                             </a>
                                         </li>
@@ -204,7 +204,7 @@ get_header(); ?>
                                             <a class="text-body" href="#">
                                                 <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
                                                 <strong>
-                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                                    Cheetahs: Big Cats Built For Speed
                                                 </strong>
                                             </a>
                                         </li>
@@ -212,7 +212,7 @@ get_header(); ?>
                                             <a class="text-body" href="#">
                                                 <p class="f-sans-serif fs-md mb-0">June 29, 2018</p>
                                                 <strong>
-                                                    The simultaneous moult of female hornbills is not triggered by the darkness of their nest cavity
+                                                    CCF Research
                                                 </strong>
                                             </a>
                                         </li>
@@ -246,7 +246,7 @@ get_header(); ?>
                                 <div class="card-body bg-light py-7">
 
                                     <div class="narrow">
-
+    
                                         <img class="mb-5 rounded" src="<?php echo get_template_directory_uri(); ?>/images/resource-library-lectures.jpg"
                                             alt="Placeholder">
 
@@ -282,7 +282,6 @@ get_header(); ?>
 
                                             </li>
 
-                                            
                                             <li class="list-group-item">
 
                                                 <div class="row align-items-center">
@@ -364,7 +363,7 @@ get_header(); ?>
 
                                     <div class="narrow">
 
-                                        <img class="mb-5 rounded " src="https://via.placeholder.com/800x400" alt="Placeholder">
+                                        <img class="mb-5 rounded" src="https://via.placeholder.com/800x400" alt="Placeholder">
 
                                         <p class="mb-5">
                                             Some of the publications listed below are available online for information and research purposes. We ask that you
@@ -427,7 +426,8 @@ get_header(); ?>
 
                                     <div class="narrow">
 
-                                        <img class="mb-5 rounded" src="<?php echo get_template_directory_uri(); ?>/images/resource-library-progress-reports.jpg" alt="Placeholder">
+                                        <img class="mb-5 rounded" src="https://via.placeholder.com/800x400" alt="Placeholder">
+                                        <img class="mb-5 rounded d-none" src="<?php echo get_template_directory_uri(); ?>/images/resource-library-progress-reports.jpg" alt="Placeholder">
 
                                         <p class="mb-5">
                                             Some of the publications listed below are available online for information and research purposes.
@@ -552,6 +552,8 @@ get_header(); ?>
                    
                 </div>
                 <!-- .medium -->
+
+                <?php get_template_part('template-parts/article-footer'); ?>
                   
             </div>
             <!-- .col -->
