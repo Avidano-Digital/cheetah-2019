@@ -4,11 +4,11 @@
 
         <div class="narrow">
 
-            <p class="f-sans-serif fs-md text-center">
+            <p class="f-sans-serif fs-md">
                 <em>Share with friends</em>
             </p>
 
-            <ul class="extensible-list horizontal justify-content-center">
+            <ul class="extensible-list horizontal">
 
                 <li>
                     <a href="#" title="Share on Facebook">

@@ -106,7 +106,7 @@
             'public' => true,
             'capability_type' => 'post', 
             'rewrite' => array( 'slug' => 'resource-library', 'with_front'=> false ), 
-            'menu_icon' => 'dashicons-book-alt',
+            'menu_icon' => 'dashicons-book',
             )
         );
 
