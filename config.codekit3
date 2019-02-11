@@ -5229,6 +5229,27 @@
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/acf-data-functions.php",
 		"oF": 0
 		},
+	"/wp-content/plugins/advanced-custom-fields-pro/includes/acf-deprecated-functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/acf-deprecated-functions.php",
+		"oF": 0
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/includes/acf-field-functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/acf-field-functions.php",
+		"oF": 0
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/includes/acf-field-group-functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/acf-field-group-functions.php",
+		"oF": 0
+		},
 	"/wp-content/plugins/advanced-custom-fields-pro/includes/acf-form-functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -5243,11 +5264,39 @@
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/acf-helper-functions.php",
 		"oF": 0
 		},
+	"/wp-content/plugins/advanced-custom-fields-pro/includes/acf-hook-functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/acf-hook-functions.php",
+		"oF": 0
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/includes/acf-meta-functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/acf-meta-functions.php",
+		"oF": 0
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/includes/acf-post-functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/acf-post-functions.php",
+		"oF": 0
+		},
 	"/wp-content/plugins/advanced-custom-fields-pro/includes/acf-user-functions.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/acf-user-functions.php",
+		"oF": 0
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/includes/acf-value-functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/acf-value-functions.php",
 		"oF": 0
 		},
 	"/wp-content/plugins/advanced-custom-fields-pro/includes/admin/admin-field-group.php": {
@@ -5453,20 +5502,6 @@
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax.php",
 		"oF": 0
 		},
-	"/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-field-group.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-field-group.php",
-		"oF": 0
-		},
-	"/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-field.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-field.php",
-		"oF": 0
-		},
 	"/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -5495,25 +5530,11 @@
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-term.php",
 		"oF": 0
 		},
-	"/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-value.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-value.php",
-		"oF": 0
-		},
 	"/wp-content/plugins/advanced-custom-fields-pro/includes/assets.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/assets.php",
-		"oF": 0
-		},
-	"/wp-content/plugins/advanced-custom-fields-pro/includes/cache.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/cache.php",
 		"oF": 0
 		},
 	"/wp-content/plugins/advanced-custom-fields-pro/includes/class-acf-data.php": {
@@ -5866,11 +5887,11 @@
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/l10n.php",
 		"oF": 0
 		},
-	"/wp-content/plugins/advanced-custom-fields-pro/includes/local.php": {
+	"/wp-content/plugins/advanced-custom-fields-pro/includes/local-fields.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/local.php",
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/local-fields.php",
 		"oF": 0
 		},
 	"/wp-content/plugins/advanced-custom-fields-pro/includes/locations.php": {

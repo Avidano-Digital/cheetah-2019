@@ -100,13 +100,21 @@ get_header(); ?>
                 <div class="text-block narrow mb-5">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore debitis provident natus, unde fugit
-                        voluptatibus quia molestias odit deleniti, maxime tempora quod magni sit praesentium ipsam neque
-                        consequatur voluptates.
+                        voluptatibus quia.
                     </p>
                 </div>
 
+                <div class="medium mb-6">
 
-                <div class="medium">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
+                            allowTransparency="true" allowfullscreen="true"></iframe>
+                    </div>
+
+                </div>
+                <!-- .medium -->
+
+                <div class="offset-gutter-x">
 
                     <div class="row matrix-border offset-gutter-x">
 
@@ -159,6 +167,7 @@ get_header(); ?>
                 </div>
                 <!-- .offset-gutter-x -->
 
+                <?php get_template_part('template-parts/article-footer'); ?>
 
 
 
