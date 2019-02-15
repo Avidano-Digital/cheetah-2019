@@ -224,24 +224,19 @@
       
       <div class="container mb-5" id="latest-news">
 
-        <div class="wides">
+        <header class="row align-items-end justify-content-between mb-3">
+          <div class="col-md-auto">
+            <h2 class="display-4">Latest News</h2>
+          </div>
+          <!-- .col -->
+          <div class="col-md-auto">
+            <a class="link text-body" href="#">All News</a>
+          </div>
+          <!-- .col -->
+        </header>
+        <!-- .row -->
 
-          <header class="row align-items-end justify-content-between mb-3">
-            <div class="col-md-auto">
-              <h2 class="display-4">Latest News</h2>
-            </div>
-            <!-- .col -->
-            <div class="col-md-auto">
-              <a class="link text-body" href="#">All News</a>
-            </div>
-            <!-- .col -->
-          </header>
-          <!-- .row -->
-
-          <?php get_template_part('template-parts/featured-news'); ?>
-
-        </div>
-        <!-- .wide -->
+        <?php get_template_part('template-parts/featured-news'); ?>
 
       </div>
       <!-- #latest-news -->
