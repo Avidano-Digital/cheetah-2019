@@ -189,7 +189,7 @@ $featured-panel: true;
     { width: 100%; }
   }
 
-  .featured-panel{
+  .featured-panel:not(.news){
 
     .align-self-end{
 
