@@ -2,7 +2,7 @@
 
     <?php if( have_rows('footer_features', 'option') ): ?>
 
-    <section class="row no-gutters" id="touts">
+    <div class="row no-gutters" id="touts">
 
         <?php while( have_rows('footer_features', 'option') ): the_row();
     
@@ -39,7 +39,8 @@
 
         <?php endwhile; ?>
 
-    </section>
+    </div>
+    <!-- #touts -->
 
     <?php endif; /* footer_features */ ?>
 
