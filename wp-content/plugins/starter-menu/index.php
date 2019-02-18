@@ -20,8 +20,17 @@ Author URI: http://fullwindsor.co
     $current_post_type = $queried_object->post_type;
     $current_term = $queried_object->term_id;
 
-    $current_section = explode("/", substr($_SERVER['REQUEST_URI'], 1), 2);
-    $current_section = $current_section[0];
+    $current_section = explode("/", substr($_SERVER['REQUEST_URI'], 1));
+
+    if ($current_section[1] == 'get-involved') {
+      $current_section = $current_section[1];
+    }
+    elseif ($current_section[0] == 'resource-library' || $current_section[0] == 'ccf-videos') {
+      $current_section = 'learn';
+    }
+    else {
+      $current_section = $current_section[0];
+    }
 
     $count = 0;
     $submenu = false;
