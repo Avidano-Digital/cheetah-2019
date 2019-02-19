@@ -117,7 +117,8 @@ Author URI: http://fullwindsor.co
 
       foreach( $menuitems as $menuitem ):
 
-        $title = $menuitem->title;
+        $label = $menuitem->title;
+        $attr_title = $menuitem->attr_title;
         $id = $menuitem->ID;
         $url = $menuitem->url;
         $classes = implode(' ',$menuitem->classes);
@@ -144,20 +145,20 @@ Author URI: http://fullwindsor.co
         }
 
         if ($menuitem->item_type == 'childless_parent') {
-          echo '<li class="'.$current.'"><a class="'.$classes.'" href="'.$url.'">'.$title.'</a></li>';
+          echo '<li class="'.$current.'"><a class="'.$classes.'" href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></li>';
           $count++;
           continue;
         }
 
         if ($menuitem->item_type == 'grandparent') {
-          echo '<li class="'.$current.'"><a href="'.$url.'" title="'.$title.'">'.$title.'</a><ul class="extensible-list sub"><li><div class="row no-gutters" style="width:480px;">';
+          echo '<li class="'.$current.'"><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a><ul class="extensible-list sub"><li><div class="row no-gutters" style="width:480px;">';
           $grandparent_closing_tags = '</div></li></ul></li>';
           $count++;
           continue;
         }
 
         if ($menuitem->item_type == 'parent') {
-          echo '<div class="col-6"><ul class="extensible-list"><li class="leader" title="'.$id.'">'.$title.'</li>';
+          echo '<div class="col-6"><ul class="extensible-list"><li class="leader" title="'.$attr_title.'">'.$label.'</li>';
           $open_parent = $menuitems[$count];
           $closing_tags = '</ul></div>';
           $count++;
@@ -165,14 +166,14 @@ Author URI: http://fullwindsor.co
         }
 
         if ($menuitem->item_type == 'orphaned_parent') {
-          echo '<li class="'.$current.'"><a href="'.$url.'" title="'.$title.'">'.$title.'</a><ul class="extensible-list sub">';
+          echo '<li class="'.$current.'"><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a><ul class="extensible-list sub">';
           $closing_tags = '</ul></li>';
           $count++;
           continue;
         }
 
         if ($menuitem->item_type == 'child') {
-          echo '<li><a href="'.$url.'">'.$title.'</a></li>';
+          echo '<li><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></li>';
 
           // Does this child item 1) have menu items that come after it? 2) have siblings?
 
@@ -212,7 +213,8 @@ Author URI: http://fullwindsor.co
 
       foreach( $menuitems as $menuitem ):
 
-        $title = $menuitem->title;
+        $label = $menuitem->title;
+        $attr_title = $menuitem->attr_title;
         $id = $menuitem->ID;
         $xfn = $menuitem->xfn;
         $url = $menuitem->url;
@@ -220,14 +222,14 @@ Author URI: http://fullwindsor.co
         $parent = $menuitem->menu_item_parent;
 
         if ($menuitem->item_type == 'grandparent') {
-          echo '<div class="card"><a class="card-header collapse collapsed" id="acc-button-'.$xfn.'" data-toggle="collapse" href="#panel-'.$xfn.'" role="tab" aria-expanded="false" aria-controls="panel-'.$xfn.'"><span class="title">'.$title.'</span></a><div class="collapse" id="panel-'.$xfn.'" role="tabpanel" aria-labelledby="acc-button-'.$xfn.'" data-parent="#mobile-menu-accordion"><div class="card-body bg-dark">';
+          echo '<div class="card"><a class="card-header collapse collapsed" id="acc-button-'.$xfn.'" data-toggle="collapse" href="#panel-'.$xfn.'" role="tab" aria-expanded="false" aria-controls="panel-'.$xfn.'" title="'.$attr_title.'"><span class="title">'.$label.'</span></a><div class="collapse" id="panel-'.$xfn.'" role="tabpanel" aria-labelledby="acc-button-'.$xfn.'" data-parent="#mobile-menu-accordion"><div class="card-body bg-dark">';
           $grandparent_closing_tags = '</div></div></div>';
           $count++;
           continue;
         }
 
         if ($menuitem->item_type == 'parent') {
-          echo '<ul class="extensible-list"><li class="leader">'.$title.'</li>';
+          echo '<ul class="extensible-list"><li class="leader">'.$label.'</li>';
           $open_parent = $menuitems[$count];
           $closing_tags = '</ul>';
           $count++;
@@ -235,14 +237,14 @@ Author URI: http://fullwindsor.co
         }
 
         if ($menuitem->item_type == 'orphaned_parent') {
-          echo '<div class="card"><a class="card-header collapse collapsed" id="acc-button-'.$xfn.'" data-toggle="collapse" href="#panel-'.$xfn.'" role="tab" aria-expanded="false" aria-controls="panel-'.$xfn.'"><span class="title">'.$title.'</span></a><div class="collapse" id="panel-'.$xfn.'" role="tabpanel" aria-labelledby="acc-button-'.$xfn.'" data-parent="#mobile-menu-accordion"><div class="card-body bg-dark"><ul class="extensible-list">';
+          echo '<div class="card"><a class="card-header collapse collapsed" id="acc-button-'.$xfn.'" data-toggle="collapse" href="#panel-'.$xfn.'" role="tab" aria-expanded="false" aria-controls="panel-'.$xfn.'" title="'.$attr_title.'"><span class="title">'.$label.'</span></a><div class="collapse" id="panel-'.$xfn.'" role="tabpanel" aria-labelledby="acc-button-'.$xfn.'" data-parent="#mobile-menu-accordion"><div class="card-body bg-dark"><ul class="extensible-list">';
           $closing_tags = '</ul></div></div></div>';
           $count++;
           continue;
         }
 
         if ($menuitem->item_type == 'child') {
-          echo '<li><a href="'.$url.'">'.$title.'</a></li>';
+          echo '<li><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></li>';
 
           // Does this child item 1) have menu items that come after it? 2) have siblings?
 
@@ -282,7 +284,8 @@ Author URI: http://fullwindsor.co
 
       foreach( $menuitems as $menuitem ):
 
-        $title = $menuitem->title;
+        $label = $menuitem->title;
+        $attr_title = $menuitem->attr_title;
         $id = $menuitem->ID;
         $xfn = $menuitem->xfn;
         $url = $menuitem->url;
@@ -290,14 +293,14 @@ Author URI: http://fullwindsor.co
         $parent = $menuitem->menu_item_parent;
 
         if ($menuitem->item_type == 'orphaned_parent') {
-          echo '<div class="col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto"><ul class="extensible-list"><li><span class="font-weight-bold mb-2">'.$title.'</span></li>';
+          echo '<div class="col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto"><ul class="extensible-list"><li><span class="font-weight-bold mb-2">'.$label.'</span></li>';
           $closing_tags = '</ul></div>';
           $count++;
           continue;
         }
 
         if ($menuitem->item_type == 'child') {
-          echo '<li><a href="'.$url.'">'.$title.'</a></li>';
+          echo '<li><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></li>';
 
           // Does this child item 1) have menu items that come after it? 2) have siblings?
 

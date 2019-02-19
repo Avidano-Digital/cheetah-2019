@@ -271,18 +271,6 @@
     }
 
     ////////////////////////////////////////
-    // News Article Excerpts
-    ////////////////////////////////////////
-
-    // function ccfExcerpt() {
-        // $ccf_excerpt = get_the_excerpt();
-        // $ccf_excerpt = ( strlen($ccf_excerpt ) > 200) ? substr($ccf_excerpt,0,93) . '...' : $ccf_excerpt;
-        // echo $ccf_excerpt;
-    // }
-
-    // remove_filter( 'the_excerpt', 'wpautop' );
-
-    ////////////////////////////////////////
     // News Section Secondary Nav
     ////////////////////////////////////////
 
