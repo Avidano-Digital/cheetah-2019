@@ -166,23 +166,30 @@ jQuery(document).ready(function ($) {
                 $('.posts').fadeOut('fast',function(){
 
                     $('.posts').html('');
+                    $('.featured').html('');
+                    $('.pagination').html('');
+
+                    const monthNames = ["January", "February", "March", "April", "May", "June",
+                      "July", "August", "September", "October", "November", "December"
+                    ];
 
                     if (!$.isEmptyObject(data)) {
                         $(data).each(function(){
                             title = this.title.rendered;
                             link = this.link;
-                            excerpt = this.excerpt.rendered;
                             image = '';
                             alt = '';
-                            // if (excerpt.length > 96) {
-                            //     excerpt = $.trim(excerpt).substring(0, 96) + "...";
-                            // }
+                            const date = new Date(this.date);
+                            month = monthNames[date.getMonth()];
+                            day = date.getDate();
+                            year = date.getFullYear();
+                            completeDate = month + ' ' + day + ', ' + year;
                             if (this._embedded['wp:featuredmedia']) {
                                 image = this._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url;                                
                                 alt = this._embedded['wp:featuredmedia'][0].alt_text;
                             }
                             category = this._embedded['wp:term'][0][0].name;
-                            string = '<div class="row align-items-center mb-3"><div class="col-lg-6 mb-3 mb-lg-0"><a href="' + link + '" title="' + title + '"><img class="w-100" src="'+ image +'" alt="'+ alt +'"></a></div><!-- .col --><div class="col-lg-6"><p class="f-sans-serif fs-md fs-muted mb-0"><span><em>'+ category +'</em></span></p><h2 class="h4">' + title + '</h2><p class="mb-0">' + excerpt + '</p><a class="link fs-md text-body" href="' + link + '" title="' + title + '">Full Article</a></div><!-- .col --></div>';
+                            string = '<div class="col-lg-4 mb-3"><a class="featured-article" href="' + link + '" title="' + title + '"><div><span>' + completeDate + '</span><img class="w-100" src="' + image + '" alt="' + alt + '>"></div><p class="h5">' + title + '</p></a></div>';
                             $('.posts').append(string);
                         });
                     }

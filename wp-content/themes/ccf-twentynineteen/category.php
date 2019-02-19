@@ -62,7 +62,7 @@ get_header(); ?>
 
     <div class="container py-7">
 
-            <div class="row no-gutters mb-5 bg-light">
+            <div class="row no-gutters mb-5 bg-light featured">
 
                 <div class="col">
 
@@ -126,8 +126,13 @@ get_header(); ?>
 
         <?php endif; /* have_posts */ ?>
 
-        <?php echo paginate_links(); ?>
+        <div class="pagination">
 
+            <?php echo paginate_links(); ?>
+
+        </div>
+
+    </div>
 
 </main>
 <!-- #content -->
