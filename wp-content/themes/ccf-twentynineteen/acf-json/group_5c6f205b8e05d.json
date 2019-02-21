@@ -1,14 +1,14 @@
 {
-    "key": "group_59862180599f7",
-    "title": "Video Post Type",
+    "key": "group_5c6f205b8e05d",
+    "title": "Resource Library",
     "fields": [
         {
-            "key": "field_598621dd9e29e",
-            "label": "Video URL",
-            "name": "video_url",
-            "type": "text",
-            "instructions": "Example YouTube: https:\/\/youtu.be\/XQu8TTBmGhA<br>\r\nUse the \"Share\" URL, not the \"embed\" code.",
-            "required": 1,
+            "key": "field_5c6f206036dbc",
+            "label": "Resource Library Description",
+            "name": "resource_library_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -17,28 +17,21 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page",
                 "operator": "==",
-                "value": "videos"
-            }
-        ],
-        [
-            {
-                "param": "post_taxonomy",
-                "operator": "==",
-                "value": "resource-category:lectures-and-presentations"
+                "value": "474"
             }
         ]
     ],
-    "menu_order": 20,
+    "menu_order": 0,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -60,5 +53,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1550787763
+    "modified": 1550786686
 }

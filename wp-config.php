@@ -26,7 +26,7 @@ define('DB_NAME', 'cheetah_conservation_fund');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -36,6 +36,10 @@ define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
+define('WP_SITEURL', 'http://cheetah');
+define('WP_HOME', 'http://cheetah');
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -83,7 +87,7 @@ define('WP_DEBUG', false);
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+  define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

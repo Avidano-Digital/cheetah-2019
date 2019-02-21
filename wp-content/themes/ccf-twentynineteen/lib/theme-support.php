@@ -161,6 +161,34 @@
     }
 
     ////////////////////////////////////////
+    // Custom Taxonomies
+    ////////////////////////////////////////
+
+    function tax_init() {
+
+        register_taxonomy(
+            'resource-category',
+            'resourcelibrary',
+            array(
+              'labels' => array(
+              'name' => __( 'Resource Categories' ),
+              'singular_name' => __( 'Resource Category' ),
+              'add_new_item' => 'Add New Resource Category',
+              'new_item_name' => 'New Category Name',
+              'edit_item' => 'Edit Resource Category',
+              'view_item' => 'View Resource Category',
+              'update_item' => 'Update Resource Category'
+            ),
+            'has_archive' => true,
+            'hierarchical' => true,
+            'show_in_nav_menus' => true,
+            'public' => true
+          )
+        );
+    }
+    add_action( 'init', 'tax_init' );
+
+    ////////////////////////////////////////
     // Remove Dashboard Menu Items
     ////////////////////////////////////////
     
