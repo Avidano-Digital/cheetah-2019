@@ -20,13 +20,17 @@
             </div>
             <!-- .card -->
         </div>
+        <!-- .col -->
 
         <div class="col-xxxl-6">
             <a class="btn btn-block btn-primary" href="#" title="Make a Donation">Donate</a>
         </div>
+        <!-- .col -->
+        
         <div class="col-xxxl-6">
             <a class="btn btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
         </div>
+        <!-- .col -->
 
     </div>
     <!-- .matrix-border -->
