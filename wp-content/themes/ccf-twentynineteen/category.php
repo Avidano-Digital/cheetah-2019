@@ -100,7 +100,7 @@ get_header(); ?>
                     
                         <div>
 
-                            <span><?php the_date(); ?></span>
+                            <span><?php echo get_the_date(); ?></span>
 
                             <?php if( has_post_thumbnail() ):
                                 $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
