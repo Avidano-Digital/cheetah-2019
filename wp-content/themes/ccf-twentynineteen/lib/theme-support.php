@@ -135,6 +135,19 @@
             'menu_icon' => 'dashicons-groups'
             )
         );
+
+        register_post_type( 'Events',
+            array(
+                'labels' => array(
+                'name' => __( 'Events' ),
+                'singular_name' => __( 'Event' )
+            ),
+            'supports' => array( 'title', 'thumbnail' ),
+            'public' => true,
+            'show_in_rest' => true,
+            'menu_icon' => 'dashicons-calendar'
+            )
+        );
     }
 
     add_action( 'init', __NAMESPACE__ . '\customize_post_object' );
@@ -246,7 +259,7 @@
             $current_category_id = $current_category->cat_ID;
             $topics = get_categories(array( 'parent' => $current_category_id ));
 
-            echo '<select class="form-control filter" id="topics" required><option>All Topics</option>';
+            echo '<select class="form-control news-filter" id="topics" required><option>All Topics</option>';
 
             foreach ($topics as $topic) :
                 echo '<option data-category-id="'.$topic->cat_ID.'" value="'.$topic->cat_name.'">'.$topic->cat_name.'</option>';
@@ -272,7 +285,7 @@
                 }
             }
 
-            echo '<select class="form-control filter" id="years" data-category-id="'.$current_category_id.'" required><option>Filter by Year</option>';
+            echo '<select class="form-control news-filter" id="years" data-category-id="'.$current_category_id.'" required><option>Filter by Year</option>';
 
             foreach ($years as $year) {
                 echo '<option data-category-id="'.$current_category_id.'" data-year="'.$year.'" value="'.$year.'">'.$year.'</option>';
@@ -288,7 +301,7 @@
         $wp_user_query = new WP_User_Query(array('has_published_posts' => array('post')));
         $authors = $wp_user_query->get_results();
 
-        echo '<select class="form-control filter" id="authors" required><option>All Authors</option>';
+        echo '<select class="form-control news-filter" id="authors" required><option>All Authors</option>';
 
         foreach ($authors as $author) :
             echo '<option data-author-id="'.$author->ID.'" value="'.$author->display_name.'">'.$author->display_name.'</option>';
@@ -313,4 +326,31 @@
             }
             echo '<li><a class="'. $active .'" href="/'. $category->slug .'">'. $category->name . '</a></li>';
         }                
+    }
+
+    ////////////////////////////////////////
+    // Events Country Filtering
+    ////////////////////////////////////////
+
+    function showCountryFilters() {
+
+        $args = array( 'post_type' => 'events', 'order' => 'ASC' );
+        $loop = new WP_Query( $args );
+        $countries = [];
+
+        while ( $loop->have_posts() ) : $loop->the_post();
+            $country = get_field('country');
+            if ($country && !in_array($country, $countries)) :
+                array_push($countries, $country);                            
+            endif;
+        endwhile;
+
+        echo '<select class="form-control events-filter" id="countries" required><option>All Countries</option>';
+
+        foreach ($countries as $country) :
+            echo '<option data-country-id="'.$country.'" value="'.$country.'">'.$country.'</option>';
+        endforeach;
+
+        echo '</select>';
+
     }

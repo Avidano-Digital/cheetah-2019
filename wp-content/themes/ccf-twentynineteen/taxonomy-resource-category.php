@@ -25,9 +25,9 @@
 
                 if( $resource_library ) :
         
-                $featured_image_id = get_post_thumbnail_id($resource_library[0]->ID);
-                $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
-                $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
+                    $featured_image_id = get_post_thumbnail_id($resource_library[0]->ID);
+                    $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
+                    $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
 
                 endif;
 

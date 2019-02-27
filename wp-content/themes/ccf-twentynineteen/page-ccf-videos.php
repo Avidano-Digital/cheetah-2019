@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: About Us
+Template Name: CCF Videos
 */
 
 get_header(); ?>
@@ -16,11 +16,11 @@ get_header(); ?>
 
             <div class="overlay-gradient-y-black">
         
-            <?php 
+<?php 
                 $featured_image_id = get_post_thumbnail_id($post->ID);
                 $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
                 $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
-             ?>
+?>
  	
             <?php if( $featured_image ): ?>
                 <img class="card-img" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
@@ -47,49 +47,7 @@ get_header(); ?>
 
         <div class="row">
 
-            <div class="col-xl-3 bg-dark px-xl-4">
-
-                <div class="sticky-top py-xl-5">
-
-                    <div class="btn-toggle d-xl-none offset-gutter-x">
-
-                        <a class="btn btn-lg btn-block btn-primary" data-toggle="collapse" href="#aside-nav" aria-expanded="false" aria-controls="collapseExample">
-                            <span class="title">Learn</span>
-                        </a>
-
-                    </div>
-
-                    <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
-                        <ul class="extensible-list text-white py-4 py-xl-0">
-                            <li class="page_item">
-                                <a href="/about-us/learn/resource-library/">Resource Library</a>
-                            </li>
-                            <li class="page_item">
-                                <a href="#">About Cheetahs</a>
-                            </li>
-                            <li class="page_item">
-                                <a href="#">Human Wildlife Conflict</a>
-                            </li>
-                            <li class="page_item">
-                                <a href="#">Illegal Pet Trade</a>
-                            </li>
-                            <li class="page_item">
-                                <a href="#">Habitat Loss</a>
-                            </li>
-                            <li class="page_item current_page_item">
-                                <a href="#">CCF Videos</a>
-                            </li>
-                        </ul>
-
-                    </nav>
-
-                    <?php get_template_part('template-parts/aside-donate'); ?>
-
-                </div>
-                <!-- .sticky-top -->
-
-            </div>
-            <!-- .col -->
+            <?php get_template_part('template-parts/sidebar-learn'); ?>
 
             <div class="col-xl-9 py-7">
 

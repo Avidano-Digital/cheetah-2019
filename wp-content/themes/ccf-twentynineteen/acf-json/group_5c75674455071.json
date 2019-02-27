@@ -1,11 +1,11 @@
 {
-    "key": "group_5c6f205b8e05d",
-    "title": "Resource Library",
+    "key": "group_5c75674455071",
+    "title": "CCF Events",
     "fields": [
         {
-            "key": "field_5c6f206036dbc",
-            "label": "Resource Library Description",
-            "name": "resource_library_description",
+            "key": "field_5c756749864bc",
+            "label": "Events Description",
+            "name": "events_description",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -19,15 +19,15 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": "br"
+            "new_lines": ""
         }
     ],
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "474"
+                "value": "page-ccf-events.php"
             }
         ]
     ],
@@ -51,5 +51,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1551201739
+    "modified": 1551199283
 }
