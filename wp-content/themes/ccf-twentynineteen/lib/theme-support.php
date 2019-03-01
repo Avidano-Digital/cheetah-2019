@@ -66,22 +66,6 @@
     add_action( 'init', __NAMESPACE__ . '\create_post_types' );
 
     function create_post_types() {
-
-        register_post_type( 'About Us',
-            array(
-                'labels' => array(
-                'name' => __( 'About Us' ),
-                'singular_name' => __( 'About Us' )
-            ),
-
-            'public' => true,
-            'hierarchical' => true,
-            'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'page-attributes' ),
-            'show_in_rest' => true,
-            'rewrite' => array( 'slug' => 'about-us'),
-            'menu_icon' => get_template_directory_uri() . '/images/wp-icon-about.png',
-            )
-        );
         
         register_post_type( 'Videos',
             array(
