@@ -161,7 +161,7 @@ get_header(); ?>
 
 <?php
                                                 $posts = get_posts(array(
-                                                        'numberposts' => 3,
+                                                        'numberposts' => 5,
                                                         'post_type'   => 'resourcelibrary',
                                                         'tax_query' => array(
                                                             array(
