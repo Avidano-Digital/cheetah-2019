@@ -54,7 +54,7 @@
         "tags",
         "send-trackbacks"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1547985833
+    "modified": 1551950967
 }

@@ -3,8 +3,8 @@ Contributors: edo888
 Author: Translate AI Multilingual Solutions
 Tags: translate wordpress, multilingual, translate, translation, language, bilingual, localization, translation proxy, i18n, l10n, localisation, multilanguage, google translate
 Requires at least: 2.8.1
-Tested up to: 5.0
-Stable tag: 2.8.43
+Tested up to: 5.1
+Stable tag: 2.8.46
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://gtranslate.io/?xyz=998#pricing
@@ -221,6 +221,17 @@ You need to go to the language you want to edit, for instance, French: http://do
 8. User Dashboard
 
 == Changelog ==
+= 2.8.46 =
+* Fix for relative path issue for some hosts
+
+= 2.8.45 =
+* Fix for expired cacert.pem file, please update
+
+= 2.8.44 =
+* Added cacert file to verify peer when calling home
+* Passing real visitor IP address when loading translations
+* Logos updated
+
 = 2.8.43 =
 * New features in User Dashboard:
 * Find and Replace before and after translation

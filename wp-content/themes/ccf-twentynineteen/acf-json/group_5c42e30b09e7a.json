@@ -1,7 +1,7 @@
 {
     "key": "group_5c42e30b09e7a",
     "title": "Infographics",
-    "fields": false,
+    "fields": [],
     "location": [
         [
             {
@@ -17,7 +17,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1547982523
+    "modified": 1551950967
 }

@@ -113,6 +113,22 @@ foreach($request_headers as $key => $val) {
         $headers[] = $key . ': ' . $val;
 }
 
+// add real visitor IP header
+if(isset($_SERVER['HTTP_CLIENT_IP']) and !empty($_SERVER['HTTP_CLIENT_IP']))
+    $viewer_ip_address = $_SERVER['HTTP_CLIENT_IP'];
+if(isset($_SERVER['HTTP_CF_CONNECTING_IP']) and !empty($_SERVER['HTTP_CF_CONNECTING_IP']))
+    $viewer_ip_address = $_SERVER['HTTP_CF_CONNECTING_IP'];
+if(isset($_SERVER['HTTP_X_SUCURI_CLIENTIP']) and !empty($_SERVER['HTTP_X_SUCURI_CLIENTIP']))
+    $viewer_ip_address = $_SERVER['HTTP_X_SUCURI_CLIENTIP'];
+if(!isset($viewer_ip_addres))
+    $viewer_ip_address = $_SERVER['REMOTE_ADDR'];
+
+$headers[] = 'X-GT-Viewer-IP: ' . $viewer_ip_address;
+
+// add X-Forwarded-For
+if(isset($_SERVER['HTTP_X_FORWARDED_FOR']) and !empty($_SERVER['HTTP_X_FORWARDED_FOR']))
+    $headers[] = 'X-GT-Forwarded-For: ' . $_SERVER['HTTP_X_FORWARDED_FOR'];
+
 //print_r($headers);
 //exit;
 
@@ -123,8 +139,9 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch, CURLOPT_HEADER, true);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 //curl_setopt($ch, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+curl_setopt($ch, CURLOPT_CAINFO, dirname(__FILE__).'/cacert.pem');
 
 switch($_SERVER['REQUEST_METHOD']) {
     case 'POST': {
@@ -145,7 +162,7 @@ switch($_SERVER['REQUEST_METHOD']) {
             $new_post = array('a'=>1,'b'=>2);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $new_post); // todo: think about $_FILES: http://php.net/manual/en/class.curlfile.php
             //curl_setopt($ch, CURLOPT_HTTPHEADER, array());
-            file_put_contents('debug.txt', print_r($new_post, true)."\n", FILE_APPEND);
+            file_put_contents(dirname(__FILE__).'/debug.txt', print_r($new_post, true)."\n", FILE_APPEND);
         } else {
             curl_setopt($ch, CURLOPT_POSTFIELDS, file_get_contents('php://input'));
         }
@@ -159,7 +176,7 @@ switch($_SERVER['REQUEST_METHOD']) {
 
 // Debug
 if($debug or isset($_GET['enable_debug'])) {
-    $fh = fopen('debug.txt', 'a');
+    $fh = fopen(dirname(__FILE__).'/debug.txt', 'a');
     curl_setopt($ch, CURLOPT_VERBOSE, true);
     curl_setopt($ch, CURLOPT_STDERR, $fh);
 }
@@ -227,8 +244,8 @@ $html = str_ireplace('action=\'//' . $_SERVER['HTTP_HOST'], 'action=\'//' . $_SE
 
 // woocommerce specific changes
 $html = str_ireplace(
-    array('ajax_url":"\\/',              '"checkout_url":"\\/',               'var wc_country_select_params',  'var wc_address_i18n_params' ),
-    array('ajax_url":"\\/'.$glang.'\\/', '"checkout_url":"\\/'.$glang.'\\/',  'var wc_country_select_params2', 'var wc_address_i18n_params2'),
+    array('ajax_url":"\\/',              '"checkout_url":"\\/'              ),
+    array('ajax_url":"\\/'.$glang.'\\/', '"checkout_url":"\\/'.$glang.'\\/' ),
     $html
 );
 

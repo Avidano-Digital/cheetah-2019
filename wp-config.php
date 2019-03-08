@@ -78,7 +78,7 @@ define('DB_COLLATE', '');
 
 define('WP_SITEURL', 'http://cheetah-2019/');
 
-define('WP_HOME', 'http://cheetah-2019');
+define('WP_HOME', 'http://cheetah-2019/');
 
 
 

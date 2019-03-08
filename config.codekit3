@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "29156",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
@@ -5003,6 +5011,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-comments-post.php",
+		"oF": 0
+		},
+	"/wp-config-sample.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-config-sample.php",
 		"oF": 0
 		},
 	"/wp-config.php": {
@@ -14154,16 +14170,15 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/wp-content/plugins/gtranslate/gt-logo.png": {
-		"ft": 32768,
-		"iS": 5530,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/gtranslate/gt-logo.png",
+	"/wp-content/plugins/gtranslate/gt_logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/wp-content/plugins/gtranslate/gt_logo.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/wp-content/plugins/gtranslate/gtglobe.svg": {
 		"ft": 2097152,
@@ -14259,6 +14274,14 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/wp-content/plugins/gtranslate/url_addon/cacert.pem": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/gtranslate/url_addon/cacert.pem",
+		"oF": 0
 		},
 	"/wp-content/plugins/gtranslate/url_addon/config.php": {
 		"cB": 0,
@@ -15493,6 +15516,30 @@
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c6f22d638b25-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c7462f9af1f2.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c7462f9af1f2-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c755d982a14a.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c755d982a14a-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c75674455071.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c75674455071-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
@@ -22547,6 +22594,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/wp-includes/js/backbone.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/backbone-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/wp-includes/js/backbone.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -22590,6 +22648,28 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/wp-includes/js/codemirror/esprima.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/codemirror/esprima-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-includes/js/codemirror/fakejshint.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/codemirror/fakejshint-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/wp-includes/js/codemirror/htmlhint-kses.js": {
 		"bF": 0,
 		"ft": 64,
@@ -22608,17 +22688,6 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/wp-includes/js/codemirror/htmlhint-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"/wp-includes/js/codemirror/jshint.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "/wp-includes/js/codemirror/jshint-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -26145,13 +26214,16 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"/wp-includes/js/tinymce/wp-tinymce.js.gz": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-includes/js/tinymce/wp-tinymce.js.gz",
-		"oF": 0
+	"/wp-includes/js/tinymce/wp-tinymce.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/tinymce/wp-tinymce-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
 		},
 	"/wp-includes/js/tinymce/wp-tinymce.php": {
 		"cB": 0,
@@ -26201,6 +26273,17 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/wp-includes/js/twemoji.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-includes/js/underscore.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/underscore-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -26776,12 +26859,28 @@
 		"oAP": "/wp-includes/ms-load.php",
 		"oF": 0
 		},
+	"/wp-includes/ms-network.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/ms-network.php",
+		"oF": 0
+		},
 	"/wp-includes/ms-settings.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-includes/ms-settings.php",
+		"oF": 0
+		},
+	"/wp-includes/ms-site.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/ms-site.php",
 		"oF": 0
 		},
 	"/wp-includes/nav-menu-template.php": {
@@ -26990,14 +27089,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-includes/random_compat/random_bytes_mcrypt.php",
-		"oF": 0
-		},
-	"/wp-includes/random_compat/random_bytes_openssl.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-includes/random_compat/random_bytes_openssl.php",
 		"oF": 0
 		},
 	"/wp-includes/random_compat/random_int.php": {

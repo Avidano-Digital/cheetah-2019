@@ -3,14 +3,14 @@
 Plugin Name: GTranslate
 Plugin URI: https://gtranslate.io/?xyz=998
 Description: Makes your website <strong>multilingual</strong> and available to the world using Google Translate. For support visit <a href="https://wordpress.org/support/plugin/gtranslate">GTranslate Support</a>.
-Version: 2.8.43
+Version: 2.8.46
 Author: Translate AI Multilingual Solutions
 Author URI: https://gtranslate.io
 Text Domain: gtranslate
 
 */
 
-/*  Copyright 2010 - 2017 Edvard Ananyan  (email : edo888@gmail.com)
+/*  Copyright 2010 - 2019 Edvard Ananyan  (email : edo888@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -236,7 +236,7 @@ class GTranslate extends WP_Widget {
         ?>
         <div class="wrap">
         <div id="icon-options-general" class="icon32"><br/></div>
-        <h2><img src="<?php echo plugins_url('gt-logo.png', __FILE__); ?>" border="0" title="<?php _e('GTranslate - your window to the world', 'gtranslate'); ?>" alt="GTranslate"></h2>
+        <h2><img src="<?php echo plugins_url('gt_logo.svg', __FILE__); ?>" border="0" title="<?php _e('GTranslate - your window to the world', 'gtranslate'); ?>" alt="G|translate" height="70"></h2>
         <?php
         if(isset($_POST['save']) and $_POST['save'])
             GTranslate::control_options();
