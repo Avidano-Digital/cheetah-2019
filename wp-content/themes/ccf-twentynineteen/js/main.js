@@ -126,7 +126,7 @@ jQuery(document).ready(function ($) {
     // News filter selects
     ////////////////////////////////////////
 
-    $('.filter').change(function() {
+    $('.news-filter').change(function() {
 
         var categoryID = $('#topics').find(':selected').data('category-id'),
             year = $('#years').find(':selected').data('year'),
@@ -203,6 +203,28 @@ jQuery(document).ready(function ($) {
                 $('.posts').fadeIn('fast');
             }
         });
+    });
+
+    ////////////////////////////////////////
+    // Events filter selects
+    ////////////////////////////////////////
+
+    $('.events-filter').change(function() {
+
+        var country = $('#countries').find(':selected').data('country-id');
+
+        if (!country) {
+            $('.events').fadeIn();
+            $('[data-country]').fadeIn();
+        }
+        else {
+            $('.events').fadeOut('fast',function(){
+                $("[data-country]").hide();
+                $("[data-country='" + country +"']").show();
+                $("[data-country='" + country +"']").parents('.events').fadeIn();
+            });
+        }
+
     });
 
 }); // end document ready

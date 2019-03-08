@@ -1,9 +1,5 @@
 <?php
 
-/*
-Template Name: Resource Library
-*/
-
 get_header();
 
 $resourceCategories = get_the_terms( $post->ID, 'resource-category' ) ;
