@@ -64,14 +64,14 @@ $inside_news = strpos($url, 'news');
 
                         <div class="col-auto">
 
-                            <ul class="extensible-list horizontal no-reverse">
+                            <ul class="extensible-list horizontal">
                                 <li>
                                     <a href="#" title="For Kids">
                                         <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="btn btn-primary donate" href="#" title="Donate">Donate</a>
+                                    <a class="btn btn-primary donate" href="#1" title="Donate">Donate</a>
                                 </li>
                             </ul>
                         

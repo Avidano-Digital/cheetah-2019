@@ -44,7 +44,7 @@
 
     <?php endif; /* footer_features */ ?>
 
-    <div class="py-7" id="all-links">
+    <div class="py-7" id="global-links">
 
         <div class="container">
 
@@ -126,6 +126,20 @@
 
             <div class="row justify-content-between">
 
+                <div class="col-lg-auto">
+
+                    <ul class="extensible-list horizontal fs-lg">
+                        <li>
+                            <a class="no-btn-style text-body" href="#">
+                                <span class="far fa-envelope-open"></span>
+                                <span class="mx-1 font-weight-bold fs-md">CCF Newsletters</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- .col -->
+
                 <div class="col-lg-auto mb-2 mb-lg-0">
 
                     <ul class="extensible-list horizontal fs-lg">
@@ -152,20 +166,6 @@
                         <li>
                             <a class="text-body" href="#">
                                 <span class="fab fa-pinterest"></span>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- .col -->
-
-                <div class="col-lg-auto">
-
-                    <ul class="extensible-list horizontal fs-lg">
-                        <li>
-                            <a class="no-btn-style text-body" href="#">
-                                <span class="far fa-envelope-open"></span>
-                                <span class="mx-1 font-weight-bold fs-md">CCF Newsletters</span>
                             </a>
                         </li>
                     </ul>
