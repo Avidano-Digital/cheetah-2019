@@ -70,7 +70,7 @@ $parent_title = get_the_title($parent);
             <div class="col-xl-9 py-7">
 
                 <header class="medium">
-                    <h1 class="display-3 text-center mb-3"><?php the_title(); ?></h1>
+                    <h1 class="display-4 text-center mb-3"><?php the_title(); ?></h1>
                 </header>
 
                 <?php if (get_field(resource_library_description)): ?>                    
