@@ -24,17 +24,17 @@ $parent_title = get_the_title($parent);
 
             <div class="overlay-gradient-y-black">
         
-<?php 
+                <?php 
                 $featured_image_id = get_post_thumbnail_id($post->ID);
                 $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
                 $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
-?>
+                ?>
   
-            <?php if( $featured_image ): ?>
-                <img class="card-img" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
-            <?php else : ?>
-                <img class="card-img" src="http://via.placeholder.com/1500x500.jpg" alt="Placeholder">
-            <?php endif; ?>
+                <?php if( $featured_image ): ?>
+                    <img class="card-img" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
+                <?php else : ?>
+                    <img class="card-img" src="http://via.placeholder.com/1500x500.jpg" alt="Placeholder">
+                <?php endif; ?>
 
             </div>
 
@@ -55,7 +55,7 @@ $parent_title = get_the_title($parent);
 
         <div class="row">
 
-<?php 
+            <?php 
             if ($parent_title == "Who We Are"):
               get_template_part('template-parts/sidebar-who-we-are');
             elseif ($parent_title == "What We Do"):
@@ -65,7 +65,7 @@ $parent_title = get_the_title($parent);
             elseif ($parent_title == "Learn"):
               get_template_part('template-parts/sidebar-learn');
             endif;
-?>
+            ?>
 
             <div class="col-xl-9 py-7">
 
@@ -73,9 +73,7 @@ $parent_title = get_the_title($parent);
                     <h1 class="display-3 text-center mb-3"><?php the_title(); ?></h1>
                 </header>
 
-<?php
-                if (get_field(resource_library_description)):
-?>                    
+                <?php if (get_field(resource_library_description)): ?>                    
 
                     <div class="text-block narrow mb-5">
                         <p>
@@ -83,8 +81,7 @@ $parent_title = get_the_title($parent);
                         </p>
                     </div>
 
-<?php
-                endif;
+                <?php endif;
 
                 get_template_part('template-parts/flexible-content-article');
 
@@ -132,7 +129,7 @@ $parent_title = get_the_title($parent);
 
                             ?>
 
-                            <dl class="row no-gutters justify-content-between border-top py-2 mb-0 fs-md">
+                            <dl class="row justify-content-between border-top py-2 mb-0 fs-md">
 
                                 <dt class="col-md">
                                     <?php echo $name; ?>

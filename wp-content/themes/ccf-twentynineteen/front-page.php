@@ -195,7 +195,7 @@
                 <div class="card-img-overlay d-flex">
                   <div class="align-self-end">
                     <?php if( $link ): ?>
-                      <a class="btn btn-block btn-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                      <a class="btn btn-block btn-primary stretched-link" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     <?php endif; ?>
                   </div>
                 </div>
@@ -359,83 +359,88 @@
 
       <div class="card bg-info">
         <img class="card-img d-xl-none" src="<?php echo get_template_directory_uri(); ?>/images/cheetah-range-sm.svg" alt="Placeholder">
-        <img class="card-img d-none d-xl-block" src="<?php echo get_template_directory_uri(); ?>/images/cheetah-range-lg.svg" alt="Placeholder">
+        <img class="card-img d-none d-xl-block" src="<?php echo get_template_directory_uri(); ?>/images/cheetah-range-lg.svg"
+          alt="Placeholder">
 
         <div class="card-img-overlay d-flex p-0">
           <div class="container-fluid align-self-center">
-          <div class="wide px-lg-2">
+            <div class="wide px-lg-2">
 
-            <div class="row">
-              <div class="col-xl-5">
-                <div class="narrow text-white mb-5 mb-xl-0">
+              <div class="row">
+                <div class="col-xl-5">
 
-                  <h3 class="h1 text-primary">Shrinking habitat</h3>
-                  <p class="mb-3">In the last 100 years, the world has lost 90% of the wild cheetah population. Today, one-third of wild
-                    cheetahs live in southern Africa. CCF is working across Africa to save the species throughout its range.</p>
+                  <div class="narrow text-white mb-5 mb-xl-0">
 
-                  <ul class="list-unstyled fs-md mb-5">
-                    <li>
-                      <span class="fas fa-circle fa-fw text-quaternary"></span>
-                      <span class="mx-1">Cheetah range pre-1900</span>
-                    <li>
+                    <h2 class="h1 text-primary">Shrinking habitat</h2>
+
+                    <p class="mb-3">
+                      In the last 100 years, the world has lost 90% of the wild cheetah population. Today, one-third of
+                      wild cheetahs live in southern Africa. CCF is working across Africa to save the species throughout its range.
+                    </p>
+
+                    <ul class="list-unstyled fs-md mb-5">
+                      <li>
+                        <span class="fas fa-circle fa-fw text-quaternary"></span>
+                        <span class="mx-1">Cheetah range pre-1900</span>
+                      <li>
                         <span class="fas fa-circle fa-fw text-primary"></span>
                         <span class="mx-1">Cheetah range today</span>
-                    <li>
-                      <span class="fas fa-star fa-fw text-white"></span>
-                      <span class="mx-1">CCF Headquarters, Namibia</span>
-                  </ul>
-
-                  <div class="row matrix-border d-md-none">
-                    <div class="col-sm">
-                      <a href="#1" class="btn btn-block btn-primary d-md-none">Research</a>
-                    </div>
-                    <!-- .col -->
-                    <div class="col-sm">
-                      <a href="#1" class="btn btn-block btn-primary d-md-none">Education</a>
-                    </div>
-                    <!-- .col -->
-                    <div class="col-sm">
-                      <a href="#1" class="btn btn-block btn-primary d-md-none">Conservation</a>
-                    </div>
-                    <!-- .col -->
-                  </div>
-                  <!-- .row -->
-
-                  <div class="d-none d-md-block">
-
-                    <ul class="extensible-list horizontal">
                       <li>
-                        <a href="#" class="text-primary text-center">
-                          <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-research.jpg" alt="Placeholder">
-                          <h5>Research</h5>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="text-primary text-center">
-                          <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-education.jpg" alt="Placeholder">
-                          <h5>Education</h5>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" class="text-primary text-center">
-                          <img class="rounded-circle mb-2" src="<?php echo get_template_directory_uri(); ?>/images/ccf-conservation.jpg"
-                            alt="Placeholder">
-                          <h5>Conservation</h5>
-                        </a>
-                      </li>
+                        <span class="fas fa-star fa-fw text-white"></span>
+                        <span class="mx-1">CCF Headquarters, Namibia</span>
                     </ul>
+
+                    <div class="row matrix-border d-md-none">
+                      <div class="col-sm">
+                        <a href="#1" class="btn btn-block btn-primary d-md-none">Conservation</a>
+                      </div>
+                      <!-- .col -->
+                      <div class="col-sm">
+                        <a href="#1" class="btn btn-block btn-primary d-md-none">Research</a>
+                      </div>
+                      <!-- .col -->
+                      <div class="col-sm">
+                        <a href="#1" class="btn btn-block btn-primary d-md-none">Education</a>
+                      </div>
+                      <!-- .col -->
+                    </div>
+                    <!-- .row -->
+
+                    <div class="d-none d-md-block">
+
+                      <ul class="extensible-list horizontal text-center">
+                          <li>
+                              <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-conservation.jpg" alt="Placeholder">
+                              <a class="text-primary stretched-link d-block" href="#1" title="Conservation">
+                                  <strong>Conservation</strong>
+                              </a>
+                          </li>
+                          <li>
+                              <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-research.jpg" alt="Placeholder">
+                              <a class="text-primary stretched-link d-block" href="#2" title="Research">
+                                  <strong>Research</strong> 
+                              </a>
+                          </li>
+
+                          <li>
+                              <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-education.jpg" alt="Placeholder">
+                              <a class="text-primary stretched-link d-block" href="#3" title="Education">
+                                  <strong>Education</strong> 
+                              </a>
+                          </li>
+                      </ul>
+                    </div>
+
                   </div>
+                  <!-- .narrow -->
 
                 </div>
-                <!-- .narrow -->
-
+                <!-- .col -->
               </div>
-              <!-- .col -->
+              <!-- .row -->
+
             </div>
             <!-- .row -->
-          
-          </div>
-          <!-- .row -->
           </div>
           <!-- .container-fluid -->
         </div>
@@ -457,7 +462,7 @@
                 Join the race to save the cheetah
               </h2>
 
-              <p class="fs-lg text-shadow">Support our science-based, results-driven conservation initiatives. Together, we can save the cheetah.</p>
+              <p class="text-shadow">Support our science-based, results-driven conservation initiatives. Together, we can save the cheetah.</p>
 
               <div class="row matrix-border shadow-lg my-3">
 
@@ -467,7 +472,7 @@
                 <!-- .col -->
 
                 <div class="col-md-6">
-                  <a class="btn btn-lg btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
+                  <a class="btn btn-lg btn-block btn-primary" href="#" title="Sponsor">Sponsor</a>
                 </div>
                 <!-- .col -->
 
