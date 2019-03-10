@@ -16,17 +16,17 @@ get_header(); ?>
 
             <div class="overlay-gradient-y-black">
         
-<?php 
+                <?php 
                 $featured_image_id = get_post_thumbnail_id($post->ID);
                 $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
                 $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
-?>
+                ?>
   
-            <?php if( $featured_image ): ?>
-                <img class="card-img" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
-            <?php else : ?>
-                <img class="card-img" src="http://via.placeholder.com/1500x500.jpg" alt="Placeholder">
-            <?php endif; ?>
+                <?php if( $featured_image ): ?>
+                    <img class="card-img" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
+                <?php else : ?>
+                    <img class="card-img" src="http://via.placeholder.com/1500x500.jpg" alt="Placeholder">
+                <?php endif; ?>
 
             </div>
 
@@ -56,18 +56,19 @@ get_header(); ?>
                     <header class="medium">
                         <h1 class="display-4 text-center"><?php the_title(); ?></h1>
                     </header>
-<?php
-                    showCountryFilters();
 
-                    if (get_field('events_description')) :
-?>                                
-                        <div class="text-block narrow my-6">
-                            <p>
-                                <?php the_field('events_description'); ?>
-                            </p>
+                    <div class="text-block narrow my-6">
+                        
+                        <?php the_content(); ?>
+
+                        <div class="narrow mt-4">
+                            <?php showCountryFilters(); ?> 
                         </div>
-<?php           
-                    endif;
+                              
+                    </div>
+                    <!-- .narrow -->
+
+                    <?php
 
                     $args = array( 
                         'post_type' => 'events', 
@@ -75,6 +76,7 @@ get_header(); ?>
                         'meta_key' => 'date',
                         'orderby' => 'meta_value',
                     );
+                    
                     $loop = new WP_Query( $args );
                     $date_groups = [];
                     $countries = [];

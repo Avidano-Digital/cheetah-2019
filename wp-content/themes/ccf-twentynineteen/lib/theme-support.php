@@ -329,7 +329,7 @@
             endif;
         endwhile;
 
-        echo '<select class="form-control events-filter" id="countries" required><option>All Countries</option>';
+        echo '<select class="form-control events-filter" id="countries" required><option>Show Events by Country</option>';
 
         foreach ($countries as $country) :
             echo '<option data-country-id="'.$country.'" value="'.$country.'">'.$country.'</option>';
