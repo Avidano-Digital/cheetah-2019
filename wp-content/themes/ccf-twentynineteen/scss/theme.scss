@@ -33,10 +33,44 @@ In this file:
 
 .f-sans-serif{ font-family: 'Roboto', sans-serif; }
 
+.f-for-kids{ font-family: 'Mali', cursive; }
+
 // Font styles
 
 body{ @extend .f-sans-serif; }
-p{ @extend .f-serif; }
+
+p{ 
+  @extend .f-serif;
+
+  &.h1, 
+  &.h2, 
+  &.h3, 
+  &.h4, 
+  &.h5, 
+  &.h6
+  { @extend .f-sans-serif; }
+}
+
+// For Kids Font styles
+
+main.for-kids, 
+main.for-kids p {
+  @extend .f-for-kids;
+}
+
+main.for-kids{
+
+  h1, 
+  h2, 
+  h3, 
+  h4, h5, h6
+  { line-height: .85; }
+
+  p{
+    @extend .fs-lg;
+  }
+  
+}
 
 ////////////////////////////////////////
 // Global Navigation
@@ -51,11 +85,10 @@ p{ @extend .f-serif; }
 }
 
 #mobile-menu,
-#all-links{
+#global-links{
   ul:not(.horizontal){ 
     font-size: $fs-md;
   }
-
 }
 
 #primary-navigation-desktop{
@@ -168,7 +201,7 @@ form[role="search"]{
 
 // All Links
 
-#all-links{
+#global-links{
   li > a { @extend .text-body; }
 }
 
@@ -355,6 +388,27 @@ $leaflet-button-color: white;
 
 }
 
+.pattern-wavy-top{
+  
+  @extend .position-relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 0;
+
+  }
+
+  &::before {
+    top: 50%;
+    
+    @include apply-background-image('wavy-background', '.svg');
+  }
+
+}
+
 
 
 .pattern-border-colored{
@@ -435,10 +489,10 @@ blockquote{
 
 .text-block{
 
-> ul{
-  @extend .f-serif;
-  @extend .fs-rg;
-}
+  > ul:not([class]){
+    @extend .f-serif;
+    @extend .fs-rg;
+  }
 
 }
 
@@ -540,3 +594,19 @@ figure.right{
 hr.dark{
   border-top-color: rgba($dark, 0.5); 
 }
+
+
+.modal-footer{ @extend .d-block; }
+
+.cool-stuff{
+  min-height: 800px;
+}
+
+// .ekko-lightbox{
+
+//   @extend .modal-dialog-centered;
+//   .modal-dialog{
+
+
+//   }
+// }

@@ -170,33 +170,30 @@
 
         <figure class="figure my-0">
 
-            <?php if( $enlarge ): ?>
+            <div class="figure-img">
 
-            <a class="figure-img enlarge" href="<?php echo $image['url']; ?>" title="<?php echo $caption; ?>" data-toggle="lightbox" data-footer="<?php echo $caption; ?>">
+                <?php if( $enlarge ): ?>
+
+                <a class="enlarge stretched-link" href="<?php echo $image['url']; ?>" class="stretched-link" title="<?php echo $caption; ?>"
+                    data-toggle="lightbox" data-footer="<?php echo $caption; ?>">
+                    <span>
+                        <span class="fas fa-expand"></span>
+                    </span>
+                </a>
+
+                <?php endif; ?>
+
                 <?php if( $image ): ?>
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
                 <?php else : ?>
                     <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
                 <?php endif; ?>
-                <span class="fas fa-expand"></span>
-            </a>
-                
-            <?php else : ?>
 
-            <?php if( $image ): ?>
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
-            <?php else : ?>
-                <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
-            <?php endif; ?>
-            
-            <?php endif; ?>
+            </div>
+            <!-- .figure-img -->
 
-            <?php if( $caption ): ?>
+            <figcaption class="figure-caption mx-2"><?php echo $caption; ?></figcaption>
 
-            <figcaption class="figure-caption"><?php echo $caption; ?></figcaption>
-            
-            <?php endif; ?>
-        
         </figure>
 
     </div>
@@ -218,94 +215,81 @@
 
     ?>
     
-    <div class="offset-gutter-x">
-    
-        <div class="two-figure-block my-7">
+    <div class="two-figure-block my-7 mx-n2">
 
-            <div class="row matrix-gutter">
+        <div class="row matrix-gutter">
 
-                <div class="col-sm-6">
+            <div class="col-sm-6">
 
-                    <figure class="figure my-0">
+                <figure class="figure my-0">
+
+                    <div class="figure-img">
 
                         <?php if( $enlarge_a ): ?>
 
-                        <a class="figure-img enlarge" href="<?php echo $image_a['url']; ?>" title="<?php echo $caption; ?>" data-toggle="lightbox" data-footer="<?php echo $caption_a; ?>">
-                            
-                            <?php if( $image_a ): ?>
-                                <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
-                            <?php else : ?>
-                                <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
-                            <?php endif; ?>
-
-                            <span class="fas fa-expand"></span>
+                        <a class="enlarge stretched-link" href="<?php echo $image_a['url']; ?>" class="stretched-link" title="<?php echo $caption_a; ?>"
+                            data-toggle="lightbox" data-footer="<?php echo $caption_a; ?>">
+                            <span>
+                                <span class="fas fa-expand"></span>
+                            </span>
                         </a>
 
-                        
-                            
-                        <?php else : ?>
-                            
+                        <?php endif; ?>
+
                         <?php if( $image_a ): ?>
                             <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
                         <?php else : ?>
                             <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
                         <?php endif; ?>
 
-                        <?php endif; /* enlarge_a */ ?>
+                    </div>
+                    <!-- .figure-img -->
 
-                        <?php if( $caption_a ): ?>
-                            <figcaption class="figure-caption px-2"><?php echo $caption_a; ?></figcaption>
-                        <?php endif; ?>
+                    <figcaption class="figure-caption mx-2"><?php echo $caption_a; ?></figcaption>
 
-                    </figure>
+                </figure>
 
-                </div>
-                <!-- .col -->
+            </div>
+            <!-- .col -->
 
-                <div class="col-sm-6">
+            <div class="col-sm-6">
 
-                    <figure class="figure my-0">
+                <figure class="figure my-0">
+
+                    <div class="figure-img">
 
                         <?php if( $enlarge_b ): ?>
 
-                        <a class="figure-img enlarge" href="<?php echo $image_b['url']; ?>" title="<?php echo $caption; ?>" data-toggle="lightbox" data-footer="<?php echo $caption_b; ?>">
-                            
-                            <?php if( $image_b ): ?>
-                                <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
-                            <?php else : ?>
-                                <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
-                            <?php endif; ?>
-
-                            <span class="fas fa-expand"></span>
+                        <a class="enlarge stretched-link" href="<?php echo $image_b['url']; ?>" class="stretched-link" title="<?php echo $caption_b; ?>"
+                            data-toggle="lightbox" data-footer="<?php echo $caption_a; ?>">
+                            <span>
+                                <span class="fas fa-expand"></span>
+                            </span>
                         </a>
-                            
-                        <?php else : ?>
-                            
-                        <?php if( $image_b ): ?>
+
+                        <?php endif; ?>
+
+                        <?php if( $image_a ): ?>
                             <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
                         <?php else : ?>
                             <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
                         <?php endif; ?>
 
-                        <?php endif; /* enlarge_b */ ?>
+                    </div>
+                    <!-- .figure-img -->
 
-                        <?php if( $caption_b ): ?>
-                            <figcaption class="figure-caption px-2"><?php echo $caption_b; ?></figcaption>
-                        <?php endif; ?>
+                    <figcaption class="figure-caption mx-2"><?php echo $caption_b; ?></figcaption>
 
-                    </figure>
-
-                </div>
-                <!-- .col -->
+                </figure>
 
             </div>
-            <!-- .row -->
+            <!-- .col -->
 
         </div>
-        <!-- .two-figure-block -->
+        <!-- .row -->
 
     </div>
-    <!-- .offset-gutter-x -->
+    <!-- .two-figure-block -->
 
     <?php elseif( get_row_layout() == 'gallery_carousel_block' ): 
             
@@ -474,32 +458,36 @@
 
     <?php if( $images ): ?>
     
-    <div class="offset-gutter-x my-7">
+    <div class="medium gallery-thumbnails my-6">
 
-        <div class="medium gallery-thumbnails">
+        <div class="row matrix-gutter">
 
-            <div class="row matrix-gutter">
+            <?php foreach( $images as $image ): ?>
                 
-                <?php foreach( $images as $image ): ?>
-                
-                <div class="col-sm-6">
-                    <a class="enlarge" href="<?php echo $image['url']; ?>" data-toggle="lightbox" data-gallery="example-gallery" data-footer="<?php echo $image['alt']; ?>">
-                        <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-                        <span class="fas fa-expand"></span>
+            <div class="col-sm-6">
+
+                <div class="position-relative">
+
+                    <a class="enlarge" class="stretched-link" href="<?php echo $image['url']; ?>" title="<?php echo $image['alt']; ?>"
+                        data-toggle="lightbox" data-gallery="example-gallery" data-footer="<?php echo $image['alt']; ?>">
+                        <span>
+                            <span class="fas fa-expand"></span>
+                        </span>
                     </a>
-                </div>
-                <!-- .col -->
 
-                <?php endforeach; ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                </div>
 
             </div>
-            <!-- .row -->
+            <!-- .col -->
+            
+            <?php endforeach; ?>
 
         </div>
-        <!-- .medium -->
-    
+        <!-- .row -->
+
     </div>
-    <!-- .offset-gutter-x -->
+    <!-- .gallery-thumbnails -->
 
     <?php endif; ?>
 
