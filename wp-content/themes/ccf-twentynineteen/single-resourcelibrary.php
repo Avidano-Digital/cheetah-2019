@@ -9,13 +9,16 @@ $resourceCategory = $resourceCategories[0];
 
 <main id="content">
 
-    <div class="container-fluid bg-info cheetah-spots py-4">
+    <div class="container-fluid bg-info cheetah-spots py-3">
 
         <div class="narrow">
-            <ul class="extensible-list horizontal fs-md text-white">
-                <li><a href="<?php echo get_site_url() . '/resource-library'; ?>">Resource Library</a></li>
-                <li><span class="fas fa-caret-right"></span></li>
-                <li><a href="<?php echo get_site_url() . '/resource-category/' . $resourceCategory->slug; ?>"><?php echo $resourceCategory->name; ?></a></li>
+
+            <ul class="extensible-list horizontal fs-md text-white text-shadow">
+                <li>
+                    <a class="text-white" href="<?php echo get_site_url() . '/resource-library'; ?>">Resource Library</a>
+                </li>
+                <li>|</li>
+                <li><a class="text-primary font-weight-bold" href="<?php echo get_site_url() . '/resource-category/' . $resourceCategory->slug; ?>"><?php echo $resourceCategory->name; ?></a></li>
             </ul>
 
         </div>
@@ -82,7 +85,6 @@ $resourceCategory = $resourceCategories[0];
 
         <?php endif; /* has_post_thumbnail */ ?>
 
-
         <?php $featured_image = get_field('featured_image');  
         
         if( $featured_image ): ?>
@@ -132,7 +134,6 @@ $resourceCategory = $resourceCategories[0];
     <!-- #primary-content -->
 
     <?php endwhile; endif; /* have_posts */ ?>
-
 
     <section class="featured-panel responsive-lg">
 

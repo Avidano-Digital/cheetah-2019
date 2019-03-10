@@ -240,6 +240,8 @@
 
                             <span class="fas fa-expand"></span>
                         </a>
+
+                        
                             
                         <?php else : ?>
                             
@@ -598,28 +600,20 @@
 
     ?>
 
-        <div class="offset-gutter-x my-7">
-        
-        
-        
-        
-        
-        
+    <div class="offset-gutter-x my-7">
 
-    <div class="bg-danger">
-        <div class="narrow">
-            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-            <span>Post Object Custom Field: </span>
+        <div class="bg-danger">
+            <div class="narrow">
+                <h3><a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?></a></h3>
+                <span>Post Object Custom Field: </span>
+            </div>
         </div>
-    </div>
 
-<?php the_content(); ?>
-
+        <?php the_content(); ?>
 
     </div>
-        <!-- .offset-gutter-x -->
-
-
+    <!-- .offset-gutter-x -->
 
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
     

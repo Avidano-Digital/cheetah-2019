@@ -8,16 +8,26 @@ get_header(); ?>
 
 <main id="content">
 
-    <div class="container-fluid bg-info cheetah-spots py-4">
+    <div class="container-fluid bg-info cheetah-spots py-3">
 
-        <div class="narrow">
-            <ul class="extensible-list horizontal fs-md text-white">
-                <li>News</li>
-                <li><span class="fas fa-caret-right"></span></li>
-                <li>CCF Blog</li>
-            </ul>
+    <div class="narrow">
 
-        </div>
+      <ul class="extensible-list horizontal fs-md text-white text-shadow">
+        <li>
+          <a class="text-white" href="news-ccf-blog.html">
+            News
+          </a>
+        </li>
+        <li>|</li>
+        <li>
+          <a class="text-primary font-weight-bold" href="news-ccf-blog.html">
+            CCF Blog
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- .narrow -->
 
     </div>
     <!-- .container-fluid -->
