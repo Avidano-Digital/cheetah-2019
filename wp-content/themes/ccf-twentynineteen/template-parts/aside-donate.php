@@ -8,11 +8,9 @@
                 <div class="card-img-overlay d-flex">
                     <div class="align-self-center w-100">
                         <div class="text-white text-center text-shadow">
-                            <p class="h4 d-xxl-none">
-                                Join the race<br><a class="text-primary"> #SaveTheCheetah</a>
-                            </p>
-                            <p class="h2 d-none d-xxl-block">
-                                Join the race to<br><a class="text-primary"> #SaveTheCheetah</a>
+                            <p class="h4">
+                               <span class="d-block">Join the race</span>
+                               <a href="#1" class="text-primary">#SaveTheCheetah</a>
                             </p>
                         </div>
                     </div>
@@ -22,13 +20,13 @@
         </div>
         <!-- .col -->
 
-        <div class="col-xxxl-6">
+        <div class="col-xxl-6">
             <a class="btn btn-block btn-primary" href="#" title="Make a Donation">Donate</a>
         </div>
         <!-- .col -->
         
-        <div class="col-xxxl-6">
-            <a class="btn btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
+        <div class="col-xxl-6">
+            <a class="btn btn-block btn-primary" href="#" title="Sponsor">Sponsor</a>
         </div>
         <!-- .col -->
 

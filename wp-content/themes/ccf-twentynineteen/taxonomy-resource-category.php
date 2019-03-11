@@ -58,7 +58,7 @@
 
         <div class="row">
 
-            <div class="col-xl-3 bg-dark px-xl-4">
+            <div class="col-xl-3 bg-dark">
 
                 <div class="sticky-top py-xl-5">
 

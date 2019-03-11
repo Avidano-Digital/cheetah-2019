@@ -2,13 +2,13 @@
 
     <div class="container-fluid my-6">
 
-        <div class="narrow">
+        <div class="narrow text-center">
 
             <p class="f-sans-serif fs-md">
                 <em>Share with friends</em>
             </p>
 
-            <ul class="extensible-list horizontal">
+            <ul class="extensible-list horizontal justify-content-center">
 
                 <li>
                     <a href="#" title="Share on Facebook">
