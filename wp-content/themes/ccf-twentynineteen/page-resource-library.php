@@ -51,25 +51,23 @@ get_header(); ?>
 
             <div class="col-xl-9 py-7">
 
-                <header class="medium">
-                    <h1 class="display-4 text-center mb-3"><?php the_title(); ?></h1>
-                </header>
-<?php
-                if (get_field(resource_library_description)) {
-?>                    
-                    <div class="text-block narrow mb-5">
-                        <p>
-                            <?php the_field('resource_library_description'); ?>
-                        </p>
-                    </div>
-<?php
-                }
-?>                
+            <header class="medium mb-4">
+                <h1 class="display-4 text-center">
+                    <?php the_title(); ?>
+                </h1>
+            </header>
+
+            <div class="text-block narrow mb-5">
+                <p>
+                    <?php the_content(); ?>
+                </p>
+            </div>
+                         
                 <div class="medium">
 
                     <div class="accordion-group offset-gutter-x mt-6 border-bottom" role="tablist" id="acc-resource-library">
 
-<?php
+                        <?php
                         $args = array(
                             'orderby' => 'name',
                             'order' => 'ASC',
@@ -87,7 +85,7 @@ get_header(); ?>
                                 $visibility = 'show';
                                 $expanded = 'true';
                             }
-?>
+                        ?>
 
                             <div class="card">
 

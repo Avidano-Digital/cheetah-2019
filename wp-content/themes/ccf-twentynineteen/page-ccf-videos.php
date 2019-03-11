@@ -51,8 +51,10 @@ get_header(); ?>
 
             <div class="col-xl-9 py-7">
 
-                <header class="medium">
-                    <h1 class="display-4 text-center mb-3"><?php the_title(); ?></h1>
+                <header class="medium mb-4">
+                    <h1 class="display-4 text-center">
+                        <?php the_title(); ?>
+                    </h1>
                 </header>
 
                 <div class="text-block narrow mb-5">
