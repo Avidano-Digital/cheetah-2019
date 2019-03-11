@@ -1,4 +1,4 @@
-<div class="col-xl-3 bg-dark"></div>
+<div class="col-xl-3 bg-dark">
 
     <div class="sticky-top py-xl-5">
 

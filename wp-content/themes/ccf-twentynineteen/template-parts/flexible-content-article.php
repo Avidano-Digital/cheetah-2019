@@ -410,20 +410,20 @@ $count_b = 0;
         // vars
         $image = get_sub_field('image');
         $link = get_sub_field('link');
+        $columns = get_sub_field('columns');
 
         ?>
 
-            <div class="col-sm-6 col-lg-4">
-                <a class="text-body" href="<?php echo $link['url']; ?>">
-                <?php if( $image ): ?>
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
-                <?php else : ?>
-                    <img src="https://placehold.it/600x400.jpg" alt="Placeholder">
-                <?php endif; ?>
-                    <p class="h6 bg-primary p-2"><?php echo $link['title']; ?></p>
-                </a>
-            </div>
-            <!-- .col -->
+        <div class="col-sm-6">
+            <?php if( $image ): ?>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+            <?php else : ?>
+                <img src="https://placehold.it/600x400.jpg" alt="Placeholder">
+            <?php endif; ?>
+
+            <a class="btn btn-block btn-lg btn-info stretched-link" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+        </div>
+        <!-- .col -->
 
         <?php endwhile; ?>
 
