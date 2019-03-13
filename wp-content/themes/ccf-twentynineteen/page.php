@@ -6,11 +6,8 @@ Template Name: Subpage
 
 get_header(); 
 
-$parent = $post->post_parent;
-$grandparent_get = get_post($parent);
-$grandparent = $grandparent_get->post_parent;
-$siblings = wp_list_pages('title_li=&child_of=' . $parent . '&echo=0&post_type=about');
-$parent_title = get_the_title($parent);
+$grandparent_title = get_the_title(intval(get_post($post->post_parent)->post_parent));
+$parent_title = get_the_title($post->post_parent);
 
 ?>
 
@@ -56,13 +53,14 @@ $parent_title = get_the_title($parent);
         <div class="row">
 
             <?php 
-            if ($parent_title == "Who We Are"):
+
+            if ($parent_title == "Who We Are" || $grandparent_title == "Who We Are"):
               get_template_part('template-parts/sidebar-who-we-are');
-            elseif ($parent_title == "What We Do"):
+            elseif ($parent_title == "What We Do" || $grandparent_title == "What We Do"):
               get_template_part('template-parts/sidebar-what-we-do');
-            elseif ($parent_title == "Get Involved"):
+            elseif ($parent_title == "Get Involved" || $grandparent_title == "Get Involved"):
               get_template_part('template-parts/sidebar-get-involved');
-            elseif ($parent_title == "Learn"):
+            elseif ($parent_title == "Learn" || $grandparent_title == "Learn"):
               get_template_part('template-parts/sidebar-learn');
             endif;
             ?>
