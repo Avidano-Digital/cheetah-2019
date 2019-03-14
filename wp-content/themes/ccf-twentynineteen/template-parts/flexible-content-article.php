@@ -99,9 +99,13 @@ $quote_credit_title = $quote['credit_title'];
                                         <?php echo $summary_text; ?>
                                     </div>
 
-                                    <a class="link text-primary" href="<?php echo $link['url']; ?>">
-                                        <?php echo $summary_link['title']; ?>
-                                    </a>
+                                    <?php if ( $summary_link ) : ?>
+                                      
+                                        <a class="link text-primary" href="<?php echo $link['url']; ?>">
+                                            <?php echo $summary_link['title']; ?>
+                                        </a>
+
+                                    <?php endif; ?>
 
                                 </div>
 

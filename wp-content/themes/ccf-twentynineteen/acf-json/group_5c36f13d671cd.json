@@ -777,10 +777,9 @@
         "revisions",
         "slug",
         "format",
-        "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1552230035
+    "modified": 1552562644
 }
