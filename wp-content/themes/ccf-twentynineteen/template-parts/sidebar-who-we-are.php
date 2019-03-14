@@ -5,7 +5,7 @@
         <div class="btn-toggle d-xl-none offset-gutter-x">
 
             <a class="btn btn-lg btn-block btn-primary" data-toggle="collapse" href="#aside-nav" aria-expanded="false" aria-controls="collapseExample">
-                <span class="title"><?php echo $parent_title; ?></span>
+                <span class="title">Who We Are</span>
             </a>
 
         </div>
