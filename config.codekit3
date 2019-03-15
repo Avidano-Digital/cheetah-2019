@@ -1326,6 +1326,26 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/wp-admin/css/nav-menus-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/css/nav-menus-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-admin/css/nav-menus-rtl-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/css/nav-menus-rtl-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/wp-admin/css/nav-menus-rtl.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1333,6 +1353,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/wp-admin/css/nav-menus-rtl-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-admin/css/nav-menus-rtl.min-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/css/nav-menus-rtl.min-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1353,6 +1383,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/wp-admin/css/nav-menus-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-admin/css/nav-menus.min-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/css/nav-menus.min-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -17611,6 +17651,14 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/flexible-content-article.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/template-parts/related-reading.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/related-reading.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/template-parts/section-join-the-race.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -19299,7 +19347,7 @@
 		"oAP": "/wp-content/uploads/2019/01/conserving-the-worlds-fastest-cat-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/01/conserving-the-worlds-fastest-cat.jpg": {
