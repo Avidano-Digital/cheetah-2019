@@ -409,6 +409,12 @@ $leaflet-button-color: white;
 
 }
 
+.african-hr{
+  border-top: none;
+  height: 15px;
+  @include apply-background-image('african-hr', '.svg');
+
+}
 
 
 .pattern-border-colored{

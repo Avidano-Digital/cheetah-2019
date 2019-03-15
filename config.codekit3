@@ -16799,6 +16799,16 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/header.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/images/african-hr.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/african-hr.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/images/ccf-blog.jpg": {
 		"ft": 16384,
 		"iS": 196803,
@@ -17524,8 +17534,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/css/theme.css",
-		"oF": 2,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/scss/theme.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
@@ -17706,6 +17716,16 @@
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/site-search.php",
 		"oF": 0
+		},
+	"/wp-content/themes/css/theme.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/css/theme-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/wp-content/themes/index.php": {
 		"cB": 0,
