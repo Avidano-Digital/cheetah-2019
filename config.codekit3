@@ -19587,7 +19587,7 @@
 		"oAP": "/wp-content/uploads/2019/01/namibia-land-of-the-cheetah-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/01/namibia-land-of-the-cheetah.jpg": {
@@ -19631,7 +19631,7 @@
 		"oAP": "/wp-content/uploads/2019/01/news-article-tearsheet-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/01/news-article-tearsheet.jpg": {
