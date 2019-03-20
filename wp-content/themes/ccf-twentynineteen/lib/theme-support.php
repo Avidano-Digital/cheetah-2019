@@ -47,6 +47,19 @@
         
         });
 
+        // Wrap the inserted image html with <figure> 
+
+        function html5_insert_image($html, $id, $caption, $title, $align, $url, $size, $alt ) {
+
+          $src  = wp_get_attachment_image_src( $id, $size, false );
+          $html5  = '<figure class="figure-' .$align.'"><div class="figure-img"><img src="' . $src[0] . '" alt="' . $title . '" />' . ($caption ? ' <figcaption class="figure-caption">' . $caption . '</figcaption> ' : '') . '</div></figure>';
+          return $html5;
+
+        }
+        
+        add_filter('image_send_to_editor', 'html5_insert_image', 10, 9);
+
+
         // Add Menu Support
 
         register_nav_menus(
