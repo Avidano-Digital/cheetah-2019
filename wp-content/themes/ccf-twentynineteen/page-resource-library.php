@@ -69,7 +69,8 @@ get_header(); ?>
 
                         <?php
                         $args = array(
-                            'orderby' => 'name',
+                            'meta_key'    => 'order',
+                            'orderby'     => 'meta_value',
                             'order' => 'ASC',
                             'taxonomy' => 'resource-category'
                         );
