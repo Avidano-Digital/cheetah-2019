@@ -189,7 +189,7 @@ $caption = $figure['caption'];
         </div>
         <!-- .figure-img -->
 
-        <figcaption class="figure-caption mx-2"><?php echo $caption; ?></figcaption>
+        <figcaption class="figure-caption"><?php echo $caption; ?></figcaption>
 
     </figure>
 

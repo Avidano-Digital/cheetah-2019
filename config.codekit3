@@ -15576,6 +15576,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c92228fd14a0.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c92228fd14a0-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/wp-content/themes/ccf-twentynineteen/acf-json/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -19755,6 +19763,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/03/cheetah-conservation-fund-fossey-1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18301,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/cheetah-conservation-fund-fossey-1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/cheetah-conservation-fund-fossey-1.jpg": {
+		"ft": 16384,
+		"iS": 213587,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/cheetah-conservation-fund-fossey-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2019/03/cheetah-conservation-fund-international-collaboration-kenya-250x250.jpg": {
 		"ft": 16384,
 		"iS": 29730,
@@ -20080,6 +20110,72 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/03/cheetah-conservation-fund-ways-to-give.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/eulogy-for-scientist-fossey-250x250.jpg": {
+		"ft": 16384,
+		"iS": 17015,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/eulogy-for-scientist-fossey-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/eulogy-for-scientist-fossey.jpg": {
+		"ft": 16384,
+		"iS": 126444,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/eulogy-for-scientist-fossey.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/map-of-the-greater-waterberg-landscape-250x250.jpg": {
+		"ft": 16384,
+		"iS": 21013,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/map-of-the-greater-waterberg-landscape-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/map-of-the-greater-waterberg-landscape.jpg": {
+		"ft": 16384,
+		"iS": 528386,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/map-of-the-greater-waterberg-landscape.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/people-powered-research-at-cheetah-conservation-fund-250x250.jpg": {
+		"ft": 16384,
+		"iS": 24236,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/people-powered-research-at-cheetah-conservation-fund-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/people-powered-research-at-cheetah-conservation-fund.jpg": {
+		"ft": 16384,
+		"iS": 259996,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/people-powered-research-at-cheetah-conservation-fund.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
