@@ -31,6 +31,8 @@
 
                 endif;
 
+                $image = get_field('featured_image', 'term_' . $term->term_id);
+
              ?>
   
             <?php if( $featured_image ): ?>
@@ -109,6 +111,9 @@
                 </header>
 
                 <div class="text-block narrow my-5">
+                    <?php if ($image) : ?>
+                        <img class="mb-5" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
+                    <?php endif; ?>
                     <p>
                         <?php echo $term->description; ?>
                     </p>

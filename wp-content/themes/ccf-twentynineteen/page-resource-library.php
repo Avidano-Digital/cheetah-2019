@@ -84,6 +84,7 @@ get_header(); ?>
                             $visibility = '';
                             $expanded = 'false';
                             $description = $category->description;
+                            $image = get_field('featured_image', 'term_' . $category->term_id);
                             
                             if ($category_count == 1) :
                                 $visibility = 'show';
@@ -104,9 +105,9 @@ get_header(); ?>
 
                                         <div class="narrow">
 
-                                            <img class="mb-5 rounded d-none" src="https://via.placeholder.com/800x400" alt="Placeholder">
-                                            <img class="mb-5 rounded" src="<?php echo get_template_directory_uri(); ?>/images/resource-library-<?php echo $category->slug; ?>.jpg" alt="Placeholder">
-
+                                            <?php if ($image) : ?>
+                                                <img class="mb-5 rounded" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
+                                            <?php endif; ?>
                                             <?php if ($description) : ?>
 
                                             <p class="mb-5">
