@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_5c94d9a961648",
-            "label": "Authors",
-            "name": "authors",
+            "label": "Scientific Paper Authors",
+            "name": "scientific_paper_authors",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -16,18 +16,15 @@
                 "id": ""
             },
             "choices": {
-                "A": "A",
-                "B": "B",
-                "C": "C"
+                "Author One": "Author One",
+                "Author Two": "Author Two"
             },
-            "default_value": [
-                "A"
-            ],
+            "default_value": [],
             "allow_null": 0,
             "multiple": 1,
-            "ui": 0,
-            "return_format": "value",
+            "ui": 1,
             "ajax": 0,
+            "return_format": "value",
             "placeholder": ""
         }
     ],
@@ -48,5 +45,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553259073
+    "modified": 1553277757
 }
