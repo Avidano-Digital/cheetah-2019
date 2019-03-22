@@ -124,6 +124,8 @@ $resourceCategory = $resourceCategories[0];
 
         <?php endif; ?>   
 
+        <?php get_template_part('template-parts/flexible-content-article'); ?>
+
         <?php 
         
         $pdf_fact_sheet = get_field('pdf_fact_sheet');
@@ -140,8 +142,6 @@ $resourceCategory = $resourceCategories[0];
         <!-- .medium -->
 
         <?php endif; ?>
-
-        <?php get_template_part('template-parts/flexible-content-article'); ?>
 
         <?php get_template_part('template-parts/article-footer'); ?>
 
