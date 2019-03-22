@@ -25,7 +25,7 @@ Author URI: http://fullwindsor.co
     if ($current_section[1] == 'get-involved') {
       $current_section = $current_section[1];
     }
-    elseif ($current_section[0] == 'resource-library' || $current_section[0] == 'ccf-videos') {
+    elseif ($current_section[0] == 'resource-library' || $current_section[0] == 'ccf-videos' || $current_section[0] == 'resource-category') {
       $current_section = 'learn';
     }
     else {
@@ -140,7 +140,7 @@ Author URI: http://fullwindsor.co
 
         // If we've picked up the News menu item and are on a taxonomy page
 
-        elseif ($xfn == 'news' && $current_term) {
+        elseif ($xfn == 'news' && $current_term && $current_section != 'learn') {
           $current = 'current';
         }
 
