@@ -54,7 +54,7 @@ define('DB_USER', 'root');
 
 /** MySQL database password */
 
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root');
 
 
 
@@ -76,9 +76,9 @@ define('DB_COLLATE', '');
 
 
 
-define('WP_SITEURL', 'http://cheetah/');
+define('WP_SITEURL', 'http://cheetah-2019/');
 
-define('WP_HOME', 'http://cheetah/');
+define('WP_HOME', 'http://cheetah-2019/');
 
 
 

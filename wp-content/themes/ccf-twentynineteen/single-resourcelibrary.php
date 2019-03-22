@@ -30,10 +30,14 @@ $resourceCategory = $resourceCategories[0];
 
     <?php if (have_posts()) : while ( have_posts() ) : the_post();
 
-    $author_name = get_the_author_meta('display_name');
+        if (get_field('scientific_paper_authors')) :
+            $author_name = implode(', ', get_field('scientific_paper_authors'));
+        else :
+            $author_name = get_the_author_meta('display_name');          
+        endif;
 
-    $avatar_size = 96;
-    $author_avatar = get_wp_user_avatar( get_the_author_meta( 'ID' ), $avatar_size );
+        $avatar_size = 96;
+        $author_avatar = get_wp_user_avatar( get_the_author_meta( 'ID' ), $avatar_size );
     
     ?>
 
@@ -58,7 +62,6 @@ $resourceCategory = $resourceCategories[0];
             
                 <li class="fs-md">
                     <strong class="d-block">by&nbsp;<?php echo $author_name; ?></strong>
-                    
                 </li>
                 
             </ul>
