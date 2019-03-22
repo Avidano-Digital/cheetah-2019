@@ -15,10 +15,12 @@ $resourceCategory = $resourceCategories[0];
 
             <ul class="extensible-list horizontal fs-md text-white text-shadow">
                 <li>
-                    <a class="text-white" href="<?php echo get_site_url() . '/resource-library'; ?>">Resource Library</a>
+                    <a class="text-white" href="<?php echo get_site_url() . '/learn/resource-library'; ?>">Resource Library</a>
                 </li>
                 <li>|</li>
-                <li><a class="text-primary font-weight-bold" href="<?php echo get_site_url() . '/resource-category/' . $resourceCategory->slug; ?>"><?php echo $resourceCategory->name; ?></a></li>
+                <li>
+                    <a class="text-primary font-weight-bold" href="<?php echo get_site_url() . '/resource-category/' . $resourceCategory->slug; ?>"><?php echo $resourceCategory->name; ?></a>
+                </li>
             </ul>
 
         </div>
@@ -51,16 +53,12 @@ $resourceCategory = $resourceCategories[0];
             <ul class="extensible-list horizontal">
 
                 <li>
-                
-                    <div class="rounded-circle" style="overflow:hidden;">
-                        <?php echo $author_avatar; ?>
-                    </div> 
-                     
+                    <span class="text-muted"><?php the_date(); ?></span> 
                 </li>
             
                 <li class="fs-md">
                     <strong class="d-block">by&nbsp;<?php echo $author_name; ?></strong>
-                    <span class="text-muted"><?php the_date(); ?></span> 
+                    
                 </li>
                 
             </ul>
@@ -124,7 +122,24 @@ $resourceCategory = $resourceCategories[0];
 
             </div>
 
-        <?php endif; ?>    
+        <?php endif; ?>   
+
+        <?php 
+        
+        $pdf_fact_sheet = get_field('pdf_fact_sheet');
+
+        if( $pdf_fact_sheet ): ?>
+
+        <div class="medium my-6">
+
+            <?php echo do_shortcode('[pdf-embedder url="' . $pdf_fact_sheet['url'] .'"]'); ?>
+
+            <a class="btn btn-block btn-primary btn-lg my-3" href="<?php echo $pdf_fact_sheet['url']; ?>" title="Download Fact Sheet" target="_blank">Download Fact Sheet</a>
+
+        </div>
+        <!-- .medium -->
+
+        <?php endif; ?>
 
         <?php get_template_part('template-parts/flexible-content-article'); ?>
 

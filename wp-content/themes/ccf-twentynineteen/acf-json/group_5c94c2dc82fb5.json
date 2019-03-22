@@ -1,12 +1,12 @@
 {
-    "key": "group_5c7462f9af1f2",
-    "title": "Scientific Papers",
+    "key": "group_5c94c2dc82fb5",
+    "title": "Fact Sheets",
     "fields": [
         {
-            "key": "field_5c74630403221",
-            "label": "Authors",
-            "name": "authors",
-            "type": "text",
+            "key": "field_5c94cc741c056",
+            "label": "PDF Fact Sheet",
+            "name": "pdf_fact_sheet",
+            "type": "file",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,19 +15,19 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "post_taxonomy",
                 "operator": "==",
-                "value": "resourcelibrary"
+                "value": "resource-category:fact-sheets"
             }
         ]
     ],
@@ -37,7 +37,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": 1,
     "description": "",
-    "modified": 1551950966
+    "modified": 1553256205
 }

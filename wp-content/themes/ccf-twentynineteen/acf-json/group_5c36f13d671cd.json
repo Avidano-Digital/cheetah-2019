@@ -763,23 +763,32 @@
                 "operator": "==",
                 "value": "page.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "resourcelibrary"
+            }
         ]
     ],
     "menu_order": 10,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
         "the_content",
+        "excerpt",
         "discussion",
         "comments",
         "revisions",
         "slug",
         "format",
+        "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1552562644
+    "modified": 1553245849
 }

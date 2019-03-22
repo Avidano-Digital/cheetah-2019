@@ -14600,6 +14600,1759 @@
 		"oAP": "/wp-content/plugins/media-file-renamer-pro/views/menu-screen.php",
 		"oF": 0
 		},
+	"/wp-content/plugins/pdf-embedder/core/core_pdf_embedder.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/core/core_pdf_embedder.php",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/css/pdfemb-admin-other.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/css/pdfemb-admin-other-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-content/plugins/pdf-embedder/css/pdfemb-admin.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/css/pdfemb-admin-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-content/plugins/pdf-embedder/css/pdfemb-blocks.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/css/pdfemb-blocks-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-content/plugins/pdf-embedder/css/pdfemb-embed-pdf.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/css/pdfemb-embed-pdf-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-content/plugins/pdf-embedder/img/ptleftarrow.png": {
+		"ft": 32768,
+		"iS": 3622,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/img/ptleftarrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/plugins/pdf-embedder/img/ptrightarrow.png": {
+		"ft": 32768,
+		"iS": 3631,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/img/ptrightarrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/plugins/pdf-embedder/img/toolbarButton-download.png": {
+		"ft": 32768,
+		"iS": 259,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/img/toolbarButton-download.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/plugins/pdf-embedder/img/toolbarButton-pageDown.png": {
+		"ft": 32768,
+		"iS": 238,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/img/toolbarButton-pageDown.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/plugins/pdf-embedder/img/toolbarButton-pageUp.png": {
+		"ft": 32768,
+		"iS": 246,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/img/toolbarButton-pageUp.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/plugins/pdf-embedder/img/toolbarButton-presentationMode.png": {
+		"ft": 32768,
+		"iS": 321,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/img/toolbarButton-presentationMode.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/plugins/pdf-embedder/img/toolbarButton-zoomIn.png": {
+		"ft": 32768,
+		"iS": 136,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/img/toolbarButton-zoomIn.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/plugins/pdf-embedder/img/toolbarButton-zoomOut.png": {
+		"ft": 32768,
+		"iS": 88,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/img/toolbarButton-zoomOut.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/plugins/pdf-embedder/js/admin/pdfemb-admin.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/admin/pdfemb-admin-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/all-pdfemb-basic.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/all-pdfemb-basic.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/grabtopan-basic.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/grabtopan-basic-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfemb-basic.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfemb-basic-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfemb-blocks.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfemb-blocks-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfemb-embed-pdf.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfemb-embed-pdf-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfemb-pv-core.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfemb-pv-core-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-RKSJ-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-RKSJ-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-RKSJ-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-RKSJ-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78ms-RKSJ-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78ms-RKSJ-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78ms-RKSJ-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/78ms-RKSJ-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/83pv-RKSJ-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/83pv-RKSJ-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90ms-RKSJ-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90ms-RKSJ-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90ms-RKSJ-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90ms-RKSJ-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90msp-RKSJ-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90msp-RKSJ-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90msp-RKSJ-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90msp-RKSJ-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90pv-RKSJ-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90pv-RKSJ-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90pv-RKSJ-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/90pv-RKSJ-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Add-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Add-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Add-RKSJ-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Add-RKSJ-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Add-RKSJ-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Add-RKSJ-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Add-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Add-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-0.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-0.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-1.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-1.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-2.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-2.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-3.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-3.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-4.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-4.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-5.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-5.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-6.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-6.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-UCS2.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-CNS1-UCS2.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-0.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-0.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-1.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-1.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-2.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-2.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-3.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-3.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-4.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-4.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-5.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-5.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-UCS2.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-GB1-UCS2.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-0.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-0.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-1.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-1.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-2.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-2.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-3.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-3.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-4.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-4.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-5.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-5.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-6.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-6.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-UCS2.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Japan1-UCS2.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Korea1-0.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Korea1-0.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Korea1-1.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Korea1-1.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Korea1-2.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Korea1-2.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Korea1-UCS2.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Adobe-Korea1-UCS2.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/B5-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/B5-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/B5-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/B5-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/B5pc-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/B5pc-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/B5pc-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/B5pc-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS-EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS-EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS-EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS-EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS1-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS1-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS1-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS1-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS2-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS2-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS2-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/CNS2-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETen-B5-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETen-B5-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETen-B5-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETen-B5-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETenms-B5-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETenms-B5-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETenms-B5-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETenms-B5-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETHK-B5-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETHK-B5-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETHK-B5-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/ETHK-B5-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Ext-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Ext-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Ext-RKSJ-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Ext-RKSJ-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Ext-RKSJ-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Ext-RKSJ-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Ext-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Ext-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GB-EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GB-EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GB-EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GB-EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GB-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GB-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GB-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GB-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBK-EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBK-EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBK-EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBK-EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBK2K-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBK2K-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBK2K-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBK2K-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBKp-EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBKp-EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBKp-EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBKp-EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBpc-EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBpc-EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBpc-EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBpc-EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBT-EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBT-EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBT-EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBT-EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBT-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBT-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBT-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBT-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBTpc-EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBTpc-EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBTpc-EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/GBTpc-EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Hankaku.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Hankaku.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Hiragana.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Hiragana.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKdla-B5-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKdla-B5-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKdla-B5-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKdla-B5-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKdlb-B5-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKdlb-B5-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKdlb-B5-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKdlb-B5-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKgccs-B5-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKgccs-B5-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKgccs-B5-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKgccs-B5-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKm314-B5-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKm314-B5-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKm314-B5-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKm314-B5-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKm471-B5-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKm471-B5-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKm471-B5-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKm471-B5-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKscs-B5-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKscs-B5-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKscs-B5-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/HKscs-B5-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Katakana.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Katakana.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-Johab-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-Johab-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-Johab-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-Johab-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCms-UHC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCms-UHC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCms-UHC-HW-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCms-UHC-HW-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCms-UHC-HW-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCms-UHC-HW-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCms-UHC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCms-UHC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCpc-EUC-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCpc-EUC-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCpc-EUC-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/KSCpc-EUC-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/LICENSE",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/NWP-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/NWP-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/NWP-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/NWP-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/RKSJ-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/RKSJ-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/RKSJ-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/RKSJ-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Roman.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/Roman.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UCS2-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UCS2-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UCS2-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UCS2-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF16-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF16-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF16-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF16-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF32-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF32-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF32-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF32-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF8-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF8-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF8-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniCNS-UTF8-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UCS2-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UCS2-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UCS2-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UCS2-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF16-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF16-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF16-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF16-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF32-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF32-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF32-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF32-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF8-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF8-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF8-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniGB-UTF8-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UCS2-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UCS2-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UCS2-HW-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UCS2-HW-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UCS2-HW-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UCS2-HW-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UCS2-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UCS2-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF16-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF16-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF16-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF16-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF32-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF32-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF32-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF32-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF8-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF8-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF8-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS-UTF8-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF16-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF16-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF16-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF16-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF32-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF32-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF32-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF32-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF8-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF8-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF8-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJIS2004-UTF8-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISPro-UCS2-HW-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISPro-UCS2-HW-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISPro-UCS2-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISPro-UCS2-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISPro-UTF8-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISPro-UTF8-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISX0213-UTF32-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISX0213-UTF32-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISX0213-UTF32-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISX0213-UTF32-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISX02132004-UTF32-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISX02132004-UTF32-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISX02132004-UTF32-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniJISX02132004-UTF32-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UCS2-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UCS2-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UCS2-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UCS2-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF16-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF16-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF16-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF16-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF32-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF32-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF32-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF32-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF8-H.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF8-H.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF8-V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/UniKS-UTF8-V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/V.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/V.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/WP-Symbol.bcmap": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/cmaps/WP-Symbol.bcmap",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/LICENSE",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/pdf-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.js.map",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.worker.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.worker-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.worker.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.worker.js.map",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.worker.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/plugins/pdf-embedder/js/pdfjs/pdf.worker.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-de_DE.mo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-de_DE.mo",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-de_DE.po": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-de_DE.po",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-es_ES.mo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-es_ES.mo",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-es_ES.po": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-es_ES.po",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-fr_FR.mo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-fr_FR.mo",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-fr_FR.po": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-fr_FR.po",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-hu_HU.mo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-hu_HU.mo",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-hu_HU.po": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-hu_HU.po",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-nl_NL.mo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-nl_NL.mo",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-nl_NL.po": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-nl_NL.po",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-ru_RU.mo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-ru_RU.mo",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder-ru_RU.po": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder-ru_RU.po",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/lang/pdf-embedder.pot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/lang/pdf-embedder.pot",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/pdf_embedder.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/pdf_embedder.php",
+		"oF": 0
+		},
+	"/wp-content/plugins/pdf-embedder/readme.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/pdf-embedder/readme.txt",
+		"oF": 0
+		},
 	"/wp-content/plugins/safe-svg/assets/safe-svg.css": {
 		"aP": 1,
 		"bl": 0,
@@ -15552,22 +17305,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c6f22d638b25.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c6f22d638b25-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c7462f9af1f2.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c7462f9af1f2-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c755d982a14a.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -15580,6 +17317,14 @@
 		"ft": 524288,
 		"oA": 1,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c92228fd14a0-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c94c2dc82fb5.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c94c2dc82fb5-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
@@ -19728,6 +21473,14 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/wp-content/uploads/2019/03/2018FactSheets_CombinedFinal_web.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/2018FactSheets_CombinedFinal_web.pdf",
+		"oF": 0
 		},
 	"/wp-content/uploads/2019/03/cheetah-conservation-fund-conservancies-250x250.jpg": {
 		"ft": 16384,

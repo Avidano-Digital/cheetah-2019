@@ -147,19 +147,14 @@ get_header(); ?>
 
                                                             <div class="row align-items-center">
                                                                 <div class="col-md-6 mb-3 mb-md-0">
-                                                                    <div
-                                                                        class="embed-responsive embed-responsive-16by9">
-                                                                        <iframe class="embed-responsive-item"
-                                                                            src="https://www.youtube.com/embed/<?php echo $video_id; ?>"
-                                                                            frameborder="0" allowTransparency="true"
-                                                                            allowfullscreen="true"></iframe>
+                                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
                                                                     </div>
                                                                 </div>
                                                                 <!-- .col -->
 
                                                                 <div class="col-md-6">
-                                                                    <a class="text-body"
-                                                                        href="<?php the_permalink(); ?>">
+                                                                    <a class="text-body" href="<?php the_permalink(); ?>">
                                                                         <p class="f-sans-serif fs-md mb-0">
                                                                             <?php echo get_the_date(); ?></p>
                                                                         <strong>
