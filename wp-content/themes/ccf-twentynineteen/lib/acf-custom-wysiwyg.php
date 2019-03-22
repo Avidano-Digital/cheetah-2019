@@ -6,7 +6,7 @@
 
         // Add a new toolbar called "Very Simple"
         $toolbars['Very Simple' ] = array();
-        $toolbars['Very Simple' ][1] = array( 'bold' , 'italic' , 'underline', 'link' );
+        $toolbars['Very Simple' ][1] = array( 'bold' , 'italic' , 'underline', 'link', 'img' );
 
         // Edit the "Full" toolbar and remove 'code'
         // - delet from array code from http://stackoverflow.com/questions/7225070/php-array-delete-by-value-not-key
