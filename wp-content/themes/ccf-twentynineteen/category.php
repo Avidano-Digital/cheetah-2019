@@ -135,9 +135,30 @@ get_header(); ?>
         <?php endif; /* have_posts */ ?>
 
         <div class="pagination">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
 
-            <?php echo paginate_links(); ?>
+<?php 
+                    $links = paginate_links(array(
+                        'base'               => '%_%',
+                        'format'             => '?paged=%#%',
+                        'show_all'           => false,
+                        'prev_next'          => true,
+                        'prev_text'          => __('Previous'),
+                        'next_text'          => __('Next'),
+                        'type'               => 'array',
+                        )
+                    ); 
 
+                    if ($links) :
+                        foreach($links as $link){
+                            echo '<li class="page-item">' . $link . '</li>';
+                        }
+                    endif;
+?>
+
+                </ul>
+            </nav>
         </div>
 
     </div>
