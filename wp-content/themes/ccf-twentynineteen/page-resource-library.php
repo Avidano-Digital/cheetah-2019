@@ -51,49 +51,52 @@ get_header(); ?>
 
             <div class="col-xl-9 py-7">
 
-            <header class="medium mb-4">
-                <h1 class="display-4 text-center">
-                    <?php the_title(); ?>
-                </h1>
-            </header>
+                <header class="medium mb-4">
+                    <h1 class="display-4 text-center">
+                        <?php the_title(); ?>
+                    </h1>
+                </header>
 
-            <div class="text-block narrow mb-5">
-                <p>
-                    <?php the_content(); ?>
-                </p>
-            </div>
+                <div class="text-block narrow mb-5">
+                    <p>
+                        <?php the_content(); ?>
+                    </p>
+                </div>
                          
                 <div class="medium">
 
-                    <div class="accordion-group offset-gutter-x mt-6 border-bottom" role="tablist" id="acc-resource-library">
+                    <div class="accordion-group offset-gutter-x mt-6 border-bottom" id="acc-resource-library" role="tablist">
 
                         <?php
+
                         $args = array(
-                            'meta_key'    => 'order',
-                            'orderby'     => 'meta_value',
-                            'order' => 'ASC',
-                            'taxonomy' => 'resource-category'
+                            'meta_key'  => 'order',
+                            'orderby'   => 'meta_value',
+                            'order'     => 'ASC',
+                            'taxonomy'  => 'resource-category'
                         );
 
                         $categories = get_categories($args);
                         $category_count = 0;
-                        foreach($categories as $category) {
+                        
+                        foreach( $categories as $category ) :
                             $category_count++;
                             $visibility = '';
                             $expanded = 'false';
                             $description = $category->description;
-                            if ($category_count == 1) {
+                            
+                            if ($category_count == 1) :
                                 $visibility = 'show';
                                 $expanded = 'true';
-                            }
+                            endif;
                         ?>
 
-                            <div class="card">
+                        <div class="card">
 
-                                <a class="card-header h4 collapse collapsed" id="acc-button-<?php echo $category->slug; ?>" data-toggle="collapse" href="#acc-panel-<?php echo $category->slug; ?>"
-                                    role="tab" aria-expanded="<?php echo $expanded; ?>" aria-controls="acc-panel-<?php echo $category->slug; ?>">
-                                    <span class="title" role="heading" aria-level="2"><?php echo $category->name; ?></span>
-                                </a>
+                            <a class="card-header h4 collapse collapsed" id="acc-button-<?php echo $category->slug; ?>" data-toggle="collapse" href="#acc-panel-<?php echo $category->slug; ?>"
+                                role="tab" aria-expanded="<?php echo $expanded; ?>" aria-controls="acc-panel-<?php echo $category->slug; ?>">
+                                <span class="title" role="heading" aria-level="2"><?php echo $category->name; ?></span>
+                            </a>
 
                                 <div class="collapse <?php echo $visibility; ?>" id="acc-panel-<?php echo $category->slug; ?>" role="tabpanel" aria-labelledby="acc-button-<?php echo $category->slug; ?>" data-parent="#acc-resource-library">
 
@@ -104,23 +107,23 @@ get_header(); ?>
                                             <img class="mb-5 rounded d-none" src="https://via.placeholder.com/800x400" alt="Placeholder">
                                             <img class="mb-5 rounded" src="<?php echo get_template_directory_uri(); ?>/images/resource-library-<?php echo $category->slug; ?>.jpg" alt="Placeholder">
 
-<?php                                        
-                                            if ($description) {
-?>                                                
-                                                <p class="mb-5">
-                                                    <?php echo $description; ?>
-                                                </p>
-<?php
-                                            }
-?>                                            
+                                            <?php if ($description) : ?>
+
+                                            <p class="mb-5">
+                                                <?php echo $description; ?>
+                                            </p>
+                                            
+                                            <?php endif; ?>                                            
 
                                             <ul class="list-group list-group-flush mb-3">
 
-<?php
-                                                $posts = get_posts(array(
-                                                        'numberposts' => 5,
-                                                        'post_type'   => 'resourcelibrary',
-                                                        'tax_query' => array(
+                                                <?php
+                                                
+                                                $posts = get_posts(
+                                                    array(
+                                                        'numberposts'   => 5,
+                                                        'post_type'     => 'resourcelibrary',
+                                                        'tax_query'     => array(
                                                             array(
                                                                 'taxonomy' => 'resource-category',
                                                                 'terms' => $category->term_id
@@ -129,41 +132,50 @@ get_header(); ?>
                                                     )
                                                 );
 
-                                                if ($posts) {
-                                                    foreach($posts as $post) {
+                                                if ($posts) :
+                                                    
+                                                    foreach( $posts as $post ) :
+                                                        
                                                         setup_postdata($post);
-                                                        if ($category->slug == 'lectures-and-presentations') {
+                                                        
+                                                        if ( $category->slug == 'lectures-and-presentations' ) :
                                                             $video_url = get_field('video_url');
                                                             $video_id = substr( strrchr( $video_url, '/' ), 1 );
-?>
-                                                            <li class="list-group-item">
+                                                        ?>
 
-                                                                <div class="row align-items-center">
-                                                                    <div class="col-md-6 mb-3 mb-md-0">
-                                                                        <div class="embed-responsive embed-responsive-16by9">
-                                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
-                                                                        </div>
+                                                        <li class="list-group-item">
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-md-6 mb-3 mb-md-0">
+                                                                    <div
+                                                                        class="embed-responsive embed-responsive-16by9">
+                                                                        <iframe class="embed-responsive-item"
+                                                                            src="https://www.youtube.com/embed/<?php echo $video_id; ?>"
+                                                                            frameborder="0" allowTransparency="true"
+                                                                            allowfullscreen="true"></iframe>
                                                                     </div>
-                                                                    <!-- .col -->
-
-                                                                    <div class="col-md-6">
-                                                                        <a class="text-body" href="<?php the_permalink(); ?>">
-                                                                            <p class="f-sans-serif fs-md mb-0"><?php echo get_the_date(); ?></p>
-                                                                            <strong>
-                                                                                <?php the_title(); ?>
-                                                                            </strong>
-                                                                        </a>
-                                                                    </div>
-                                                                    <!-- .col -->
-
                                                                 </div>
-                                                                <!-- .row -->
+                                                                <!-- .col -->
 
-                                                            </li>
-<?php                                                            
-                                                        }
-                                                        else {
-?>
+                                                                <div class="col-md-6">
+                                                                    <a class="text-body"
+                                                                        href="<?php the_permalink(); ?>">
+                                                                        <p class="f-sans-serif fs-md mb-0">
+                                                                            <?php echo get_the_date(); ?></p>
+                                                                        <strong>
+                                                                            <?php the_title(); ?>
+                                                                        </strong>
+                                                                    </a>
+                                                                </div>
+                                                                <!-- .col -->
+
+                                                            </div>
+                                                            <!-- .row -->
+
+                                                        </li>
+
+                                                        <?php else : ?>
+
                                                             <li class="list-group-item">
                                                                 <a class="text-body" href="<?php the_permalink(); ?>">
                                                                     <p class="f-sans-serif fs-md mb-0"><?php echo get_the_date(); ?></p>
@@ -172,11 +184,13 @@ get_header(); ?>
                                                                     </strong>
                                                                 </a>
                                                             </li>                              
-<?php
-                                                        }
-                                                    }
-                                                }
-?>
+                                                        
+                                                        <?php endif; ?>
+                                                    
+                                                    <?php endforeach; ?>
+                                                
+                                                <?php endif; ?>
+                                            
                                             </ul>
 
                                             <a class="link text-secondary" href="<?php echo get_site_url() . '/resource-category/' . $category->slug; ?>" class="link">
@@ -193,9 +207,8 @@ get_header(); ?>
 
                             </div>
                             <!-- .card -->
-<?php
-                        }
-?>
+
+                        <?php endforeach; ?>
 
                     </div>
                     <!-- .accordion-group -->
