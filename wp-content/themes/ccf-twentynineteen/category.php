@@ -62,25 +62,33 @@ get_header(); ?>
 
     <div class="container py-7">
 
-            <div class="row no-gutters mb-5 bg-light featured">
+        <div class="row mb-5 bg-light">
 
-                <div class="col">
+            <div class="col-md">
 
-                    <img class="card-img" src="https://via.placeholder.com/1000x500" alt="Placeholder">
-
+                <div class="offset-gutter-x">
+                    <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
                 </div>
-                <!-- .col -->
-                
-                <div class="col d-flex">
-                <div class="align-items-center">
-                <h2>This is a featured post</h2>
-                </div>
-
-                </div>
-                <!-- .col -->
+                <!-- .offset-gutter-x -->
 
             </div>
-            <!-- .row -->
+            <!-- .col -->
+
+            <div class="col-md d-md-flex">
+
+                <div class="align-self-center text-center py-4">
+                    <p class="fs-md mb-0"><em>Conservation</em> </p>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+                    <span class="link text-secondary">Read More</span>
+                </div>
+
+            </div>
+            <!-- .col -->
+
+        </div>
+        <!-- .row -->
+
+        <hr class="mb-5">
 
 
             <?php if ( have_posts() ) : ?>
