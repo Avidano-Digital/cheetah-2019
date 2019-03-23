@@ -189,7 +189,9 @@ $caption = $image['caption'];
         </div>
         <!-- .figure-img -->
 
-        <figcaption class="figure-caption"><?php echo $caption; ?></figcaption>
+        <?php if( $caption ): ?>
+            <figcaption class="figure-caption"><?php echo $caption; ?></figcaption>
+        <?php endif; ?>
 
     </figure>
 
@@ -301,8 +303,7 @@ $count_b = 0;
 
 <div class="gallery-carousel-block my-7 mx-n2">
 
-    <div class="carousel slide carousel-fade" data-ride="carousel" data-keyboard="true" data-interval="false" id="carousel-gallery"
-        dir="ltr">
+    <div class="carousel slide carousel-fade" data-ride="carousel" data-keyboard="true" data-interval="false" id="carousel-gallery" dir="ltr">
 
         <div class="carousel-outer">
 
@@ -335,7 +336,7 @@ $count_b = 0;
 
                     <div class="carousel-caption bg-opacity-black-60">
                         <?php if ($image['caption']) : ?>
-                        <p class="f-sans-serif text-body shadow-sm rounded fs-md ">
+                        <p class="f-sans-serif text-body shadow-sm rounded fs-md">
                             <?php echo $image['caption']; ?>
                         </p>
                         <?php endif; ?>
