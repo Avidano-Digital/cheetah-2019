@@ -1,6 +1,6 @@
 {
     "key": "group_5c94d995f2973",
-    "title": "Scientific Papers",
+    "title": "Scientific Papers Authors",
     "fields": [
         {
             "key": "field_5c94d9a961648",
@@ -16,8 +16,8 @@
                 "id": ""
             },
             "choices": {
-                "Author One": "Author One",
-                "Author Two": "Author Two"
+                "Dr. Laurie Marker": "Dr. Laurie Marker",
+                "Albert Einstein": "Albert Einstein"
             },
             "default_value": [],
             "allow_null": 0,
@@ -45,5 +45,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553277757
+    "modified": 1553335515
 }
