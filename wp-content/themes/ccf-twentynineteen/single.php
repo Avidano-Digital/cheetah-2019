@@ -75,40 +75,22 @@ get_header(); ?>
 
         <?php if( has_post_thumbnail() ):
             $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
+            $featured_image_caption = get_the_post_thumbnail_caption( get_the_ID() );
         ?>
 
         <div class="medium mb-5">
 
-        <figure class="figure my-0">
+          <figure class="figure my-0">
             <img class="figure-img" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>" />
             <?php if( $featured_image_caption ): ?>
-                <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
+            <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
             <?php endif; ?>
-        </figure>
+          </figure>
 
         </div>
-        <!-- .narrow -->
+        <!-- .medium -->
 
         <?php endif; /* has_post_thumbnail */ ?>
-
-
-        <?php $featured_image = get_field('featured_image');	
-        
-        if( $featured_image ): ?>
-
-        <div class="medium mb-5">
-
-            <figure class="figure my-0">
-                <img class="figure-img" src="<?php echo $featured_image['image']; ?>" alt="<?php the_title(); ?>" />
-                <?php if( $featured_image['caption'] ): ?>
-                    <figcaption class="figure-caption"><?php echo $featured_image['caption'] ?></figcaption>
-                <?php endif; ?>
-            </figure>
-
-        </div>
-        <!-- .narrow -->
-
-        <?php endif; /* featured_image */ ?>
 
         <?php get_template_part('template-parts/flexible-content-article'); ?>
 
