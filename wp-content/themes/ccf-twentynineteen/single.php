@@ -101,7 +101,6 @@ get_header(); ?>
 
     <?php endwhile; endif; /* have_posts */ ?>
 
-
     <section class="featured-panel responsive-lg">
 
       <div class="card bg-dark">

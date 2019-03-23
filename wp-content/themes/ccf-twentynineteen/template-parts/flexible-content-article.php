@@ -159,7 +159,7 @@ $figure = get_sub_field('figure');
 $enlarge = $figure['enlarge'];
 
 $image = $figure['image'];
-$caption = $figure['caption'];
+$caption = $image['caption'];
 
 ?>
 
