@@ -6,28 +6,28 @@ Template Name: News
 
 get_header(); ?>
 
-<main id="content">
+<main id="content" role="main">
 
     <div class="container-fluid bg-info cheetah-spots py-3">
 
-    <div class="narrow">
+      <div class="narrow">
 
-      <ul class="extensible-list horizontal fs-md text-white text-shadow">
-        <li>
-          <a class="text-white" href="news-ccf-blog.html">
-            News
-          </a>
-        </li>
-        <li>|</li>
-        <li>
-          <a class="text-primary font-weight-bold" href="news-ccf-blog.html">
-            CCF Blog
-          </a>
-        </li>
-      </ul>
+        <ul class="extensible-list horizontal fs-md text-white text-shadow">
+          <li>
+            <a class="text-white" href="news-ccf-blog.html">
+              News
+            </a>
+          </li>
+          <li>|</li>
+          <li>
+            <a class="text-primary font-weight-bold" href="news-ccf-blog.html">
+              CCF Blog
+            </a>
+          </li>
+        </ul>
 
-    </div>
-    <!-- .narrow -->
+      </div>
+      <!-- .narrow -->
 
     </div>
     <!-- .container-fluid -->
@@ -41,7 +41,7 @@ get_header(); ?>
     
     ?>
 
-    <article class="container-fluid blog py-6" id="primary-content">
+    <article class="container-fluid wide blog py-6" id="primary-content">
 
         <header class="narrow mb-5">
 
