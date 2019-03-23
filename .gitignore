@@ -3,3 +3,4 @@ wp-config.php
 /wp-content/uploads
 config.codekit3
 wp-config.php
+*.codekit3

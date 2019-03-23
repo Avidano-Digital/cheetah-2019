@@ -17305,6 +17305,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c7462f9af1f2.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c7462f9af1f2-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c755d982a14a.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -21937,6 +21945,116 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/03/people-powered-research-at-cheetah-conservation-fund.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/resource-library-fact-sheets-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18936,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/resource-library-fact-sheets-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/resource-library-fact-sheets.jpg": {
+		"ft": 16384,
+		"iS": 113148,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/resource-library-fact-sheets.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/resource-library-international-studbooks-250x250.jpg": {
+		"ft": 16384,
+		"iS": 20505,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/resource-library-international-studbooks-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/resource-library-international-studbooks.jpg": {
+		"ft": 16384,
+		"iS": 106903,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/resource-library-international-studbooks.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/resource-library-lectures-250x250.jpg": {
+		"ft": 16384,
+		"iS": 10165,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/resource-library-lectures-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/resource-library-lectures.jpg": {
+		"ft": 16384,
+		"iS": 42764,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/resource-library-lectures.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/resource-library-progress-reports-250x250.jpg": {
+		"ft": 16384,
+		"iS": 16740,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/resource-library-progress-reports-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/resource-library-progress-reports.jpg": {
+		"ft": 16384,
+		"iS": 86241,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/resource-library-progress-reports.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/resource-library-scientific-papers-250x250.jpg": {
+		"ft": 16384,
+		"iS": 13726,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/resource-library-scientific-papers-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/03/resource-library-scientific-papers.jpg": {
+		"ft": 16384,
+		"iS": 50475,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/03/resource-library-scientific-papers.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
