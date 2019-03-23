@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_5c94d9a961648",
-            "label": "Scientific Paper Authors",
-            "name": "scientific_paper_authors",
+            "label": "Authors",
+            "name": "authors",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -16,15 +16,18 @@
                 "id": ""
             },
             "choices": {
-                "Author One": "Author One",
-                "Author Two": "Author Two"
+                "A": "A",
+                "B": "B",
+                "C": "C"
             },
-            "default_value": [],
+            "default_value": [
+                "A"
+            ],
             "allow_null": 0,
             "multiple": 1,
-            "ui": 1,
-            "ajax": 0,
+            "ui": 0,
             "return_format": "value",
+            "ajax": 0,
             "placeholder": ""
         }
     ],
@@ -33,17 +36,17 @@
             {
                 "param": "post_taxonomy",
                 "operator": "==",
-                "value": "resource-category:scientific-papers"
+                "value": "resource-category:progress-reports"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "side",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553277757
+    "modified": 1553333895
 }
