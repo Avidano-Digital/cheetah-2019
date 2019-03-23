@@ -1,12 +1,12 @@
 {
-    "key": "group_5c94d995f2973",
+    "key": "group_5c7462f9af1f2",
     "title": "Scientific Papers",
     "fields": [
         {
-            "key": "field_5c94d9a961648",
-            "label": "Scientific Paper Authors",
-            "name": "scientific_paper_authors",
-            "type": "select",
+            "key": "field_5c74630403221",
+            "label": "Authors",
+            "name": "authors",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,17 +15,11 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "Author One": "Author One",
-                "Author Two": "Author Two"
-            },
-            "default_value": [],
-            "allow_null": 0,
-            "multiple": 1,
-            "ui": 1,
-            "ajax": 0,
-            "return_format": "value",
-            "placeholder": ""
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -45,5 +39,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553277757
+    "modified": 1553334104
 }

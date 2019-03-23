@@ -1,12 +1,12 @@
 {
     "key": "group_5c7462f9af1f2",
-    "title": "Scientific Papers",
+    "title": "Scientific Papers Author Database",
     "fields": [
         {
             "key": "field_5c74630403221",
             "label": "Authors",
             "name": "authors",
-            "type": "text",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,19 +15,40 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "collapsed": "field_5c951ef2cd2b0",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Author",
+            "sub_fields": [
+                {
+                    "key": "field_5c951ef2cd2b0",
+                    "label": "Author",
+                    "name": "author",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         }
     ],
     "location": [
         [
             {
-                "param": "post_taxonomy",
+                "param": "options_page",
                 "operator": "==",
-                "value": "resource-category:scientific-papers"
+                "value": "theme-options"
             }
         ]
     ],
@@ -39,5 +60,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553334104
+    "modified": 1553276718
 }
