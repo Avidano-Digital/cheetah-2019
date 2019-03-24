@@ -461,8 +461,8 @@ $images = get_sub_field('images');
 
             <div class="position-relative">
 
-                <a class="enlarge" class="stretched-link" href="<?php echo $image['url']; ?>" title="<?php echo $image['alt']; ?>"
-                    data-toggle="lightbox" data-gallery="example-gallery" data-footer="<?php echo $image['alt']; ?>">
+                <a class="enlarge" class="stretched-link" href="<?php echo $image['url']; ?>" title="<?php echo $image['caption']; ?>"
+                    data-toggle="lightbox" data-gallery="example-gallery" data-footer="<?php echo $image['caption']; ?>">
                     <span>
                         <span class="fas fa-expand"></span>
                     </span>
