@@ -1,11 +1,11 @@
 {
     "key": "group_5c95f200712d1",
-    "title": "All Authors (News)",
+    "title": "News Authors",
     "fields": [
         {
             "key": "field_5c95f22f5477a",
-            "label": "News Author List",
-            "name": "news_author_list",
+            "label": "News Authors",
+            "name": "news_authors",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -82,7 +82,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": 1,
     "description": "",
-    "modified": 1553335131
+    "modified": 1553339149
 }

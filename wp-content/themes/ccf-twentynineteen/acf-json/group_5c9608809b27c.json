@@ -1,11 +1,11 @@
 {
-    "key": "group_5c94d995f2973",
-    "title": "Scientific Papers Authors",
+    "key": "group_5c9608809b27c",
+    "title": "News Author",
     "fields": [
         {
-            "key": "field_5c94d9a961648",
-            "label": "Scientific Paper Authors",
-            "name": "scientific_paper_authors",
+            "key": "field_5c960880a80e6",
+            "label": "News Author",
+            "name": "news_author",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -25,7 +25,7 @@
             },
             "default_value": [],
             "allow_null": 0,
-            "multiple": 1,
+            "multiple": 0,
             "ui": 1,
             "ajax": 0,
             "return_format": "value",
@@ -35,19 +35,19 @@
     "location": [
         [
             {
-                "param": "post_taxonomy",
+                "param": "post_type",
                 "operator": "==",
-                "value": "resource-category:scientific-papers"
+                "value": "post"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553336346
+    "modified": 1553337045
 }

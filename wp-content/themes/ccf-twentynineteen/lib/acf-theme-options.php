@@ -29,3 +29,39 @@
     }
 
     add_filter('acf/load_field/name=scientific_paper_authors', 'acf_load_scientific_paper_author_choices');
+
+
+    function acf_load_color_field_choices( $field ) {
+    
+        // reset choices
+        $field['choices'] = array();
+    
+    
+        // if has rows
+        if( have_rows('news_authors', 'option') ) {
+            
+            // while has rows
+            while( have_rows('news_authors', 'option') ) {
+                
+                // instantiate row
+                the_row();
+                
+            // vars
+            $name = get_sub_field('name');
+            $avatar = get_sub_field('avatar');
+
+            
+            // append to choices
+            $field['choices'][ $name ][ $avatar ] = $name;
+                
+            }
+            
+        }
+    
+    
+        // return the field
+        return $field;
+        
+    }
+    
+    add_filter('acf/load_field/name=news_author', 'acf_load_color_field_choices');

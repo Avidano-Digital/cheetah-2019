@@ -41,37 +41,38 @@ get_header(); ?>
     
     ?>
 
+
     <article class="container-fluid wide blog py-6" id="primary-content">
 
-        <header class="narrow mb-5">
+    <header class="narrow mb-5">
 
-            <?php $postcat = get_the_category( $post->ID ); ?>
-            <?php foreach ($postcat as $cat): if ($cat->parent != 0 ): ?>
+      <?php $postcat = get_the_category( $post->ID ); ?>
+      <?php foreach ($postcat as $cat): if ($cat->parent != 0 ): ?>
 
-            <p class="mb-0"><a class="no-link-style text-body" href="#"><em><?php echo $cat->name; ?></em></a></p>
+      <p class="mb-0"><a class="no-link-style text-body" href="#"><em><?php echo $cat->name; ?></em></a></p>
 
-            <?php endif; endforeach; ?> 
+      <?php endif; endforeach; ?>
 
-            <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
+      <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
 
-            <ul class="extensible-list horizontal">
+      <ul class="extensible-list horizontal">
 
-                <li>
-                
-                    <div class="rounded-circle" style="overflow:hidden;">
-                        <?php echo $author_avatar; ?>
-                    </div> 
-                     
-                </li>
-            
-                <li class="fs-md">
-                    <strong class="d-block">by&nbsp;<?php echo $author_name; ?></strong>
-                    <span class="text-muted"><?php the_date(); ?></span> 
-                </li>
-                
-            </ul>
-    
-        </header>
+        <li>
+
+          <div class="rounded-circle" style="overflow:hidden;">
+            <?php echo $author_avatar; ?>
+          </div>
+
+        </li>
+
+        <li class="fs-md">
+          <strong class="d-block">by&nbsp;<?php echo $author_name; ?></strong>
+          <span class="text-muted"><?php the_date(); ?></span>
+        </li>
+
+      </ul>
+
+    </header>
 
         <?php if( has_post_thumbnail() ):
             $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );

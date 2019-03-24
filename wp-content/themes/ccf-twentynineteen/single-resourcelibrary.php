@@ -35,10 +35,7 @@ $resourceCategory = $resourceCategories[0];
         else :
             $author_name = get_the_author_meta('display_name');          
         endif;
-
-        $avatar_size = 96;
-        $author_avatar = get_wp_user_avatar( get_the_author_meta( 'ID' ), $avatar_size );
-    
+            
     ?>
 
     <article class="container-fluid blog py-6" id="primary-content">
