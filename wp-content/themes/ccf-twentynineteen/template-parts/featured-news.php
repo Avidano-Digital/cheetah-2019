@@ -8,7 +8,11 @@
     $postslist = get_posts( $args );
     
     foreach ( $postslist as $post ) :
-    setup_postdata( $post ); ?>
+    setup_postdata( $post );
+    
+    $the_date = get_the_date();
+    
+    ?>
 
     <div class="col-lg-4 mb-5 mb-lg-0">
     
@@ -16,7 +20,7 @@
         
             <div>
 
-                <span><?php the_date(); ?></span>
+                <span><?php echo $the_date; ?></span>
 
                 <?php if( has_post_thumbnail() ):
                     $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
@@ -35,10 +39,7 @@
     </div>
     <!-- .col -->
 
-    <?php
-    endforeach; 
-    wp_reset_postdata();
-    ?>
+    <?php endforeach; wp_reset_postdata(); ?>
 
 </div>
 <!-- .row -->

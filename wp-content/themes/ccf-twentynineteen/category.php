@@ -62,7 +62,7 @@ get_header(); ?>
 
     <div class="container py-7">
 
-        <div class="row mb-5 bg-light">
+        <div class="row mb-5 bg-light d-none">
 
             <div class="col-md">
 
@@ -88,7 +88,7 @@ get_header(); ?>
         </div>
         <!-- .row -->
 
-        <hr class="mb-5">
+        <hr class="mb-5 d-none">
 
 
             <?php if ( have_posts() ) : ?>
