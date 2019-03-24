@@ -107,19 +107,6 @@
             )
         );
 
-        register_post_type( 'Infographics',
-            array(
-                'labels' => array(
-                'name' => __( 'Infographics' ),
-                'singular_name' => __( 'Infographic' )
-            ),
-
-            'public' => true,
-            'rewrite' => array( 'slug' => 'infographics'),
-            'menu_icon' => 'dashicons-info'
-            )
-        );
-
         register_post_type( 'Partnerships',
             array(
                 'labels' => array(
@@ -143,6 +130,18 @@
             'public' => true,
             'show_in_rest' => true,
             'menu_icon' => 'dashicons-calendar'
+            )
+        );
+
+        register_post_type( 'CCF Authors',
+            array(
+                'labels' => array(
+                'name' => __( 'CCF Authors' ),
+                'singular_name' => __( 'Author' )
+            ),
+
+            'public' => true,
+            'menu_icon' => 'dashicons-admin-users'
             )
         );
     }

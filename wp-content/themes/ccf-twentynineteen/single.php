@@ -32,14 +32,7 @@ get_header(); ?>
     </div>
     <!-- .container-fluid -->
 
-    <?php if (have_posts()) : while ( have_posts() ) : the_post();
-
-    $author_name = get_the_author_meta('display_name');
-
-    $avatar_size = 96;
-    $author_avatar = get_wp_user_avatar( get_the_author_meta( 'ID' ), $avatar_size );
-    
-    ?>
+    <?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
 
     <article class="container-fluid wide blog py-6" id="primary-content">
 
@@ -53,20 +46,49 @@ get_header(); ?>
             <?php endif; endforeach; ?> 
 
             <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
-
+            
             <ul class="extensible-list horizontal">
 
                 <li>
-                
-                    <div class="rounded-circle" style="overflow:hidden;">
-                        <?php echo $author_avatar; ?>
-                    </div> 
-                     
+
+                  <?php $post_object = get_field('author');
+
+                  if( $post_object ): 
+                    $post = $post_object;
+                    setup_postdata( $post ); 
+                    $avatar = get_field('avatar');
+                    $avatar_size = '96px';
+                    $avatar_placeholder = 'http://cheetah-2019/wp-content/uploads/2019/01/avatar-default.jpg';	
+                  ?>
+
+                  <div class="rounded-circle" style="overflow:hidden;">
+                    <?php if ( $avatar ) : ?>
+                    <img src="<?php echo $avatar['url']; ?>" width="<?php echo $avatar_size; ?>" alt="<?php echo $avatar['alt']; ?>">
+                    
+                    <?php else: ?>
+                    <img src="<?php echo $avatar_placeholder; ?>" width="<?php echo $avatar_size; ?>" alt="">
+                    <?php endif; ?>
+                  </div>
+                                      
+                  <?php wp_reset_postdata(); endif; ?>
+
                 </li>
             
                 <li class="fs-md">
-                    <strong class="d-block">by&nbsp;<?php echo $author_name; ?></strong>
-                    <span class="text-muted"><?php the_date(); ?></span> 
+
+                  <?php $post_object = get_field('author');
+
+                  if( $post_object ): 
+                    $post = $post_object;
+                    setup_postdata( $post ); 
+                    $article_author = get_the_title();
+                  ?>
+
+                  <strong class="d-block">by&nbsp;<?php echo $article_author; ?></strong>
+
+                  <?php wp_reset_postdata(); endif; ?>
+
+                  <span class="text-muted"><?php the_date(); ?></span> 
                 </li>
                 
             </ul>
