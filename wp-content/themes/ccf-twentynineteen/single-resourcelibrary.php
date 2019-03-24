@@ -92,7 +92,7 @@ $resourceCategory = $resourceCategories[0];
             <figure class="figure my-0">
                 <img class="figure-img" src="<?php echo $featured_image['image']; ?>" alt="<?php the_title(); ?>" />
                 <?php if( $featured_image['caption'] ): ?>
-                    <figcaption class="figure-caption"><?php echo $featured_image['caption'] ?></figcaption>
+                <figcaption class="figure-caption"><?php echo $featured_image['caption'] ?></figcaption>
                 <?php endif; ?>
             </figure>
 
@@ -101,26 +101,28 @@ $resourceCategory = $resourceCategories[0];
 
         <?php endif; /* featured_image */ ?>
 
-<?php
+        <?php
 
         $video_url = get_field('video_url');
         $video_id = substr( strrchr( $video_url, '/' ), 1 );
 
         if ( get_field('video_url') ): 
-?>
+        
+        ?>
 
-            <div class="video-block medium my-6">
+        <div class="video-block medium my-6">
 
-                <div class="rounded">
+            <div class="rounded">
 
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id;?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
-                    </div>
-
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id;?>"
+                        frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
                 </div>
-                <!-- .wide -->
 
             </div>
+            <!-- .wide -->
+
+        </div>
 
         <?php endif; ?>   
 
