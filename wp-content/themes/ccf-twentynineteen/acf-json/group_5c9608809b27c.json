@@ -48,10 +48,9 @@
         "slug",
         "author",
         "format",
-        "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1553429462
+    "modified": 1553504321
 }

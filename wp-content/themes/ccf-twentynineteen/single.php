@@ -112,6 +112,20 @@ get_header(); ?>
         </div>
         <!-- .medium -->
 
+        <?php else: ?>
+
+        <div class="medium mb-5">
+
+          <figure class="figure my-0">
+            <img class="figure-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+            <?php if( $featured_image_caption ): ?>
+            <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
+            <?php endif; ?>
+          </figure>
+
+        </div>
+        <!-- .medium -->
+
         <?php endif; /* has_post_thumbnail */ ?>
 
         <?php get_template_part('template-parts/flexible-content-article'); ?>

@@ -696,38 +696,6 @@
                     ],
                     "min": "",
                     "max": ""
-                },
-                "layout_5c42d086b8450": {
-                    "key": "layout_5c42d086b8450",
-                    "name": "infographic_block",
-                    "label": "Infographic Block",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c42d0a4b8451",
-                            "label": "Content",
-                            "name": "content",
-                            "type": "post_object",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "post_type": [
-                                "infographics"
-                            ],
-                            "taxonomy": "",
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "return_format": "object",
-                            "ui": 1
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
                 }
             },
             "button_label": "New Article Item",
@@ -785,10 +753,9 @@
         "revisions",
         "slug",
         "format",
-        "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1553266039
+    "modified": 1553504360
 }

@@ -43,7 +43,9 @@ if ( $relatedPosts->have_posts() ):
                     <!-- .col -->
 
                     <div class="col-auto">
-                        <img class="rounded" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>" style="max-width:150px;">
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                        <img class="rounded" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>" style="max-width:120px;">
+                        </a>
                     </div>
                     <!-- .col -->
 
