@@ -301,6 +301,7 @@ $leaflet-button-bg: theme-color("info");
 $leaflet-button-color: white;
 
 #map-affiliates{
+  @extend .bg-warning;
 
   .leaflet-bar{
     margin-left:1rem;

@@ -1,6 +1,5 @@
 jQuery(function ($) {
 
-
     // Initialize the map 
     
     var map = L.map('map-affiliates', {
@@ -305,10 +304,6 @@ jQuery(function ($) {
         setMapZoom();
     });    
 
-    // var rect = L.rectangle(addedGeoJSON.getBounds(), {color: 'blue', weight: 1}).on('click', function (e) {
-    //     console.info(e);
-    // }).addTo(map);
-    
     // Smooth Scroll
 
     map.on('popupopen', function () {

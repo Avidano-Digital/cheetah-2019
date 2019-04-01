@@ -8,7 +8,7 @@
         // CSS
         ////////////////////////////////////////
 
-        if ( is_single( 'ccf-global' ) ) {
+        if ( is_page( 'ccf-global' ) ) {
 
             wp_enqueue_style( 
                 'leaflet-css', 
@@ -100,7 +100,7 @@
             true 
         );
 
-        if ( is_single( 'ccf-global' ) ) {
+        if ( is_page( 'ccf-global' ) ) {
 
             wp_enqueue_script( 
                 'leaflet-js', 

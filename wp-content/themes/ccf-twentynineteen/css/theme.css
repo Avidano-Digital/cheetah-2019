@@ -3678,12 +3678,14 @@ button.bg-info:focus,
 button.hard-shadow-info:focus::before {
   background-color: #261824 !important; }
 
-.bg-warning {
+.bg-warning, #map-affiliates {
   background-color: #ffc107 !important; }
 
-a.bg-warning:hover, a.bg-warning:focus,
+a.bg-warning:hover, a#map-affiliates:hover, a.bg-warning:focus, a#map-affiliates:focus,
 button.bg-warning:hover,
-button.bg-warning:focus {
+button#map-affiliates:hover,
+button.bg-warning:focus,
+button#map-affiliates:focus {
   background-color: #d39e00 !important; }
 
 .bg-danger {
