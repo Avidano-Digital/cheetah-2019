@@ -28,7 +28,7 @@ $video_id = substr( strrchr( $video_url, '/' ), 1 );
 
 ?>
 
-<div class="video-block medium my-6">
+<div class="video-block medium my-5">
 
     <div class="rounded">
 
@@ -163,7 +163,7 @@ $caption = $image['caption'];
 
 ?>
 
-<div class="figure-block medium my-6">
+<div class="figure-block medium my-5">
 
     <figure class="figure my-0">
 
@@ -214,7 +214,7 @@ $enlarge_b = $figure_b['enlarge'];
 
 ?>
 
-<div class="two-figure-block my-6 mx-n2">
+<div class="two-figure-block my-5 mx-n2">
 
     <div class="row matrix-gutter">
 
@@ -226,8 +226,9 @@ $enlarge_b = $figure_b['enlarge'];
 
                     <?php if( $enlarge_a ): ?>
 
-                    <a class="enlarge stretched-link" href="<?php echo $image_a['url']; ?>" class="stretched-link" title="<?php echo $caption_a; ?>"
-                        data-toggle="lightbox" data-footer="<?php echo $caption_a; ?>">
+                    <a class="enlarge stretched-link" href="<?php echo $image_a['url']; ?>" class="stretched-link"
+                        title="<?php echo $caption_a; ?>" data-toggle="lightbox"
+                        data-footer="<?php echo $caption_a; ?>">
                         <span>
                             <span class="fas fa-expand"></span>
                         </span>
@@ -236,9 +237,9 @@ $enlarge_b = $figure_b['enlarge'];
                     <?php endif; ?>
 
                     <?php if( $image_a ): ?>
-                        <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
+                    <img src="<?php echo $image_a['url']; ?>" alt="<?php echo $image_a['alt'] ?>">
                     <?php else : ?>
-                        <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
+                    <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
                     <?php endif; ?>
 
                 </div>
@@ -259,8 +260,9 @@ $enlarge_b = $figure_b['enlarge'];
 
                     <?php if( $enlarge_b ): ?>
 
-                    <a class="enlarge stretched-link" href="<?php echo $image_b['url']; ?>" class="stretched-link" title="<?php echo $caption_b; ?>"
-                        data-toggle="lightbox" data-footer="<?php echo $caption_a; ?>">
+                    <a class="enlarge stretched-link" href="<?php echo $image_b['url']; ?>" class="stretched-link"
+                        title="<?php echo $caption_b; ?>" data-toggle="lightbox"
+                        data-footer="<?php echo $caption_a; ?>">
                         <span>
                             <span class="fas fa-expand"></span>
                         </span>
@@ -269,9 +271,9 @@ $enlarge_b = $figure_b['enlarge'];
                     <?php endif; ?>
 
                     <?php if( $image_a ): ?>
-                        <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
+                    <img src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt'] ?>">
                     <?php else : ?>
-                        <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
+                    <img src="https://placehold.it/1000x600.jpg" alt="Placeholder">
                     <?php endif; ?>
 
                 </div>
@@ -404,7 +406,7 @@ $count_b = 0;
 
 <?php if( have_rows('links') ): ?>
 
-<div class="thumbnail-links-block my-6">
+<div class="thumbnail-links-block my-5">
 
     <div class="medium">
 
