@@ -14,7 +14,7 @@
 
  get_header(); ?>
 
-  <main id="content">
+  <main class="overflow-auto" id="content" role="main">
 
     <section id="introduction">
 
@@ -22,12 +22,6 @@
 
       $primary_feature = get_field('primary_feature'); 
       $image = $primary_feature['image'];
-
-      // if( !empty($image) ){
-      //   $size = 'thumbnail';
-	    //   $thumb = $image['sizes'][ $size ];
-      // }
-
       $headline = $primary_feature['headline'];
       $text = $primary_feature['text'];
       $link = $primary_feature['link'];
@@ -220,9 +214,9 @@
     </section>
     <!-- #introduction -->
 
-    <section class="py-7">
+    <section class="my-6">
       
-      <div class="container mb-5" id="latest-news">
+      <div class="container my-5" id="latest-news">
 
         <header class="row align-items-end justify-content-between mb-3">
           <div class="col-md-auto">
@@ -299,7 +293,7 @@
 
     <?php if( have_rows('cheetah_facts') ): ?>
 
-    <section class="bg-light text-center py-8 pattern-border-top-bottom">
+    <section class="bg-light text-center py-6 pattern-border-top-bottom">
 
       <?php while( have_rows('cheetah_facts') ): the_row(); 
   
@@ -319,18 +313,19 @@
 
         <div class="row mb-5">
 
-        <?php if( have_rows('facts') ):
+          <?php if( have_rows('facts') ):
 
-        while ( have_rows('facts') ) : the_row(); 
+          while ( have_rows('facts') ) : the_row(); 
 
-        $image = get_sub_field('image');
-        $headline = get_sub_field('headline');
-        $text = get_sub_field('text');
-          
-        ?>
+          $image = get_sub_field('image');
+          $headline = get_sub_field('headline');
+          $text = get_sub_field('text');
+            
+          ?>
 
           <div class="col-sm-9 col-lg-4 mx-auto px-3 mb-4 mb-lg-0">
-            <img class="rounded-circle mx-auto mb-4" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+            <img class="rounded-circle mx-auto mb-4" src="<?php echo $image['url']; ?>"
+              alt="<?php echo $image['alt']; ?>">
             <h4 class="text-info"><?php echo $headline; ?></h4>
             <p><?php echo $text; ?></p>
           </div>
@@ -343,13 +338,14 @@
         <!-- .container-fluid -->
 
         <?php if( $link ): ?>
-          <a class="btn btn-lg btn-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+        <a class="btn btn-lg btn-primary" href="<?php echo $link['url']; ?>"
+          title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
         <?php endif; ?>
 
       </div>
       <!-- .wide -->
 
-    <?php endwhile; /* Facts */ ?>
+      <?php endwhile; /* Facts */ ?>
 
     </section>
 

@@ -1,4 +1,4 @@
-<footer>
+<footer role="contentinfo">
 
     <?php if( have_rows('footer_features', 'option') ): ?>
 
@@ -25,7 +25,7 @@
 
                 </div>
 
-                <div class="card-img-overlay d-flex p-md-3">
+                <div class="card-img-overlay d-flex">
                     <div class="align-self-end">
                         <a class="btn btn-block btn-primary stretched-link" href="<?php echo $link['url']; ?>" title="Resource Library">
                             <?php echo $link['title']; ?></a>
@@ -44,7 +44,7 @@
 
     <?php endif; /* footer_features */ ?>
 
-    <div class="py-7" id="global-links">
+    <div class="py-5" id="global-links">
 
         <div class="container">
 
@@ -122,7 +122,7 @@
             </div>
             <!-- .row -->
 
-            <hr class="dark mb-3">
+            <hr class="dark mb-2">
 
             <div class="row justify-content-between">
 

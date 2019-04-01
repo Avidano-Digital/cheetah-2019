@@ -7,7 +7,7 @@ $post_objects = $videos;
 
 if( $featured_videos ): ?>
 
-<div class="container" id="videos">
+<div class="container my-5" id="videos">
 
     <header class="row align-items-end justify-content-between mb-3">
         <div class="col-md-auto">

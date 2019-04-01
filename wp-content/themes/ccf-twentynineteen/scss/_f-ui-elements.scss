@@ -115,7 +115,29 @@ $custom-link: true;
   );
 }
 
+
+.overlay-gradient-y-white::before{
+  @include linear-gradient(
+    $direction: to bottom,
+    $first-color: white,
+    $second-color: white,
+    $first-color-opacity: 0,
+    $second-color-opacity: 1,
+    $first-color-position: 25%,
+    $second-color-position: 100%
+  );
+}
+
+
+
+
+
 // Gradient Backgrounds
+
+
+
+
+
 
 .overlay-gradient-x-right{
   @include linear-gradient(
@@ -210,7 +232,7 @@ $custom-link: true;
   .card-img-overlay{ padding: 0; }
 
   @include media-breakpoint-up(md) {
-    .card-img-overlay{ padding: $spacer-3 }
+    .card-img-overlay{ padding: $spacer-2 }
   }
 
   @include media-breakpoint-down(sm) {

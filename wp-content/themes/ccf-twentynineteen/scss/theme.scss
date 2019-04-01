@@ -33,7 +33,11 @@ In this file:
 
 .f-sans-serif{ font-family: 'Roboto', sans-serif; }
 
-.f-for-kids{ font-family: 'Mali', cursive; }
+.f-cheetah-tracks{ 
+  font-family: 'cheetah-tracks-regular'; 
+  @extend .font-weight-normal;
+  line-height: normal !important;
+}
 
 // Font styles
 
@@ -51,24 +55,19 @@ p{
   { @extend .f-sans-serif; }
 }
 
-// For Kids Font styles
-
-main.for-kids, 
-main.for-kids p {
-  @extend .f-for-kids;
-}
-
 main.for-kids{
 
   h1, 
   h2, 
   h3, 
-  h4, h5, h6
-  { line-height: .85; }
-
-  p{
-    @extend .fs-lg;
+  h4, 
+  h5, 
+  h6
+  { 
+    @extend .f-cheetah-tracks; 
   }
+
+  p{ @extend .fs-lg; }
   
 }
 
@@ -411,10 +410,107 @@ $leaflet-button-color: white;
 
 .african-hr{
   border-top: none;
-  height: 15px;
+  height: 20px;
   @include apply-background-image('african-hr', '.svg');
 
 }
+
+
+
+
+
+.for-kids .featured-panel *{
+
+  text-shadow: none !important;
+
+}
+
+.kid-tabs{
+  @extend .f-cheetah-tracks;
+  a{
+    @extend .display-2;
+    @extend .text-white;
+    &.active{
+      @extend .text-primary;
+    }
+  }
+}
+
+
+// .btn-learn, 
+// .btn-help, 
+// .btn-create
+// { 
+//   @extend .d-block;
+//   text-indent: -10000px;
+//   height:100px;
+//   &.active{
+//     background-position-y: 100%;
+//   }
+// }
+
+// .btn-learn{
+//   width:220px;
+//   @include apply-background-image('btn-learn', '.svg');
+// }
+
+// .btn-help{
+//   width:190px;
+//   @include apply-background-image('btn-help', '.svg');
+// }
+
+// .btn-create{
+//   width:240px;
+//   @include apply-background-image('btn-create', '.svg');
+// }
+
+
+
+[class*="hard-shadow-"]{
+  position: relative; 
+
+  &::before {
+    content: "";
+    @extend .position-absolute;
+    @extend .h-100;
+    @extend .w-100;
+    background: black;
+    @extend .opacity-20;
+
+    top: 0.75rem;
+    left: 0.75rem;
+
+  }
+
+  @include media-breakpoint-down(sm) {
+      &::before { display: none; }
+  }
+}
+
+
+
+
+.hard-shadow-info{
+  &::before {
+      @extend .bg-info;
+  }
+}
+
+.funky > li{
+  
+
+  &.tilt-right{
+    transform: rotate(3deg);   
+    // margin-left: -2rem;
+
+  }
+  &.tilt-left{
+    transform: rotate(-3deg);
+  }
+}
+
+
+
 
 
 .pattern-border-colored{
@@ -506,8 +602,6 @@ blockquote{
 // Figures
 ////////////////////////////////////////
 
-figure{ @extend .my-0; }
-
 .figure-img, 
 .figure-info 
 { @extend .mb-1; }
@@ -559,14 +653,13 @@ figure{
   &.right
   {
     display: block;
+    margin-top: $spacer-4;
+    margin-bottom: $spacer-4;
     text-align: center;
-    margin: 0;
     
     > div{
       display: inline-block;
       text-align: left;
-      margin-top: $spacer-4;
-      margin-bottom: $spacer-4;
       margin-left: auto;
       margin-right: auto;
     }
@@ -580,15 +673,6 @@ figure{
       margin-top: 0;
       margin-bottom: 0;
       max-width: 50%;
-    
-      > div{
-        display: inline-block;
-        text-align: left;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
     }
 
     &.left{
@@ -606,11 +690,6 @@ figure{
   }
 
 }
-
-
-
-
-
 
 #news-menu{
   a{
@@ -661,23 +740,3 @@ hr.dark{
 
 //   }
 // }
-
-
-.embed-container { 
-  border:2px solid red;
-  position: relative; 
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  max-width: 100%;
-  height: auto;
-} 
-
-.embed-container iframe,
-.embed-container object,
-.embed-container embed { 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
