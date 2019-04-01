@@ -76,16 +76,8 @@ $parent_title = get_the_title($post->post_parent);
                         </h1>
                     </header>
 
-                    <?php if (get_field(resource_library_description)): ?>
-
-                    <div class="text-block narrow mb-5">
-                        <p>
-                            <?php the_field('resource_library_description'); ?>
-                        </p>
-                    </div>
-
-                    <?php endif;
-
+                    <?php
+                    
                     get_template_part('template-parts/flexible-content-article');
 
                     if (is_page('ccf-global')):
