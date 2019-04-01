@@ -3678,14 +3678,12 @@ button.bg-info:focus,
 button.hard-shadow-info:focus::before {
   background-color: #261824 !important; }
 
-.bg-warning, #map-affiliates {
+.bg-warning {
   background-color: #ffc107 !important; }
 
-a.bg-warning:hover, a#map-affiliates:hover, a.bg-warning:focus, a#map-affiliates:focus,
+a.bg-warning:hover, a.bg-warning:focus,
 button.bg-warning:hover,
-button#map-affiliates:hover,
-button.bg-warning:focus,
-button#map-affiliates:focus {
+button.bg-warning:focus {
   background-color: #d39e00 !important; }
 
 .bg-danger {
@@ -3696,12 +3694,14 @@ button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
-.bg-light {
+.bg-light, #map-affiliates {
   background-color: #F7F5F0 !important; }
 
-a.bg-light:hover, a.bg-light:focus,
+a.bg-light:hover, a#map-affiliates:hover, a.bg-light:focus, a#map-affiliates:focus,
 button.bg-light:hover,
-button.bg-light:focus {
+button#map-affiliates:hover,
+button.bg-light:focus,
+button#map-affiliates:focus {
   background-color: #e5dfcf !important; }
 
 .bg-dark {
@@ -4785,7 +4785,7 @@ button.bg-quaternary:focus {
   margin-right: 0 !important; }
 
 .mb-0, figure,
-div.figure-img,
+div.figure-img, .leaflet-popup-content p,
 .my-0 {
   margin-bottom: 0 !important; }
 

@@ -1,29 +1,15 @@
-<div class="mb-5 mb-xl-6">
 
-    <div class="narrow">
-        <p>The Cheetah Conservation Fund is an international non-profit organization headquartered in Namibia, Africa. CCF has operations in the United States, Canada, the United Kingdom, and Australia, with partner organizations in several other nations.</p>
-    </div>
-    <!-- .narrow -->
-
-</div>
-
-<div class="offset-gutter-x">
-    <figure class="mb-5 mb-xl-6 w-100">
+<div class="my-5 mx-n2">
+    <figure class="w-100">
 
         <div class="figure-info">
             <div id="map-affiliates"></div>
         </div>
-        <div class="container">
+        <div class="container py-1">
             <div class="narrow">
                 <figcaption>
-                    <span class="d-block mb-1">Map tiles by
-                        <a href="http://stamen.com/" target="_blank">Stamen Design</a>, under
-                        <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>. Data by
-                        <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a>, under
-                        <a href="http://www.openstreetmap.org/copyright" target="_blank">ODbL</a>
-                    </span>
 
-                    <ul class="link-list horizontal responsive-sm">
+                    <ul class="extensible-list horizontal responsive-sm mb-0">
                         <li>
                             <span class="fas fas fa-circle office"></span>
                             <span class="mx-1">Headquarters</span> 
@@ -42,13 +28,24 @@
                         </li>
                     </ul>
    
+                    <span class="d-block fs-sm">
+                        <em>
+                        Map tiles by
+                        <a href="http://stamen.com/" target="_blank">Stamen Design</a>, under
+                        <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>.
+                        Data by
+                        <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a>, under
+                        <a href="http://www.openstreetmap.org/copyright" target="_blank">ODbL</a>
+                        </em>
+                    </span>
+
                 </figcaption>
             </div>
         </div>
 
     </figure>
 </div>
-<!-- .offset-gutter-x -->
+<!-- .mx-n2 -->
 
 <?php if( have_rows('ccf_global_content') ):
 

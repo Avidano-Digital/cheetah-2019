@@ -291,6 +291,7 @@ span.fa-circle{
   font-size: $fs-md;
 
   p{
+    @extend .mb-0;
     margin-bottom: 0;
     &.location { color: $text-muted; }
   }
@@ -301,7 +302,7 @@ $leaflet-button-bg: theme-color("info");
 $leaflet-button-color: white;
 
 #map-affiliates{
-  @extend .bg-warning;
+  @extend .bg-light;
 
   .leaflet-bar{
     margin-left:1rem;
