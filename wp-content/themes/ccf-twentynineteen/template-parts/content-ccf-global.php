@@ -23,7 +23,7 @@
                         <a href="http://www.openstreetmap.org/copyright" target="_blank">ODbL</a>
                     </span>
 
-                    <ul class="extensible-list horizontal responsive-sm">
+                    <ul class="link-list horizontal responsive-sm">
                         <li>
                             <span class="fas fas fa-circle office"></span>
                             <span class="mx-1">Headquarters</span> 
