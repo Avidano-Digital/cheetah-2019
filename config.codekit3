@@ -17364,6 +17364,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5ca22a6bba4df.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5ca22a6bba4df-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/wp-content/themes/ccf-twentynineteen/acf-json/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -18554,6 +18562,14 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/css/theme-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/wp-content/themes/ccf-twentynineteen/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/favicon.ico",
+		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/footer.php": {
 		"cB": 0,
@@ -24602,6 +24618,14 @@
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"/wp-content/uploads/2019/04/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/04/favicon.ico",
+		"oF": 0
 		},
 	"/wp-content/uploads/wp-coder/script-1.js": {
 		"bF": 0,
