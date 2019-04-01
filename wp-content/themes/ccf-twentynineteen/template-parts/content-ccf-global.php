@@ -49,11 +49,9 @@
 </div>
 <!-- .mx-n2 -->
 
-
 <?php if( have_rows('ccf_global_content') ):
 
     while ( have_rows('ccf_global_content') ) : the_row(); ?>
-
 
     <?php if( get_row_layout() == 'category' ):  
 
@@ -62,7 +60,7 @@
     ?>
 
     <h1 class="display-1">HELLO World</h1> 
-    
+
     <section class="narrow mb-5 mb-xl-6 bg-danger">
 
         <h1 class="display-4 font-weight-light text-muted mb-4"><?php echo $headline; ?></h2>
