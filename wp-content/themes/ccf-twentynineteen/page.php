@@ -50,7 +50,7 @@ $parent_title = get_the_title($post->post_parent);
     </section>
     <!-- .banner -->
 
-    <article class="container-fluid">
+    <div class="container-fluid">
 
         <div class="row">
 
@@ -66,105 +66,110 @@ $parent_title = get_the_title($post->post_parent);
                 endif;
             ?>
 
-            <div class="col-xl-9 overflow-auto bg-danger" id="primary-content">
+            <div class="col-xl-9 overflow-auto bg-warning">
 
-                <header class="medium mb-4">
-                    <h1 class="display-4 text-center">
-                        <?php the_title(); ?>
-                    </h1>
-                </header>
+                <article class="my-6 bg-danger" id="primary-content">
 
-                <?php if (get_field(resource_library_description)): ?>
+                    <header class="medium mb-4">
+                        <h1 class="display-4 text-center">
+                            <?php the_title(); ?>
+                        </h1>
+                    </header>
 
-                <div class="text-block narrow mb-5">
-                    <p>
-                        <?php the_field('resource_library_description'); ?>
-                    </p>
-                </div>
+                    <?php if (get_field(resource_library_description)): ?>
 
-                <?php endif;
+                    <div class="text-block narrow mb-5">
+                        <p>
+                            <?php the_field('resource_library_description'); ?>
+                        </p>
+                    </div>
 
-                get_template_part('template-parts/flexible-content-article');
+                    <?php endif;
 
-                if (is_page('ccf-global')):
+                    get_template_part('template-parts/flexible-content-article');
 
-                  get_template_part('template-parts/content-ccf-global');
-                
-                endif;
+                    if (is_page('ccf-global')):
 
-                if (is_page('dr-laurie-marker')):
-                
-                  get_template_part('template-parts/dr-laurie-awards-and-activities');
+                    get_template_part('template-parts/content-ccf-global');
+                    
+                    endif;
 
-                endif;
+                    if (is_page('dr-laurie-marker')):
+                    
+                    get_template_part('template-parts/dr-laurie-awards-and-activities');
 
-                $partnership_group = get_field('partnership_group');
-                
-                $post_object = $partnership_group;
+                    endif;
 
-                if ($post_object):
+                    $partnership_group = get_field('partnership_group');
+                    
+                    $post_object = $partnership_group;
 
-                    // override $post
-                    $post = $post_object;
-                    setup_postdata($post);
+                    if ($post_object):
 
-                    $description = get_field('description');
+                        // override $post
+                        $post = $post_object;
+                        setup_postdata($post);
 
-                ?>
+                        $description = get_field('description');
 
-                <div class="narrow mb-6">
+                    ?>
 
-                    <h3><?php the_title(); ?>
-                    </h3>
+                    <div class="narrow mb-6">
 
-                    <p><?php echo $description; ?>
-                    </p>
+                        <h3><?php the_title(); ?>
+                        </h3>
 
-                    <?php if (have_rows('partners')): ?>
+                        <p><?php echo $description; ?>
+                        </p>
 
-                    <div class="my-3">
+                        <?php if (have_rows('partners')): ?>
 
-                        <?php while (have_rows('partners')): the_row();
+                        <div class="my-3">
 
-                            // vars
-                            $name = get_sub_field('name');
-                            $link = get_sub_field('link');
+                            <?php while (have_rows('partners')): the_row();
 
-                            ?>
+                                // vars
+                                $name = get_sub_field('name');
+                                $link = get_sub_field('link');
 
-                        <dl class="row justify-content-between border-top py-2 mb-0 fs-md">
+                                ?>
 
-                            <dt class="col-md">
-                                <?php echo $name; ?>
-                            </dt>
+                            <dl class="row justify-content-between border-top py-2 mb-0 fs-md">
 
-                            <dd class="col-md-auto">
-                                <a
-                                    href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
-                            </dd>
+                                <dt class="col-md">
+                                    <?php echo $name; ?>
+                                </dt>
 
-                        </dl>
+                                <dd class="col-md-auto">
+                                    <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+                                </dd>
 
-                        <?php endwhile; ?>
+                            </dl>
+
+                            <?php endwhile; ?>
+
+                        </div>
+                        <!-- .my-4 -->
+
+                        <?php endif; ?>
 
                     </div>
-                    <!-- .my-4 -->
+                    <!-- .narrow -->
 
-                    <?php endif; ?>
+                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly?>
 
-                </div>
-                <!-- .narrow -->
+                    <?php
+                    endif;
 
-                <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly?>
+                    get_template_part('template-parts/article-footer');
+                    get_template_part('template-parts/related-reading');
+                    wp_reset_postdata();
 
-                <?php
-                endif;
+                    ?>
 
-                get_template_part('template-parts/article-footer');
-                get_template_part('template-parts/related-reading');
-                wp_reset_postdata();
 
-                ?>
+                </article>
+                <!-- #primary-content -->
 
             </div>
             <!-- .col -->
@@ -172,7 +177,7 @@ $parent_title = get_the_title($post->post_parent);
         </div>
         <!-- .row -->
 
-    </article>
+    </div>
 
     <?php endwhile; endif; /* have_posts */ ?>
 
