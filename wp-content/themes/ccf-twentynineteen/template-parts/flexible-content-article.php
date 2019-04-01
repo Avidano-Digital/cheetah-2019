@@ -453,7 +453,7 @@ $images = get_sub_field('images');
 
 <?php if( $images ): ?>
 
-<div class="gallery-thumbnails medium my-6">
+<div class="gallery-thumbnails medium my-5">
 
     <div class="row matrix-gutter">
 
@@ -490,7 +490,7 @@ $images = get_sub_field('images');
 
 <?php if( have_rows('callouts') ): ?>
 
-<div class="offset-gutter-x my-7">
+<div class="offset-gutter-x my-5">
 
     <?php while ( have_rows('callouts') ) : the_row(); 
 
@@ -563,7 +563,6 @@ $images = get_sub_field('images');
 
 <?php endif; ?>
 
-
 <?php elseif( get_row_layout() == 'infographic_block' ):
 
 $info = get_sub_field( 'content');
@@ -583,7 +582,7 @@ setup_postdata( $post );
 
 ?>
 
-<div class="offset-gutter-x my-7">
+<div class="offset-gutter-x my-5">
 
     <div class="bg-danger">
         <div class="narrow">

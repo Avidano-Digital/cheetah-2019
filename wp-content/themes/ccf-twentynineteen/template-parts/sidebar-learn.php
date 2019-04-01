@@ -11,6 +11,7 @@
         </div>
 
         <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
+            
             <ul class="extensible-list text-white py-4 py-xl-0">
                 <li class="page_item <?php if ( is_page( 'resource-library' ) ) : ?>current_page_item<?php endif; ?>">
                     <a href="/learn/resource-library/">Resource Library</a>
