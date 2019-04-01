@@ -7,55 +7,6 @@
 
 <main id="content">
 
-    <section class="banner">
-
-        <div class="card bg-white">
-
-            <div class="overlay-gradient-y-black">
-
-            <?php
-                $args = array(
-                  'name'        => 'resource-library',
-                  'post_type'   => 'page',
-                  'post_status' => 'publish',
-                  'numberposts' => 1
-                );
-
-                $resource_library = get_posts($args);
-
-                if( $resource_library ) :
-        
-                    $featured_image_id = get_post_thumbnail_id($resource_library[0]->ID);
-                    $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
-                    $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
-
-                endif;
-
-                $image = get_field('featured_image', 'term_' . $term->term_id);
-
-             ?>
-  
-            <?php if( $featured_image ): ?>
-                <img class="card-img" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
-            <?php else : ?>
-                <img class="card-img" src="http://via.placeholder.com/1500x500.jpg" alt="Placeholder">
-            <?php endif; ?>
-
-            </div>
-
-            <div class="card-img-overlay d-flex">
-                <div class="container-fluid align-self-end opacity-70">
-                    <h1 class="text-right text-secondary">
-                        <em>Learn</em>
-                    </h1>
-                </div>
-                <!-- .align-self-center -->
-            </div>
-        </div>
-
-    </section>
-    <!-- .banner -->
-
     <article class="container-fluid">
 
         <div class="row">
