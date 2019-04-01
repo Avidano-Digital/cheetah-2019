@@ -16,7 +16,7 @@
 get_header(); ?>
 
 <main class="bg-dark text-white" id="content">
-    <div class="container py-7">
+    <div class="container py-6">
 
         <h1>Hello, world!</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptatibus aut, quibusdam numquam quisquam consequatur

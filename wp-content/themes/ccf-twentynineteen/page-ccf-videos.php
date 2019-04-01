@@ -49,7 +49,7 @@ get_header(); ?>
 
             <?php get_template_part('template-parts/sidebar-learn'); ?>
 
-            <div class="col-xl-9 py-7">
+            <div class="col-xl-9 py-6">
 
                 <header class="medium mb-4">
                     <h1 class="display-4 text-center">

@@ -104,7 +104,7 @@
             </div>
             <!-- .col -->
 
-            <div class="col-xl-9 py-7">
+            <div class="col-xl-9 py-6">
 
                 <header class="medium">
                     <h1 class="display-4 text-center"><?php echo $term->name; ?></h1>

@@ -60,7 +60,7 @@ get_header(); ?>
     </div>
     <!-- .posts-filter -->
 
-    <div class="container py-7">
+    <div class="container py-6">
 
         <div class="row mb-5 bg-light d-none">
 

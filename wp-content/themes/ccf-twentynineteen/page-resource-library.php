@@ -49,7 +49,7 @@ get_header(); ?>
 
             <?php get_template_part('template-parts/sidebar-learn'); ?>
 
-            <div class="col-xl-9 py-7">
+            <div class="col-xl-9 py-6">
 
                 <header class="medium mb-4">
                     <h1 class="display-4 text-center">
@@ -101,7 +101,7 @@ get_header(); ?>
 
                                 <div class="collapse <?php echo $visibility; ?>" id="acc-panel-<?php echo $category->slug; ?>" role="tabpanel" aria-labelledby="acc-button-<?php echo $category->slug; ?>" data-parent="#acc-resource-library">
 
-                                    <div class="card-body bg-light py-7">
+                                    <div class="card-body bg-light py-6">
 
                                         <div class="narrow">
 

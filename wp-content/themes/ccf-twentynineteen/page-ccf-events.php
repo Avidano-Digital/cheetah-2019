@@ -51,7 +51,7 @@ get_header(); ?>
 
             <div class="col-xl-9">
 
-                <article class="py-7" id="primary-content">
+                <article class="py-6" id="primary-content">
 
                     <header class="medium">
                         <h1 class="display-4 text-center"><?php the_title(); ?></h1>
