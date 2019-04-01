@@ -55,6 +55,7 @@ $parent_title = get_the_title($post->post_parent);
         <div class="row">
 
             <?php
+
                 if ($parent_title == "Who We Are" || $grandparent_title == "Who We Are"):
                     get_template_part('template-parts/sidebar-who-we-are');
                 elseif ($parent_title == "What We Do" || $grandparent_title == "What We Do"):
@@ -64,13 +65,14 @@ $parent_title = get_the_title($post->post_parent);
                 elseif ($parent_title == "Learn" || $grandparent_title == "Learn"):
                     get_template_part('template-parts/sidebar-learn');
                 endif;
+            
             ?>
 
-            <div class="col-xl-9 overflow-auto bg-warning">
+            <div class="col-xl-9 overflow-auto">
 
-                <article class="my-6 bg-danger" id="primary-content">
+                <article class="my-6" id="primary-content">
 
-                    <header class="medium mb-4">
+                    <header class="medium my-3">
                         <h1 class="display-4 text-center">
                             <?php the_title(); ?>
                         </h1>
@@ -106,12 +108,14 @@ $parent_title = get_the_title($post->post_parent);
 
                     ?>
 
-                    <div class="narrow mb-6">
+                    <div class="narrow mb-5 bg-info">
 
-                        <h3><?php the_title(); ?>
+                        <h3>
+                            <?php the_title(); ?>
                         </h3>
 
-                        <p><?php echo $description; ?>
+                        <p>
+                            <?php echo $description; ?>
                         </p>
 
                         <?php if (have_rows('partners')): ?>
@@ -150,15 +154,13 @@ $parent_title = get_the_title($post->post_parent);
 
                     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly?>
 
-                    <?php
-                    endif;
+                    <?php endif;
 
                     get_template_part('template-parts/article-footer');
                     get_template_part('template-parts/related-reading');
                     wp_reset_postdata();
 
                     ?>
-
 
                 </article>
                 <!-- #primary-content -->
