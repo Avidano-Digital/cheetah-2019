@@ -108,7 +108,7 @@ $parent_title = get_the_title($post->post_parent);
 
                     ?>
 
-                    <div class="narrow mb-5 bg-info">
+                    <div class="narrow mb-5">
 
                         <h3>
                             <?php the_title(); ?>
