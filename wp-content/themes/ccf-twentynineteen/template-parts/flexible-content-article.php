@@ -64,7 +64,7 @@ $quote_credit_title = $quote['credit_title'];
 
 ?>
 
-<div class="banner-block my-6 mx-n2">
+<div class="banner-block my-5 mx-n2">
 
     <figure class="figure w-100">
 
@@ -301,7 +301,7 @@ $count_b = 0;
 
 <?php if( $images ): ?>
 
-<div class="gallery-carousel-block my-7 mx-n2">
+<div class="gallery-carousel-block my-5 mx-n2">
 
     <div class="carousel slide carousel-fade" data-ride="carousel" data-keyboard="true" data-interval="false" id="carousel-gallery" dir="ltr">
 

@@ -8,7 +8,7 @@
 
     <section id="awards-and-honors">
 
-        <div class="narrow my-7">
+        <div class="narrow my-5">
 
             <h3 class="h2 mb-2"><?php echo $headline; ?></h3>
 

@@ -49,7 +49,10 @@ body{
 img{ @extend .img-fluid; }
 
 figure,
-div.figure-img{ position: relative; }
+div.figure-img {
+  position: relative;
+  @extend .mb-0;
+}
 
 ////////////////////////////////////////
 // B. Margins

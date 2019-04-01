@@ -48,7 +48,7 @@ $breakpoints-bar-bg: fade-out(purple, 0.1);
 // B. Container highlighter
 ////////////////////////////////////////
 
-$highlight-containers: true;
+$highlight-containers: false;
 
 @if $highlight-containers {
     // .container{ background: fade-out(red, 0.25) !important; }

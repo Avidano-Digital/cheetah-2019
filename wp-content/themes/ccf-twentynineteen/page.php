@@ -68,7 +68,7 @@ $parent_title = get_the_title($post->post_parent);
             
             ?>
 
-            <div class="col-xl-9 overflow-auto">
+            <div class="col-xl-9 overflow-hidden">
 
                 <article class="my-6" id="primary-content">
 

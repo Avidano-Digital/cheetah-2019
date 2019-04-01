@@ -1,6 +1,6 @@
 <footer>
 
-    <div class="container-fluid my-6">
+    <div class="container-fluid my-5">
 
         <div class="narrow text-center">
 

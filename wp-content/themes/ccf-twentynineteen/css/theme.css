@@ -4782,7 +4782,8 @@ button.bg-quaternary:focus {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0,
+.mb-0, figure,
+div.figure-img,
 .my-0 {
   margin-bottom: 0 !important; }
 
@@ -8196,12 +8197,6 @@ In this file:
 // B. Container highlighter
 
 */
-.narrow {
-  background: rgba(255, 255, 0, 0.75) !important; }
-
-.medium {
-  background: rgba(255, 165, 0, 0.75) !important; }
-
 .f-serif, p, .text-block > ul:not([class]) {
   font-family: Georgia, 'Times New Roman', Times, serif; }
 
