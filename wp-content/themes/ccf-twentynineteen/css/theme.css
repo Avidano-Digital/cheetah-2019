@@ -4785,7 +4785,7 @@ button.bg-quaternary:focus {
   margin-right: 0 !important; }
 
 .mb-0, figure,
-div.figure-img, .leaflet-popup-content p,
+div.figure-img,
 .my-0 {
   margin-bottom: 0 !important; }
 
@@ -8349,7 +8349,7 @@ span.fa-circle.partner-organization {
 .leaflet-popup-content {
   font-size: 1rem; }
   .leaflet-popup-content p {
-    margin-bottom: 0; }
+    margin: 0; }
     .leaflet-popup-content p.location {
       color: #495057; }
 

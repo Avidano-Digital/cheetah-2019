@@ -84,7 +84,7 @@ $parent_title = get_the_title($post->post_parent);
 
                     if (is_page('ccf-global')):
 
-                    get_template_part('template-parts/content-ccf-global');
+                    get_template_part('template-parts/ccf-global');
                     
                     endif;
 

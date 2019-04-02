@@ -291,8 +291,7 @@ span.fa-circle{
   font-size: $fs-md;
 
   p{
-    @extend .mb-0;
-    margin-bottom: 0;
+    margin: 0;
     &.location { color: $text-muted; }
   }
 }
