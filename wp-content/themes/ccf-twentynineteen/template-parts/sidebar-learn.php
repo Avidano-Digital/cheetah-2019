@@ -11,24 +11,26 @@
         </div>
 
         <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
+
+            <?php $parent_title = get_the_title($post->post_parent); ?>          
             
             <ul class="extensible-list text-white py-4 py-xl-0">
-                <li class="page_item <?php if ( is_page( 'resource-library' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'resource-library' ) || $parent_title == 'Resource Library' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/learn/resource-library/">Resource Library</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'about-cheetahs' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'about-cheetahs' ) || $parent_title == 'About Cheetahs' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/learn/about-cheetahs/">About Cheetahs</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'human-wildlife-conflict' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'human-wildlife-conflict' ) || $parent_title == 'Human Wildlife Conflict' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/learn/human-wildlife-conflict/">Human Wildlife Conflict</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'illegal-pet-trade' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'illegal-pet-trade' ) || $parent_title == 'Illegal Pet Trade' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/learn/illegal-pet-trade/">Illegal Pet Trade</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'habitat-loss' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'habitat-loss' ) || $parent_title == 'Habitat Loss' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/learn/habitat-loss/">Habitat Loss</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'ccf-videos' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'ccf-videos' ) || $parent_title == 'CCF Videos' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/learn/ccf-videos/">CCF Videos</a>
                 </li>
             </ul>

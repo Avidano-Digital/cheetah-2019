@@ -12,23 +12,25 @@
 
         <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
 
+            <?php $parent_title = get_the_title($post->post_parent); ?>          
+
             <ul class="extensible-list text-white py-4 py-xl-0">
-                <li class="page_item <?php if ( is_page( 'ways-to-give' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'ways-to-give' ) || $parent_title == 'Ways To Give' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/get-involved/ways-to-give/" title="Ways to Give">Ways to Give</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'ccf-events' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'ccf-events' ) || $parent_title == 'CCF Events' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/get-involved/ccf-events/">CCF Events</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'volunteer-locally' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'volunteer-locally' ) || $parent_title == 'Volunteer Locally' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/get-involved/volunteer-locally/">Volunteer Locally</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'volunteer-in-namibia' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'volunteer-in-namibia' ) || $parent_title == 'Volunteer In Namibia' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/get-involved/volunteer-in-namibia/">Volunteer in Namibia</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'visit-ccf' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'visit-ccf' ) || $parent_title == 'Visit CCF' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/get-involved/visit-ccf/">Visit CCF</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'social-media' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'social-media' ) || $parent_title == 'Social Media' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/get-involved/social-media/">Social Media</a>
                 </li>
             </ul>

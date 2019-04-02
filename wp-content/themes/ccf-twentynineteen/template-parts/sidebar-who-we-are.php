@@ -12,20 +12,22 @@
 
         <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
 
+            <?php $parent_title = get_the_title($post->post_parent); ?>
+
             <ul class="extensible-list text-white py-4 py-xl-0">
-                <li class="page_item <?php if ( is_page( 'mission-and-vision' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'mission-and-vision' ) || $parent_title == 'Mission and Vision' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/who-we-are/mission-and-vision/">Mission and Vision</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'dr-laurie-marker' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'dr-laurie-marker' ) || $parent_title == 'Dr. Laurie Marker' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/who-we-are/dr-laurie-marker/">Dr. Laurie Marker</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'our-centre' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'our-centre' ) || $parent_title == 'Our Centre' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/who-we-are/our-centre/">Our Centre</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'staff-and-board' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'staff-and-board' ) || $parent_title == 'Staff and Board' ) : ?>current_page_item<?php endif; ?>">
                     <a href="#">Staff and Board</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'ccf-global' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'ccf-global' ) || $parent_title == 'CCF Global' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/who-we-are/ccf-global/">CCF Global</a>
                 </li>
             </ul>

@@ -12,17 +12,19 @@
 
         <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
 
+            <?php $parent_title = get_the_title($post->post_parent); ?>
+
             <ul class="extensible-list text-white py-4 py-xl-0">
-                <li class="page_item <?php if ( is_page( 'conservation' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'conservation' ) || $parent_title == 'Conservation' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/what-we-do/conservation/">Conservation</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'research' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'research' ) || $parent_title == 'Research' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/what-we-do/research/">Research</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'education' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'education' ) || $parent_title == 'Education' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/what-we-do/education/">Education</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'international-cheetah-day' ) ) : ?>current_page_item<?php endif; ?>">
+                <li class="page_item <?php if ( is_page( 'international-cheetah-day' ) || $parent_title == 'International Cheetah Day' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/what-we-do/international-cheetah-day/">International Cheetah Day</a>
                 </li>
             </ul>
