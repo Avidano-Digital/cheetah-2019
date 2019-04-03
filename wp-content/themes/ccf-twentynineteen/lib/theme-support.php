@@ -133,17 +133,32 @@
             )
         );
 
-        register_post_type( 'CCF Authors',
+        register_post_type(
+            'CCF Authors',
             array(
                 'labels' => array(
-                'name' => __( 'CCF Authors' ),
-                'singular_name' => __( 'Author' )
+                'name' => __('CCF Authors'),
+                'singular_name' => __('Author')
             ),
 
             'public' => true,
             'menu_icon' => 'dashicons-admin-users'
             )
         );
+
+        register_post_type(
+            'CCF Cheetahs',
+            array(
+                'labels' => array(
+                'name' => __('CCF Cheetahs'),
+                'singular_name' => __('Cheetah')
+            ),
+
+            'public' => true,
+            'menu_icon' => get_template_directory_uri() . '/images/wp-icon-ccf-cheetahs.png'
+            )
+        );
+
     }
 
     add_action( 'init', __NAMESPACE__ . '\customize_post_object' );

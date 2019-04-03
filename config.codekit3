@@ -19106,11 +19106,11 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/wp-content/themes/ccf-twentynineteen/images/wp-icon-about.png": {
+	"/wp-content/themes/ccf-twentynineteen/images/wp-icon-ccf-cheetahs.png": {
 		"ft": 32768,
 		"iS": 350,
 		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/wp-icon-about.png",
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/wp-icon-ccf-cheetahs.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -19258,6 +19258,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/page-resource-library.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/page-subpage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page-subpage.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/page.php": {
