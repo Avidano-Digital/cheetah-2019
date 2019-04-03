@@ -729,7 +729,7 @@
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "page.php"
+                "value": "default"
             }
         ],
         [
@@ -737,6 +737,13 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "resourcelibrary"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-subpage.php"
             }
         ]
     ],
@@ -757,5 +764,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1553504360
+    "modified": 1554275800
 }
