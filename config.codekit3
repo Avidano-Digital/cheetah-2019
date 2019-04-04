@@ -23739,6 +23739,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/04/bella-250x250.jpg": {
+		"ft": 16384,
+		"iS": 19509,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/04/bella-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/04/bella.jpg": {
+		"ft": 16384,
+		"iS": 74541,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/04/bella.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2019/04/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
