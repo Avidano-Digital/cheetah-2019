@@ -498,6 +498,31 @@
                                         "id": ""
                                     },
                                     "return_format": "array"
+                                },
+                                {
+                                    "key": "field_5ca59ea9af662",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "checkbox",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "Modal": "Modal"
+                                    },
+                                    "allow_custom": 0,
+                                    "default_value": [
+                                        "Modal"
+                                    ],
+                                    "layout": "horizontal",
+                                    "toggle": 0,
+                                    "return_format": "value",
+                                    "save_custom": 0
                                 }
                             ]
                         }
@@ -757,5 +782,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1554357252
+    "modified": 1554358031
 }
