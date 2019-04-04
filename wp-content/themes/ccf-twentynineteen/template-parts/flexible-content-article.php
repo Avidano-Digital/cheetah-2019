@@ -402,7 +402,11 @@ $count_b = 0;
 
 <?php endif; ?>
 
-<?php elseif( get_row_layout() == 'thumbnail_links_block' ): ?>
+<?php elseif( get_row_layout() == 'thumbnail_links_block' ):
+    
+        $modals = get_sub_field('modals');
+    
+?>
 
 <?php if( have_rows('links') ): ?>
 
@@ -417,21 +421,16 @@ $count_b = 0;
         // vars
         $image = get_sub_field('image');
         $link = get_sub_field('link');
-        $columns = get_sub_field('columns');
-
-        if($link['url'][0] === '#'){
-            $modal = true;
-        }
 
         ?>
 
-        <div class="col-sm-6 <?php if($modal){ echo ' col-lg-4'; } ?>">
+        <div class="col-sm-6 <?php if($modals){ echo ' col-lg-4'; } ?>">
             <?php if( $image ): ?>
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
             <?php else : ?>
                 <img src="https://placehold.it/600x400.jpg" alt="Placeholder">
             <?php endif; ?>
-            <a class="btn btn-block btn-lg btn-info stretched-link" href="<?php echo $link['url']; ?>" <?php if($modal): ?>data-toggle="modal"<?php endif; ?> title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+            <a class="btn btn-block btn-lg btn-info stretched-link" href="<?php echo $link['url']; ?>" <?php if($modals): ?>data-toggle="modal"<?php endif; ?> title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
         </div>
         <!-- .col -->
 

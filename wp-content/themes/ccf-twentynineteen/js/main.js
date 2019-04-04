@@ -227,4 +227,26 @@ jQuery(document).ready(function ($) {
 
     });
 
+    ////////////////////////////////////////
+    // Modals
+    ////////////////////////////////////////
+
+    $('div[role="dialog"]').each(function () {
+
+        var currentModal = $(this);
+
+        // Next
+        currentModal.find('.btn-next').click(function () {
+            currentModal.modal('hide');
+            currentModal.closest('div[role="dialog"]').nextAll('div[role="dialog"]').first().modal('show');
+        });
+
+        // Previous
+        currentModal.find('.btn-prev').click(function () {
+            currentModal.modal('hide');
+            currentModal.closest('div[role="dialog"]').prevAll('div[role="dialog"]').first().modal('show');
+        });
+
+    });
+
 }); // end document ready
