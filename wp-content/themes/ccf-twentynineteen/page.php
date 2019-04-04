@@ -154,7 +154,7 @@ $parent_title = get_the_title($post->post_parent);
 
                     get_template_part('template-parts/article-footer');
                     get_template_part('template-parts/related-reading');
-                    wp_reset_postdata();
+                    // wp_reset_postdata();
 
                     ?>
 
