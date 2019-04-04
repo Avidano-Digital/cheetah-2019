@@ -53,8 +53,10 @@ class MeowAppsPro_MFRH_Core {
 			$attachedpost = $this->core->get_post_from_media( $post['ID'] );
 			if ( is_null( $attachedpost ) )
 				return;
-			update_post_meta( $post['ID'], '_wp_attachment_image_alt', $attachedpost->post_title );
-			$this->core->log( "Alt\t-> {$attachedpost->post_title}" );
+			$title = $attachedpost->post_title;
+			$new_alt = apply_filters( 'mfrh_rewrite_alt', $title );
+			update_post_meta( $post['ID'], '_wp_attachment_image_alt', $new_alt );
+			$this->core->log( "Alt\t-> {$title}" );
 			break;
 		}
 	}

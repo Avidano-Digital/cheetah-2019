@@ -3,7 +3,7 @@ Contributors: TigrouMeow, amekusa
 Tags: rename, seo, file, files, media, manager, image, renamer, optimize, backup, gutenberg, explorer
 Requires at least: 4.8
 Tested up to: 5.0
-Stable tag: 4.5.2
+Stable tag: 4.5.4
 
 File renamer with many options. For more information, please check https://meowapps.com/media-file-renamer.
 
@@ -12,6 +12,13 @@ File renamer with many options. For more information, please check https://meowa
 File renamer with many options. For more information, please check https://meowapps.com/media-file-renamer.
 
 == Changelog ==
+
+= 4.5.4 =
+* Fix: Search was sometimes not working properly in the Media Library.
+
+= 4.5.3 =
+* Update: Admin style update and common framework updated.
+* Update: Compatibility with WordPress 5.1.
 
 = 4.5.2 =
 * Update: Code cleaning, Youtube video.

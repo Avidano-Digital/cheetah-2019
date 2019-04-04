@@ -148,7 +148,7 @@ $parent_title = get_the_title($post->post_parent);
                     </div>
                     <!-- .narrow -->
 
-                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly?>
+                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 
                     <?php endif;
 

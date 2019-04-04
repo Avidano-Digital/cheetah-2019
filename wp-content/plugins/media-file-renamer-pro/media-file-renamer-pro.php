@@ -3,7 +3,7 @@
 Plugin Name: Media File Renamer Pro
 Plugin URI: https://meowapps.com
 Description: File renamer with many options.
-Version: 4.5.2
+Version: 4.5.4
 Author: Jordy Meow
 Author URI: https://meowapps.com
 Text Domain: media-file-renamer
@@ -28,7 +28,7 @@ require( 'helpers.php');
 if ( is_admin() || is_rest() ) {
 
 	global $mfrh_version, $mfrh_core;
-	$mfrh_version = '4.5.2';
+	$mfrh_version = '4.5.4';
 
 	// Admin
 	require( 'mfrh_admin.php');

@@ -706,44 +706,29 @@
     "location": [
         [
             {
-                "param": "post_type",
-                "operator": "==",
-                "value": "post"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "post"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "events"
-            }
-        ],
-        [
-            {
-                "param": "post_template",
+                "param": "page_template",
                 "operator": "==",
                 "value": "default"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "resourcelibrary"
-            }
-        ],
-        [
+            },
             {
                 "param": "page_template",
                 "operator": "==",
                 "value": "page-subpage.php"
+            },
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "events"
+            },
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "resourcelibrary"
             }
         ]
     ],
@@ -764,5 +749,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1554275800
+    "modified": 1554354750
 }

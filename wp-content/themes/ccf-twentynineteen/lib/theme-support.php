@@ -111,7 +111,7 @@
             array(
                 'labels' => array(
                 'name' => __( 'Partnerships' ),
-                'singular_name' => __( 'Partnerships' )
+                'singular_name' => __( 'Partnership' )
             ),
 
             'public' => true,

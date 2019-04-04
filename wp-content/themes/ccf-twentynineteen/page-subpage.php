@@ -46,81 +46,6 @@ $parent_title = get_the_title($post->post_parent);
                     <?php
                     
                     get_template_part('template-parts/flexible-content-article');
-
-                    if (is_page('ccf-global')):
-
-                    get_template_part('template-parts/ccf-global');
-                    
-                    endif;
-
-                    if (is_page('dr-laurie-marker')):
-                    
-                    get_template_part('template-parts/dr-laurie-awards-and-activities');
-
-                    endif;
-
-                    $partnership_group = get_field('partnership_group');
-                    
-                    $post_object = $partnership_group;
-
-                    if ($post_object):
-
-                        // override $post
-                        $post = $post_object;
-                        setup_postdata($post);
-
-                        $description = get_field('description');
-
-                    ?>
-
-                    <div class="narrow mb-5">
-
-                        <h3>
-                            <?php the_title(); ?>
-                        </h3>
-
-                        <p>
-                            <?php echo $description; ?>
-                        </p>
-
-                        <?php if (have_rows('partners')): ?>
-
-                        <div class="my-3">
-
-                            <?php while (have_rows('partners')): the_row();
-
-                                // vars
-                                $name = get_sub_field('name');
-                                $link = get_sub_field('link');
-
-                                ?>
-
-                            <dl class="row justify-content-between border-top py-2 mb-0 fs-md">
-
-                                <dt class="col-md">
-                                    <?php echo $name; ?>
-                                </dt>
-
-                                <dd class="col-md-auto">
-                                    <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
-                                </dd>
-
-                            </dl>
-
-                            <?php endwhile; ?>
-
-                        </div>
-                        <!-- .my-4 -->
-
-                        <?php endif; ?>
-
-                    </div>
-                    <!-- .narrow -->
-
-                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly?>
-
-                    <?php endif;
-
                     get_template_part('template-parts/article-footer');
                     get_template_part('template-parts/related-reading');
                     wp_reset_postdata();
@@ -142,5 +67,11 @@ $parent_title = get_the_title($post->post_parent);
 
 </main>
 <!-- #content -->
+
+<?php if (is_page('sponsor')):
+
+get_template_part('template-parts/ccf-cheetah-modals');
+
+endif; ?>
 
 <?php get_footer();
