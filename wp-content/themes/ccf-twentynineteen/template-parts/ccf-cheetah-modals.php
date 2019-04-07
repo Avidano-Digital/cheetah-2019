@@ -160,8 +160,7 @@
 </div>
 <!-- .modal -->
 
-<div class="modal fade" id="cheetah-bella" tabindex="-1" role="dialog" aria-labelledby="cheetah-bella-title"
-    aria-hidden="true">
+<div class="modal fade" id="cheetah-bella" tabindex="-1" role="dialog" aria-labelledby="cheetah-bella-title" aria-hidden="true">
 
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
 
