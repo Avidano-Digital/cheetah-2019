@@ -40,27 +40,12 @@ $parent_title = get_the_title($post->post_parent);
 
     </section>
 
-    <div class="container my-5 d-none">
-
-            <div class="medium video-block rounded-lg overflow-hidden">
-
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
-                        allowtransparency="true" allowfullscreen="true"></iframe>
-                </div>
-
-            </div>
-
-    </div>
-
     <section class="featured-panel responsive-lg my-5">
 
         <div class="card bg-white bg-info">
 
             <div class="px-2">
-                <img class="card-img"
-                    src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.svg"
-                    alt="Card image">
+                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.svg" alt="Card image">
             </div>
 
             <div class="card-img-overlay">
@@ -142,10 +127,8 @@ $parent_title = get_the_title($post->post_parent);
 
         <div class="card bg-white bg-info">
 
-            <div class="px-2">
-                <img class="card-img"
-                    src="<?php echo get_template_directory_uri(); ?>/images/kids/tess-cheetahs-running.svg"
-                    alt="Card image">
+            <div class="px-2 bg-danger">
+                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/tess-cheetahs-running.svg" alt="Card image">
             </div>
 
             <div class="card-img-overlay d-flex">
