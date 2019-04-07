@@ -122,8 +122,8 @@ $custom-link: true;
     $first-color: white,
     $second-color: white,
     $first-color-opacity: 0,
-    $second-color-opacity: 1,
-    $first-color-position: 25%,
+    $second-color-opacity: .9,
+    $first-color-position: 0%,
     $second-color-position: 100%
   );
 }
@@ -200,12 +200,12 @@ $custom-link: true;
 
   .align-self-end{
 
-    > div{ 
-      max-width: $grid-bp-xl;
-      @include media-breakpoint-up(lg) {
-        padding: $spacer-2;
-      }
-    }
+    // > div:not(.narrow){ 
+    //   max-width: $grid-bp-xl;
+    //   @include media-breakpoint-up(lg) {
+    //     padding: $spacer-2;
+    //   }
+    // }
 
   }
 

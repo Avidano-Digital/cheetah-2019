@@ -18736,6 +18736,80 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/almost-like-flying-mobile.jpg": {
+		"ft": 16384,
+		"iS": 111583,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/almost-like-flying-mobile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/almost-like-flying.jpg": {
+		"ft": 16384,
+		"iS": 182573,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/almost-like-flying.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/cheetahs-playing.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/cheetahs-playing.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/cheetahs-running.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/cheetahs-running.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/01.jpg": {
+		"ft": 16384,
+		"iS": 28029,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/02.jpg": {
+		"ft": 16384,
+		"iS": 21005,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/tess-cheetahs-running.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/tess-cheetahs-running.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/images/map-flag-affiliate.svg": {
 		"ft": 2097152,
 		"miP": 0,

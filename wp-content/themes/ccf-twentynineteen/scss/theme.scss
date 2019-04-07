@@ -418,42 +418,14 @@ $leaflet-button-color: white;
     @extend .text-body;
     @extend .py-2;
 
+
     border-radius: $border-radius-lg $border-radius-lg 0 0;
     &.active{
-      @extend .text-secondary;
-      @extend .bg-white;
-      @extend .shadow;
+      color: $secondary !important;
+      background-color: $white !important;
     }
   }
 }
-
-
-// .btn-learn, 
-// .btn-help, 
-// .btn-create
-// { 
-//   @extend .d-block;
-//   text-indent: -10000px;
-//   height:100px;
-//   &.active{
-//     background-position-y: 100%;
-//   }
-// }
-
-// .btn-learn{
-//   width:220px;
-//   @include apply-background-image('btn-learn', '.svg');
-// }
-
-// .btn-help{
-//   width:190px;
-//   @include apply-background-image('btn-help', '.svg');
-// }
-
-// .btn-create{
-//   width:240px;
-//   @include apply-background-image('btn-create', '.svg');
-// }
 
 
 

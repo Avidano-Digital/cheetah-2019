@@ -1328,7 +1328,7 @@ select.form-control:focus::-ms-value, select#gtranslate_selector:focus::-ms-valu
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1.167rem;
+  font-size: 1.25rem;
   line-height: 1.5; }
 
 .col-form-label-sm {
@@ -1361,7 +1361,7 @@ select.form-control:focus::-ms-value, select#gtranslate_selector:focus::-ms-valu
 .form-control-lg, #google_translate_element select {
   height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
-  font-size: 1.167rem;
+  font-size: 1.25rem;
   line-height: 1.5; }
 
 select.form-control[size], select#gtranslate_selector[size], select.form-control[multiple], select#gtranslate_selector[multiple] {
@@ -2133,7 +2133,7 @@ fieldset:disabled a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.167rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0; }
 
@@ -2570,7 +2570,7 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.167rem;
+  font-size: 1.25rem;
   line-height: 1.5; }
 
 .input-group-sm > .form-control:not(textarea), .input-group-sm > #gtranslate_selector:not(textarea),
@@ -2745,7 +2745,7 @@ input[type="button"].btn-block {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  font-size: 1.167rem; }
+  font-size: 1.25rem; }
 
 .custom-file {
   position: relative;
@@ -3712,10 +3712,10 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #0a0c0d !important; }
 
-.bg-white, #kids-tabs a.active {
+.bg-white {
   background-color: #fff !important; }
 
-a.bg-white:hover, #kids-tabs a.active:hover, a.bg-white:focus, #kids-tabs a.active:focus,
+a.bg-white:hover, a.bg-white:focus,
 button.bg-white:hover,
 button.bg-white:focus {
   background-color: #e6e5e5 !important; }
@@ -3744,7 +3744,7 @@ button.bg-quaternary:hover,
 button.bg-quaternary:focus {
   background-color: #6a4c44 !important; }
 
-.bg-white, #kids-tabs a.active {
+.bg-white {
   background-color: #fff !important; }
 
 .bg-transparent {
@@ -4704,7 +4704,7 @@ button.bg-quaternary:focus {
 .shadow-sm, #map-affiliates .leaflet-bar a {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3) !important; }
 
-.shadow, .tab-skipper, #primary-navigation-desktop .sub, #kids-tabs a.active {
+.shadow, .tab-skipper, #primary-navigation-desktop .sub {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3) !important; }
 
 .shadow-lg, .leaflet-popup-content-wrapper,
@@ -7073,10 +7073,10 @@ div.figure-img,
 a.text-primary:hover, #news-menu a.active:hover, a.text-primary:focus, #news-menu a.active:focus {
   color: #fea902 !important; }
 
-.text-secondary, #kids-tabs a.active {
+.text-secondary {
   color: #E3982E !important; }
 
-a.text-secondary:hover, #kids-tabs a.active:hover, a.text-secondary:focus, #kids-tabs a.active:focus {
+a.text-secondary:hover, a.text-secondary:focus {
   color: #ad6f17 !important; }
 
 .text-success {
@@ -7208,7 +7208,7 @@ body {
   overflow-x: hidden;
   min-width: 350px;
   max-width: 2400px;
-  font-size: 1.167rem;
+  font-size: 1.25rem;
   margin-left: auto;
   margin-right: auto; }
 
@@ -7331,7 +7331,7 @@ label,
   main .fs-xl {
     font-size: 1.5rem; }
   main .fs-lg {
-    font-size: 1.167rem; } }
+    font-size: 1.25rem; } }
 
 @supports (position: -webkit-sticky) or (position: sticky) {
   .sticky-top {
@@ -7372,7 +7372,7 @@ In this file:
   font-size: 1rem; }
 
 .fs-rg, .text-block > ul:not([class]) {
-  font-size: 1.167rem; }
+  font-size: 1.25rem; }
 
 .fs-lg {
   font-size: 1.5rem; }
@@ -7501,7 +7501,7 @@ form[role="search"] button {
 .wide {
   max-width: 1680px; }
 
-.text-shadow, .featured-panel .bg-white h1, .featured-panel #kids-tabs a.active h1, #kids-tabs .featured-panel a.active h1, .featured-panel .bg-white h2, .featured-panel #kids-tabs a.active h2, #kids-tabs .featured-panel a.active h2, .featured-panel .bg-white h3, .featured-panel #kids-tabs a.active h3, #kids-tabs .featured-panel a.active h3, .featured-panel .bg-white h4, .featured-panel #kids-tabs a.active h4, #kids-tabs .featured-panel a.active h4, .featured-panel .bg-white p, .featured-panel #kids-tabs a.active p, #kids-tabs .featured-panel a.active p, .featured-panel .bg-white a.link, .featured-panel #kids-tabs a.active a.link, #kids-tabs .featured-panel a.active a.link {
+.text-shadow, .featured-panel .bg-white h1, .featured-panel .bg-white h2, .featured-panel .bg-white h3, .featured-panel .bg-white h4, .featured-panel .bg-white p, .featured-panel .bg-white a.link {
   text-shadow: 0 0 6px black; }
 
 .text-shadow-border {
@@ -7613,7 +7613,7 @@ In this file:
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.85) 100%); }
 
 .overlay-gradient-y-white::before {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, white 100%); }
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 100%); }
 
 .overlay-gradient-x-right {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%); }
@@ -7635,12 +7635,6 @@ In this file:
 .banner #primary-navigation-desktop > ul > li > a {
   width: 100%; }
 
-.featured-panel .align-self-end > div {
-  max-width: 1200px; }
-  @media (min-width: 960px) {
-    .featured-panel .align-self-end > div {
-      padding: 1rem; } }
-
 @media (max-width: 479.98px) {
   .featured-panel.responsive-sm [class^="overlay-gradient-"]::before {
     display: none; }
@@ -7650,11 +7644,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-sm .bg-white h1, .featured-panel.responsive-sm #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-sm a.active h1, .featured-panel.responsive-sm .bg-white h2, .featured-panel.responsive-sm #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-sm a.active h2, .featured-panel.responsive-sm .bg-white h3, .featured-panel.responsive-sm #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-sm a.active h3, .featured-panel.responsive-sm .bg-white h4, .featured-panel.responsive-sm #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-sm a.active h4, .featured-panel.responsive-sm .bg-white p, .featured-panel.responsive-sm #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-sm a.active p {
+  .featured-panel.responsive-sm .bg-white h1, .featured-panel.responsive-sm .bg-white h2, .featured-panel.responsive-sm .bg-white h3, .featured-panel.responsive-sm .bg-white h4, .featured-panel.responsive-sm .bg-white p {
     color: #212529; }
-  .featured-panel.responsive-sm .bg-white h1, .featured-panel.responsive-sm #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-sm a.active h1, .featured-panel.responsive-sm .bg-white h2, .featured-panel.responsive-sm #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-sm a.active h2, .featured-panel.responsive-sm .bg-white h3, .featured-panel.responsive-sm #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-sm a.active h3, .featured-panel.responsive-sm .bg-white h4, .featured-panel.responsive-sm #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-sm a.active h4, .featured-panel.responsive-sm .bg-white p, .featured-panel.responsive-sm #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-sm a.active p, .featured-panel.responsive-sm .bg-white a.link, .featured-panel.responsive-sm #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-sm a.active a.link {
+  .featured-panel.responsive-sm .bg-white h1, .featured-panel.responsive-sm .bg-white h2, .featured-panel.responsive-sm .bg-white h3, .featured-panel.responsive-sm .bg-white h4, .featured-panel.responsive-sm .bg-white p, .featured-panel.responsive-sm .bg-white a.link {
     text-shadow: none; }
-  .featured-panel.responsive-sm .bg-white a.link, .featured-panel.responsive-sm #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-sm a.active a.link {
+  .featured-panel.responsive-sm .bg-white a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-sm .bg-info h1, .featured-panel.responsive-sm .hard-shadow-info::before h1, .featured-panel.responsive-sm .bg-info h2, .featured-panel.responsive-sm .hard-shadow-info::before h2, .featured-panel.responsive-sm .bg-info h3, .featured-panel.responsive-sm .hard-shadow-info::before h3, .featured-panel.responsive-sm .bg-info h4, .featured-panel.responsive-sm .hard-shadow-info::before h4, .featured-panel.responsive-sm .bg-info p, .featured-panel.responsive-sm .hard-shadow-info::before p, .featured-panel.responsive-sm .bg-info a.link, .featured-panel.responsive-sm .hard-shadow-info::before a.link, .featured-panel.responsive-sm .bg-info blockquote, .featured-panel.responsive-sm .hard-shadow-info::before blockquote, .featured-panel.responsive-sm .bg-info div, .featured-panel.responsive-sm .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -7668,11 +7662,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-md .bg-white h1, .featured-panel.responsive-md #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-md a.active h1, .featured-panel.responsive-md .bg-white h2, .featured-panel.responsive-md #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-md a.active h2, .featured-panel.responsive-md .bg-white h3, .featured-panel.responsive-md #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-md a.active h3, .featured-panel.responsive-md .bg-white h4, .featured-panel.responsive-md #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-md a.active h4, .featured-panel.responsive-md .bg-white p, .featured-panel.responsive-md #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-md a.active p {
+  .featured-panel.responsive-md .bg-white h1, .featured-panel.responsive-md .bg-white h2, .featured-panel.responsive-md .bg-white h3, .featured-panel.responsive-md .bg-white h4, .featured-panel.responsive-md .bg-white p {
     color: #212529; }
-  .featured-panel.responsive-md .bg-white h1, .featured-panel.responsive-md #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-md a.active h1, .featured-panel.responsive-md .bg-white h2, .featured-panel.responsive-md #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-md a.active h2, .featured-panel.responsive-md .bg-white h3, .featured-panel.responsive-md #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-md a.active h3, .featured-panel.responsive-md .bg-white h4, .featured-panel.responsive-md #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-md a.active h4, .featured-panel.responsive-md .bg-white p, .featured-panel.responsive-md #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-md a.active p, .featured-panel.responsive-md .bg-white a.link, .featured-panel.responsive-md #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-md a.active a.link {
+  .featured-panel.responsive-md .bg-white h1, .featured-panel.responsive-md .bg-white h2, .featured-panel.responsive-md .bg-white h3, .featured-panel.responsive-md .bg-white h4, .featured-panel.responsive-md .bg-white p, .featured-panel.responsive-md .bg-white a.link {
     text-shadow: none; }
-  .featured-panel.responsive-md .bg-white a.link, .featured-panel.responsive-md #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-md a.active a.link {
+  .featured-panel.responsive-md .bg-white a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-md .bg-info h1, .featured-panel.responsive-md .hard-shadow-info::before h1, .featured-panel.responsive-md .bg-info h2, .featured-panel.responsive-md .hard-shadow-info::before h2, .featured-panel.responsive-md .bg-info h3, .featured-panel.responsive-md .hard-shadow-info::before h3, .featured-panel.responsive-md .bg-info h4, .featured-panel.responsive-md .hard-shadow-info::before h4, .featured-panel.responsive-md .bg-info p, .featured-panel.responsive-md .hard-shadow-info::before p, .featured-panel.responsive-md .bg-info a.link, .featured-panel.responsive-md .hard-shadow-info::before a.link, .featured-panel.responsive-md .bg-info blockquote, .featured-panel.responsive-md .hard-shadow-info::before blockquote, .featured-panel.responsive-md .bg-info div, .featured-panel.responsive-md .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -7686,11 +7680,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-lg .bg-white h1, .featured-panel.responsive-lg #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-lg a.active h1, .featured-panel.responsive-lg .bg-white h2, .featured-panel.responsive-lg #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-lg a.active h2, .featured-panel.responsive-lg .bg-white h3, .featured-panel.responsive-lg #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-lg a.active h3, .featured-panel.responsive-lg .bg-white h4, .featured-panel.responsive-lg #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-lg a.active h4, .featured-panel.responsive-lg .bg-white p, .featured-panel.responsive-lg #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-lg a.active p {
+  .featured-panel.responsive-lg .bg-white h1, .featured-panel.responsive-lg .bg-white h2, .featured-panel.responsive-lg .bg-white h3, .featured-panel.responsive-lg .bg-white h4, .featured-panel.responsive-lg .bg-white p {
     color: #212529; }
-  .featured-panel.responsive-lg .bg-white h1, .featured-panel.responsive-lg #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-lg a.active h1, .featured-panel.responsive-lg .bg-white h2, .featured-panel.responsive-lg #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-lg a.active h2, .featured-panel.responsive-lg .bg-white h3, .featured-panel.responsive-lg #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-lg a.active h3, .featured-panel.responsive-lg .bg-white h4, .featured-panel.responsive-lg #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-lg a.active h4, .featured-panel.responsive-lg .bg-white p, .featured-panel.responsive-lg #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-lg a.active p, .featured-panel.responsive-lg .bg-white a.link, .featured-panel.responsive-lg #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-lg a.active a.link {
+  .featured-panel.responsive-lg .bg-white h1, .featured-panel.responsive-lg .bg-white h2, .featured-panel.responsive-lg .bg-white h3, .featured-panel.responsive-lg .bg-white h4, .featured-panel.responsive-lg .bg-white p, .featured-panel.responsive-lg .bg-white a.link {
     text-shadow: none; }
-  .featured-panel.responsive-lg .bg-white a.link, .featured-panel.responsive-lg #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-lg a.active a.link {
+  .featured-panel.responsive-lg .bg-white a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-lg .bg-info h1, .featured-panel.responsive-lg .hard-shadow-info::before h1, .featured-panel.responsive-lg .bg-info h2, .featured-panel.responsive-lg .hard-shadow-info::before h2, .featured-panel.responsive-lg .bg-info h3, .featured-panel.responsive-lg .hard-shadow-info::before h3, .featured-panel.responsive-lg .bg-info h4, .featured-panel.responsive-lg .hard-shadow-info::before h4, .featured-panel.responsive-lg .bg-info p, .featured-panel.responsive-lg .hard-shadow-info::before p, .featured-panel.responsive-lg .bg-info a.link, .featured-panel.responsive-lg .hard-shadow-info::before a.link, .featured-panel.responsive-lg .bg-info blockquote, .featured-panel.responsive-lg .hard-shadow-info::before blockquote, .featured-panel.responsive-lg .bg-info div, .featured-panel.responsive-lg .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -7704,11 +7698,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-xl .bg-white h1, .featured-panel.responsive-xl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xl a.active h1, .featured-panel.responsive-xl .bg-white h2, .featured-panel.responsive-xl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xl a.active h2, .featured-panel.responsive-xl .bg-white h3, .featured-panel.responsive-xl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xl a.active h3, .featured-panel.responsive-xl .bg-white h4, .featured-panel.responsive-xl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xl a.active h4, .featured-panel.responsive-xl .bg-white p, .featured-panel.responsive-xl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xl a.active p {
+  .featured-panel.responsive-xl .bg-white h1, .featured-panel.responsive-xl .bg-white h2, .featured-panel.responsive-xl .bg-white h3, .featured-panel.responsive-xl .bg-white h4, .featured-panel.responsive-xl .bg-white p {
     color: #212529; }
-  .featured-panel.responsive-xl .bg-white h1, .featured-panel.responsive-xl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xl a.active h1, .featured-panel.responsive-xl .bg-white h2, .featured-panel.responsive-xl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xl a.active h2, .featured-panel.responsive-xl .bg-white h3, .featured-panel.responsive-xl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xl a.active h3, .featured-panel.responsive-xl .bg-white h4, .featured-panel.responsive-xl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xl a.active h4, .featured-panel.responsive-xl .bg-white p, .featured-panel.responsive-xl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xl a.active p, .featured-panel.responsive-xl .bg-white a.link, .featured-panel.responsive-xl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xl a.active a.link {
+  .featured-panel.responsive-xl .bg-white h1, .featured-panel.responsive-xl .bg-white h2, .featured-panel.responsive-xl .bg-white h3, .featured-panel.responsive-xl .bg-white h4, .featured-panel.responsive-xl .bg-white p, .featured-panel.responsive-xl .bg-white a.link {
     text-shadow: none; }
-  .featured-panel.responsive-xl .bg-white a.link, .featured-panel.responsive-xl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xl a.active a.link {
+  .featured-panel.responsive-xl .bg-white a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-xl .bg-info h1, .featured-panel.responsive-xl .hard-shadow-info::before h1, .featured-panel.responsive-xl .bg-info h2, .featured-panel.responsive-xl .hard-shadow-info::before h2, .featured-panel.responsive-xl .bg-info h3, .featured-panel.responsive-xl .hard-shadow-info::before h3, .featured-panel.responsive-xl .bg-info h4, .featured-panel.responsive-xl .hard-shadow-info::before h4, .featured-panel.responsive-xl .bg-info p, .featured-panel.responsive-xl .hard-shadow-info::before p, .featured-panel.responsive-xl .bg-info a.link, .featured-panel.responsive-xl .hard-shadow-info::before a.link, .featured-panel.responsive-xl .bg-info blockquote, .featured-panel.responsive-xl .hard-shadow-info::before blockquote, .featured-panel.responsive-xl .bg-info div, .featured-panel.responsive-xl .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -7722,11 +7716,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-xxl .bg-white h1, .featured-panel.responsive-xxl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xxl a.active h1, .featured-panel.responsive-xxl .bg-white h2, .featured-panel.responsive-xxl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xxl a.active h2, .featured-panel.responsive-xxl .bg-white h3, .featured-panel.responsive-xxl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xxl a.active h3, .featured-panel.responsive-xxl .bg-white h4, .featured-panel.responsive-xxl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xxl a.active h4, .featured-panel.responsive-xxl .bg-white p, .featured-panel.responsive-xxl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xxl a.active p {
+  .featured-panel.responsive-xxl .bg-white h1, .featured-panel.responsive-xxl .bg-white h2, .featured-panel.responsive-xxl .bg-white h3, .featured-panel.responsive-xxl .bg-white h4, .featured-panel.responsive-xxl .bg-white p {
     color: #212529; }
-  .featured-panel.responsive-xxl .bg-white h1, .featured-panel.responsive-xxl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xxl a.active h1, .featured-panel.responsive-xxl .bg-white h2, .featured-panel.responsive-xxl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xxl a.active h2, .featured-panel.responsive-xxl .bg-white h3, .featured-panel.responsive-xxl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xxl a.active h3, .featured-panel.responsive-xxl .bg-white h4, .featured-panel.responsive-xxl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xxl a.active h4, .featured-panel.responsive-xxl .bg-white p, .featured-panel.responsive-xxl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xxl a.active p, .featured-panel.responsive-xxl .bg-white a.link, .featured-panel.responsive-xxl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xxl a.active a.link {
+  .featured-panel.responsive-xxl .bg-white h1, .featured-panel.responsive-xxl .bg-white h2, .featured-panel.responsive-xxl .bg-white h3, .featured-panel.responsive-xxl .bg-white h4, .featured-panel.responsive-xxl .bg-white p, .featured-panel.responsive-xxl .bg-white a.link {
     text-shadow: none; }
-  .featured-panel.responsive-xxl .bg-white a.link, .featured-panel.responsive-xxl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xxl a.active a.link {
+  .featured-panel.responsive-xxl .bg-white a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-xxl .bg-info h1, .featured-panel.responsive-xxl .hard-shadow-info::before h1, .featured-panel.responsive-xxl .bg-info h2, .featured-panel.responsive-xxl .hard-shadow-info::before h2, .featured-panel.responsive-xxl .bg-info h3, .featured-panel.responsive-xxl .hard-shadow-info::before h3, .featured-panel.responsive-xxl .bg-info h4, .featured-panel.responsive-xxl .hard-shadow-info::before h4, .featured-panel.responsive-xxl .bg-info p, .featured-panel.responsive-xxl .hard-shadow-info::before p, .featured-panel.responsive-xxl .bg-info a.link, .featured-panel.responsive-xxl .hard-shadow-info::before a.link, .featured-panel.responsive-xxl .bg-info blockquote, .featured-panel.responsive-xxl .hard-shadow-info::before blockquote, .featured-panel.responsive-xxl .bg-info div, .featured-panel.responsive-xxl .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -7740,11 +7734,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-xxxl .bg-white h1, .featured-panel.responsive-xxxl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xxxl a.active h1, .featured-panel.responsive-xxxl .bg-white h2, .featured-panel.responsive-xxxl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xxxl a.active h2, .featured-panel.responsive-xxxl .bg-white h3, .featured-panel.responsive-xxxl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xxxl a.active h3, .featured-panel.responsive-xxxl .bg-white h4, .featured-panel.responsive-xxxl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xxxl a.active h4, .featured-panel.responsive-xxxl .bg-white p, .featured-panel.responsive-xxxl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xxxl a.active p {
+  .featured-panel.responsive-xxxl .bg-white h1, .featured-panel.responsive-xxxl .bg-white h2, .featured-panel.responsive-xxxl .bg-white h3, .featured-panel.responsive-xxxl .bg-white h4, .featured-panel.responsive-xxxl .bg-white p {
     color: #212529; }
-  .featured-panel.responsive-xxxl .bg-white h1, .featured-panel.responsive-xxxl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xxxl a.active h1, .featured-panel.responsive-xxxl .bg-white h2, .featured-panel.responsive-xxxl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xxxl a.active h2, .featured-panel.responsive-xxxl .bg-white h3, .featured-panel.responsive-xxxl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xxxl a.active h3, .featured-panel.responsive-xxxl .bg-white h4, .featured-panel.responsive-xxxl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xxxl a.active h4, .featured-panel.responsive-xxxl .bg-white p, .featured-panel.responsive-xxxl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xxxl a.active p, .featured-panel.responsive-xxxl .bg-white a.link, .featured-panel.responsive-xxxl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xxxl a.active a.link {
+  .featured-panel.responsive-xxxl .bg-white h1, .featured-panel.responsive-xxxl .bg-white h2, .featured-panel.responsive-xxxl .bg-white h3, .featured-panel.responsive-xxxl .bg-white h4, .featured-panel.responsive-xxxl .bg-white p, .featured-panel.responsive-xxxl .bg-white a.link {
     text-shadow: none; }
-  .featured-panel.responsive-xxxl .bg-white a.link, .featured-panel.responsive-xxxl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xxxl a.active a.link {
+  .featured-panel.responsive-xxxl .bg-white a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-xxxl .bg-info h1, .featured-panel.responsive-xxxl .hard-shadow-info::before h1, .featured-panel.responsive-xxxl .bg-info h2, .featured-panel.responsive-xxxl .hard-shadow-info::before h2, .featured-panel.responsive-xxxl .bg-info h3, .featured-panel.responsive-xxxl .hard-shadow-info::before h3, .featured-panel.responsive-xxxl .bg-info h4, .featured-panel.responsive-xxxl .hard-shadow-info::before h4, .featured-panel.responsive-xxxl .bg-info p, .featured-panel.responsive-xxxl .hard-shadow-info::before p, .featured-panel.responsive-xxxl .bg-info a.link, .featured-panel.responsive-xxxl .hard-shadow-info::before a.link, .featured-panel.responsive-xxxl .bg-info blockquote, .featured-panel.responsive-xxxl .hard-shadow-info::before blockquote, .featured-panel.responsive-xxxl .bg-info div, .featured-panel.responsive-xxxl .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -8436,6 +8430,9 @@ span.fa-circle.partner-organization {
 
 #kids-tabs a {
   border-radius: 1rem 1rem 0 0; }
+  #kids-tabs a.active {
+    color: #E3982E !important;
+    background-color: #fff !important; }
 
 [class*="hard-shadow-"] {
   position: relative; }

@@ -11,15 +11,13 @@ $parent_title = get_the_title($post->post_parent);
 
 ?>
 
-<main id="content">
+<main class="for-kids" id="content">
 
     <section class="container-fluid overflow-hidden bg-info cheetah-spots">
 
-        <div class="narrow text-center text-white my-5">
+        <div class="narrow text-center text-white my-4">
 
             <img class="my-3" src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo-large.svg" alt="Placeholder">
-
-            <p class="fs-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt beatae accusamus doloremque.</p>
 
         </div>
         <!-- container -->
@@ -40,142 +38,136 @@ $parent_title = get_the_title($post->post_parent);
 
         </div>
 
-        <div class="kid-tabs d-none">
-
-            <ul class="extensible-list horizontal justify-content-between text-center responsive-md">
-                <li>
-                    <a class="btn-learn active" href="#">Learn</a>
-                </li>
-                <li>
-                    <a class="btn-help" href="#">Help</a>
-                </li>
-            </ul>
-
-        </div>
     </section>
 
-    <div class="container-fluid">
+    <div class="container my-5 d-none">
 
-        <div class="row">
+            <div class="medium video-block rounded-lg overflow-hidden">
 
-            <?php
-
-                if ($parent_title == "Who We Are" || $grandparent_title == "Who We Are"):
-                    get_template_part('template-parts/sidebar-who-we-are');
-                elseif ($parent_title == "What We Do" || $grandparent_title == "What We Do"):
-                    get_template_part('template-parts/sidebar-what-we-do');
-                elseif ($parent_title == "Get Involved" || $grandparent_title == "Get Involved"):
-                    get_template_part('template-parts/sidebar-get-involved');
-                elseif ($parent_title == "Learn" || $grandparent_title == "Learn"):
-                    get_template_part('template-parts/sidebar-learn');
-                endif;
-            
-            ?>
-
-            <div class="col-xl-9 overflow-hidden">
-
-                <article class="my-6" id="primary-content">
-
-                    <header class="medium my-3">
-                        <h1 class="display-4 text-center">
-                            <?php the_title(); ?>
-                        </h1>
-                    </header>
-
-                    <?php
-                    
-                    get_template_part('template-parts/flexible-content-article');
-
-                    if (is_page('ccf-global')):
-
-                    get_template_part('template-parts/ccf-global');
-                    
-                    endif;
-
-                    if (is_page('dr-laurie-marker')):
-                    
-                    get_template_part('template-parts/dr-laurie-awards-and-activities');
-
-                    endif;
-
-                    $partnership_group = get_field('partnership_group');
-                    
-                    $post_object = $partnership_group;
-
-                    if ($post_object):
-
-                        // override $post
-                        $post = $post_object;
-                        setup_postdata($post);
-
-                        $description = get_field('description');
-
-                    ?>
-
-                    <div class="narrow mb-5">
-
-                        <h3>
-                            <?php the_title(); ?>
-                        </h3>
-
-                        <p>
-                            <?php echo $description; ?>
-                        </p>
-
-                        <?php if (have_rows('partners')): ?>
-
-                        <div class="my-3">
-
-                            <?php while (have_rows('partners')): the_row();
-
-                                // vars
-                                $name = get_sub_field('name');
-                                $link = get_sub_field('link');
-
-                                ?>
-
-                            <dl class="row justify-content-between border-top py-2 mb-0 fs-md">
-
-                                <dt class="col-md">
-                                    <?php echo $name; ?>
-                                </dt>
-
-                                <dd class="col-md-auto">
-                                    <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
-                                </dd>
-
-                            </dl>
-
-                            <?php endwhile; ?>
-
-                        </div>
-                        <!-- .my-4 -->
-
-                        <?php endif; ?>
-
-                    </div>
-                    <!-- .narrow -->
-
-                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-
-                    <?php endif;
-
-                    get_template_part('template-parts/article-footer');
-                    get_template_part('template-parts/related-reading');
-                    // wp_reset_postdata();
-
-                    ?>
-
-                </article>
-                <!-- #primary-content -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
+                        allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
 
             </div>
-            <!-- .col -->
-
-        </div>
-        <!-- .row -->
 
     </div>
+
+    <section class="featured-panel responsive-lg my-5">
+
+        <div class="card bg-white bg-info">
+
+            <div class="px-2">
+                <img class="card-img"
+                    src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.svg"
+                    alt="Card image">
+            </div>
+
+            <div class="card-img-overlay">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-lg-6 offset-lg-6 text-center">
+
+                            <ul class="extensible-list horizontal justify-content-center funky d-none">
+                                <li class="tilt-left">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
+                                        alt="Placeholder">
+                                </li>
+                                <li class="tilt-right">
+                                    <img class="hard-shadow-info"
+                                        src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/02.jpg"
+                                        alt="Placeholder">
+                                </li>
+                            </ul>
+                            <div class="narrow">
+                                <h2 class="card-title f-cheetah-tracks display-3 mb-1 text-tertiary">A lot of kids</h2>
+                                <p>A mother cheetah usually cares for anywhere from 2 to 8 cubs per
+                                    litter, but cubs are often the target of other predators and many do not survive
+                                    past the first year.</p>
+                            </div>
+
+                            <div class="overflow-hidden my-2 d-none">
+                                <img class="hard-shadow-info"
+                                    src="<?php echo get_template_directory_uri(); ?>/images/kids/01.jpg"
+                                    alt="Placeholder">
+                            </div>
+                        </div>
+                        <!-- .col -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="featured-panel responsive-lg">
+
+        <div class="card bg-light">
+            <div class="overlay-gradient-y-white d-none d-lg-block">
+                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/almost-like-flying.jpg" alt="Card image">
+            </div>
+
+            <div class="card-img-overlay d-flex">
+
+                <div class="container align-self-center my-4">
+
+                    <div class="narrow rounded-lg overflow-hidden mb-4">
+
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                        </div>
+
+                    </div>
+
+                    <div class=" medium text-center">
+                        <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">Almost like Flying</h2>
+                        <p>When cheetahs are running full speed, their stride (length between steps) is 6-7 meters (21 feet). Their feet only touch the ground twice during each stride.</p>
+                    </div>
+                        
+                </div>
+                <!-- .container -->
+
+            </div>
+
+        </div>
+        <!-- .card -->
+
+    </section>
+
+    <section class="featured-panel responsive-lg my-5">
+
+        <div class="card bg-white bg-info">
+
+            <div class="px-2">
+                <img class="card-img"
+                    src="<?php echo get_template_directory_uri(); ?>/images/kids/tess-cheetahs-running.svg"
+                    alt="Card image">
+            </div>
+
+            <div class="card-img-overlay d-flex">
+
+                <div class="container align-self-end">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="">
+                                <h2 class="card-title f-cheetah-tracks display-2 mb-1 text-info">Not just a funny haircut</h2>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <?php endwhile; endif; /* have_posts */ ?>
