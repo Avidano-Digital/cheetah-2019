@@ -35,7 +35,7 @@ In this file:
 
 .f-cheetah-tracks{ 
   font-family: 'cheetah-tracks-regular'; 
-  @extend .font-weight-normal;
+  font-weight: normal;
   line-height: normal !important;
 }
 
@@ -53,22 +53,6 @@ p{
   &.h5, 
   &.h6
   { @extend .f-sans-serif; }
-}
-
-main.for-kids{
-
-  h1, 
-  h2, 
-  h3, 
-  h4, 
-  h5, 
-  h6
-  { 
-    @extend .f-cheetah-tracks; 
-  }
-
-  p{ @extend .fs-lg; }
-  
 }
 
 ////////////////////////////////////////
@@ -426,13 +410,19 @@ $leaflet-button-color: white;
 
 }
 
-.kid-tabs{
-  @extend .f-cheetah-tracks;
+#kids-tabs {
   a{
-    @extend .display-2;
-    @extend .text-white;
+    @extend .f-cheetah-tracks;
+    @extend .display-3;
+    @extend .bg-primary;
+    @extend .text-body;
+    @extend .py-2;
+
+    border-radius: $border-radius-lg $border-radius-lg 0 0;
     &.active{
-      @extend .text-primary;
+      @extend .text-secondary;
+      @extend .bg-white;
+      @extend .shadow;
     }
   }
 }

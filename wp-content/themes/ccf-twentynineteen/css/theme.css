@@ -391,20 +391,20 @@ h6, .h6 {
     .display-1, .banner h1, .banner .h1 {
       font-size: calc(1.725rem + 5.7vw) ; } }
 
-.display-2, .kid-tabs a {
+.display-2 {
   font-size: 5rem;
   font-weight: 300;
   line-height: 1.2; }
   @media (max-width: 1200px) {
-    .display-2, .kid-tabs a {
+    .display-2 {
       font-size: calc(1.625rem + 4.5vw) ; } }
 
-.display-3 {
+.display-3, #kids-tabs a {
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.2; }
   @media (max-width: 1200px) {
-    .display-3 {
+    .display-3, #kids-tabs a {
       font-size: calc(1.525rem + 3.3vw) ; } }
 
 .display-4 {
@@ -1299,9 +1299,9 @@ mark,
   .form-control:focus, #gtranslate_selector:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #f2cf9e;
+    border-color: white;
     outline: 0;
-    box-shadow: 0 0 0 0.15rem rgba(227, 152, 46, 0.25); }
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
   .form-control::placeholder, #gtranslate_selector::placeholder {
     color: #495057;
     opacity: 1; }
@@ -1581,7 +1581,7 @@ textarea.form-control, textarea#gtranslate_selector {
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
-    box-shadow: 0 0 0 0.15rem rgba(227, 152, 46, 0.25); }
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
   .btn.disabled, .btn:disabled {
     opacity: 0.65; }
 
@@ -2367,9 +2367,9 @@ input[type="button"].btn-block {
     text-decoration: none;
     background-color: #F5F5F5; }
   .dropdown-item.active, .dropdown-item:active {
-    color: #fff;
+    color: #462B41;
     text-decoration: none;
-    background-color: #E3982E; }
+    background-color: #fff; }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #777677;
     pointer-events: none;
@@ -2611,17 +2611,17 @@ input[type="button"].btn-block {
   z-index: -1;
   opacity: 0; }
   .custom-control-input:checked ~ .custom-control-label::before {
-    color: #fff;
-    border-color: #E3982E;
-    background-color: #E3982E; }
+    color: #462B41;
+    border-color: #fff;
+    background-color: #fff; }
   .custom-control-input:focus ~ .custom-control-label::before {
-    box-shadow: 0 0 0 0.15rem rgba(227, 152, 46, 0.25); }
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
   .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-    border-color: #f2cf9e; }
+    border-color: white; }
   .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
-    color: #fff;
-    background-color: #f8e6cb;
-    border-color: #f8e6cb; }
+    color: #462B41;
+    background-color: white;
+    border-color: white; }
   .custom-control-input:disabled ~ .custom-control-label {
     color: #777677; }
     .custom-control-input:disabled ~ .custom-control-label::before {
@@ -2653,14 +2653,14 @@ input[type="button"].btn-block {
     background: no-repeat 50% / 50% 50%; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23462B41' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  border-color: #E3982E;
-  background-color: #E3982E; }
+  border-color: #fff;
+  background-color: #fff; }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath stroke='%23fff' d='M0 2h4'/%3e%3c/svg%3e"); }
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath stroke='%23462B41' d='M0 2h4'/%3e%3c/svg%3e"); }
 
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
   background-color: rgba(254, 195, 78, 0.5); }
@@ -2672,7 +2672,7 @@ input[type="button"].btn-block {
   border-radius: 50%; }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); }
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23462B41'/%3e%3c/svg%3e"); }
 
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
   background-color: rgba(254, 195, 78, 0.5); }
@@ -2717,9 +2717,9 @@ input[type="button"].btn-block {
   border-radius: 0;
   appearance: none; }
   .custom-select:focus, select:focus {
-    border-color: #f2cf9e;
+    border-color: white;
     outline: 0;
-    box-shadow: 0 0 0 0.15rem rgba(227, 152, 46, 0.25); }
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
     .custom-select:focus::-ms-value, select:focus::-ms-value {
       color: #495057;
       background-color: #fff; }
@@ -2762,8 +2762,8 @@ input[type="button"].btn-block {
   margin: 0;
   opacity: 0; }
   .custom-file-input:focus ~ .custom-file-label {
-    border-color: #f2cf9e;
-    box-shadow: 0 0 0 0.15rem rgba(227, 152, 46, 0.25); }
+    border-color: white;
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
   .custom-file-input:disabled ~ .custom-file-label {
     background-color: #e9ecef; }
   .custom-file-input:lang(en) ~ .custom-file-label::after {
@@ -2808,18 +2808,18 @@ input[type="button"].btn-block {
   .custom-range:focus {
     outline: none; }
     .custom-range:focus::-webkit-slider-thumb {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.15rem rgba(227, 152, 46, 0.25); }
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
     .custom-range:focus::-moz-range-thumb {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.15rem rgba(227, 152, 46, 0.25); }
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
     .custom-range:focus::-ms-thumb {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.15rem rgba(227, 152, 46, 0.25); }
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
   .custom-range::-moz-focus-outer {
     border: 0; }
   .custom-range::-webkit-slider-thumb {
     width: 1rem;
     height: 1rem;
     margin-top: -0.25rem;
-    background-color: #E3982E;
+    background-color: #fff;
     border: 0;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     appearance: none; }
@@ -2827,7 +2827,7 @@ input[type="button"].btn-block {
       .custom-range::-webkit-slider-thumb {
         transition: none; } }
     .custom-range::-webkit-slider-thumb:active {
-      background-color: #f8e6cb; }
+      background-color: white; }
   .custom-range::-webkit-slider-runnable-track {
     width: 100%;
     height: 0.5rem;
@@ -2838,7 +2838,7 @@ input[type="button"].btn-block {
   .custom-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: #E3982E;
+    background-color: #fff;
     border: 0;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     appearance: none; }
@@ -2846,7 +2846,7 @@ input[type="button"].btn-block {
       .custom-range::-moz-range-thumb {
         transition: none; } }
     .custom-range::-moz-range-thumb:active {
-      background-color: #f8e6cb; }
+      background-color: white; }
   .custom-range::-moz-range-track {
     width: 100%;
     height: 0.5rem;
@@ -2860,7 +2860,7 @@ input[type="button"].btn-block {
     margin-top: 0;
     margin-right: 0.15rem;
     margin-left: 0.15rem;
-    background-color: #E3982E;
+    background-color: #fff;
     border: 0;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     appearance: none; }
@@ -2868,7 +2868,7 @@ input[type="button"].btn-block {
       .custom-range::-ms-thumb {
         transition: none; } }
     .custom-range::-ms-thumb:active {
-      background-color: #f8e6cb; }
+      background-color: white; }
   .custom-range::-ms-track {
     width: 100%;
     height: 0.5rem;
@@ -2940,8 +2940,8 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #E3982E; }
+  color: #462B41;
+  background-color: #fff; }
 
 .nav-fill .nav-item {
   flex: 1 1 auto;
@@ -3120,9 +3120,9 @@ input[type="button"].btn-block {
     background-color: transparent; }
   .list-group-item.active {
     z-index: 2;
-    color: #fff;
-    background-color: #E3982E;
-    border-color: #E3982E; }
+    color: #462B41;
+    background-color: #fff;
+    border-color: #fff; }
 
 .list-group-horizontal {
   flex-direction: row; }
@@ -3644,10 +3644,10 @@ input[type="button"].btn-block {
 .align-text-top {
   vertical-align: text-top !important; }
 
-.bg-primary {
+.bg-primary, #kids-tabs a {
   background-color: #fec34e !important; }
 
-a.bg-primary:hover, a.bg-primary:focus,
+a.bg-primary:hover, #kids-tabs a:hover, a.bg-primary:focus, #kids-tabs a:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
   background-color: #feb21b !important; }
@@ -3712,10 +3712,10 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #0a0c0d !important; }
 
-.bg-white {
+.bg-white, #kids-tabs a.active {
   background-color: #fff !important; }
 
-a.bg-white:hover, a.bg-white:focus,
+a.bg-white:hover, #kids-tabs a.active:hover, a.bg-white:focus, #kids-tabs a.active:focus,
 button.bg-white:hover,
 button.bg-white:focus {
   background-color: #e6e5e5 !important; }
@@ -3744,7 +3744,7 @@ button.bg-quaternary:hover,
 button.bg-quaternary:focus {
   background-color: #6a4c44 !important; }
 
-.bg-white {
+.bg-white, #kids-tabs a.active {
   background-color: #fff !important; }
 
 .bg-transparent {
@@ -4704,7 +4704,7 @@ button.bg-quaternary:focus {
 .shadow-sm, #map-affiliates .leaflet-bar a {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3) !important; }
 
-.shadow, .tab-skipper, #primary-navigation-desktop .sub {
+.shadow, .tab-skipper, #primary-navigation-desktop .sub, #kids-tabs a.active {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3) !important; }
 
 .shadow-lg, .leaflet-popup-content-wrapper,
@@ -4959,7 +4959,8 @@ div.figure-img,
   padding: 1rem !important; }
 
 .pt-2,
-.py-2 {
+.py-2,
+#kids-tabs a {
   padding-top: 1rem !important; }
 
 .pr-2,
@@ -4967,7 +4968,8 @@ div.figure-img,
   padding-right: 1rem !important; }
 
 .pb-2,
-.py-2 {
+.py-2,
+#kids-tabs a {
   padding-bottom: 1rem !important; }
 
 .pl-2,
@@ -7050,12 +7052,7 @@ div.figure-img,
 .font-weight-lighter {
   font-weight: lighter !important; }
 
-.font-weight-normal, .f-cheetah-tracks, main.for-kids h1,
-main.for-kids h2,
-main.for-kids h3,
-main.for-kids h4,
-main.for-kids h5,
-main.for-kids h6, .kid-tabs {
+.font-weight-normal {
   font-weight: 400 !important; }
 
 .font-weight-bold, #news-menu a.active {
@@ -7067,19 +7064,19 @@ main.for-kids h6, .kid-tabs {
 .font-italic, blockquote > p {
   font-style: italic !important; }
 
-.text-white, .kid-tabs a, .ekko-lightbox, #news-menu a {
+.text-white, .ekko-lightbox, #news-menu a {
   color: #fff !important; }
 
-.text-primary, .kid-tabs a.active, #news-menu a.active {
+.text-primary, #news-menu a.active {
   color: #fec34e !important; }
 
-a.text-primary:hover, .kid-tabs a.active:hover, #news-menu a.active:hover, a.text-primary:focus, .kid-tabs a.active:focus, #news-menu a.active:focus {
+a.text-primary:hover, #news-menu a.active:hover, a.text-primary:focus, #news-menu a.active:focus {
   color: #fea902 !important; }
 
-.text-secondary {
+.text-secondary, #kids-tabs a.active {
   color: #E3982E !important; }
 
-a.text-secondary:hover, a.text-secondary:focus {
+a.text-secondary:hover, #kids-tabs a.active:hover, a.text-secondary:focus, #kids-tabs a.active:focus {
   color: #ad6f17 !important; }
 
 .text-success {
@@ -7118,10 +7115,10 @@ a.text-light:hover, a.text-light:focus {
 a.text-dark:hover, a.text-dark:focus {
   color: black !important; }
 
-.text-white, .kid-tabs a, .ekko-lightbox, #news-menu a {
+.text-white, .ekko-lightbox, #news-menu a {
   color: #fff !important; }
 
-a.text-white:hover, .kid-tabs a:hover, a.ekko-lightbox:hover, #news-menu a:hover, a.text-white:focus, .kid-tabs a:focus, a.ekko-lightbox:focus, #news-menu a:focus {
+a.text-white:hover, a.ekko-lightbox:hover, #news-menu a:hover, a.text-white:focus, a.ekko-lightbox:focus, #news-menu a:focus {
   color: #d9d9d9 !important; }
 
 .text-black {
@@ -7142,7 +7139,7 @@ a.text-tertiary:hover, a.text-tertiary:focus {
 a.text-quaternary:hover, a.text-quaternary:focus {
   color: #5a413a !important; }
 
-.text-body, #global-links li > a {
+.text-body, #global-links li > a, #kids-tabs a {
   color: #212529 !important; }
 
 .text-muted, #primary-navigation-desktop > ul > li > a.active {
@@ -7323,9 +7320,9 @@ label,
 @media (max-width: 959.98px) {
   .display-1, .banner h1, .banner .h1 {
     font-size: 4.5rem; }
-  .display-2, .kid-tabs a {
+  .display-2 {
     font-size: 3.75rem; }
-  .display-3 {
+  .display-3, #kids-tabs a {
     font-size: 3rem; }
   .display-4 {
     font-size: 2.25rem; } }
@@ -7333,7 +7330,7 @@ label,
 @media (max-width: 719.98px) {
   main .fs-xl {
     font-size: 1.5rem; }
-  main .fs-lg, main.for-kids p {
+  main .fs-lg {
     font-size: 1.167rem; } }
 
 @supports (position: -webkit-sticky) or (position: sticky) {
@@ -7377,7 +7374,7 @@ In this file:
 .fs-rg, .text-block > ul:not([class]) {
   font-size: 1.167rem; }
 
-.fs-lg, main.for-kids p {
+.fs-lg {
   font-size: 1.5rem; }
 
 .fs-xl {
@@ -7504,7 +7501,7 @@ form[role="search"] button {
 .wide {
   max-width: 1680px; }
 
-.text-shadow, .featured-panel .bg-white h1, .featured-panel .bg-white h2, .featured-panel .bg-white h3, .featured-panel .bg-white h4, .featured-panel .bg-white p, .featured-panel .bg-white a.link {
+.text-shadow, .featured-panel .bg-white h1, .featured-panel #kids-tabs a.active h1, #kids-tabs .featured-panel a.active h1, .featured-panel .bg-white h2, .featured-panel #kids-tabs a.active h2, #kids-tabs .featured-panel a.active h2, .featured-panel .bg-white h3, .featured-panel #kids-tabs a.active h3, #kids-tabs .featured-panel a.active h3, .featured-panel .bg-white h4, .featured-panel #kids-tabs a.active h4, #kids-tabs .featured-panel a.active h4, .featured-panel .bg-white p, .featured-panel #kids-tabs a.active p, #kids-tabs .featured-panel a.active p, .featured-panel .bg-white a.link, .featured-panel #kids-tabs a.active a.link, #kids-tabs .featured-panel a.active a.link {
   text-shadow: 0 0 6px black; }
 
 .text-shadow-border {
@@ -7653,11 +7650,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-sm .bg-white h1, .featured-panel.responsive-sm .bg-white h2, .featured-panel.responsive-sm .bg-white h3, .featured-panel.responsive-sm .bg-white h4, .featured-panel.responsive-sm .bg-white p {
+  .featured-panel.responsive-sm .bg-white h1, .featured-panel.responsive-sm #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-sm a.active h1, .featured-panel.responsive-sm .bg-white h2, .featured-panel.responsive-sm #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-sm a.active h2, .featured-panel.responsive-sm .bg-white h3, .featured-panel.responsive-sm #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-sm a.active h3, .featured-panel.responsive-sm .bg-white h4, .featured-panel.responsive-sm #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-sm a.active h4, .featured-panel.responsive-sm .bg-white p, .featured-panel.responsive-sm #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-sm a.active p {
     color: #212529; }
-  .featured-panel.responsive-sm .bg-white h1, .featured-panel.responsive-sm .bg-white h2, .featured-panel.responsive-sm .bg-white h3, .featured-panel.responsive-sm .bg-white h4, .featured-panel.responsive-sm .bg-white p, .featured-panel.responsive-sm .bg-white a.link {
+  .featured-panel.responsive-sm .bg-white h1, .featured-panel.responsive-sm #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-sm a.active h1, .featured-panel.responsive-sm .bg-white h2, .featured-panel.responsive-sm #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-sm a.active h2, .featured-panel.responsive-sm .bg-white h3, .featured-panel.responsive-sm #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-sm a.active h3, .featured-panel.responsive-sm .bg-white h4, .featured-panel.responsive-sm #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-sm a.active h4, .featured-panel.responsive-sm .bg-white p, .featured-panel.responsive-sm #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-sm a.active p, .featured-panel.responsive-sm .bg-white a.link, .featured-panel.responsive-sm #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-sm a.active a.link {
     text-shadow: none; }
-  .featured-panel.responsive-sm .bg-white a.link {
+  .featured-panel.responsive-sm .bg-white a.link, .featured-panel.responsive-sm #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-sm a.active a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-sm .bg-info h1, .featured-panel.responsive-sm .hard-shadow-info::before h1, .featured-panel.responsive-sm .bg-info h2, .featured-panel.responsive-sm .hard-shadow-info::before h2, .featured-panel.responsive-sm .bg-info h3, .featured-panel.responsive-sm .hard-shadow-info::before h3, .featured-panel.responsive-sm .bg-info h4, .featured-panel.responsive-sm .hard-shadow-info::before h4, .featured-panel.responsive-sm .bg-info p, .featured-panel.responsive-sm .hard-shadow-info::before p, .featured-panel.responsive-sm .bg-info a.link, .featured-panel.responsive-sm .hard-shadow-info::before a.link, .featured-panel.responsive-sm .bg-info blockquote, .featured-panel.responsive-sm .hard-shadow-info::before blockquote, .featured-panel.responsive-sm .bg-info div, .featured-panel.responsive-sm .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -7671,11 +7668,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-md .bg-white h1, .featured-panel.responsive-md .bg-white h2, .featured-panel.responsive-md .bg-white h3, .featured-panel.responsive-md .bg-white h4, .featured-panel.responsive-md .bg-white p {
+  .featured-panel.responsive-md .bg-white h1, .featured-panel.responsive-md #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-md a.active h1, .featured-panel.responsive-md .bg-white h2, .featured-panel.responsive-md #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-md a.active h2, .featured-panel.responsive-md .bg-white h3, .featured-panel.responsive-md #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-md a.active h3, .featured-panel.responsive-md .bg-white h4, .featured-panel.responsive-md #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-md a.active h4, .featured-panel.responsive-md .bg-white p, .featured-panel.responsive-md #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-md a.active p {
     color: #212529; }
-  .featured-panel.responsive-md .bg-white h1, .featured-panel.responsive-md .bg-white h2, .featured-panel.responsive-md .bg-white h3, .featured-panel.responsive-md .bg-white h4, .featured-panel.responsive-md .bg-white p, .featured-panel.responsive-md .bg-white a.link {
+  .featured-panel.responsive-md .bg-white h1, .featured-panel.responsive-md #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-md a.active h1, .featured-panel.responsive-md .bg-white h2, .featured-panel.responsive-md #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-md a.active h2, .featured-panel.responsive-md .bg-white h3, .featured-panel.responsive-md #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-md a.active h3, .featured-panel.responsive-md .bg-white h4, .featured-panel.responsive-md #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-md a.active h4, .featured-panel.responsive-md .bg-white p, .featured-panel.responsive-md #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-md a.active p, .featured-panel.responsive-md .bg-white a.link, .featured-panel.responsive-md #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-md a.active a.link {
     text-shadow: none; }
-  .featured-panel.responsive-md .bg-white a.link {
+  .featured-panel.responsive-md .bg-white a.link, .featured-panel.responsive-md #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-md a.active a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-md .bg-info h1, .featured-panel.responsive-md .hard-shadow-info::before h1, .featured-panel.responsive-md .bg-info h2, .featured-panel.responsive-md .hard-shadow-info::before h2, .featured-panel.responsive-md .bg-info h3, .featured-panel.responsive-md .hard-shadow-info::before h3, .featured-panel.responsive-md .bg-info h4, .featured-panel.responsive-md .hard-shadow-info::before h4, .featured-panel.responsive-md .bg-info p, .featured-panel.responsive-md .hard-shadow-info::before p, .featured-panel.responsive-md .bg-info a.link, .featured-panel.responsive-md .hard-shadow-info::before a.link, .featured-panel.responsive-md .bg-info blockquote, .featured-panel.responsive-md .hard-shadow-info::before blockquote, .featured-panel.responsive-md .bg-info div, .featured-panel.responsive-md .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -7689,11 +7686,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-lg .bg-white h1, .featured-panel.responsive-lg .bg-white h2, .featured-panel.responsive-lg .bg-white h3, .featured-panel.responsive-lg .bg-white h4, .featured-panel.responsive-lg .bg-white p {
+  .featured-panel.responsive-lg .bg-white h1, .featured-panel.responsive-lg #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-lg a.active h1, .featured-panel.responsive-lg .bg-white h2, .featured-panel.responsive-lg #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-lg a.active h2, .featured-panel.responsive-lg .bg-white h3, .featured-panel.responsive-lg #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-lg a.active h3, .featured-panel.responsive-lg .bg-white h4, .featured-panel.responsive-lg #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-lg a.active h4, .featured-panel.responsive-lg .bg-white p, .featured-panel.responsive-lg #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-lg a.active p {
     color: #212529; }
-  .featured-panel.responsive-lg .bg-white h1, .featured-panel.responsive-lg .bg-white h2, .featured-panel.responsive-lg .bg-white h3, .featured-panel.responsive-lg .bg-white h4, .featured-panel.responsive-lg .bg-white p, .featured-panel.responsive-lg .bg-white a.link {
+  .featured-panel.responsive-lg .bg-white h1, .featured-panel.responsive-lg #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-lg a.active h1, .featured-panel.responsive-lg .bg-white h2, .featured-panel.responsive-lg #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-lg a.active h2, .featured-panel.responsive-lg .bg-white h3, .featured-panel.responsive-lg #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-lg a.active h3, .featured-panel.responsive-lg .bg-white h4, .featured-panel.responsive-lg #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-lg a.active h4, .featured-panel.responsive-lg .bg-white p, .featured-panel.responsive-lg #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-lg a.active p, .featured-panel.responsive-lg .bg-white a.link, .featured-panel.responsive-lg #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-lg a.active a.link {
     text-shadow: none; }
-  .featured-panel.responsive-lg .bg-white a.link {
+  .featured-panel.responsive-lg .bg-white a.link, .featured-panel.responsive-lg #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-lg a.active a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-lg .bg-info h1, .featured-panel.responsive-lg .hard-shadow-info::before h1, .featured-panel.responsive-lg .bg-info h2, .featured-panel.responsive-lg .hard-shadow-info::before h2, .featured-panel.responsive-lg .bg-info h3, .featured-panel.responsive-lg .hard-shadow-info::before h3, .featured-panel.responsive-lg .bg-info h4, .featured-panel.responsive-lg .hard-shadow-info::before h4, .featured-panel.responsive-lg .bg-info p, .featured-panel.responsive-lg .hard-shadow-info::before p, .featured-panel.responsive-lg .bg-info a.link, .featured-panel.responsive-lg .hard-shadow-info::before a.link, .featured-panel.responsive-lg .bg-info blockquote, .featured-panel.responsive-lg .hard-shadow-info::before blockquote, .featured-panel.responsive-lg .bg-info div, .featured-panel.responsive-lg .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -7707,11 +7704,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-xl .bg-white h1, .featured-panel.responsive-xl .bg-white h2, .featured-panel.responsive-xl .bg-white h3, .featured-panel.responsive-xl .bg-white h4, .featured-panel.responsive-xl .bg-white p {
+  .featured-panel.responsive-xl .bg-white h1, .featured-panel.responsive-xl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xl a.active h1, .featured-panel.responsive-xl .bg-white h2, .featured-panel.responsive-xl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xl a.active h2, .featured-panel.responsive-xl .bg-white h3, .featured-panel.responsive-xl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xl a.active h3, .featured-panel.responsive-xl .bg-white h4, .featured-panel.responsive-xl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xl a.active h4, .featured-panel.responsive-xl .bg-white p, .featured-panel.responsive-xl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xl a.active p {
     color: #212529; }
-  .featured-panel.responsive-xl .bg-white h1, .featured-panel.responsive-xl .bg-white h2, .featured-panel.responsive-xl .bg-white h3, .featured-panel.responsive-xl .bg-white h4, .featured-panel.responsive-xl .bg-white p, .featured-panel.responsive-xl .bg-white a.link {
+  .featured-panel.responsive-xl .bg-white h1, .featured-panel.responsive-xl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xl a.active h1, .featured-panel.responsive-xl .bg-white h2, .featured-panel.responsive-xl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xl a.active h2, .featured-panel.responsive-xl .bg-white h3, .featured-panel.responsive-xl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xl a.active h3, .featured-panel.responsive-xl .bg-white h4, .featured-panel.responsive-xl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xl a.active h4, .featured-panel.responsive-xl .bg-white p, .featured-panel.responsive-xl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xl a.active p, .featured-panel.responsive-xl .bg-white a.link, .featured-panel.responsive-xl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xl a.active a.link {
     text-shadow: none; }
-  .featured-panel.responsive-xl .bg-white a.link {
+  .featured-panel.responsive-xl .bg-white a.link, .featured-panel.responsive-xl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xl a.active a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-xl .bg-info h1, .featured-panel.responsive-xl .hard-shadow-info::before h1, .featured-panel.responsive-xl .bg-info h2, .featured-panel.responsive-xl .hard-shadow-info::before h2, .featured-panel.responsive-xl .bg-info h3, .featured-panel.responsive-xl .hard-shadow-info::before h3, .featured-panel.responsive-xl .bg-info h4, .featured-panel.responsive-xl .hard-shadow-info::before h4, .featured-panel.responsive-xl .bg-info p, .featured-panel.responsive-xl .hard-shadow-info::before p, .featured-panel.responsive-xl .bg-info a.link, .featured-panel.responsive-xl .hard-shadow-info::before a.link, .featured-panel.responsive-xl .bg-info blockquote, .featured-panel.responsive-xl .hard-shadow-info::before blockquote, .featured-panel.responsive-xl .bg-info div, .featured-panel.responsive-xl .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -7725,11 +7722,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-xxl .bg-white h1, .featured-panel.responsive-xxl .bg-white h2, .featured-panel.responsive-xxl .bg-white h3, .featured-panel.responsive-xxl .bg-white h4, .featured-panel.responsive-xxl .bg-white p {
+  .featured-panel.responsive-xxl .bg-white h1, .featured-panel.responsive-xxl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xxl a.active h1, .featured-panel.responsive-xxl .bg-white h2, .featured-panel.responsive-xxl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xxl a.active h2, .featured-panel.responsive-xxl .bg-white h3, .featured-panel.responsive-xxl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xxl a.active h3, .featured-panel.responsive-xxl .bg-white h4, .featured-panel.responsive-xxl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xxl a.active h4, .featured-panel.responsive-xxl .bg-white p, .featured-panel.responsive-xxl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xxl a.active p {
     color: #212529; }
-  .featured-panel.responsive-xxl .bg-white h1, .featured-panel.responsive-xxl .bg-white h2, .featured-panel.responsive-xxl .bg-white h3, .featured-panel.responsive-xxl .bg-white h4, .featured-panel.responsive-xxl .bg-white p, .featured-panel.responsive-xxl .bg-white a.link {
+  .featured-panel.responsive-xxl .bg-white h1, .featured-panel.responsive-xxl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xxl a.active h1, .featured-panel.responsive-xxl .bg-white h2, .featured-panel.responsive-xxl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xxl a.active h2, .featured-panel.responsive-xxl .bg-white h3, .featured-panel.responsive-xxl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xxl a.active h3, .featured-panel.responsive-xxl .bg-white h4, .featured-panel.responsive-xxl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xxl a.active h4, .featured-panel.responsive-xxl .bg-white p, .featured-panel.responsive-xxl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xxl a.active p, .featured-panel.responsive-xxl .bg-white a.link, .featured-panel.responsive-xxl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xxl a.active a.link {
     text-shadow: none; }
-  .featured-panel.responsive-xxl .bg-white a.link {
+  .featured-panel.responsive-xxl .bg-white a.link, .featured-panel.responsive-xxl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xxl a.active a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-xxl .bg-info h1, .featured-panel.responsive-xxl .hard-shadow-info::before h1, .featured-panel.responsive-xxl .bg-info h2, .featured-panel.responsive-xxl .hard-shadow-info::before h2, .featured-panel.responsive-xxl .bg-info h3, .featured-panel.responsive-xxl .hard-shadow-info::before h3, .featured-panel.responsive-xxl .bg-info h4, .featured-panel.responsive-xxl .hard-shadow-info::before h4, .featured-panel.responsive-xxl .bg-info p, .featured-panel.responsive-xxl .hard-shadow-info::before p, .featured-panel.responsive-xxl .bg-info a.link, .featured-panel.responsive-xxl .hard-shadow-info::before a.link, .featured-panel.responsive-xxl .bg-info blockquote, .featured-panel.responsive-xxl .hard-shadow-info::before blockquote, .featured-panel.responsive-xxl .bg-info div, .featured-panel.responsive-xxl .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -7743,11 +7740,11 @@ In this file:
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100); }
-  .featured-panel.responsive-xxxl .bg-white h1, .featured-panel.responsive-xxxl .bg-white h2, .featured-panel.responsive-xxxl .bg-white h3, .featured-panel.responsive-xxxl .bg-white h4, .featured-panel.responsive-xxxl .bg-white p {
+  .featured-panel.responsive-xxxl .bg-white h1, .featured-panel.responsive-xxxl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xxxl a.active h1, .featured-panel.responsive-xxxl .bg-white h2, .featured-panel.responsive-xxxl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xxxl a.active h2, .featured-panel.responsive-xxxl .bg-white h3, .featured-panel.responsive-xxxl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xxxl a.active h3, .featured-panel.responsive-xxxl .bg-white h4, .featured-panel.responsive-xxxl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xxxl a.active h4, .featured-panel.responsive-xxxl .bg-white p, .featured-panel.responsive-xxxl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xxxl a.active p {
     color: #212529; }
-  .featured-panel.responsive-xxxl .bg-white h1, .featured-panel.responsive-xxxl .bg-white h2, .featured-panel.responsive-xxxl .bg-white h3, .featured-panel.responsive-xxxl .bg-white h4, .featured-panel.responsive-xxxl .bg-white p, .featured-panel.responsive-xxxl .bg-white a.link {
+  .featured-panel.responsive-xxxl .bg-white h1, .featured-panel.responsive-xxxl #kids-tabs a.active h1, #kids-tabs .featured-panel.responsive-xxxl a.active h1, .featured-panel.responsive-xxxl .bg-white h2, .featured-panel.responsive-xxxl #kids-tabs a.active h2, #kids-tabs .featured-panel.responsive-xxxl a.active h2, .featured-panel.responsive-xxxl .bg-white h3, .featured-panel.responsive-xxxl #kids-tabs a.active h3, #kids-tabs .featured-panel.responsive-xxxl a.active h3, .featured-panel.responsive-xxxl .bg-white h4, .featured-panel.responsive-xxxl #kids-tabs a.active h4, #kids-tabs .featured-panel.responsive-xxxl a.active h4, .featured-panel.responsive-xxxl .bg-white p, .featured-panel.responsive-xxxl #kids-tabs a.active p, #kids-tabs .featured-panel.responsive-xxxl a.active p, .featured-panel.responsive-xxxl .bg-white a.link, .featured-panel.responsive-xxxl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xxxl a.active a.link {
     text-shadow: none; }
-  .featured-panel.responsive-xxxl .bg-white a.link {
+  .featured-panel.responsive-xxxl .bg-white a.link, .featured-panel.responsive-xxxl #kids-tabs a.active a.link, #kids-tabs .featured-panel.responsive-xxxl a.active a.link {
     color: #fd7e14 !important; }
   .featured-panel.responsive-xxxl .bg-info h1, .featured-panel.responsive-xxxl .hard-shadow-info::before h1, .featured-panel.responsive-xxxl .bg-info h2, .featured-panel.responsive-xxxl .hard-shadow-info::before h2, .featured-panel.responsive-xxxl .bg-info h3, .featured-panel.responsive-xxxl .hard-shadow-info::before h3, .featured-panel.responsive-xxxl .bg-info h4, .featured-panel.responsive-xxxl .hard-shadow-info::before h4, .featured-panel.responsive-xxxl .bg-info p, .featured-panel.responsive-xxxl .hard-shadow-info::before p, .featured-panel.responsive-xxxl .bg-info a.link, .featured-panel.responsive-xxxl .hard-shadow-info::before a.link, .featured-panel.responsive-xxxl .bg-info blockquote, .featured-panel.responsive-xxxl .hard-shadow-info::before blockquote, .featured-panel.responsive-xxxl .bg-info div, .featured-panel.responsive-xxxl .hard-shadow-info::before div {
     text-shadow: none; } }
@@ -8205,13 +8202,9 @@ In this file:
 .f-sans-serif, .link, body, p.h1, p.h2, p.h3, p.h4, p.h5, p.h6, blockquote > p {
   font-family: 'Roboto', sans-serif; }
 
-.f-cheetah-tracks, main.for-kids h1,
-main.for-kids h2,
-main.for-kids h3,
-main.for-kids h4,
-main.for-kids h5,
-main.for-kids h6, .kid-tabs {
+.f-cheetah-tracks, #kids-tabs a {
   font-family: 'cheetah-tracks-regular';
+  font-weight: normal;
   line-height: normal !important; }
 
 #mobile-menu li.leader,
@@ -8440,6 +8433,9 @@ span.fa-circle.partner-organization {
 
 .for-kids .featured-panel * {
   text-shadow: none !important; }
+
+#kids-tabs a {
+  border-radius: 1rem 1rem 0 0; }
 
 [class*="hard-shadow-"] {
   position: relative; }

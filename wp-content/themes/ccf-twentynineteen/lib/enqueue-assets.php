@@ -8,13 +8,18 @@
         // CSS
         ////////////////////////////////////////
 
-        if ( is_page( 'ccf-global' ) ) {
-
-            wp_enqueue_style( 
-                'leaflet-css', 
+        if (is_page('ccf-global')) {
+            wp_enqueue_style(
+                'leaflet-css',
                 'https://unpkg.com/leaflet@1.3.4/dist/leaflet.css'
             );
+        }
 
+        if (is_page('kids')) {
+            wp_enqueue_style(
+                'cheetah-tracks',
+                'https://fonts.fontself.com/naod8qQ/cheetah-tracks-regular.css'
+            );
         }
 
         wp_enqueue_style( 
