@@ -18794,7 +18794,7 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/02.jpg": {
@@ -18805,7 +18805,7 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/02.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/themes/ccf-twentynineteen/images/kids/tess-cheetahs-running.svg": {

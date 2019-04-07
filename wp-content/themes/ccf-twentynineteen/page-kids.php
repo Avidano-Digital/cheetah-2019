@@ -44,8 +44,8 @@ $parent_title = get_the_title($post->post_parent);
 
         <div class="card bg-white bg-info">
 
-            <div class="px-2">
-                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.svg" alt="Card image">
+            <div class="bg-dangerx">
+                <img class="card-img mt-lg-6" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.svg" alt="Card image">
             </div>
 
             <div class="card-img-overlay">
@@ -56,23 +56,23 @@ $parent_title = get_the_title($post->post_parent);
 
                         <div class="col-lg-6 offset-lg-6 text-center">
 
-                            <ul class="extensible-list horizontal justify-content-center funky d-none">
-                                <li class="tilt-left">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
-                                        alt="Placeholder">
-                                </li>
-                                <li class="tilt-right">
-                                    <img class="hard-shadow-info"
-                                        src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/02.jpg"
-                                        alt="Placeholder">
-                                </li>
-                            </ul>
                             <div class="narrow">
                                 <h2 class="card-title f-cheetah-tracks display-3 mb-1 text-tertiary">A lot of kids</h2>
                                 <p>A mother cheetah usually cares for anywhere from 2 to 8 cubs per
                                     litter, but cubs are often the target of other predators and many do not survive
                                     past the first year.</p>
                             </div>
+
+                            <ul class="extensible-list horizontal justify-content-center funky mt-3">
+                                <li class="tilt-left">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
+                                        alt="Placeholder" style="height:200px;">
+                                </li>
+                                <li class="tilt-right">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/02.jpg"
+                                        alt="Placeholder" style="height:180px;">
+                                </li>
+                            </ul>
 
                             <div class="overflow-hidden my-2 d-none">
                                 <img class="hard-shadow-info"
