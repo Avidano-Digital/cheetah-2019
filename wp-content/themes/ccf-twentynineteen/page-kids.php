@@ -19,8 +19,13 @@ $parent_title = get_the_title($post->post_parent);
 
             <img class="my-3" src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo-large.svg" alt="Placeholder">
 
+            <p class="text-shadow">
+                Welcome to Cheetah Conservation Fund’s Kids page—the purrfect place to start your cheetah studies. From cool cheetah facts to how kids like YOU are helping
+                CCF save the cheetah in the wild.
+            </p>
+
         </div>
-        <!-- container -->
+        <!-- .narrow -->
 
         <div class="medium">
 
@@ -40,116 +45,137 @@ $parent_title = get_the_title($post->post_parent);
 
     </section>
 
-    <section class="featured-panel responsive-lg my-5">
+    <div class="container-fluid wide overflow-hidden p-0">
 
-        <div class="card bg-white bg-info">
+        <section class="featured-panel borderX responsive-lg my-5">
 
-            <div class="bg-dangerx">
-                <img class="card-img mt-lg-6" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.svg" alt="Card image">
-            </div>
+            <div class="card bg-white">
 
-            <div class="card-img-overlay">
+                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.svg" alt="Card image">
 
-                <div class="container">
+                <div class="card-img-overlay">
 
                     <div class="row">
 
-                        <div class="col-lg-6 offset-lg-6 text-center">
+                        <div class="col-lg-6 offset-lg-6">
 
-                            <div class="narrow">
-                                <h2 class="card-title f-cheetah-tracks display-3 mb-1 text-tertiary">A lot of kids</h2>
-                                <p>A mother cheetah usually cares for anywhere from 2 to 8 cubs per
+                            <div class="narrow text-center my-3">
+
+                                <h2 class="card-title f-cheetah-tracks display-3 mb-2 text-tertiary">A lot of kids</h2>
+                            
+                                <p>
+                                    A mother cheetah usually cares for anywhere from 2 to 8 cubs per
                                     litter, but cubs are often the target of other predators and many do not survive
-                                    past the first year.</p>
+                                    past the first year.
+                                </p>
+
                             </div>
 
                             <ul class="extensible-list horizontal justify-content-center funky mt-3">
                                 <li class="tilt-left">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
-                                        alt="Placeholder" style="height:200px;">
+                                        alt="Placeholder" style="height:150px;">
                                 </li>
                                 <li class="tilt-right">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/02.jpg"
-                                        alt="Placeholder" style="height:180px;">
+                                        alt="Placeholder" style="height:125px;">
                                 </li>
                             </ul>
 
-                            <div class="overflow-hidden my-2 d-none">
-                                <img class="hard-shadow-info"
-                                    src="<?php echo get_template_directory_uri(); ?>/images/kids/01.jpg"
-                                    alt="Placeholder">
-                            </div>
                         </div>
                         <!-- .col -->
+
                     </div>
+                    <!-- .row -->
 
                 </div>
+                <!-- .card-img-overlay -->
+
             </div>
-        </div>
+            <!-- .card -->
 
-    </section>
+        </section>
 
-    <section class="featured-panel responsive-lg">
+        <section class="featured-panel responsive-lg my-5">
 
-        <div class="card bg-light">
-            <div class="overlay-gradient-y-white d-none d-lg-block">
-                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/almost-like-flying.jpg" alt="Card image">
-            </div>
-
-            <div class="card-img-overlay d-flex">
-
-                <div class="container align-self-center my-4">
-
-                    <div class="narrow rounded-lg overflow-hidden mb-4">
-
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
-                        </div>
-
-                    </div>
-
-                    <div class=" medium text-center">
-                        <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">Almost like Flying</h2>
-                        <p>When cheetahs are running full speed, their stride (length between steps) is 6-7 meters (21 feet). Their feet only touch the ground twice during each stride.</p>
-                    </div>
-                        
+            <div class="card bg-light">
+                <div class="overlay-gradient-y-white d-none d-lg-block">
+                    <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/almost-like-flying.jpg" alt="Card image">
                 </div>
-                <!-- .container -->
 
-            </div>
+                <div class="card-img-overlay d-flex">
 
-        </div>
-        <!-- .card -->
+                    <div class="container align-self-center my-4">
 
-    </section>
+                        <div class="narrow rounded-lg overflow-hidden mb-4">
 
-    <section class="featured-panel responsive-lg my-5">
-
-        <div class="card bg-white bg-info">
-
-            <div class="px-2 bg-danger">
-                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/tess-cheetahs-running.svg" alt="Card image">
-            </div>
-
-            <div class="card-img-overlay d-flex">
-
-                <div class="container align-self-end">
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="">
-                                <h2 class="card-title f-cheetah-tracks display-2 mb-1 text-info">Not just a funny haircut</h2>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
                             </div>
 
                         </div>
+
+                        <div class=" medium text-center">
+                            <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">Almost like Flying</h2>
+                            <p>When cheetahs are running full speed, their stride (length between steps) is 6-7 meters (21 feet). Their feet only touch the ground twice during each stride.</p>
+                        </div>
+                            
                     </div>
+                    <!-- .container -->
 
                 </div>
+
             </div>
-        </div>
+            <!-- .card -->
 
-    </section>
+        </section>
 
+        <section class="featured-panel wide border responsive-lg my-5">
+
+            <div class="card bg-white mb-4 p-0">
+            
+                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/tess-cheetahs-running.svg" alt="Card image">
+
+                <div class="card-img-overlay d-flex">
+
+                    <div class="container align-self-end">
+
+                        <div class="row">
+
+                            <div class="col-lg-8 bg-warning">
+                            <div class="narrow text-center">
+                                <h2 class="card-title f-cheetah-tracks display-3 mb-1 text-tertiary">Not just a funny haircut</h2>
+                                <p>A mother cheetah usually cares for anywhere from 2 to 8 cubs per
+                                    litter, but cubs are often the target of other predators and many do not survive
+                                    past the first year.</p>
+                            </div>
+                            <!-- .narrow -->
+
+                                <ul class="extensible-list horizontal funky d-none">
+                                    <li class="tilt-left">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
+                                            alt="Placeholder">
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- .col -->
+
+                        </div>
+                        <!-- .row -->
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+    <!-- .container-fluid -->
 
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
