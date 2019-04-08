@@ -20,7 +20,7 @@ $parent_title = get_the_title($post->post_parent);
             <img class="my-3" src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo-large.svg" alt="Placeholder">
 
             <p class="text-shadow">
-                Welcome to Cheetah Conservation Fund’s Kids page—the purrfect place to start your cheetah studies. From cool cheetah facts to how kids like YOU are helping
+                Welcome to Cheetah Conservation Fund’s Kids page—the purrfect place to start your cheetah studies! From cool cheetah facts to how kids like YOU are helping
                 CCF save the cheetah in the wild.
             </p>
 
@@ -71,7 +71,7 @@ $parent_title = get_the_title($post->post_parent);
 
                             </div>
 
-                            <ul class="extensible-list horizontal justify-content-center funky mt-3">
+                            <ul class="extensible-list horizontal justify-content-center funky my-3">
                                 <li class="tilt-left">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
                                         alt="Placeholder" style="height:150px;">
@@ -115,7 +115,7 @@ $parent_title = get_the_title($post->post_parent);
 
                         </div>
 
-                        <div class=" medium text-center">
+                        <div class="narrow text-center">
                             <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">Almost like Flying</h2>
                             <p>When cheetahs are running full speed, their stride (length between steps) is 6-7 meters (21 feet). Their feet only touch the ground twice during each stride.</p>
                         </div>
@@ -130,33 +130,62 @@ $parent_title = get_the_title($post->post_parent);
 
         </section>
 
-        <section class="featured-panel wide border responsive-lg my-5">
+        <section class="featured-panel wide borderX responsive-lg my-5">
 
-            <div class="card bg-white mb-4 p-0">
+            <div class="card bg-danger mb-4 p-0">
             
-                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/tess-cheetahs-running.svg" alt="Card image">
+                <img class="card-img opacity-20" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-running.svg" alt="Card image">
 
                 <div class="card-img-overlay d-flex">
 
-                    <div class="container align-self-end">
+                    <div class="align-self-end">
 
                         <div class="row">
 
-                            <div class="col-lg-8 bg-warning">
-                            <div class="narrow text-center">
-                                <h2 class="card-title f-cheetah-tracks display-3 mb-1 text-tertiary">Not just a funny haircut</h2>
-                                <p>A mother cheetah usually cares for anywhere from 2 to 8 cubs per
-                                    litter, but cubs are often the target of other predators and many do not survive
-                                    past the first year.</p>
-                            </div>
-                            <!-- .narrow -->
+                            <div class="col-lg-9">
 
-                                <ul class="extensible-list horizontal funky d-none">
-                                    <li class="tilt-left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
-                                            alt="Placeholder">
-                                    </li>
-                                </ul>
+                                <div class="row matrix-gutter bg-warning my3 opacity-70">
+
+                                    <div class="col-12">
+
+                            <ul class="extensible-list horizontal justify-content-center funky my-3">
+                                <li class="tilt-left">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
+                                        alt="Placeholder" style="height:150px;">
+                                </li>
+                                <li class="tilt-right">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/02.jpg"
+                                        alt="Placeholder" style="height:125px;">
+                                </li>
+                            </ul>
+                                        <h2 class="card-title f-cheetah-tracks display-3 mb-1 text-tertiary text-center">Not
+                                            just a funny haircut</h2>
+                                    </div>
+                                    <!-- .col -->
+
+                                    <div class="col">
+
+                                        <p>
+                                            Cheetah cubs have long tall hair that runs from their neck all the way
+                                            down to
+                                            the base of their tail, called the mantle.
+                                        </p>
+                                    </div>
+                                    <!-- .col -->
+                                    
+                                    <div class="col">
+                                        <p>
+                                            The mantle makes a cheetah cub look
+                                            like a honey badger and makes them blend into tall grass, which helps
+                                            keep them
+                                            safe from threats like lions and hyenas.
+                                        </p>
+                                    </div>
+                                    <!-- .col -->
+                                
+                                </div>
+                                <!-- .matrix-gutter -->
+
 
                             </div>
                             <!-- .col -->
@@ -165,8 +194,7 @@ $parent_title = get_the_title($post->post_parent);
                         <!-- .row -->
 
                     </div>
-
-
+                    <!-- .align-self-end -->
 
                 </div>
 
