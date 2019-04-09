@@ -421,7 +421,7 @@ $leaflet-button-color: white;
 
     border-radius: $border-radius-lg $border-radius-lg 0 0;
     &.active{
-      color: $secondary !important;
+      color: $info !important;
       background-color: $white !important;
     }
   }
