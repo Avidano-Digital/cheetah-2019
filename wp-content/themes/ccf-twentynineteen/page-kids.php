@@ -27,16 +27,16 @@ $parent_title = get_the_title($post->post_parent);
         </div>
         <!-- .narrow -->
 
-        <div class="medium">
+        <div class="wide">
 
-            <div class="nav nav-pills responsive-md" id="kids-tabs" role="tablist">
+            <div class="nav nav-pills text-center responsive-md" id="kids-tabs" role="tablist">
 
                 <a class="nav-item nav-link flex-fill active" id="tab-btn-01-a" href="#tab-01-a" data-toggle="pill" aria-controls="tab-01-a" aria-selected="true" role="tab">
-                    Learn
+                    Cheetah Facts
                 </a>
 
                 <a class="nav-item nav-link flex-fill" id="tab-btn-01-b" href="#tab-01-b" data-toggle="pill" aria-controls="tab-01-b" aria-selected="false" role="tab">
-                    Help
+                    CCF Kids
                 </a>
 
             </div>

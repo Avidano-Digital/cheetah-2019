@@ -411,17 +411,19 @@ $leaflet-button-color: white;
 }
 
 #kids-tabs {
-  a{
-    @extend .f-cheetah-tracks;
-    @extend .display-3;
-    @extend .bg-primary;
-    @extend .text-body;
-    @extend .py-2;
 
+  a.nav-item{
+    @extend .f-cheetah-tracks;
+    @extend .bg-primary;
+    @extend .py-2;
+    
+    font-size: $fs-xl;
 
     border-radius: $border-radius-lg $border-radius-lg 0 0;
-    &.active{
-      color: $info !important;
+    // width: 50%;
+    color: $body-color;
+
+    &.active {
       background-color: $white !important;
     }
   }

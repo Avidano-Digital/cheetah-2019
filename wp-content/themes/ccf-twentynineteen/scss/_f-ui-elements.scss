@@ -531,7 +531,23 @@ $accordion-bg-color: $transparent;
   flex-direction: column;
   border-color: $transparent;
 
-  .nav-link{ border-color: $border-color; }
+  margin-bottom: $spacer-2;
+
+  .nav-item{
+    border-radius: 0 !important;
+
+    &:first-child {
+      border-radius: $border-radius-lg $border-radius-lg 0 0 !important;
+    }
+
+    &:last-child {
+      border-radius: 0 0 $border-radius-lg $border-radius-lg !important;
+    }
+  }
+
+  .nav-link{
+    border-color: $border-color;
+  }
 
   @if $enable-rounded {
     .nav-link:not(:last-child){ 
@@ -546,7 +562,7 @@ $accordion-bg-color: $transparent;
 {
 
   &[class*="responsive-"]{
-    .nav-link{ text-align: center; }
+    .nav-item{ text-align: center; }
   } 
 
   @each $breakpoint in map-keys($grid-breakpoints) {
