@@ -84,7 +84,7 @@ $parent_title = get_the_title($post->post_parent);
 
             <div class="card bg-white">
 
-                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.svg" alt="Card image">
+                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.png" alt="Card image">
 
                 <div class="card-img-overlay">
 
@@ -163,109 +163,126 @@ $parent_title = get_the_title($post->post_parent);
 
         </div>
 
-        <div class="my-6">
+        <div class="container-fluid my-6">
 
-            <div class="row matrix-gutter">
+            <div class="row align-items-center bg-light my-3">
 
                 <div class="col-lg-6">
-
-                    <div class="card bg-primary">
-                        <img class="card-img show-on-mobile" src="https://via.placeholder.com/1200x1200" alt="Card image">
-                        <div class="card-img-overlay d-flex">
-                            <div class="container align-self-end">
-                                <div class="narrow text-center my-3">
-                                    <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">
-                                        Tail like a rudder
-                                    </h2>
-                                    <p>
-                                        The cheetah has a long, muscular tail that has a flat shape. The tail almost functions
-                                        like a rudder on a boat because they use it to help control their steering and keep
-                                        their balance when running very fast.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mx-n2">
+                        <img src="https://via.placeholder.com/1200x1200" alt="Card image">
                     </div>
-
                 </div>
                 <!-- .col -->
 
                 <div class="col-lg-6">
 
-                    <div class="card bg-primary">
-                        <img class="card-img show-on-mobile" src="https://via.placeholder.com/1200x1200" alt="Card image">
-                        <div class="card-img-overlay d-flex">
-                            <div class="container align-self-end">
-                                <div class="narrow text-center my-3">
-                                    <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">
-                                        Special cleat feet
-                                    </h2>
-                                    <p>
-                                        The cheetah has “semi non-retractable” claws (almost like dog claws) that work like
-                                        the cleats on a football shoe to give the cheetah a lot of traction when running.
-                                        The pads of most cats’ paws are soft, but the cheetah’s pads are hard kind of like
-                                        the rubber on a tire. This also helps them grip the ground when they are running so
-                                        fast.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="narrow">
+                        <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary text-center">
+                            Tail like a rudder
+                        </h2>
+                        <p>
+                            The cheetah has a long, muscular tail that has a flat shape. The tail almost functions
+                            like a rudder on a boat because they use it to help control their steering and keep
+                            their balance when running very fast.
+                        </p>
                     </div>
 
                 </div>
                 <!-- .col -->
 
-                <div class="col-lg-6">
-
-                    <div class="card bg-primary">
-                        <img class="card-img show-on-mobile" src="https://via.placeholder.com/1200x1200" alt="Card image">
-                        <div class="card-img-overlay d-flex">
-                            <div class="container align-self-end">
-                                <div class="narrow my-3">
-                                    <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">
-                                        Tear marks
-                                    </h2>
-                                    <p>
-                                        Like football players, cheetahs have built in sun glare protection around their
-                                        eyes. The cheetah’s “tear marks” run from the inside corners of their eyes down to
-                                        the outside edges of their mouth. These marks help reflect the glare of the sun when
-                                        they are hunting during the day. They work just like the black marks that football
-                                        players put under their eyes during the games. These marks also work like the sights
-                                        on a rifle, to help the cheetah “aim” and stay focused on their prey when they are
-                                        hunting.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- .col -->
-
-
-                <div class="col-lg-6">
-
-                    <div class="card bg-primary">
-                        <img class="card-img show-on-mobile" src="https://via.placeholder.com/1200x1200" alt="Card image">
-                        <div class="card-img-overlay d-flex">
-                            <div class="container align-self-end">
-                                <div class="narrow my-3">
-                                    <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">
-                                        Spotted skin
-                                    </h2>
-                                    <p>
-                                        The cheetah’s fur is covered in solid black spots, and so is their skin! The black
-                                        fur actually grows out of the black spots on their skin.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- .col -->
-            
             </div>
+            <!-- .row -->
+
+            <div class="row align-items-center bg-light my-3">
+
+                <div class="col-lg-6">
+
+                    <div class="narrow">
+                        <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary text-center">
+                            Special cleat feet
+                        </h2>
+                        <p>
+                            The cheetah has “semi non-retractable” claws (almost like dog claws) that work like
+                            the cleats on a football shoe to give the cheetah a lot of traction when running.
+                            The pads of most cats’ paws are soft, but the cheetah’s pads are hard kind of like
+                            the rubber on a tire. This also helps them grip the ground when they are running so
+                            fast.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- .col -->
+
+                <div class="col-lg-6">
+                    <div class="mx-n2">
+                        <img src="https://via.placeholder.com/1200x1200" alt="Card image">
+                    </div>
+                </div>
+                <!-- .col -->
+
+
+            </div>
+            <!-- .row -->
+
+            <div class="row align-items-center bg-light my-3">
+
+                <div class="col-lg-6">
+                    <div class="mx-n2">
+                        <img src="https://via.placeholder.com/1200x1200" alt="Card image">
+                    </div>
+                </div>
+                <!-- .col -->
+
+                <div class="col-lg-6">
+
+                    <div class="narrow">
+                        <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary text-center">
+                            Tear marks
+                        </h2>
+                        <p>
+                            Like football players, cheetahs have built in sun glare protection around their
+                            eyes. The cheetah’s “tear marks” run from the inside corners of their eyes down to
+                            the outside edges of their mouth. These marks help reflect the glare of the sun when
+                            they are hunting during the day. They work just like the black marks that football
+                            players put under their eyes during the games. These marks also work like the sights
+                            on a rifle, to help the cheetah “aim” and stay focused on their prey when they are
+                            hunting.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- .col -->
+
+            </div>
+            <!-- .row -->
+
+            <div class="row align-items-center bg-light my-3">
+
+                <div class="col-lg-6">
+
+                    <div class="narrow">
+                        <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary text-center">
+                            Spotted Skin
+                        </h2>
+                        <p>
+                            The cheetah’s fur is covered in solid black spots, and so is their skin! The black
+                            fur actually grows out of the black spots on their skin.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- .col -->
+
+                <div class="col-lg-6">
+                    <div class="mx-n2">
+                        <img src="https://via.placeholder.com/1200x1200" alt="Card image">
+                    </div>
+                </div>
+                <!-- .col -->
+
+
+            </div>
+            <!-- .row -->
         
         </div>
 
@@ -283,12 +300,9 @@ $parent_title = get_the_title($post->post_parent);
 
                             <ul class="extensible-list horizontal justify-content-center funky my-3">
                                 <li class="tilt-left">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
+
+                                    <img src="https://via.placeholder.com/250"
                                         alt="Placeholder" style="height:150px;">
-                                </li>
-                                <li class="tilt-right">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/02.jpg"
-                                        alt="Placeholder" style="height:125px;">
                                 </li>
                             </ul>
                             
