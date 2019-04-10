@@ -290,7 +290,7 @@ $parent_title = get_the_title($post->post_parent);
 
             <div class="card bg-white">
             
-                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-running.svg" alt="Card image">
+                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-running.png" alt="Card image">
 
                 <div class="card-img-overlay d-flex">
 
