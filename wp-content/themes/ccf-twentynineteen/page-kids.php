@@ -83,7 +83,7 @@ $parent_title = get_the_title($post->post_parent);
 
             <div class="featured-panel responsive-lg my-6">
 
-                <div class="card bg-white">
+                <div class="card px-2">
 
                     <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.png" alt="Card image">
 
@@ -288,7 +288,7 @@ $parent_title = get_the_title($post->post_parent);
 
             <div class="featured-panel responsive-lg my-6">
 
-                <div class="card bg-white">
+                <div class="card px-2">
                 
                     <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-running.png" alt="Card image">
 
@@ -409,11 +409,11 @@ $parent_title = get_the_title($post->post_parent);
 
                             <div class="narrow text-center my-5">
 
-                                    <h2 class="f-cheetah-tracks display-3 mb-1 text-tertiary">The most endangered cat</h2>
+                                <h2 class="f-cheetah-tracks display-3 mb-1 text-tertiary">The most endangered cat</h2>
 
-                                    <p>
-                                        There are fewer than 8,000 cheetahs left in the wild, making the cheetah Africa’s most endangered big cat.
-                                    </p>
+                                <p>
+                                    There are fewer than 8,000 cheetahs left in the wild, making the cheetah Africa’s most endangered big cat.
+                                </p>
 
                             </div>
                             <!-- .narrow -->
@@ -437,26 +437,26 @@ $parent_title = get_the_title($post->post_parent);
                     <div class="row matrix-border">
                         <div class="col-md-6">
                             <a href="#" class="btn btn-lg btn-block btn-primary">
-                                More Educational Resources
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-
-                            <a href="#" class="btn btn-lg btn-block btn-primary">
                                 Become a CCF Kid!
                             </a>
                         </div>
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-lg btn-block btn-primary">
+                                More Educational Resources
+                            </a>
+                        </div>
                     </div>
-
 
                 </div>
 
             </div>
             <!-- .container -->
-
-        <?php get_template_part('template-parts/article-footer'); ?>
+        
+            <?php get_template_part('template-parts/article-footer'); ?>
+        
         </div>
         <!-- #primary-content -->
+    
     </div>
     <!-- .container-fluid -->
 
