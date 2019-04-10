@@ -402,7 +402,9 @@ $leaflet-button-color: white;
 
 
 
-
+.flex-even {
+  flex: 1;
+}
 
 .for-kids .featured-panel *{
 
@@ -412,10 +414,13 @@ $leaflet-button-color: white;
 
 #kids-tabs {
 
+  @extend .text-center;
+
   a.nav-item{
     @extend .f-cheetah-tracks;
     @extend .bg-primary;
     @extend .py-2;
+
     
     font-size: $fs-xl;
 
