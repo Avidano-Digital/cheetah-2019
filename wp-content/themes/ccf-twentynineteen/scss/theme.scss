@@ -104,11 +104,16 @@ p{
 
   .sub{
     @extend .shadow;
+    position: absolute;
     margin-top: 0;
+    display: none;
 
     background: $dark;
-    position: absolute;
-    padding: $spacer-3 ;
+
+    ul{
+      padding: $spacer-3;
+    }
+    
     font-size: $fs-md;
     min-width: 200px;
 
@@ -117,7 +122,13 @@ p{
 
     a{ color: white; }
 
-    display: none;
+
+    div{
+      border:1px solid black;
+      ul{ 
+        li{ background: green; }
+      }
+    }
 
     &.active{ display: block; }
   }
