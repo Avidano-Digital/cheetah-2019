@@ -15,7 +15,7 @@ $parent_title = get_the_title($post->post_parent);
 
         <div class="card bg-white">
 
-            <div class="overlay-gradient-y-black">
+            <div class="gradient-overlay-y-black">
 
                 <?php
                 $featured_image_id = get_post_thumbnail_id($post->ID);

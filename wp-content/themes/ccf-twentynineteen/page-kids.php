@@ -133,7 +133,7 @@ $parent_title = get_the_title($post->post_parent);
             <div class="featured-panel responsive-lg my-5">
 
                 <div class="card bg-light">
-                    <div class="overlay-gradient-y-white d-none d-lg-block">
+                    <div class="gradient-overlay-y-white d-none d-lg-block">
                         <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/almost-like-flying.jpg" alt="Card image">
                     </div>
 
@@ -312,44 +312,50 @@ $parent_title = get_the_title($post->post_parent);
                 </div>
                 <!-- .card -->
 
-                <div class="medium my-3">
-                
-                    <div class="row matrix-gutter">
+                <div class="container my-3">
+                    <div class="medium">
+                    
+                        <div class="row matrix-gutter">
 
-                        <div class="col">
-                            <p>
-                                Cheetah cubs have long tall hair that runs from their neck all the way down to the base of
-                                their tail, called the mantle.
-                            </p>
-                        </div>
-                        <!-- .col -->
+                            <div class="col">
+                                <p>
+                                    Cheetah cubs have long tall hair that runs from their neck all the way down to the base of
+                                    their tail, called the mantle.
+                                </p>
+                            </div>
+                            <!-- .col -->
 
-                        <div class="col">
-                            <p>
-                                The mantle makes a cheetah cub look like a honey badger and makes them blend into tall grass, which helps
-                                keep them safe from threats like lions and hyenas.
-                            </p>
+                            <div class="col">
+                                <p>
+                                    The mantle makes a cheetah cub look like a honey badger and makes them blend into tall grass, which helps
+                                    keep them safe from threats like lions and hyenas.
+                                </p>
+                            </div>
+                            <!-- .col -->
+
                         </div>
-                        <!-- .col -->
+                        <!-- .row -->
 
                     </div>
-                    <!-- .row -->
-
+                    <!-- .medium -->
                 </div>
-                <!-- .medium -->
+                <!-- .container -->
 
             </div>
 
-            <div class="my-5">
+            <div class="container my-5">
 
                 <div class="row matrix-gutter">
 
                     <div class="col-lg-6">
 
-                        <div class="card bg-primary">
-                            <img class="card-img show-on-mobile" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-unique-among-cats.jpg" alt="Card image">
+                        <div class="card bg-light">
+                            <div class="gradient-overlay-y-white">
+                                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-unique-among-cats.jpg" alt="Card image">
+                            </div>
+                            
                             <div class="card-img-overlay d-flex">
-                                <div class="container align-self-center">
+                                <div class="container align-self-end">
                                     <div class="narrow text-center my-3">
                                         <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">
                                             Unique among cats
@@ -369,10 +375,12 @@ $parent_title = get_the_title($post->post_parent);
 
                     <div class="col-lg-6">
 
-                        <div class="card bg-primary">
-                            <img class="card-img show-on-mobile" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-favorite-food.jpg" alt="Card image">
+                        <div class="card bg-light">
+                            <div class="gradient-overlay-y-white">
+                                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-favorite-food.jpg" alt="Card image">
+                            </div>
                             <div class="card-img-overlay d-flex">
-                                <div class="container align-self-center">
+                                <div class="container align-self-end">
                                     <div class="narrow text-center my-3">
                                         <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">
                                             A cheetah’s favorite food
@@ -399,7 +407,7 @@ $parent_title = get_the_title($post->post_parent);
 
                 <div class="card bg-white">
 
-                    <div class="overlay-gradient-y-white">
+                    <div class="gradient-overlay-y-white">
                         <img class="card-img" src="https://via.placeholder.com/1500x1000" alt="Card image">
                     </div>
 

@@ -15,7 +15,7 @@
 
             <div class="card">
 
-                <div class="overlay-gradient-y-black">
+                <div class="gradient-overlay-y-black">
 
                     <?php if ( $image ) : ?>
                         <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">

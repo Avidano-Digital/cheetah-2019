@@ -73,11 +73,11 @@ $quote_credit_title = $quote['credit_title'];
             <div class="card bg-info">
 
                 <?php if( $image ): ?>
-                <div class="overlay-gradient-y-black-tall">
+                <div class="gradient-overlay-y-black-tall">
                     <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
                 </div>
                 <?php else : ?>
-                <div class="overlay-gradient-y-black-tall">
+                <div class="gradient-overlay-y-black-tall">
                     <img class="card-img" src="https://via.placeholder.com/1200x800" alt="Placeholder">
                 </div>
                 <?php endif; ?>

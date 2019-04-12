@@ -71,7 +71,7 @@ $custom-link: true;
 
 // Gradients call a custom mixin in '_c-custom-mixins.scss'
 
-[class*="overlay-gradient-"]{
+[class*="gradient-overlay-"]{
   position: relative;
   overflow: hidden;
 
@@ -87,11 +87,11 @@ $custom-link: true;
 
 // Gradient Overlays
 
-.overlay-gradient-y-black::before{
+.gradient-overlay-y-black::before{
   @include linear-gradient();
 }
 
-.overlay-gradient-y-black-tall::before{
+.gradient-overlay-y-black-tall::before{
   @include linear-gradient(
     $direction: to bottom,
     $first-color: black,
@@ -103,7 +103,7 @@ $custom-link: true;
   );
 }
 
-.overlay-gradient-y-black-short::before{
+.gradient-overlay-y-black-short::before{
   @include linear-gradient(
     $direction: to bottom,
     $first-color: black,
@@ -116,7 +116,7 @@ $custom-link: true;
 }
 
 
-.overlay-gradient-y-white::before{
+.gradient-overlay-y-white::before{
   @include linear-gradient(
     $direction: to bottom,
     $first-color: white,
@@ -139,7 +139,7 @@ $custom-link: true;
 
 
 
-.overlay-gradient-x-right{
+.gradient-overlay-x-right{
   @include linear-gradient(
     $direction: to right,
     $first-color: black,
@@ -151,7 +151,7 @@ $custom-link: true;
   );
 }
 
-.overlay-gradient-x-left{
+.gradient-overlay-x-left{
   @include linear-gradient(
     $direction: to left,
     $first-color: black,
@@ -169,7 +169,7 @@ $custom-link: true;
 
 @mixin featured-panel-responsive-settings(){
 
-  [class^="overlay-gradient-"]::before{ display: none; }
+  [class^="gradient-overlay-"]::before{ display: none; }
   .card-img-overlay{ position: relative; }
   img{ @include opacity(1); }
 
