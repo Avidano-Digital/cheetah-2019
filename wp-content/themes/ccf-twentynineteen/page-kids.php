@@ -298,7 +298,7 @@ $parent_title = get_the_title($post->post_parent);
 
                             <div class="narrow text-center">
 
-                                <img class="rounded-circle my-2" src="https://via.placeholder.com/300" alt="Placeholder" style="height:200px;">
+                                <img class="rounded-circle my-2" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts_funny-haircut.jpg" alt="Placeholder" style="height:200px;">
                                 
                                 <h2 class="card-title f-cheetah-tracks display-3 mb-1 text-tertiary">Not just a funny haircut</h2>
                             
