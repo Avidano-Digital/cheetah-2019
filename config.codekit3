@@ -18831,15 +18831,81 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts_funny-haircut.jpg": {
+	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-cleat-feet.jpg": {
+		"ft": 16384,
+		"iS": 207712,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-cleat-feet.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-favorite-food.jpg": {
+		"ft": 16384,
+		"iS": 259112,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-favorite-food.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-funny-haircut.jpg": {
 		"ft": 16384,
 		"iS": 32508,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts_funny-haircut.jpg",
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-funny-haircut.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-spotted-skin.jpg": {
+		"ft": 16384,
+		"iS": 414720,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-spotted-skin.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-tail-like-rudder.jpg": {
+		"ft": 16384,
+		"iS": 214537,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-tail-like-rudder.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-tear-marks.jpg": {
+		"ft": 16384,
+		"iS": 282714,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-tear-marks.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-unique-among-cats.jpg": {
+		"ft": 16384,
+		"iS": 170374,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-unique-among-cats.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/themes/ccf-twentynineteen/images/map-flag-affiliate.svg": {

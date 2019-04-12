@@ -170,7 +170,7 @@ $parent_title = get_the_title($post->post_parent);
 
                     <div class="col-lg-6">
                         <div class="mx-n2">
-                            <img src="https://via.placeholder.com/1200x1200" alt="Card image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-tail-like-rudder.jpg" alt="Card image">
                         </div>
                     </div>
                     <!-- .col -->
@@ -198,7 +198,7 @@ $parent_title = get_the_title($post->post_parent);
 
                     <div class="col-lg-6">
                         <div class="mx-n2">
-                            <img src="https://via.placeholder.com/1200x1200" alt="Card image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-cleat-feet.jpg" alt="Card image">
                         </div>
                     </div>
                     <!-- .col -->
@@ -229,7 +229,7 @@ $parent_title = get_the_title($post->post_parent);
 
                     <div class="col-lg-6">
                         <div class="mx-n2">
-                            <img src="https://via.placeholder.com/1200x1200" alt="Card image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-tear-marks.jpg" alt="Card image">
                         </div>
                     </div>
                     <!-- .col -->
@@ -261,7 +261,7 @@ $parent_title = get_the_title($post->post_parent);
 
                     <div class="col-lg-6">
                         <div class="mx-n2">
-                            <img src="https://via.placeholder.com/1200x1200" alt="Card image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-spotted-skin.jpg" alt="Card image">
                         </div>
                     </div>
                     <!-- .col -->
@@ -270,7 +270,7 @@ $parent_title = get_the_title($post->post_parent);
 
                         <div class="narrow my-3">
                             <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary text-center">
-                                Spotted Skin
+                                Spotted skin
                             </h2>
                             <p>
                                 The cheetah’s fur is covered in solid black spots, and so is their skin! The black
@@ -298,7 +298,7 @@ $parent_title = get_the_title($post->post_parent);
 
                             <div class="narrow text-center">
 
-                                <img class="rounded-circle my-2" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts_funny-haircut.jpg" alt="Placeholder" style="height:200px;">
+                                <img class="rounded-circle my-2" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-funny-haircut.jpg" alt="Placeholder" style="height:200px;">
                                 
                                 <h2 class="card-title f-cheetah-tracks display-3 mb-1 text-tertiary">Not just a funny haircut</h2>
                             
@@ -347,7 +347,7 @@ $parent_title = get_the_title($post->post_parent);
                     <div class="col-lg-6">
 
                         <div class="card bg-primary">
-                            <img class="card-img show-on-mobile" src="https://via.placeholder.com/1200x1200" alt="Card image">
+                            <img class="card-img show-on-mobile" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-unique-among-cats.jpg" alt="Card image">
                             <div class="card-img-overlay d-flex">
                                 <div class="container align-self-center">
                                     <div class="narrow text-center my-3">
@@ -370,7 +370,7 @@ $parent_title = get_the_title($post->post_parent);
                     <div class="col-lg-6">
 
                         <div class="card bg-primary">
-                            <img class="card-img show-on-mobile" src="https://via.placeholder.com/1200x1200" alt="Card image">
+                            <img class="card-img show-on-mobile" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-favorite-food.jpg" alt="Card image">
                             <div class="card-img-overlay d-flex">
                                 <div class="container align-self-center">
                                     <div class="narrow text-center my-3">
@@ -409,7 +409,7 @@ $parent_title = get_the_title($post->post_parent);
 
                             <div class="narrow text-center my-5">
 
-                                <h2 class="f-cheetah-tracks display-3 mb-1 text-tertiary">The most endangered cat</h2>
+                                <h2 class="f-cheetah-tracks display-3 mb-1 text-tertiary">Africa's most endangered cat</h2>
 
                                 <p>
                                     There are fewer than 8,000 cheetahs left in the wild, making the cheetah Africa’s most endangered big cat.
