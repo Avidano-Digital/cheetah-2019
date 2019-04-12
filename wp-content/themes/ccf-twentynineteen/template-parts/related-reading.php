@@ -1,6 +1,7 @@
 <?php
 
-$relatedTag = get_the_title();
+global $post;
+$relatedTag = $post->post_name;
 $args = array( 
     'posts_per_page' => 3,
     'post_type' => 'Post',

@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Kids
+Template Name: Cheetah Facts
 */
 
 get_header();
@@ -35,13 +35,11 @@ $parent_title = get_the_title($post->post_parent);
         <div class="container" id="kids-tabs">
 
             <nav class="nav nav-pills flex-column flex-md-row" role="tablist">
-                <a class="nav-item nav-link flex-even active" id="tab-btn-01-a" href="#tab-01-a" data-toggle="pill"
-                    aria-controls="tab-01-a" aria-selected="true" role="tab">
+                <a class="nav-item nav-link flex-even active" href="/kids/cheetah-facts" aria-selected="true" role="tab">
                     Cheetah Facts
                 </a>
 
-                <a class="nav-item nav-link flex-even" id="tab-btn-01-b" href="#tab-01-b" data-toggle="pill"
-                    aria-controls="tab-01-b" aria-selected="false" role="tab">
+                <a class="nav-item nav-link flex-even" href="/kids/ccf-kids" aria-selected="false" role="tab">
                     CCF Kids
                 </a>
             </nav>
@@ -49,6 +47,8 @@ $parent_title = get_the_title($post->post_parent);
         </div>
 
     </section>
+
+    <?php get_template_part('template-parts/related-reading'); ?>
 
     <div class="wide overflow-hidden">
 

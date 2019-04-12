@@ -379,3 +379,36 @@
         return $query_string;
     }
     add_filter('request', 'remove_page_from_query_string');
+
+    ////////////////////////////////////////
+    // Redirects
+    ////////////////////////////////////////
+
+    function redirect_page() {
+
+        if (isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1) || isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') :
+            $protocol = 'https://';
+        else :
+            $protocol = 'http://';
+        endif;
+        
+        $currenturl = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        $currenturl_relative = wp_make_link_relative($currenturl);
+        $currenturl_relative = substr($currenturl_relative, 0, -1);
+
+        switch ($currenturl_relative) {
+        
+            case '/kids':
+                $urlto = home_url('/kids/cheetah-facts');
+                break;
+            
+            default:
+                return;
+        
+        }
+        
+        if ($currenturl != $urlto) exit( wp_redirect( $urlto ) );
+
+    }
+    add_action( 'template_redirect', 'redirect_page' );
+
