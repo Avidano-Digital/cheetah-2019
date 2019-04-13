@@ -15,12 +15,10 @@
             );
         }
 
-        if (is_page('kids')) {
-            wp_enqueue_style(
-                'cheetah-tracks',
-                'https://fonts.fontself.com/naod8qQ/cheetah-tracks-regular.css'
-            );
-        }
+        wp_enqueue_style(
+            'cheetah-tracks',
+            'https://fonts.fontself.com/naod8qQ/cheetah-tracks-regular.css'
+        );
 
         wp_enqueue_style( 
             'theme', 
