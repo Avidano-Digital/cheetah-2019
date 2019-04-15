@@ -18657,6 +18657,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/art/featured-artist.jpg": {
+		"ft": 16384,
+		"iS": 898284,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/art/featured-artist.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/wp-content/themes/ccf-twentynineteen/images/kids/cheetah-spots.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -19665,6 +19676,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/flexible-content-article.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/template-parts/kids-header.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/kids-header.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/template-parts/related-reading.php": {
