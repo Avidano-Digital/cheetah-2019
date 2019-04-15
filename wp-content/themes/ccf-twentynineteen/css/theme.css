@@ -4955,7 +4955,7 @@ div.figure-img,
 .ekko-lightbox .modal-footer {
   padding-left: 0.5rem !important; }
 
-.p-2 {
+.p-2, #primary-navigation-desktop .sub {
   padding: 1rem !important; }
 
 .pt-2,
@@ -7275,6 +7275,10 @@ html[dir="rtl"] .custom-control-label::before, html[dir="rtl"] .custom-control-l
 html[dir="rtl"] .custom-control {
   padding-right: 3.125rem; }
 
+html[dir="rtl"] .sub {
+  left: unset;
+  right: -1rem; }
+
 .btn {
   white-space: normal !important; }
 
@@ -8121,34 +8125,27 @@ In this file:
     color: #E3982E; }
 
 #primary-navigation-desktop > ul > li > a {
-  align-self: center; }
-
-#primary-navigation-desktop > ul > li > a {
-  color: #212529;
-  font-size: 1.5rem; }
+  align-self: center;
+  font-size: 1.5rem;
+  color: #212529; }
 
 #primary-navigation-desktop a.donate {
   font-weight: 400; }
 
 #primary-navigation-desktop .sub {
-  position: absolute;
-  margin-top: 0;
   display: none;
+  margin-top: 0;
+  position: absolute;
+  top: 100%;
+  left: -1rem;
   background: #212529;
   font-size: 1rem;
-  min-width: 200px;
-  top: 100%;
-  left: -2rem; }
-  #primary-navigation-desktop .sub ul {
-    padding: 2rem; }
+  min-width: 200px; }
   #primary-navigation-desktop .sub a {
     color: white; }
-  #primary-navigation-desktop .sub div {
-    border: 1px solid black; }
-    #primary-navigation-desktop .sub div ul li {
-      background: green; }
   #primary-navigation-desktop .sub.active {
-    display: block; }
+    display: block;
+    overflow: hidden; }
 
 #mobile-menu ul > li > a {
   color: white; }

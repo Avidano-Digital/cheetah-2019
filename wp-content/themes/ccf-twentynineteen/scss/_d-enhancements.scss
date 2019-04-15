@@ -156,6 +156,11 @@ html[dir="rtl"]{
     padding-right: ($custom-control-gutter + $custom-control-indicator-size);
   }
 
+  .sub{
+    left: unset;
+    right: -($spacer-2);
+  }
+
 } // end RTL
 
 // Add 'text-decoration: underline' on particular ':focus' selectors

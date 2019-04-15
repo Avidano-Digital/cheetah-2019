@@ -19343,6 +19343,14 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/page-ccf-events.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/page-ccf-kids.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page-ccf-kids.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/page-ccf-videos.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -19351,12 +19359,12 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/page-ccf-videos.php",
 		"oF": 0
 		},
-	"/wp-content/themes/ccf-twentynineteen/page-kids.php": {
+	"/wp-content/themes/ccf-twentynineteen/page-cheetah-facts.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/page-kids.php",
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page-cheetah-facts.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/page-resource-library.php": {

@@ -74,63 +74,62 @@ p{
   }
 }
 
-#primary-navigation-desktop{
+#primary-navigation-desktop {
 
-  > ul, 
-  > ul > li{
+  // Level 1
+
+  > ul,
+  > ul > li {
     display: flex;
   }
 
-  > ul > li{ 
+  > ul > li {
     position: relative;
     align-self: stretch;
 
-    &.current > a{
+    &.current > a {
       color: $secondary;
     }
   }
-  
-  > ul > li > a{ align-self: center; }
 
-  > ul > li > a{
-    @extend .align-self-center; 
-    color: $body-color;
+  > ul > li > a {
+    align-self: center;
+    @extend .align-self-center;
     font-size: $fs-lg;
+    color: $body-color;
 
-    &.active{ @extend .text-muted; }
+    &.active {
+      @extend .text-muted;
+    }
   }
 
-  a.donate{ font-weight: $font-weight-normal; }
+  a.donate {
+    font-weight: $font-weight-normal;
+  }
 
-  .sub{
+  .sub {
     @extend .shadow;
-    position: absolute;
-    margin-top: 0;
+    @extend .p-2;
     display: none;
+    margin-top: 0; 
 
+    position: absolute;
+    top: 100%;
+    left: -($spacer-2);
     background: $dark;
-
-    ul{
-      padding: $spacer-3;
-    }
     
     font-size: $fs-md;
     min-width: 200px;
 
-    top: 100%;
-    left: -($spacer-3);
 
-    a{ color: white; }
-
-
-    div{
-      border:1px solid black;
-      ul{ 
-        li{ background: green; }
-      }
+    a {
+      color: white;
     }
 
-    &.active{ display: block; }
+    &.active {
+      display: block;
+      overflow: hidden;
+    }
   }
 }
 

@@ -151,7 +151,7 @@ Author URI: http://fullwindsor.co
         }
 
         if ($menuitem->item_type == 'grandparent') {
-          echo '<li class="'.$current.'"><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a><ul class="extensible-list sub d-block" style="background-color: red !important"><li><div class="row no-gutters" style="width:480px;">';
+          echo '<li class="'.$current.'"><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a><ul class="extensible-list sub"><li><div class="row no-gutters mx-n2" style="width:480px;">';
           $grandparent_closing_tags = '</div></li></ul></li>';
           $count++;
           continue;
