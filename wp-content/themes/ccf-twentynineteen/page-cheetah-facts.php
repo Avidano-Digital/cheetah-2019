@@ -57,47 +57,46 @@ $parent_title = get_the_title($post->post_parent);
 
             <div class="container-fluid my-5">
 
-            <div class="medium">
+                <div class="medium">
 
-                <div class="rounded-lg overflow-hidden mb-4">
+                    <div class="rounded-lg overflow-hidden mb-4">
+                    
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                        </div>
+
+                    </div>
+                    <!-- .rounded-lg -->
+
+                    <div class="row matrix-gutter">
+                        <div class="col-md-6">
+                            <p>
+                                Unlike other “big cats”, a classification that includes: lions, tigers, leopards, jaguars and cougars)
+                                cheetahs don’t roar. They growl when facing danger, and they vocalize with sounds more equivalent to a
+                                high-pitched chirp or bubble.
+                            </p>
+                        </div>
+                        <!-- .col -->
+                        <div class="col-md-6">
+                            <p>
+                                Cheetahs bark when communicating with each other. The cheetah is also
+                                unique among big cats in that it can also purr while both inhaling and exhaling.
+                            </p>
+                        </div>
+                        <!-- .col -->
+                    
+                    </div>
+                    <!-- .row -->
                 
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
-                    </div>
-
                 </div>
-                <div class="row matrix-gutter">
-                    <div class="col-md-6">
-                        <p>
-                            Unlike other “big cats”, a classification that includes: lions, tigers, leopards, jaguars and cougars)
-                            cheetahs don’t roar. They growl when facing danger, and they vocalize with sounds more equivalent to a
-                            high-pitched chirp or bubble.
-                        </p>
-                    </div>
-                    <!-- .col -->
-                    <div class="col-md-6">
-                        <p>
-                            Cheetahs bark when communicating with each other. The cheetah is also
-                            unique among big cats in that it can also purr while both inhaling and exhaling.
-                        </p>
-                    </div>
-                    <!-- .col -->
-                
-                </div>
-                <!-- .row -->
-            
-            
-            </div>
-            <!-- .medium -->
-
+                <!-- .medium -->
 
             </div>
             <!-- .container -->
 
             <div class="container my-5">
 
-                <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.png"
-                    alt="Card image">
+                <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.png" alt="Card image">
 
                 <div class="narrow text-center mt-n3 mt-lg-n6">
 
@@ -112,6 +111,7 @@ $parent_title = get_the_title($post->post_parent);
                     </p>
 
                 </div>
+                <!-- .narrow -->
 
             </div>
             <!-- .container -->
@@ -119,6 +119,7 @@ $parent_title = get_the_title($post->post_parent);
             <div class="featured-panel responsive-lg my-5">
 
                 <div class="card bg-light">
+
                     <div class="gradient-overlay-y-white d-none d-lg-block">
                         <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/almost-like-flying.jpg" alt="Card image">
                     </div>
@@ -149,6 +150,7 @@ $parent_title = get_the_title($post->post_parent);
                 <!-- .card -->
 
             </div>
+            <!-- .featured-panel -->
 
             <div class="container my-5">
 
@@ -163,7 +165,8 @@ $parent_title = get_the_title($post->post_parent);
 
                     <div class="col-lg-6">
 
-                        <div class="narrow my-3">
+                        <div class="narrow p-3">
+
                             <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary text-center">
                                 Tail like a rudder
                             </h2>
@@ -278,7 +281,7 @@ $parent_title = get_the_title($post->post_parent);
                 <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-running.png"
                     alt="Card image">
 
-                <div class="narrow text-center mt-n3 mt-lg-n6">
+                <div class="medium text-center mt-n3 mt-lg-n6">
 
                     <img class="rounded-circle mb-3" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-funny-haircut.jpg" alt="Placeholder" style="height:200px;">
 
