@@ -93,7 +93,9 @@ $parent_title = get_the_title($post->post_parent);
 
                             <div class="col-lg-6 offset-lg-6">
 
-                                <div class="narrow text-center my-3">
+                                <div class="narrow text-center my-3x">
+
+                                    <img class="rounded-circle my-2" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg" alt="Placeholder" style="height:200px;">
 
                                     <h2 class="card-title f-cheetah-tracks display-3 mb-2 text-tertiary">A lot of kids</h2>
                                 
@@ -105,7 +107,7 @@ $parent_title = get_the_title($post->post_parent);
 
                                 </div>
 
-                                <ul class="extensible-list horizontal justify-content-center funky my-3">
+                                <ul class="extensible-list horizontal justify-content-center funky my-3 d-none">
                                     <li class="tilt-left">
                                         <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
                                             alt="Placeholder" style="height:150px;">
