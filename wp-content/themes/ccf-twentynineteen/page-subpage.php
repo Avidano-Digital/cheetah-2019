@@ -67,10 +67,4 @@ $parent_title = get_the_title($post->post_parent);
 </main>
 <!-- #content -->
 
-<?php if (is_page('sponsor')):
-
-get_template_part('template-parts/ccf-cheetah-modals');
-
-endif; ?>
-
 <?php get_footer();
