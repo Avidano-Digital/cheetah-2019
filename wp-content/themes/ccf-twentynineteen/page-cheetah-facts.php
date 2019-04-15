@@ -285,6 +285,7 @@ $parent_title = get_the_title($post->post_parent);
                 <!-- .row -->
             
             </div>
+            <!-- .container -->
 
             <div class="featured-panel responsive-lg my-6">
 
@@ -343,79 +344,83 @@ $parent_title = get_the_title($post->post_parent);
 
             </div>
 
+
+
             <div class="container my-5">
 
-                <div class="row matrix-gutter">
+                <div class="row align-items-center bg-light my-3">
 
                     <div class="col-lg-6">
-
-                        <div class="card bg-light">
-                            <div class="gradient-overlay-y-white">
-                                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-unique-among-cats.jpg" alt="Card image">
-                            </div>
-                            
-                            <div class="card-img-overlay d-flex">
-                                <div class="container align-self-end">
-                                    <div class="narrow text-center my-3">
-                                        <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">
-                                            Unique among cats
-                                        </h2>
-                                        <p>
-                                            The cheetah has a long, muscular tail that has a flat shape. The tail almost functions
-                                            like a rudder on a boat because they use it to help control their steering and keep
-                                            their balance when running very fast.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="mx-n2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-unique-among-cats.jpg" alt="Card image">
                         </div>
-
                     </div>
                     <!-- .col -->
 
                     <div class="col-lg-6">
 
-                        <div class="card bg-light">
-                            <div class="gradient-overlay-y-white">
-                                <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-favorite-food.jpg" alt="Card image">
-                            </div>
-                            <div class="card-img-overlay d-flex">
-                                <div class="container align-self-end">
-                                    <div class="narrow text-center my-3">
-                                        <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary">
-                                            A cheetah’s favorite food
-                                        </h2>
-                                        <p>
-                                            Cheetahs are carnivores, and feed mostly on smaller antelope like springbok,
-                                            steenbok, Thomson’s gazelle, and duiker. They usually chase down their prey and
-                                            then bite its throat, killing it by cutting off its air supply (suffocation).
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="narrow my-3">
+                            <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary text-center">
+                                Unique among cats
+                            </h2>
+                            <p>
+                                The cheetah has a long, muscular tail that has a flat shape. The tail almost functions
+                                like a rudder on a boat because they use it to help control their steering and keep
+                                their balance when running very fast.
+                            </p>
                         </div>
 
                     </div>
                     <!-- .col -->
 
-                
                 </div>
+                <!-- .row -->
+
+                <div class="row align-items-center bg-light my-3">
+
+                    <div class="col-lg-6">
+                        <div class="mx-n2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-favorite-food.jpg" alt="Card image">
+                        </div>
+                    </div>
+                    <!-- .col -->
+
+                    <div class="col-lg-6">
+
+                        <div class="narrow my-3">
+                            <h2 class="card-title display-3 mb-2 f-cheetah-tracks text-tertiary text-center">
+                                A cheetah’s favorite food
+                            </h2>
+                            <p>
+                                Cheetahs are carnivores, and feed mostly on smaller antelope like springbok,
+                                steenbok, Thomson’s gazelle, and duiker. They usually chase down their prey and
+                                then bite its throat, killing it by cutting off its air supply (suffocation).
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- .col -->
+
+
+                </div>
+                <!-- .row -->
             
             </div>
+            <!-- .container -->
 
             <div class="featured-panel responsive-lg" dir="ltr">
 
                 <div class="card bg-white">
 
                     <div class="gradient-overlay-y-white">
-                        <img class="card-img" src="https://via.placeholder.com/1500x1000" alt="Card image">
+                        <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/africas-most-endangered-cat.jpg" alt="Card image">
                     </div>
 
                     <div class="card-img-overlay d-flex px-0">
 
-                        <div class="container align-self-center">
+                        <div class="container align-self-end">
 
-                            <div class="narrow text-center my-5">
+                            <div class="narrow text-center my-4">
 
                                 <h2 class="f-cheetah-tracks display-3 mb-1 text-tertiary">Africa's most endangered cat</h2>
 
@@ -423,15 +428,27 @@ $parent_title = get_the_title($post->post_parent);
                                     There are fewer than 8,000 cheetahs left in the wild, making the cheetah Africa’s most endangered big cat.
                                 </p>
 
+                                <div class="row matrix-border mt-3">
+                                    <div class="col-md-6">
+                                        <a href="#" class="btn btn-lg btn-block btn-primary">
+                                            Become a CCF Kid!
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="btn btn-lg btn-block btn-primary">
+                                            More Educational Resources
+                                        </a>
+                                    </div>
+                                </div>
+
                             </div>
                             <!-- .narrow -->
-
 
                         </div>
                         <!-- .container -->
 
                     </div>
-                    <!-- .container -->
+                    <!-- .card-img-overlay -->
 
                 </div>
                 <!-- .card -->
@@ -442,18 +459,6 @@ $parent_title = get_the_title($post->post_parent);
             <div class="container my-5">
 
                 <div class="narrow">
-                    <div class="row matrix-border">
-                        <div class="col-md-6">
-                            <a href="#" class="btn btn-lg btn-block btn-primary">
-                                Become a CCF Kid!
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="#" class="btn btn-lg btn-block btn-primary">
-                                More Educational Resources
-                            </a>
-                        </div>
-                    </div>
 
                 </div>
 

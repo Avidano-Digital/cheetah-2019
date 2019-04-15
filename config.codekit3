@@ -18624,6 +18624,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/images/kids/africas-most-endangered-cat.jpg": {
+		"ft": 16384,
+		"iS": 442430,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/africas-most-endangered-cat.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/themes/ccf-twentynineteen/images/kids/almost-like-flying-mobile.jpg": {
 		"ft": 16384,
 		"iS": 111583,
@@ -18752,7 +18763,7 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-spotted-skin.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/themes/ccf-twentynineteen/images/kids/figure/kids-cheetah-facts-tail-like-rudder.jpg": {
