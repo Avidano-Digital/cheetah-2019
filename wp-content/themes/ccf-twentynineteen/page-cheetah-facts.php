@@ -297,7 +297,7 @@ $parent_title = get_the_title($post->post_parent);
 
                     <div class="card-img-overlay d-flex">
 
-                        <div class="align-self-end">
+                        <div class="align-self-end mt-n6 mt-lg-0">
 
                             <div class="narrow text-center">
 
@@ -315,12 +315,12 @@ $parent_title = get_the_title($post->post_parent);
                 </div>
                 <!-- .card -->
 
-                <div class="container my-3">
+                <div class="container my-lg-3">
                     <div class="medium">
                     
                         <div class="row matrix-gutter">
 
-                            <div class="col">
+                            <div class="col-md">
                                 <p>
                                     Cheetah cubs have long tall hair that runs from their neck all the way down to the base of
                                     their tail, called the mantle.
@@ -328,7 +328,7 @@ $parent_title = get_the_title($post->post_parent);
                             </div>
                             <!-- .col -->
 
-                            <div class="col">
+                            <div class="col-md">
                                 <p>
                                     The mantle makes a cheetah cub look like a honey badger and makes them blend into tall grass, which helps
                                     keep them safe from threats like lions and hyenas.
