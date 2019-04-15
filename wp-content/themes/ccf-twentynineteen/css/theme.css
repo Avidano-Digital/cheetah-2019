@@ -4678,7 +4678,7 @@ button.bg-quaternary:focus {
   z-index: 1030; }
 
 @supports (position: sticky) {
-  .sticky-top {
+  .sticky-top, html::before {
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -4701,7 +4701,7 @@ button.bg-quaternary:focus {
   clip: auto;
   white-space: normal; }
 
-.shadow-sm, #map-affiliates .leaflet-bar a {
+.shadow-sm, html::before, #map-affiliates .leaflet-bar a {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3) !important; }
 
 .shadow, .tab-skipper, #primary-navigation-desktop .sub {
@@ -7338,7 +7338,7 @@ label,
     font-size: 1.25rem; } }
 
 @supports (position: -webkit-sticky) or (position: sticky) {
-  .sticky-top {
+  .sticky-top, html::before {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -8094,6 +8094,36 @@ In this file:
 // B. Container highlighter
 
 */
+html {
+  height: auto !important; }
+  html::before {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    z-index: 5000;
+    background: rgba(128, 0, 128, 0.9); }
+  html::before {
+    content: "breakpoint: xs"; }
+  @media (min-width: 480px) {
+    html::before {
+      content: "breakpoint: sm"; } }
+  @media (min-width: 720px) {
+    html::before {
+      content: "breakpoint: md"; } }
+  @media (min-width: 960px) {
+    html::before {
+      content: "breakpoint: lg"; } }
+  @media (min-width: 1200px) {
+    html::before {
+      content: "breakpoint: xl"; } }
+  @media (min-width: 1440px) {
+    html::before {
+      content: "breakpoint: xxl"; } }
+  @media (min-width: 1680px) {
+    html::before {
+      content: "breakpoint: xxxl"; } }
+
 .f-serif, p, .text-block > ul:not([class]) {
   font-family: Georgia, 'Times New Roman', Times, serif; }
 

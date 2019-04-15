@@ -54,83 +54,66 @@ $parent_title = get_the_title($post->post_parent);
 
         <div class="my-6" id="primary-content">
 
-            <div class="container my-5">
+            <div class="container-fluid my-5">
 
-                <div class="medium rounded-lg overflow-hidden my-4">
+            <div class="medium">
 
+                <div class="rounded-lg overflow-hidden mb-4">
+                
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
                     </div>
 
                 </div>
-                <!-- .narrow -->
-
-                <div class="narrow">
-                    <p>
-                        Unlike other “big cats”, a classification that includes: lions, tigers, leopards, jaguars and cougars)
-                        cheetahs don’t roar. They growl when facing danger, and they vocalize with sounds more equivalent to a
-                        high-pitched chirp or bubble.
-                    </p>
-                    <p>
-                        Cheetahs bark when communicating with each other. The cheetah is also
-                        unique among big cats in that it can also purr while both inhaling and exhaling.
-                    </p>
+                <div class="row matrix-gutter">
+                    <div class="col-md-6">
+                        <p>
+                            Unlike other “big cats”, a classification that includes: lions, tigers, leopards, jaguars and cougars)
+                            cheetahs don’t roar. They growl when facing danger, and they vocalize with sounds more equivalent to a
+                            high-pitched chirp or bubble.
+                        </p>
+                    </div>
+                    <!-- .col -->
+                    <div class="col-md-6">
+                        <p>
+                            Cheetahs bark when communicating with each other. The cheetah is also
+                            unique among big cats in that it can also purr while both inhaling and exhaling.
+                        </p>
+                    </div>
+                    <!-- .col -->
+                
                 </div>
-                <!-- .narrow -->
+                <!-- .row -->
+            
+            
+            </div>
+            <!-- .medium -->
+
 
             </div>
             <!-- .container -->
 
-            <div class="featured-panel responsive-lg my-6">
+            <div class="container my-5">
 
-                <div class="card px-2">
+                <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.png"
+                    alt="Card image">
 
-                    <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-playing.png" alt="Card image">
+                <div class="narrow text-center mt-n3 mt-lg-n6">
 
-                    <div class="card-img-overlay">
+                    <img class="rounded-circle mb-3" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg" alt="Placeholder" style="height:200px;">
 
-                        <div class="row">
+                    <h2 class="card-title f-cheetah-tracks display-3 mb-2 text-tertiary">A lot of kids</h2>
 
-                            <div class="col-lg-6 offset-lg-6">
-
-                                <div class="narrow text-center my-3x">
-
-                                    <img class="rounded-circle my-2" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg" alt="Placeholder" style="height:200px;">
-
-                                    <h2 class="card-title f-cheetah-tracks display-3 mb-2 text-tertiary">A lot of kids</h2>
-                                
-                                    <p>
-                                        A mother cheetah usually cares for anywhere from 2 to 8 cubs per
-                                        litter, but cubs are often the target of other predators and many do not survive
-                                        past the first year.
-                                    </p>
-
-                                </div>
-
-                                <ul class="extensible-list horizontal justify-content-center funky my-3 d-none">
-                                    <li class="tilt-left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg"
-                                            alt="Placeholder" style="height:150px;">
-                                    </li>
-                                    <li class="tilt-right">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/02.jpg"
-                                            alt="Placeholder" style="height:125px;">
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <!-- .col -->
-
-                        </div>
-                        <!-- .row -->
-
-                    </div>
-                    <!-- .card-img-overlay -->
+                    <p>
+                        A mother cheetah usually cares for anywhere from 2 to 8 cubs per
+                        litter, but cubs are often the target of other predators and many do not survive
+                        past the first year.
+                    </p>
 
                 </div>
-                <!-- .card -->
 
             </div>
+            <!-- .container -->
 
             <div class="featured-panel responsive-lg my-5">
 
@@ -289,36 +272,18 @@ $parent_title = get_the_title($post->post_parent);
             </div>
             <!-- .container -->
 
-            <div class="featured-panel responsive-lg my-6">
+            <div class="container my-5">
 
-                <div class="card px-2">
-                
-                    <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-running.png" alt="Card image">
+                <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/images/kids/cheetahs-running.png"
+                    alt="Card image">
 
-                    <div class="card-img-overlay d-flex">
+                <div class="narrow text-center mt-n3 mt-lg-n6">
 
-                        <div class="align-self-end mt-n6 mt-lg-0">
+                    <img class="rounded-circle mb-3" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-funny-haircut.jpg" alt="Placeholder" style="height:200px;">
 
-                            <div class="narrow text-center">
+                    <h2 class="card-title f-cheetah-tracks display-3 mb-2 text-tertiary">Not just a funny haircut</h2>
 
-                                <img class="rounded-circle my-2" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/kids-cheetah-facts-funny-haircut.jpg" alt="Placeholder" style="height:200px;">
-                                
-                                <h2 class="card-title f-cheetah-tracks display-3 mb-1 text-tertiary">Not just a funny haircut</h2>
-                            
-                            </div>
-
-                        </div>
-                        <!-- .align-self-end -->
-
-                    </div>
-
-                </div>
-                <!-- .card -->
-
-                <div class="container my-lg-3">
-                    <div class="medium">
-                    
-                        <div class="row matrix-gutter">
+                        <div class="row matrix-gutter text-left">
 
                             <div class="col-md">
                                 <p>
@@ -339,14 +304,10 @@ $parent_title = get_the_title($post->post_parent);
                         </div>
                         <!-- .row -->
 
-                    </div>
-                    <!-- .medium -->
                 </div>
-                <!-- .container -->
 
             </div>
-
-
+            <!-- .container -->
 
             <div class="container my-5">
 
