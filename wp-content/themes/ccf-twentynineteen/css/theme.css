@@ -3668,14 +3668,12 @@ button.bg-success:hover,
 button.bg-success:focus {
   background-color: #1e7e34 !important; }
 
-.bg-info, .hard-shadow-info::before {
+.bg-info {
   background-color: #462B41 !important; }
 
-a.bg-info:hover, a.hard-shadow-info:hover::before, a.bg-info:focus, a.hard-shadow-info:focus::before,
+a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
-button.hard-shadow-info:hover::before,
-button.bg-info:focus,
-button.hard-shadow-info:focus::before {
+button.bg-info:focus {
   background-color: #261824 !important; }
 
 .bg-warning {
@@ -4651,10 +4649,10 @@ button.bg-quaternary:focus {
 .position-static {
   position: static !important; }
 
-.position-relative, form[role="search"] .input-group, .pattern-border-top-bottom, .pattern-border-top, .pattern-wavy-top, .pattern-border-colored {
+.position-relative, form[role="search"] .input-group, .pattern-border-top-bottom, .pattern-border-top, .pattern-border-colored {
   position: relative !important; }
 
-.position-absolute, .tab-skipper, form[role="search"] button, [class*="hard-shadow-"]::before {
+.position-absolute, .tab-skipper, form[role="search"] button {
   position: absolute !important; }
 
 .position-fixed {
@@ -4723,7 +4721,7 @@ button.bg-quaternary:focus {
 .w-75 {
   width: 75% !important; }
 
-.w-100, [class*="hard-shadow-"]::before {
+.w-100 {
   width: 100% !important; }
 
 .w-auto {
@@ -4738,7 +4736,7 @@ button.bg-quaternary:focus {
 .h-75 {
   height: 75% !important; }
 
-.h-100, form[role="search"] button, [class*="hard-shadow-"]::before {
+.h-100, form[role="search"] button {
   height: 100% !important; }
 
 .h-auto {
@@ -7366,6 +7364,7 @@ In this file:
 // G. Offset x axis
 // H. Buttons and links
 // I. Lists
+// J. Flex
 
 */
 .fs-sm {
@@ -7430,7 +7429,7 @@ form[role="search"] button {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
   filter: alpha(opacity=10); }
 
-.opacity-20, [class*="hard-shadow-"]::before {
+.opacity-20 {
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20); }
@@ -7545,6 +7544,9 @@ ol.space-li li {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
+.flex-even {
+  flex: 1; }
+
 /*
 
 In this file:
@@ -7654,7 +7656,7 @@ In this file:
     text-shadow: none; }
   .featured-panel.responsive-sm .bg-white a.link {
     color: #fd7e14 !important; }
-  .featured-panel.responsive-sm .bg-info h1, .featured-panel.responsive-sm .hard-shadow-info::before h1, .featured-panel.responsive-sm .bg-info h2, .featured-panel.responsive-sm .hard-shadow-info::before h2, .featured-panel.responsive-sm .bg-info h3, .featured-panel.responsive-sm .hard-shadow-info::before h3, .featured-panel.responsive-sm .bg-info h4, .featured-panel.responsive-sm .hard-shadow-info::before h4, .featured-panel.responsive-sm .bg-info p, .featured-panel.responsive-sm .hard-shadow-info::before p, .featured-panel.responsive-sm .bg-info a.link, .featured-panel.responsive-sm .hard-shadow-info::before a.link, .featured-panel.responsive-sm .bg-info blockquote, .featured-panel.responsive-sm .hard-shadow-info::before blockquote, .featured-panel.responsive-sm .bg-info div, .featured-panel.responsive-sm .hard-shadow-info::before div {
+  .featured-panel.responsive-sm .bg-info h1, .featured-panel.responsive-sm .bg-info h2, .featured-panel.responsive-sm .bg-info h3, .featured-panel.responsive-sm .bg-info h4, .featured-panel.responsive-sm .bg-info p, .featured-panel.responsive-sm .bg-info a.link, .featured-panel.responsive-sm .bg-info blockquote, .featured-panel.responsive-sm .bg-info div {
     text-shadow: none; } }
 
 @media (max-width: 719.98px) {
@@ -7672,7 +7674,7 @@ In this file:
     text-shadow: none; }
   .featured-panel.responsive-md .bg-white a.link {
     color: #fd7e14 !important; }
-  .featured-panel.responsive-md .bg-info h1, .featured-panel.responsive-md .hard-shadow-info::before h1, .featured-panel.responsive-md .bg-info h2, .featured-panel.responsive-md .hard-shadow-info::before h2, .featured-panel.responsive-md .bg-info h3, .featured-panel.responsive-md .hard-shadow-info::before h3, .featured-panel.responsive-md .bg-info h4, .featured-panel.responsive-md .hard-shadow-info::before h4, .featured-panel.responsive-md .bg-info p, .featured-panel.responsive-md .hard-shadow-info::before p, .featured-panel.responsive-md .bg-info a.link, .featured-panel.responsive-md .hard-shadow-info::before a.link, .featured-panel.responsive-md .bg-info blockquote, .featured-panel.responsive-md .hard-shadow-info::before blockquote, .featured-panel.responsive-md .bg-info div, .featured-panel.responsive-md .hard-shadow-info::before div {
+  .featured-panel.responsive-md .bg-info h1, .featured-panel.responsive-md .bg-info h2, .featured-panel.responsive-md .bg-info h3, .featured-panel.responsive-md .bg-info h4, .featured-panel.responsive-md .bg-info p, .featured-panel.responsive-md .bg-info a.link, .featured-panel.responsive-md .bg-info blockquote, .featured-panel.responsive-md .bg-info div {
     text-shadow: none; } }
 
 @media (max-width: 959.98px) {
@@ -7690,7 +7692,7 @@ In this file:
     text-shadow: none; }
   .featured-panel.responsive-lg .bg-white a.link {
     color: #fd7e14 !important; }
-  .featured-panel.responsive-lg .bg-info h1, .featured-panel.responsive-lg .hard-shadow-info::before h1, .featured-panel.responsive-lg .bg-info h2, .featured-panel.responsive-lg .hard-shadow-info::before h2, .featured-panel.responsive-lg .bg-info h3, .featured-panel.responsive-lg .hard-shadow-info::before h3, .featured-panel.responsive-lg .bg-info h4, .featured-panel.responsive-lg .hard-shadow-info::before h4, .featured-panel.responsive-lg .bg-info p, .featured-panel.responsive-lg .hard-shadow-info::before p, .featured-panel.responsive-lg .bg-info a.link, .featured-panel.responsive-lg .hard-shadow-info::before a.link, .featured-panel.responsive-lg .bg-info blockquote, .featured-panel.responsive-lg .hard-shadow-info::before blockquote, .featured-panel.responsive-lg .bg-info div, .featured-panel.responsive-lg .hard-shadow-info::before div {
+  .featured-panel.responsive-lg .bg-info h1, .featured-panel.responsive-lg .bg-info h2, .featured-panel.responsive-lg .bg-info h3, .featured-panel.responsive-lg .bg-info h4, .featured-panel.responsive-lg .bg-info p, .featured-panel.responsive-lg .bg-info a.link, .featured-panel.responsive-lg .bg-info blockquote, .featured-panel.responsive-lg .bg-info div {
     text-shadow: none; } }
 
 @media (max-width: 1199.98px) {
@@ -7708,7 +7710,7 @@ In this file:
     text-shadow: none; }
   .featured-panel.responsive-xl .bg-white a.link {
     color: #fd7e14 !important; }
-  .featured-panel.responsive-xl .bg-info h1, .featured-panel.responsive-xl .hard-shadow-info::before h1, .featured-panel.responsive-xl .bg-info h2, .featured-panel.responsive-xl .hard-shadow-info::before h2, .featured-panel.responsive-xl .bg-info h3, .featured-panel.responsive-xl .hard-shadow-info::before h3, .featured-panel.responsive-xl .bg-info h4, .featured-panel.responsive-xl .hard-shadow-info::before h4, .featured-panel.responsive-xl .bg-info p, .featured-panel.responsive-xl .hard-shadow-info::before p, .featured-panel.responsive-xl .bg-info a.link, .featured-panel.responsive-xl .hard-shadow-info::before a.link, .featured-panel.responsive-xl .bg-info blockquote, .featured-panel.responsive-xl .hard-shadow-info::before blockquote, .featured-panel.responsive-xl .bg-info div, .featured-panel.responsive-xl .hard-shadow-info::before div {
+  .featured-panel.responsive-xl .bg-info h1, .featured-panel.responsive-xl .bg-info h2, .featured-panel.responsive-xl .bg-info h3, .featured-panel.responsive-xl .bg-info h4, .featured-panel.responsive-xl .bg-info p, .featured-panel.responsive-xl .bg-info a.link, .featured-panel.responsive-xl .bg-info blockquote, .featured-panel.responsive-xl .bg-info div {
     text-shadow: none; } }
 
 @media (max-width: 1439.98px) {
@@ -7726,7 +7728,7 @@ In this file:
     text-shadow: none; }
   .featured-panel.responsive-xxl .bg-white a.link {
     color: #fd7e14 !important; }
-  .featured-panel.responsive-xxl .bg-info h1, .featured-panel.responsive-xxl .hard-shadow-info::before h1, .featured-panel.responsive-xxl .bg-info h2, .featured-panel.responsive-xxl .hard-shadow-info::before h2, .featured-panel.responsive-xxl .bg-info h3, .featured-panel.responsive-xxl .hard-shadow-info::before h3, .featured-panel.responsive-xxl .bg-info h4, .featured-panel.responsive-xxl .hard-shadow-info::before h4, .featured-panel.responsive-xxl .bg-info p, .featured-panel.responsive-xxl .hard-shadow-info::before p, .featured-panel.responsive-xxl .bg-info a.link, .featured-panel.responsive-xxl .hard-shadow-info::before a.link, .featured-panel.responsive-xxl .bg-info blockquote, .featured-panel.responsive-xxl .hard-shadow-info::before blockquote, .featured-panel.responsive-xxl .bg-info div, .featured-panel.responsive-xxl .hard-shadow-info::before div {
+  .featured-panel.responsive-xxl .bg-info h1, .featured-panel.responsive-xxl .bg-info h2, .featured-panel.responsive-xxl .bg-info h3, .featured-panel.responsive-xxl .bg-info h4, .featured-panel.responsive-xxl .bg-info p, .featured-panel.responsive-xxl .bg-info a.link, .featured-panel.responsive-xxl .bg-info blockquote, .featured-panel.responsive-xxl .bg-info div {
     text-shadow: none; } }
 
 @media (max-width: 1679.98px) {
@@ -7744,7 +7746,7 @@ In this file:
     text-shadow: none; }
   .featured-panel.responsive-xxxl .bg-white a.link {
     color: #fd7e14 !important; }
-  .featured-panel.responsive-xxxl .bg-info h1, .featured-panel.responsive-xxxl .hard-shadow-info::before h1, .featured-panel.responsive-xxxl .bg-info h2, .featured-panel.responsive-xxxl .hard-shadow-info::before h2, .featured-panel.responsive-xxxl .bg-info h3, .featured-panel.responsive-xxxl .hard-shadow-info::before h3, .featured-panel.responsive-xxxl .bg-info h4, .featured-panel.responsive-xxxl .hard-shadow-info::before h4, .featured-panel.responsive-xxxl .bg-info p, .featured-panel.responsive-xxxl .hard-shadow-info::before p, .featured-panel.responsive-xxxl .bg-info a.link, .featured-panel.responsive-xxxl .hard-shadow-info::before a.link, .featured-panel.responsive-xxxl .bg-info blockquote, .featured-panel.responsive-xxxl .hard-shadow-info::before blockquote, .featured-panel.responsive-xxxl .bg-info div, .featured-panel.responsive-xxxl .hard-shadow-info::before div {
+  .featured-panel.responsive-xxxl .bg-info h1, .featured-panel.responsive-xxxl .bg-info h2, .featured-panel.responsive-xxxl .bg-info h3, .featured-panel.responsive-xxxl .bg-info h4, .featured-panel.responsive-xxxl .bg-info p, .featured-panel.responsive-xxxl .bg-info a.link, .featured-panel.responsive-xxxl .bg-info blockquote, .featured-panel.responsive-xxxl .bg-info div {
     text-shadow: none; } }
 
 .featured-block .card-img-overlay {
@@ -8305,20 +8307,6 @@ span.fa-circle.partner-organization {
   background-size: auto;
   background-repeat: repeat; }
 
-.pattern-wavy-top::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 400px;
-  left: 0; }
-
-.pattern-wavy-top::before {
-  top: 50%;
-  background-image: url("../images/wavy-background.svg");
-  background-image: url("../images/wavy-background.svg"), none;
-  background-size: auto;
-  background-repeat: repeat; }
-
 .african-hr {
   border-top: none;
   height: 20px;
@@ -8326,9 +8314,6 @@ span.fa-circle.partner-organization {
   background-image: url("../images/african-hr.svg"), none;
   background-size: auto;
   background-repeat: repeat; }
-
-.flex-even {
-  flex: 1; }
 
 .for-kids .featured-panel * {
   text-shadow: none !important; }
@@ -8339,23 +8324,6 @@ span.fa-circle.partner-organization {
   color: #212529; }
   #kids-tabs a.nav-item.active {
     background-color: #fff !important; }
-
-[class*="hard-shadow-"] {
-  position: relative; }
-  [class*="hard-shadow-"]::before {
-    content: "";
-    background: black;
-    top: 0.75rem;
-    left: 0.75rem; }
-  @media (max-width: 719.98px) {
-    [class*="hard-shadow-"]::before {
-      display: none; } }
-
-.funky > li.tilt-right {
-  transform: rotate(3deg); }
-
-.funky > li.tilt-left {
-  transform: rotate(-3deg); }
 
 .pattern-border-colored::before, .pattern-border-colored::after {
   content: "\00a0";

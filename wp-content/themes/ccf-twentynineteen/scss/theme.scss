@@ -382,27 +382,6 @@ $leaflet-button-color: white;
 
 }
 
-.pattern-wavy-top{
-  
-  @extend .position-relative;
-
-  &::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    left: 0;
-
-  }
-
-  &::before {
-    top: 50%;
-    
-    @include apply-background-image('wavy-background', '.svg');
-  }
-
-}
-
 .african-hr{
   border-top: none;
   height: 20px;
@@ -410,11 +389,9 @@ $leaflet-button-color: white;
 
 }
 
-
-
-.flex-even {
-  flex: 1;
-}
+////////////////////////////////////////
+// Kids
+////////////////////////////////////////
 
 .for-kids .featured-panel *{
 
@@ -431,11 +408,9 @@ $leaflet-button-color: white;
     @extend .bg-primary;
     @extend .py-2;
 
-    
     font-size: $fs-xl;
 
     border-radius: $border-radius-lg $border-radius-lg 0 0;
-    // width: 50%;
     color: $body-color;
 
     &.active {
@@ -445,58 +420,10 @@ $leaflet-button-color: white;
 }
 
 
-
-[class*="hard-shadow-"]{
-  position: relative; 
-
-  &::before {
-    content: "";
-    @extend .position-absolute;
-    @extend .h-100;
-    @extend .w-100;
-    background: black;
-    @extend .opacity-20;
-
-    top: 0.75rem;
-    left: 0.75rem;
-
-  }
-
-  @include media-breakpoint-down(sm) {
-      &::before { display: none; }
-  }
-}
-
-
-
-
-.hard-shadow-info{
-  &::before {
-      @extend .bg-info;
-  }
-}
-
-.funky > li{
-  
-
-  &.tilt-right{
-    transform: rotate(3deg);   
-    // margin-left: -2rem;
-
-  }
-  &.tilt-left{
-    transform: rotate(-3deg);
-  }
-}
-
-
-
-
-
-.pattern-border-colored{
+.pattern-border-colored {
 
   @extend .py-4;
-  
+
   @extend .position-relative;
 
   &::before,
@@ -512,6 +439,7 @@ $leaflet-button-color: white;
     top: .5rem;
     @include apply-background-image('pattern-colored-angles', '.svg');
   }
+
   &::after {
     bottom: .5rem;
     @include apply-background-image('pattern-colored-angles', '.svg');

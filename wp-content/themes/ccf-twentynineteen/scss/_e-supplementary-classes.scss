@@ -10,6 +10,7 @@ In this file:
 // G. Offset x axis
 // H. Buttons and links
 // I. Lists
+// J. Flex
 
 */
 
@@ -175,4 +176,12 @@ ol
  
         }
     }
+}
+
+////////////////////////////////////////
+// J. Flex
+////////////////////////////////////////
+
+.flex-even {
+  flex: 1;
 }

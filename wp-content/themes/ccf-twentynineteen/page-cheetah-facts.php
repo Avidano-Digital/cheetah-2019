@@ -35,6 +35,7 @@ $parent_title = get_the_title($post->post_parent);
         <div class="container" id="kids-tabs">
 
             <nav class="nav nav-pills flex-column flex-md-row" role="tablist">
+
                 <a class="nav-item nav-link flex-even active" href="/kids/cheetah-facts" aria-selected="true" role="tab">
                     Cheetah Facts
                 </a>
