@@ -398,7 +398,7 @@ $parent_title = get_the_title($post->post_parent);
                                 <div class="row matrix-border mt-3">
                                     <div class="col-md-6">
                                         <a href="#" class="btn btn-lg btn-block btn-primary">
-                                            Become a CCF Kid!
+                                            CCF Kids
                                         </a>
                                     </div>
                                     <div class="col-md-6">

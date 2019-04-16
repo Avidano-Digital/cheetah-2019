@@ -110,7 +110,23 @@ $parent_title = get_the_title($post->post_parent);
 
             <div class="container-fluid wide my-5 bg-light py-5">
 
-                <h2 class="f-cheetah-tracks display-3 mb-3 text-tertiary text-center">Artist of the Month</h2>
+                <h2 class="f-cheetah-tracks display-3 mb-2 text-tertiary text-center">Artists of the Month</h2>
+                <ul class="extensible-list horizontal justify-content-center">
+                    <li>
+                        <a class="no-btn-style text-tertiary" href="#1" title="Previous">
+                            <span class="fas fa-angle-double-left" title="Previous" role="img"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <strong class="text-tertiary">May</strong>
+                    </li>
+                    <li>
+                        <a class="no-btn-style text-tertiary" href="#1" title="Next">
+                            <span class="fas fa-angle-double-right" title="Previous" role="img"></span>
+                        </a>
+                    </li>
+
+                </ul>
 
                 <div class="figure-block medium my-3">
 
