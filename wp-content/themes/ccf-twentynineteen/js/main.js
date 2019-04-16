@@ -90,38 +90,6 @@ jQuery(document).ready(function ($) {
 
     observer.observe(target, config);
 
-
-    ////////////////////////////////////////
-    // Sharer
-    ////////////////////////////////////////
-    
-    window.fbAsyncInit = function() {
-        FB.init({
-          appId      : 'YOUR-APP-ID',
-          xfbml      : true,
-          version    : 'v2.8'
-        });
-        FB.AppEvents.logPageView();
-      };
-  
-      (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-  
-    var sharect = new Sharect();
-
-    sharect.config({
-        facebook: true,
-        twitter: true,
-        twitterUsername: '@estevanmaito',
-        backgroundColor: '#212528',
-        iconColor: '#fff'
-    }).init();
-
     ////////////////////////////////////////
     // News filter selects
     ////////////////////////////////////////
