@@ -78,15 +78,6 @@
             true 
         );
 
-        // sharect
-        wp_enqueue_script( 
-            'sharer-js', 
-            get_template_directory_uri() . '/js/vendor/sharect.min.js', 
-            ['jquery'],
-            '1.1.0', 
-            true 
-        );
-
         wp_enqueue_script( 
             'cookies', 
             'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js',
