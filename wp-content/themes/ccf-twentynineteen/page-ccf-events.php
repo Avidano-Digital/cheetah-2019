@@ -27,10 +27,6 @@ get_header(); ?>
                     <div class="text-block narrow my-6">
                         
                         <?php the_content(); ?>
-
-                        <div class="narrow mt-4">
-                            <?php showCountryFilters(); ?> 
-                        </div>
                               
                     </div>
                     <!-- .narrow -->
@@ -46,7 +42,6 @@ get_header(); ?>
                     
                     $loop = new WP_Query( $args );
                     $date_groups = [];
-                    $countries = [];
 
                     while ( $loop->have_posts() ) : $loop->the_post();
 
@@ -58,12 +53,8 @@ get_header(); ?>
                         if ($date > $today) :
                             $year = $date->format("Y");
                             $month = $date->format("F");
-                            $country = str_replace(' ','-',get_field('country'));
                             if (!in_array($month . ' ' . $year, $date_groups)) :
                                 array_push($date_groups, $month . ' ' . $year);                            
-                            endif;
-                            if (!in_array($country, $countries)) :
-                                array_push($countries, $country);                            
                             endif;
                         endif;
                     endwhile;
@@ -92,7 +83,7 @@ get_header(); ?>
                                     $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
                                     if ($month . ' ' . $year == $group) :
 ?>
-                                        <div class="col-md-6" data-country="<?php the_field('country'); ?>">
+                                        <div class="col-md-6">
 
                                             <div class="card border h-100">
                                                 <img class="card-img-top" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">

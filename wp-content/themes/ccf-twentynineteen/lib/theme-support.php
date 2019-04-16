@@ -340,33 +340,6 @@
     }
 
     ////////////////////////////////////////
-    // Events Country Filtering
-    ////////////////////////////////////////
-
-    function showCountryFilters() {
-
-        $args = array( 'post_type' => 'events', 'order' => 'ASC' );
-        $loop = new WP_Query( $args );
-        $countries = [];
-
-        while ( $loop->have_posts() ) : $loop->the_post();
-            $country = get_field('country');
-            if ($country && !in_array($country, $countries)) :
-                array_push($countries, $country);                            
-            endif;
-        endwhile;
-
-        echo '<select class="form-control events-filter" id="countries" required><option>Show Events by Country</option>';
-
-        foreach ($countries as $country) :
-            echo '<option data-country-id="'.$country.'" value="'.$country.'">'.$country.'</option>';
-        endforeach;
-
-        echo '</select>';
-
-    }
-
-    ////////////////////////////////////////
     // Make pagination work with the desired permalink structure
     ////////////////////////////////////////
 
