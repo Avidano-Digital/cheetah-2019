@@ -34,13 +34,13 @@ $parent_title = get_the_title($post->post_parent);
 
         <div class="container" id="kids-tabs">
 
-            <nav class="nav nav-pills flex-column flex-md-row" role="tablist">
+            <nav class="nav nav-pills" role="tablist">
 
-                <a class="nav-item nav-link flex-even active" href="/kids/cheetah-facts" aria-selected="true" role="tab">
+                <a class="nav-item nav-link active" href="/kids/cheetah-facts" aria-selected="true" role="tab">
                     Cheetah Facts
                 </a>
 
-                <a class="nav-item nav-link flex-even" href="/kids/ccf-kids" aria-selected="false" role="tab">
+                <a class="nav-item nav-link" href="/kids/ccf-kids" aria-selected="false" role="tab">
                     CCF Kids
                 </a>
             </nav>

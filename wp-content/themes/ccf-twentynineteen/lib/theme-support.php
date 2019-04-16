@@ -378,6 +378,7 @@
         }      
         return $query_string;
     }
+    
     add_filter('request', 'remove_page_from_query_string');
 
     ////////////////////////////////////////
