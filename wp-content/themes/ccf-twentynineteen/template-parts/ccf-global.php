@@ -1,4 +1,3 @@
-
 <div class="my-5 mx-n2">
 
     <figure class="w-100">
@@ -51,6 +50,8 @@
 
 <?php if( have_rows('ccf_global_list') ):
 
+    $map_locations = array();
+
     while ( have_rows('ccf_global_list') ) : the_row();
     
     $headline = get_sub_field('headline');
@@ -63,9 +64,26 @@
 
         <?php if( have_rows('section') ): while( have_rows('section') ): the_row();
 
-        $id = get_sub_field('id');
         $title = get_sub_field('title');
+        $icon = get_sub_field('icon');
         $description = get_sub_field('description');
+        $map_description = get_sub_field('map_description');
+        $latitude = get_sub_field('latitude');
+        $longitude = get_sub_field('longitude');
+
+        $id = strtolower($title);
+        $id = preg_replace("/[^a-z0-9_\s-]/", "", $id);
+        $id = preg_replace("/[\s-]+/", " ", $id);
+        $id = preg_replace("/[\s_]/", "-", $id);
+
+        $map_location = array();
+        $map_location['id'] = $id;
+        $map_location['title'] = $title;
+        $map_location['icon'] = $icon;
+        $map_location['map_description'] = $map_description;
+        $map_location['latitude'] = $latitude;
+        $map_location['longitude'] = $longitude;
+        array_push($map_locations, $map_location);
         
         ?>
 
@@ -124,3 +142,7 @@
     <!-- .narrow -->
 
 <?php endwhile; endif; /* ccf_global_content */ ?>
+
+<?php
+    wp_localize_script('ccf-global-map', 'map_locations', $map_locations);
+?>

@@ -49,193 +49,49 @@ jQuery(function ($) {
         zoomOutText: '<span class="fas fa-minus"></span>'
     }).addTo(map);
 
-    var affiliates = [
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'Namibia',
-            'popupContent': '<p><a href="#namibia"><strong>Namibia</strong></a></p><p>Headquarters</p><p class="location">Otjiwarongo, Namibia</p>',
-            icon : officeIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [16.6645, -20.4545]
-        }
-    }, 
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'Australia',
-            'popupContent': '<p><a href="#australia"><strong>Australia</strong></a></p><p>Affiliate</p><p class="location">Epping, Victoria</p>',
-            icon : affiliateIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [145.014066, -37.623426]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'Belgium',
-            'popupContent': 
-            '<p><a href="#belgium"><strong>Belgium</strong></a></p><p>Affiliate</p><p class="location">Brussels, Belgium</p>',
-            icon : affiliateIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [4.3517, 50.8503]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'USA Office',
-            'popupContent': 
-            '<p><a href="#usa"><strong>CCF USA</strong></a></p><p>USA Office</p><p class="location">Alexandria, Virginia</p>' +
-            '<hr class="my-2">' +
-            '<p class="d-block"><strong>Washington, D.C.</strong></a><p>Chapter</p>',
-            icon : affiliateIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [-77.059325, 38.818947]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'Canada',
-            'popupContent': '<p><a href="#canada"><strong>Canada</strong></a></p><p>Affiliate</p><p class="location">London, Ontario</p>',
-            icon : affiliateIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [-81.241149, 42.998759]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'Italy',
-            'popupContent': '<p><a href="#italy"><strong>Italy</strong></a></p><p>Affiliate</p><p class="location">Biella, Italy</p>',
-            icon : affiliateIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [8.0583, 45.5628]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'Japan',
-            'popupContent': '<p><a href="#japan"><strong>Japan</strong></a></p><p>Affiliate</p><p class="location">Tokyo, Japan</p>',
-            icon : affiliateIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [139.691706, 35.689487]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'UK',
-            'popupContent': '<p><a href="#uk"><strong>UK</strong></a></p><p>Affiliate</p><p class="location">Toddington, Bedfordshire</p>',
-            icon : affiliateIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [-0.533812, 51.940125]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'California (Northern)',
-            'popupContent': '<p class="d-block"><strong>California (Northern)</strong></p><p>Chapter</p>',
-            icon : chapterIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [-122.431297, 37.7749]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'California (Southern)',
-            'popupContent': '<p class="d-block"><strong>California (Southern)</strong></p><p>Chapter</p>',
-            icon : chapterIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [-116.3745, 33.7222]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'Indiana',
-            'popupContent': '<p class="d-block"><strong>Indiana</strong></p><p>Chapter</p>',
-            icon : chapterIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [-86.134902, 40.267194]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'New York',
-            'popupContent': '<p class="d-block"><strong>New York</a></strong><p>Chapter</p>',
-            icon : chapterIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [-74.217933, 40.7128]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'AGA Artenschutz',
-            'popupContent': '<p><a href="#germany"><strong>AGA Artenschutz</strong></a></p><p>Partner Organization</p><p class="location">Korntal-Münchingen, Germany</p>',
-            icon : partnerIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [9.090028, 48.853635]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'AMIFELINS',
-            'popupContent': '<p><a href="#france"><strong>AMIFELINS</strong></a></p><p>Partner Organization</p><p class="location">Puteaux, France</p>',
-            icon : partnerIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [2.2396, 48.8847]
-        }
-    },
-    {
-        'type': 'Feature',
-        'properties': {
-            'name': 'Stichting SPOTS',
-            'popupContent': '<p><a href="#the-netherlands"><strong>Stichting SPOTS</strong></a></p><p>Partner Organization</p><p class="location">Etten-Leur, Netherlands</p>',
-            icon : partnerIcon
-        },
-        'geometry': {
-            'type': 'Point',
-            'coordinates': [9.090028, 51.561076]
-        }
-    }
+    affiliates = [];
 
-    ];
+    $(map_locations).each(function(){
+      id = this.id;
+      title = this.title;
+      selectedIcon = this.icon;
+      mapDescription = this.map_description;
+      latitude = this.latitude;
+      longitude = this.longitude;
+
+      if (this.icon == 'officeIcon') {
+        selectedIcon = officeIcon;
+        locationType = 'Headquarters';
+      }
+      if (this.icon == 'affiliateIcon') {
+        selectedIcon = affiliateIcon;
+        locationType = 'Affiliate';
+      }
+      if (this.icon == 'chapterIcon') {
+        selectedIcon = chapterIcon;
+        locationType = 'Chapter';
+      }
+      if (this.icon == 'partnerIcon') {
+        selectedIcon = partnerIcon;
+        locationType = 'Partner';
+      }
+
+      mapLocation = {
+          'type': 'Feature',
+          'properties': {
+              'name': title,
+              'popupContent': '<p><a href="#'+id+'"><strong>'+title+'</strong></a></p><p>'+locationType+'</p><p class="location">'+mapDescription+'</p>',
+              icon : selectedIcon
+          },
+          'geometry': {
+              'type': 'Point',
+              'coordinates': [latitude, longitude]
+          }
+      };
+      
+      affiliates.push(mapLocation);
+
+    });
 
     var addedGeoJSON = L.geoJSON(affiliates, {
 
