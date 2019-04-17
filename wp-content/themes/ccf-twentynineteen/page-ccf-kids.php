@@ -118,7 +118,7 @@ $parent_title = get_the_title($post->post_parent);
                         </a>
                     </li>
                     <li>
-                        <strong class="text-tertiary">May</strong>
+                        <strong class="text-tertiary">May, 2019</strong>
                     </li>
                     <li>
                         <a class="no-btn-style text-tertiary" href="#1" title="Next">
@@ -283,6 +283,44 @@ $parent_title = get_the_title($post->post_parent);
 
             
             </div>
+
+            <div class="featured-panel responsive-lg">
+
+                <div class="card bg-white">
+
+                    <div class="gradient-overlay-y-white">
+                        <img class="card-img" src="https://via.placeholder.com/1500x1000" alt="Card image">
+                    </div>
+
+                    <div class="card-img-overlay d-flex px-0">
+
+                        <div class="container align-self-center">
+
+                            <div class="narrow text-center my-4">
+
+                                <h2 class="f-cheetah-tracks display-3 mb-1 text-tertiary">Become a CCF Kid!</h2>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque libero quaerat porro cupiditate sequi ea amet iure nisi illo nostrum.
+                                </p>
+
+                                        <a href="#" class="btn btn-lg btn-block btn-primary">
+                                            Contact Us
+                                        </a>
+                            </div>
+                            <!-- .narrow -->
+
+                        </div>
+                        <!-- .container -->
+
+                    </div>
+                    <!-- .card-img-overlay -->
+
+                </div>
+                <!-- .card -->
+
+            </div>
+            <!-- .featured-panel -->
 
         
             <?php get_template_part('template-parts/article-footer'); ?>

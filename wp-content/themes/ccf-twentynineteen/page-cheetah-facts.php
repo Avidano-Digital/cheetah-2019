@@ -375,7 +375,7 @@ $parent_title = get_the_title($post->post_parent);
             </div>
             <!-- .container -->
 
-            <div class="featured-panel responsive-lg" dir="ltr">
+            <div class="featured-panel responsive-lg">
 
                 <div class="card bg-white">
 
@@ -422,15 +422,6 @@ $parent_title = get_the_title($post->post_parent);
 
             </div>
             <!-- .featured-panel -->
-
-            <div class="container my-5">
-
-                <div class="narrow">
-
-                </div>
-
-            </div>
-            <!-- .container -->
         
             <?php get_template_part('template-parts/article-footer'); ?>
         
