@@ -431,102 +431,106 @@
         
         $cheetahs = new WP_Query( $args );
 
-?>
+        ?>
+
         <div class="thumbnail-links-block my-5">
+
             <div class="medium">
+        
                 <div class="row matrix-gutter">
-<?php
-                    while ( $cheetahs->have_posts() ) : $cheetahs->the_post(); 
-                        $image = get_field('image');
-                        global $post;
-?>
 
-                        <div class="col-sm-6 col-lg-4">
-                            <?php if( $image ): ?>
-                                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
-                            <?php else : ?>
-                                <img src="https://placehold.it/600x400.jpg" alt="Placeholder">
-                            <?php endif; ?>
-                            <a class="btn btn-block btn-lg btn-info stretched-link" href="#cheetah-<?php echo $post->post_name; ?>" data-toggle="modal" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                        </div>
-                        <!-- .col -->
+                    <?php while ( $cheetahs->have_posts() ) : $cheetahs->the_post(); 
+                    $image = get_field('image');
+                    global $post;
+                    ?>
 
-                        <div class="modal fade" id="cheetah-<?php echo $post->post_name; ?>" tabindex="-1" role="dialog" aria-labelledby="cheetah-<?php echo $post->post_name; ?>-title" aria-hidden="true">
+                    <div class="col-sm-6 col-lg-4">
+                        <?php if( $image ): ?>
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+                        <?php else : ?>
+                            <img src="https://placehold.it/600x400.jpg" alt="Placeholder">
+                        <?php endif; ?>
+                        <a class="btn btn-block btn-lg btn-info stretched-link" href="#cheetah-<?php echo $post->post_name; ?>" data-toggle="modal" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                    </div>
+                    <!-- .col -->
 
-                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                    <div class="modal fade" id="cheetah-<?php echo $post->post_name; ?>" tabindex="-1" role="dialog" aria-labelledby="cheetah-<?php echo $post->post_name; ?>-title" aria-hidden="true">
 
-                                <div class="modal-content">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
 
-                                    <div class="modal-header border-bottom-0">
-                                        <div class="row no-gutters w-100 align-items-center">
-                                            <div class="col">
-                                                <h1 class="modal-title h4 mb-0" id="cheetah-<?php echo $post->post_name; ?>-title"><?php the_title(); ?></h1>
-                                            </div>
-                                            <div class="col-auto">
-                                                <button class="no-btn-style" type="button" data-dismiss="modal" aria-label="Close">
-                                                    <span class="fas fa-times"></span>
-                                                    <span class="sr-only">Close</span>
-                                                </button>
-                                            </div>
+                            <div class="modal-content">
+
+                                <div class="modal-header border-bottom-0">
+                                    <div class="row no-gutters w-100 align-items-center">
+                                        <div class="col">
+                                            <h1 class="modal-title h4 mb-0" id="cheetah-<?php echo $post->post_name; ?>-title"><?php the_title(); ?></h1>
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="no-btn-style" type="button" data-dismiss="modal" aria-label="Close">
+                                                <span class="fas fa-times"></span>
+                                                <span class="sr-only">Close</span>
+                                            </button>
                                         </div>
                                     </div>
-                                    <!-- .modal-header -->
-
-                                    <div class="modal-body p-0">
-
-                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-                                        
-                                        <div class="px-2 py-4 fs-md">
-                                          <?php the_field('bio'); ?>
-                                        </div>
-                                        <!-- .p-2 -->
-                                        
-                                    </div>
-                                    <!-- .modal-body -->
-
-                                    <div class="modal-footer">
-
-                                        <div class="row matrix-gutter align-items-center">
-                                            <div class="col-auto">
-                                                <button class="no-btn-style btn-prev" type="button">
-                                                    <span class="fas fa-arrow-left" title="Previous" role="img"></span>
-                                                </button>
-                                            </div>
-                                            <!-- .col -->
-                                            <div class="col">
-                                                <a href="#1" class="btn btn-block btn-primary">Sponsor</a>
-                                            </div>
-                                            <!-- .col -->
-                                            <div class="col-auto">
-                                                <button class="no-btn-style btn-next" type="button">
-                                                    <span class="fas fa-arrow-right" title="Next" role="img"></span>
-                                                </button>
-                                            </div>
-                                            <!-- .col -->
-                                        </div>
-                                        <!-- .row -->
-                                        
-                                    </div>
-                                    <!-- .modal-footer -->
-
                                 </div>
-                                <!-- .modal-content -->
+                                <!-- .modal-header -->
+
+                                <div class="modal-body p-0">
+
+                                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                                    
+                                    <div class="px-2 py-4 fs-md">
+                                        <?php the_field('bio'); ?>
+                                    </div>
+                                    <!-- .p-2 -->
+                                    
+                                </div>
+                                <!-- .modal-body -->
+
+                                <div class="modal-footer">
+
+                                    <div class="row matrix-gutter align-items-center">
+                                        <div class="col-auto">
+                                            <button class="no-btn-style btn-prev" type="button">
+                                                <span class="fas fa-arrow-left" title="Previous" role="img"></span>
+                                            </button>
+                                        </div>
+                                        <!-- .col -->
+                                        <div class="col">
+                                            <a href="#1" class="btn btn-block btn-primary">Sponsor</a>
+                                        </div>
+                                        <!-- .col -->
+                                        <div class="col-auto">
+                                            <button class="no-btn-style btn-next" type="button">
+                                                <span class="fas fa-arrow-right" title="Next" role="img"></span>
+                                            </button>
+                                        </div>
+                                        <!-- .col -->
+                                    </div>
+                                    <!-- .row -->
+                                    
+                                </div>
+                                <!-- .modal-footer -->
 
                             </div>
-                            <!-- .modal-dialog -->
+                            <!-- .modal-content -->
 
                         </div>
-                        <!-- .modal -->
-<?php 
-                    endwhile; 
-?>
+                        <!-- .modal-dialog -->
+
+                    </div>
+                    <!-- .modal -->
+                    
+                    <?php endwhile; wp_reset_postdata(); ?>
+                
                 </div>
                 <!-- .row -->
+            
             </div>
             <!-- .medium -->
         </div>
-<?php                  
-        return ob_get_clean();
+        
+        <?php return ob_get_clean();
     }
 
     add_shortcode( 'cheetahs', 'cheetahs' );

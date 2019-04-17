@@ -19334,17 +19334,6 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"/wp-content/themes/ccf-twentynineteen/js/vendor/sharect.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/js/vendor/sharect.min-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
 	"/wp-content/themes/ccf-twentynineteen/lib/acf-custom-wysiwyg.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -19604,14 +19593,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/aside-donate.php",
-		"oF": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/template-parts/ccf-cheetah-modals.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/ccf-cheetah-modals.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/template-parts/ccf-global.php": {
@@ -23874,6 +23855,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/04/bella.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/04/cloud-250x250.jpg": {
+		"ft": 16384,
+		"iS": 24242,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/04/cloud-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/04/cloud.jpg": {
+		"ft": 16384,
+		"iS": 102583,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/04/cloud.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

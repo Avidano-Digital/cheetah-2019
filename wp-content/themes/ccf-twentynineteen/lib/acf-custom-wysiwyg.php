@@ -89,7 +89,7 @@
             array(
                 'title' => 'Blockquote',
                 'block' => 'blockquote',
-                'classes' => 'pullout my-4',
+                'classes' => 'pullout my-3',
             )
         );
 
