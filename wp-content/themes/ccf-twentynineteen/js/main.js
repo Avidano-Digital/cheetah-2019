@@ -217,4 +217,23 @@ jQuery(document).ready(function ($) {
 
     });
 
+    ////////////////////////////////////////
+    // Language and Search Toggles Shown
+    ////////////////////////////////////////
+
+    $('#all-topics').on('show.bs.collapse', function () {
+        $('#all-authors').collapse('hide');
+    });
+
+    $('#all-authors').on('show.bs.collapse', function () {
+        $('#all-topics').collapse('hide');
+    });
+
+
+
+
+
+
+
+
 }); // end document ready

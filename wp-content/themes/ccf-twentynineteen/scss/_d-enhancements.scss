@@ -45,13 +45,12 @@ body{
 }
 
 // Make all images responsive by default
+img {
+  @extend .img-fluid;
+}
 
-img{ @extend .img-fluid; }
-
-figure,
-div.figure-img {
+figure{
   position: relative;
-  @extend .mb-0;
 }
 
 ////////////////////////////////////////

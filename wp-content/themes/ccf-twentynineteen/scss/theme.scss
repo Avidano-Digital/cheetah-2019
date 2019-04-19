@@ -720,3 +720,10 @@ hr.dark {
 
 //   }
 // }
+
+#all-topics,
+#all-authors {
+    ul{
+        column-count: 2;
+    }
+}

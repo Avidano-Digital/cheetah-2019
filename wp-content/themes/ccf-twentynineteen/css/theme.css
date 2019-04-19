@@ -4782,8 +4782,7 @@ button.bg-quaternary:focus {
 .mx-0 {
   margin-right: 0 !important; }
 
-.mb-0, figure,
-div.figure-img,
+.mb-0,
 .my-0 {
   margin-bottom: 0 !important; }
 
@@ -7210,8 +7209,7 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-figure,
-div.figure-img {
+figure {
   position: relative; }
 
 h1:last-child,
@@ -8420,3 +8418,7 @@ hr.dark {
 
 .cool-stuff {
   min-height: 800px; }
+
+#all-topics ul,
+#all-authors ul {
+  column-count: 2; }

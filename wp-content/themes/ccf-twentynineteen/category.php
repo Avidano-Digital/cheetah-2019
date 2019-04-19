@@ -94,15 +94,46 @@ get_header(); ?>
     <div class="container-fluid collapse bg-light" id="all-topics">
 
         <nav class="narrow py-3" role="navigation">
+
             <ul class="extensible-list fs-md">
                 <li>
-                    <a class="text-body" href="#" title="Link">Link</a>
+                    <a class="text-body" href="#" title="Conservation">Conservation</a>
                 </li>
                 <li>
-                    <a class="text-body" href="#" title="Link">Link</a>
+                    <a class="text-body" href="#" title="For Kids">For Kids</a>
                 </li>
                 <li>
-                    <a class="text-body" href="#" title="Link">Link</a>
+                    <a class="text-body" href="#" title="Intern Story">Intern Story</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="International Collaboration">International Collaboration</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Life at CCF">Life at CCF</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Livestock Guarding Dogs">Livestock Guarding Dogs</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Outreach">Outreach</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Resident Cheetahs">Resident Cheetahs</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Science and Research">Science and Research</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Success Stories">Success Stories</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Visitor Story">Visitor Story</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Volunteer Story">Volunteer Story</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Working Guest Story">Working Guest Story</a>
                 </li>
             </ul>
         </nav>
@@ -110,18 +141,70 @@ get_header(); ?>
     </div>
     <!-- .container-fluid -->
 
-    <div class="container-fluid collapse bg-dark" id="all-authors">
+    <div class="container-fluid collapse bg-light" id="all-authors">
 
         <nav class="narrow py-3" role="navigation">
+
             <ul class="extensible-list fs-md">
                 <li>
-                    <a class="text-body" href="#" title="Link">Link</a>
+                    <a class="text-body" href="#" title="A. Schmidt-Küntzel">A. Schmidt-Küntzel</a>
                 </li>
                 <li>
-                    <a class="text-body" href="#" title="Link">Link</a>
+                    <a class="text-body" href="#" title="Anne Schmidt-Küntzel">Anne Schmidt-Küntzel</a>
                 </li>
                 <li>
-                    <a class="text-body" href="#" title="Link">Link</a>
+                    <a class="text-body" href="#" title="Bill Young">Bill Young</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Brandy Morenko Campbell">Brandy Morenko Campbell</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Bruce Brewer">Bruce Brewer</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Dr. Gabrielle Flacke">Dr. Gabrielle Flacke</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Dr. Laurie Marker">Dr. Laurie Marker</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Flavia Placidus">Flavia Placidus</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Jenny Bartlett">Jenny Bartlett</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Kate Vannelli">Kate Vannelli</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Katrin Hils">Katrin Hils</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Lee Tyree">Lee Tyree</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Lora Allen">Lora Allen</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Marisa Katnic">Marisa Katnic</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Misty Tyree">Misty Tyree</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Nadja le Roux">Nadja le Roux</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Paige Seitz">Paige Seitz</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Ryan Marcel">Ryan Marcel</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Selma Kaulinge">Selma Kaulinge</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Sophie Edwards">Sophie Edwards</a>
                 </li>
             </ul>
         </nav>
