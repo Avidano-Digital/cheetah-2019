@@ -8103,7 +8103,7 @@ In this file:
   font-family: 'Roboto', sans-serif; }
 
 .f-cheetah-tracks, #kids-tabs a.nav-item {
-  font-family: 'cheetah-tracks-regular';
+  font-family: 'cheetah-tracks-regular', 'Roboto';
   font-weight: normal;
   line-height: normal !important; }
 

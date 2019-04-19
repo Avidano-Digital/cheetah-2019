@@ -38,7 +38,7 @@ In this file:
 }
 
 .f-cheetah-tracks {
-    font-family: 'cheetah-tracks-regular';
+    font-family: 'cheetah-tracks-regular', 'Roboto';
     font-weight: normal;
     line-height: normal !important;
 }
@@ -82,6 +82,7 @@ p {
 }
 
 #primary-navigation-desktop {
+
     // Level 1
 
     > ul,
@@ -143,6 +144,7 @@ p {
 // Mobile Menu
 
 #mobile-menu {
+
     // Child links (accordion)
 
     ul > li > a {
