@@ -11,12 +11,15 @@ get_header(); ?>
     <section class="featured-panel responsive-md">
 
         <div class="card bg-dark">
+
             <img class="card-img opacity-30 show-on-mobile" src="<?php echo get_template_directory_uri(); ?>/images/ccf-blog.jpg" alt="Placeholder">
+            
             <div class="card-img-overlay d-flex">
+
                 <div class="container-fluid align-self-center">
 
                     <div class="narrow text-white text-center text-shadow">
-                        <h1 class="display-3 text-white mb-3">
+                        <h1 class="display-3 text-white mb-2">
                             Cheetah News
                         </h1>
 
@@ -30,7 +33,10 @@ get_header(); ?>
                 <!-- .align-self-end -->
 
             </div>
+            <!-- .card-img-overlay -->
+
         </div>
+        <!-- .card -->
 
     </section>
     <!-- .featured-panel -->
@@ -39,13 +45,30 @@ get_header(); ?>
 
         <div class="narrow">
 
-                <ul class="extensible-list horizontal justify-content-center">
-                    <li>
-                        <button class="btn btn-primary btn-lg">Topics</button>
-                    </li>
-                    <li><a href="#" title="Link">Link</a></li>
-                    <li><a href="#" title="Link">Link</a></li>
-                </ul>
+            <div class="row matrix-gutter">
+
+                <div class="col-sm">
+                    <div class="btn-toggle">
+                        <button class="btn btn-block btn-primary" data-toggle="collapse" data-target="#all-topics"
+                            aria-expanded="false" aria-controls="all-topics">
+                            <span class="Topics">Topics</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- .col -->
+                
+                <div class="col-sm">
+                    <div class="btn-toggle">
+                        <button class="btn btn-block btn-primary" data-toggle="collapse" data-target="#all-authors"
+                            aria-expanded="false" aria-controls="all-authors">
+                            <span class="Authors">Authors</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- .col -->
+
+            </div>
+            <!-- .row -->
 
             <div class="row matrix-gutter d-none">
 
@@ -67,6 +90,47 @@ get_header(); ?>
 
     </div>
     <!-- .posts-filter -->
+
+    <div class="container-fluid collapse bg-light" id="all-topics">
+
+        <nav class="narrow py-3" role="navigation">
+            <ul class="extensible-list fs-md">
+                <li>
+                    <a class="text-body" href="#" title="Link">Link</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Link">Link</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Link">Link</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <!-- .container-fluid -->
+
+    <div class="container-fluid collapse bg-dark" id="all-authors">
+
+        <nav class="narrow py-3" role="navigation">
+            <ul class="extensible-list fs-md">
+                <li>
+                    <a class="text-body" href="#" title="Link">Link</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Link">Link</a>
+                </li>
+                <li>
+                    <a class="text-body" href="#" title="Link">Link</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <!-- .container-fluid -->
+
+
+
 
     <div class="container py-6">
 

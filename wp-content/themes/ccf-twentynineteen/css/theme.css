@@ -7806,9 +7806,8 @@ In this file:
 .extensible-list, .carousel-indicators {
   padding-left: 0;
   list-style: none;
+  margin-bottom: 0;
   -webkit-padding-start: 0; }
-  .extensible-list li, .carousel-indicators li {
-    position: relative; }
   .extensible-list li ul, .carousel-indicators li ul {
     margin-top: 0.5em;
     padding-left: 1rem !important;
