@@ -39,7 +39,15 @@ get_header(); ?>
 
         <div class="narrow">
 
-            <div class="row matrix-gutter">
+                <ul class="extensible-list horizontal justify-content-center">
+                    <li>
+                        <button class="btn btn-primary btn-lg">Topics</button>
+                    </li>
+                    <li><a href="#" title="Link">Link</a></li>
+                    <li><a href="#" title="Link">Link</a></li>
+                </ul>
+
+            <div class="row matrix-gutter d-none">
 
                 <div class="col-md">
                     <?php showPrimaryFilters(); ?>
