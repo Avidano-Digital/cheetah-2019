@@ -280,8 +280,6 @@ $parent_title = get_the_title($post->post_parent);
                 </div>
                 <!-- .gallery-thumbnails -->
 
-
-            
             </div>
 
             <div class="featured-panel responsive-lg">

@@ -212,39 +212,7 @@ get_header(); ?>
     </div>
     <!-- .container-fluid -->
 
-
-
-
     <div class="container py-6">
-
-        <div class="row mb-5 bg-light d-none">
-
-            <div class="col-md">
-
-                <div class="offset-gutter-x">
-                    <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
-                </div>
-                <!-- .offset-gutter-x -->
-
-            </div>
-            <!-- .col -->
-
-            <div class="col-md d-md-flex">
-
-                <div class="align-self-center text-center py-4">
-                    <p class="fs-md mb-0"><em>Conservation</em> </p>
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
-                    <span class="link text-secondary">Read More</span>
-                </div>
-
-            </div>
-            <!-- .col -->
-
-        </div>
-        <!-- .row -->
-
-        <hr class="mb-5 d-none">
-
 
             <?php if ( have_posts() ) : ?>
 
@@ -290,10 +258,13 @@ get_header(); ?>
 
         <?php endif; /* have_posts */ ?>
 
-        <div class="pagination">
+        <div class="pagination pagination justify-content-center">
 
-            <?php echo paginate_links(); ?>
-
+            <?php 
+            // echo paginate_links(); 
+            echo custom_pagination();
+            ?>
+            
         </div>
 
     </div>

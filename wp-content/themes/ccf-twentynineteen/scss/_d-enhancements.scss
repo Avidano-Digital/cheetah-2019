@@ -40,16 +40,19 @@ body{
   font-size: $fs-rg;
 
   // Center body
+
   margin-left: auto;
   margin-right: auto;
 }
 
 // Make all images responsive by default
+
 img {
   @extend .img-fluid;
 }
 
-figure{
+figure, 
+.figure-img {
   position: relative;
 }
 
@@ -204,7 +207,7 @@ $accessible-hover-focus: false;
   }
   
   a:not(.btn).disabled{ opacity: 0.5; }
-    
+
   .has-icon{
     &:hover{
         text-decoration: none;
@@ -217,9 +220,13 @@ $accessible-hover-focus: false;
 
 } // end if
 
-// Override Bootstrap's default whitespace on '.btn' selectors
-
-.btn{ white-space: normal !important; }
+.text-reset {
+  text-decoration: underline;
+  
+  @include hover-focus{
+    text-decoration: underline;
+  }
+}
 
 // Add visible underline to links within the #primary-content area
 

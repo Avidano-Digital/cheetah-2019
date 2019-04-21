@@ -422,7 +422,15 @@ $parent_title = get_the_title($post->post_parent);
 
             </div>
             <!-- .featured-panel -->
-        
+
+            <div class="container my-3">
+                <div class="narrow text-center">
+                    <p class="f-sans-serif fs-md">Illustrations on this page provided by <a href="https://www.smallappleart.com/" class="text-reset" target="_blank">Tess Sheehey</a></p>
+                </div>
+
+            </div>
+            <!-- .container -->
+
             <?php get_template_part('template-parts/article-footer'); ?>
         
         </div>

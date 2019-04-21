@@ -713,17 +713,24 @@ hr.dark {
     min-height: 800px;
 }
 
-// .ekko-lightbox{
-
-//   @extend .modal-dialog-centered;
-//   .modal-dialog{
-
-//   }
-// }
+////////////////////////////////////////
+// Modal
+////////////////////////////////////////
 
 #all-topics,
 #all-authors {
     ul{
         column-count: 2;
+    }
+}
+
+.page-numbers {
+    @extend .page-item;
+    @extend .page-link;
+    &.current {
+        z-index: 1;
+        color: $pagination-active-color;
+        background-color: $pagination-active-bg;
+        border-color: $pagination-active-border-color;
     }
 }

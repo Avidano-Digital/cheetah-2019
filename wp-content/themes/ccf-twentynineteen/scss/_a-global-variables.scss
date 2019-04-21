@@ -293,6 +293,7 @@ $hr-border-color: $border-color;
 $list-group-border-color: $border-color;
 $nav-tabs-border-color: $border-color;
 $modal-header-border-color: $border-color;
+$pagination-border-color: $border-color;
 
 ////////////////////////////////////////
 // I. Border and Border radius
@@ -427,3 +428,11 @@ $carousel-caption-width: 100%;
 
 $figure-caption-font-size:          $fs-md;
 $figure-caption-color:              $text-muted;
+
+////////////////////////////////////////
+// R. Pagination
+////////////////////////////////////////
+
+$pagination-active-bg: $primary;
+$pagination-color: $text-muted;
+$pagination-bg: $transparent;

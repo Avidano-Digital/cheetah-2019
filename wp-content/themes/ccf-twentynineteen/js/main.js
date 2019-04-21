@@ -218,7 +218,7 @@ jQuery(document).ready(function ($) {
     });
 
     ////////////////////////////////////////
-    // Language and Search Toggles Shown
+    // Topic and Author Toggles
     ////////////////////////////////////////
 
     $('#all-topics').on('show.bs.collapse', function () {
@@ -228,12 +228,5 @@ jQuery(document).ready(function ($) {
     $('#all-authors').on('show.bs.collapse', function () {
         $('#all-topics').collapse('hide');
     });
-
-
-
-
-
-
-
 
 }); // end document ready
