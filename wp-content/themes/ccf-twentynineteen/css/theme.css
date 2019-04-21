@@ -8257,11 +8257,11 @@ a.featured-article {
     margin-bottom: 1rem; }
     a.featured-article div > span {
       position: absolute;
-      font-size: 1rem;
+      font-size: 0.875rem;
       background: #fec34e;
       margin-left: 1rem;
       margin-right: 1rem;
-      padding: 0.5rem 1rem;
+      padding: 0.25rem 0.5rem;
       bottom: 0; }
   a.featured-article .h5 {
     font-weight: 700;

@@ -245,11 +245,11 @@ a.featured-article {
 
         > span {
             position: absolute;
-            font-size: $fs-md;
+            font-size: $fs-sm;
             background: $primary;
             margin-left: $spacer-2;
             margin-right: $spacer-2;
-            padding: $spacer-1 $spacer-2;
+            padding: ($spacer-1/2) $spacer-1;
             bottom: 0;
         }
     }
