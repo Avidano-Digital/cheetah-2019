@@ -149,11 +149,16 @@ html[dir="rtl"]{
   // Apply left justification to all extensible-list selectors excluding those that are centered 
 
   .extensible-list:not(.justify-content-center){
-    .horizontal{
-      justify-content: flex-start !important;
+    &.horizontal{
+      justify-content: flex-end !important;
     }
   }
-    
+
+  ul{
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+
+  }
   // Flip accordion and button toggles (found in _e-ui-elements.scss) from right to left
 
   .accordion-group,  

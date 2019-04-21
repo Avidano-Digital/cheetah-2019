@@ -1299,7 +1299,7 @@ mark,
   .form-control:focus, #gtranslate_selector:focus {
     color: #495057;
     background-color: #fff;
-    border-color: white;
+    border-color: #dee2e6;
     outline: 0;
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
   .form-control::placeholder, #gtranslate_selector::placeholder {
@@ -2617,7 +2617,7 @@ input[type="button"].btn-block {
   .custom-control-input:focus ~ .custom-control-label::before {
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
   .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-    border-color: white; }
+    border-color: #dee2e6; }
   .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
     color: #462B41;
     background-color: white;
@@ -2717,7 +2717,7 @@ input[type="button"].btn-block {
   border-radius: 0;
   appearance: none; }
   .custom-select:focus, select:focus {
-    border-color: white;
+    border-color: #dee2e6;
     outline: 0;
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
     .custom-select:focus::-ms-value, select:focus::-ms-value {
@@ -2762,7 +2762,7 @@ input[type="button"].btn-block {
   margin: 0;
   opacity: 0; }
   .custom-file-input:focus ~ .custom-file-label {
-    border-color: white;
+    border-color: #dee2e6;
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
   .custom-file-input:disabled ~ .custom-file-label {
     background-color: #e9ecef; }
@@ -7311,8 +7311,12 @@ html[dir="rtl"] body,
 html[dir="rtl"] .dropdown-item {
   text-align: right; }
 
-html[dir="rtl"] .extensible-list:not(.justify-content-center) .horizontal, html[dir="rtl"] .carousel-indicators:not(.justify-content-center) .horizontal, html[dir="rtl"] .extensible-list:not(.justify-content-center) .carousel-indicators, html[dir="rtl"] .carousel-indicators:not(.justify-content-center) .carousel-indicators {
-  justify-content: flex-start !important; }
+html[dir="rtl"] .extensible-list:not(.justify-content-center).horizontal, html[dir="rtl"] .carousel-indicators:not(.justify-content-center) {
+  justify-content: flex-end !important; }
+
+html[dir="rtl"] ul {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important; }
 
 html[dir="rtl"] .accordion-group a[data-toggle="collapse"]::after,
 html[dir="rtl"] .btn-toggle a[data-toggle="collapse"]::after {
