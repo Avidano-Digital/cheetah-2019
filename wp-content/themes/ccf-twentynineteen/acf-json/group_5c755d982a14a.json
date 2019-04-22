@@ -4,9 +4,9 @@
     "fields": [
         {
             "key": "field_5c755da6dcfc2",
-            "label": "Date",
-            "name": "date",
-            "type": "date_picker",
+            "label": "Start Date Time",
+            "name": "start_date_time",
+            "type": "date_time_picker",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,15 +15,15 @@
                 "class": "",
                 "id": ""
             },
-            "display_format": "F j, Y",
-            "return_format": "F j, Y",
+            "display_format": "F j, Y g:i a",
+            "return_format": "F j, Y g:i a",
             "first_day": 1
         },
         {
-            "key": "field_5c75667db805a",
-            "label": "Time",
-            "name": "time",
-            "type": "text",
+            "key": "field_5cbd84323c1a8",
+            "label": "End Date Time",
+            "name": "end_date_time",
+            "type": "date_time_picker",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -32,36 +32,9 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5c757d231a3ae",
-            "label": "Country",
-            "name": "country",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "United States": "United States",
-                "Namibia": "Namibia"
-            },
-            "default_value": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
+            "display_format": "F j, Y g:i a",
+            "return_format": "F j, Y g:i a",
+            "first_day": 1
         }
     ],
     "location": [
@@ -93,5 +66,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1554131002
+    "modified": 1555924800
 }

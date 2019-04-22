@@ -67,9 +67,7 @@ $parent_title = get_the_title($post->post_parent);
                     </header>
 
                     <div class="text-block narrow mb-5">
-                        
                         <?php the_content(); ?>
-                              
                     </div>
                     <!-- .narrow -->
 
@@ -78,7 +76,8 @@ $parent_title = get_the_title($post->post_parent);
                     $args = array( 
                         'post_type' => 'events', 
                         'order' => 'ASC',
-                        'meta_key' => 'date',
+                        'meta_key' => 'start_date_time',
+	                    'meta_type' => 'DATETIME',
                         'orderby' => 'meta_value',
                     );
                     
@@ -90,7 +89,7 @@ $parent_title = get_the_title($post->post_parent);
                         date_default_timezone_set('America/New_York');
 
                         $today = DateTime::createFromFormat("U", time());
-                        $date = DateTime::createFromFormat("F j, Y", get_field('date'));
+                        $date = DateTime::createFromFormat("F j, Y", get_field('start_date_time'));
                         
                         if ($date > $today) :
                             $year = $date->format("Y");
@@ -105,7 +104,7 @@ $parent_title = get_the_title($post->post_parent);
                     foreach ($date_groups as $group) :
                         if ($first) :
                     ?>
-                            <hr class="medium">
+                        <hr class="medium">
                     <?php
                         endif;
                         $first = true;
@@ -118,10 +117,12 @@ $parent_title = get_the_title($post->post_parent);
 
                                 <?php while ( $loop->have_posts() ) : $loop->the_post();
 
-                                $date = DateTime::createFromFormat("F j, Y", get_field('date'));
+                                $date = DateTime::createFromFormat("F j, Y", get_field('start_date_time'));
                                 $year = $date->format("Y");
                                 $month = $date->format("F");
-                                $time = get_field('time');
+
+                                // $time = get_field('time');
+                                
                                 $featured_image_id = get_post_thumbnail_id($post->ID);
                                 $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
                                 $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
@@ -131,6 +132,7 @@ $parent_title = get_the_title($post->post_parent);
                                 ?>
 
                                 <div class="col-md-6">
+
 
                                     <div class="card border h-100">
                                         
@@ -143,7 +145,7 @@ $parent_title = get_the_title($post->post_parent);
                                         <div class="card-body">
                                             <h2 class="h5"><?php the_title(); ?></h2>
                                             <p class="f-sans-serif fs-md">
-                                                <strong class="d-block"><?php the_field('date'); ?></strong>
+                                                <strong class="d-block"><?php the_field('start_date_time'); ?></strong>
                                                 <?php if ($time) : ?>
                                                 <span class="text-muted"><?php echo $time; ?></span>
                                                 <?php endif; ?>

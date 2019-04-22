@@ -2,7 +2,7 @@
 
 get_header(); 
 
-$date = DateTime::createFromFormat("F j, Y", get_field('date'));
+$date = DateTime::createFromFormat("F j, Y", get_field('start_date_time'));
 $year = $date->format("Y");
 $month = $date->format("F");
 
@@ -45,8 +45,12 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
             <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
 
             <p class="f-sans-serif">
-                <strong class="d-block"><?php the_field('date'); ?></strong>
-                <span class="text-muted"><?php the_field('time'); ?></span>
+                <span class="bg-danger d-block">
+
+                Starts on:
+                
+                </span>
+                <strong class="d-block"><?php the_field('start_date_time'); ?></strong>
             </p>
 
         </header>

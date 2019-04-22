@@ -60,6 +60,25 @@
                     "button_label": "",
                     "sub_fields": [
                         {
+                            "key": "field_5ca318e6dd7ae",
+                            "label": "ID",
+                            "name": "id",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_5ca318f5dd7af",
                             "label": "Title",
                             "name": "title",
@@ -79,33 +98,6 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5cb639966b003",
-                            "label": "Icon",
-                            "name": "icon",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "officeIcon": "Headquarters",
-                                "affiliateIcon": "Affiliates",
-                                "chapterIcon": "Chapters",
-                                "partnerIcon": "Partner Organisations"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "return_format": "value",
-                            "ajax": 0,
-                            "placeholder": ""
-                        },
-                        {
                             "key": "field_5ca3192b2eca1",
                             "label": "Description",
                             "name": "description",
@@ -123,63 +115,6 @@
                             "toolbar": "very_simple",
                             "media_upload": 0,
                             "delay": 0
-                        },
-                        {
-                            "key": "field_5cb63e0208d5e",
-                            "label": "Map Description",
-                            "name": "map_description",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5cb634447de08",
-                            "label": "Latitude",
-                            "name": "latitude",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5cb634567de09",
-                            "label": "Longitude",
-                            "name": "longitude",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
                         },
                         {
                             "key": "field_5ca31b6ec8744",
@@ -310,7 +245,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 400,
     "position": "normal",
     "style": "seamless",
     "label_placement": "top",
@@ -330,5 +265,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1555447313
+    "modified": 1555923815
 }
