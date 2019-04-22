@@ -54,7 +54,13 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
         <div class="medium mb-5">
 
             <figure class="figure my-0">
-                <img class="figure-img" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
+
+                <?php if ($featured_image) : ?>
+                    <img class="figure-img" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
+                <?php else : ?>
+                    <img class="figure-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                <?php endif; ?>
+
             </figure>
 
         </div>
