@@ -21,17 +21,11 @@
                 <li class="page_item <?php if ( is_page( 'ccf-events' ) || $parent_title == 'CCF Events' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/get-involved/ccf-events/">CCF Events</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'volunteer-locally' ) || $parent_title == 'Volunteer Locally' ) : ?>current_page_item<?php endif; ?>">
-                    <a href="/get-involved/volunteer-locally/">Volunteer Locally</a>
-                </li>
-                <li class="page_item <?php if ( is_page( 'volunteer-in-namibia' ) || $parent_title == 'Volunteer In Namibia' ) : ?>current_page_item<?php endif; ?>">
-                    <a href="/get-involved/volunteer-in-namibia/">Volunteer in Namibia</a>
+                <li class="page_item <?php if ( is_page( 'volunteer' ) || $parent_title == 'Volunteer' ) : ?>current_page_item<?php endif; ?>">
+                    <a href="/get-involved/volunteer/">Volunteer</a>
                 </li>
                 <li class="page_item <?php if ( is_page( 'visit-ccf' ) || $parent_title == 'Visit CCF' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/get-involved/visit-ccf/">Visit CCF</a>
-                </li>
-                <li class="page_item <?php if ( is_page( 'social-media' ) || $parent_title == 'Social Media' ) : ?>current_page_item<?php endif; ?>">
-                    <a href="/get-involved/social-media/">Social Media</a>
                 </li>
             </ul>
 

@@ -16,21 +16,22 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
 
     <div class="container-fluid bg-info cheetah-spots py-3">
 
-        <div class="narrow">
+      <div class="narrow">
 
-            <ul class="extensible-list horizontal fs-md text-white text-shadow">
-                <li>
-                    <a class="text-white" href="<?php echo get_site_url() . '/get-involved/ccf-events'; ?>">
-                        CCF Events
-                    </a>
-                </li>
-                <li>|</li>
-                <li>
-                    <?php echo $month . ' ' . $year; ?>
-                </li>
-            </ul>
+        <ul class="extensible-list horizontal fs-md text-white text-shadow">
+          <li>
+            <a class="text-white" href="news-ccf-blog.html">
+              Events
+            </a>
+          </li>
+          <li><span class="fa fa-caret-right" role="img"></span></li>
+          <li class="text-primary font-weight-bold">
+            <?php echo $month . ' ' . $year; ?>
+          </li>
+        </ul>
 
-        </div>
+      </div>
+      <!-- .narrow -->
 
     </div>
     <!-- .container-fluid -->

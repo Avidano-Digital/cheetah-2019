@@ -17,7 +17,7 @@ $resourceCategory = $resourceCategories[0];
                 <li>
                     <a class="text-white" href="<?php echo get_site_url() . '/learn/resource-library'; ?>">Resource Library</a>
                 </li>
-                <li>|</li>
+                <li><span class="fa fa-caret-right" role="img"></span></li>
                 <li>
                     <a class="text-primary font-weight-bold" href="<?php echo get_site_url() . '/resource-category/' . $resourceCategory->slug; ?>"><?php echo $resourceCategory->name; ?></a>
                 </li>

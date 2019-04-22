@@ -404,7 +404,7 @@ $count_b = 0;
 
 <?php elseif( get_row_layout() == 'thumbnail_links_block' ):
     
-        $modals = get_sub_field('modals');
+    $modals = get_sub_field('modals');
     
 ?>
 

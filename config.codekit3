@@ -19366,6 +19366,14 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/lib/theme-support.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/page-ccf-events-backup.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page-ccf-events-backup.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/page-ccf-events.php": {
 		"cB": 0,
 		"ft": 8192,

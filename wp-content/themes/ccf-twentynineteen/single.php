@@ -18,7 +18,7 @@ get_header(); ?>
               News
             </a>
           </li>
-          <li>|</li>
+          <li><span class="fa fa-caret-right" role="img"></span></li>
           <li>
             <a class="text-primary font-weight-bold" href="news-ccf-blog.html">
               CCF Blog
