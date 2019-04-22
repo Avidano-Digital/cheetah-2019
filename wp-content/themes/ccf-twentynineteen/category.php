@@ -258,12 +258,9 @@ get_header(); ?>
 
         <?php endif; /* have_posts */ ?>
 
-        <div class="pagination pagination justify-content-center">
+        <div class="pagination justify-content-center">
 
-            <?php 
-            // echo paginate_links(); 
-            echo custom_pagination();
-            ?>
+            <?php echo custom_pagination(); ?>
             
         </div>
 
