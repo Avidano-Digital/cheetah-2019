@@ -281,48 +281,23 @@
 
     function showPrimaryFilters() {
 
-        $current_category = get_category(get_query_var('cat'));
-        $current_category_name = $current_category->name;
+        $topics = get_categories();
 
-        if ($current_category_name == 'CCF Blog') {
+        echo '<ul class="extensible-list fs-md">';
 
-            $current_category_id = $current_category->cat_ID;
-            $topics = get_categories(array( 'parent' => $current_category_id ));
+        foreach ($topics as $topic) :
 
-            echo '<select class="form-control news-filter" id="topics" required><option>All Topics</option>';
+            if ($topic->slug == 'ccf-blog') :
+                $name = 'All Topics';
+            else :
+                $name = $topic->cat_name;
+            endif;
 
-            foreach ($topics as $topic) :
-                echo '<option data-category-id="'.$topic->cat_ID.'" value="'.$topic->cat_name.'">'.$topic->cat_name.'</option>';
-            endforeach;
+            echo '<li><a class="text-body" href="/'.$topic->slug.'" title="'.$topic->cat_name.'">'.$name.'</a></li>';
 
-            echo '</select>';
+        endforeach;
 
-        }
-
-        if ($current_category_name != 'CCF Blog') {
-            $current_category_id = $current_category->cat_ID;
-            $news_posts = get_posts(
-                array(
-                    'category'=>$current_category_id,
-                    'orderby'=>'date'
-                )
-            );
-            $years = [];
-            foreach ($news_posts as $news_post) {
-                $date = substr($news_post->post_date, 0, 4);
-                if (!in_array($date,$years)) {
-                    array_push($years,$date);                
-                }
-            }
-
-            echo '<select class="form-control news-filter" id="years" data-category-id="'.$current_category_id.'" required><option>Filter by Year</option>';
-
-            foreach ($years as $year) {
-                echo '<option data-category-id="'.$current_category_id.'" data-year="'.$year.'" value="'.$year.'">'.$year.'</option>';
-            }
-
-            echo '</select>';            
-        }
+        echo '</ul>';
 
     }
 
@@ -331,13 +306,15 @@
         $wp_user_query = new WP_User_Query(array('has_published_posts' => array('post')));
         $authors = $wp_user_query->get_results();
 
-        echo '<select class="form-control news-filter" id="authors" required><option>All Authors</option>';
+        echo '<ul class="extensible-list fs-md"><li><a class="text-body" href="/ccf-blog" title="All Authors">All Authors</a></li>';
 
         foreach ($authors as $author) :
-            echo '<option data-author-id="'.$author->ID.'" value="'.$author->display_name.'">'.$author->display_name.'</option>';
+
+            echo '<li><a class="text-body" href="/author/'.$author->user_nicename.'" title="'.$author->display_name.'">'.$author->display_name.'</a></li>';
+
         endforeach;
 
-        echo '</select>';
+        echo '</ul>';
 
     }
 
@@ -346,16 +323,15 @@
     ////////////////////////////////////////
 
     function listParentCategoriesMenu() {
-        $categories = get_terms('category', array('parent' => 0));
+
         $current_category = get_category(get_query_var('cat'));
         $current_category_id = $current_category->cat_ID;
-        foreach ($categories as $category) {
-            $active = '';
-            if ($current_category_id == $category->term_id) {
-                $active = 'active';
-            }
-            echo '<li><a class="'. $active .'" href="/'. $category->slug .'">'. $category->name . '</a></li>';
-        }                
+
+        $category_parent = get_category_parents($current_category_id,false,'');
+
+        echo '<li><a href="/ccf-blog" class="',(strpos($category_parent,"CCF Blog") > -1) ? "active" : "",'">CCF Blog</a></li>';
+        echo '<li><a href="/press-releases" class="',(strpos($category_parent,"Press Releases") > -1) ? "active" : "",'">Press Releases</a></li>';
+        
     }
 
     ////////////////////////////////////////
