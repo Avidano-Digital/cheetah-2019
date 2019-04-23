@@ -1,0 +1,70 @@
+
+#donate-tabs{
+
+    .nav-link {
+        color: $tab-link-color;
+
+        &.active {
+            background: $primary
+        }
+    }
+
+}
+
+
+// Form styles
+
+#bbox-root {
+
+    // Resets
+    #mongo-form,
+    div.BBFormContainer,
+    div.BBFormFieldContainer,
+    div.BBFormSection,
+    div.BBFormSectionHeading {
+        // @include border-radius(0);
+        min-width: 100%;
+        @extend .m-0;
+        @extend .p-0;
+    }
+
+input,
+select,
+textarea {
+    @include border-radius(0);
+}
+
+
+.BBFormRadioList{
+
+    // background: red;
+    display: flex;
+    flex-wrap: wrap;
+
+    .BBFormRadioItem{
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 33%;
+    }
+
+    .BBFormRadioLabel{
+        width: 100%;
+        display: block;
+
+        &.BBFormRadioLabelGivingLevel {
+            border: $border-width solid $border-color !important;
+        }
+
+        &.BBFormRadioLabelGivingLevelSelected {
+            border-color: $transparent !important;
+            background-color: $primary !important;
+        }
+
+        span{
+            color: $body-color;
+            font-weight: $font-weight-bold;
+        }
+    }
+}
+
+}

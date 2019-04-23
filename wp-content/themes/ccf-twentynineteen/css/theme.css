@@ -4822,7 +4822,11 @@ button.bg-quaternary:focus {
   content: "";
   background-color: rgba(0, 0, 0, 0); }
 
-.m-0 {
+.m-0, #bbox-root #mongo-form,
+#bbox-root div.BBFormContainer,
+#bbox-root div.BBFormFieldContainer,
+#bbox-root div.BBFormSection,
+#bbox-root div.BBFormSectionHeading {
   margin: 0 !important; }
 
 .mt-0,
@@ -4956,7 +4960,11 @@ button.bg-quaternary:focus {
 .mx-6 {
   margin-left: 6rem !important; }
 
-.p-0, .ekko-lightbox .modal-content,
+.p-0, #bbox-root #mongo-form,
+#bbox-root div.BBFormContainer,
+#bbox-root div.BBFormFieldContainer,
+#bbox-root div.BBFormSection,
+#bbox-root div.BBFormSectionHeading, .ekko-lightbox .modal-content,
 .ekko-lightbox .modal-header,
 .ekko-lightbox .modal-footer,
 .ekko-lightbox .modal-body {
@@ -7628,7 +7636,7 @@ In this file:
 // F. Extensible lists
 // G. Matrix rows
 // H. Accordion and button toggle
-// I. Responsive nav tabs and pills
+// I. Tabs
 // J. Side by side
 // K. Card
 // L. Circle
@@ -8045,6 +8053,80 @@ In this file:
   .accordion-group a[data-toggle="collapse"][aria-expanded="false"]:after {
     content: "\f107"; }
 
+.nav-pills .nav-link,
+.nav-tabs .nav-link {
+  color: #212529; }
+
+.nav-pills .nav-item,
+.nav-tabs .nav-item {
+  text-align: center; }
+
+@media (max-width: 479.98px) {
+  .nav-pills.device-sm,
+  .nav-tabs.device-sm {
+    flex-direction: column;
+    border-color: transparent;
+    margin-bottom: 1rem; }
+    .nav-pills.device-sm .nav-item,
+    .nav-tabs.device-sm .nav-item {
+      text-align: center;
+      border-color: #dee2e6; } }
+
+@media (max-width: 719.98px) {
+  .nav-pills.device-md,
+  .nav-tabs.device-md {
+    flex-direction: column;
+    border-color: transparent;
+    margin-bottom: 1rem; }
+    .nav-pills.device-md .nav-item,
+    .nav-tabs.device-md .nav-item {
+      text-align: center;
+      border-color: #dee2e6; } }
+
+@media (max-width: 959.98px) {
+  .nav-pills.device-lg,
+  .nav-tabs.device-lg {
+    flex-direction: column;
+    border-color: transparent;
+    margin-bottom: 1rem; }
+    .nav-pills.device-lg .nav-item,
+    .nav-tabs.device-lg .nav-item {
+      text-align: center;
+      border-color: #dee2e6; } }
+
+@media (max-width: 1199.98px) {
+  .nav-pills.device-xl,
+  .nav-tabs.device-xl {
+    flex-direction: column;
+    border-color: transparent;
+    margin-bottom: 1rem; }
+    .nav-pills.device-xl .nav-item,
+    .nav-tabs.device-xl .nav-item {
+      text-align: center;
+      border-color: #dee2e6; } }
+
+@media (max-width: 1439.98px) {
+  .nav-pills.device-xxl,
+  .nav-tabs.device-xxl {
+    flex-direction: column;
+    border-color: transparent;
+    margin-bottom: 1rem; }
+    .nav-pills.device-xxl .nav-item,
+    .nav-tabs.device-xxl .nav-item {
+      text-align: center;
+      border-color: #dee2e6; } }
+
+@media (max-width: 1679.98px) {
+  .nav-pills.device-xxxl,
+  .nav-tabs.device-xxxl {
+    flex-direction: column;
+    border-color: transparent;
+    margin-bottom: 1rem; }
+    .nav-pills.device-xxxl .nav-item,
+    .nav-tabs.device-xxxl .nav-item {
+      text-align: center;
+      border-color: #dee2e6; } }
+
 .side-by-side {
   display: flex;
   flex-direction: row;
@@ -8164,6 +8246,37 @@ In this file:
 // B. Container highlighter
 
 */
+#donate-tabs .nav-link {
+  color: #212529; }
+  #donate-tabs .nav-link.active {
+    background: #fec34e; }
+
+#bbox-root #mongo-form,
+#bbox-root div.BBFormContainer,
+#bbox-root div.BBFormFieldContainer,
+#bbox-root div.BBFormSection,
+#bbox-root div.BBFormSectionHeading {
+  min-width: 100%; }
+
+#bbox-root .BBFormRadioList {
+  display: flex;
+  flex-wrap: wrap; }
+  #bbox-root .BBFormRadioList .BBFormRadioItem {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 33%; }
+  #bbox-root .BBFormRadioList .BBFormRadioLabel {
+    width: 100%;
+    display: block; }
+    #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
+      border: 1px solid #dee2e6 !important; }
+    #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevelSelected {
+      border-color: transparent !important;
+      background-color: #fec34e !important; }
+    #bbox-root .BBFormRadioList .BBFormRadioLabel span {
+      color: #212529;
+      font-weight: 700; }
+
 .f-serif, p, .text-block > ul:not([class]) {
   font-family: Georgia, 'Times New Roman', Times, serif; }
 

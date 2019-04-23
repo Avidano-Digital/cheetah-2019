@@ -55,35 +55,34 @@ get_header();
 
     <div class="container-fluid">
 
+        <div class="narrow my-4">
+        
+            <div class="nav nav-pills bg-light device-md" id="donate-tabs" role="tablist">
 
-    <div class="medium my-4">
-    
-        <div class="nav nav-pills bg-light device-md" role="tablist">
+                <a class="nav-item nav-link flex-fill active" id="tab-btn-01-a" href="#tab-01-a"
+                    data-toggle="pill" aria-controls="tab-01-a" aria-selected="true" role="tab">
+                    Donate Once
+                </a>
 
-            <a class="nav-item nav-link flex-fill active" id="tab-btn-01-a" href="#tab-01-a"
-                data-toggle="pill" aria-controls="tab-01-a" aria-selected="true" role="tab">
-                Tab One
-            </a>
+                <a class="nav-item nav-link flex-fill" id="tab-btn-01-b" href="#tab-01-b"
+                    data-toggle="pill" aria-controls="tab-01-b" aria-selected="false" role="tab">
+                    Recurring Gift
+                </a>
 
-            <a class="nav-item nav-link flex-fill" id="tab-btn-01-b" href="#tab-01-b"
-                data-toggle="pill" aria-controls="tab-01-b" aria-selected="false" role="tab">
-                Tab Two
-            </a>
+                <a class="nav-item nav-link flex-fill" id="tab-btn-01-c" href="#tab-01-c"
+                    data-toggle="pill" aria-controls="tab-01-c" aria-selected="false" role="tab">
+                    Sponsor
+                </a>
 
-            <a class="nav-item nav-link flex-fill" id="tab-btn-01-c" href="#tab-01-c"
-                data-toggle="pill" aria-controls="tab-01-c" aria-selected="false" role="tab">
-                Tab Three
-            </a>
+            </div>
 
         </div>
 
-    </div>
+        <div class="narrow my-4">
+        
+            <div id="bbox-root"></div>
 
-    <div class="narrow my-4">
-    
-        <div id="bbox-root"></div>
-
-    </div>
+        </div>
 
 
 
