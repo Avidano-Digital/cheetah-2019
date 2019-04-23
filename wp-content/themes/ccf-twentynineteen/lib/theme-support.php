@@ -419,6 +419,7 @@
 
         $args = array( 
             'post_type' => 'ccfcheetahs', 
+            'posts_per_page' => 99,
             'order' => 'ASC',
             'tax_query' => array(
                 array(
