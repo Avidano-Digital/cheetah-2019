@@ -168,6 +168,7 @@ $parent_title = get_the_title($post->post_parent);
         <!-- .row -->
 
     </div>
+    <!-- .container-fluid -->
 
     <?php endwhile; endif; /* have_posts */ ?>
 

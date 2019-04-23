@@ -3,7 +3,7 @@
     <?php starterMenu('Desktop'); ?>
     
     <li>
-        <a class="btn btn-primary donate" href="#1" title="Donate">Donate</a>
+        <a class="btn btn-primary donate" href="/donate" title="Donate">Donate</a>
     </li>
 
 </ul>
