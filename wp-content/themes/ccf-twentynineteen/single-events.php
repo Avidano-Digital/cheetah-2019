@@ -2,9 +2,8 @@
 
 get_header(); 
 
-$date = DateTime::createFromFormat("F j, Y", get_field('start_date_time'));
-$year = $date->format("Y");
-$month = $date->format("F");
+$start_date = new DateTime(get_field('start_date_time'));
+$end_date = new DateTime(get_field('end_date_time'));
 
 $featured_image_id = get_post_thumbnail_id($post->ID);
 $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
@@ -20,13 +19,13 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
 
         <ul class="extensible-list horizontal fs-md text-white text-shadow">
           <li>
-            <a class="text-white" href="news-ccf-blog.html">
+            <a class="text-white" href="/get-involved/ccf-events">
               Events
             </a>
           </li>
           <li><span class="fa fa-caret-right" role="img"></span></li>
           <li class="text-primary font-weight-bold">
-            <?php echo $month . ' ' . $year; ?>
+            <?php echo $start_date->format("F Y"); ?>
           </li>
         </ul>
 
@@ -45,12 +44,7 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
             <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
 
             <p class="f-sans-serif">
-                <span class="bg-danger d-block">
-
-                Starts on:
-                
-                </span>
-                <strong class="d-block"><?php the_field('start_date_time'); ?></strong>
+                <strong class="d-block"><?php echo ($end_date->format("j") != $start_date->format("j")) ? get_field('start_date_time') . ' – ' . get_field('end_date_time') : get_field('start_date_time') . ' – ' . $end_date->format('g:i a'); ?></strong>
             </p>
 
         </header>
