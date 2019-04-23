@@ -281,9 +281,14 @@
 
     function showPrimaryFilters() {
 
+        $current_category = get_category(get_query_var('cat'));
+        $current_category_name = $current_category->name;
         $topics = get_categories();
 
         echo '<ul class="extensible-list fs-md">';
+
+        if ($current_category_name != 'Press Releases') :
+
 
         foreach ($topics as $topic) :
 
@@ -296,6 +301,31 @@
             echo '<li><a class="text-body" href="/'.$topic->slug.'" title="'.$topic->cat_name.'">'.$name.'</a></li>';
 
         endforeach;
+
+        else :
+
+            $current_category_id = $current_category->cat_ID;
+            $news_posts = get_posts(
+                array(
+                    'category'=>$current_category_id,
+                    'orderby'=>'date'
+                )
+            );
+            $years = [];
+            foreach ($news_posts as $news_post) {
+                $date = substr($news_post->post_date, 0, 4);
+                if (!in_array($date,$years)) {
+                    array_push($years,$date);                
+                }
+            }
+
+            echo '<li><a href="/press-releases" class="text-body">All Years</a></li>';
+
+            foreach ($years as $year) {
+                echo '<li><a href="/'.$year.'/?category_name=press-releases" class="text-body">'.$year.'</a></li>'; 
+            }
+
+        endif;
 
         echo '</ul>';
 

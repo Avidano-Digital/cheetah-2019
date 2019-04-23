@@ -47,11 +47,16 @@ get_header(); ?>
 
             <div class="row matrix-gutter">
 
+                <?php
+                    $current_category = get_category(get_query_var('cat'));
+                    $current_category_name = $current_category->name;
+                ?>
+
                 <div class="col-sm">
                     <div class="btn-toggle">
                         <button class="btn btn-block btn-primary" data-toggle="collapse" data-target="#all-topics"
                             aria-expanded="false" aria-controls="all-topics">
-                            <span class="Topics">Topics</span>
+                            <span class="Topics"><?php echo ($current_category_name == 'Press Releases') ? "Years" : "Topics"; ?></span>
                         </button>
                     </div>
                 </div>
