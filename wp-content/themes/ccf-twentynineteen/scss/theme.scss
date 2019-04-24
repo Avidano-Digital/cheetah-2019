@@ -208,7 +208,6 @@ form[role="search"] {
 
 #gtranslate_selector {
     @extend .form-control;
-
     @extend .form-control-sm;
 }
 
@@ -324,10 +323,9 @@ span.fa-circle {
 
 .leaflet-popup-content-wrapper {
     @extend .rounded;
+    @extend .shadow;
 
-    @extend .shadow-lg;
-
-    padding: $spacer-1;
+    // padding: $spacer-1;
 }
 
 .leaflet-popup-content {
@@ -335,10 +333,22 @@ span.fa-circle {
 
     p {
         margin: 0;
+        font-size: $fs-sm;
 
-        &.location {
-            color: $text-muted;
+        &.title {
+            font-size: $fs-md;
         }
+
+        &.city {
+            color: $text-muted;
+            margin-bottom: ($spacer-1/2);
+            
+        }
+        &.type {
+        }
+        
+
+        &.info {}
     }
 }
 

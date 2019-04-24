@@ -4753,10 +4753,10 @@ button.bg-quaternary:focus {
 .shadow-sm, #map-affiliates .leaflet-bar a {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3) !important; }
 
-.shadow, .tab-skipper, #primary-navigation-desktop .sub {
+.shadow, .tab-skipper, #primary-navigation-desktop .sub, .leaflet-popup-content-wrapper {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3) !important; }
 
-.shadow-lg, .leaflet-popup-content-wrapper,
+.shadow-lg,
 .ekko-lightbox .modal-body {
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3) !important; }
 
@@ -8415,15 +8415,16 @@ span.fa-circle.chapter {
 span.fa-circle.partner-organization {
   color: #C1BFB7; }
 
-.leaflet-popup-content-wrapper {
-  padding: 0.5rem; }
-
 .leaflet-popup-content {
   font-size: 1rem; }
   .leaflet-popup-content p {
-    margin: 0; }
-    .leaflet-popup-content p.location {
-      color: #495057; }
+    margin: 0;
+    font-size: 0.875rem; }
+    .leaflet-popup-content p.title {
+      font-size: 1rem; }
+    .leaflet-popup-content p.city {
+      color: #495057;
+      margin-bottom: 0.25rem; }
 
 #map-affiliates .leaflet-bar {
   margin-left: 1rem;

@@ -19,7 +19,7 @@
                             <span class="fas fas fa-circle affiliate"></span>
                             <span class="mx-1">Affiliates</span> 
                         </li>
-                        <li>
+                        <li class="d-none">
                             <span class="fas fas fa-circle chapter"></span>
                             <span class="mx-1">Chapters</span> 
                         </li>
@@ -83,6 +83,9 @@
         $map_location['id'] = $id;
         $map_location['title'] = $title;
         $map_location['icon'] = $map_icon;
+
+        $map_location['city'] = $city;
+
         $map_location['popupText'] = $popup_text;
         $map_location['latitude'] = $latitude;
         $map_location['longitude'] = $longitude;

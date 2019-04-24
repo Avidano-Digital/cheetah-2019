@@ -55,7 +55,8 @@ jQuery(function ($) {
       id = this.id;
       title = this.title;
       selectedIcon = this.icon;
-      mapDescription = this.popupText;
+      city = this.city;
+      text = this.popupText;
       latitude = this.latitude;
       longitude = this.longitude;
 
@@ -80,8 +81,12 @@ jQuery(function ($) {
           'type': 'Feature',
           'properties': {
               'name': title,
-              'popupContent': '<p><a href="#'+id+'"><strong>'+title+'</strong></a></p><p>'+locationType+'</p><p class="location">'+mapDescription+'</p>',
-              icon : selectedIcon
+              'popupContent':
+                  '<p class="title"><a href="#' + id + '"><strong>' + title + '</strong></a></p>' +
+                  '<p class="city">' + city + '</p>' +
+                  '<p class="type">' + locationType + '</p>' +
+                  '<p class="info">' + text + '</p>',
+              icon: selectedIcon
           },
           'geometry': {
               'type': 'Point',
