@@ -143,6 +143,4 @@
 
 <?php endwhile; endif; /* ccf_global_content */ ?>
 
-<?php
-    wp_localize_script('ccf-global-map', 'map_locations', $map_locations);
-?>
+<?php wp_localize_script('ccf-global-map', 'map_locations', $map_locations); ?>
