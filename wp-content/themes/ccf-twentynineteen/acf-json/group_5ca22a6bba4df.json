@@ -79,9 +79,47 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_5cc0119ddfe92",
+                            "label": "City",
+                            "name": "city",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ca3192b2eca1",
+                            "label": "Description",
+                            "name": "description",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "very_simple",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
                             "key": "field_5cbf06307714e",
-                            "label": "Icon",
-                            "name": "icon",
+                            "label": "Map Icon",
+                            "name": "map_icon",
                             "type": "select",
                             "instructions": "",
                             "required": 0,
@@ -106,9 +144,9 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_5ca3192b2eca1",
-                            "label": "Description",
-                            "name": "description",
+                            "key": "field_5cbf06487714f",
+                            "label": "Popup Text",
+                            "name": "popup_text",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -120,28 +158,9 @@
                             },
                             "default_value": "",
                             "tabs": "all",
-                            "toolbar": "very_simple",
-                            "media_upload": 0,
+                            "toolbar": "full",
+                            "media_upload": 1,
                             "delay": 0
-                        },
-                        {
-                            "key": "field_5cbf06487714f",
-                            "label": "Map Description",
-                            "name": "map_description",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
                         },
                         {
                             "key": "field_5cbf064d77150",
@@ -330,5 +349,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1556022888
+    "modified": 1556093151
 }

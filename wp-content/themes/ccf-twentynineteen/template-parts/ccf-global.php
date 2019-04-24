@@ -65,9 +65,12 @@
         <?php if( have_rows('section') ): while( have_rows('section') ): the_row();
 
         $title = get_sub_field('title');
-        $icon = get_sub_field('icon');
+        $city = get_sub_field('city');
         $description = get_sub_field('description');
-        $map_description = get_sub_field('map_description');
+
+        $map_icon = get_sub_field('map_icon');
+        $popup_text = get_sub_field('popup_text');
+
         $latitude = get_sub_field('latitude');
         $longitude = get_sub_field('longitude');
 
@@ -79,8 +82,8 @@
         $map_location = array();
         $map_location['id'] = $id;
         $map_location['title'] = $title;
-        $map_location['icon'] = $icon;
-        $map_location['map_description'] = $map_description;
+        $map_location['icon'] = $map_icon;
+        $map_location['popupText'] = $popup_text;
         $map_location['latitude'] = $latitude;
         $map_location['longitude'] = $longitude;
         array_push($map_locations, $map_location);
@@ -90,6 +93,11 @@
         <section class="mb-5 mb-xl-6" <?php if($id !== '') echo 'id="' . $id . '"' ?>>
 
             <h2><?php echo $title; ?></h2>
+
+            <?php if($city) : ?>
+            <p class="f-sans-serif text-muted"><?php echo $city; ?></p>
+            <?php endif; ?>
+            
             <p><?php echo $description; ?></p>
 
             <?php if( have_rows('details') ): ?>

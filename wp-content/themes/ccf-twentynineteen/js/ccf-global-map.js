@@ -55,7 +55,7 @@ jQuery(function ($) {
       id = this.id;
       title = this.title;
       selectedIcon = this.icon;
-      mapDescription = this.map_description;
+      mapDescription = this.popupText;
       latitude = this.latitude;
       longitude = this.longitude;
 
