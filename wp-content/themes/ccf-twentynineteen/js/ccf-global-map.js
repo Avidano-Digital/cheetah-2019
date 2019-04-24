@@ -169,12 +169,12 @@ jQuery(function ($) {
                 location.hostname === this.hostname) {
 
                 var target = $(this.hash);
-                var margin = 20;
+                var margin = 32;
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - margin
-                    }, 1000);
+                    }, 800);
                     return false;
                 }
             }
