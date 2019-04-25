@@ -90,7 +90,7 @@ jQuery(function ($) {
           },
           'geometry': {
               'type': 'Point',
-              'coordinates': [latitude, longitude]
+              'coordinates': [longitude, latitude]
           }
       };
       
