@@ -8,7 +8,7 @@
         // CSS
         ////////////////////////////////////////
 
-        if (is_page('ccf-global')) {
+        if (is_page('ccf-global') || is_singular('events')) {
             wp_enqueue_style(
                 'leaflet-css',
                 'https://unpkg.com/leaflet@1.3.4/dist/leaflet.css'
@@ -94,7 +94,7 @@
             true 
         );
 
-        if ( is_page( 'ccf-global' ) ) {
+        if ( is_page( 'ccf-global' ) || is_singular('events')) {
 
             wp_enqueue_script( 
                 'leaflet-js', 
