@@ -19,7 +19,7 @@
             "min": 0,
             "max": 0,
             "layout": "block",
-            "button_label": "",
+            "button_label": "Add Section",
             "sub_fields": [
                 {
                     "key": "field_5ca3187253706",
@@ -57,7 +57,7 @@
                     "min": 0,
                     "max": 0,
                     "layout": "row",
-                    "button_label": "",
+                    "button_label": "Add Organization",
                     "sub_fields": [
                         {
                             "key": "field_5ca318f5dd7af",
@@ -132,7 +132,6 @@
                             "choices": {
                                 "officeIcon": "Headquarters",
                                 "affiliateIcon": "Affiliate",
-                                "chapterIcon": "Chapter",
                                 "partnerIcon": "Partner"
                             },
                             "default_value": [],
@@ -145,8 +144,8 @@
                         },
                         {
                             "key": "field_5cc16d5361fc9",
-                            "label": "Additional Info",
-                            "name": "additional_info",
+                            "label": "Additional Popup Info",
+                            "name": "additional_popup_info",
                             "type": "true_false",
                             "instructions": "",
                             "required": 0,
@@ -158,14 +157,14 @@
                             },
                             "message": "",
                             "default_value": 0,
-                            "ui": 0,
-                            "ui_on_text": "",
-                            "ui_off_text": ""
+                            "ui": 1,
+                            "ui_on_text": "Additional Popup Info",
+                            "ui_off_text": "Additional Popup Info"
                         },
                         {
                             "key": "field_5cbf06487714f",
-                            "label": "Popup Text",
-                            "name": "popup_text",
+                            "label": "Popup Info",
+                            "name": "popup_info",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -186,7 +185,7 @@
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
-                            "media_upload": 1,
+                            "media_upload": 0,
                             "delay": 0
                         },
                         {
@@ -244,7 +243,7 @@
                             "min": 1,
                             "max": 0,
                             "layout": "row",
-                            "button_label": "",
+                            "button_label": "Add Info",
                             "sub_fields": [
                                 {
                                     "key": "field_5ca31baec8745",
@@ -376,5 +375,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1556180464
+    "modified": 1556181689
 }

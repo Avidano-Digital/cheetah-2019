@@ -69,7 +69,7 @@
         $description = get_sub_field('description');
 
         $map_icon = get_sub_field('map_icon');
-        $popup_text = get_sub_field('popup_text');
+        $popup_info = get_sub_field('popup_info');
 
         $latitude = get_sub_field('latitude');
         $longitude = get_sub_field('longitude');
@@ -86,7 +86,7 @@
 
         $map_location['city'] = $city;
 
-        $map_location['popupText'] = $popup_text;
+        $map_location['popupText'] = $popup_info;
         $map_location['latitude'] = $latitude;
         $map_location['longitude'] = $longitude;
         array_push($map_locations, $map_location);
