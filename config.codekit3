@@ -19290,17 +19290,6 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/index.php",
 		"oF": 0
 		},
-	"/wp-content/themes/ccf-twentynineteen/js/ccf-global-map.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/js/ccf-global-map-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
 	"/wp-content/themes/ccf-twentynineteen/js/main.js": {
 		"bF": 0,
 		"ft": 64,

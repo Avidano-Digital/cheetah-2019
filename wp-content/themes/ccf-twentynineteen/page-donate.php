@@ -84,12 +84,8 @@ get_header();
 
         </div>
 
-
-
     </div>
     <!-- .container-fluid -->
-
-
 
     <?php endwhile; endif; /* have_posts */ ?>
 
@@ -100,7 +96,13 @@ get_header();
 
 <script type="text/javascript">
     window.bboxInit = function () {
-        bbox.showForm('ce3cb3d7-d112-40a1-bf4e-c9dd10a518f2');
+        bbox.showForm('ce3cb3d7-d112-40a1-bf4e-c9dd10a518f2'); // DONATE
+
+        //    bbox.showForm('6fb04bf9-dd82-4dff-ad14-ee935828dd70'); SPONSOR
+
+        //    bbox.showForm('b9cdbd87-026a-4f39-b5f4-a3aed39adfab'); Recurring
+
+
     };
     (function () {
         var e = document.createElement('script'); e.async = true;
