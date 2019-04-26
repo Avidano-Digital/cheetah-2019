@@ -124,24 +124,27 @@ get_header(); ?>
 
     <?php 
 
-        $page_heading = '';
+    $page_heading = '';
 
-        if (get_query_var('author_name')) :
-            $page_heading = get_user_by('slug', get_query_var('author_name'))->display_name;
-        elseif (get_query_var('category_name') && get_query_var('category_name') != 'ccf-blog'):
-            $page_heading = get_category_by_slug(get_query_var('category_name'))->cat_name;
-        endif;
+    if (get_query_var('author_name')) :
+        $page_heading = get_user_by('slug', get_query_var('author_name'))->display_name;
+    elseif (get_query_var('category_name') && get_query_var('category_name') != 'ccf-blog'):
+        $page_heading = get_category_by_slug(get_query_var('category_name'))->cat_name;
+    else : $page_heading = 'All Topics';
+    endif;
 
-        if ($page_heading) :
+    if ($page_heading) :
 
     ?>
 
 
-    <h1><?php echo $page_heading; ?></h1>
+   
 
     <?php endif; ?>
 
     <div class="container py-6">
+
+            <h1 class="text-center mb-2"><?php echo $page_heading; ?></h1>
 
             <?php if ( have_posts() ) : ?>
 

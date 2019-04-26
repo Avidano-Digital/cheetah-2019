@@ -20,7 +20,7 @@ get_header(); ?>
           </li>
           <li><span class="fa fa-caret-right" role="img"></span></li>
           <li>
-            <a class="text-primary font-weight-bold" href="news-ccf-blog.html">
+            <a class="text-primary font-weight-bold" href="/ccf-blog/">
               CCF Blog
             </a>
           </li>
