@@ -6,6 +6,19 @@ Template Name: Donate
 
 get_header();
 
+$donate_url = $_SERVER[REQUEST_URI];
+
+if (strpos($donate_url, '/donate/sponsor') !== false) :
+    $form = '6fb04bf9-dd82-4dff-ad14-ee935828dd70';
+    $type = 'sponsor';
+elseif (strpos($donate_url, '/donate/recurring') !== false) :
+    $form = 'b9cdbd87-026a-4f39-b5f4-a3aed39adfab';
+    $type = 'recurring';
+else :
+    $form = 'ce3cb3d7-d112-40a1-bf4e-c9dd10a518f2';
+    $type = 'once';
+endif;
+
 ?>
 
 <main id="content">
@@ -59,18 +72,18 @@ get_header();
         
             <div class="nav nav-pills bg-light device-md" id="donate-tabs" role="tablist">
 
-                <a class="nav-item nav-link flex-fill active" id="tab-btn-01-a" href="#tab-01-a"
-                    data-toggle="pill" aria-controls="tab-01-a" aria-selected="true" role="tab">
+                <a class="nav-item nav-link flex-fill <?php echo ($type == 'once' ? 'active' : '') ?>" id="tab-btn-01-a" href="/donate/"
+                   aria-controls="tab-01-a" aria-selected="<?php echo ($type == 'once' ? 'true' : 'false') ?>" role="tab">
                     Donate Once
                 </a>
 
-                <a class="nav-item nav-link flex-fill" id="tab-btn-01-b" href="#tab-01-b"
-                    data-toggle="pill" aria-controls="tab-01-b" aria-selected="false" role="tab">
+                <a class="nav-item nav-link flex-fill <?php echo ($type == 'recurring' ? 'active' : '') ?>" id="tab-btn-01-b" href="/donate/recurring/"
+                   aria-controls="tab-01-b" aria-selected="<?php echo ($type == 'recurring' ? 'true' : 'false') ?>" role="tab">
                     Recurring Gift
                 </a>
 
-                <a class="nav-item nav-link flex-fill" id="tab-btn-01-c" href="#tab-01-c"
-                    data-toggle="pill" aria-controls="tab-01-c" aria-selected="false" role="tab">
+                <a class="nav-item nav-link flex-fill <?php echo ($type == 'sponsor' ? 'active' : '') ?>" id="tab-btn-01-c" href="/donate/sponsor/"
+                   aria-controls="tab-01-c" aria-selected="<?php echo ($type == 'sponsor' ? 'true' : 'false') ?>" role="tab">
                     Sponsor
                 </a>
 
@@ -96,13 +109,7 @@ get_header();
 
 <script type="text/javascript">
     window.bboxInit = function () {
-        bbox.showForm('ce3cb3d7-d112-40a1-bf4e-c9dd10a518f2'); // DONATE
-
-        //    bbox.showForm('6fb04bf9-dd82-4dff-ad14-ee935828dd70'); SPONSOR
-
-        //    bbox.showForm('b9cdbd87-026a-4f39-b5f4-a3aed39adfab'); Recurring
-
-
+        bbox.showForm('<?php echo $form; ?>');
     };
     (function () {
         var e = document.createElement('script'); e.async = true;
