@@ -403,7 +403,7 @@ $leaflet-button-color: white;
 ////////////////////////////////////////
 
 .cheetah-spots {
-    @include apply-background-image("cheetah-spots");
+    @include apply-background-image("cheetah-spots", ".svg", false);
 }
 
 .pattern-border-top-bottom {
@@ -421,13 +421,13 @@ $leaflet-button-color: white;
     &::before {
         top: 0;
 
-        @include apply-background-image("pattern-01");
+        @include apply-background-image("pattern-01", ".svg", false);
     }
 
     &::after {
         bottom: 0;
 
-        @include apply-background-image("pattern-02");
+        @include apply-background-image("pattern-02", ".svg", false);
     }
 }
 
@@ -453,7 +453,7 @@ $leaflet-button-color: white;
     border-top: none;
     height: 20px;
 
-    @include apply-background-image("african-hr", ".svg");
+    @include apply-background-image("african-hr", ".svg", false );
 }
 
 ////////////////////////////////////////
@@ -518,13 +518,13 @@ $leaflet-button-color: white;
     &::before {
         top: .5rem;
 
-        @include apply-background-image("pattern-colored-angles", ".svg");
+        @include apply-background-image("pattern-colored-angles", ".svg", false);
     }
 
     &::after {
         bottom: .5rem;
 
-        @include apply-background-image("pattern-colored-angles", ".svg");
+        @include apply-background-image("pattern-colored-angles", ".svg", false);
     }
 }
 

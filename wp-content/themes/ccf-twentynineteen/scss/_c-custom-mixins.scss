@@ -94,27 +94,28 @@ In this file:
 // E. Background image
 ////////////////////////////////////////
 
-$background-image-path: '../images/';
+$background-image-path: '/wp-content/themes/ccf-twentynineteen/images/';
 
-@mixin apply-background-image(
-    $image: '01', 
-    $extension: '.svg',
-    $cover: false
-  ){
-  
-  @if $extension == '.svg'{
+@mixin apply-background-image($image: 'placeholder-1500x750',
+$extension: '.jpg',
+$cover: true) {
+
+  @if $extension=='.svg' {
     background-image: url($background-image-path + $image + $extension);
     background-image: url($background-image-path + $image + $extension), none;
-    background-size: auto;
-  } @else {
+  }
+
+  @else {
     background-image: url($background-image-path + $image + $extension);
   }
 
-  @if $cover{
+  @if $cover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-  } @else{
+  }
+
+  @else {
     background-repeat: repeat;
   }
 

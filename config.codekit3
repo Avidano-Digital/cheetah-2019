@@ -18440,6 +18440,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/images/ccf-news-banner.jpg": {
+		"ft": 16384,
+		"iS": 196803,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/ccf-news-banner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/wp-content/themes/ccf-twentynineteen/images/ccf-research.jpg": {
 		"ft": 16384,
 		"iS": 9789,
@@ -18902,6 +18913,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/placeholder-1500x750.jpg": {
+		"ft": 16384,
+		"iS": 23749,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/placeholder-1500x750.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/wp-content/themes/ccf-twentynineteen/images/resource-library-fact-sheets.jpg": {
 		"ft": 16384,

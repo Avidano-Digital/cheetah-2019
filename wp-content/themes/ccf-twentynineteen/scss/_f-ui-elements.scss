@@ -6,7 +6,7 @@ In this file:
 // B. Custom Link
 // C. Gradients
 // D. Featured panels
-// E. Background image cover
+// E. Banner with background
 // F. Extensible lists
 // G. Matrix rows
 // H. Accordion and button toggle
@@ -234,21 +234,18 @@ $custom-link: true;
 }
 
 ////////////////////////////////////////
-// E. Background image cover
+// E. Banner with background
 ////////////////////////////////////////
 
-$bg-fixed-image-opacity: 0.2;
-$bg-fixed-height: 350px;
+$banner-with-background-opacity: 0.3;
+$banner-with-background-height: 350px;
 
-.bg-cover {
+.banner-with-background {
     position: relative;
+    display: flex;
+    min-height: $banner-with-background-height;
 
-    &.fixed-height {
-        display: flex;
-        min-height: $bg-fixed-height;
-    }
-
-    > div {
+    >div {
         position: relative;
         z-index: 100;
         align-self: center;
@@ -265,15 +262,16 @@ $bg-fixed-height: 350px;
         left: 0;
         z-index: auto;
 
-        @include opacity($bg-fixed-image-opacity);
+        @include opacity($banner-with-background-opacity);
         @include apply-background-image;
+
     }
 
-    // Add your own backround classes and append them to the '.bg-cover' selector
+    // Add your own backround classes and append them to the '.banner-with-background' selector
 
-    &.bridge {
+    &.ccf-news-banner {
         &::before {
-            @include apply-background-image($image: "bridge-lights");
+            @include apply-background-image('ccf-news-banner');
         }
     }
 }

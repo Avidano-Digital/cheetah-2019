@@ -8,38 +8,24 @@ get_header(); ?>
 
 <main id="content">
 
-    <section class="featured-panel responsive-md">
+    <div class="bg-dark banner-with-background ccf-news-banner">
 
-        <div class="card bg-dark">
+        <div class="container-fluid">
+            <div class="narrow text-white text-center text-shadow">
+                <h1 class="display-3 text-white mb-2">
+                    Cheetah News
+                </h1>
 
-            <img class="card-img opacity-30 show-on-mobile" src="<?php echo get_template_directory_uri(); ?>/images/ccf-blog.jpg" alt="Placeholder">
-            
-            <div class="card-img-overlay d-flex">
-
-                <div class="container-fluid align-self-center">
-
-                    <div class="narrow text-white text-center text-shadow">
-                        <h1 class="display-3 text-white mb-2">
-                            Cheetah News
-                        </h1>
-
-                        <ul class="extensible-list horizontal justify-content-center responsive-md fs-lg" id="news-menu">
-                            <?php listParentCategoriesMenu(); ?>
-                        </ul>
-                    </div>
-                    <!-- .narrow -->
-                
-                </div>
-                <!-- .align-self-end -->
-
+                <ul class="extensible-list horizontal justify-content-center responsive-md fs-lg" id="news-menu">
+                    <?php listParentCategoriesMenu(); ?>
+                </ul>
             </div>
-            <!-- .card-img-overlay -->
-
+            <!-- .narrow -->
         </div>
-        <!-- .card -->
+        <!-- .container -->
 
-    </section>
-    <!-- .featured-panel -->
+    </div>
+    <!-- .banner-with-background -->
 
     <div class="container-fluid posts-filter bg-info cheetah-spots py-3">
 

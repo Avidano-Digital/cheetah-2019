@@ -7632,7 +7632,7 @@ In this file:
 // B. Custom Link
 // C. Gradients
 // D. Featured panels
-// E. Background image cover
+// E. Banner with background
 // F. Extensible lists
 // G. Matrix rows
 // H. Accordion and button toggle
@@ -7848,16 +7848,15 @@ In this file:
     .banner h1, .banner .h1 {
       display: none; } }
 
-.bg-cover {
-  position: relative; }
-  .bg-cover.fixed-height {
-    display: flex;
-    min-height: 350px; }
-  .bg-cover > div {
+.banner-with-background {
+  position: relative;
+  display: flex;
+  min-height: 350px; }
+  .banner-with-background > div {
     position: relative;
     z-index: 100;
     align-self: center; }
-  .bg-cover::before {
+  .banner-with-background::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -7867,18 +7866,18 @@ In this file:
     bottom: 0;
     left: 0;
     z-index: auto;
-    opacity: 0.2;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: alpha(opacity=20);
-    background-image: url("../images/01.svg");
-    background-image: url("../images/01.svg"), none;
-    background-size: auto;
-    background-repeat: repeat; }
-  .bg-cover.bridge::before {
-    background-image: url("../images/bridge-lights.svg");
-    background-image: url("../images/bridge-lights.svg"), none;
-    background-size: auto;
-    background-repeat: repeat; }
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    background-image: url("/wp-content/themes/ccf-twentynineteen/images/placeholder-1500x750.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .banner-with-background.ccf-news-banner::before {
+    background-image: url("/wp-content/themes/ccf-twentynineteen/images/ccf-news-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
 
 .extensible-list, .carousel-indicators {
   padding-left: 0;
@@ -8449,9 +8448,8 @@ span.fa-circle.partner-organization {
     text-decoration: none; }
 
 .cheetah-spots {
-  background-image: url("../images/cheetah-spots.svg");
-  background-image: url("../images/cheetah-spots.svg"), none;
-  background-size: auto;
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/cheetah-spots.svg");
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/cheetah-spots.svg"), none;
   background-repeat: repeat; }
 
 .pattern-border-top-bottom::before, .pattern-border-top-bottom::after {
@@ -8463,16 +8461,14 @@ span.fa-circle.partner-organization {
 
 .pattern-border-top-bottom::before {
   top: 0;
-  background-image: url("../images/pattern-01.svg");
-  background-image: url("../images/pattern-01.svg"), none;
-  background-size: auto;
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/pattern-01.svg");
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/pattern-01.svg"), none;
   background-repeat: repeat; }
 
 .pattern-border-top-bottom::after {
   bottom: 0;
-  background-image: url("../images/pattern-02.svg");
-  background-image: url("../images/pattern-02.svg"), none;
-  background-size: auto;
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/pattern-02.svg");
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/pattern-02.svg"), none;
   background-repeat: repeat; }
 
 .pattern-border-top::before {
@@ -8484,17 +8480,17 @@ span.fa-circle.partner-organization {
 
 .pattern-border-top::before {
   top: 0;
-  background-image: url("../images/pattern-03.svg");
-  background-image: url("../images/pattern-03.svg"), none;
-  background-size: auto;
-  background-repeat: repeat; }
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/pattern-03.svg");
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/pattern-03.svg"), none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
 
 .african-hr {
   border-top: none;
   height: 20px;
-  background-image: url("../images/african-hr.svg");
-  background-image: url("../images/african-hr.svg"), none;
-  background-size: auto;
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/african-hr.svg");
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/african-hr.svg"), none;
   background-repeat: repeat; }
 
 .for-kids .featured-panel * {
@@ -8527,16 +8523,14 @@ span.fa-circle.partner-organization {
 
 .pattern-border-colored::before {
   top: .5rem;
-  background-image: url("../images/pattern-colored-angles.svg");
-  background-image: url("../images/pattern-colored-angles.svg"), none;
-  background-size: auto;
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/pattern-colored-angles.svg");
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/pattern-colored-angles.svg"), none;
   background-repeat: repeat; }
 
 .pattern-border-colored::after {
   bottom: .5rem;
-  background-image: url("../images/pattern-colored-angles.svg");
-  background-image: url("../images/pattern-colored-angles.svg"), none;
-  background-size: auto;
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/pattern-colored-angles.svg");
+  background-image: url("/wp-content/themes/ccf-twentynineteen/images/pattern-colored-angles.svg"), none;
   background-repeat: repeat; }
 
 dl p {
