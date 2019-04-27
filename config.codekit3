@@ -16445,16 +16445,6 @@
 		"oAP": "/wp-content/plugins/pdf-embedder/readme.txt",
 		"oF": 0
 		},
-	"/wp-content/plugins/safe-svg/assets/safe-svg-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/safe-svg/assets/safe-svg-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/wp-content/plugins/safe-svg/assets/safe-svg.css": {
 		"aP": 1,
 		"bl": 0,
@@ -16735,14 +16725,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/safe-svg/lib/vendor/enshrined/svg-sanitize/phpunit.xml.dist",
-		"oF": 0
-		},
-	"/wp-content/plugins/safe-svg/lib/vendor/enshrined/svg-sanitize/README.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/safe-svg/lib/vendor/enshrined/svg-sanitize/README.html",
 		"oF": 0
 		},
 	"/wp-content/plugins/safe-svg/lib/vendor/enshrined/svg-sanitize/README.md": {
@@ -19289,6 +19271,17 @@
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/index.php",
 		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/js/ccf-global-map.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/js/ccf-global-map-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/js/main.js": {
 		"bF": 0,
