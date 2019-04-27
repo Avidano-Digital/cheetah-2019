@@ -7851,7 +7851,7 @@ In this file:
 .banner-with-background {
   position: relative;
   display: flex;
-  min-height: 350px; }
+  min-height: 250px; }
   .banner-with-background > div {
     position: relative;
     z-index: 100;
@@ -7873,11 +7873,19 @@ In this file:
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; }
-  .banner-with-background.ccf-news-banner::before {
-    background-image: url("/wp-content/themes/ccf-twentynineteen/images/ccf-news-banner.jpg");
+  .banner-with-background.banner-news::before {
+    background-image: url("/wp-content/themes/ccf-twentynineteen/images/banner-news.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; }
+  .banner-with-background.banner-donate::before {
+    background-image: url("/wp-content/themes/ccf-twentynineteen/images/banner-donate.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  @media (min-width: 960px) {
+    .banner-with-background {
+      min-height: 350px; } }
 
 .extensible-list, .carousel-indicators {
   padding-left: 0;

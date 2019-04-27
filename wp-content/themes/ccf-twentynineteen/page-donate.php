@@ -25,7 +25,23 @@ endif;
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-        <section class="featured-panel responsive-md">
+        <div class="bg-dark banner-with-background banner-donate">
+
+            <div class="container-fluid">
+                <div class="narrow text-white text-center text-shadow">
+                    <h1>
+                        <span class="d-block text-primary fs-lg text-uppercase">Donate to CCF</span>
+                        <span class="display-4 text-white">Join us in the race to save the cheetah</span>
+                    </h1>
+                </div>
+                <!-- .narrow -->
+            </div>
+            <!-- .container -->
+
+        </div>
+        <!-- .banner-with-background -->
+
+        <section class="featured-panel responsive-md d-none">
 
             <div class="card bg-info">
 

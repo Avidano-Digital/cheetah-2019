@@ -8,7 +8,7 @@ get_header(); ?>
 
 <main id="content">
 
-    <div class="bg-dark banner-with-background ccf-news-banner">
+    <div class="bg-dark banner-with-background banner-news">
 
         <div class="container-fluid">
             <div class="narrow text-white text-center text-shadow">

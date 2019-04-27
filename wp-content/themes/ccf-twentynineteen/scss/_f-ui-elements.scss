@@ -238,12 +238,13 @@ $custom-link: true;
 ////////////////////////////////////////
 
 $banner-with-background-opacity: 0.3;
-$banner-with-background-height: 350px;
+$banner-with-background-device-h: 250px;
+$banner-with-background-desktop-h: 350px;
 
 .banner-with-background {
     position: relative;
     display: flex;
-    min-height: $banner-with-background-height;
+    min-height: $banner-with-background-device-h;
 
     >div {
         position: relative;
@@ -269,10 +270,20 @@ $banner-with-background-height: 350px;
 
     // Add your own backround classes and append them to the '.banner-with-background' selector
 
-    &.ccf-news-banner {
+    &.banner-news {
         &::before {
-            @include apply-background-image('ccf-news-banner');
+            @include apply-background-image('banner-news');
         }
+    }
+
+    &.banner-donate {
+        &::before {
+            @include apply-background-image('banner-donate');
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        min-height: $banner-with-background-desktop-h;
     }
 }
 
