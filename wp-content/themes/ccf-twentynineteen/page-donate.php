@@ -43,11 +43,11 @@ endif;
 
     <div class="container-fluid">
 
-        <div class="row">
+        <div class="row wide">
 
             <div class="col-xl-3 bg-light order-last">
 
-                <div class="my-xl-3">
+                <div class="my-3">
 
                     <div class="narrow fs-md">
                         
@@ -70,7 +70,7 @@ endif;
 
                 <hr>
 
-                <div class="my-xl-3 fs-md">
+                <div class="my-3 fs-md">
 
                     <p class="h5">Helpful Information</p>
 
