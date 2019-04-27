@@ -41,80 +41,139 @@ endif;
         </div>
         <!-- .banner-with-background -->
 
-        <section class="featured-panel responsive-md d-none">
-
-            <div class="card bg-info">
-
-                <?php
-                $featured_image_id = get_post_thumbnail_id($post->ID);
-                $featured_image = wp_get_attachment_image_src($featured_image_id, 'full', false, '');
-                $featured_image_alt = get_post_meta($featured_image_id, '_wp_attachment_image_alt', true);
-                ?>
-
-                <?php if ($featured_image): ?>
-                <img class="card-img opacity-50 show-on-mobile" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
-                <?php else : ?>
-                <img class="card-img opacity-50 show-on-mobile" src="http://via.placeholder.com/1500x500.jpg" alt="Placeholder">
-                <?php endif; ?>
-                
-                <div class="card-img-overlay d-flex">
-
-                    <div class="container-fluid align-self-center">
-
-                        <div class="narrow text-white text-center text-shadow">
-                            <h1>
-                                <span class="d-block text-primary fs-lg">Donate to CCF</span>
-                                <span class="display-3 text-white">Join the race to save the cheetah</span>
-                            </h1>
-                        </div>
-                        <!-- .narrow -->
-                    
-                    </div>
-                    <!-- .align-self-end -->
-
-                </div>
-                <!-- .card-img-overlay -->
-
-            </div>
-            <!-- .card -->
-
-    </section>
-    <!-- .featured-panel -->
-
-
     <div class="container-fluid">
 
-        <div class="narrow my-4">
-        
-            <div class="nav nav-pills bg-light device-md" id="donate-tabs" role="tablist">
+        <div class="row">
 
-                <a class="nav-item nav-link flex-fill <?php echo ($type == 'once' ? 'active' : '') ?>" id="tab-btn-01-a" href="/donate/"
-                   aria-controls="tab-01-a" aria-selected="<?php echo ($type == 'once' ? 'true' : 'false') ?>" role="tab">
-                    Donate Once
-                </a>
+            <div class="col-xl-3 bg-light order-last">
 
-                <a class="nav-item nav-link flex-fill <?php echo ($type == 'recurring' ? 'active' : '') ?>" id="tab-btn-01-b" href="/donate/recurring/"
-                   aria-controls="tab-01-b" aria-selected="<?php echo ($type == 'recurring' ? 'true' : 'false') ?>" role="tab">
-                    Recurring Gift
-                </a>
+                <div class="my-xl-3">
 
-                <a class="nav-item nav-link flex-fill <?php echo ($type == 'sponsor' ? 'active' : '') ?>" id="tab-btn-01-c" href="/donate/sponsor/"
-                   aria-controls="tab-01-c" aria-selected="<?php echo ($type == 'sponsor' ? 'true' : 'false') ?>" role="tab">
-                    Sponsor
-                </a>
+                    <div class="narrow fs-md">
+                        
+                        <p class="h5">Donate with confidence</p>
+    
+                        <p>Our programs have proven results. When you give to Cheetah Conservation Fund, you are supporting the best in scientific research, educational programming, and conservation.</p>
+
+                        <p>To donate to CCF via one of our international affiliates please use the links below:</p>
+
+                        <ul class="extensible-list">
+                            <li><a href="https://cheetahconservationfund.ca/donate/" target="_blank">Canada</a></li>
+                            <li><a href="http://cheetah.org.uk/donate" target="_blank">United Kingdom</a></li>
+                            <li><a href="http://www.aga-artenschutz.de/spenden.html?fb_item_id_fix=909" target="_blank">Germany</a></li>
+                            <li><a href="https://cheetah.org.au/" target="_blank">Australia</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- .sticky-top -->
+
+                <hr>
+
+                <div class="my-xl-3 fs-md">
+
+                    <p class="h5">Helpful Information</p>
+
+                    <p>
+                        If you are having difficulty completing your donation, please call <strong><span class="no-wrap">1-866-909-3399</span></strong>
+                    </p>
+
+                    <p>
+                        CCF is a registered Trust in Namibia (Incorporated Association Not For Gain, with Registration
+                        Number 21/20002/341).
+                    </p>
+                    <p>
+                        CCF USA is a Registered Non Profit 501(c) 3: #31-1726923.
+                    </p>
+
+
+                </div>
+                <!-- .my-5 -->
+
 
             </div>
+            <!-- .col -->
+
+            <div class="col-xl-9 overflow-hidden">
+
+                <div class="my-5" id="primary-content">
+
+                    <div class="narrow my-4">
+                    
+                        <div class="nav nav-pills bg-light device-md" id="donate-tabs" role="tablist">
+
+                            <a class="nav-item nav-link flex-fill <?php echo ($type == 'once' ? 'active' : '') ?>" id="tab-btn-01-a" href="/donate/"
+                            aria-controls="tab-01-a" aria-selected="<?php echo ($type == 'once' ? 'true' : 'false') ?>" role="tab">
+                                Donate Once
+                            </a>
+
+                            <a class="nav-item nav-link flex-fill <?php echo ($type == 'recurring' ? 'active' : '') ?>" id="tab-btn-01-b" href="/donate/recurring/"
+                            aria-controls="tab-01-b" aria-selected="<?php echo ($type == 'recurring' ? 'true' : 'false') ?>" role="tab">
+                                Recurring Gift
+                            </a>
+
+                            <a class="nav-item nav-link flex-fill <?php echo ($type == 'sponsor' ? 'active' : '') ?>" id="tab-btn-01-c" href="/donate/sponsor/"
+                            aria-controls="tab-01-c" aria-selected="<?php echo ($type == 'sponsor' ? 'true' : 'false') ?>" role="tab">
+                                Sponsor
+                            </a>
+
+                        </div>
+                        <!-- .nav -->
+
+                    </div>
+
+                    <div class="narrow my-4">
+                    
+                        <div id="bbox-root"></div>
+
+                    </div>
+
+                    <?php get_template_part('template-parts/article-footer'); ?>
+
+                </div>
+                <!-- #primary-content -->
+
+            </div>
+            <!-- .col -->
 
         </div>
-
-        <div class="narrow my-4">
-        
-            <div id="bbox-root"></div>
-
-        </div>
+        <!-- .row -->
 
     </div>
     <!-- .container-fluid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <?php endwhile; endif; /* have_posts */ ?>
 
