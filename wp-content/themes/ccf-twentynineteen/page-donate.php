@@ -95,6 +95,28 @@ endif;
             <!-- .col -->
 
             <div class="col-xl-9 overflow-hidden">
+            <!-- <div class="BBFormFieldRecurrenceInfo d-block" style="display: block; overflow: hidden;">
+
+
+                <div id="bboxdonation_recurrence_divRecurrenceInfo">
+                    <div class="BBRecurrenceFieldContainer" style="font-style: normal;">
+                        <span>Give <select name="bboxdonation$recurrence$ddFrequency"
+                                id="bboxdonation_recurrence_ddFrequency" class="BBFormSelectList">
+                                <option value="2" optionid="a0d10047-4f79-4f00-9d25-8b47d20ff542">monthly</option>
+                                <option value="3" optionid="59599378-f34e-4375-b319-16772bbfcf82">quarterly</option>
+                                <option value="5" optionid="2d7313f0-9ff4-4f78-b9c0-3265faeb86ab">annually</option>
+                            </select>
+                            on <select name="bboxdonation$recurrence$ddFrequencyDate"
+                                id="bboxdonation_recurrence_ddFrequencyDate" class="BBFormSelectList">
+                                <option value="15" data-nextpayment="5/15/2019">day 15 of each month</option>
+                                <option value="30" data-nextpayment="4/30/2019">day 30 of each month</option>
+                            </select></span>
+                    </div>
+                    <div>
+                        <span id="lblRecurrenceNextGiftDate">Your first gift will occur on 5/15/2019</span>
+                    </div>
+                </div>
+            </div> -->
 
                 <div class="my-5" id="primary-content">
 

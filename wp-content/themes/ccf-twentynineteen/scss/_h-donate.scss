@@ -21,50 +21,135 @@
     div.BBFormContainer,
     div.BBFormFieldContainer,
     div.BBFormSection,
-    div.BBFormSectionHeading {
-        // @include border-radius(0);
+    div.BBFormSectionHeading,
+    div.BBFormFieldRecurrenceInfo {
         min-width: 100%;
-        @extend .m-0;
-        @extend .p-0;
+        margin: 0;
+        padding: 0;
     }
 
-input,
-select,
-textarea {
-    @include border-radius(0);
-}
-
-
-.BBFormRadioList{
-
-    // background: red;
-    display: flex;
-    flex-wrap: wrap;
-
-    .BBFormRadioItem{
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: 33%;
+    input,
+    select,
+    textarea {
+        @include border-radius(0);
     }
 
-    .BBFormRadioLabel{
-        width: 100%;
-        display: block;
+    legend{
+        margin-bottom: $spacer-2;
+    }
 
-        &.BBFormRadioLabelGivingLevel {
-            border: $border-width solid $border-color !important;
-        }
+    select {
+        @extend .custom-select;
+    }
 
-        &.BBFormRadioLabelGivingLevelSelected {
-            border-color: $transparent !important;
-            background-color: $primary !important;
-        }
+    input:not([type="checkbox"]) {
+        @extend .form-control;
+    }
 
+    div.BBFormSectionHeading{
+        color: $text-muted;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: $spacer-2;
+    }
+
+    // Sections
+    div.BBFormSection {
+        margin-bottom: $form-group-margin-bottom;
+    }
+
+    div.BBFormFieldRecurrenceInfo{
+        font-size: $fs-md;
+
+    }
+    
+    div.BBRecurrenceFieldContainer{
+        margin: 0;
+        
         span{
-            color: $body-color;
-            font-weight: $font-weight-bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: $spacer-1;
+
+            select{
+                height: 100%;
+                margin:0 1rem;
+            }
         }
     }
-}
+
+    .BBFormFieldRecurrenceInfo{
+        color: $text-muted;
+
+    }
+
+    .BBLinkSecureInfo{
+        font-size: $fs-md;
+        margin-bottom: $spacer-1;
+    }
+
+
+
+
+
+    #bboxdonation_recurrence_divRecurrenceCheckbox{
+        @extend .custom-control;
+        @extend .custom-checkbox;
+        margin-bottom: $spacer-2;
+
+        input[type="checkbox"] {
+            @extend .custom-control-input;
+        }
+
+        label{
+            display: inline-block;
+            float: none;
+            width: auto;
+            @extend .custom-control-label;
+        }
+    }
+
+
+
+    .BBFormRadioList{
+
+        margin: -($spacer-1/2);
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .BBFormRadioItem{
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 33%;
+            
+        }
+
+        .BBFormRadioItem{
+            margin: ($spacer-1/2);
+        }
+
+        .BBFormRadioLabel{
+            width: 100%;
+            display: block;
+
+            &.BBFormRadioLabelGivingLevel {
+                border: $border-width solid $border-color !important;
+                border-radius: 0;
+                @extend .btn;
+                @extend .btn-lg;
+                @extend .fs-lg;
+            }
+
+            &.BBFormRadioLabelGivingLevelSelected {
+                border-color: $transparent !important;
+                background-color: $primary !important;
+            }
+
+            span{
+                color: $body-color;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
 
 }

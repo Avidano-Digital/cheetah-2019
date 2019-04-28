@@ -1276,7 +1276,7 @@ mark,
   .offset-xxxl-11 {
     margin-left: 91.6666666667%; } }
 
-.form-control, #gtranslate_selector {
+.form-control, #bbox-root input:not([type="checkbox"]), #gtranslate_selector {
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -1291,21 +1291,21 @@ mark,
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .form-control, #gtranslate_selector {
+    .form-control, #bbox-root input:not([type="checkbox"]), #gtranslate_selector {
       transition: none; } }
-  .form-control::-ms-expand, #gtranslate_selector::-ms-expand {
+  .form-control::-ms-expand, #bbox-root input:not([type="checkbox"])::-ms-expand, #gtranslate_selector::-ms-expand {
     background-color: transparent;
     border: 0; }
-  .form-control:focus, #gtranslate_selector:focus {
+  .form-control:focus, #bbox-root input:focus:not([type="checkbox"]), #gtranslate_selector:focus {
     color: #495057;
     background-color: #fff;
     border-color: #dee2e6;
     outline: 0;
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
-  .form-control::placeholder, #gtranslate_selector::placeholder {
+  .form-control::placeholder, #bbox-root input:not([type="checkbox"])::placeholder, #gtranslate_selector::placeholder {
     color: #495057;
     opacity: 1; }
-  .form-control:disabled, #gtranslate_selector:disabled, .form-control[readonly], #gtranslate_selector[readonly] {
+  .form-control:disabled, #bbox-root input:disabled:not([type="checkbox"]), #gtranslate_selector:disabled, .form-control[readonly], #bbox-root input[readonly]:not([type="checkbox"]), #gtranslate_selector[readonly] {
     background-color: #e9ecef;
     opacity: 1; }
 
@@ -1371,7 +1371,7 @@ textarea.form-control, textarea#gtranslate_selector {
   height: auto; }
 
 .form-group {
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 .form-text {
   display: block;
@@ -1433,20 +1433,23 @@ textarea.form-control, textarea#gtranslate_selector {
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9); }
 
-.was-validated .form-control:invalid, .was-validated #gtranslate_selector:invalid, .form-control.is-invalid, .is-invalid#gtranslate_selector {
+.was-validated .form-control:invalid, .was-validated #bbox-root input:invalid:not([type="checkbox"]), #bbox-root .was-validated input:invalid:not([type="checkbox"]), .was-validated #gtranslate_selector:invalid, .form-control.is-invalid, #bbox-root input.is-invalid:not([type="checkbox"]), .is-invalid#gtranslate_selector {
   border-color: #dc3545;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
   background-position: center right calc(0.375em + 0.1875rem);
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
-  .was-validated .form-control:invalid:focus, .was-validated #gtranslate_selector:invalid:focus, .form-control.is-invalid:focus, .is-invalid#gtranslate_selector:focus {
+  .was-validated .form-control:invalid:focus, .was-validated #bbox-root input:invalid:focus:not([type="checkbox"]), #bbox-root .was-validated input:invalid:focus:not([type="checkbox"]), .was-validated #gtranslate_selector:invalid:focus, .form-control.is-invalid:focus, #bbox-root input.is-invalid:focus:not([type="checkbox"]), .is-invalid#gtranslate_selector:focus {
     border-color: #dc3545;
     box-shadow: 0 0 0 0.15rem rgba(220, 53, 69, 0.25); }
-  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated #gtranslate_selector:invalid ~ .invalid-feedback,
+  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated #bbox-root input:invalid:not([type="checkbox"]) ~ .invalid-feedback, #bbox-root .was-validated input:invalid:not([type="checkbox"]) ~ .invalid-feedback, .was-validated #gtranslate_selector:invalid ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip,
-  .was-validated #gtranslate_selector:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .is-invalid#gtranslate_selector ~ .invalid-feedback,
+  .was-validated #bbox-root input:invalid:not([type="checkbox"]) ~ .invalid-tooltip,
+  #bbox-root .was-validated input:invalid:not([type="checkbox"]) ~ .invalid-tooltip,
+  .was-validated #gtranslate_selector:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, #bbox-root input.is-invalid:not([type="checkbox"]) ~ .invalid-feedback, .is-invalid#gtranslate_selector ~ .invalid-feedback,
   .form-control.is-invalid ~ .invalid-tooltip,
+  #bbox-root input.is-invalid:not([type="checkbox"]) ~ .invalid-tooltip,
   .is-invalid#gtranslate_selector ~ .invalid-tooltip {
     display: block; }
 
@@ -1454,18 +1457,21 @@ textarea.form-control, textarea#gtranslate_selector {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
 
-.was-validated .custom-select:invalid, .was-validated select:invalid, .custom-select.is-invalid, select.is-invalid {
+.was-validated .custom-select:invalid, .was-validated select:invalid, .was-validated #bbox-root select:invalid, #bbox-root .was-validated select:invalid, .custom-select.is-invalid, select.is-invalid, #bbox-root select.is-invalid {
   border-color: #dc3545;
   padding-right: calc((1em + 0.75rem) * 3 / 4 + 2rem);
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") #fff no-repeat center right 2rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
-  .was-validated .custom-select:invalid:focus, .was-validated select:invalid:focus, .custom-select.is-invalid:focus, select.is-invalid:focus {
+  .was-validated .custom-select:invalid:focus, .was-validated select:invalid:focus, .was-validated #bbox-root select:invalid:focus, #bbox-root .was-validated select:invalid:focus, .custom-select.is-invalid:focus, select.is-invalid:focus, #bbox-root select.is-invalid:focus {
     border-color: #dc3545;
     box-shadow: 0 0 0 0.15rem rgba(220, 53, 69, 0.25); }
-  .was-validated .custom-select:invalid ~ .invalid-feedback, .was-validated select:invalid ~ .invalid-feedback,
+  .was-validated .custom-select:invalid ~ .invalid-feedback, .was-validated select:invalid ~ .invalid-feedback, .was-validated #bbox-root select:invalid ~ .invalid-feedback, #bbox-root .was-validated select:invalid ~ .invalid-feedback,
   .was-validated .custom-select:invalid ~ .invalid-tooltip,
-  .was-validated select:invalid ~ .invalid-tooltip, .custom-select.is-invalid ~ .invalid-feedback, select.is-invalid ~ .invalid-feedback,
+  .was-validated select:invalid ~ .invalid-tooltip,
+  .was-validated #bbox-root select:invalid ~ .invalid-tooltip,
+  #bbox-root .was-validated select:invalid ~ .invalid-tooltip, .custom-select.is-invalid ~ .invalid-feedback, select.is-invalid ~ .invalid-feedback, #bbox-root select.is-invalid ~ .invalid-feedback,
   .custom-select.is-invalid ~ .invalid-tooltip,
-  select.is-invalid ~ .invalid-tooltip {
+  select.is-invalid ~ .invalid-tooltip,
+  #bbox-root select.is-invalid ~ .invalid-tooltip {
     display: block; }
 
 .was-validated .form-control-file:invalid ~ .invalid-feedback,
@@ -1481,24 +1487,27 @@ textarea.form-control, textarea#gtranslate_selector {
 .form-check-input.is-invalid ~ .invalid-tooltip {
   display: block; }
 
-.was-validated .custom-control-input:invalid ~ .custom-control-label, .custom-control-input.is-invalid ~ .custom-control-label {
+.was-validated .custom-control-input:invalid ~ .custom-control-label, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid[type="checkbox"] ~ .custom-control-label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid[type="checkbox"] ~ .custom-control-label, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:invalid ~ label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated .custom-control-input:invalid ~ label, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid[type="checkbox"] ~ label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid[type="checkbox"] ~ label, .custom-control-input.is-invalid ~ .custom-control-label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid[type="checkbox"] ~ .custom-control-label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input.is-invalid ~ label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid[type="checkbox"] ~ label {
   color: #dc3545; }
-  .was-validated .custom-control-input:invalid ~ .custom-control-label::before, .custom-control-input.is-invalid ~ .custom-control-label::before {
+  .was-validated .custom-control-input:invalid ~ .custom-control-label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid[type="checkbox"] ~ .custom-control-label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:invalid ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated .custom-control-input:invalid ~ label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid[type="checkbox"] ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid[type="checkbox"] ~ label::before, .custom-control-input.is-invalid ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input.is-invalid ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid[type="checkbox"] ~ label::before {
     border-color: #dc3545; }
 
-.was-validated .custom-control-input:invalid ~ .invalid-feedback,
-.was-validated .custom-control-input:invalid ~ .invalid-tooltip, .custom-control-input.is-invalid ~ .invalid-feedback,
-.custom-control-input.is-invalid ~ .invalid-tooltip {
+.was-validated .custom-control-input:invalid ~ .invalid-feedback, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid[type="checkbox"] ~ .invalid-feedback, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid[type="checkbox"] ~ .invalid-feedback,
+.was-validated .custom-control-input:invalid ~ .invalid-tooltip,
+.was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid[type="checkbox"] ~ .invalid-tooltip,
+#bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid[type="checkbox"] ~ .invalid-tooltip, .custom-control-input.is-invalid ~ .invalid-feedback, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid[type="checkbox"] ~ .invalid-feedback,
+.custom-control-input.is-invalid ~ .invalid-tooltip,
+#bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid[type="checkbox"] ~ .invalid-tooltip {
   display: block; }
 
-.was-validated .custom-control-input:invalid:checked ~ .custom-control-label::before, .custom-control-input.is-invalid:checked ~ .custom-control-label::before {
+.was-validated .custom-control-input:invalid:checked ~ .custom-control-label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid:checked[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid:checked[type="checkbox"] ~ .custom-control-label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:invalid:checked ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated .custom-control-input:invalid:checked ~ label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid:checked[type="checkbox"] ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid:checked[type="checkbox"] ~ label::before, .custom-control-input.is-invalid:checked ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid:checked[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input.is-invalid:checked ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid:checked[type="checkbox"] ~ label::before {
   border-color: #e4606d;
   background-color: #e4606d; }
 
-.was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
+.was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid:focus[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid:focus[type="checkbox"] ~ .custom-control-label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:invalid:focus ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated .custom-control-input:invalid:focus ~ label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid:focus[type="checkbox"] ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid:focus[type="checkbox"] ~ label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid:focus[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input.is-invalid:focus ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid:focus[type="checkbox"] ~ label::before {
   box-shadow: 0 0 0 0.15rem rgba(220, 53, 69, 0.25); }
 
-.was-validated .custom-control-input:invalid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-invalid:focus:not(:checked) ~ .custom-control-label::before {
+.was-validated .custom-control-input:invalid:focus:not(:checked) ~ .custom-control-label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid:focus:not(:checked)[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid:focus:not(:checked)[type="checkbox"] ~ .custom-control-label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:invalid:focus:not(:checked) ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated .custom-control-input:invalid:focus:not(:checked) ~ label::before, .was-validated #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:invalid:focus:not(:checked)[type="checkbox"] ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .was-validated input:invalid:focus:not(:checked)[type="checkbox"] ~ label::before, .custom-control-input.is-invalid:focus:not(:checked) ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid:focus:not(:checked)[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input.is-invalid:focus:not(:checked) ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input.is-invalid:focus:not(:checked)[type="checkbox"] ~ label::before {
   border-color: #dc3545; }
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label, .custom-file-input.is-invalid ~ .custom-file-label {
@@ -1531,7 +1540,7 @@ textarea.form-control, textarea#gtranslate_selector {
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, .form-inline #gtranslate_selector {
+    .form-inline .form-control, .form-inline #bbox-root input:not([type="checkbox"]), #bbox-root .form-inline input:not([type="checkbox"]), .form-inline #gtranslate_selector {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -1539,7 +1548,9 @@ textarea.form-control, textarea#gtranslate_selector {
       display: inline-block; }
     .form-inline .input-group,
     .form-inline .custom-select,
-    .form-inline select {
+    .form-inline select,
+    .form-inline #bbox-root select,
+    #bbox-root .form-inline select {
       width: auto; }
     .form-inline .form-check {
       display: flex;
@@ -1553,13 +1564,13 @@ textarea.form-control, textarea#gtranslate_selector {
       margin-top: 0;
       margin-right: 0.25rem;
       margin-left: 0; }
-    .form-inline .custom-control {
+    .form-inline .custom-control, .form-inline #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox, #bbox-root .form-inline #bboxdonation_recurrence_divRecurrenceCheckbox {
       align-items: center;
       justify-content: center; }
-    .form-inline .custom-control-label {
+    .form-inline .custom-control-label, .form-inline #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .form-inline label {
       margin-bottom: 0; } }
 
-.btn {
+.btn, #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
   display: inline-block;
   font-weight: 700;
   color: #212529;
@@ -1574,19 +1585,21 @@ textarea.form-control, textarea#gtranslate_selector {
   border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn {
+    .btn, #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
       transition: none; } }
-  .btn:hover {
+  .btn:hover, #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel:hover {
     color: #212529;
     text-decoration: none; }
-  .btn:focus, .btn.focus {
+  .btn:focus, #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel:focus, .btn.focus, #bbox-root .BBFormRadioList .focus.BBFormRadioLabel.BBFormRadioLabelGivingLevel {
     outline: 0;
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
-  .btn.disabled, .btn:disabled {
+  .btn.disabled, #bbox-root .BBFormRadioList .disabled.BBFormRadioLabel.BBFormRadioLabelGivingLevel, .btn:disabled, #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel:disabled {
     opacity: 0.65; }
 
-a.btn.disabled,
-fieldset:disabled a.btn {
+a.btn.disabled, #bbox-root .BBFormRadioList a.disabled.BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+fieldset:disabled a.btn,
+fieldset:disabled #bbox-root .BBFormRadioList a.BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+#bbox-root .BBFormRadioList fieldset:disabled a.BBFormRadioLabel.BBFormRadioLabelGivingLevel {
   pointer-events: none; }
 
 .btn-primary {
@@ -2131,13 +2144,13 @@ fieldset:disabled a.btn {
     color: #777677;
     pointer-events: none; }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0; }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, #bbox-root .BBFormRadioList .btn-group-sm > .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2396,17 +2409,22 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn,
-  .btn-group-vertical > .btn {
+  .btn-group > .btn, #bbox-root .BBFormRadioList .btn-group > .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+  .btn-group-vertical > .btn,
+  #bbox-root .BBFormRadioList .btn-group-vertical > .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
     position: relative;
     flex: 1 1 auto; }
-    .btn-group > .btn:hover,
-    .btn-group-vertical > .btn:hover {
+    .btn-group > .btn:hover, #bbox-root .BBFormRadioList .btn-group > .BBFormRadioLabel.BBFormRadioLabelGivingLevel:hover,
+    .btn-group-vertical > .btn:hover,
+    #bbox-root .BBFormRadioList .btn-group-vertical > .BBFormRadioLabel.BBFormRadioLabelGivingLevel:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
+    .btn-group > .btn:focus, #bbox-root .BBFormRadioList .btn-group > .BBFormRadioLabel.BBFormRadioLabelGivingLevel:focus, .btn-group > .btn:active, #bbox-root .BBFormRadioList .btn-group > .BBFormRadioLabel.BBFormRadioLabelGivingLevel:active, .btn-group > .btn.active, #bbox-root .BBFormRadioList .btn-group > .active.BBFormRadioLabel.BBFormRadioLabelGivingLevel,
     .btn-group-vertical > .btn:focus,
+    #bbox-root .BBFormRadioList .btn-group-vertical > .BBFormRadioLabel.BBFormRadioLabelGivingLevel:focus,
     .btn-group-vertical > .btn:active,
-    .btn-group-vertical > .btn.active {
+    #bbox-root .BBFormRadioList .btn-group-vertical > .BBFormRadioLabel.BBFormRadioLabelGivingLevel:active,
+    .btn-group-vertical > .btn.active,
+    #bbox-root .BBFormRadioList .btn-group-vertical > .active.BBFormRadioLabel.BBFormRadioLabelGivingLevel {
       z-index: 1; }
 
 .btn-toolbar {
@@ -2416,7 +2434,7 @@ input[type="button"].btn-block {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child),
+.btn-group > .btn:not(:first-child), #bbox-root .BBFormRadioList .btn-group > .BBFormRadioLabel.BBFormRadioLabelGivingLevel:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
@@ -2430,11 +2448,11 @@ input[type="button"].btn-block {
   .dropleft .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, #bbox-root .BBFormRadioList .btn-group-sm > .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, #bbox-root .BBFormRadioList .btn-group-lg > .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .dropdown-toggle-split, #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -2442,20 +2460,26 @@ input[type="button"].btn-block {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
+  
   .btn-group-vertical > .btn,
+  #bbox-root .BBFormRadioList .btn-group-vertical > .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
   .btn-group-vertical > .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), #bbox-root .BBFormRadioList .btn-group-vertical > .BBFormRadioLabel.BBFormRadioLabelGivingLevel:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
 
-.btn-group-toggle > .btn,
-.btn-group-toggle > .btn-group > .btn {
+.btn-group-toggle > .btn, #bbox-root .BBFormRadioList .btn-group-toggle > .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+.btn-group-toggle > .btn-group > .btn,
+#bbox-root .BBFormRadioList .btn-group-toggle > .btn-group > .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
   margin-bottom: 0; }
-  .btn-group-toggle > .btn input[type="radio"],
+  .btn-group-toggle > .btn input[type="radio"], #bbox-root .BBFormRadioList .btn-group-toggle > .BBFormRadioLabel.BBFormRadioLabelGivingLevel input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"],
+  #bbox-root .BBFormRadioList .btn-group-toggle > .BBFormRadioLabel.BBFormRadioLabelGivingLevel input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"],
-  .btn-group-toggle > .btn-group > .btn input[type="checkbox"] {
+  #bbox-root .BBFormRadioList .btn-group-toggle > .btn-group > .BBFormRadioLabel.BBFormRadioLabelGivingLevel input[type="radio"],
+  .btn-group-toggle > .btn-group > .btn input[type="checkbox"],
+  #bbox-root .BBFormRadioList .btn-group-toggle > .btn-group > .BBFormRadioLabel.BBFormRadioLabelGivingLevel input[type="checkbox"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none; }
@@ -2466,46 +2490,65 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%; }
-  .input-group > .form-control, .input-group > #gtranslate_selector,
+  .input-group > .form-control, #bbox-root .input-group > input:not([type="checkbox"]), .input-group > #gtranslate_selector,
   .input-group > .form-control-plaintext,
   .input-group > .custom-select,
   .input-group > select,
+  #bbox-root .input-group > select,
   .input-group > .custom-file {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0; }
-    .input-group > .form-control + .form-control, .input-group > #gtranslate_selector + .form-control, .input-group > .form-control + #gtranslate_selector, .input-group > #gtranslate_selector + #gtranslate_selector,
+    .input-group > .form-control + .form-control, #bbox-root .input-group > input:not([type="checkbox"]) + .form-control, .input-group > #gtranslate_selector + .form-control, #bbox-root .input-group > .form-control + input:not([type="checkbox"]), #bbox-root .input-group > input:not([type="checkbox"]) + input:not([type="checkbox"]), #bbox-root .input-group > #gtranslate_selector + input:not([type="checkbox"]), .input-group > .form-control + #gtranslate_selector, #bbox-root .input-group > input:not([type="checkbox"]) + #gtranslate_selector, .input-group > #gtranslate_selector + #gtranslate_selector,
     .input-group > .form-control + .custom-select,
+    #bbox-root .input-group > input:not([type="checkbox"]) + .custom-select,
     .input-group > #gtranslate_selector + .custom-select,
     .input-group > .form-control + select,
     .input-group > #gtranslate_selector + select,
+    #bbox-root .input-group > .form-control + select,
+    #bbox-root .input-group > input:not([type="checkbox"]) + select,
+    #bbox-root .input-group > #gtranslate_selector + select,
     .input-group > .form-control + .custom-file,
+    #bbox-root .input-group > input:not([type="checkbox"]) + .custom-file,
     .input-group > #gtranslate_selector + .custom-file,
     .input-group > .form-control-plaintext + .form-control,
+    #bbox-root .input-group > .form-control-plaintext + input:not([type="checkbox"]),
     .input-group > .form-control-plaintext + #gtranslate_selector,
     .input-group > .form-control-plaintext + .custom-select,
     .input-group > .form-control-plaintext + select,
+    #bbox-root .input-group > .form-control-plaintext + select,
     .input-group > .form-control-plaintext + .custom-file,
     .input-group > .custom-select + .form-control,
     .input-group > select + .form-control,
+    #bbox-root .input-group > select + .form-control,
+    #bbox-root .input-group > .custom-select + input:not([type="checkbox"]),
+    #bbox-root .input-group > select + input:not([type="checkbox"]),
     .input-group > .custom-select + #gtranslate_selector,
     .input-group > select + #gtranslate_selector,
+    #bbox-root .input-group > select + #gtranslate_selector,
     .input-group > .custom-select + .custom-select,
     .input-group > select + .custom-select,
+    #bbox-root .input-group > select + .custom-select,
     .input-group > .custom-select + select,
     .input-group > select + select,
+    #bbox-root .input-group > .custom-select + select,
+    #bbox-root .input-group > select + select,
     .input-group > .custom-select + .custom-file,
     .input-group > select + .custom-file,
+    #bbox-root .input-group > select + .custom-file,
     .input-group > .custom-file + .form-control,
+    #bbox-root .input-group > .custom-file + input:not([type="checkbox"]),
     .input-group > .custom-file + #gtranslate_selector,
     .input-group > .custom-file + .custom-select,
     .input-group > .custom-file + select,
+    #bbox-root .input-group > .custom-file + select,
     .input-group > .custom-file + .custom-file {
       margin-left: -1px; }
-  .input-group > .form-control:focus, .input-group > #gtranslate_selector:focus,
+  .input-group > .form-control:focus, #bbox-root .input-group > input:focus:not([type="checkbox"]), .input-group > #gtranslate_selector:focus,
   .input-group > .custom-select:focus,
   .input-group > select:focus,
+  #bbox-root .input-group > select:focus,
   .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
     z-index: 3; }
   .input-group > .custom-file .custom-file-input:focus {
@@ -2517,21 +2560,39 @@ input[type="button"].btn-block {
 .input-group-prepend,
 .input-group-append {
   display: flex; }
-  .input-group-prepend .btn,
-  .input-group-append .btn {
+  .input-group-prepend .btn, .input-group-prepend #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel, #bbox-root .BBFormRadioList .input-group-prepend .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+  .input-group-append .btn,
+  .input-group-append #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+  #bbox-root .BBFormRadioList .input-group-append .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
     position: relative;
     z-index: 2; }
-    .input-group-prepend .btn:focus,
-    .input-group-append .btn:focus {
+    .input-group-prepend .btn:focus, .input-group-prepend #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel:focus, #bbox-root .BBFormRadioList .input-group-prepend .BBFormRadioLabel.BBFormRadioLabelGivingLevel:focus,
+    .input-group-append .btn:focus,
+    .input-group-append #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel:focus,
+    #bbox-root .BBFormRadioList .input-group-append .BBFormRadioLabel.BBFormRadioLabelGivingLevel:focus {
       z-index: 3; }
-  .input-group-prepend .btn + .btn,
+  .input-group-prepend .btn + .btn, .input-group-prepend #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .btn, #bbox-root .BBFormRadioList .input-group-prepend .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .btn, .input-group-prepend #bbox-root .BBFormRadioList .btn + .BBFormRadioLabel.BBFormRadioLabelGivingLevel, #bbox-root .BBFormRadioList .input-group-prepend .btn + .BBFormRadioLabel.BBFormRadioLabelGivingLevel, .input-group-prepend #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .BBFormRadioLabel.BBFormRadioLabelGivingLevel, #bbox-root .BBFormRadioList .input-group-prepend .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
   .input-group-prepend .btn + .input-group-text,
+  .input-group-prepend #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .input-group-text,
+  #bbox-root .BBFormRadioList .input-group-prepend .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
   .input-group-prepend .input-group-text + .btn,
+  .input-group-prepend #bbox-root .BBFormRadioList .input-group-text + .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+  #bbox-root .BBFormRadioList .input-group-prepend .input-group-text + .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
   .input-group-append .btn + .btn,
+  .input-group-append #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .btn,
+  #bbox-root .BBFormRadioList .input-group-append .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .btn,
+  .input-group-append #bbox-root .BBFormRadioList .btn + .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+  #bbox-root .BBFormRadioList .input-group-append .btn + .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+  .input-group-append #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+  #bbox-root .BBFormRadioList .input-group-append .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
   .input-group-append .btn + .input-group-text,
+  .input-group-append #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .input-group-text,
+  #bbox-root .BBFormRadioList .input-group-append .BBFormRadioLabel.BBFormRadioLabelGivingLevel + .input-group-text,
   .input-group-append .input-group-text + .input-group-text,
-  .input-group-append .input-group-text + .btn {
+  .input-group-append .input-group-text + .btn,
+  .input-group-append #bbox-root .BBFormRadioList .input-group-text + .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+  #bbox-root .BBFormRadioList .input-group-append .input-group-text + .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
     margin-left: -1px; }
 
 .input-group-prepend {
@@ -2557,34 +2618,42 @@ input[type="button"].btn-block {
   .input-group-text input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group-lg > .form-control:not(textarea), .input-group-lg > #gtranslate_selector:not(textarea),
-.input-group-lg > .custom-select,
-.input-group-lg > select {
-  height: calc(1.5em + 1rem + 2px); }
-
-.input-group-lg > .form-control, .input-group-lg > #gtranslate_selector,
+.input-group-lg > .form-control:not(textarea), #bbox-root .input-group-lg > input:not(textarea):not([type="checkbox"]), .input-group-lg > #gtranslate_selector:not(textarea),
 .input-group-lg > .custom-select,
 .input-group-lg > select,
+#bbox-root .input-group-lg > select {
+  height: calc(1.5em + 1rem + 2px); }
+
+.input-group-lg > .form-control, #bbox-root .input-group-lg > input:not([type="checkbox"]), .input-group-lg > #gtranslate_selector,
+.input-group-lg > .custom-select,
+.input-group-lg > select,
+#bbox-root .input-group-lg > select,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
-.input-group-lg > .input-group-append > .btn {
+#bbox-root .BBFormRadioList .input-group-lg > .input-group-prepend > .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+.input-group-lg > .input-group-append > .btn,
+#bbox-root .BBFormRadioList .input-group-lg > .input-group-append > .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5; }
 
-.input-group-sm > .form-control:not(textarea), .input-group-sm > #gtranslate_selector:not(textarea),
-.input-group-sm > .custom-select,
-.input-group-sm > select {
-  height: calc(1.5em + 0.5rem + 2px); }
-
-.input-group-sm > .form-control, .input-group-sm > #gtranslate_selector,
+.input-group-sm > .form-control:not(textarea), #bbox-root .input-group-sm > input:not(textarea):not([type="checkbox"]), .input-group-sm > #gtranslate_selector:not(textarea),
 .input-group-sm > .custom-select,
 .input-group-sm > select,
+#bbox-root .input-group-sm > select {
+  height: calc(1.5em + 0.5rem + 2px); }
+
+.input-group-sm > .form-control, #bbox-root .input-group-sm > input:not([type="checkbox"]), .input-group-sm > #gtranslate_selector,
+.input-group-sm > .custom-select,
+.input-group-sm > select,
+#bbox-root .input-group-sm > select,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
-.input-group-sm > .input-group-append > .btn {
+#bbox-root .BBFormRadioList .input-group-sm > .input-group-prepend > .BBFormRadioLabel.BBFormRadioLabelGivingLevel,
+.input-group-sm > .input-group-append > .btn,
+#bbox-root .BBFormRadioList .input-group-sm > .input-group-append > .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5; }
@@ -2592,49 +2661,51 @@ input[type="button"].btn-block {
 
 .input-group-lg > .custom-select,
 .input-group-lg > select,
+#bbox-root .input-group-lg > select,
 .input-group-sm > .custom-select,
-.input-group-sm > select {
+.input-group-sm > select,
+#bbox-root .input-group-sm > select {
   padding-right: 2rem; }
 
-.custom-control {
+.custom-control, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox {
   position: relative;
   display: block;
   min-height: 1.5rem;
-  padding-left: 3.125rem; }
+  padding-left: 1.875rem; }
 
 .custom-control-inline {
   display: inline-flex;
   margin-right: 1rem; }
 
-.custom-control-input {
+.custom-control-input, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input[type="checkbox"] {
   position: absolute;
   z-index: -1;
   opacity: 0; }
-  .custom-control-input:checked ~ .custom-control-label::before {
+  .custom-control-input:checked ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:checked[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:checked ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:checked[type="checkbox"] ~ label::before {
     color: #462B41;
     border-color: #fff;
     background-color: #fff; }
-  .custom-control-input:focus ~ .custom-control-label::before {
+  .custom-control-input:focus ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:focus[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:focus ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:focus[type="checkbox"] ~ label::before {
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
-  .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  .custom-control-input:focus:not(:checked) ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:focus:not(:checked)[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:focus:not(:checked) ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:focus:not(:checked)[type="checkbox"] ~ label::before {
     border-color: #dee2e6; }
-  .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:not(:disabled):active[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:not(:disabled):active ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:not(:disabled):active[type="checkbox"] ~ label::before {
     color: #462B41;
     background-color: white;
     border-color: white; }
-  .custom-control-input:disabled ~ .custom-control-label {
+  .custom-control-input:disabled ~ .custom-control-label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled[type="checkbox"] ~ .custom-control-label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:disabled ~ label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled[type="checkbox"] ~ label {
     color: #777677; }
-    .custom-control-input:disabled ~ .custom-control-label::before {
+    .custom-control-input:disabled ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:disabled ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled[type="checkbox"] ~ label::before {
       background-color: #e9ecef; }
 
-.custom-control-label {
+.custom-control-label, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label {
   position: relative;
   margin-bottom: 0;
   vertical-align: top; }
-  .custom-control-label::before {
+  .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::before {
     position: absolute;
     top: 0.125rem;
-    left: -3.125rem;
+    left: -1.875rem;
     display: block;
     width: 1.25rem;
     height: 1.25rem;
@@ -2642,66 +2713,66 @@ input[type="button"].btn-block {
     content: "";
     background-color: #fff;
     border: #adb5bd solid 1px; }
-  .custom-control-label::after {
+  .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::after {
     position: absolute;
     top: 0.125rem;
-    left: -3.125rem;
+    left: -1.875rem;
     display: block;
     width: 1.25rem;
     height: 1.25rem;
     content: "";
     background: no-repeat 50% / 50% 50%; }
 
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:checked ~ .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox input:checked[type="checkbox"] ~ .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:checked[type="checkbox"] ~ .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox .custom-control-input:checked ~ label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:checked ~ label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox input:checked[type="checkbox"] ~ label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:checked[type="checkbox"] ~ label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23462B41' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
 
-.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:indeterminate ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox input:indeterminate[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:indeterminate[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox .custom-control-input:indeterminate ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:indeterminate ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox input:indeterminate[type="checkbox"] ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:indeterminate[type="checkbox"] ~ label::before {
   border-color: #fff;
   background-color: #fff; }
 
-.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:indeterminate ~ .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox input:indeterminate[type="checkbox"] ~ .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:indeterminate[type="checkbox"] ~ .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox .custom-control-input:indeterminate ~ label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:indeterminate ~ label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox input:indeterminate[type="checkbox"] ~ label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:indeterminate[type="checkbox"] ~ label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath stroke='%23462B41' d='M0 2h4'/%3e%3c/svg%3e"); }
 
-.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:disabled:checked ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox input:disabled:checked[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled:checked[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox .custom-control-input:disabled:checked ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:disabled:checked ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox input:disabled:checked[type="checkbox"] ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled:checked[type="checkbox"] ~ label::before {
   background-color: rgba(254, 195, 78, 0.5); }
 
-.custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
+.custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox input:disabled:indeterminate[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled:indeterminate[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox .custom-control-input:disabled:indeterminate ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:disabled:indeterminate ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-checkbox input:disabled:indeterminate[type="checkbox"] ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled:indeterminate[type="checkbox"] ~ label::before {
   background-color: rgba(254, 195, 78, 0.5); }
 
-.custom-radio .custom-control-label::before {
+.custom-radio .custom-control-label::before, .custom-radio #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-radio label::before {
   border-radius: 50%; }
 
-.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after, .custom-radio #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:checked[type="checkbox"] ~ .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-radio input:checked[type="checkbox"] ~ .custom-control-label::after, .custom-radio #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:checked ~ label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-radio .custom-control-input:checked ~ label::after, .custom-radio #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:checked[type="checkbox"] ~ label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-radio input:checked[type="checkbox"] ~ label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23462B41'/%3e%3c/svg%3e"); }
 
-.custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
+.custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before, .custom-radio #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled:checked[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-radio input:disabled:checked[type="checkbox"] ~ .custom-control-label::before, .custom-radio #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:disabled:checked ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-radio .custom-control-input:disabled:checked ~ label::before, .custom-radio #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled:checked[type="checkbox"] ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-radio input:disabled:checked[type="checkbox"] ~ label::before {
   background-color: rgba(254, 195, 78, 0.5); }
 
 .custom-switch {
-  padding-left: 4.0625rem; }
-  .custom-switch .custom-control-label::before {
-    left: -4.0625rem;
+  padding-left: 2.8125rem; }
+  .custom-switch .custom-control-label::before, .custom-switch #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-switch label::before {
+    left: -2.8125rem;
     width: 2.1875rem;
     pointer-events: all;
     border-radius: 0.625rem; }
-  .custom-switch .custom-control-label::after {
+  .custom-switch .custom-control-label::after, .custom-switch #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-switch label::after {
     top: calc(0.125rem + 2px);
-    left: calc(-4.0625rem + 2px);
+    left: calc(-2.8125rem + 2px);
     width: calc(1.25rem - 4px);
     height: calc(1.25rem - 4px);
     background-color: #adb5bd;
     border-radius: 0.625rem;
     transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
     @media (prefers-reduced-motion: reduce) {
-      .custom-switch .custom-control-label::after {
+      .custom-switch .custom-control-label::after, .custom-switch #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-switch label::after {
         transition: none; } }
-  .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  .custom-switch .custom-control-input:checked ~ .custom-control-label::after, .custom-switch #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:checked[type="checkbox"] ~ .custom-control-label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-switch input:checked[type="checkbox"] ~ .custom-control-label::after, .custom-switch #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:checked ~ label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-switch .custom-control-input:checked ~ label::after, .custom-switch #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:checked[type="checkbox"] ~ label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-switch input:checked[type="checkbox"] ~ label::after {
     background-color: #fff;
     transform: translateX(0.9375rem); }
-  .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before, .custom-switch #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled:checked[type="checkbox"] ~ .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-switch input:disabled:checked[type="checkbox"] ~ .custom-control-label::before, .custom-switch #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-control-input:disabled:checked ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-switch .custom-control-input:disabled:checked ~ label::before, .custom-switch #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox input:disabled:checked[type="checkbox"] ~ label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox .custom-switch input:disabled:checked[type="checkbox"] ~ label::before {
     background-color: rgba(254, 195, 78, 0.5); }
 
-.custom-select, select {
+.custom-select, select, #bbox-root select {
   display: inline-block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -2716,21 +2787,21 @@ input[type="button"].btn-block {
   border: 1px solid #dee2e6;
   border-radius: 0;
   appearance: none; }
-  .custom-select:focus, select:focus {
+  .custom-select:focus, select:focus, #bbox-root select:focus {
     border-color: #dee2e6;
     outline: 0;
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
-    .custom-select:focus::-ms-value, select:focus::-ms-value {
+    .custom-select:focus::-ms-value, select:focus::-ms-value, #bbox-root select:focus::-ms-value {
       color: #495057;
       background-color: #fff; }
-  .custom-select[multiple], select[multiple], .custom-select[size]:not([size="1"]), select[size]:not([size="1"]) {
+  .custom-select[multiple], select[multiple], #bbox-root select[multiple], .custom-select[size]:not([size="1"]), select[size]:not([size="1"]), #bbox-root select[size]:not([size="1"]) {
     height: auto;
     padding-right: 1rem;
     background-image: none; }
-  .custom-select:disabled, select:disabled {
+  .custom-select:disabled, select:disabled, #bbox-root select:disabled {
     color: #777677;
     background-color: #e9ecef; }
-  .custom-select::-ms-expand, select::-ms-expand {
+  .custom-select::-ms-expand, select::-ms-expand, #bbox-root select::-ms-expand {
     display: none; }
 
 .custom-select-sm {
@@ -2893,12 +2964,12 @@ input[type="button"].btn-block {
   .custom-range:disabled::-ms-thumb {
     background-color: #adb5bd; }
 
-.custom-control-label::before,
-.custom-file-label, .custom-select, select {
+.custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::before,
+.custom-file-label, .custom-select, select, #bbox-root select {
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .custom-control-label::before,
-    .custom-file-label, .custom-select, select {
+    .custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::before,
+    .custom-file-label, .custom-select, select, #bbox-root select {
       transition: none; } }
 
 .nav {
@@ -4822,11 +4893,7 @@ button.bg-quaternary:focus {
   content: "";
   background-color: rgba(0, 0, 0, 0); }
 
-.m-0, #bbox-root #mongo-form,
-#bbox-root div.BBFormContainer,
-#bbox-root div.BBFormFieldContainer,
-#bbox-root div.BBFormSection,
-#bbox-root div.BBFormSectionHeading {
+.m-0 {
   margin: 0 !important; }
 
 .mt-0,
@@ -4960,11 +5027,7 @@ button.bg-quaternary:focus {
 .mx-6 {
   margin-left: 6rem !important; }
 
-.p-0, #bbox-root #mongo-form,
-#bbox-root div.BBFormContainer,
-#bbox-root div.BBFormFieldContainer,
-#bbox-root div.BBFormSection,
-#bbox-root div.BBFormSectionHeading, .ekko-lightbox .modal-content,
+.p-0, .ekko-lightbox .modal-content,
 .ekko-lightbox .modal-header,
 .ekko-lightbox .modal-footer,
 .ekko-lightbox .modal-body {
@@ -7342,11 +7405,11 @@ html[dir="rtl"] dd {
 html[dir="rtl"] #device-menu a.dropdown-item {
   float: right !important; }
 
-html[dir="rtl"] .custom-control-label::before, html[dir="rtl"] .custom-control-label::after {
-  right: -3.125rem; }
+html[dir="rtl"] .custom-control-label::before, html[dir="rtl"] #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox html[dir="rtl"] label::before, html[dir="rtl"] .custom-control-label::after, html[dir="rtl"] #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::after, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox html[dir="rtl"] label::after {
+  right: -1.875rem; }
 
-html[dir="rtl"] .custom-control {
-  padding-right: 3.125rem; }
+html[dir="rtl"] .custom-control, html[dir="rtl"] #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox, #bbox-root html[dir="rtl"] #bboxdonation_recurrence_divRecurrenceCheckbox {
+  padding-right: 1.875rem; }
 
 html[dir="rtl"] .sub {
   left: unset;
@@ -7385,7 +7448,7 @@ label,
   font-size: 1rem;
   margin-bottom: 0.5rem; }
 
-.custom-control-label::before {
+.custom-control-label::before, #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label::before {
   box-shadow: 0 0 0 1px #dee2e6; }
 
 #google_translate_element {
@@ -7409,7 +7472,7 @@ label,
 @media (max-width: 719.98px) {
   main .fs-xl {
     font-size: 1.5rem; }
-  main .fs-lg {
+  main .fs-lg, main #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel, #bbox-root .BBFormRadioList main .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
     font-size: 1.25rem; } }
 
 @supports (position: -webkit-sticky) or (position: sticky) {
@@ -7454,7 +7517,7 @@ In this file:
 .fs-rg, .text-block > ul:not([class]) {
   font-size: 1.25rem; }
 
-.fs-lg {
+.fs-lg, #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
   font-size: 1.5rem; }
 
 .fs-xl {
@@ -8262,21 +8325,66 @@ In this file:
 #bbox-root div.BBFormContainer,
 #bbox-root div.BBFormFieldContainer,
 #bbox-root div.BBFormSection,
+#bbox-root div.BBFormSectionHeading,
+#bbox-root div.BBFormFieldRecurrenceInfo {
+  min-width: 100%;
+  margin: 0;
+  padding: 0; }
+
+#bbox-root legend {
+  margin-bottom: 1rem; }
+
 #bbox-root div.BBFormSectionHeading {
-  min-width: 100%; }
+  color: #495057;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 1rem; }
+
+#bbox-root div.BBFormSection {
+  margin-bottom: 2rem; }
+
+#bbox-root div.BBFormFieldRecurrenceInfo {
+  font-size: 1rem; }
+
+#bbox-root div.BBRecurrenceFieldContainer {
+  margin: 0; }
+  #bbox-root div.BBRecurrenceFieldContainer span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem; }
+    #bbox-root div.BBRecurrenceFieldContainer span select {
+      height: 100%;
+      margin: 0 1rem; }
+
+#bbox-root .BBFormFieldRecurrenceInfo {
+  color: #495057; }
+
+#bbox-root .BBLinkSecureInfo {
+  font-size: 1rem;
+  margin-bottom: 0.5rem; }
+
+#bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox {
+  margin-bottom: 1rem; }
+  #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label {
+    display: inline-block;
+    float: none;
+    width: auto; }
 
 #bbox-root .BBFormRadioList {
+  margin: -0.25rem;
   display: flex;
   flex-wrap: wrap; }
   #bbox-root .BBFormRadioList .BBFormRadioItem {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 33%; }
+  #bbox-root .BBFormRadioList .BBFormRadioItem {
+    margin: 0.25rem; }
   #bbox-root .BBFormRadioList .BBFormRadioLabel {
     width: 100%;
     display: block; }
     #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
-      border: 1px solid #dee2e6 !important; }
+      border: 1px solid #dee2e6 !important;
+      border-radius: 0; }
     #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevelSelected {
       border-color: transparent !important;
       background-color: #fec34e !important; }
