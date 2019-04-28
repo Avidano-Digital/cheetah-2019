@@ -1,6 +1,5 @@
 
 #donate-tabs{
-
     .nav-link {
         color: $tab-link-color;
 
@@ -8,9 +7,7 @@
             background: $primary
         }
     }
-
 }
-
 
 // Form styles
 
@@ -31,31 +28,59 @@
     input,
     select,
     textarea {
-        @include border-radius(0);
-    }
-
-    legend{
-        margin-bottom: $spacer-2;
+        border-radius: 0;
     }
 
     select {
         @extend .custom-select;
     }
 
-    input:not([type="checkbox"]) {
+    legend{
+
+        margin-bottom: $spacer-2;
+        
+        > div > label{
+            @extend .h4;
+            color: $body-color;
+        }
+    }
+
+    input,
+    textarea {
         @extend .form-control;
+        &.BBFormCurrency{
+            display: none;
+        }
     }
 
     div.BBFormSectionHeading{
         color: $text-muted;
         border-bottom: 1px solid $border-color;
-        padding-bottom: $spacer-2;
     }
 
     // Sections
     div.BBFormSection {
         margin-bottom: $form-group-margin-bottom;
+        // background: rgba(yellow, 0.5);
     }
+    
+
+.BBFormRadioLabelGivingLevelSelected > input{
+    display: block;
+}
+
+
+div.BBFormFieldContainer {
+    margin-top: $spacer-2 !important;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+
+    div.BBFormFieldContainer {
+        margin-top: 0 !important;
+    }
+}
 
     div.BBFormFieldRecurrenceInfo{
         font-size: $fs-md;
@@ -89,6 +114,10 @@
 
 
 
+#bboxdonation_payment_lblCCType{
+    display: none;
+}
+
 
 
     #bboxdonation_recurrence_divRecurrenceCheckbox{
@@ -108,47 +137,95 @@
         }
     }
 
+    // Credit card expiration, CSC
+    div.BBExpirationCSC {
+        .BBFormFieldLabel {
+            min-width: 200px;
+        }
+    }
 
+    // Credit card images
+    div#DCCreditType {
+        margin-left:160px;
+        width: auto;
+        .BBFormFieldLabel {
+            display: none;
+        }
+    }
+
+    //Expiration
+
+    .BBFieldExpiration .BBFormFieldLabel{
+        margin: 0;
+        padding: 0;
+    }
 
     .BBFormRadioList{
-
         margin: -($spacer-1/2);
 
         display: flex;
         flex-wrap: wrap;
 
         .BBFormRadioItem{
+            margin: ($spacer-1/2);
+
             flex-grow: 1;
             flex-shrink: 0;
             flex-basis: 33%;
+            align-self: stretch;
+            display: flex;
+
+            // .BBFormRadioButtonContainer
             
+            > div { 
+                display: flex;
+                width: 100%;
+            }
+
+            > div > label{
+                align-self: stretch;
+                display: flex;
+                text-align: center;
+                width: 100%;
+
+                > input{
+                    
+                    align-self: center;
+                    margin: 0 auto;
+                    background: $light;
+                    border: none;
+                    // padding: .25rem;
+                    height: auto !important;
+
+
+
+                }
+            }
         }
 
-        .BBFormRadioItem{
-            margin: ($spacer-1/2);
-        }
+        .BBFormRadioLabel {
 
-        .BBFormRadioLabel{
-            width: 100%;
-            display: block;
 
             &.BBFormRadioLabelGivingLevel {
-                border: $border-width solid $border-color !important;
+                border: $border-width solid $border-color;
                 border-radius: 0;
                 @extend .btn;
                 @extend .btn-lg;
+                // @extend .btn-lg;
                 @extend .fs-lg;
             }
 
             &.BBFormRadioLabelGivingLevelSelected {
                 border-color: $transparent !important;
                 background-color: $primary !important;
+                
+                input{ display: block; }
             }
 
-            span{
-                color: $body-color;
-                font-weight: $font-weight-bold;
-            }
+            // span{
+            //     color: $body-color;
+            //     font-weight: $font-weight-bold;
+            // }
         }
     }
 

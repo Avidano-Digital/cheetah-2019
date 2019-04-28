@@ -341,7 +341,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, #bbox-root legend > div > label, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2; }
@@ -364,10 +364,10 @@ h3, .h3 {
     h3, .h3 {
       font-size: calc(1.3rem + 0.6vw) ; } }
 
-h4, .h4 {
+h4, .h4, #bbox-root legend > div > label {
   font-size: 1.5rem; }
   @media (max-width: 1200px) {
-    h4, .h4 {
+    h4, .h4, #bbox-root legend > div > label {
       font-size: calc(1.275rem + 0.3vw) ; } }
 
 h5, .h5 {
@@ -1276,7 +1276,8 @@ mark,
   .offset-xxxl-11 {
     margin-left: 91.6666666667%; } }
 
-.form-control, #bbox-root input:not([type="checkbox"]), #gtranslate_selector {
+.form-control, #bbox-root input,
+#bbox-root textarea, #gtranslate_selector {
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -1291,21 +1292,27 @@ mark,
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .form-control, #bbox-root input:not([type="checkbox"]), #gtranslate_selector {
+    .form-control, #bbox-root input,
+    #bbox-root textarea, #gtranslate_selector {
       transition: none; } }
-  .form-control::-ms-expand, #bbox-root input:not([type="checkbox"])::-ms-expand, #gtranslate_selector::-ms-expand {
+  .form-control::-ms-expand, #bbox-root input::-ms-expand,
+  #bbox-root textarea::-ms-expand, #gtranslate_selector::-ms-expand {
     background-color: transparent;
     border: 0; }
-  .form-control:focus, #bbox-root input:focus:not([type="checkbox"]), #gtranslate_selector:focus {
+  .form-control:focus, #bbox-root input:focus,
+  #bbox-root textarea:focus, #gtranslate_selector:focus {
     color: #495057;
     background-color: #fff;
     border-color: #dee2e6;
     outline: 0;
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
-  .form-control::placeholder, #bbox-root input:not([type="checkbox"])::placeholder, #gtranslate_selector::placeholder {
+  .form-control::placeholder, #bbox-root input::placeholder,
+  #bbox-root textarea::placeholder, #gtranslate_selector::placeholder {
     color: #495057;
     opacity: 1; }
-  .form-control:disabled, #bbox-root input:disabled:not([type="checkbox"]), #gtranslate_selector:disabled, .form-control[readonly], #bbox-root input[readonly]:not([type="checkbox"]), #gtranslate_selector[readonly] {
+  .form-control:disabled, #bbox-root input:disabled,
+  #bbox-root textarea:disabled, #gtranslate_selector:disabled, .form-control[readonly], #bbox-root input[readonly],
+  #bbox-root textarea[readonly], #gtranslate_selector[readonly] {
     background-color: #e9ecef;
     opacity: 1; }
 
@@ -1367,7 +1374,8 @@ select.form-control:focus::-ms-value, select#gtranslate_selector:focus::-ms-valu
 select.form-control[size], select#gtranslate_selector[size], select.form-control[multiple], select#gtranslate_selector[multiple] {
   height: auto; }
 
-textarea.form-control, textarea#gtranslate_selector {
+textarea.form-control,
+#bbox-root textarea, textarea#gtranslate_selector {
   height: auto; }
 
 .form-group {
@@ -1433,27 +1441,36 @@ textarea.form-control, textarea#gtranslate_selector {
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9); }
 
-.was-validated .form-control:invalid, .was-validated #bbox-root input:invalid:not([type="checkbox"]), #bbox-root .was-validated input:invalid:not([type="checkbox"]), .was-validated #gtranslate_selector:invalid, .form-control.is-invalid, #bbox-root input.is-invalid:not([type="checkbox"]), .is-invalid#gtranslate_selector {
+.was-validated .form-control:invalid, .was-validated #bbox-root input:invalid, #bbox-root .was-validated input:invalid,
+.was-validated #bbox-root textarea:invalid, #bbox-root .was-validated textarea:invalid, .was-validated #gtranslate_selector:invalid, .form-control.is-invalid, #bbox-root input.is-invalid,
+#bbox-root textarea.is-invalid, .is-invalid#gtranslate_selector {
   border-color: #dc3545;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
   background-position: center right calc(0.375em + 0.1875rem);
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
-  .was-validated .form-control:invalid:focus, .was-validated #bbox-root input:invalid:focus:not([type="checkbox"]), #bbox-root .was-validated input:invalid:focus:not([type="checkbox"]), .was-validated #gtranslate_selector:invalid:focus, .form-control.is-invalid:focus, #bbox-root input.is-invalid:focus:not([type="checkbox"]), .is-invalid#gtranslate_selector:focus {
+  .was-validated .form-control:invalid:focus, .was-validated #bbox-root input:invalid:focus, #bbox-root .was-validated input:invalid:focus,
+  .was-validated #bbox-root textarea:invalid:focus, #bbox-root .was-validated textarea:invalid:focus, .was-validated #gtranslate_selector:invalid:focus, .form-control.is-invalid:focus, #bbox-root input.is-invalid:focus,
+  #bbox-root textarea.is-invalid:focus, .is-invalid#gtranslate_selector:focus {
     border-color: #dc3545;
     box-shadow: 0 0 0 0.15rem rgba(220, 53, 69, 0.25); }
-  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated #bbox-root input:invalid:not([type="checkbox"]) ~ .invalid-feedback, #bbox-root .was-validated input:invalid:not([type="checkbox"]) ~ .invalid-feedback, .was-validated #gtranslate_selector:invalid ~ .invalid-feedback,
+  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated #bbox-root input:invalid ~ .invalid-feedback, #bbox-root .was-validated input:invalid ~ .invalid-feedback, .was-validated #bbox-root textarea:invalid ~ .invalid-feedback, #bbox-root .was-validated textarea:invalid ~ .invalid-feedback, .was-validated #gtranslate_selector:invalid ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip,
-  .was-validated #bbox-root input:invalid:not([type="checkbox"]) ~ .invalid-tooltip,
-  #bbox-root .was-validated input:invalid:not([type="checkbox"]) ~ .invalid-tooltip,
-  .was-validated #gtranslate_selector:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, #bbox-root input.is-invalid:not([type="checkbox"]) ~ .invalid-feedback, .is-invalid#gtranslate_selector ~ .invalid-feedback,
+  .was-validated #bbox-root input:invalid ~ .invalid-tooltip,
+  #bbox-root .was-validated input:invalid ~ .invalid-tooltip,
+  .was-validated #bbox-root textarea:invalid ~ .invalid-tooltip,
+  #bbox-root .was-validated textarea:invalid ~ .invalid-tooltip,
+  .was-validated #gtranslate_selector:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, #bbox-root input.is-invalid ~ .invalid-feedback, #bbox-root textarea.is-invalid ~ .invalid-feedback, .is-invalid#gtranslate_selector ~ .invalid-feedback,
   .form-control.is-invalid ~ .invalid-tooltip,
-  #bbox-root input.is-invalid:not([type="checkbox"]) ~ .invalid-tooltip,
+  #bbox-root input.is-invalid ~ .invalid-tooltip,
+  #bbox-root textarea.is-invalid ~ .invalid-tooltip,
   .is-invalid#gtranslate_selector ~ .invalid-tooltip {
     display: block; }
 
-.was-validated textarea.form-control:invalid, .was-validated textarea#gtranslate_selector:invalid, textarea.form-control.is-invalid, textarea.is-invalid#gtranslate_selector {
+.was-validated textarea.form-control:invalid,
+.was-validated #bbox-root textarea:invalid, #bbox-root .was-validated textarea:invalid, .was-validated textarea#gtranslate_selector:invalid, textarea.form-control.is-invalid,
+#bbox-root textarea.is-invalid, textarea.is-invalid#gtranslate_selector {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
 
@@ -1540,7 +1557,8 @@ textarea.form-control, textarea#gtranslate_selector {
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, .form-inline #bbox-root input:not([type="checkbox"]), #bbox-root .form-inline input:not([type="checkbox"]), .form-inline #gtranslate_selector {
+    .form-inline .form-control, .form-inline #bbox-root input, #bbox-root .form-inline input,
+    .form-inline #bbox-root textarea, #bbox-root .form-inline textarea, .form-inline #gtranslate_selector {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -2490,7 +2508,8 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%; }
-  .input-group > .form-control, #bbox-root .input-group > input:not([type="checkbox"]), .input-group > #gtranslate_selector,
+  .input-group > .form-control, #bbox-root .input-group > input,
+  #bbox-root .input-group > textarea, .input-group > #gtranslate_selector,
   .input-group > .form-control-plaintext,
   .input-group > .custom-select,
   .input-group > select,
@@ -2500,20 +2519,28 @@ input[type="button"].btn-block {
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0; }
-    .input-group > .form-control + .form-control, #bbox-root .input-group > input:not([type="checkbox"]) + .form-control, .input-group > #gtranslate_selector + .form-control, #bbox-root .input-group > .form-control + input:not([type="checkbox"]), #bbox-root .input-group > input:not([type="checkbox"]) + input:not([type="checkbox"]), #bbox-root .input-group > #gtranslate_selector + input:not([type="checkbox"]), .input-group > .form-control + #gtranslate_selector, #bbox-root .input-group > input:not([type="checkbox"]) + #gtranslate_selector, .input-group > #gtranslate_selector + #gtranslate_selector,
+    .input-group > .form-control + .form-control, #bbox-root .input-group > input + .form-control, #bbox-root .input-group > textarea + .form-control, .input-group > #gtranslate_selector + .form-control, #bbox-root .input-group > .form-control + input, #bbox-root .input-group > input + input, #bbox-root .input-group > textarea + input, #bbox-root .input-group > #gtranslate_selector + input,
+    #bbox-root .input-group > .form-control + textarea,
+    #bbox-root .input-group > input + textarea,
+    #bbox-root .input-group > textarea + textarea,
+    #bbox-root .input-group > #gtranslate_selector + textarea, .input-group > .form-control + #gtranslate_selector, #bbox-root .input-group > input + #gtranslate_selector, #bbox-root .input-group > textarea + #gtranslate_selector, .input-group > #gtranslate_selector + #gtranslate_selector,
     .input-group > .form-control + .custom-select,
-    #bbox-root .input-group > input:not([type="checkbox"]) + .custom-select,
+    #bbox-root .input-group > input + .custom-select,
+    #bbox-root .input-group > textarea + .custom-select,
     .input-group > #gtranslate_selector + .custom-select,
     .input-group > .form-control + select,
     .input-group > #gtranslate_selector + select,
     #bbox-root .input-group > .form-control + select,
-    #bbox-root .input-group > input:not([type="checkbox"]) + select,
+    #bbox-root .input-group > input + select,
+    #bbox-root .input-group > textarea + select,
     #bbox-root .input-group > #gtranslate_selector + select,
     .input-group > .form-control + .custom-file,
-    #bbox-root .input-group > input:not([type="checkbox"]) + .custom-file,
+    #bbox-root .input-group > input + .custom-file,
+    #bbox-root .input-group > textarea + .custom-file,
     .input-group > #gtranslate_selector + .custom-file,
     .input-group > .form-control-plaintext + .form-control,
-    #bbox-root .input-group > .form-control-plaintext + input:not([type="checkbox"]),
+    #bbox-root .input-group > .form-control-plaintext + input,
+    #bbox-root .input-group > .form-control-plaintext + textarea,
     .input-group > .form-control-plaintext + #gtranslate_selector,
     .input-group > .form-control-plaintext + .custom-select,
     .input-group > .form-control-plaintext + select,
@@ -2522,8 +2549,10 @@ input[type="button"].btn-block {
     .input-group > .custom-select + .form-control,
     .input-group > select + .form-control,
     #bbox-root .input-group > select + .form-control,
-    #bbox-root .input-group > .custom-select + input:not([type="checkbox"]),
-    #bbox-root .input-group > select + input:not([type="checkbox"]),
+    #bbox-root .input-group > .custom-select + input,
+    #bbox-root .input-group > select + input,
+    #bbox-root .input-group > .custom-select + textarea,
+    #bbox-root .input-group > select + textarea,
     .input-group > .custom-select + #gtranslate_selector,
     .input-group > select + #gtranslate_selector,
     #bbox-root .input-group > select + #gtranslate_selector,
@@ -2538,14 +2567,16 @@ input[type="button"].btn-block {
     .input-group > select + .custom-file,
     #bbox-root .input-group > select + .custom-file,
     .input-group > .custom-file + .form-control,
-    #bbox-root .input-group > .custom-file + input:not([type="checkbox"]),
+    #bbox-root .input-group > .custom-file + input,
+    #bbox-root .input-group > .custom-file + textarea,
     .input-group > .custom-file + #gtranslate_selector,
     .input-group > .custom-file + .custom-select,
     .input-group > .custom-file + select,
     #bbox-root .input-group > .custom-file + select,
     .input-group > .custom-file + .custom-file {
       margin-left: -1px; }
-  .input-group > .form-control:focus, #bbox-root .input-group > input:focus:not([type="checkbox"]), .input-group > #gtranslate_selector:focus,
+  .input-group > .form-control:focus, #bbox-root .input-group > input:focus,
+  #bbox-root .input-group > textarea:focus, .input-group > #gtranslate_selector:focus,
   .input-group > .custom-select:focus,
   .input-group > select:focus,
   #bbox-root .input-group > select:focus,
@@ -2618,13 +2649,15 @@ input[type="button"].btn-block {
   .input-group-text input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group-lg > .form-control:not(textarea), #bbox-root .input-group-lg > input:not(textarea):not([type="checkbox"]), .input-group-lg > #gtranslate_selector:not(textarea),
+.input-group-lg > .form-control:not(textarea), #bbox-root .input-group-lg > input:not(textarea),
+#bbox-root .input-group-lg > textarea:not(textarea), .input-group-lg > #gtranslate_selector:not(textarea),
 .input-group-lg > .custom-select,
 .input-group-lg > select,
 #bbox-root .input-group-lg > select {
   height: calc(1.5em + 1rem + 2px); }
 
-.input-group-lg > .form-control, #bbox-root .input-group-lg > input:not([type="checkbox"]), .input-group-lg > #gtranslate_selector,
+.input-group-lg > .form-control, #bbox-root .input-group-lg > input,
+#bbox-root .input-group-lg > textarea, .input-group-lg > #gtranslate_selector,
 .input-group-lg > .custom-select,
 .input-group-lg > select,
 #bbox-root .input-group-lg > select,
@@ -2638,13 +2671,15 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: 1.5; }
 
-.input-group-sm > .form-control:not(textarea), #bbox-root .input-group-sm > input:not(textarea):not([type="checkbox"]), .input-group-sm > #gtranslate_selector:not(textarea),
+.input-group-sm > .form-control:not(textarea), #bbox-root .input-group-sm > input:not(textarea),
+#bbox-root .input-group-sm > textarea:not(textarea), .input-group-sm > #gtranslate_selector:not(textarea),
 .input-group-sm > .custom-select,
 .input-group-sm > select,
 #bbox-root .input-group-sm > select {
   height: calc(1.5em + 0.5rem + 2px); }
 
-.input-group-sm > .form-control, #bbox-root .input-group-sm > input:not([type="checkbox"]), .input-group-sm > #gtranslate_selector,
+.input-group-sm > .form-control, #bbox-root .input-group-sm > input,
+#bbox-root .input-group-sm > textarea, .input-group-sm > #gtranslate_selector,
 .input-group-sm > .custom-select,
 .input-group-sm > select,
 #bbox-root .input-group-sm > select,
@@ -8331,16 +8366,36 @@ In this file:
   margin: 0;
   padding: 0; }
 
+#bbox-root input,
+#bbox-root select,
+#bbox-root textarea {
+  border-radius: 0; }
+
 #bbox-root legend {
   margin-bottom: 1rem; }
+  #bbox-root legend > div > label {
+    color: #212529; }
+
+#bbox-root input.BBFormCurrency,
+#bbox-root textarea.BBFormCurrency {
+  display: none; }
 
 #bbox-root div.BBFormSectionHeading {
   color: #495057;
-  border-bottom: 1px solid #dee2e6;
-  padding-bottom: 1rem; }
+  border-bottom: 1px solid #dee2e6; }
 
 #bbox-root div.BBFormSection {
   margin-bottom: 2rem; }
+
+#bbox-root .BBFormRadioLabelGivingLevelSelected > input {
+  display: block; }
+
+#bbox-root div.BBFormFieldContainer {
+  margin-top: 1rem !important; }
+  #bbox-root div.BBFormFieldContainer:first-of-type {
+    margin-top: 0; }
+  #bbox-root div.BBFormFieldContainer div.BBFormFieldContainer {
+    margin-top: 0 !important; }
 
 #bbox-root div.BBFormFieldRecurrenceInfo {
   font-size: 1rem; }
@@ -8362,6 +8417,9 @@ In this file:
   font-size: 1rem;
   margin-bottom: 0.5rem; }
 
+#bbox-root #bboxdonation_payment_lblCCType {
+  display: none; }
+
 #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox {
   margin-bottom: 1rem; }
   #bbox-root #bboxdonation_recurrence_divRecurrenceCheckbox label {
@@ -8369,28 +8427,52 @@ In this file:
     float: none;
     width: auto; }
 
+#bbox-root div.BBExpirationCSC .BBFormFieldLabel {
+  min-width: 200px; }
+
+#bbox-root div#DCCreditType {
+  margin-left: 160px;
+  width: auto; }
+  #bbox-root div#DCCreditType .BBFormFieldLabel {
+    display: none; }
+
+#bbox-root .BBFieldExpiration .BBFormFieldLabel {
+  margin: 0;
+  padding: 0; }
+
 #bbox-root .BBFormRadioList {
   margin: -0.25rem;
   display: flex;
   flex-wrap: wrap; }
   #bbox-root .BBFormRadioList .BBFormRadioItem {
+    margin: 0.25rem;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 33%; }
-  #bbox-root .BBFormRadioList .BBFormRadioItem {
-    margin: 0.25rem; }
-  #bbox-root .BBFormRadioList .BBFormRadioLabel {
-    width: 100%;
-    display: block; }
-    #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
-      border: 1px solid #dee2e6 !important;
-      border-radius: 0; }
-    #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevelSelected {
-      border-color: transparent !important;
-      background-color: #fec34e !important; }
-    #bbox-root .BBFormRadioList .BBFormRadioLabel span {
-      color: #212529;
-      font-weight: 700; }
+    flex-basis: 33%;
+    align-self: stretch;
+    display: flex; }
+    #bbox-root .BBFormRadioList .BBFormRadioItem > div {
+      display: flex;
+      width: 100%; }
+    #bbox-root .BBFormRadioList .BBFormRadioItem > div > label {
+      align-self: stretch;
+      display: flex;
+      text-align: center;
+      width: 100%; }
+      #bbox-root .BBFormRadioList .BBFormRadioItem > div > label > input {
+        align-self: center;
+        margin: 0 auto;
+        background: #F7F5F0;
+        border: none;
+        height: auto !important; }
+  #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevel {
+    border: 1px solid #dee2e6;
+    border-radius: 0; }
+  #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevelSelected {
+    border-color: transparent !important;
+    background-color: #fec34e !important; }
+    #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevelSelected input {
+      display: block; }
 
 .f-serif, p, .text-block > ul:not([class]) {
   font-family: Georgia, 'Times New Roman', Times, serif; }
