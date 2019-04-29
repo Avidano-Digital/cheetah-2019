@@ -468,7 +468,7 @@
                 <!-- .col -->
 
                 <div class="col-md-6">
-                  <a class="btn btn-lg btn-block btn-primary" href="#" title="Sponsor">Sponsor</a>
+                  <a class="btn btn-lg btn-block btn-primary" href="/donate/sponsor/" title="Sponsor">Sponsor</a>
                 </div>
                 <!-- .col -->
 
