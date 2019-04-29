@@ -356,7 +356,7 @@ $card-border-color: rgba($black, .2);
 // Global Components
 
 $component-active-color: $info;
-$component-active-bg: $white;
+// $component-active-bg: $white;
 
 // Navs (.nav) and Input padding
 
@@ -399,6 +399,13 @@ $input-btn-focus-width: .15rem;
 $form-check-input-gutter: 1.25rem !default;
 $form-check-input-margin-y: .3rem !default;
 $form-check-input-margin-x: .25rem !default;
+
+// $custom-checkbox-indicator-indeterminate-bg: $component-active-bg !default;
+// $custom-checkbox-indicator-indeterminate-color: $custom-control-indicator-checked-color !default;
+// $custom-checkbox-indicator-icon-indeterminate: str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath stroke='#{$custom-checkbox-indicator-indeterminate-color}' d='M0 2h4'/%3e%3c/svg%3e"), "#", "%23") !default;
+// $custom-checkbox-indicator-indeterminate-box-shadow: none !default;
+// $custom-checkbox-indicator-indeterminate-border-color: $custom-checkbox-indicator-indeterminate-bg !default;
+
 
 // Alerts
 

@@ -39,34 +39,20 @@ $col-b-width: 30%;
     input,
     select,
     textarea {
+        width: 100%;
         border-radius: 0;
     }
     
     input[type="text"],
     input[type="email"],
     input[type="tel"],
+    textarea,
     select {
         width: $col-a-width;
+        opacity: 1 !important;
+        max-width: unset;
         // border:2px solid blue !important;
     }
-
-    // Labels
-
-    // .BBFormFieldContainer > label, 
-    // .BBFieldExpiration > label, 
-    .BBFormFieldLabel {
-        margin: 0 !important;
-        padding-right: 1rem !important;
-        font-size: $fs-md;
-        background: rgba(blue, 0.25);
-        width: $col-b-width;
-    }
-
-    input[type="checkbox"]+label {
-        max-width: unset;
-        // background: pink !important;
-    }
-
     
     select {
         @extend .custom-select;
@@ -81,7 +67,57 @@ $col-b-width: 30%;
         }
     }
 
+    // Labels
 
+    .BBFormFieldLabel {
+        margin: 0 !important;
+        padding-right: 1rem !important;
+        font-size: $fs-md;
+        // background: rgba(blue, 0.25);
+        width: $col-b-width;
+    }
+
+    input[type="checkbox"]+label {
+        max-width: unset;
+        // background: pink !important;
+    }
+
+    // Inputs
+
+    input,
+    textarea {
+        @extend .form-control;
+        display: inline-block;
+
+        &.BBFormCurrency {
+            display: none;
+        }
+    }
+
+    .BBTwoFields {
+        background: pink;
+
+    }
+
+    .BBTwoFields,
+
+    .BBThreeFields {
+        
+        .BBFormFieldLabel {
+        }
+
+        input, select{
+            // background: red;
+            margin: 0;
+            width: 70%;
+            margin-bottom: $spacer-2;
+
+        }
+
+        input{ 
+            float: right;
+        }
+    }
 
 
     // Checkboxes and radios
@@ -89,7 +125,8 @@ $col-b-width: 30%;
     #bboxdonation_recurrence_divRecurrenceCheckbox,
     #bboxdonation_billing_fldOrgGift,
     #bboxdonation_billing_fldAnonymous,
-    #bboxdonation_tribute_divTributeGeneral>div {
+    #bboxdonation_tribute_divTributeGeneral>div,
+    #divTributeAcknowledge > div{
         @extend .custom-control;
         @extend .custom-checkbox;
 
@@ -97,21 +134,11 @@ $col-b-width: 30%;
             @extend .custom-control-input;
         }
 
-        label {
+        label.BBFormCheckboxLabel {
             @extend .custom-control-label;
             display: inline-block;
             float: none;
             width: auto;
-        }
-    }
-
-
-    input,
-    textarea {
-        @extend .form-control;
-        display: inline-block;
-        &.BBFormCurrency{
-            display: none;
         }
     }
 
@@ -141,6 +168,7 @@ $col-b-width: 30%;
 
     div.BBFormFieldRecurrenceInfo{
         font-size: $fs-md;
+        margin-top: $spacer-2;
 
     }
     
@@ -165,11 +193,13 @@ $col-b-width: 30%;
     }
 
     .BBLinkSecureInfo{
-        font-size: $fs-md;
+        font-size: $fs-sm;
         margin-bottom: $spacer-1;
+        margin-left: $col-b-width;
+        border-bottom: 0 !important;
+        text-decoration: underline !important;
+        color: $text-muted;
     }
-
-
 
     #bboxdonation_payment_lblCCType{
         display: none;
@@ -293,7 +323,13 @@ $col-b-width: 30%;
     }
 
     @media (max-width: 600px) {
-        border:6px solid purple;
+
+        .BBThreeFields {
+            input,
+            select {
+                width: 100%;
+            }
+        }
 
         input[type="text"],
         input[type="email"],
@@ -305,6 +341,7 @@ $col-b-width: 30%;
         .BBFormFieldLabel {
             width: 100%;
         }
+
         #bboxdonation_payment_cboYear,
         #DCCreditType {
             margin-left: 0 !important;
