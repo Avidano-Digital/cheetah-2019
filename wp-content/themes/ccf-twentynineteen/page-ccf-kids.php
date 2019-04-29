@@ -287,12 +287,12 @@ $parent_title = get_the_title($post->post_parent);
                 <div class="card bg-white">
 
                     <div class="gradient-overlay-y-white">
-                        <img class="card-img" src="https://via.placeholder.com/1500x1000" alt="Card image">
+                        <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/kids/kids-ccf-kids-contact-us.jpg" alt="Card image">
                     </div>
 
                     <div class="card-img-overlay d-flex px-0">
 
-                        <div class="container align-self-center">
+                        <div class="container align-self-end">
 
                             <div class="narrow text-center my-4">
 
@@ -302,9 +302,10 @@ $parent_title = get_the_title($post->post_parent);
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque libero quaerat porro cupiditate sequi ea amet iure nisi illo nostrum.
                                 </p>
 
-                                        <a href="#" class="btn btn-lg btn-block btn-primary">
-                                            Contact Us
-                                        </a>
+                                <a href="#" class="btn btn-lg btn-block btn-primary">
+                                    Contact Us
+                                </a>
+                                
                             </div>
                             <!-- .narrow -->
 

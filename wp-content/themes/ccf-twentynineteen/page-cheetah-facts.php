@@ -100,7 +100,7 @@ $parent_title = get_the_title($post->post_parent);
 
                 <div class="narrow text-center mt-n3 mt-lg-n6">
 
-                    <img class="rounded-circle mb-3" src="<?php echo get_template_directory_uri(); ?>/images/kids/figure/01.jpg" alt="Placeholder" style="height:200px;">
+                    <img class="rounded-circle mb-3" src="<?php echo get_template_directory_uri(); ?>/images/kids/kids-cheetah-facts-a-lot-of-kids.jpg" alt="Placeholder" style="height:200px;">
 
                     <h2 class="card-title f-cheetah-tracks display-3 mb-2 text-tertiary">A lot of kids</h2>
 
@@ -397,7 +397,7 @@ $parent_title = get_the_title($post->post_parent);
 
                                 <div class="row matrix-border mt-3">
                                     <div class="col-md-6">
-                                        <a href="#" class="btn btn-lg btn-block btn-primary">
+                                        <a href="/kids/ccf-kids" class="btn btn-lg btn-block btn-primary">
                                             CCF Kids
                                         </a>
                                     </div>
