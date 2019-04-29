@@ -8387,9 +8387,6 @@ In this file:
 #bbox-root div.BBFormSection {
   margin-bottom: 2rem; }
 
-#bbox-root .BBFormRadioLabelGivingLevelSelected > input {
-  display: block; }
-
 #bbox-root div.BBFormFieldContainer {
   margin-top: 1rem !important; }
   #bbox-root div.BBFormFieldContainer:first-of-type {
@@ -8426,9 +8423,6 @@ In this file:
     display: inline-block;
     float: none;
     width: auto; }
-
-#bbox-root div.BBExpirationCSC .BBFormFieldLabel {
-  min-width: 200px; }
 
 #bbox-root div#DCCreditType {
   margin-left: 160px;
@@ -8473,6 +8467,15 @@ In this file:
     background-color: #fec34e !important; }
     #bbox-root .BBFormRadioList .BBFormRadioLabel.BBFormRadioLabelGivingLevelSelected input {
       display: block; }
+  #bbox-root .BBFormRadioList .BBFormRadioLabel span {
+    color: #212529;
+    font-weight: 700; }
+
+.BBFieldExpiration {
+  background: red !important; }
+
+#bboxdonation_payment_cboYear {
+  margin-left: 160px; }
 
 .f-serif, p, .text-block > ul:not([class]) {
   font-family: Georgia, 'Times New Roman', Times, serif; }

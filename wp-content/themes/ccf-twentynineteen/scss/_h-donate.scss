@@ -13,7 +13,8 @@
 
 #bbox-root {
 
-    // Resets
+    // Global resets
+    
     #mongo-form,
     div.BBFormContainer,
     div.BBFormFieldContainer,
@@ -24,6 +25,8 @@
         margin: 0;
         padding: 0;
     }
+
+    // Generic tags
 
     input,
     select,
@@ -59,28 +62,24 @@
     }
 
     // Sections
+
     div.BBFormSection {
         margin-bottom: $form-group-margin-bottom;
         // background: rgba(yellow, 0.5);
     }
-    
 
-.BBFormRadioLabelGivingLevelSelected > input{
-    display: block;
-}
-
-
-div.BBFormFieldContainer {
-    margin-top: $spacer-2 !important;
-
-    &:first-of-type {
-        margin-top: 0;
-    }
 
     div.BBFormFieldContainer {
-        margin-top: 0 !important;
+        margin-top: $spacer-2 !important;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        div.BBFormFieldContainer {
+            margin-top: 0 !important;
+        }
     }
-}
 
     div.BBFormFieldRecurrenceInfo{
         font-size: $fs-md;
@@ -114,10 +113,9 @@ div.BBFormFieldContainer {
 
 
 
-#bboxdonation_payment_lblCCType{
-    display: none;
-}
-
+    #bboxdonation_payment_lblCCType{
+        display: none;
+    }
 
 
     #bboxdonation_recurrence_divRecurrenceCheckbox{
@@ -138,11 +136,11 @@ div.BBFormFieldContainer {
     }
 
     // Credit card expiration, CSC
-    div.BBExpirationCSC {
-        .BBFormFieldLabel {
-            min-width: 200px;
-        }
-    }
+    // div.BBExpirationCSC {
+    //     .BBFormFieldLabel {
+    //         min-width: 200px;
+    //     }
+    // }
 
     // Credit card images
     div#DCCreditType {
@@ -205,7 +203,6 @@ div.BBFormFieldContainer {
 
         .BBFormRadioLabel {
 
-
             &.BBFormRadioLabelGivingLevel {
                 border: $border-width solid $border-color;
                 border-radius: 0;
@@ -222,11 +219,20 @@ div.BBFormFieldContainer {
                 input{ display: block; }
             }
 
-            // span{
-            //     color: $body-color;
-            //     font-weight: $font-weight-bold;
-            // }
+            span{
+                color: $body-color;
+                font-weight: $font-weight-bold;
+            }
         }
     }
 
 }
+
+    .BBFieldExpiration {
+        background: red !important;
+
+    }
+
+    #bboxdonation_payment_cboYear{
+        margin-left: 160px;
+    }
