@@ -41,66 +41,18 @@ endif;
         </div>
         <!-- .banner-with-background -->
 
-    <div class="container-fluid">
+    <div class="container">
 
-        <div class="row wide">
-
-            <div class="col-xl-3 bg-light order-last">
-
-                <div class="my-3">
-
-                    <div class="narrow fs-md">
-                        
-                        <p class="h5">Donate with confidence</p>
-    
-                        <p>Our programs have proven results. When you give to Cheetah Conservation Fund, you are supporting the best in scientific research, educational programming, and conservation.</p>
-
-                        <p>To donate to CCF via one of our international affiliates please use the links below:</p>
-
-                        <ul class="extensible-list">
-                            <li><a href="https://cheetahconservationfund.ca/donate/" target="_blank">Canada</a></li>
-                            <li><a href="http://cheetah.org.uk/donate" target="_blank">United Kingdom</a></li>
-                            <li><a href="http://www.aga-artenschutz.de/spenden.html?fb_item_id_fix=909" target="_blank">Germany</a></li>
-                            <li><a href="https://cheetah.org.au/" target="_blank">Australia</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <!-- .sticky-top -->
-
-                <hr>
-
-                <div class="my-3 fs-md">
-
-                    <p class="h5">Helpful Information</p>
-
-                    <p>
-                        If you are having difficulty completing your donation, please call <strong><span class="no-wrap">1-866-909-3399</span></strong>
-                    </p>
-
-                    <p>
-                        CCF is a registered Trust in Namibia (Incorporated Association Not For Gain, with Registration
-                        Number 21/20002/341).
-                    </p>
-                    <p>
-                        CCF USA is a Registered Non Profit 501(c) 3: #31-1726923.
-                    </p>
+        <div class="row">
 
 
-                </div>
-                <!-- .my-5 -->
-
-
-            </div>
-            <!-- .col -->
-
-            <div class="col-xl-9 overflow-hidden">
+            <div class="col-lg-8 overflow-hidden">
 
                 <div class="my-5" id="primary-content">
 
                     <div class="narrow my-4">
                     
-                        <div class="nav nav-pills bg-light device-md" id="donate-tabs" role="tablist">
+                        <div class="nav nav-pills device-md" id="donate-tabs" role="tablist">
 
                             <a class="nav-item nav-link flex-fill <?php echo ($type == 'once' ? 'active' : '') ?>" id="tab-btn-01-a" href="/donate/"
                             aria-controls="tab-01-a" aria-selected="<?php echo ($type == 'once' ? 'true' : 'false') ?>" role="tab">
@@ -136,6 +88,57 @@ endif;
             </div>
             <!-- .col -->
 
+            <div class="col-lg-4">
+
+                <div class="card border my-5">
+                    <div class="card-header border-bottom text-center">
+                        Donate with confidence
+                    </div>
+                    <div class="card-body">
+                        <div class="fs-md">
+                            <p>
+                                When you give to Cheetah Conservation Fund, you are supporting
+                                the best in scientific research, educational programming, and conservation.
+                            </p>
+                            <p>
+                                To donate to CCF via one of our international affiliates please use the links below:
+                            </p>
+                            <ul class="extensible-list">
+                                <li><a href="https://cheetahconservationfund.ca/donate/" target="_blank">Canada</a></li>
+                                <li><a href="http://cheetah.org.uk/donate" target="_blank">United Kingdom</a></li>
+                                <li><a href="http://www.aga-artenschutz.de/spenden.html?fb_item_id_fix=909" target="_blank">Germany</a></li>
+                                <li><a href="https://cheetah.org.au/" target="_blank">Australia</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- .card -->
+
+                <div class="card border my-5">
+                    <div class="card-header border-bottom text-center">
+                        Helpful Information
+                    </div>
+                    <div class="card-body">
+                        <div class="fs-md">
+                            <p>
+                                If you are having difficulty completing your donation, please call <strong class="no-wrap">1-866-909-3399</strong>
+                            </p>
+
+                            <p>
+                                CCF is a registered Trust in Namibia (Incorporated Association Not For Gain, with
+                                Registration
+                                Number 21/20002/341).
+                            </p>
+                            <p>
+                                CCF USA is a Registered Non Profit 501(c) 3: #31-1726923.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .card -->
+
+            </div>
+            <!-- .col -->
         </div>
         <!-- .row -->
 

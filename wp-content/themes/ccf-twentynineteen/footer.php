@@ -109,7 +109,7 @@
 
                     <ul class="extensible-list horizontal">
                         <li>
-                            <a class="btn btn-sm btn-block btn-primary" href="#" title="Donate">Donate</a>
+                            <a class="btn btn-sm btn-block btn-primary" href="/donate" title="Donate">Donate</a>
                         </li>
                         <li>
                             <a class="btn btn-sm btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>

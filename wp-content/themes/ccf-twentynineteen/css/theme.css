@@ -4185,10 +4185,10 @@ input[type="button"].btn-block {
   padding: 1rem; }
 
 .card-title {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 .card-subtitle {
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -4201,7 +4201,7 @@ input[type="button"].btn-block {
   margin-left: 1rem; }
 
 .card-header {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
@@ -4209,13 +4209,13 @@ input[type="button"].btn-block {
     border-top: 0; }
 
 .card-footer {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   background-color: rgba(0, 0, 0, 0.05);
   border-top: 1px solid rgba(0, 0, 0, 0.2); }
 
 .card-header-tabs {
   margin-right: -0.5rem;
-  margin-bottom: -2rem;
+  margin-bottom: -1rem;
   margin-left: -0.5rem;
   border-bottom: 0; }
 
@@ -4274,7 +4274,7 @@ input[type="button"].btn-block {
           border-left: 0; } }
 
 .card-columns .card {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 @media (min-width: 480px) {
   .card-columns {
@@ -9470,10 +9470,12 @@ In this file:
 // B. Container highlighter
 
 */
-#donate-tabs .nav-link {
-  color: #212529; }
-  #donate-tabs .nav-link.active {
-    background: #fec34e; }
+#donate-tabs {
+  background: #F7F5F0; }
+  #donate-tabs .nav-link {
+    color: #212529; }
+    #donate-tabs .nav-link.active {
+      background: #fec34e; }
 
 #bbox-root #mongo-form,
 #bbox-root div.BBFormContainer,

@@ -170,7 +170,7 @@ $resourceCategory = $resourceCategories[0];
               <div class="row matrix-border shadow-lg">
 
                 <div class="col-md-6">
-                  <a class="btn btn-lg btn-block btn-primary" href="#" title="Donate">Donate</a>
+                  <a class="btn btn-lg btn-block btn-primary" href="/donate" title="Donate">Donate</a>
                 </div>
                 <!-- .col -->
 

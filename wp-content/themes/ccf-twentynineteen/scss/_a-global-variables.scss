@@ -344,7 +344,7 @@ $link-hover-decoration: none;
 // Set card spacing to match grid gutter width (create consistant x axis spacing on mobile)
 
 $card-spacer-x: ($grid-gutter-width/2); 
-$card-spacer-y: $grid-gutter-width; 
+$card-spacer-y: ($grid-gutter-width/2);
 
 $card-cap-bg: rgba($black, .05);
 $card-border-color: rgba($black, .2);
