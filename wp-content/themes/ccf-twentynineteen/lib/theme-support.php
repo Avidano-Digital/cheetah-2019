@@ -409,6 +409,7 @@
         if ($currenturl != $urlto) exit( wp_redirect( $urlto ) );
 
     }
+
     add_action( 'template_redirect', 'redirect_page' );
 
     ////////////////////////////////////////
@@ -504,7 +505,7 @@
                                         </div>
                                         <!-- .col -->
                                         <div class="col">
-                                            <a href="#1" class="btn btn-block btn-primary">Sponsor</a>
+                                            <a href="/donate/sponsor" class="btn btn-block btn-primary">Sponsor</a>
                                         </div>
                                         <!-- .col -->
                                         <div class="col-auto">
@@ -568,6 +569,7 @@ if (!function_exists('custom_pagination')) {
             } else {
                 $format = '&paged=%#%';
             }
+
             echo paginate_links(array(
                 'base'			=> str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
                 'format'		=> $format,
