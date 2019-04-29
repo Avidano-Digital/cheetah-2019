@@ -1,3 +1,6 @@
+////////////////////////////////////////
+// Donate Tabs
+////////////////////////////////////////
 
 #donate-tabs{
     .nav-link {
@@ -9,7 +12,12 @@
     }
 }
 
-// Form styles
+////////////////////////////////////////
+// Blackbaud Forms
+////////////////////////////////////////
+
+$col-a-width: 70%;
+$col-b-width: 30%;
 
 #bbox-root {
 
@@ -33,13 +41,38 @@
     textarea {
         border-radius: 0;
     }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: $col-a-width;
+        // border:2px solid blue !important;
+    }
 
+    // Labels
+
+    // .BBFormFieldContainer > label, 
+    // .BBFieldExpiration > label, 
+    .BBFormFieldLabel {
+        margin: 0 !important;
+        padding-right: 1rem !important;
+        font-size: $fs-md;
+        background: rgba(blue, 0.25);
+        width: $col-b-width;
+    }
+
+    input[type="checkbox"]+label {
+        max-width: unset;
+        // background: pink !important;
+    }
+
+    
     select {
         @extend .custom-select;
     }
 
     legend{
-
         margin-bottom: $spacer-2;
         
         > div > label{
@@ -48,9 +81,35 @@
         }
     }
 
+
+
+
+    // Checkboxes and radios
+
+    #bboxdonation_recurrence_divRecurrenceCheckbox,
+    #bboxdonation_billing_fldOrgGift,
+    #bboxdonation_billing_fldAnonymous,
+    #bboxdonation_tribute_divTributeGeneral>div {
+        @extend .custom-control;
+        @extend .custom-checkbox;
+
+        input[type="checkbox"] {
+            @extend .custom-control-input;
+        }
+
+        label {
+            @extend .custom-control-label;
+            display: inline-block;
+            float: none;
+            width: auto;
+        }
+    }
+
+
     input,
     textarea {
         @extend .form-control;
+        display: inline-block;
         &.BBFormCurrency{
             display: none;
         }
@@ -67,7 +126,6 @@
         margin-bottom: $form-group-margin-bottom;
         // background: rgba(yellow, 0.5);
     }
-
 
     div.BBFormFieldContainer {
         margin-top: $spacer-2 !important;
@@ -118,40 +176,22 @@
     }
 
 
-    #bboxdonation_recurrence_divRecurrenceCheckbox{
-        @extend .custom-control;
-        @extend .custom-checkbox;
-        margin-bottom: $spacer-2;
-
-        input[type="checkbox"] {
-            @extend .custom-control-input;
-        }
-
-        label{
-            display: inline-block;
-            float: none;
-            width: auto;
-            @extend .custom-control-label;
-        }
-    }
-
-    // Credit card expiration, CSC
-    // div.BBExpirationCSC {
-    //     .BBFormFieldLabel {
-    //         min-width: 200px;
-    //     }
-    // }
-
     // Credit card images
     div#DCCreditType {
-        margin-left:160px;
+        margin-left: $col-b-width;
         width: auto;
+
         .BBFormFieldLabel {
             display: none;
         }
     }
+    
+    #bboxdonation_payment_cboYear {
+        margin-top: $spacer-2;
+        margin-left: $col-b-width;
+    }
 
-    //Expiration
+    // Expiration
 
     .BBFieldExpiration .BBFormFieldLabel{
         margin: 0;
@@ -208,7 +248,6 @@
                 border-radius: 0;
                 @extend .btn;
                 @extend .btn-lg;
-                // @extend .btn-lg;
                 @extend .fs-lg;
             }
 
@@ -226,13 +265,51 @@
         }
     }
 
+.BBFormContainer[data-bbox-part-id="ce3cb3d7-d112-40a1-bf4e-c9dd10a518f2"] .BBFormChecklist {
+    max-height: unset;
+    overflow: auto;
+    border: 0;
 }
 
-    .BBFieldExpiration {
-        background: red !important;
+
+
+
+    div#bboxdonation_comment_fldComments {
+
+        label,
+        textarea {
+            margin: 0
+        }
+    }
+
+
+    input.BBFormSubmitbutton {
+        @extend .btn;
+        @extend .btn-lg;
+        @extend .btn-primary;
+
+        box-shadow: unset;
 
     }
 
-    #bboxdonation_payment_cboYear{
-        margin-left: 160px;
+    @media (max-width: 600px) {
+        border:6px solid purple;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+        }
+
+        .BBFormFieldLabel {
+            width: 100%;
+        }
+        #bboxdonation_payment_cboYear,
+        #DCCreditType {
+            margin-left: 0 !important;
+        }
+        
     }
+
+}
