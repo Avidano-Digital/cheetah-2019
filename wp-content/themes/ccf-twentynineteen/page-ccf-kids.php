@@ -108,179 +108,37 @@ $parent_title = get_the_title($post->post_parent);
             </div>
             <!-- .container -->
 
-            <div class="container-fluid wide my-5 bg-light py-5">
+            <script type="text/javascript">
 
-                <h2 class="f-cheetah-tracks display-3 mb-2 text-tertiary text-center">Artists of the Month</h2>
-                <ul class="extensible-list horizontal justify-content-center">
-                    <li>
-                        <a class="no-btn-style text-tertiary" href="#1" title="Previous">
-                            <span class="fas fa-angle-double-left" title="Previous" role="img"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <strong class="text-tertiary">May, 2019</strong>
-                    </li>
-                    <li>
-                        <a class="no-btn-style text-tertiary" href="#1" title="Next">
-                            <span class="fas fa-angle-double-right" title="Previous" role="img"></span>
-                        </a>
-                    </li>
+              var page = 1;
 
-                </ul>
+              function loadPost(page) {
+                jQuery.ajax({
+                    type: 'POST',
+                    url: '<?php echo admin_url('admin-ajax.php');?>',
+                    dataType: "html",
+                    data: { 
+                      action: 'get_ajax_posts',
+                      page: page
+                    },
+                    success: function(response) {
+                        jQuery('.posts-area').html(response);
+                        jQuery('.artist-pagination').click(function(e){
+                          e.preventDefault();
+                          page = jQuery(this).data('page');
+                          loadPost(page);
+                        });
+                    }
+                });
+              };
 
-                <div class="figure-block medium my-3">
+              jQuery(document).ready(function(){
+                loadPost(page);
+              });
 
-                    <figure class="figure my-0">
+            </script>
 
-                        <div class="figure-img shadow-lg">
-
-                            <a class="enlarge" class="stretched-link" href="<?php echo get_template_directory_uri(); ?>/images/kids/art/featured-artist.jpg" title="A caption for the image."
-                                data-toggle="lightbox" data-footer="A caption for the image.">
-                                <span>
-                                    <span class="fas fa-expand"></span>
-                                </span>
-                            </a>
-
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/kids/art/featured-artist.jpg" alt="Placeholder">
-
-                        </div>
-                        <!-- .figure-img -->
-
-                        <figcaption class="figure-caption mt-1 text-center">A caption for the image.</figcaption>
-
-                    </figure>
-
-                </div>
-                <!-- .figure-block -->
-
-                <div class="narrow gallery-thumbnails my-5">
-
-                <div class="artist-bio my-3 text-center">
-                <h3 class="text-tertiary">
-                    Name or Group
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ullam unde modi laudantium molestiae atque sunt expedita.</p>
-                
-                </div>
-                <!-- .artist-bio -->
-
-                    <div class="row matrix-gutter">
-
-                        <div class="col-sm-6">
-
-                            <div class="position-relative">
-
-                                <a class="enlarge" class="stretched-link" href="https://placehold.it/1200x800.jpg"
-                                    title="A caption for the image." data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-footer="A caption for the image.">
-                                    <span>
-                                        <span class="fas fa-expand"></span>
-                                    </span>
-                                </a>
-
-                                <img src="https://placehold.it/1200x800.jpg" alt="A caption for the image.">
-                            </div>
-
-                        </div>
-                        <!-- .col -->
-
-                        <div class="col-sm-6">
-
-                            <div class="position-relative">
-
-                                <a class="enlarge" class="stretched-link" href="https://placehold.it/1200x800.jpg"
-                                    title="A caption for the image." data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-footer="A caption for the image.">
-                                    <span>
-                                        <span class="fas fa-expand"></span>
-                                    </span>
-                                </a>
-
-                                <img src="https://placehold.it/1200x800.jpg" alt="A caption for the image.">
-                            </div>
-
-                        </div>
-                        <!-- .col -->
-
-                        <div class="col-sm-6">
-
-                            <div class="position-relative">
-
-                                <a class="enlarge" class="stretched-link" href="https://placehold.it/1200x800.jpg"
-                                    title="A caption for the image." data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-footer="A caption for the image.">
-                                    <span>
-                                        <span class="fas fa-expand"></span>
-                                    </span>
-                                </a>
-
-                                <img src="https://placehold.it/1200x800.jpg" alt="A caption for the image.">
-                            </div>
-
-                        </div>
-                        <!-- .col -->
-
-                        <div class="col-sm-6">
-
-                            <div class="position-relative">
-
-                                <a class="enlarge" class="stretched-link" href="https://placehold.it/1200x800.jpg"
-                                    title="A caption for the image." data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-footer="A caption for the image.">
-                                    <span>
-                                        <span class="fas fa-expand"></span>
-                                    </span>
-                                </a>
-
-                                <img src="https://placehold.it/1200x800.jpg" alt="A caption for the image.">
-                            </div>
-
-                        </div>
-                        <!-- .col -->
-
-                        <div class="col-sm-6">
-
-                            <div class="position-relative">
-
-                                <a class="enlarge" class="stretched-link" href="https://placehold.it/1200x800.jpg"
-                                    title="A caption for the image." data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-footer="A caption for the image.">
-                                    <span>
-                                        <span class="fas fa-expand"></span>
-                                    </span>
-                                </a>
-
-                                <img src="https://placehold.it/1200x800.jpg" alt="A caption for the image.">
-                            </div>
-
-                        </div>
-                        <!-- .col -->
-
-                        <div class="col-sm-6">
-
-                            <div class="position-relative">
-
-                                <a class="enlarge" class="stretched-link" href="https://placehold.it/1200x800.jpg"
-                                    title="A caption for the image." data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-footer="A caption for the image.">
-                                    <span>
-                                        <span class="fas fa-expand"></span>
-                                    </span>
-                                </a>
-
-                                <img src="https://placehold.it/1200x800.jpg" alt="A caption for the image.">
-                            </div>
-
-                        </div>
-                        <!-- .col -->
-
-                    </div>
-                    <!-- .row -->
-
-                </div>
-                <!-- .gallery-thumbnails -->
-
-            </div>
+            <div class="posts-area"></div>
 
             <div class="featured-panel responsive-lg">
 
@@ -305,7 +163,7 @@ $parent_title = get_the_title($post->post_parent);
                                 <a href="#" class="btn btn-lg btn-block btn-primary">
                                     Contact Us
                                 </a>
-                                ah
+                                
                             </div>
                             <!-- .narrow -->
 
