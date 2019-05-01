@@ -19,7 +19,8 @@ jQuery(function ($) {
     // Create custom pin
     var Icon = L.Icon.extend({
         options: {
-            iconSize: [40, 40]
+            iconSize: [50, 50],
+            iconAnchor: [25, 50],
         }
     });
 
@@ -33,7 +34,7 @@ jQuery(function ($) {
     // Custom popup options 
     var markerOptions = {
         riseOnHover: true, 
-        icon: Icon,
+        icon: Icon
     };
 
     // Custom popup options 
