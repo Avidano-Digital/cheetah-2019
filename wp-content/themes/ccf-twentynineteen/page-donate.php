@@ -45,7 +45,6 @@ endif;
 
         <div class="row">
 
-
             <div class="col-lg-8 overflow-hidden">
 
                 <div class="my-5" id="primary-content">
