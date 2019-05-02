@@ -44,7 +44,17 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
             <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
 
             <p class="f-sans-serif">
-                <strong class="d-block"><?php echo ($end_date->format("j") != $start_date->format("j")) ? get_field('start_date_time') . ' – ' . get_field('end_date_time') : get_field('start_date_time') . ' – ' . $end_date->format('g:i a'); ?></strong>
+                <strong class="d-block">
+
+                    <?php 
+                    // echo ($end_date->format("j") != $start_date->format("j")) ? get_field('start_date_time') . ' – ' . get_field('end_date_time') : get_field('start_date_time') . ' – ' . $end_date->format('g:i a'); 
+                    
+
+                    
+                    ?>
+                    <?php the_field('start_date_time'); ?>
+
+                </strong>
             </p>
 
         </header>
@@ -62,55 +72,6 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
             </figure>
 
         </div>
-
-        <div class="my-5 mx-n2">
-
-            <figure class="w-100">
-
-                <div class="figure-info">
-                    <div id="map-affiliates"></div>
-                </div>
-
-                <div class="container py-1">
-                    <div class="narrow">
-                        <figcaption>
-           
-                            <span class="d-block fs-sm">
-                                <em>
-                                Map tiles by
-                                <a href="http://stamen.com/" target="_blank">Stamen Design</a>, under
-                                <a href="http://creativecommons.org/licenses/by/3.0" target="_blank">CC BY 3.0</a>.
-                                Data by
-                                <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a>, under
-                                <a href="http://www.openstreetmap.org/copyright" target="_blank">ODbL</a>
-                                </em>
-                            </span>
-
-                        </figcaption>
-                    </div>
-                </div>
-
-            </figure>
-        </div>
-        <!-- .mx-n2 -->
-
-        <?php
-
-          $location = get_field('location');
-          $latitude = get_field('latitude');
-          $longitude = get_field('longitude');
-
-          $map_location = array();
-  
-          $map_location['icon'] = 'officeIcon';
-          $map_location['popupText'] = $location;
-          $map_location['latitude'] = $latitude;
-          $map_location['longitude'] = $longitude;
-
-        
-        ?>
-
-        <?php wp_localize_script('ccf-global-map', 'map_locations', $map_location); ?>
 
         <?php get_template_part('template-parts/flexible-content-article'); ?>
 

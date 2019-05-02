@@ -30,7 +30,7 @@ endif;
             <div class="container-fluid">
                 <div class="narrow text-white text-center text-shadow">
                     <h1>
-                        <span class="d-block text-primary fs-lg text-uppercase">Donate to CCF</span>
+                        <span class="d-block text-primary fs-rg text-uppercase">Donate to CCF</span>
                         <span class="display-4 text-white">Join us in the race to save the cheetah</span>
                     </h1>
                 </div>
@@ -44,7 +44,6 @@ endif;
     <div class="container">
 
         <div class="row">
-
 
             <div class="col-lg-8 overflow-hidden">
 
