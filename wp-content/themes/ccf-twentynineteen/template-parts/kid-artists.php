@@ -28,7 +28,7 @@
         </li>
         <?php endif; ?>
         <li>
-            <strong class="text-tertiary">May, 2019</strong>
+            <strong class="text-tertiary"><?php the_time('F, Y'); ?></strong>
         </li>
         <?php if ($nextPage == true) : ?>
         <li>
