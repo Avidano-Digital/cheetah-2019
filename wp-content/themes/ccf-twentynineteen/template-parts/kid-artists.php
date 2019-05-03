@@ -19,13 +19,15 @@
 <div class="container-fluid wide my-5 bg-light py-5">
 
     <h2 class="f-cheetah-tracks display-3 mb-2 text-tertiary text-center">Artists of the Month</h2>
+
     <ul class="extensible-list horizontal justify-content-center">
-        <?php if ($previousPage == true) : ?>
+        
         <li>
-            <a class="no-btn-style text-tertiary artist-pagination" data-page="<?php echo $currentPage + 1; ?>" href="#" title="Previous">
+            <a class="no-btn-style text-tertiary artist-pagination <?php if ($previousPage != true) : ?>" data-page="<?php echo $currentPage + 1; ?>" href="#" title="Previous">
                 <span class="fas fa-angle-double-left" title="Previous" role="img"></span>
             </a>
         </li>
+        
         <?php endif; ?>
         <li>
             <strong class="text-tertiary"><?php the_time('F, Y'); ?></strong>
@@ -92,15 +94,16 @@
         <?php 
 
         $images = get_field('gallery');
-
+        
         if ($images) : 
 
         ?>
 
-            <div class="row matrix-gutter">
+            <div class="row matrix-gutter" id="example-gallery">
 
                 <?php foreach( $images as $image ): ?>
-                    <div class="col-sm-6">
+
+                    <div class="col-sm-4">
 
                         <div class="position-relative">
 
@@ -112,11 +115,12 @@
                                 </span>
                             </a>
 
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                            <img class="w-100" src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>">
                         </div>
 
                     </div>
                     <!-- .col -->
+
                 <?php endforeach; ?>
 
             </div>
