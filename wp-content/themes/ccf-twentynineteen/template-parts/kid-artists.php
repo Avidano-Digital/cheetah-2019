@@ -154,3 +154,38 @@
     <!-- .gallery-thumbnails -->
 
 </div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('[data-toggle="lightbox"]').on('click', function(event) {
+            
+            event.preventDefault();
+            
+            var data_title = $(this).data('title');
+
+            function update_modal() {
+
+                var target =  $('.ekko-lightbox');
+                var close_button = target.find('button[data-dismiss="modal"]');
+                var modal_header = target.find('.modal-header h4');
+
+                target.removeClass('fade in');
+                close_button.removeClass('close').addClass('ml-auto no-btn-style');
+                close_button.html('<span class="fas fa-times fa-lg"></span>');
+
+                if (data_title) {
+                    return;
+                } else {
+                    modal_header.remove();
+                }
+            }
+            
+            $(this).ekkoLightbox({
+                alwaysShowClose: true,
+                onShow: function() {
+                    update_modal(data_title);
+                } 
+            });
+        });
+    });
+</script>
