@@ -6,7 +6,7 @@
             "key": "field_5ccb07a9108e1",
             "label": "Description",
             "name": "description",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,10 +16,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "very_simple",
+            "media_upload": 0,
+            "delay": 0
         },
         {
             "key": "field_5ccb07d8108e2",
@@ -66,5 +66,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1556809964
+    "modified": 1556883095
 }

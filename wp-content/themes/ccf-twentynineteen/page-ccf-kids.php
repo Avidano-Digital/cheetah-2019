@@ -123,7 +123,7 @@ $parent_title = get_the_title($post->post_parent);
                     },
                     success: function(response) {
                         jQuery('.posts-area').html(response);
-                        jQuery('.artist-pagination').click(function(e){
+                        jQuery('#artist-pagination a:not(.disabled)').click(function(e){
                           e.preventDefault();
                           page = jQuery(this).data('page');
                           loadPost(page);

@@ -132,7 +132,6 @@ $parent_title = get_the_title($post->post_parent);
 
                                 <div class="col-md-6">
 
-
                                     <div class="card border h-100">
                                         
                                         <?php if ($featured_image) : ?>

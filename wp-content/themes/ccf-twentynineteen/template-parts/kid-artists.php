@@ -20,26 +20,48 @@
 
     <h2 class="f-cheetah-tracks display-3 mb-2 text-tertiary text-center">Artists of the Month</h2>
 
-    <ul class="extensible-list horizontal justify-content-center">
+    <ul class="extensible-list horizontal justify-content-center" id="artist-pagination">
+        
+        <?php if ($previousPage == true) : ?>
         
         <li>
-            <a class="no-btn-style text-tertiary artist-pagination <?php if ($previousPage != true) : ?>" data-page="<?php echo $currentPage + 1; ?>" href="#" title="Previous">
+            <a class="no-btn-style text-secondary" data-page="<?php echo $currentPage + 1; ?>" href="#" title="Previous">
+                <span class="fas fa-angle-double-left" title="Previous" role="img"></span>
+            </a>
+        </li>
+        
+        <?php else: ?>
+
+        <li>
+            <a class="no-btn-style text-secondary disabled opacity-40" data-page="<?php echo $currentPage + 1; ?>" href="#1" title="Previous">
                 <span class="fas fa-angle-double-left" title="Previous" role="img"></span>
             </a>
         </li>
         
         <?php endif; ?>
+        
         <li>
-            <strong class="text-tertiary"><?php the_time('F, Y'); ?></strong>
+            <strong class="f-cheetah-tracks text-secondary h2"><?php the_time('F, Y'); ?></strong>
         </li>
+        
         <?php if ($nextPage == true) : ?>
+        
         <li>
-            <a class="no-btn-style text-tertiary artist-pagination" data-page="<?php echo $currentPage - 1; ?>" href="#" title="Next">
-                <span class="fas fa-angle-double-right" title="Previous" role="img"></span>
+            <a class="no-btn-style text-secondary" data-page="<?php echo $currentPage - 1; ?>" href="#" title="Next">
+                <span class="fas fa-angle-double-right" title="Next" role="img"></span>
             </a>
         </li>
-        <?php endif; ?>
 
+        <?php else: ?>
+
+        <li>
+            <a class="no-btn-style text-secondary disabled opacity-40" data-page="<?php echo $currentPage - 1; ?>" href="#1" title="Next">
+                <span class="fas fa-angle-double-right" title="Next" role="img"></span>
+            </a>
+        </li>
+        
+        <?php endif; ?>
+        
     </ul>
 
     <?php
