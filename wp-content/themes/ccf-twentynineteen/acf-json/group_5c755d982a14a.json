@@ -41,7 +41,7 @@
             "label": "Location",
             "name": "location",
             "type": "text",
-            "instructions": "",
+            "instructions": "City, State or City, Country",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -56,28 +56,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5cc2061d82ecc",
-            "label": "Latitude",
-            "name": "latitude",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5cc2062182ecd",
-            "label": "Longitude",
-            "name": "longitude",
+            "key": "field_5ccc4da3f5654",
+            "label": "Venue",
+            "name": "venue",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -123,5 +104,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1556219443
+    "modified": 1556893121
 }

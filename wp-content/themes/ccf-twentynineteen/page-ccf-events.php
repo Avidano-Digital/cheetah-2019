@@ -90,7 +90,7 @@ $parent_title = get_the_title($post->post_parent);
 
                         $today = DateTime::createFromFormat("U", time());
                         
-                        $date = new DateTime(get_sub_field('start_date_time'));
+                        $date = new DateTime(get_field('start_date_time'));
                         
                         if ($date > $today) :
                             $year = $date->format("Y");
