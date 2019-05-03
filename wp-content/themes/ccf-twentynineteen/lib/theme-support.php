@@ -159,6 +159,21 @@
             )
         );
 
+
+        register_post_type(
+            'Kid Artists',
+            array(
+                'labels' => array(
+                'name' => __('Kid Artists'),
+                'singular_name' => __('Kid Artist')
+            ),
+            'supports' => array( 'title', 'editor', 'thumbnail' ),
+            'public' => true,
+            'menu_icon' => 'dashicons-art',
+            'show_in_rest' => true
+            )
+        );
+
     }
 
     add_action( 'init', __NAMESPACE__ . '\customize_post_object' );
@@ -583,3 +598,34 @@ if (!function_exists('custom_pagination')) {
         }
     }
 }
+
+function get_ajax_posts() {
+    
+    $pageRequest = $_POST['page'];
+
+    $args = array(
+        'post_type' => array('kidartists'),
+        'post_status' => array('publish'),
+        'posts_per_page' => 1,
+        'paged' => $pageRequest,
+        'order' => 'DESC',
+        'orderby' => 'date',
+    );
+
+    $ajaxposts = new WP_Query($args);
+    $response = array();
+
+    if ($ajaxposts->have_posts()) {
+        while ($ajaxposts->have_posts()) {
+            $ajaxposts->the_post();
+            $totalPages = $ajaxposts->max_num_pages;
+            $currentPage = $ajaxposts->query['paged'];
+            include(locate_template('template-parts/kid-artists.php', false, false));
+        }
+    }
+
+    exit;
+}
+
+add_action('wp_ajax_get_ajax_posts', 'get_ajax_posts');
+add_action('wp_ajax_nopriv_get_ajax_posts', 'get_ajax_posts');
