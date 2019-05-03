@@ -77,7 +77,7 @@ $parent_title = get_the_title($post->post_parent);
                         'post_type' => 'events', 
                         'order' => 'ASC',
                         'meta_key' => 'start_date_time',
-	                    'meta_type' => 'DATETIME',
+  	                    'meta_type' => 'DATETIME',
                         'orderby' => 'meta_value',
                     );
                     
@@ -118,7 +118,7 @@ $parent_title = get_the_title($post->post_parent);
 
                                 <?php while ( $loop->have_posts() ) : $loop->the_post();
 
-                                $date = new DateTime(get_sub_field('start_date_time'));
+                                $date = new DateTime(get_field('start_date_time'));
                                 $year = $date->format("Y");
                                 $month = $date->format("F");
                                 
