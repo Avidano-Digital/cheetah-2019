@@ -82,7 +82,7 @@ $parent_title = get_the_title($post->post_parent);
                                 <img class="w-100" src="https://via.placeholder.com/1000x563"
                                     alt="Lorem Ipsum Dolor Simet">
                             </div>
-                            <p class="h5">Lorem Ipsum Dolor Simet</p>
+                            <p class="h5">Paloma’s Presentation and Handmade Cards</p>
                         </a>
 
                     </div>
@@ -96,7 +96,7 @@ $parent_title = get_the_title($post->post_parent);
                                 <img class="w-100" src="https://via.placeholder.com/1000x563"
                                     alt="Lorem Ipsum Dolor Simet">
                             </div>
-                            <p class="h5">Lorem Ipsum Dolor Simet</p>
+                            <p class="h5">Hank’s Cheetah Cafe</p>
                         </a>
 
                     </div>
