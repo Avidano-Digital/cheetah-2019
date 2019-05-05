@@ -162,13 +162,25 @@ $table_prefix  = 'ccf_';
 
  */
 
+/* Debug */
 define('WP_DEBUG', false);
 
+/* Multisite */
+define('WP_ALLOW_MULTISITE', true);
 
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'cheetah-2019');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+
+define('ADMIN_COOKIE_PATH', '/');
+define('COOKIE_DOMAIN', '');
+define('COOKIEPATH', '');
+define('SITECOOKIEPATH', '');
 
 /* That's all, stop editing! Happy blogging. */
-
-
 
 /** Absolute path to the WordPress directory. */
 
@@ -176,9 +188,6 @@ if ( !defined('ABSPATH') )
 
 	define('ABSPATH', dirname(__FILE__) . '/');
 
-
-
 /** Sets up WordPress vars and included files. */
 
 require_once(ABSPATH . 'wp-settings.php');
-
