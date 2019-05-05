@@ -11,6 +11,7 @@ In this file:
 // H. Buttons and links
 // I. Lists
 // J. Flex
+// K. Responsive Borders
 
 */
 
@@ -184,4 +185,33 @@ ol
 
 .flex-even {
   flex: 1;
+}
+
+////////////////////////////////////////
+// k. Responsive borders
+////////////////////////////////////////
+
+$sides: "",
+-top,
+-right,
+-bottom,
+-left;
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+
+    @each $side in $sides {
+
+      .border-#{$breakpoint}#{$side}-0 {
+        border#{$side}: 0 !important;
+      }
+
+      .border-#{$breakpoint}#{$side} {
+        border-width: 0;
+        border-color: $border-color;
+        border-style: solid;
+        border#{$side}-width: $border-width !important;
+      }
+    }
+  }
 }
