@@ -31,7 +31,7 @@ $inside_news = strpos($url, 'news');
 
                 <div class="col-md-auto py-2">
 
-                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center">
+                    <div class="d-flex justify-content-center justify-content-md-start align-items-center">
                         <a class="d-inline-block" href="/" title="<?php the_title(); ?>, home">
                             <?php the_custom_logo(); ?>
                         </a>
@@ -40,10 +40,7 @@ $inside_news = strpos($url, 'news');
                 </div>
                 <!-- .col -->
 
-                <!-- separator -->
-                <div class="col-12 border-top d-md-none"></div>
-
-                <div class="col d-xl-none py-2">
+                <div class="col d-xl-none py-2 border-top border-md-0">
 
                     <div class="row align-items-center justify-content-between justify-content-md-end">
 
