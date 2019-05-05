@@ -36,51 +36,35 @@
 
  */
 
-
-
 // ** MySQL settings - You can get this info from your web host ** //
 
 /** The name of the database for WordPress */
 
 define('DB_NAME', 'cheetah_conservation_fund');
 
-
-
 /** MySQL database username */
 
 define('DB_USER', 'root');
-
-
 
 /** MySQL database password */
 
 define('DB_PASSWORD', 'root');
 
-
-
 /** MySQL hostname */
 
 define('DB_HOST', 'localhost');
-
-
 
 /** Database Charset to use in creating database tables. */
 
 define('DB_CHARSET', 'utf8mb4');
 
-
-
 /** The Database Collate type. Don't change this if in doubt. */
 
 define('DB_COLLATE', '');
 
-
-
 define('WP_SITEURL', 'http://cheetah-2019/');
 
 define('WP_HOME', 'http://cheetah-2019/');
-
-
 
 /**#@+
 
@@ -116,11 +100,7 @@ define('LOGGED_IN_SALT',   'V6R>%tGP4$| B^yW:v)K`LeG(fmy`v 3? vMcy]*UuNV0ZgPDD=;
 
 define('NONCE_SALT',       'G7NH&wvR7UB9n1}5)>MLpy7cVUJYgwIu=.CiXxe=6d>8o2]DQIZ9.X0Paz?<c<7f');
 
-
-
 /**#@-*/
-
-
 
 /**
 
@@ -135,8 +115,6 @@ define('NONCE_SALT',       'G7NH&wvR7UB9n1}5)>MLpy7cVUJYgwIu=.CiXxe=6d>8o2]DQIZ9
  */
 
 $table_prefix  = 'ccf_';
-
-
 
 /**
 
