@@ -109,56 +109,6 @@ $parent_title = get_the_title($post->post_parent);
                 </div>
                 <!-- .row -->
 
-
-
-
-                <div class="row matrix-border d-none">
-
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-
-                        <a class="featured-article" href="#" title="Lorem Ipsum Dolor Simet">
-                            <div>
-                                <span>January 21, 2019</span>
-                                <img class="w-100" src="https://via.placeholder.com/1000x563"
-                                    alt="Lorem Ipsum Dolor Simet">
-                            </div>
-                            <p class="h5">Bucks for B2</p>
-                        </a>
-
-                    </div>
-                    <!-- .col -->
-
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-
-                        <a class="featured-article" href="#" title="Lorem Ipsum Dolor Simet">
-                            <div>
-                                <span>January 21, 2019</span>
-                                <img class="w-100" src="https://via.placeholder.com/1000x563"
-                                    alt="Lorem Ipsum Dolor Simet">
-                            </div>
-                            <p class="h5">Paloma’s Presentation and Handmade Cards</p>
-                        </a>
-
-                    </div>
-                    <!-- .col -->
-
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-
-                        <a class="featured-article" href="#" title="Lorem Ipsum Dolor Simet">
-                            <div>
-                                <span>January 21, 2019</span>
-                                <img class="w-100" src="https://via.placeholder.com/1000x563"
-                                    alt="Lorem Ipsum Dolor Simet">
-                            </div>
-                            <p class="h5">Hank’s Cheetah Cafe</p>
-                        </a>
-
-                    </div>
-                    <!-- .col -->
-
-                </div>
-                <!-- .row -->
-
             </div>
             <!-- .container -->
 
@@ -233,7 +183,6 @@ $parent_title = get_the_title($post->post_parent);
             </div>
             <!-- .featured-panel -->
 
-        
             <?php get_template_part('template-parts/article-footer'); ?>
         
         </div>
