@@ -1,4 +1,4 @@
-<ul class="extensible-list horizontal">
+<ul class="extensible-list horizontal justify-content-end">
 
     <?php starterMenu('Desktop'); ?>
     

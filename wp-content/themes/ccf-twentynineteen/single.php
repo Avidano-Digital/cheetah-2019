@@ -14,13 +14,13 @@ get_header(); ?>
 
         <ul class="extensible-list horizontal fs-md text-white text-shadow">
           <li>
-            <a class="text-white" href="news-ccf-blog.html">
+            <a class="text-white" href="/ccf-blog">
               News
             </a>
           </li>
           <li><span class="fa fa-caret-right" role="img"></span></li>
           <li>
-            <a class="text-primary font-weight-bold" href="/ccf-blog/">
+            <a class="text-primary font-weight-bold" href="/ccf-blog">
               CCF Blog
             </a>
           </li>

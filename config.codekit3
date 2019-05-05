@@ -25243,12 +25243,20 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen-child/functions.php",
 		"oF": 0
 		},
-	"/wp-content/themes/ccf-twentynineteen-child/header.php": {
+	"/wp-content/themes/ccf-twentynineteen-child/header-old.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen-child/header.php",
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/header-old.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen-child/headerWHOA.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/headerWHOA.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen-child/index.php": {
