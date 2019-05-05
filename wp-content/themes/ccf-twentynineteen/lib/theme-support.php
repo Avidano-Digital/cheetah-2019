@@ -1,7 +1,5 @@
 <?php
 
-    add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_support' );
-    
     function theme_support(){
 
         global $color_palette;
@@ -72,11 +70,11 @@
 
     } // theme_support
 
+    add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_support' );
+    
     ////////////////////////////////////////
     // Custom Post Types
     ////////////////////////////////////////
-
-    add_action( 'init', __NAMESPACE__ . '\create_post_types' );
 
     function create_post_types() {
         
@@ -176,7 +174,7 @@
 
     }
 
-    add_action( 'init', __NAMESPACE__ . '\customize_post_object' );
+    add_action( 'init', __NAMESPACE__ . '\create_post_types' );
 
     function customize_post_object() {
 
@@ -198,6 +196,8 @@
         $labels->name_admin_bar = 'News';
         $labels->menu_position = '10';
     }
+
+    add_action( 'init', __NAMESPACE__ . '\customize_post_object' );
 
     ////////////////////////////////////////
     // Custom Taxonomies
@@ -244,27 +244,28 @@
           )
         );
     }
-    add_action( 'init', 'tax_init' );
+
+    add_action( 'init', __NAMESPACE__ . 'tax_init' );
 
     ////////////////////////////////////////
     // Remove Dashboard Menu Items
     ////////////////////////////////////////
     
-    add_action( 'admin_menu', __NAMESPACE__ . '\remove_menus' );
-
     function remove_menus(){
         remove_menu_page( 'edit-comments.php' );
     }
+
+    add_action( 'admin_menu', __NAMESPACE__ . '\remove_menus' );
 
     ////////////////////////////////////////
     // Custom Logo
     ////////////////////////////////////////
 
-    add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_prefix_setup' );
-
     function theme_prefix_setup() {
         add_theme_support( 'custom-logo' );
     }
+
+    add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_prefix_setup' );
 
     add_action( 'login_head', __NAMESPACE__ . '\wpdev_filter_login_head', 100 );
     
