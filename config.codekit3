@@ -39467,7 +39467,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ccf-kids-artist-of-the-month-april-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ccf-kids-artist-of-the-month-april.jpg": {
@@ -39478,7 +39478,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ccf-kids-artist-of-the-month-april.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ccf-kids-artist-of-the-month-may-250x250.jpg": {
@@ -39489,7 +39489,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ccf-kids-artist-of-the-month-may-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ccf-kids-artist-of-the-month-may.jpg": {
@@ -39500,26 +39500,180 @@
 		"oAP": "/wp-content/uploads/2019/05/ccf-kids-artist-of-the-month-may.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/wp-content/uploads/2019/05/EducationBlog_20161-250x250.jpg": {
+	"/wp-content/uploads/2019/05/CherrydaleCheetah_FeaturedImage-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15543,
+		"iS": 19621,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/wp-content/uploads/2019/05/EducationBlog_20161-250x250.jpg",
+		"oAP": "/wp-content/uploads/2019/05/CherrydaleCheetah_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CherrydaleCheetah_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 177361,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CherrydaleCheetah_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CherrydaleCheetahs_1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 20817,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CherrydaleCheetahs_1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CherrydaleCheetahs_1.jpg": {
+		"ft": 16384,
+		"iS": 137670,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CherrydaleCheetahs_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CherrydaleCheetahs_2-250x250.jpg": {
+		"ft": 16384,
+		"iS": 19107,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CherrydaleCheetahs_2-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CherrydaleCheetahs_2.jpg": {
+		"ft": 16384,
+		"iS": 127985,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CherrydaleCheetahs_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CherrydaleCheetahs_3-250x250.jpg": {
+		"ft": 16384,
+		"iS": 17816,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CherrydaleCheetahs_3-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CherrydaleCheetahs_3.jpg": {
+		"ft": 16384,
+		"iS": 137641,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CherrydaleCheetahs_3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CitizenScientist_1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 10132,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CitizenScientist_1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CitizenScientist_1.jpg": {
+		"ft": 16384,
+		"iS": 69779,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CitizenScientist_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CitizenScientist_2-250x250.jpg": {
+		"ft": 16384,
+		"iS": 11811,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CitizenScientist_2-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CitizenScientist_2.jpg": {
+		"ft": 16384,
+		"iS": 59207,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CitizenScientist_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CitizenScientist_3-250x250.jpg": {
+		"ft": 16384,
+		"iS": 20460,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CitizenScientist_3-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/wp-content/uploads/2019/05/EducationBlog_20161.jpg": {
+	"/wp-content/uploads/2019/05/CitizenScientist_3.jpg": {
 		"ft": 16384,
-		"iS": 108969,
+		"iS": 154219,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/wp-content/uploads/2019/05/EducationBlog_20161.jpg",
+		"oAP": "/wp-content/uploads/2019/05/CitizenScientist_3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CitizenScientist_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 19037,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CitizenScientist_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/CitizenScientist_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 138312,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/CitizenScientist_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -39533,7 +39687,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationBlog_2016_2-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationBlog_2016_2.jpg": {
@@ -39544,7 +39698,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationBlog_2016_2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationBlog_2016_FeaturedImage-250x250.jpg": {
@@ -39555,7 +39709,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationBlog_2016_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationBlog_2016_FeaturedImage.jpg": {
@@ -39566,7 +39720,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationBlog_2016_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationPrimarySchoolOK_1-250x250.jpg": {
@@ -39577,7 +39731,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationPrimarySchoolOK_1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationPrimarySchoolOK_1.jpg": {
@@ -39588,7 +39742,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationPrimarySchoolOK_1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationPrimarySchoolOK_2-250x250.jpg": {
@@ -39599,7 +39753,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationPrimarySchoolOK_2-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationPrimarySchoolOK_2.jpg": {
@@ -39610,7 +39764,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationPrimarySchoolOK_2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationPrimarySchoolOK_FeaturedImage-250x250.jpg": {
@@ -39621,7 +39775,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationPrimarySchoolOK_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationPrimarySchoolOK_FeaturedImage.jpg": {
@@ -39632,18 +39786,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationPrimarySchoolOK_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/wp-content/uploads/2019/05/EducationStory_2017_FeaturedImage-250x250.jpg": {
-		"ft": 16384,
-		"iS": 10353,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/uploads/2019/05/EducationStory_2017_FeaturedImage-250x250.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationStory_2017_FeaturedImage.jpg": {
@@ -39654,7 +39797,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationStory_2017_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationUpdate_Outreach_2017-250x250.jpg": {
@@ -39696,6 +39839,182 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/EducationUpdate_Outreach_2017_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/EileenFlynn_1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18539,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/EileenFlynn_1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/EileenFlynn_1.jpg": {
+		"ft": 16384,
+		"iS": 129458,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/EileenFlynn_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/EileenFlynn_2-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18363,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/EileenFlynn_2-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/EileenFlynn_2.jpg": {
+		"ft": 16384,
+		"iS": 119893,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/EileenFlynn_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/EileenFlynn_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 21306,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/EileenFlynn_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/EileenFlynn_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 221610,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/EileenFlynn_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Evie_1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 11853,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Evie_1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Evie_1.jpg": {
+		"ft": 16384,
+		"iS": 74731,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Evie_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Evie_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 13651,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Evie_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Evie_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 75310,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Evie_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/FilmCrews_2017-250x250.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/FilmCrews_2017-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/FilmCrews_2017.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/FilmCrews_2017.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/FilmCrews_2017_1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18798,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/FilmCrews_2017_1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/FilmCrews_2017_1.jpg": {
+		"ft": 16384,
+		"iS": 142883,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/FilmCrews_2017_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/FilmCrews_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 25203,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/FilmCrews_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/FilmCrews_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 269858,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/FilmCrews_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -39877,6 +40196,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/05/InternStory_BradT_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18306,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/InternStory_BradT_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/InternStory_BradT_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 134503,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/InternStory_BradT_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2019/05/InternStory_Ester_1-250x250.jpg": {
 		"ft": 16384,
 		"iS": 20955,
@@ -39885,7 +40226,7 @@
 		"oAP": "/wp-content/uploads/2019/05/InternStory_Ester_1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/InternStory_Ester_1.jpg": {
@@ -39896,7 +40237,7 @@
 		"oAP": "/wp-content/uploads/2019/05/InternStory_Ester_1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/InternStory_Ester_FeaturedImage-250x250.jpg": {
@@ -39907,7 +40248,7 @@
 		"oAP": "/wp-content/uploads/2019/05/InternStory_Ester_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/InternStory_Ester_FeaturedImage.jpg": {
@@ -39918,7 +40259,7 @@
 		"oAP": "/wp-content/uploads/2019/05/InternStory_Ester_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/InternStory_Esther1-250x250.jpg": {
@@ -39929,7 +40270,7 @@
 		"oAP": "/wp-content/uploads/2019/05/InternStory_Esther1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/InternStory_Esther1.jpg": {
@@ -39940,7 +40281,7 @@
 		"oAP": "/wp-content/uploads/2019/05/InternStory_Esther1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/InternStory_Esther_FeaturedImage-250x250.jpg": {
@@ -39951,7 +40292,7 @@
 		"oAP": "/wp-content/uploads/2019/05/InternStory_Esther_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/InternStory_Esther_FeaturedImage.jpg": {
@@ -39962,7 +40303,7 @@
 		"oAP": "/wp-content/uploads/2019/05/InternStory_Esther_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/JoTaylor_1-250x250.jpg": {
@@ -39973,7 +40314,7 @@
 		"oAP": "/wp-content/uploads/2019/05/JoTaylor_1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/JoTaylor_1.jpg": {
@@ -39984,7 +40325,7 @@
 		"oAP": "/wp-content/uploads/2019/05/JoTaylor_1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/JoTaylor_2-250x250.jpg": {
@@ -39995,7 +40336,7 @@
 		"oAP": "/wp-content/uploads/2019/05/JoTaylor_2-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/JoTaylor_2.jpg": {
@@ -40006,7 +40347,7 @@
 		"oAP": "/wp-content/uploads/2019/05/JoTaylor_2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/JoTaylor_FeaturedImage-250x250.jpg": {
@@ -40017,7 +40358,7 @@
 		"oAP": "/wp-content/uploads/2019/05/JoTaylor_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/JoTaylor_FeaturedImage.jpg": {
@@ -40026,6 +40367,50 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/JoTaylor_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Kids_CorridorsBlog_1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18422,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Kids_CorridorsBlog_1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Kids_CorridorsBlog_1.jpg": {
+		"ft": 16384,
+		"iS": 104834,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Kids_CorridorsBlog_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Kids_CorridorsBlog_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18728,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Kids_CorridorsBlog_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Kids_CorridorsBlog_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 156949,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Kids_CorridorsBlog_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -40083,7 +40468,7 @@
 		"oAP": "/wp-content/uploads/2019/05/KidsFeb_2017_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/KidsFeb_2017_FeaturedImage.jpg": {
@@ -40094,7 +40479,7 @@
 		"oAP": "/wp-content/uploads/2019/05/KidsFeb_2017_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/KidsForCheetahsPalomaHank_FeaturedImage-250x250.jpg": {
@@ -40105,7 +40490,7 @@
 		"oAP": "/wp-content/uploads/2019/05/KidsForCheetahsPalomaHank_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/KidsForCheetahsPalomaHank_FeaturedImage.jpg": {
@@ -40116,7 +40501,7 @@
 		"oAP": "/wp-content/uploads/2019/05/KidsForCheetahsPalomaHank_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/KidsHank-250x250.jpg": {
@@ -40127,7 +40512,7 @@
 		"oAP": "/wp-content/uploads/2019/05/KidsHank-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/KidsHank.jpg": {
@@ -40138,7 +40523,7 @@
 		"oAP": "/wp-content/uploads/2019/05/KidsHank.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/KidsPaloma-250x250.jpg": {
@@ -40149,7 +40534,7 @@
 		"oAP": "/wp-content/uploads/2019/05/KidsPaloma-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/KidsPaloma.jpg": {
@@ -40160,7 +40545,7 @@
 		"oAP": "/wp-content/uploads/2019/05/KidsPaloma.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Levi_2017_1-250x250.jpg": {
@@ -40312,6 +40697,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/MoringaTrees_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/NishaDixitBlog_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 25233,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/NishaDixitBlog_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/NishaDixitBlog_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 229776,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/NishaDixitBlog_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -40581,6 +40988,72 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/05/SomalilandAwareness_1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 16119,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/SomalilandAwareness_1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/SomalilandAwareness_1.jpg": {
+		"ft": 16384,
+		"iS": 105449,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/SomalilandAwareness_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/SomalilandAwareness_2-250x250.jpg": {
+		"ft": 16384,
+		"iS": 17418,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/SomalilandAwareness_2-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/SomalilandAwareness_2.jpg": {
+		"ft": 16384,
+		"iS": 121820,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/SomalilandAwareness_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/SomalilandAwareness_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18505,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/SomalilandAwareness_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/SomalilandAwareness_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 164826,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/SomalilandAwareness_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/wp-content/uploads/2019/05/Studbook_1-250x250.jpg": {
 		"ft": 16384,
 		"iS": 9042,
@@ -40620,6 +41093,50 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/Studbook_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/TracyTo_1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 14040,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/TracyTo_1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/TracyTo_1.jpg": {
+		"ft": 16384,
+		"iS": 98213,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/TracyTo_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/TracyTo_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 15388,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/TracyTo_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/TracyTo_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 144686,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/TracyTo_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -40669,6 +41186,226 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/05/VisitorstoCCF_1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 10890,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VisitorstoCCF_1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VisitorstoCCF_1.jpg": {
+		"ft": 16384,
+		"iS": 61649,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VisitorstoCCF_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VisitorstoCCF_2-250x250.jpg": {
+		"ft": 16384,
+		"iS": 14223,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VisitorstoCCF_2-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VisitorstoCCF_2.jpg": {
+		"ft": 16384,
+		"iS": 87178,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VisitorstoCCF_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VisitorstoCCF_3-250x250.jpg": {
+		"ft": 16384,
+		"iS": 13971,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VisitorstoCCF_3-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VisitorstoCCF_3.jpg": {
+		"ft": 16384,
+		"iS": 91050,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VisitorstoCCF_3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VisitorstoCCF_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18920,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VisitorstoCCF_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VisitorstoCCF_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 123173,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VisitorstoCCF_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 17307,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_1.jpg": {
+		"ft": 16384,
+		"iS": 116897,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_2-250x250.jpg": {
+		"ft": 16384,
+		"iS": 22988,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_2-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_2.jpg": {
+		"ft": 16384,
+		"iS": 155610,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_3-250x250.jpg": {
+		"ft": 16384,
+		"iS": 11240,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_3-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_3.jpg": {
+		"ft": 16384,
+		"iS": 65480,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_4-250x250.jpg": {
+		"ft": 16384,
+		"iS": 14937,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_4-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_4.jpg": {
+		"ft": 16384,
+		"iS": 80470,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_5-250x250.jpg": {
+		"ft": 16384,
+		"iS": 20905,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_5-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_5.jpg": {
+		"ft": 16384,
+		"iS": 124473,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 17974,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/VoiceoftheCheetah_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 100656,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/VoiceoftheCheetah_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2019/05/WhoKilledMyGoat_1-250x250.jpg": {
 		"ft": 16384,
 		"iS": 24868,
@@ -40677,7 +41414,7 @@
 		"oAP": "/wp-content/uploads/2019/05/WhoKilledMyGoat_1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/WhoKilledMyGoat_1.jpg": {
@@ -40688,7 +41425,7 @@
 		"oAP": "/wp-content/uploads/2019/05/WhoKilledMyGoat_1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/WhoKilledMyGoat_FeaturedImage-250x250.jpg": {
@@ -40699,7 +41436,7 @@
 		"oAP": "/wp-content/uploads/2019/05/WhoKilledMyGoat_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/WhoKilledMyGoat_FeaturedImage.jpg": {
@@ -40710,7 +41447,7 @@
 		"oAP": "/wp-content/uploads/2019/05/WhoKilledMyGoat_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/WomenatCCF_FeaturedImage-250x250.jpg": {
@@ -40721,7 +41458,7 @@
 		"oAP": "/wp-content/uploads/2019/05/WomenatCCF_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/WomenatCCF_FeaturedImage.jpg": {
@@ -40732,7 +41469,7 @@
 		"oAP": "/wp-content/uploads/2019/05/WomenatCCF_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Workcation_1-250x250.jpg": {
@@ -40743,7 +41480,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Workcation_1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Workcation_1.jpg": {
@@ -40754,7 +41491,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Workcation_1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Workcation_2-250x250.jpg": {
@@ -40765,7 +41502,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Workcation_2-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Workcation_2.jpg": {
@@ -40776,7 +41513,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Workcation_2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Workcation_3-250x250.jpg": {
@@ -40787,7 +41524,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Workcation_3-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Workcation_3.jpg": {
@@ -40798,7 +41535,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Workcation_3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Workcation_FeaturedImage-250x250.jpg": {
@@ -40809,7 +41546,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Workcation_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Workcation_FeaturedImage.jpg": {
@@ -40820,7 +41557,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Workcation_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/WorkingGuest_NickyWalesFeaturedImage-250x250.jpg": {
@@ -40831,7 +41568,7 @@
 		"oAP": "/wp-content/uploads/2019/05/WorkingGuest_NickyWalesFeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/WorkingGuest_NickyWalesFeaturedImage.jpg": {
@@ -40842,7 +41579,7 @@
 		"oAP": "/wp-content/uploads/2019/05/WorkingGuest_NickyWalesFeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/wp-coder/script-1.js": {
