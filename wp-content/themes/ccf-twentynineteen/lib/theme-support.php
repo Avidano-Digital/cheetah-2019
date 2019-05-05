@@ -70,7 +70,7 @@
 
     } // theme_support
 
-    add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_support' );
+    add_action( 'after_setup_theme', 'theme_support' );
     
     ////////////////////////////////////////
     // Custom Post Types
@@ -173,7 +173,7 @@
 
     }
 
-    add_action( 'init', __NAMESPACE__ . '\create_post_types' );
+    add_action( 'init', 'create_post_types' );
 
     function customize_post_object() {
 
@@ -196,7 +196,7 @@
         $labels->menu_position = '10';
     }
 
-    add_action( 'init', __NAMESPACE__ . '\customize_post_object' );
+    add_action( 'init', 'customize_post_object' );
 
     ////////////////////////////////////////
     // Custom Taxonomies
@@ -254,7 +254,7 @@
         remove_menu_page( 'edit-comments.php' );
     }
 
-    add_action( 'admin_menu', __NAMESPACE__ . '\remove_menus' );
+    add_action( 'admin_menu', 'remove_menus' );
 
     ////////////////////////////////////////
     // Custom Logo
@@ -264,9 +264,9 @@
         add_theme_support( 'custom-logo' );
     }
 
-    add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_prefix_setup' );
+    add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
-    add_action( 'login_head', __NAMESPACE__ . '\wpdev_filter_login_head', 100 );
+    add_action( 'login_head', 'wpdev_filter_login_head', 100 );
     
     function wpdev_filter_login_head() {
  

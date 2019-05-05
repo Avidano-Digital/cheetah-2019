@@ -1,6 +1,4 @@
 <?php 
-
-    namespace Cheetah\Twentynineteen;
     
     ////////////////////////////////////////
     // Enqueue CSS and JS
@@ -30,6 +28,6 @@
     // ACF 5 Early Access
     ////////////////////////////////////////
 
-    define('ACF_EARLY_ACCESS', '5');
+    define( 'ACF_EARLY_ACCESS', '5' );
 
 ?>

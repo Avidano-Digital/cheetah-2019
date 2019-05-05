@@ -1,6 +1,6 @@
 <?php
     
-    add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_theme_assets' );
+    add_action( 'wp_enqueue_scripts', 'enqueue_theme_assets' );
 
     function enqueue_theme_assets(){
 
