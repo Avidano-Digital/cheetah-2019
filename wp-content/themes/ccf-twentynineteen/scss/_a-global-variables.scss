@@ -36,7 +36,6 @@ $grid-bp-md:    720px;
 $grid-bp-lg:    960px;
 $grid-bp-xl:    1200px;
 $grid-bp-xxl:   1440px;
-$grid-bp-xxxl:  1680px;
 
 $grid-breakpoints: (
   xs: $grid-bp-xs,
@@ -45,7 +44,7 @@ $grid-breakpoints: (
   lg: $grid-bp-lg,
   xl: $grid-bp-xl,
   xxl: $grid-bp-xxl,
-  xxxl: $grid-bp-xxxl
+  // xxxl: $grid-bp-xxxl
 );
 
 ////////////////////////////////////////
@@ -119,7 +118,7 @@ $container-max-widths: (
 // Classes found in _e-supplementary-classes.scss
 
 $site-width: 2400px;
-$wide-width: $grid-bp-xxxl;     // 1600px
+$wide-width: 1680px;
 $narrow-width: 55ch;            // 65 characters
 $narrow-width-ie: $grid-bp-md;  // 65 characters
 
