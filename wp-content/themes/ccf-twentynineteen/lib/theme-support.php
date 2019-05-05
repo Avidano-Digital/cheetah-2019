@@ -157,7 +157,6 @@
             )
         );
 
-
         register_post_type(
             'Kid Artists',
             array(
