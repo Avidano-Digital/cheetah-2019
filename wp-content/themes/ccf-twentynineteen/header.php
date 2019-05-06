@@ -90,7 +90,7 @@ $inside_news = strpos($url, 'news');
                     </div>
 
                     <div class="mt-auto">
-                        <nav class=" bg-danger" id="primary-navigation-desktop">
+                        <nav id="primary-navigation-desktop">
                             <?php include( 'include/primary-navigation.php' ); ?>
                         </nav>
                     </div>
