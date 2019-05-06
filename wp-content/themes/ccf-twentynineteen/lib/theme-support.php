@@ -378,7 +378,6 @@
         echo '<li><a href="/cheetah-strides" class="',(strpos($category_parent, "Cheetah Strides") > -1) ? "active" : "",'">Cheetah Strides</a></li>';
         echo '<li><a href="/press-releases" class="',(strpos($category_parent, "Press Releases") > -1) ? "active" : "",'">Press Releases</a></li>';
 
-        
     }
 
     ////////////////////////////////////////
