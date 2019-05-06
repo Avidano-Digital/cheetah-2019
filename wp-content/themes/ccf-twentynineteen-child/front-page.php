@@ -18,200 +18,67 @@
 
     <section id="introduction">
 
-      <?php
-
-      $primary_feature = get_field('primary_feature'); 
-      $image = $primary_feature['image'];
-      $headline = $primary_feature['headline'];
-      $text = $primary_feature['text'];
-      $link = $primary_feature['link'];
-      
-      if( $primary_feature ): ?>
-      
       <div class="featured-panel responsive-lg">
 
         <div class="card bg-white">
-
           <div class="gradient-overlay-y-black">
-            
-            <?php if( $image ): ?>
-              <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-            <?php else : ?>
-              <img class="card-img" src="https://via.placeholder.com/1500x750" alt="Placeholder">
-            <?php endif; ?>
-
+            <img class="card-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/01.jpg" alt="Card image">
           </div>
-          <!-- .gradient-overlay-y-black -->
 
-            <div class="card-img-overlay d-flex">
-                <div class="align-self-end">
-                    <div class="text-white">
-                        <h1><?php echo $headline; ?></h1>
-                        <p class="fs-lg mb-2"><?php echo $text; ?></p>
-                        <a class="link text-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
-                    </div>
-                </div>
-                <!-- .align-self-center -->
+          <div class="card-img-overlay d-flex">
+            <div class="align-self-end w-100">
+              <div class="medium text-white text-center py-4">
+                <h1 class="card-title display-4 mb-3 text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                <a href="#" class="btn btn-lg btn-primary">Our Mission</a>
+              </div>
             </div>
-
           </div>
-          <!-- .card -->
 
         </div>
-        <!-- .featured-panel -->
-
-      <?php endif; /* Primary Feature */ ?>
-
-      <div class="row no-gutters">
-
-        <div class="col-xl-8 d-none d-sm-block">
-
-          <?php
-
-          $secondary_feature = get_field('secondary_feature'); 
-          $image = $secondary_feature['image'];
-          $headline = $secondary_feature['headline'];
-          $text = $secondary_feature['text'];
-          $link = $secondary_feature['link'];
-
-          if( $secondary_feature ): ?>
-
-          <div class="featured-panel responsive-lg">
-
-            <div class="card bg-white">
-
-              <div class="gradient-overlay-y-black">
-
-                <?php if ($image) : ?>
-                  <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image_alt; ?>">
-                <?php else : ?>
-                  <img class="card-img" src="https://via.placeholder.com/1000x500" alt="Placeholder">
-                <?php endif; ?>
-
-              </div>
-
-              <div class="card-img-overlay d-flex">
-
-                <div class="align-self-end">
-                  
-                  <div class="text-white">
-
-                    <?php if( $headline): ?>
-                    <h1>
-                      <?php echo $headline; ?>
-                    </h1>
-                    <?php endif; ?>
-
-                    <?php if( $text): ?>
-                    <p class="fs-lg mb-2">
-                      <?php echo $text; ?>
-                    </p>
-                    <?php endif; ?>
-
-                    <?php if( $link): ?>
-                    <a class="link text-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
-                    <?php endif; ?>
-
-                  </div>
-                  <!-- .text-white -->
-
-                </div>
-                <!-- .align-self-center -->
-              </div>
-
-            </div>
-            <!-- .card -->
-
-          </div>
-          <!-- .featured-panel -->
-
-        </div>
-        <!-- .col-* -->
-
-        <div class="col-xl-4">
-
-          <div class="row no-gutters">
-
-            <div class="featured-block d-sm-none">
-
-              <div class="card">
-
-                <div class="gradient-overlay-y-black">
-
-                  <?php if( $image ): ?>
-                    <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-                  <?php else : ?>
-                    <img class="card-img" src="https://via.placeholder.com/1000x500" alt="Placeholder">
-                  <?php endif; ?>
-
-                </div>
-                <!-- .gradient-overlay-y-black -->
-
-                <div class="card-img-overlay d-flex">
-                  <div class="align-self-end">
-
-                    <?php if( $link): ?>
-                    <a class="btn btn-block btn-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
-                    <?php endif; ?>
-
-                  </div>
-                </div>
-
-              </div>
-              <!-- .card -->
-
-            </div>
-            <!-- .col-* -->
-
-            <?php endif; /* Secondary Feature */ ?>
-
-            <?php if( have_rows('tertiary_features') ) : while( have_rows('tertiary_features') ): the_row();     
-
-            $image = get_sub_field('image');
-            $link = get_sub_field('link');
-
-            ?>
-
-            <div class="featured-block col-md-6 col-xl-12">
-            
-              <div class="card">
-
-                <?php if( $image ): ?>
-                  <div class="gradient-overlay-y-black">
-                    <img class="card-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-                  </div>
-                <?php else : ?>
-                  <div class="gradient-overlay-y-black">
-                    <img class="card-img" src="https://via.placeholder.com/500x250" alt="Placeholder">
-                  </div>
-                <?php endif; ?>
-
-                <div class="card-img-overlay d-flex">
-                  <div class="align-self-end">
-                    <?php if( $link ): ?>
-                      <a class="btn btn-block btn-primary stretched-link" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
-                    <?php endif; ?>
-                  </div>
-                </div>
-
-              </div>
-              <!-- .card -->
-
-            </div>
-            <!-- .col-* -->
-
-            <?php endwhile; endif; /* Tertiary feature */ ?>
-
-          </div>
-          <!-- .row -->
-
-        </div>
-        <!-- .col-* -->
+        <!-- .card -->
 
       </div>
-      <!-- .row -->
+      <!-- .featured-panel -->
 
     </section>
+    <!-- #introduction -->
+
+    <section class="bg-light pattern-border-top-bottom py-6">
+
+      <div class="container">
+
+        <h2 class="sr-only">Cheetah Conservation Fund Canada Overview</h2>
+
+        <div class="row mb-5">
+          <div class="col-md-8 offset-md-2">
+            <div class="embed-responsive embed-responsive-16by9 shadow border">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0hyNVlYVTNo" frameborder="0" allowTransparency="true"
+                allowfullscreen="true"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md mb-3 mb-md-0">
+            <p>We fundraise for a highly innovative wildlife conservation organization in Namibia, Cheetah Conservation Fund,
+              whose primary goal is to save cheetahs from extinction. We hold fundraising events and educate Canadians. We
+              are a registered charity run by Canadian volunteers – we direct 98% of all funds to charitable programming
+              in Namibia.</p>
+          </div>
+          <div class="col-md">
+            <p>Since 2013, we have provided close to $310,000; and our impact has been in the support of school outreach, education
+              sessions with Future Farmers of Africa, the support of the livestock guarding dogs, and the care of cheetahs.
+              Our goal is to save cheetahs in the wild and help ensure that local communities can prosper in harmony with
+              wildlife and protect their shared ecosystems.</p>
+          </div>
+        </div>
+        <!-- .row -->
+
+      </div>
+      <!-- .container -->
+
+    </section>
+
     <!-- #introduction -->
 
     <section class="my-6">
