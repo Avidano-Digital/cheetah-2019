@@ -25,6 +25,30 @@ $inside_news = strpos($url, 'news');
 
     <header id="global-header">
 
+        <?php if (is_child_theme()) : ?>
+
+        <div class="container-fluid bg-info py-1">
+
+            <div class="row align-items-center justify-content-between fs-md">
+
+                <div class="col-auto">
+                    <p class="text-white f-sans-serif">CCF Affiliate</p>
+                </div>
+                <!-- .col -->
+
+                <div class="col-auto">
+                    <a class="text-primary font-weight-bold" href="/">Back to Cheetah.org</a>
+                </div>
+                <!-- .col -->
+            
+            </div>
+            <!-- .row -->
+
+        </div>
+        <!-- .container-fluid -->
+
+        <?php endif; ?>
+
         <div class="container-fluid shadow-sm z-index-900">
         
             <div class="row align-items-center justify-content-between">
@@ -62,14 +86,21 @@ $inside_news = strpos($url, 'news');
                         <div class="col-auto">
 
                             <ul class="extensible-list horizontal">
+
+                                <?php if (is_child_theme() === false) : ?>
+
                                 <li>
                                     <a href="/kids" title="For Kids">
                                         <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
                                     </a>
                                 </li>
+                            
+                                <?php endif; ?>
+
                                 <li>
                                     <a class="btn btn-primary donate" href="/donate" title="Donate">Donate</a>
                                 </li>
+                            
                             </ul>
                         
                         </div>

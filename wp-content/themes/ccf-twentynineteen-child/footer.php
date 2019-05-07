@@ -44,7 +44,7 @@
 
     <?php endif; /* footer_features */ ?>
 
-    <div class="py-5 d-none" id="global-links">
+    <div class="py-5" id="global-links">
 
         <div class="container">
 
