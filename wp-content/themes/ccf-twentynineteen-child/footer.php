@@ -44,40 +44,6 @@
 
     <?php endif; /* footer_features */ ?>
 
-
-    <?php if ( is_child_theme() === false ) : ?>
-
-    <div class="py-5" id="global-links">
-
-        <div class="container">
-
-            <nav class="row">
-
-                <?php starterMenu('Footer'); ?>
-
-                <div class="col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto">
-
-                    <ul class="extensible-list">
-                        <li>
-                            <a href="#" title="For Kids">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- .col-* -->
-
-            </nav>
-            <!-- .row -->
-
-        </div>
-
-    </div>
-    <!-- #global-links -->
-
-    <?php endif; ?>
-
     <div class="bg-light py-5">
 
         <div class="container">
@@ -86,9 +52,12 @@
 
                 <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0">
                     <h5>Cheetah Conservation Fund</h5>
-                    <p class="fs-md">Our Research and Education Centre is located in Otjiwarongo, Namibia. We encourage
-                        visitors to see our facilities in person.</p>
-                    <p class="fs-md"><a class="link text-body" href="#">Come Join Us!</a></p>
+                    <div class="fs-md">
+                        <p class="f-sans-serif text-muted"><strong>United States</strong></p>
+                        <p class="fs-md">Our Research and Education Centre is located in Otjiwarongo, Namibia. We encourage
+                            visitors to see our facilities in person.</p>
+                        <p class="fs-md"><a class="link text-body" href="#">Come Join Us!</a></p>
+                    </div>
                 </div>
                 <!-- .col -->
 
