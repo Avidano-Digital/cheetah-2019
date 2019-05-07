@@ -44,6 +44,9 @@
 
     <?php endif; /* footer_features */ ?>
 
+
+    <?php if ( is_child_theme() === false ) : ?>
+
     <div class="py-5" id="global-links">
 
         <div class="container">
@@ -71,6 +74,9 @@
         </div>
 
     </div>
+    <!-- #global-links -->
+
+    <?php endif; ?>
 
     <div class="bg-light py-5">
 

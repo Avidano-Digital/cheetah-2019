@@ -87,7 +87,7 @@ $inside_news = strpos($url, 'news');
 
                             <ul class="extensible-list horizontal">
 
-                                <?php if (is_child_theme() === false) : ?>
+                                <?php if ( is_child_theme() === false ) : ?>
 
                                 <li>
                                     <a href="/kids" title="For Kids">
