@@ -328,7 +328,7 @@
 
         echo '<ul class="extensible-list fs-md">';
 
-        if ($current_category_name != 'Press Releases') :
+        if ($current_category_name !== 'Press Releases' && $current_category_name !== 'Cheetah Strides') :
 
 
         foreach ($topics as $topic) :

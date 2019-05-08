@@ -42,23 +42,23 @@ get_header(); ?>
                     <div class="btn-toggle">
                         <button class="btn btn-block btn-primary" data-toggle="collapse" data-target="#all-topics"
                             aria-expanded="false" aria-controls="all-topics">
-                            <span class="Topics"><?php echo ($current_category_name == 'Press Releases') ? "Years" : "Topics"; ?></span>
+                            <span class="Topics"><?php echo ($current_category_name == 'Press Releases' || $current_category_name == 'Cheetah Strides') ? "Years" : "Topics"; ?></span>
                         </button>
                     </div>
                 </div>
                 <!-- .col -->
-                
+
                 <?php if ($current_category_name !== 'Cheetah Strides') : ?>
-                  
-                <div class="col-sm">
-                    <div class="btn-toggle">
-                        <button class="btn btn-block btn-primary" data-toggle="collapse" data-target="#all-authors"
-                            aria-expanded="false" aria-controls="all-authors">
-                            <span class="Authors">Authors</span>
-                        </button>
+
+                    <div class="col-sm">
+                        <div class="btn-toggle">
+                            <button class="btn btn-block btn-primary" data-toggle="collapse" data-target="#all-authors"
+                                aria-expanded="false" aria-controls="all-authors">
+                                <span class="Authors">Authors</span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <!-- .col -->
+                    <!-- .col -->
 
                 <?php endif; ?>
 
@@ -74,12 +74,16 @@ get_header(); ?>
                 </div>
                 <!-- .col -->
 
-                <div class="col-md">
+                <?php if ($current_category_name !== 'Cheetah Strides') : ?>
 
-                    <?php showAuthorFilters(); ?>
-                    
-                </div>
-                <!-- .col -->
+                    <div class="col-md">
+
+                        <?php showAuthorFilters(); ?>
+                        
+                    </div>
+                    <!-- .col -->
+
+                <?php endif; ?>
 
             </div>
             <!-- .row -->
