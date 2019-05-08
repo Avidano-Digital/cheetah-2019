@@ -68,6 +68,105 @@
 		"oAP": "/readme.html",
 		"oF": 0
 		},
+	"/update-my-url/composer.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/update-my-url/composer-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/update-my-url/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/update-my-url/index.php",
+		"oF": 0
+		},
+	"/update-my-url/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/update-my-url/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/update-my-url/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/update-my-url/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/update-my-url/srdb-tests/charset-test.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/update-my-url/srdb-tests/charset-test.php",
+		"oF": 0
+		},
+	"/update-my-url/srdb-tests/DataSet.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/update-my-url/srdb-tests/DataSet.xml",
+		"oF": 0
+		},
+	"/update-my-url/srdb-tests/DataSetGenerator.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/update-my-url/srdb-tests/DataSetGenerator.php",
+		"oF": 0
+		},
+	"/update-my-url/srdb-tests/db.sql": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/update-my-url/srdb-tests/db.sql",
+		"oF": 0
+		},
+	"/update-my-url/srdb-tests/SrdbTest.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/update-my-url/srdb-tests/SrdbTest.php",
+		"oF": 0
+		},
+	"/update-my-url/srdb.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/update-my-url/srdb.class.php",
+		"oF": 0
+		},
+	"/update-my-url/srdb.cli.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/update-my-url/srdb.cli.php",
+		"oF": 0
+		},
 	"/wp-activate.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1446,6 +1545,46 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/wp-admin/css/site-health-rtl.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/css/site-health-rtl-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-admin/css/site-health-rtl.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/css/site-health-rtl.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-admin/css/site-health.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/css/site-health-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-admin/css/site-health.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/css/site-health.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/wp-admin/css/site-icon-rtl.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2622,6 +2761,14 @@
 		"oAP": "/wp-admin/includes/class-wp-community-events.php",
 		"oF": 0
 		},
+	"/wp-admin/includes/class-wp-debug-data.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/includes/class-wp-debug-data.php",
+		"oF": 0
+		},
 	"/wp-admin/includes/class-wp-filesystem-base.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2772,6 +2919,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-admin/includes/class-wp-screen.php",
+		"oF": 0
+		},
+	"/wp-admin/includes/class-wp-site-health-auto-updates.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/includes/class-wp-site-health-auto-updates.php",
+		"oF": 0
+		},
+	"/wp-admin/includes/class-wp-site-health.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/includes/class-wp-site-health.php",
 		"oF": 0
 		},
 	"/wp-admin/includes/class-wp-site-icon.php": {
@@ -3845,6 +4008,28 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/wp-admin/js/site-health.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-admin/js/site-health-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-admin/js/site-health.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-admin/js/site-health.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/wp-admin/js/svg-painter.js": {
 		"bF": 0,
 		"ft": 64,
@@ -4851,6 +5036,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-admin/setup-config.php",
+		"oF": 0
+		},
+	"/wp-admin/site-health-info.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/site-health-info.php",
+		"oF": 0
+		},
+	"/wp-admin/site-health.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-admin/site-health.php",
 		"oF": 0
 		},
 	"/wp-admin/term.php": {
@@ -41750,6 +41951,14 @@
 		"oAP": "/wp-includes/blocks/block.php",
 		"oF": 0
 		},
+	"/wp-includes/blocks/calendar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/blocks/calendar.php",
+		"oF": 0
+		},
 	"/wp-includes/blocks/categories.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -41774,12 +41983,36 @@
 		"oAP": "/wp-includes/blocks/latest-posts.php",
 		"oF": 0
 		},
+	"/wp-includes/blocks/rss.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/blocks/rss.php",
+		"oF": 0
+		},
+	"/wp-includes/blocks/search.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/blocks/search.php",
+		"oF": 0
+		},
 	"/wp-includes/blocks/shortcode.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-includes/blocks/shortcode.php",
+		"oF": 0
+		},
+	"/wp-includes/blocks/tag-cloud.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/blocks/tag-cloud.php",
 		"oF": 0
 		},
 	"/wp-includes/bookmark-template.php": {
@@ -42134,6 +42367,14 @@
 		"oAP": "/wp-includes/class-wp-error.php",
 		"oF": 0
 		},
+	"/wp-includes/class-wp-fatal-error-handler.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/class-wp-fatal-error-handler.php",
+		"oF": 0
+		},
 	"/wp-includes/class-wp-feed-cache-transient.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -42326,6 +42567,14 @@
 		"oAP": "/wp-includes/class-wp-oembed-controller.php",
 		"oF": 0
 		},
+	"/wp-includes/class-wp-paused-extensions-storage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/class-wp-paused-extensions-storage.php",
+		"oF": 0
+		},
 	"/wp-includes/class-wp-post-type.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -42348,6 +42597,46 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-includes/class-wp-query.php",
+		"oF": 0
+		},
+	"/wp-includes/class-wp-recovery-mode-cookie-service.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/class-wp-recovery-mode-cookie-service.php",
+		"oF": 0
+		},
+	"/wp-includes/class-wp-recovery-mode-email-service.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/class-wp-recovery-mode-email-service.php",
+		"oF": 0
+		},
+	"/wp-includes/class-wp-recovery-mode-key-service.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/class-wp-recovery-mode-key-service.php",
+		"oF": 0
+		},
+	"/wp-includes/class-wp-recovery-mode-link-service.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/class-wp-recovery-mode-link-service.php",
+		"oF": 0
+		},
+	"/wp-includes/class-wp-recovery-mode.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/class-wp-recovery-mode.php",
 		"oF": 0
 		},
 	"/wp-includes/class-wp-rewrite.php": {
@@ -42727,6 +43016,46 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/wp-includes/css/dashicons.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-includes/css/dist/block-editor/style-rtl.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/css/dist/block-editor/style-rtl-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-includes/css/dist/block-editor/style-rtl.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/css/dist/block-editor/style-rtl.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-includes/css/dist/block-editor/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/css/dist/block-editor/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-includes/css/dist/block-editor/style.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/css/dist/block-editor/style.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -43706,6 +44035,14 @@
 		"oAP": "/wp-includes/embed.php",
 		"oF": 0
 		},
+	"/wp-includes/error-protection.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/error-protection.php",
+		"oF": 0
+		},
 	"/wp-includes/feed-atom-comments.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -43794,6 +44131,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-includes/fonts/dashicons.woff",
+		"oF": 0
+		},
+	"/wp-includes/fonts/dashicons.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/fonts/dashicons.woff2",
 		"oF": 0
 		},
 	"/wp-includes/formatting.php": {
@@ -44860,6 +45205,28 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/wp-includes/js/clipboard.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/clipboard-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-includes/js/clipboard.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/clipboard.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/wp-includes/js/codemirror/codemirror.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -45310,6 +45677,28 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/wp-includes/js/dist/blob.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-includes/js/dist/block-editor.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/dist/block-editor-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-includes/js/dist/block-editor.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/dist/block-editor.min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -45860,6 +46249,28 @@
 		"mi": 0,
 		"oA": 1,
 		"oAP": "/wp-includes/js/dist/plugins.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-includes/js/dist/priority-queue.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/dist/priority-queue-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/wp-includes/js/dist/priority-queue.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/wp-includes/js/dist/priority-queue.min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -50307,6 +50718,732 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-includes/SimplePie/XML/Declaration/Parser.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/autoload.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/autoload.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/composer.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-includes/sodium_compat/composer-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/wp-includes/sodium_compat/lib/constants.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/lib/constants.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/lib/namespaced.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/lib/namespaced.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/lib/php72compat.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/lib/php72compat.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/lib/sodium_compat.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/lib/sodium_compat.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/LICENSE",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Compat.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Compat.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/BLAKE2b.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/BLAKE2b.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/ChaCha20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/ChaCha20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/ChaCha20/Ctx.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/ChaCha20/Ctx.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/ChaCha20/IetfCtx.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/ChaCha20/IetfCtx.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Curve25519.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Curve25519.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Curve25519/Fe.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Curve25519/Fe.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge/Cached.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge/Cached.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge/P1p1.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge/P1p1.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge/P2.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge/P2.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge/P3.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge/P3.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge/Precomp.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge/Precomp.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Curve25519/H.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Curve25519/H.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Ed25519.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Ed25519.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/HChaCha20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/HChaCha20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/HSalsa20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/HSalsa20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Poly1305.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Poly1305.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Poly1305/State.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Poly1305/State.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Salsa20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Salsa20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/SipHash.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/SipHash.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Util.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Util.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/X25519.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/X25519.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/XChaCha20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/XChaCha20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Core/Xsalsa20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Core/Xsalsa20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/Crypto.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/Crypto.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/namespaced/File.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/namespaced/File.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Compat.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Compat.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/BLAKE2b.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/BLAKE2b.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/ChaCha20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/ChaCha20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/ChaCha20/Ctx.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/ChaCha20/Ctx.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/ChaCha20/IetfCtx.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/ChaCha20/IetfCtx.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Curve25519.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Curve25519.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Curve25519/Fe.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Curve25519/Fe.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Curve25519/Ge/Cached.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Curve25519/Ge/Cached.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Curve25519/Ge/P1p1.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Curve25519/Ge/P1p1.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Curve25519/Ge/P2.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Curve25519/Ge/P2.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Curve25519/Ge/P3.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Curve25519/Ge/P3.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Curve25519/Ge/Precomp.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Curve25519/Ge/Precomp.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Curve25519/H.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Curve25519/H.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Curve25519/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Curve25519/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Ed25519.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Ed25519.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/HChaCha20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/HChaCha20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/HSalsa20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/HSalsa20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Poly1305.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Poly1305.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Poly1305/State.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Poly1305/State.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Salsa20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Salsa20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/SipHash.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/SipHash.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/Util.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/Util.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/X25519.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/X25519.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/XChaCha20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/XChaCha20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core/XSalsa20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core/XSalsa20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/BLAKE2b.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/BLAKE2b.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/ChaCha20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/ChaCha20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/ChaCha20/Ctx.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/ChaCha20/Ctx.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/ChaCha20/IetfCtx.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/ChaCha20/IetfCtx.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Curve25519.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Curve25519.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Curve25519/Fe.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Curve25519/Fe.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Curve25519/Ge/Cached.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Curve25519/Ge/Cached.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Curve25519/Ge/P1p1.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Curve25519/Ge/P1p1.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Curve25519/Ge/P2.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Curve25519/Ge/P2.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Curve25519/Ge/P3.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Curve25519/Ge/P3.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Curve25519/Ge/Precomp.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Curve25519/Ge/Precomp.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Curve25519/H.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Curve25519/H.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Curve25519/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Curve25519/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Ed25519.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Ed25519.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/HChaCha20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/HChaCha20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/HSalsa20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/HSalsa20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Int32.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Int32.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Int64.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Int64.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Poly1305.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Poly1305.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Poly1305/State.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Poly1305/State.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Salsa20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Salsa20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/SipHash.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/SipHash.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/Util.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/Util.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/X25519.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/X25519.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/XChaCha20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/XChaCha20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Core32/XSalsa20.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Core32/XSalsa20.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Crypto.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Crypto.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/Crypto32.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/Crypto32.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/File.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/File.php",
+		"oF": 0
+		},
+	"/wp-includes/sodium_compat/src/SodiumException.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-includes/sodium_compat/src/SodiumException.php",
 		"oF": 0
 		},
 	"/wp-includes/spl-autoload-compat.php": {
