@@ -51,7 +51,7 @@ $resourceCategory = $resourceCategories[0];
 
             <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
 
-            <ul class="extensible-list horizontal">
+            <ul class="list-unstyled fs-md">
 
                 <li>
                     <span class="text-muted"><?php the_date(); ?></span> 
