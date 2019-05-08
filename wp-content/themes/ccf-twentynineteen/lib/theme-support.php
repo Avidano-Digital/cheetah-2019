@@ -338,13 +338,16 @@
         else :
 
             $current_category_id = $current_category->cat_ID;
+
             $news_posts = get_posts(
                 array(
                     'category'=>$current_category_id,
                     'orderby'=>'date'
                 )
             );
+            
             $years = [];
+            
             foreach ($news_posts as $news_post) {
                 $date = substr($news_post->post_date, 0, 4);
                 if (!in_array($date,$years)) {
