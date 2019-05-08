@@ -48,6 +48,8 @@ get_header(); ?>
                 </div>
                 <!-- .col -->
                 
+                <?php if ($current_category_name !== 'Cheetah Strides') : ?>
+                  
                 <div class="col-sm">
                     <div class="btn-toggle">
                         <button class="btn btn-block btn-primary" data-toggle="collapse" data-target="#all-authors"
@@ -57,6 +59,8 @@ get_header(); ?>
                     </div>
                 </div>
                 <!-- .col -->
+
+                <?php endif; ?>
 
             </div>
             <!-- .row -->
