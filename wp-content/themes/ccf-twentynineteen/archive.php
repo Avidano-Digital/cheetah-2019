@@ -120,6 +120,12 @@ get_header(); ?>
     elseif (get_query_var('category_name') && get_query_var('category_name') != 'ccf-blog'):
     
     $page_heading = get_category_by_slug(get_query_var('category_name'))->cat_name;
+
+        if ($page_heading == 'Press Releases') :
+
+          $press_releases = true;
+
+        endif;
     
     else : $page_heading = 'All Topics';
     
@@ -135,14 +141,13 @@ get_header(); ?>
         
         <?php endif; ?>
 
-
             <?php if ( have_posts() ) : ?>
 
             <div class="row matrix-border posts">
 
                 <?php while ( have_posts() ) : the_post(); ?>
 
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-4 mb-3 <?php echo ($press_releases ? 'border border-danger' : '')?>">
                     
                     <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                     
