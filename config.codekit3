@@ -25251,28 +25251,34 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen-child/functions.php",
 		"oF": 0
 		},
-	"/wp-content/themes/ccf-twentynineteen-child/header-old.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen-child/header-old.php",
-		"oF": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen-child/headerWHOA.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen-child/headerWHOA.php",
-		"oF": 0
-		},
 	"/wp-content/themes/ccf-twentynineteen-child/images/01.jpg": {
 		"ft": 16384,
 		"iS": 210441,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen-child/images/01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen-child/images/events/01.jpg": {
+		"ft": 16384,
+		"iS": 34568,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/images/events/01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen-child/images/events/02.jpg": {
+		"ft": 16384,
+		"iS": 40331,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/images/events/02.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
