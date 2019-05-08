@@ -62,9 +62,9 @@ define('DB_CHARSET', 'utf8mb4');
 
 define('DB_COLLATE', '');
 
-// define('WP_SITEURL', 'http://cheetah-2019/');
+define('WP_SITEURL', 'http://cheetah-2019/');
 
-// define('WP_HOME', 'http://cheetah-2019/');
+define('WP_HOME', 'http://cheetah-2019/');
 
 /**#@+
 
@@ -148,8 +148,8 @@ define('WP_ALLOW_MULTISITE', true);
 
 define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', false);
-// define('DOMAIN_CURRENT_SITE', 'cheetah-2019');
-define('PATH_CURRENT_SITE', '/');
+define('DOMAIN_CURRENT_SITE', 'cheetah-2019');
+// define('PATH_CURRENT_SITE', '/');
 // define('SITE_ID_CURRENT_SITE', 1);
 // define('BLOG_ID_CURRENT_SITE', 1);
 

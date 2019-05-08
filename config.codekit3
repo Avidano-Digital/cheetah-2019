@@ -68,31 +68,31 @@
 		"oAP": "/readme.html",
 		"oF": 0
 		},
-	"/update-my-url/composer.json": {
+	"/search-replace-db/composer.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/update-my-url/composer-min.json",
+		"oAP": "/search-replace-db/composer-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
 		},
-	"/update-my-url/index.php": {
+	"/search-replace-db/index.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/update-my-url/index.php",
+		"oAP": "/search-replace-db/index.php",
 		"oF": 0
 		},
-	"/update-my-url/package.json": {
+	"/search-replace-db/package.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/update-my-url/package-min.json",
+		"oAP": "/search-replace-db/package-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
 		},
-	"/update-my-url/README.md": {
+	"/search-replace-db/README.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -102,7 +102,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/update-my-url/README.html",
+		"oAP": "/search-replace-db/README.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -111,60 +111,60 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/update-my-url/srdb-tests/charset-test.php": {
+	"/search-replace-db/srdb-tests/charset-test.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/update-my-url/srdb-tests/charset-test.php",
+		"oAP": "/search-replace-db/srdb-tests/charset-test.php",
 		"oF": 0
 		},
-	"/update-my-url/srdb-tests/DataSet.xml": {
+	"/search-replace-db/srdb-tests/DataSet.xml": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/update-my-url/srdb-tests/DataSet.xml",
+		"oAP": "/search-replace-db/srdb-tests/DataSet.xml",
 		"oF": 0
 		},
-	"/update-my-url/srdb-tests/DataSetGenerator.php": {
+	"/search-replace-db/srdb-tests/DataSetGenerator.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/update-my-url/srdb-tests/DataSetGenerator.php",
+		"oAP": "/search-replace-db/srdb-tests/DataSetGenerator.php",
 		"oF": 0
 		},
-	"/update-my-url/srdb-tests/db.sql": {
+	"/search-replace-db/srdb-tests/db.sql": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/update-my-url/srdb-tests/db.sql",
+		"oAP": "/search-replace-db/srdb-tests/db.sql",
 		"oF": 0
 		},
-	"/update-my-url/srdb-tests/SrdbTest.php": {
+	"/search-replace-db/srdb-tests/SrdbTest.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/update-my-url/srdb-tests/SrdbTest.php",
+		"oAP": "/search-replace-db/srdb-tests/SrdbTest.php",
 		"oF": 0
 		},
-	"/update-my-url/srdb.class.php": {
+	"/search-replace-db/srdb.class.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/update-my-url/srdb.class.php",
+		"oAP": "/search-replace-db/srdb.class.php",
 		"oF": 0
 		},
-	"/update-my-url/srdb.cli.php": {
+	"/search-replace-db/srdb.cli.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/update-my-url/srdb.cli.php",
+		"oAP": "/search-replace-db/srdb.cli.php",
 		"oF": 0
 		},
 	"/wp-activate.php": {
