@@ -8,7 +8,7 @@
         <!-- .col -->
 
         <div class="col-sm">            
-            <?php get_template_part('template-parts/site-search'); ?>
+            <?php get_search_form(); ?>
         </div>
         <!-- .col -->
 

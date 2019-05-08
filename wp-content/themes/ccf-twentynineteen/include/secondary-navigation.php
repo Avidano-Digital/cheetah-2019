@@ -17,7 +17,7 @@
 
     <!-- Search --> 
     <li style="width:160px" dir="ltr">
-        <?php get_template_part('template-parts/site-search'); ?>
+        <?php get_search_form(); ?>
     </li>
     
 </ul>
