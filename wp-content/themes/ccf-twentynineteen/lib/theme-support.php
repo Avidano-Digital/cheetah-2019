@@ -46,8 +46,7 @@
 
         // Move Yoast to the Bottom
 
-        function keep_yoast_below()
-        {
+        function keep_yoast_below() {
             return 'low';
         }
 

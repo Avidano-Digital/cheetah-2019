@@ -1,6 +1,6 @@
 {
     "key": "group_5c7462f9af1f2",
-    "title": "Scientific Papers Author Database",
+    "title": "Scientific Papers - All Authors",
     "fields": [
         {
             "key": "field_5c74630403221",
@@ -60,5 +60,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553276718
+    "modified": 1557310467
 }
