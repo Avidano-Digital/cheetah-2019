@@ -44,6 +44,15 @@
         
         });
 
+        // Move Yoast to the Bottom
+
+        function keep_yoast_below()
+        {
+            return 'low';
+        }
+
+        add_filter('wpseo_metabox_prio', 'keep_yoast_below');
+
         // Wrap the inserted image html with <figure> 
 
         function html5_insert_image($html, $id, $caption, $title, $align, $url, $size, $alt ) {
