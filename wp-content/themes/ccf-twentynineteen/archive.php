@@ -112,9 +112,10 @@ get_header(); ?>
 
     $page_heading = '';
 
-    if (get_query_var('author_name')) :
+    if (get_query_var('taxonomy') == 'news-author') :
 
-    $page_heading = get_user_by('slug', get_query_var('author_name'))->display_name;
+    $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
+    $page_heading = $term->name;
     
     elseif (get_query_var('category_name') && get_query_var('category_name') != 'ccf-blog'):
     

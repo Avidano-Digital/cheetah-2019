@@ -240,6 +240,26 @@
             'public' => true
           )
         );
+
+        register_taxonomy(
+            'news-author',
+            'post',
+            array(
+              'labels' => array(
+              'name' => __( 'News Authors' ),
+              'singular_name' => __( 'News Authors' ),
+              'add_new_item' => 'Add New News Author',
+              'new_item_name' => 'New News Author',
+              'edit_item' => 'Edit News Author',
+              'view_item' => 'View News Author',
+              'update_item' => 'Update News Author'
+            ),
+            'has_archive' => true,
+            'hierarchical' => true,
+            'show_in_nav_menus' => true,
+            'public' => true
+          )
+        );
     }
 
     add_action( 'init', __NAMESPACE__ . 'tax_init' );
@@ -346,14 +366,16 @@
 
     function showAuthorFilters() {
 
-        $wp_user_query = new WP_User_Query(array('has_published_posts' => array('post')));
-        $authors = $wp_user_query->get_results();
+        $authors = get_terms(array(
+            'taxonomy' => 'news-author',
+            'hide_empty' => true,
+        ));
 
         echo '<ul class="extensible-list fs-md"><li><a class="text-body" href="/ccf-blog" title="All Authors">All Authors</a></li>';
 
         foreach ($authors as $author) :
 
-            echo '<li><a class="text-body" href="/author/'.$author->user_nicename.'" title="'.$author->display_name.'">'.$author->display_name.'</a></li>';
+            echo '<li><a class="text-body" href="/news-author/'.$author->slug.'" title="'.$author->name.'">'.$author->name.'</a></li>';
 
         endforeach;
 
@@ -372,7 +394,7 @@
 
         $category_parent = get_category_parents($current_category_id,false,'');
 
-        echo '<li><a href="/ccf-blog" class="',(strpos($category_parent,"CCF Blog") > -1) ? "active" : "",'">CCF Blog</a></li>';
+        echo '<li><a href="/ccf-blog" class="',(strpos($category_parent,"CCF Blog") > -1 || get_query_var('taxonomy') == 'news-author') ? "active" : "",'">CCF Blog</a></li>';
         echo '<li><a href="/cheetah-strides" class="',(strpos($category_parent, "Cheetah Strides") > -1) ? "active" : "",'">Cheetah Strides</a></li>';
         echo '<li><a href="/press-releases" class="',(strpos($category_parent, "Press Releases") > -1) ? "active" : "",'">Press Releases</a></li>';
 
