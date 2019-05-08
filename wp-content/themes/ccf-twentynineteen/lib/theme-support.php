@@ -346,6 +346,7 @@
         else :
 
             $current_category_id = $current_category->cat_ID;
+            $current_category_slug = $current_category->slug;
 
             $news_posts = get_posts(
                 array(
@@ -363,10 +364,10 @@
                 }
             }
 
-            echo '<li><a href="/press-releases" class="text-body">All Years</a></li>';
+            echo '<li><a href="/'.$current_category_slug.'" class="text-body">All Years</a></li>';
 
             foreach ($years as $year) {
-                echo '<li><a href="/'.$year.'/?category_name=press-releases" class="text-body">'.$year.'</a></li>'; 
+                echo '<li><a href="/'.$year.'/?category_name='.$current_category_slug.'" class="text-body">'.$year.'</a></li>'; 
             }
 
         endif;
