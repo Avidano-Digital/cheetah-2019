@@ -7,7 +7,7 @@
             "label": "Video URL",
             "name": "video_url",
             "type": "text",
-            "instructions": "Example YouTube: https:\/\/youtu.be\/XQu8TTBmGhA<br>\r\nUse the \"Share\" URL, not the \"embed\" code.",
+            "instructions": "Example YouTube: https:\/\/youtu.be\/XQu8TTBmGhA<br>\r\nExample Vimeo: https:\/\/vimeo.com\/87110435<br>\r\nUse the \"Share\" URL, not the \"embed\" code.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -58,7 +58,7 @@
         "tags",
         "send-trackbacks"
     ],
-    "active": true,
+    "active": 1,
     "description": "",
-    "modified": 1551950967
+    "modified": 1557410682
 }

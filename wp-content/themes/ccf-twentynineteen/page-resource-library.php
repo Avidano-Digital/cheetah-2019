@@ -143,13 +143,16 @@ get_header(); ?>
                                                             $video_url = get_field('video_url');
                                                             $video_id = substr( strrchr( $video_url, '/' ), 1 );
                                                         ?>
-
                                                         <li class="list-group-item">
 
                                                             <div class="row align-items-center">
                                                                 <div class="col-md-6 mb-3 mb-md-0">
                                                                     <div class="embed-responsive embed-responsive-16by9">
-                                                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                                                                        <?php if (strpos($video_url,'vimeo') !== false) : ?>
+                                                                            <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                                                        <?php else : ?>
+                                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                                                                        <?php endif; ?>
                                                                     </div>
                                                                 </div>
                                                                 <!-- .col -->

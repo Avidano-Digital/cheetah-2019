@@ -32,7 +32,11 @@ if( $featured_videos ): ?>
 
         <div class="col-lg-6">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id;?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                <?php if (strpos($video_url,'vimeo') !== false) : ?>
+                    <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <?php else : ?>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                <?php endif; ?>
             </div>
         </div>
         <!-- .col -->
