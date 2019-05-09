@@ -25,6 +25,14 @@
 		"oAP": "/.htaccess",
 		"oF": 0
 		},
+	"/.user.ini": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.user.ini",
+		"oF": 0
+		},
 	"/ccf-site-map.xml": {
 		"cB": 0,
 		"ft": 8192,
@@ -39,6 +47,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index.php",
+		"oF": 0
+		},
+	"/info.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/info.php",
 		"oF": 0
 		},
 	"/license.txt": {
@@ -27006,17 +27022,6 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/wp-content/themes/ccf-twentynineteen/images/cta-sign-up.jpg": {
-		"ft": 16384,
-		"iS": 171682,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/cta-sign-up.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"/wp-content/themes/ccf-twentynineteen/images/donate-aside.jpg": {
 		"ft": 16384,
 		"iS": 171789,
@@ -27049,66 +27054,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-cheetah-strides.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-cheetah-strides.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-fact-sheets.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-fact-sheets.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-international-studbooks.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-international-studbooks.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-lectures.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-lectures.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-progress-reports.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-progress-reports.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-scientific-papers.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/icon-resource-library-scientific-papers.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/images/kids/africas-most-endangered-cat.jpg": {
 		"ft": 16384,
@@ -27420,49 +27365,15 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/wp-content/themes/ccf-twentynineteen/images/resource-library-fact-sheets.jpg": {
-		"ft": 16384,
-		"iS": 113087,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/resource-library-fact-sheets.jpg",
+	"/wp-content/themes/ccf-twentynineteen/images/separator-lg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/separator-lg.svg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/wp-content/themes/ccf-twentynineteen/images/resource-library-lectures-and-presentations.jpg": {
-		"ft": 16384,
-		"iS": 42764,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/resource-library-lectures-and-presentations.jpg",
-		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"/wp-content/themes/ccf-twentynineteen/images/resource-library-progress-reports.jpg": {
-		"ft": 16384,
-		"iS": 87186,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/resource-library-progress-reports.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/wp-content/themes/ccf-twentynineteen/images/resource-library-scientific-papers.jpg": {
-		"ft": 16384,
-		"iS": 50059,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/resource-library-scientific-papers.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/images/share-email.svg": {
 		"ft": 2097152,

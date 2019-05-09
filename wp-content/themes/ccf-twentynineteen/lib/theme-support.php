@@ -22,7 +22,7 @@
 
         update_option( 'large_size_w', 0 );
         update_option( 'large_size_h', 0 );
-        
+
         // Custom Archive Titles
 
         add_filter( 'get_the_archive_title', function ($title) {
