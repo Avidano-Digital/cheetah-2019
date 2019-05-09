@@ -25,6 +25,14 @@
 		"oAP": "/.htaccess",
 		"oF": 0
 		},
+	"/.user.ini": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.user.ini",
+		"oF": 0
+		},
 	"/ccf-site-map.xml": {
 		"cB": 0,
 		"ft": 8192,
@@ -55,14 +63,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/license.txt",
-		"oF": 0
-		},
-	"/php.ini": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/php.ini",
 		"oF": 0
 		},
 	"/project-icon.png": {
@@ -27479,6 +27479,16 @@
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"/wp-content/themes/ccf-twentynineteen/images/separator-lg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/images/separator-lg.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/images/share-email.svg": {
 		"ft": 2097152,

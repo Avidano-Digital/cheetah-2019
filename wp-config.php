@@ -158,6 +158,8 @@ define('COOKIE_DOMAIN', '');
 define('COOKIEPATH', '');
 define('SITECOOKIEPATH', '');
 
+define('WP_MEMORY_LIMIT', '64M');
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
