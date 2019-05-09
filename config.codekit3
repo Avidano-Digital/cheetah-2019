@@ -41,12 +41,28 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
+	"/info.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/info.php",
+		"oF": 0
+		},
 	"/license.txt": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/license.txt",
+		"oF": 0
+		},
+	"/php.ini": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/php.ini",
 		"oF": 0
 		},
 	"/project-icon.png": {

@@ -48,20 +48,24 @@
 
         <div class="container">
 
-            <div class="row mb-4">
+            <div class="row">
 
                 <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0">
-                    <h5>Cheetah Conservation Fund</h5>
+                    <h5 class="mb-0">Cheetah Conservation Fund</h5>
                     <div class="fs-md">
                         <p class="f-sans-serif text-muted"><strong>United States</strong></p>
-                        <p class="fs-md">Our Research and Education Centre is located in Otjiwarongo, Namibia. We encourage
-                            visitors to see our facilities in person.</p>
-                        <p class="fs-md"><a class="link text-body" href="#">Come Join Us!</a></p>
+                        <p class="fs-md">
+                            <strong class="d-block">Address</strong>
+                            200 Daingerfield Rd<br>
+                            Suite 200<br>
+                            Alexandria, VA 22314
+                        </p>
+                        <p class="fs-md"><a class="link text-body" href="#">Contact Us</a></p>
                     </div>
                 </div>
                 <!-- .col -->
 
-                <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0">
+                <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0 d-none">
 
                     <h5>Where We Work</h5>
                     <p class="fs-md">CCF is an international non-profit organization with fundraising
@@ -79,43 +83,21 @@
                     <h5>Support CCF</h5>
 
                     <p class="fs-md">
-                        You can help save the cheetah from exinction. Support our science-based, results-driven conservation initiatives. Together, we can save the cheetah.
+                        CCF USA is a registered non-profit 501(c) 3. Donations are fully tax-deductible in the United States if given to a CCF USA office and/or deposited to a U.S. bank.
                     </p>
 
                     <ul class="extensible-list horizontal">
                         <li>
-                            <a class="btn btn-sm btn-block btn-primary" href="/donate" title="Donate">Donate</a>
-                        </li>
-                        <li>
-                            <a class="btn btn-sm btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
+                            <a class="btn btn-primary" href="/donate" title="Donate to CCF United States">Donate</a>
                         </li>
                     </ul>
 
                 </div>
                 <!-- .col -->
 
-            </div>
-            <!-- .row -->
+                <div class="col-lg-6 col-xl-4">
 
-            <hr class="dark mb-2">
-
-            <div class="row justify-content-between">
-
-                <div class="col-lg-auto">
-
-                    <ul class="extensible-list horizontal fs-lg">
-                        <li>
-                            <a class="no-btn-style text-body" href="#">
-                                <span class="far fa-envelope-open"></span>
-                                <span class="mx-1 font-weight-bold fs-md">CCF Newsletters</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- .col -->
-
-                <div class="col-lg-auto mb-2 mb-lg-0">
+                    <h5>Follow Us</h5>
 
                     <ul class="extensible-list horizontal fs-lg">
                         <li>
