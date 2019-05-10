@@ -306,7 +306,8 @@
             'has_archive' => true,
             'hierarchical' => true,
             'show_in_nav_menus' => true,
-            'public' => true
+            'public' => true,
+            'meta_box_cb' => false // hides meta box, since we're using ACF
           )
         );
     }

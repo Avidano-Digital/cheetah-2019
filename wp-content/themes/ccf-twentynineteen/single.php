@@ -51,14 +51,11 @@ get_header(); ?>
 
                 <li>
 
-                  <?php $post_object = get_field('author');
-
-                  if( $post_object ): 
-                    $post = $post_object;
-                    setup_postdata( $post ); 
-                    $avatar = get_field('avatar');
-                    $avatar_size = '96px';
-                    $avatar_placeholder = 'http://cheetah-2019/wp-content/uploads/2019/01/avatar-default.jpg';	
+                  <?php 
+                      $term = get_field('news_author');
+                      $avatar = get_field('avatar', $term->taxonomy . '_' . $term->term_id);
+                      $avatar_size = '96px';
+                      $avatar_placeholder = 'http://cheetah-2019/wp-content/uploads/2019/01/avatar-default.jpg';	
                   ?>
 
                   <div class="rounded-circle" style="overflow:hidden;">
@@ -69,24 +66,20 @@ get_header(); ?>
                     <img src="<?php echo $avatar_placeholder; ?>" width="<?php echo $avatar_size; ?>" alt="">
                     <?php endif; ?>
                   </div>
-                                      
-                  <?php wp_reset_postdata(); endif; ?>
 
                 </li>
             
                 <li class="fs-md">
 
-                  <?php $post_object = get_field('author');
+                  <?php 
 
-                  if( $post_object ): 
-                    $post = $post_object;
-                    setup_postdata( $post ); 
-                    $article_author = get_the_title();
+                  if (get_field('news_author')) :
+                      $article_author = get_field('news_author')->name;
+                  endif;
+
                   ?>
 
                   <strong class="d-block">by&nbsp;<?php echo $article_author; ?></strong>
-
-                  <?php wp_reset_postdata(); endif; ?>
 
                   <span class="text-muted"><?php the_date(); ?></span> 
                 </li>

@@ -49,9 +49,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "taxonomy",
                 "operator": "==",
-                "value": "ccfauthors"
+                "value": "news-author"
             }
         ]
     ],
@@ -78,5 +78,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1554130825
+    "modified": 1557517022
 }
