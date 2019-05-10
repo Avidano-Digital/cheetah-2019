@@ -102,76 +102,75 @@ $parent_title = get_the_title($post->post_parent);
 
                     endwhile;
 
-                    foreach ($date_groups as $group) :
-                        if ($first) :
-                    ?>
-                        <hr class="medium">
-                    <?php
-                        endif;
-                        $first = true;
-                    ?>                        
-                        <div class="text-block medium my-6 events">
+                    foreach ($date_groups as $group) : if ($first) : ?>
 
-                            <h2 class="mb-3"><?php echo $group; ?></h2>
+                    <hr class="medium">
+                    
+                    <?php endif; $first = true; ?>                        
+                    
+                    <div class="text-block medium my-5 events">
 
-                            <div class="row matrix-gutter">
+                        <h2 class="mb-3"><?php echo $group; ?></h2>
 
-                                <?php while ( $loop->have_posts() ) : $loop->the_post();
+                        <div class="row matrix-gutter">
 
-                                $date = new DateTime(get_field('start_date_time'));
-                                $year = $date->format("Y");
-                                $month = $date->format("F");
-                                
-                                $featured_image_id = get_post_thumbnail_id($post->ID);
-                                $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
-                                $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
+                            <?php while ( $loop->have_posts() ) : $loop->the_post();
 
-                                if ($month . ' ' . $year == $group) :
+                            $date = new DateTime(get_field('start_date_time'));
+                            $year = $date->format("Y");
+                            $month = $date->format("F");
+                            
+                            $featured_image_id = get_post_thumbnail_id($post->ID);
+                            $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
+                            $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
 
-                                ?>
+                            if ($month . ' ' . $year == $group) :
 
-                                <div class="col-md-6">
+                            ?>
 
-                                    <div class="card border h-100">
-                                        
-                                        <?php if ($featured_image) : ?>
-                                            <img class="card-img-top" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
-                                        <?php else : ?>
-                                            <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
-                                        <?php endif; ?>
+                            <div class="col-md-6">
 
-                                        <div class="card-body">
-                                            <h2 class="h5"><?php the_title(); ?></h2>
-                                            <p class="f-sans-serif fs-md">
-                                                <strong class="d-block"><?php the_field('start_date_time') ?></strong>
-                                                <?php if ($time) : ?>
-                                                <span class="text-muted"><?php echo $time; ?></span>
-                                                <?php endif; ?>
-                                            </p>
-                                        </div>
-                                        <!-- .card-body -->
-                                        <div class="card-footer py-2">
-                                            <a href="<?php the_permalink(); ?>"
-                                                class="btn btn-block btn-primary stretched-link">
-                                                Event Details
-                                            </a>
-                                        </div>
-                                        <!-- .card-footer -->
+                                <div class="card border h-100">
+                                    
+                                    <?php if ($featured_image) : ?>
+                                        <img class="card-img-top" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
+                                    <?php else : ?>
+                                        <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                                    <?php endif; ?>
+
+                                    <div class="card-body">
+                                        <h2 class="h5"><?php the_title(); ?></h2>
+                                        <p class="f-sans-serif fs-md bg-danger">
+                                            <strong class="d-block"><?php the_field('start_date_time') ?></strong>
+                                            <?php if ($time) : ?>
+                                            <span class="text-muted"><?php echo $time; ?></span>
+                                            <?php endif; ?>
+                                        </p>
                                     </div>
-                                    <!-- .card -->
+                                    <!-- .card-body -->
 
+                                    <div class="card-footer py-2">
+                                        <a href="<?php the_permalink(); ?>"
+                                            class="btn btn-block btn-primary stretched-link">
+                                            Event Details
+                                        </a>
+                                    </div>
+                                    <!-- .card-footer -->
                                 </div>
-                                <!-- .col -->
-
-                                <?php endif; endwhile; ?>
+                                <!-- .card -->
 
                             </div>
-                            <!-- .row -->
+                            <!-- .col -->
+
+                            <?php endif; endwhile; ?>
 
                         </div>
-                        <!-- .text-block -->
+                        <!-- .row -->
 
-                        <?php endforeach; ?>                    
+                    </div>
+                    <!-- .text-block -->
+
+                    <?php endforeach; ?>                    
 
                     <?php get_template_part('template-parts/article-footer'); ?>
             

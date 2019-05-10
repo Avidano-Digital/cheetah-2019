@@ -43,19 +43,24 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
 
             <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
 
-            <p class="f-sans-serif">
-                <strong class="d-block">
+            <div class="details">
+              
+              <p class="f-sans-serif mb-1">
+                  <strong>
+                      <?php the_field('start_date_time'); ?>
+                  </strong>
+              </p>
 
-                    <?php 
-                    // echo ($end_date->format("j") != $start_date->format("j")) ? get_field('start_date_time') . ' – ' . get_field('end_date_time') : get_field('start_date_time') . ' – ' . $end_date->format('g:i a'); 
-                    
-
-                    
-                    ?>
-                    <?php the_field('start_date_time'); ?>
-
-                </strong>
-            </p>
+              <p class="f-sans-serif fs-md mb-0">
+                <strong>Location:</strong> <?php the_field('location'); ?>
+              </p>
+              
+              <p class="f-sans-serif fs-md mb-0">
+                <strong>Venu:</strong> <?php the_field('venue'); ?>
+              </p>
+            
+            </div>
+            <!-- details -->
 
         </header>
 

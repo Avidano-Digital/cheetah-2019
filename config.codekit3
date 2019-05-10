@@ -27011,17 +27011,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/wp-content/themes/ccf-twentynineteen/images/cta-huffpost.jpg": {
-		"ft": 16384,
-		"iS": 90169,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/images/cta-huffpost.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"/wp-content/themes/ccf-twentynineteen/images/donate-aside.jpg": {
 		"ft": 16384,
 		"iS": 171789,
@@ -27968,6 +27957,22 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen/search.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/search.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/searchform.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/searchform.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/single-events.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -28160,14 +28165,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/sidebar-who-we-are.php",
-		"oF": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/template-parts/site-search.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/site-search.php",
 		"oF": 0
 		},
 	"/wp-content/themes/css/theme-min.css": {
