@@ -174,7 +174,7 @@
             'show_in_rest' => true
             )
         );
-
+ 
     }
 
     add_action( 'init', 'create_post_types' );
