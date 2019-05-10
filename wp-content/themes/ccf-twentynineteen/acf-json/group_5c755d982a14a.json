@@ -139,6 +139,22 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5cd5ce1ba2893",
+            "label": "Google Map Link",
+            "name": "google_map_link",
+            "type": "url",
+            "instructions": "Use the “share” URL (e.g. https:\/\/goo.gl\/maps\/EGfUj7nq9tdrzBc89)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -170,5 +186,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1557487249
+    "modified": 1557515962
 }

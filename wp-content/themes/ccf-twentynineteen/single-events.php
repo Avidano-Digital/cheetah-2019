@@ -113,7 +113,7 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
               </p>
               
               <p class="f-sans-serif fs-md">
-                <strong>Venu:</strong> <?php the_field('venue'); ?>
+                <strong>Venu:</strong> <?php the_field('venue'); if (get_field('google_map_link')) : ?>(<a href="<?php the_field('google_map_link'); ?>" target="_blank">Google Maps</a>)<?php endif; ?>  
               </p>
             
             </div>
