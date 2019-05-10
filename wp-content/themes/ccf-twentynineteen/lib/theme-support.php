@@ -83,6 +83,7 @@
     // Shared Post Types
 
     function create_shared_post_types() {
+
         register_post_type(
             'Events',
             array(
@@ -96,6 +97,7 @@
             'menu_icon' => 'dashicons-calendar'
             )
         );
+        
     }
     
     add_action('init', 'create_shared_post_types');
