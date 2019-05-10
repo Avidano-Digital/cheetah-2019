@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: CCF Videos
+Template Name: Videos
 */
 
 get_header(); ?>

@@ -27765,28 +27765,12 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/lib/theme-support.php",
 		"oF": 0
 		},
-	"/wp-content/themes/ccf-twentynineteen/page-ccf-events.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/page-ccf-events.php",
-		"oF": 0
-		},
 	"/wp-content/themes/ccf-twentynineteen/page-ccf-kids.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/page-ccf-kids.php",
-		"oF": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/page-ccf-videos.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/page-ccf-videos.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/page-cheetah-facts.php": {
@@ -27805,6 +27789,14 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/page-donate.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/page-events.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page-events.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/page-resource-library.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -27819,6 +27811,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/page-subpage.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/page-videos.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page-videos.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/page.php": {
@@ -28203,7 +28203,7 @@
 		"oAP": "/wp-content/uploads/2014/01/InternStory_BenSpearing1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2014/01/InternStory_BenSpearing1.jpg": {
@@ -28214,7 +28214,7 @@
 		"oAP": "/wp-content/uploads/2014/01/InternStory_BenSpearing1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2014/01/InternStory_BenSpearing2-250x250.jpg": {
@@ -28225,7 +28225,7 @@
 		"oAP": "/wp-content/uploads/2014/01/InternStory_BenSpearing2-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2014/01/InternStory_BenSpearing2.jpg": {
@@ -28236,7 +28236,7 @@
 		"oAP": "/wp-content/uploads/2014/01/InternStory_BenSpearing2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2014/01/InternStory_BenSpearing3-250x250.jpg": {
@@ -28247,7 +28247,7 @@
 		"oAP": "/wp-content/uploads/2014/01/InternStory_BenSpearing3-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2014/01/InternStory_BenSpearing3.jpg": {
@@ -28258,7 +28258,7 @@
 		"oAP": "/wp-content/uploads/2014/01/InternStory_BenSpearing3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2014/12/FinnishAmbassadorVisitsCCF_Blog-250x250.jpg": {
@@ -28307,7 +28307,7 @@
 		},
 	"/wp-content/uploads/2016/03/13022016-231439-sa1t5wc247-715x400-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12503,
+		"iS": 11940,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/03/13022016-231439-sa1t5wc247-715x400-250x250.jpg",
@@ -28318,7 +28318,7 @@
 		},
 	"/wp-content/uploads/2016/03/13022016-231439-sa1t5wc247-715x400.jpg": {
 		"ft": 16384,
-		"iS": 92026,
+		"iS": 85885,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/03/13022016-231439-sa1t5wc247-715x400.jpg",
@@ -28329,7 +28329,7 @@
 		},
 	"/wp-content/uploads/2016/03/17022016-092449-SA1T8WC313-715x400-250x250.jpg": {
 		"ft": 16384,
-		"iS": 19330,
+		"iS": 18930,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/03/17022016-092449-SA1T8WC313-715x400-250x250.jpg",
@@ -28340,7 +28340,7 @@
 		},
 	"/wp-content/uploads/2016/03/17022016-092449-SA1T8WC313-715x400.jpg": {
 		"ft": 16384,
-		"iS": 141817,
+		"iS": 135799,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/03/17022016-092449-SA1T8WC313-715x400.jpg",
@@ -28351,7 +28351,7 @@
 		},
 	"/wp-content/uploads/2016/03/21022016-124710-73sa1t1wc573-715x400-250x250.jpg": {
 		"ft": 16384,
-		"iS": 25164,
+		"iS": 24658,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/03/21022016-124710-73sa1t1wc573-715x400-250x250.jpg",
@@ -28362,7 +28362,7 @@
 		},
 	"/wp-content/uploads/2016/03/21022016-124710-73sa1t1wc573-715x400.jpg": {
 		"ft": 16384,
-		"iS": 178124,
+		"iS": 172218,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/03/21022016-124710-73sa1t1wc573-715x400.jpg",
@@ -28373,7 +28373,7 @@
 		},
 	"/wp-content/uploads/2016/03/22022016-070925-sa1t33wc336-715x400-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14915,
+		"iS": 14453,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/03/22022016-070925-sa1t33wc336-715x400-250x250.jpg",
@@ -28384,7 +28384,7 @@
 		},
 	"/wp-content/uploads/2016/03/22022016-070925-sa1t33wc336-715x400.jpg": {
 		"ft": 16384,
-		"iS": 97783,
+		"iS": 91940,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/03/22022016-070925-sa1t33wc336-715x400.jpg",
@@ -28395,7 +28395,7 @@
 		},
 	"/wp-content/uploads/2016/03/ConservancyGreaterWaterbergCCCSeries_2FeaturedImage-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14976,
+		"iS": 14556,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/03/ConservancyGreaterWaterbergCCCSeries_2FeaturedImage-250x250.jpg",
@@ -28406,7 +28406,7 @@
 		},
 	"/wp-content/uploads/2016/03/ConservancyGreaterWaterbergCCCSeries_2FeaturedImage.jpg": {
 		"ft": 16384,
-		"iS": 108100,
+		"iS": 107150,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/03/ConservancyGreaterWaterbergCCCSeries_2FeaturedImage.jpg",
@@ -28423,7 +28423,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia1.jpg": {
@@ -28434,7 +28434,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia10-250x250.jpg": {
@@ -28445,7 +28445,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia10-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia10.jpg": {
@@ -28456,7 +28456,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia10.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia11-250x250.jpg": {
@@ -28467,7 +28467,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia11-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia11.jpg": {
@@ -28478,7 +28478,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia11.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia12-250x250.jpg": {
@@ -28489,7 +28489,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia12-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia12.jpg": {
@@ -28500,7 +28500,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia12.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia13-250x250.jpg": {
@@ -28511,7 +28511,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia13-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia13.jpg": {
@@ -28522,7 +28522,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia13.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia14-250x250.jpg": {
@@ -28533,7 +28533,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia14-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia14.jpg": {
@@ -28544,7 +28544,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia14.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia15-250x250.jpg": {
@@ -28555,7 +28555,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia15-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia15.jpg": {
@@ -28566,7 +28566,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia15.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia16-250x250.jpg": {
@@ -28577,7 +28577,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia16-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia16.jpg": {
@@ -28588,7 +28588,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia16.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia17-250x250.jpg": {
@@ -28599,7 +28599,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia17-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia17.jpg": {
@@ -28610,7 +28610,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia17.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia18-250x250.jpg": {
@@ -28621,7 +28621,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia18-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia18.jpg": {
@@ -28632,7 +28632,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia18.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia19-250x250.jpg": {
@@ -28643,7 +28643,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia19-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia19.jpg": {
@@ -28654,7 +28654,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia19.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia2-250x250.jpg": {
@@ -28665,7 +28665,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia2-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia2.jpg": {
@@ -28676,7 +28676,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia20-250x250.jpg": {
@@ -28687,7 +28687,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia20-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia20.jpg": {
@@ -28698,7 +28698,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia20.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia21-250x250.jpg": {
@@ -28709,7 +28709,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia21-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia21.jpg": {
@@ -28720,7 +28720,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia21.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia22-250x250.jpg": {
@@ -28731,7 +28731,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia22-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia22.jpg": {
@@ -28742,7 +28742,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia22.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia23-250x250.jpg": {
@@ -28753,7 +28753,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia23-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia23.jpg": {
@@ -28764,7 +28764,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia23.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia24-250x250.jpg": {
@@ -28775,7 +28775,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia24-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia24.jpg": {
@@ -28786,7 +28786,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia24.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia25-250x250.jpg": {
@@ -28797,7 +28797,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia25-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia25.jpg": {
@@ -28808,7 +28808,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia25.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia26-250x250.jpg": {
@@ -28819,7 +28819,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia26-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia26.jpg": {
@@ -28830,7 +28830,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia26.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia27-250x250.jpg": {
@@ -28841,7 +28841,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia27-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia27.jpg": {
@@ -28852,7 +28852,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia27.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia28-250x250.jpg": {
@@ -28863,7 +28863,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia28-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia28.jpg": {
@@ -28874,7 +28874,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia28.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia29-250x250.jpg": {
@@ -28885,7 +28885,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia29-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia29.jpg": {
@@ -28896,7 +28896,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia29.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia3-250x250.jpg": {
@@ -28907,7 +28907,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia3-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia3.jpg": {
@@ -28918,7 +28918,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia30-250x250.jpg": {
@@ -28929,7 +28929,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia30-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia30.jpg": {
@@ -28940,7 +28940,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia30.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia4-250x250.jpg": {
@@ -28951,7 +28951,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia4-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia4.jpg": {
@@ -28962,7 +28962,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia5-250x250.jpg": {
@@ -28973,7 +28973,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia5-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia5.jpg": {
@@ -28984,7 +28984,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia5.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia6-250x250.jpg": {
@@ -28995,7 +28995,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia6-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia6.jpg": {
@@ -29006,7 +29006,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia6.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia7-250x250.jpg": {
@@ -29017,7 +29017,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia7-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia7.jpg": {
@@ -29028,7 +29028,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia7.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia8-250x250.jpg": {
@@ -29039,7 +29039,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia8-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia8.jpg": {
@@ -29050,7 +29050,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia8.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia9-250x250.jpg": {
@@ -29061,7 +29061,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia9-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/Australia9.jpg": {
@@ -29072,7 +29072,7 @@
 		"oAP": "/wp-content/uploads/2016/06/Australia9.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour10-250x250.jpg": {
@@ -29083,7 +29083,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour10-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour10.jpg": {
@@ -29094,7 +29094,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour10.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour11-250x250.jpg": {
@@ -29105,7 +29105,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour11-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour11.jpg": {
@@ -29116,7 +29116,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour11.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour12-250x250.jpg": {
@@ -29127,7 +29127,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour12-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour12.jpg": {
@@ -29138,7 +29138,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour12.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour13-250x250.jpg": {
@@ -29149,7 +29149,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour13-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour13.jpg": {
@@ -29160,7 +29160,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour13.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour14-250x250.jpg": {
@@ -29171,7 +29171,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour14-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour14.jpg": {
@@ -29182,7 +29182,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour14.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour15-250x250.jpg": {
@@ -29193,7 +29193,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour15-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour15.jpg": {
@@ -29204,7 +29204,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour15.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour16-250x250.jpg": {
@@ -29215,7 +29215,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour16-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour16.jpg": {
@@ -29226,7 +29226,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour16.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour17-250x250.jpg": {
@@ -29237,7 +29237,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour17-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour17.jpg": {
@@ -29248,7 +29248,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour17.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour18-250x250.jpg": {
@@ -29259,7 +29259,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour18-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour18.jpg": {
@@ -29270,7 +29270,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour18.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour19-250x250.jpg": {
@@ -29281,7 +29281,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour19-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour19.jpg": {
@@ -29292,7 +29292,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour19.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour2-250x250.jpg": {
@@ -29303,7 +29303,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour2-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour2.jpg": {
@@ -29314,7 +29314,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour20-250x250.jpg": {
@@ -29325,7 +29325,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour20-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour20.jpg": {
@@ -29336,7 +29336,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour20.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour21-250x250.jpg": {
@@ -29347,7 +29347,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour21-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour21.jpg": {
@@ -29358,7 +29358,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour21.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour22-250x250.jpg": {
@@ -29369,7 +29369,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour22-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour22.jpg": {
@@ -29380,7 +29380,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour22.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour23-250x250.jpg": {
@@ -29391,7 +29391,7 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour23-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour23.jpg": {
@@ -29402,12 +29402,12 @@
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour23.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour24-250x250.jpg": {
 		"ft": 16384,
-		"iS": 20706,
+		"iS": 20032,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour24-250x250.jpg",
@@ -29418,7 +29418,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour24.jpg": {
 		"ft": 16384,
-		"iS": 132429,
+		"iS": 131447,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour24.jpg",
@@ -29429,7 +29429,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour25-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13827,
+		"iS": 13307,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour25-250x250.jpg",
@@ -29440,7 +29440,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour25.jpg": {
 		"ft": 16384,
-		"iS": 81106,
+		"iS": 80166,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour25.jpg",
@@ -29451,7 +29451,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour3-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12585,
+		"iS": 12191,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour3-250x250.jpg",
@@ -29462,7 +29462,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour3.jpg": {
 		"ft": 16384,
-		"iS": 86958,
+		"iS": 86039,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour3.jpg",
@@ -29473,7 +29473,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour4-250x250.jpg": {
 		"ft": 16384,
-		"iS": 16965,
+		"iS": 16420,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour4-250x250.jpg",
@@ -29484,7 +29484,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour4.jpg": {
 		"ft": 16384,
-		"iS": 119173,
+		"iS": 118195,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour4.jpg",
@@ -29495,7 +29495,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour5-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12743,
+		"iS": 12310,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour5-250x250.jpg",
@@ -29506,7 +29506,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour5.jpg": {
 		"ft": 16384,
-		"iS": 83827,
+		"iS": 82876,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour5.jpg",
@@ -29517,7 +29517,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour6-250x250.jpg": {
 		"ft": 16384,
-		"iS": 21940,
+		"iS": 21292,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour6-250x250.jpg",
@@ -29528,7 +29528,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour6.jpg": {
 		"ft": 16384,
-		"iS": 133076,
+		"iS": 132100,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour6.jpg",
@@ -29539,7 +29539,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour7-250x250.jpg": {
 		"ft": 16384,
-		"iS": 18592,
+		"iS": 18108,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour7-250x250.jpg",
@@ -29550,7 +29550,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour7.jpg": {
 		"ft": 16384,
-		"iS": 132207,
+		"iS": 131243,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour7.jpg",
@@ -29561,7 +29561,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour8-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13941,
+		"iS": 13514,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour8-250x250.jpg",
@@ -29572,7 +29572,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour8.jpg": {
 		"ft": 16384,
-		"iS": 107697,
+		"iS": 106669,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour8.jpg",
@@ -29583,7 +29583,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour9-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14155,
+		"iS": 13729,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour9-250x250.jpg",
@@ -29594,7 +29594,7 @@
 		},
 	"/wp-content/uploads/2016/06/EU2016_Tour9.jpg": {
 		"ft": 16384,
-		"iS": 87268,
+		"iS": 86313,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EU2016_Tour9.jpg",
@@ -29605,7 +29605,7 @@
 		},
 	"/wp-content/uploads/2016/06/EUTour_20161-250x250.jpg": {
 		"ft": 16384,
-		"iS": 19349,
+		"iS": 18747,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EUTour_20161-250x250.jpg",
@@ -29616,7 +29616,7 @@
 		},
 	"/wp-content/uploads/2016/06/EUTour_20161.jpg": {
 		"ft": 16384,
-		"iS": 108250,
+		"iS": 107264,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/EUTour_20161.jpg",
@@ -29627,7 +29627,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring1-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12409,
+		"iS": 11964,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring1-250x250.jpg",
@@ -29638,7 +29638,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring1.jpg": {
 		"ft": 16384,
-		"iS": 93086,
+		"iS": 92126,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring1.jpg",
@@ -29649,7 +29649,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring10-250x250.jpg": {
 		"ft": 16384,
-		"iS": 17840,
+		"iS": 17276,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring10-250x250.jpg",
@@ -29660,7 +29660,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring10.jpg": {
 		"ft": 16384,
-		"iS": 115614,
+		"iS": 114631,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring10.jpg",
@@ -29671,7 +29671,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring100-250x250.jpg": {
 		"ft": 16384,
-		"iS": 17652,
+		"iS": 17047,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring100-250x250.jpg",
@@ -29682,7 +29682,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring100.jpg": {
 		"ft": 16384,
-		"iS": 120634,
+		"iS": 119675,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring100.jpg",
@@ -29693,7 +29693,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring101-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15140,
+		"iS": 14640,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring101-250x250.jpg",
@@ -29704,7 +29704,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring101.jpg": {
 		"ft": 16384,
-		"iS": 115751,
+		"iS": 114824,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring101.jpg",
@@ -29715,7 +29715,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring102-250x250.jpg": {
 		"ft": 16384,
-		"iS": 16857,
+		"iS": 16302,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring102-250x250.jpg",
@@ -29726,7 +29726,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring102.jpg": {
 		"ft": 16384,
-		"iS": 105430,
+		"iS": 104429,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring102.jpg",
@@ -29737,7 +29737,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring11-250x250.jpg": {
 		"ft": 16384,
-		"iS": 16216,
+		"iS": 15716,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring11-250x250.jpg",
@@ -29748,7 +29748,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring11.jpg": {
 		"ft": 16384,
-		"iS": 106490,
+		"iS": 105511,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring11.jpg",
@@ -29759,7 +29759,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring12-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15536,
+		"iS": 15112,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring12-250x250.jpg",
@@ -29770,7 +29770,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring12.jpg": {
 		"ft": 16384,
-		"iS": 118317,
+		"iS": 117336,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring12.jpg",
@@ -29781,7 +29781,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring13-250x250.jpg": {
 		"ft": 16384,
-		"iS": 18423,
+		"iS": 17902,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring13-250x250.jpg",
@@ -29792,7 +29792,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring13.jpg": {
 		"ft": 16384,
-		"iS": 131880,
+		"iS": 130913,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring13.jpg",
@@ -29803,7 +29803,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring14-250x250.jpg": {
 		"ft": 16384,
-		"iS": 20253,
+		"iS": 19720,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring14-250x250.jpg",
@@ -29814,7 +29814,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring14.jpg": {
 		"ft": 16384,
-		"iS": 137329,
+		"iS": 136309,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring14.jpg",
@@ -29825,7 +29825,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring15-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13101,
+		"iS": 12615,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring15-250x250.jpg",
@@ -29836,7 +29836,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring15.jpg": {
 		"ft": 16384,
-		"iS": 86576,
+		"iS": 85642,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring15.jpg",
@@ -29847,7 +29847,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring16-250x250.jpg": {
 		"ft": 16384,
-		"iS": 16650,
+		"iS": 16118,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring16-250x250.jpg",
@@ -29858,7 +29858,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring16.jpg": {
 		"ft": 16384,
-		"iS": 107765,
+		"iS": 106743,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring16.jpg",
@@ -29869,7 +29869,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring17-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15011,
+		"iS": 14501,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring17-250x250.jpg",
@@ -29880,7 +29880,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring17.jpg": {
 		"ft": 16384,
-		"iS": 98548,
+		"iS": 97642,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring17.jpg",
@@ -29891,7 +29891,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring18-250x250.jpg": {
 		"ft": 16384,
-		"iS": 11434,
+		"iS": 10998,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring18-250x250.jpg",
@@ -29902,7 +29902,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring18.jpg": {
 		"ft": 16384,
-		"iS": 76178,
+		"iS": 75239,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring18.jpg",
@@ -29913,7 +29913,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring19-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13367,
+		"iS": 12932,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring19-250x250.jpg",
@@ -29924,7 +29924,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring19.jpg": {
 		"ft": 16384,
-		"iS": 93334,
+		"iS": 92447,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring19.jpg",
@@ -29935,7 +29935,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring2-250x250.jpg": {
 		"ft": 16384,
-		"iS": 16664,
+		"iS": 16125,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring2-250x250.jpg",
@@ -29946,7 +29946,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring2.jpg": {
 		"ft": 16384,
-		"iS": 111244,
+		"iS": 110255,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring2.jpg",
@@ -29957,7 +29957,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring20-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13994,
+		"iS": 13507,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring20-250x250.jpg",
@@ -29968,7 +29968,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring20.jpg": {
 		"ft": 16384,
-		"iS": 90877,
+		"iS": 89959,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring20.jpg",
@@ -29979,7 +29979,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring21-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14308,
+		"iS": 13809,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring21-250x250.jpg",
@@ -29990,7 +29990,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring21.jpg": {
 		"ft": 16384,
-		"iS": 91475,
+		"iS": 90572,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring21.jpg",
@@ -30001,7 +30001,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring22-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14057,
+		"iS": 13546,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring22-250x250.jpg",
@@ -30012,7 +30012,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring22.jpg": {
 		"ft": 16384,
-		"iS": 85987,
+		"iS": 85056,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring22.jpg",
@@ -30023,7 +30023,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring23-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14228,
+		"iS": 13750,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring23-250x250.jpg",
@@ -30034,7 +30034,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring23.jpg": {
 		"ft": 16384,
-		"iS": 95987,
+		"iS": 95058,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring23.jpg",
@@ -30045,7 +30045,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring24-250x250.jpg": {
 		"ft": 16384,
-		"iS": 11849,
+		"iS": 11403,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring24-250x250.jpg",
@@ -30056,7 +30056,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring24.jpg": {
 		"ft": 16384,
-		"iS": 73245,
+		"iS": 72296,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring24.jpg",
@@ -30067,7 +30067,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring25-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12341,
+		"iS": 11893,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring25-250x250.jpg",
@@ -30078,7 +30078,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring25.jpg": {
 		"ft": 16384,
-		"iS": 90122,
+		"iS": 89191,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring25.jpg",
@@ -30089,7 +30089,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring26-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12041,
+		"iS": 11560,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring26-250x250.jpg",
@@ -30100,7 +30100,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring26.jpg": {
 		"ft": 16384,
-		"iS": 72016,
+		"iS": 71070,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring26.jpg",
@@ -30111,7 +30111,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring27-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12456,
+		"iS": 12031,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring27-250x250.jpg",
@@ -30122,7 +30122,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring27.jpg": {
 		"ft": 16384,
-		"iS": 73742,
+		"iS": 72774,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring27.jpg",
@@ -30133,7 +30133,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring28-250x250.jpg": {
 		"ft": 16384,
-		"iS": 16459,
+		"iS": 16005,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring28-250x250.jpg",
@@ -30144,7 +30144,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring28.jpg": {
 		"ft": 16384,
-		"iS": 113910,
+		"iS": 112881,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring28.jpg",
@@ -30155,7 +30155,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring29-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15837,
+		"iS": 15354,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring29-250x250.jpg",
@@ -30166,7 +30166,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring29.jpg": {
 		"ft": 16384,
-		"iS": 108957,
+		"iS": 107973,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring29.jpg",
@@ -30177,7 +30177,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring3-250x250.jpg": {
 		"ft": 16384,
-		"iS": 17798,
+		"iS": 17306,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring3-250x250.jpg",
@@ -30188,7 +30188,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring3.jpg": {
 		"ft": 16384,
-		"iS": 117535,
+		"iS": 116513,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring3.jpg",
@@ -30199,7 +30199,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring30-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15495,
+		"iS": 14963,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring30-250x250.jpg",
@@ -30210,7 +30210,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring30.jpg": {
 		"ft": 16384,
-		"iS": 98487,
+		"iS": 97550,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring30.jpg",
@@ -30221,7 +30221,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring31-250x250.jpg": {
 		"ft": 16384,
-		"iS": 10976,
+		"iS": 10560,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring31-250x250.jpg",
@@ -30232,7 +30232,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring31.jpg": {
 		"ft": 16384,
-		"iS": 60949,
+		"iS": 60037,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring31.jpg",
@@ -30243,7 +30243,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring32-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15460,
+		"iS": 15032,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring32-250x250.jpg",
@@ -30254,7 +30254,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring32.jpg": {
 		"ft": 16384,
-		"iS": 129668,
+		"iS": 128672,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring32.jpg",
@@ -30265,7 +30265,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring33-250x250.jpg": {
 		"ft": 16384,
-		"iS": 11277,
+		"iS": 10870,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring33-250x250.jpg",
@@ -30276,7 +30276,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring33.jpg": {
 		"ft": 16384,
-		"iS": 67387,
+		"iS": 66459,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring33.jpg",
@@ -30287,7 +30287,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring34-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15623,
+		"iS": 15082,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring34-250x250.jpg",
@@ -30304,12 +30304,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring34.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring35-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14759,
+		"iS": 14335,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring35-250x250.jpg",
@@ -30320,7 +30320,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring35.jpg": {
 		"ft": 16384,
-		"iS": 116560,
+		"iS": 115603,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring35.jpg",
@@ -30331,7 +30331,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring36-250x250.jpg": {
 		"ft": 16384,
-		"iS": 11906,
+		"iS": 11472,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring36-250x250.jpg",
@@ -30342,7 +30342,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring36.jpg": {
 		"ft": 16384,
-		"iS": 77497,
+		"iS": 76603,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring36.jpg",
@@ -30353,7 +30353,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring37-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13643,
+		"iS": 13172,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring37-250x250.jpg",
@@ -30364,7 +30364,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring37.jpg": {
 		"ft": 16384,
-		"iS": 86125,
+		"iS": 85197,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring37.jpg",
@@ -30375,7 +30375,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring38-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14120,
+		"iS": 13647,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring38-250x250.jpg",
@@ -30386,7 +30386,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring38.jpg": {
 		"ft": 16384,
-		"iS": 121335,
+		"iS": 120318,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring38.jpg",
@@ -30397,7 +30397,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring39-250x250.jpg": {
 		"ft": 16384,
-		"iS": 20823,
+		"iS": 20275,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring39-250x250.jpg",
@@ -30408,7 +30408,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring39.jpg": {
 		"ft": 16384,
-		"iS": 161670,
+		"iS": 160687,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring39.jpg",
@@ -30419,7 +30419,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring4-250x250.jpg": {
 		"ft": 16384,
-		"iS": 11989,
+		"iS": 11543,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring4-250x250.jpg",
@@ -30430,7 +30430,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring4.jpg": {
 		"ft": 16384,
-		"iS": 89796,
+		"iS": 88861,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring4.jpg",
@@ -30441,7 +30441,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring40-250x250.jpg": {
 		"ft": 16384,
-		"iS": 19578,
+		"iS": 19051,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring40-250x250.jpg",
@@ -30452,7 +30452,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring40.jpg": {
 		"ft": 16384,
-		"iS": 152126,
+		"iS": 151135,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring40.jpg",
@@ -30463,7 +30463,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring41-250x250.jpg": {
 		"ft": 16384,
-		"iS": 18027,
+		"iS": 17553,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring41-250x250.jpg",
@@ -30474,7 +30474,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring41.jpg": {
 		"ft": 16384,
-		"iS": 151592,
+		"iS": 150649,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring41.jpg",
@@ -30485,7 +30485,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring42-250x250.jpg": {
 		"ft": 16384,
-		"iS": 23206,
+		"iS": 22589,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring42-250x250.jpg",
@@ -30496,7 +30496,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring42.jpg": {
 		"ft": 16384,
-		"iS": 185777,
+		"iS": 184823,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring42.jpg",
@@ -30507,7 +30507,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring43-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12319,
+		"iS": 11869,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring43-250x250.jpg",
@@ -30518,7 +30518,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring43.jpg": {
 		"ft": 16384,
-		"iS": 91100,
+		"iS": 90135,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring43.jpg",
@@ -30529,7 +30529,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring44-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13320,
+		"iS": 12880,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring44-250x250.jpg",
@@ -30540,7 +30540,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring44.jpg": {
 		"ft": 16384,
-		"iS": 79827,
+		"iS": 78898,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring44.jpg",
@@ -30551,7 +30551,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring45-250x250.jpg": {
 		"ft": 16384,
-		"iS": 11162,
+		"iS": 10737,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring45-250x250.jpg",
@@ -30562,7 +30562,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring45.jpg": {
 		"ft": 16384,
-		"iS": 71682,
+		"iS": 70720,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring45.jpg",
@@ -30573,7 +30573,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring46-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13716,
+		"iS": 13263,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring46-250x250.jpg",
@@ -30584,7 +30584,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring46.jpg": {
 		"ft": 16384,
-		"iS": 95942,
+		"iS": 94934,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring46.jpg",
@@ -30595,7 +30595,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring47-250x250.jpg": {
 		"ft": 16384,
-		"iS": 18596,
+		"iS": 17981,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring47-250x250.jpg",
@@ -30606,7 +30606,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring47.jpg": {
 		"ft": 16384,
-		"iS": 108526,
+		"iS": 107547,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring47.jpg",
@@ -30617,7 +30617,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring48-250x250.jpg": {
 		"ft": 16384,
-		"iS": 26363,
+		"iS": 25782,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring48-250x250.jpg",
@@ -30628,7 +30628,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring48.jpg": {
 		"ft": 16384,
-		"iS": 203912,
+		"iS": 203012,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring48.jpg",
@@ -30639,7 +30639,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring49-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15924,
+		"iS": 15379,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring49-250x250.jpg",
@@ -30650,7 +30650,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring49.jpg": {
 		"ft": 16384,
-		"iS": 80026,
+		"iS": 79095,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring49.jpg",
@@ -30661,7 +30661,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring5-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12393,
+		"iS": 11962,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring5-250x250.jpg",
@@ -30672,7 +30672,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring5.jpg": {
 		"ft": 16384,
-		"iS": 72555,
+		"iS": 71616,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring5.jpg",
@@ -30683,7 +30683,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring50-250x250.jpg": {
 		"ft": 16384,
-		"iS": 18287,
+		"iS": 17723,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring50-250x250.jpg",
@@ -30694,7 +30694,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring50.jpg": {
 		"ft": 16384,
-		"iS": 119851,
+		"iS": 118870,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring50.jpg",
@@ -30705,7 +30705,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring51-250x250.jpg": {
 		"ft": 16384,
-		"iS": 18353,
+		"iS": 17751,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring51-250x250.jpg",
@@ -30716,7 +30716,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring51.jpg": {
 		"ft": 16384,
-		"iS": 120719,
+		"iS": 119806,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring51.jpg",
@@ -30727,7 +30727,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring52-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13853,
+		"iS": 13377,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring52-250x250.jpg",
@@ -30738,7 +30738,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring52.jpg": {
 		"ft": 16384,
-		"iS": 75635,
+		"iS": 74681,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring52.jpg",
@@ -30749,7 +30749,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring53-250x250.jpg": {
 		"ft": 16384,
-		"iS": 16100,
+		"iS": 15601,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring53-250x250.jpg",
@@ -30760,7 +30760,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring53.jpg": {
 		"ft": 16384,
-		"iS": 106394,
+		"iS": 105466,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring53.jpg",
@@ -30771,7 +30771,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring54-250x250.jpg": {
 		"ft": 16384,
-		"iS": 17884,
+		"iS": 17401,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring54-250x250.jpg",
@@ -30782,7 +30782,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring54.jpg": {
 		"ft": 16384,
-		"iS": 126201,
+		"iS": 125191,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring54.jpg",
@@ -30793,7 +30793,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring55-250x250.jpg": {
 		"ft": 16384,
-		"iS": 17465,
+		"iS": 17009,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring55-250x250.jpg",
@@ -30804,7 +30804,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring55.jpg": {
 		"ft": 16384,
-		"iS": 131516,
+		"iS": 130563,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring55.jpg",
@@ -30815,7 +30815,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring56-250x250.jpg": {
 		"ft": 16384,
-		"iS": 20132,
+		"iS": 19667,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring56-250x250.jpg",
@@ -30826,7 +30826,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring56.jpg": {
 		"ft": 16384,
-		"iS": 148516,
+		"iS": 147464,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring56.jpg",
@@ -30837,7 +30837,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring57-250x250.jpg": {
 		"ft": 16384,
-		"iS": 22147,
+		"iS": 21548,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring57-250x250.jpg",
@@ -30848,7 +30848,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring57.jpg": {
 		"ft": 16384,
-		"iS": 155334,
+		"iS": 154339,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring57.jpg",
@@ -30859,7 +30859,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring58-250x250.jpg": {
 		"ft": 16384,
-		"iS": 18130,
+		"iS": 17571,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring58-250x250.jpg",
@@ -30870,7 +30870,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring58.jpg": {
 		"ft": 16384,
-		"iS": 119402,
+		"iS": 118406,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring58.jpg",
@@ -30881,7 +30881,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring59-250x250.jpg": {
 		"ft": 16384,
-		"iS": 17724,
+		"iS": 17242,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring59-250x250.jpg",
@@ -30892,7 +30892,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring59.jpg": {
 		"ft": 16384,
-		"iS": 106621,
+		"iS": 105658,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring59.jpg",
@@ -30903,7 +30903,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring6-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14919,
+		"iS": 14422,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring6-250x250.jpg",
@@ -30914,7 +30914,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring6.jpg": {
 		"ft": 16384,
-		"iS": 97081,
+		"iS": 96133,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring6.jpg",
@@ -30925,7 +30925,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring60-250x250.jpg": {
 		"ft": 16384,
-		"iS": 16219,
+		"iS": 15760,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring60-250x250.jpg",
@@ -30936,7 +30936,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring60.jpg": {
 		"ft": 16384,
-		"iS": 103516,
+		"iS": 102540,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring60.jpg",
@@ -30947,7 +30947,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring61-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12904,
+		"iS": 12410,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring61-250x250.jpg",
@@ -30958,7 +30958,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring61.jpg": {
 		"ft": 16384,
-		"iS": 80564,
+		"iS": 79637,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring61.jpg",
@@ -30969,7 +30969,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring62-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13849,
+		"iS": 13363,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring62-250x250.jpg",
@@ -30980,7 +30980,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring62.jpg": {
 		"ft": 16384,
-		"iS": 87411,
+		"iS": 86477,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring62.jpg",
@@ -30991,7 +30991,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring63-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13787,
+		"iS": 13321,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring63-250x250.jpg",
@@ -31002,7 +31002,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring63.jpg": {
 		"ft": 16384,
-		"iS": 88281,
+		"iS": 87339,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring63.jpg",
@@ -31019,7 +31019,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring64-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring64.jpg": {
@@ -31030,12 +31030,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring64.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring65-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15349,
+		"iS": 14817,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring65-250x250.jpg",
@@ -31046,7 +31046,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring65.jpg": {
 		"ft": 16384,
-		"iS": 81292,
+		"iS": 80365,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring65.jpg",
@@ -31057,7 +31057,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring66-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13698,
+		"iS": 13243,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring66-250x250.jpg",
@@ -31074,12 +31074,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring66.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring67-250x250.jpg": {
 		"ft": 16384,
-		"iS": 11835,
+		"iS": 11395,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring67-250x250.jpg",
@@ -31096,7 +31096,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring67.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring68-250x250.jpg": {
@@ -31107,12 +31107,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring68-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring68.jpg": {
 		"ft": 16384,
-		"iS": 167795,
+		"iS": 166803,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring68.jpg",
@@ -31123,7 +31123,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring69-250x250.jpg": {
 		"ft": 16384,
-		"iS": 20307,
+		"iS": 19685,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring69-250x250.jpg",
@@ -31140,7 +31140,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring69.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring7-250x250.jpg": {
@@ -31151,12 +31151,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring7-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring7.jpg": {
 		"ft": 16384,
-		"iS": 122442,
+		"iS": 121482,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring7.jpg",
@@ -31167,7 +31167,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring70-250x250.jpg": {
 		"ft": 16384,
-		"iS": 18129,
+		"iS": 17680,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring70-250x250.jpg",
@@ -31184,12 +31184,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring70.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring71-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15095,
+		"iS": 14606,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring71-250x250.jpg",
@@ -31206,12 +31206,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring71.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring72-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14299,
+		"iS": 13886,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring72-250x250.jpg",
@@ -31228,12 +31228,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring72.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring73-250x250.jpg": {
 		"ft": 16384,
-		"iS": 10638,
+		"iS": 10197,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring73-250x250.jpg",
@@ -31244,7 +31244,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring73.jpg": {
 		"ft": 16384,
-		"iS": 71760,
+		"iS": 70817,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring73.jpg",
@@ -31255,7 +31255,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring74-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14735,
+		"iS": 14230,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring74-250x250.jpg",
@@ -31266,7 +31266,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring74.jpg": {
 		"ft": 16384,
-		"iS": 100779,
+		"iS": 99789,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring74.jpg",
@@ -31277,7 +31277,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring75-250x250.jpg": {
 		"ft": 16384,
-		"iS": 11501,
+		"iS": 11100,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring75-250x250.jpg",
@@ -31294,12 +31294,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring75.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring76-250x250.jpg": {
 		"ft": 16384,
-		"iS": 20806,
+		"iS": 20314,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring76-250x250.jpg",
@@ -31316,12 +31316,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring76.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring77-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15660,
+		"iS": 15154,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring77-250x250.jpg",
@@ -31338,12 +31338,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring77.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring78-250x250.jpg": {
 		"ft": 16384,
-		"iS": 18349,
+		"iS": 17757,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring78-250x250.jpg",
@@ -31360,12 +31360,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring78.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring79-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15556,
+		"iS": 15040,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring79-250x250.jpg",
@@ -31376,7 +31376,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring79.jpg": {
 		"ft": 16384,
-		"iS": 100137,
+		"iS": 99131,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring79.jpg",
@@ -31393,7 +31393,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring8-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring8.jpg": {
@@ -31404,7 +31404,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring8.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring80-250x250.jpg": {
@@ -31415,12 +31415,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring80-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring80.jpg": {
 		"ft": 16384,
-		"iS": 78553,
+		"iS": 77611,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring80.jpg",
@@ -31431,7 +31431,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring81-250x250.jpg": {
 		"ft": 16384,
-		"iS": 13563,
+		"iS": 13093,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring81-250x250.jpg",
@@ -31448,12 +31448,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring81.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring82-250x250.jpg": {
 		"ft": 16384,
-		"iS": 16393,
+		"iS": 15825,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring82-250x250.jpg",
@@ -31464,7 +31464,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring82.jpg": {
 		"ft": 16384,
-		"iS": 101963,
+		"iS": 101026,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring82.jpg",
@@ -31481,7 +31481,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring83-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring83.jpg": {
@@ -31492,12 +31492,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring83.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring84-250x250.jpg": {
 		"ft": 16384,
-		"iS": 12999,
+		"iS": 12573,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring84-250x250.jpg",
@@ -31508,7 +31508,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring84.jpg": {
 		"ft": 16384,
-		"iS": 92391,
+		"iS": 91470,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring84.jpg",
@@ -31525,7 +31525,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring85-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring85.jpg": {
@@ -31536,7 +31536,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring85.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring86-250x250.jpg": {
@@ -31547,7 +31547,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring86-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring86.jpg": {
@@ -31558,7 +31558,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring86.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring87-250x250.jpg": {
@@ -31569,7 +31569,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring87-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring87.jpg": {
@@ -31580,7 +31580,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring87.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring88-250x250.jpg": {
@@ -31591,7 +31591,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring88-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring88.jpg": {
@@ -31602,7 +31602,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring88.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring89-250x250.jpg": {
@@ -31613,7 +31613,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring89-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring89.jpg": {
@@ -31624,7 +31624,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring89.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring9-250x250.jpg": {
@@ -31635,7 +31635,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring9-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring9.jpg": {
@@ -31646,7 +31646,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring9.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring90-250x250.jpg": {
@@ -31657,7 +31657,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring90-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring90.jpg": {
@@ -31668,7 +31668,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring90.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring91-250x250.jpg": {
@@ -31679,7 +31679,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring91-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring91.jpg": {
@@ -31690,7 +31690,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring91.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring92-250x250.jpg": {
@@ -31701,7 +31701,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring92-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring92.jpg": {
@@ -31712,7 +31712,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring92.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring93-250x250.jpg": {
@@ -31723,7 +31723,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring93-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring93.jpg": {
@@ -31734,7 +31734,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring93.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring94-250x250.jpg": {
@@ -31745,7 +31745,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring94-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring94.jpg": {
@@ -31756,7 +31756,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring94.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring95-250x250.jpg": {
@@ -31767,7 +31767,7 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring95-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring95.jpg": {
@@ -31778,12 +31778,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring95.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring96-250x250.jpg": {
 		"ft": 16384,
-		"iS": 15664,
+		"iS": 15114,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring96-250x250.jpg",
@@ -31800,12 +31800,12 @@
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring96.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring97-250x250.jpg": {
 		"ft": 16384,
-		"iS": 17088,
+		"iS": 16559,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring97-250x250.jpg",
@@ -31816,7 +31816,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring97.jpg": {
 		"ft": 16384,
-		"iS": 122401,
+		"iS": 121445,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring97.jpg",
@@ -31827,7 +31827,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring98-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14003,
+		"iS": 13517,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring98-250x250.jpg",
@@ -31838,7 +31838,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring98.jpg": {
 		"ft": 16384,
-		"iS": 99762,
+		"iS": 98822,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring98.jpg",
@@ -31849,7 +31849,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring99-250x250.jpg": {
 		"ft": 16384,
-		"iS": 17253,
+		"iS": 16754,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring99-250x250.jpg",
@@ -31860,7 +31860,7 @@
 		},
 	"/wp-content/uploads/2016/06/USTour2016_Spring99.jpg": {
 		"ft": 16384,
-		"iS": 124923,
+		"iS": 123897,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/06/USTour2016_Spring99.jpg",
@@ -31877,7 +31877,7 @@
 		"oAP": "/wp-content/uploads/2016/08/BushblokBlog2016_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/08/BushblokBlog2016_FeaturedImage.jpg": {
@@ -31899,7 +31899,7 @@
 		"oAP": "/wp-content/uploads/2016/08/BushblokBlog_2016_3-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/08/BushblokBlog_2016_3.jpg": {
@@ -31910,7 +31910,7 @@
 		"oAP": "/wp-content/uploads/2016/08/BushblokBlog_2016_3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/08/BushblokBlog_2016_4-250x250.jpg": {
@@ -31921,7 +31921,7 @@
 		"oAP": "/wp-content/uploads/2016/08/BushblokBlog_2016_4-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/08/BushblokBlog_2016_4.jpg": {
@@ -31932,7 +31932,7 @@
 		"oAP": "/wp-content/uploads/2016/08/BushblokBlog_2016_4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/08/BushblokBlog_2016_5-250x250.jpg": {
@@ -31943,7 +31943,7 @@
 		"oAP": "/wp-content/uploads/2016/08/BushblokBlog_2016_5-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/08/BushblokBlog_2016_5.jpg": {
@@ -31954,7 +31954,7 @@
 		"oAP": "/wp-content/uploads/2016/08/BushblokBlog_2016_5.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/08/BushblokBlog_2016_6-250x250.jpg": {
@@ -31965,7 +31965,7 @@
 		"oAP": "/wp-content/uploads/2016/08/BushblokBlog_2016_6-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/08/BushblokBlog_2016_6.jpg": {
@@ -31974,6 +31974,50 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2016/08/BushblokBlog_2016_6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/01/DJI_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 10221,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/01/DJI_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/01/DJI_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 96297,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/01/DJI_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/03/WorkingGuest_ChrisHeron_FeaturedImage-250x250.jpg": {
+		"ft": 16384,
+		"iS": 11488,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/03/WorkingGuest_ChrisHeron_FeaturedImage-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2018/03/WorkingGuest_ChrisHeron_FeaturedImage.jpg": {
+		"ft": 16384,
+		"iS": 68104,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2018/03/WorkingGuest_ChrisHeron_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

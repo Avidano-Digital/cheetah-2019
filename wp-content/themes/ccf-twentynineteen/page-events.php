@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: CCF Events
+Template Name: Events
 */
 
 get_header();
