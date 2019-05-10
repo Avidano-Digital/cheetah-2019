@@ -44,18 +44,75 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
             <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
 
             <div class="details">
+
+              <?php 
+
+              // $start_date = get_field('start_date_time');
+              // $end_date = get_field('end_date_time');
+
+              // get raw date
               
-              <p class="f-sans-serif mb-1">
+              $start_date = get_field('start_date', false, false);
+              $end_date = get_field('end_date', false, false);
+
+              // make date object
+              $start_date = new DateTime($start_date);
+              
+              if ($end_date) {
+                $end_date = new DateTime($end_date);
+              } else {
+                $end_date = null;
+                echo $end_date;
+              }
+
+              $start_time = get_field('start_time');
+              $end_time = get_field('end_time');
+
+              ?>
+
+              <p class="f-sans-serif mb-0">
+
                   <strong>
-                      <?php the_field('start_date_time'); ?>
+                  
+                    <?php 
+                    
+                    if (($start_date) && ($end_date == null)) : 
+                    
+                      echo $start_date->format('M j, Y'); 
+
+                    else : 
+
+                      echo $start_date->format('M j') . ' - ' . $end_date->format('j, Y'); 
+  
+                    endif;
+                    
+                    ?>
+
                   </strong>
+
+              </p>
+
+              <p class="f-sans-serif fs-md">
+
+                <?php 
+                
+                  echo $start_time;
+
+                  if($end_time) : 
+
+                  echo ' - ' . $end_time; 
+                  
+                  endif;
+                  
+                ?> 
+              
               </p>
 
               <p class="f-sans-serif fs-md mb-0">
                 <strong>Location:</strong> <?php the_field('location'); ?>
               </p>
               
-              <p class="f-sans-serif fs-md mb-0">
+              <p class="f-sans-serif fs-md">
                 <strong>Venu:</strong> <?php the_field('venue'); ?>
               </p>
             
