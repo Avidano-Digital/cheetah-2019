@@ -251,6 +251,27 @@
         );
 
         register_taxonomy(
+            'scientific-paper-author',
+            'resourcelibrary',
+            array(
+              'labels' => array(
+              'name' => __( 'SP Authors' ),
+              'singular_name' => __( 'Scientific Paper Author' ),
+              'add_new_item' => 'Add New Scientific Paper Author',
+              'new_item_name' => 'New Scientific Paper Author Name',
+              'edit_item' => 'Edit Scientific Paper Author',
+              'view_item' => 'View Scientific Paper Author',
+              'update_item' => 'Update Scientific Paper Author'
+            ),
+            'has_archive' => false,
+            'hierarchical' => false,
+            'show_in_nav_menus' => true,
+            'public' => true,
+            'meta_box_cb' => false // hides meta box, since we're using ACF
+          )
+        );
+
+        register_taxonomy(
             'cheetah-category',
             'ccfcheetahs',
             array(

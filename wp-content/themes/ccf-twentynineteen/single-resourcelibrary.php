@@ -31,9 +31,14 @@ $resourceCategory = $resourceCategories[0];
     <?php if (have_posts()) : while ( have_posts() ) : the_post();
 
         if (get_field('scientific_paper_authors')) :
-            $author_name = implode(', ', get_field('scientific_paper_authors'));
+            $authors = get_field('scientific_paper_authors');
+            $author_names = array();
+            foreach ($authors as $author) :
+              array_push($author_names, $author->name);
+            endforeach;
+            $author_names = implode(', ', $author_names);
         else :
-            $author_name = get_the_author_meta('display_name');          
+            $author_names = get_the_author_meta('display_name');          
         endif;
             
     ?>
@@ -58,7 +63,7 @@ $resourceCategory = $resourceCategories[0];
                 </li>
             
                 <li class="fs-md">
-                    <strong class="d-block">by&nbsp;<?php echo $author_name; ?></strong>
+                    <strong class="d-block">by&nbsp;<?php echo $author_names; ?></strong>
                 </li>
                 
             </ul>
