@@ -41,6 +41,28 @@
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_5cd5b3f4ee3f2",
+            "label": "Cool Authors",
+            "name": "cool_authors",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "resource-category",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
         }
     ],
     "location": [
@@ -60,5 +82,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1557310467
+    "modified": 1557509164
 }
