@@ -80,7 +80,29 @@
     // Custom Post Types
     ////////////////////////////////////////
 
-    function create_post_types() {
+    // Shared Post Types
+
+    function create_shared_post_types() {
+        register_post_type(
+            'Events',
+            array(
+                'labels' => array(
+                'name' => __('Events'),
+                'singular_name' => __('Event')
+            ),
+            'supports' => array( 'title', 'thumbnail' ),
+            'public' => true,
+            'show_in_rest' => true,
+            'menu_icon' => 'dashicons-calendar'
+            )
+        );
+    }
+    
+    add_action('init', 'create_shared_post_types');
+
+    // Parent Post Types
+
+    function create_parent_post_types() {
         
         register_post_type( 'Videos',
             array(
@@ -119,19 +141,6 @@
             'public' => true,
             'rewrite' => array( 'slug' => 'partnerships'),
             'menu_icon' => 'dashicons-groups'
-            )
-        );
-
-        register_post_type( 'Events',
-            array(
-                'labels' => array(
-                'name' => __( 'Events' ),
-                'singular_name' => __( 'Event' )
-            ),
-            'supports' => array( 'title', 'thumbnail' ),
-            'public' => true,
-            'show_in_rest' => true,
-            'menu_icon' => 'dashicons-calendar'
             )
         );
 
@@ -177,7 +186,18 @@
  
     }
 
-    add_action( 'init', 'create_post_types' );
+    add_action( 'init', 'create_parent_post_types' );
+
+
+
+
+
+
+
+
+
+
+
 
     function customize_post_object() {
 
