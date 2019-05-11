@@ -304,7 +304,9 @@
               'update_item' => 'Update News Author'
             ),
             'has_archive' => true,
-            'hierarchical' => true,
+            'hierarchical' => false,
+            'parent_item'  => null,
+            'parent_item_colon' => null,
             'show_in_nav_menus' => true,
             'public' => true,
             'meta_box_cb' => false // hides meta box, since we're using ACF
