@@ -27757,14 +27757,6 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/lib/acf-custom-wysiwyg.php",
 		"oF": 0
 		},
-	"/wp-content/themes/ccf-twentynineteen/lib/acf-theme-options.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/lib/acf-theme-options.php",
-		"oF": 0
-		},
 	"/wp-content/themes/ccf-twentynineteen/lib/enqueue-assets.php": {
 		"cB": 0,
 		"ft": 8192,
