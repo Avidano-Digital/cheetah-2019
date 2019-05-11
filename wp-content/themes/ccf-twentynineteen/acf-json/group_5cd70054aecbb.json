@@ -1,9 +1,9 @@
 {
-    "key": "group_5c97742fd4dc2",
+    "key": "group_5cd70054aecbb",
     "title": "News Author Avatar",
     "fields": [
         {
-            "key": "field_5c978e7f44777",
+            "key": "field_5cd70066b52f0",
             "label": "Avatar",
             "name": "avatar",
             "type": "image",
@@ -36,28 +36,13 @@
             }
         ]
     ],
-    "menu_order": 200,
+    "menu_order": 0,
     "position": "normal",
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "permalink",
-        "the_content",
-        "excerpt",
-        "discussion",
-        "comments",
-        "revisions",
-        "slug",
-        "author",
-        "format",
-        "page_attributes",
-        "featured_image",
-        "categories",
-        "tags",
-        "send-trackbacks"
-    ],
+    "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1557571636
+    "modified": 1557595667
 }

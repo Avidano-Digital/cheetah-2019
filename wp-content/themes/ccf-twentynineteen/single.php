@@ -55,7 +55,7 @@ get_header(); ?>
                       $term = get_field('news_author');
                       $avatar = get_field('avatar', $term->taxonomy . '_' . $term->term_id);
                       $avatar_size = '96px';
-                      $avatar_placeholder = 'http://cheetah-2019/wp-content/uploads/2019/01/avatar-default.jpg';	
+                      $avatar_placeholder = '/wp-content/uploads/2019/01/avatar-default.jpg';	
                   ?>
 
                   <div class="rounded-circle" style="overflow:hidden;">

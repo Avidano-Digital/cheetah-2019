@@ -297,7 +297,7 @@
               'labels' => array(
               'name' => __( 'News Authors' ),
               'singular_name' => __( 'News Authors' ),
-              'add_new_item' => 'Add New News Author',
+              'add_new_item' => 'Add News Author',
               'new_item_name' => 'New News Author',
               'edit_item' => 'Edit News Author',
               'view_item' => 'View News Author',

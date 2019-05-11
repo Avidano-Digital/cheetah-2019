@@ -1,6 +1,6 @@
 {
     "key": "group_5cd5d3f182766",
-    "title": "New News Author",
+    "title": "News Author",
     "fields": [
         {
             "key": "field_5cd5d3f9cf88b",
@@ -42,5 +42,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1557573289
+    "modified": 1557593943
 }
