@@ -424,7 +424,7 @@
 
         $authors = get_terms(array(
             'taxonomy' => 'news-author',
-            'hide_empty' => true,
+            'hide_empty' => false,
         ));
 
         echo '<ul class="extensible-list fs-md"><li><a class="text-body" href="/ccf-blog" title="All Authors">All Authors</a></li>';
