@@ -134,9 +134,7 @@ get_header(); ?>
           $press_releases = true;
 
         endif;
-    
-    else : $page_heading = 'All Topics';
-    
+        
     endif;
     
     ?>
