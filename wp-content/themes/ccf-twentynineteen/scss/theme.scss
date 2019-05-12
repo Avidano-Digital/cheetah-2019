@@ -645,6 +645,7 @@ figcaption a {
 }
 
 figure {
+
     &.left,
     &.right {
         display: block;
@@ -664,7 +665,7 @@ figure {
         &.left,
         &.right {
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: $spacer-2;
             max-width: 50%;
         }
 
