@@ -1,6 +1,6 @@
 {
     "key": "group_5cd5d3f182766",
-    "title": "News Author",
+    "title": "News Author Field",
     "fields": [
         {
             "key": "field_5cd5d3f9cf88b",
@@ -39,8 +39,17 @@
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "format",
+        "send-trackbacks"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1557593943
+    "modified": 1557648271
 }
