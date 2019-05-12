@@ -569,43 +569,22 @@ $images = get_sub_field('images');
 
 <?php endif; ?>
 
-<?php elseif( get_row_layout() == 'infographic_block' ):
+<?php elseif( get_row_layout() == 'pdf_embed_block' ):
 
-$info = get_sub_field( 'content');
-$post_object = $info;
+    $embed_pdf = get_sub_field('embed_pdf');
 
-?>
+    if ($embed_pdf): ?>
 
-<?php if( $post_object ): 
+    <div class="medium my-5">
 
-$post = $post_object;
-setup_postdata( $post );
+        <?php echo do_shortcode('[pdf-embedder url="' . $embed_pdf['url'] .'"]'); ?>
 
-// custom field vars here
+        <a class="btn btn-block btn-primary btn-lg my-3" href="<?php echo $embed_pdf['url']; ?>" title="Download Fact Sheet" target="_blank" download>Download Fact Sheet</a>
 
-// $video_url = get_field('video_url');
-// $video_id = substr( strrchr( $video_url, '/' ), 1 );
-
-?>
-
-<div class="offset-gutter-x my-5">
-
-    <div class="bg-danger">
-        <div class="narrow">
-            <h3><a href="<?php the_permalink(); ?>">
-                    <?php the_title(); ?></a></h3>
-            <span>Post Object Custom Field: </span>
-        </div>
     </div>
+    <!-- .medium -->
 
-    <?php the_content(); ?>
-
-</div>
-<!-- .offset-gutter-x -->
-
-<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-
-<?php endif; ?>
+    <?php endif; ?>
 
 <?php endif; /* text_block | video_block | banner_block | figure_block | two_figure_block | gallery_carousel_block  | thumnail_links_block | gallery_thumbnail_block */ ?>
 

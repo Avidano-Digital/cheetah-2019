@@ -142,7 +142,7 @@ $resourceCategory = $resourceCategories[0];
 
         if( $pdf_fact_sheet ): ?>
 
-        <div class="medium my-6">
+        <div class="medium my-5">
 
             <?php echo do_shortcode('[pdf-embedder url="' . $pdf_fact_sheet['url'] .'"]'); ?>
 

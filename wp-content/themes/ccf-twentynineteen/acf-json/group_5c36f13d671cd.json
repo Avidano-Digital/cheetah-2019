@@ -1,6 +1,6 @@
 {
     "key": "group_5c36f13d671cd",
-    "title": "Article Content",
+    "title": "Article Flexible Content Field",
     "fields": [
         {
             "key": "field_5c36f14f739be",
@@ -40,6 +40,89 @@
                             "toolbar": "full",
                             "media_upload": 1,
                             "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c36ff3c8ae86": {
+                    "key": "layout_5c36ff3c8ae86",
+                    "name": "figure_block",
+                    "label": "Figure Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c36ff4b8ae87",
+                            "label": "Figure",
+                            "name": "figure",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c36fde166e88"
+                            ],
+                            "display": "group",
+                            "layout": "row",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c37020f21ff7": {
+                    "key": "layout_5c37020f21ff7",
+                    "name": "two_figure_block",
+                    "label": "Two Figure Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c37021f21ff9",
+                            "label": "Figure B",
+                            "name": "figure_b",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c36fde166e88"
+                            ],
+                            "display": "group",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        },
+                        {
+                            "key": "field_5c37020f21ff8",
+                            "label": "Figure A",
+                            "name": "figure_a",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c36fde166e88"
+                            ],
+                            "display": "group",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
                         }
                     ],
                     "min": "",
@@ -312,89 +395,6 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_5c36ff3c8ae86": {
-                    "key": "layout_5c36ff3c8ae86",
-                    "name": "figure_block",
-                    "label": "Figure Block",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c36ff4b8ae87",
-                            "label": "Figure",
-                            "name": "figure",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5c36fde166e88"
-                            ],
-                            "display": "group",
-                            "layout": "row",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_5c37020f21ff7": {
-                    "key": "layout_5c37020f21ff7",
-                    "name": "two_figure_block",
-                    "label": "Two Figure Block",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c37021f21ff9",
-                            "label": "Figure B",
-                            "name": "figure_b",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5c36fde166e88"
-                            ],
-                            "display": "group",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 1
-                        },
-                        {
-                            "key": "field_5c37020f21ff8",
-                            "label": "Figure A",
-                            "name": "figure_a",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5c36fde166e88"
-                            ],
-                            "display": "group",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 1
                         }
                     ],
                     "min": "",
@@ -715,6 +715,35 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5cd8282203905": {
+                    "key": "layout_5cd8282203905",
+                    "name": "pdf_embed_block",
+                    "label": "PDF Embed Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cd8283a03906",
+                            "label": "Embed PDF",
+                            "name": "embed_pdf",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "New Article Item",
@@ -776,5 +805,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1557649067
+    "modified": 1557670022
 }
