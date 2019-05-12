@@ -147,19 +147,6 @@
         );
 
         register_post_type(
-            'CCF Authors',
-            array(
-                'labels' => array(
-                'name' => __('CCF Authors'),
-                'singular_name' => __('Author')
-            ),
-
-            'public' => true,
-            'menu_icon' => 'dashicons-admin-users'
-            )
-        );
-
-        register_post_type(
             'CCF Cheetahs',
             array(
                 'labels' => array(
