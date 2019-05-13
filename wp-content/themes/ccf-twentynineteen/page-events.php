@@ -76,7 +76,7 @@ $parent_title = get_the_title($post->post_parent);
                     $args = array( 
                         'post_type' => 'events', 
                         'order' => 'ASC',
-                        'meta_key' => 'start_date_time',
+                        'meta_key' => 'start_date',
   	                    'meta_type' => 'DATETIME',
                         'orderby' => 'meta_value',
                     );
@@ -90,7 +90,7 @@ $parent_title = get_the_title($post->post_parent);
 
                         $today = DateTime::createFromFormat("U", time());
                         
-                        $date = new DateTime(get_field('start_date_time'));
+                        $date = new DateTime(get_field('start_date'));
                         
                         if ($date > $today) :
                             $year = $date->format("Y");
@@ -116,7 +116,7 @@ $parent_title = get_the_title($post->post_parent);
 
                             <?php while ( $loop->have_posts() ) : $loop->the_post();
 
-                            $date = new DateTime(get_field('start_date_time'));
+                            $date = new DateTime(get_field('start_date'));
                             $year = $date->format("Y");
                             $month = $date->format("F");
                             
@@ -141,7 +141,7 @@ $parent_title = get_the_title($post->post_parent);
                                     <div class="card-body">
                                         <h2 class="h5"><?php the_title(); ?></h2>
                                         <p class="f-sans-serif fs-md bg-danger">
-                                            <strong class="d-block"><?php the_field('start_date_time') ?></strong>
+                                            <strong class="d-block"><?php the_field('start_date') ?></strong>
                                             <?php if ($time) : ?>
                                             <span class="text-muted"><?php echo $time; ?></span>
                                             <?php endif; ?>
