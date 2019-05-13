@@ -48,7 +48,7 @@ get_header(); ?>
                 </div>
                 <!-- .col -->
 
-                <?php if ($current_category_name !== 'Cheetah Strides') : ?>
+                <?php if ( $current_category_name !== 'Cheetah Strides' ) : ?>
 
                     <div class="col-sm">
                         <div class="btn-toggle">
@@ -57,29 +57,6 @@ get_header(); ?>
                                 <span class="Authors">Authors</span>
                             </button>
                         </div>
-                    </div>
-                    <!-- .col -->
-
-                <?php endif; ?>
-
-            </div>
-            <!-- .row -->
-
-            <div class="row matrix-gutter d-none">
-
-                <div class="col-md">
-
-                    <?php showPrimaryFilters(); ?>
-
-                </div>
-                <!-- .col -->
-
-                <?php if ($current_category_name !== 'Cheetah Strides') : ?>
-
-                    <div class="col-md">
-
-                        <?php showAuthorFilters(); ?>
-                        
                     </div>
                     <!-- .col -->
 
@@ -127,7 +104,7 @@ get_header(); ?>
     
     elseif (get_query_var('category_name') && get_query_var('category_name') != 'ccf-blog'):
     
-    $page_heading = get_category_by_slug(get_query_var('category_name'))->cat_name;
+        $page_heading = get_category_by_slug(get_query_var('category_name'))->cat_name;
 
         if ($page_heading == 'Press Releases') :
 
@@ -143,7 +120,7 @@ get_header(); ?>
 
         <?php if ($page_heading) : ?>
 
-        <h1 class="text-center mb-2"><?php echo $page_heading; ?></h1>
+        <h1 class="text-center mb-3 font-weight-light "><?php echo $page_heading; ?></h1>
         
         <?php endif; ?>
 
@@ -166,8 +143,11 @@ get_header(); ?>
                             ?>
                                             
                             <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
+
                             <?php else : ?>
+                            
                             <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                            
                             <?php endif; /* featured_image */ ?>
 
                         </div>

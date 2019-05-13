@@ -579,7 +579,7 @@ $images = get_sub_field('images');
 
         <?php echo do_shortcode('[pdf-embedder url="' . $embed_pdf['url'] .'"]'); ?>
 
-        <a class="btn btn-block btn-primary btn-lg my-3" href="<?php echo $embed_pdf['url']; ?>" title="Download Fact Sheet" target="_blank" download>Download Fact Sheet</a>
+        <a class="btn btn-block btn-primary btn-lg my-3" href="<?php echo $embed_pdf['url']; ?>" title="Download PDF" target="_blank" download>Download PDF</a>
 
     </div>
     <!-- .medium -->

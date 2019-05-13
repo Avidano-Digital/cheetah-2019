@@ -93,17 +93,21 @@ get_header(); ?>
             $featured_image_caption = get_the_post_thumbnail_caption( get_the_ID() );
         ?>
 
-        <div class="medium mb-5">
+          <?php if ( get_field('hide_feature_on_post') === false ): ?>
+            
+            <div class="medium mb-5">
 
-          <figure class="figure my-0">
-            <img class="figure-img" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>" />
-            <?php if( $featured_image_caption ): ?>
-            <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
-            <?php endif; ?>
-          </figure>
+              <figure class="figure my-0">
+                <img class="figure-img" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>" />
+                <?php if( $featured_image_caption ): ?>
+                <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
+                <?php endif; ?>
+              </figure>
 
-        </div>
-        <!-- .medium -->
+            </div>
+            <!-- .medium -->
+
+          <?php endif; ?>
 
         <?php else: ?>
 

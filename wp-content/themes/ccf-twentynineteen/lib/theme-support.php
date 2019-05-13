@@ -346,7 +346,7 @@
 
     function showPrimaryFilters() {
 
-        $current_category = get_category(get_query_var('cat'));
+        $current_category = get_category( get_query_var('cat') );
         $current_category_name = $current_category->name;
         $topics = get_categories();
 
@@ -362,7 +362,7 @@
                 $name = $topic->cat_name;
             endif;
 
-            echo '<li><a class="text-body" href="/'.$topic->slug.'" title="'.$topic->cat_name.'">'.$name.'</a></li>';
+            echo '<li><a class="text-body" href="/' . $topic->slug . '" title="' . $topic->cat_name . '">' . $name . '</a></li>';
 
         endforeach;
 
