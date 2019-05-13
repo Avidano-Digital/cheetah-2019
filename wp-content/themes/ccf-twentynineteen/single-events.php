@@ -47,22 +47,19 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
 
               <?php 
 
-              // $start_date = get_field('start_date_time');
-              // $end_date = get_field('end_date_time');
-
               // get raw date
               
               $start_date = get_field('start_date', false, false);
               $end_date = get_field('end_date', false, false);
 
               // make date object
+
               $start_date = new DateTime($start_date);
               
               if ($end_date) {
                 $end_date = new DateTime($end_date);
               } else {
                 $end_date = null;
-                echo $end_date;
               }
 
               $start_time = get_field('start_time');
@@ -82,7 +79,7 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
 
                     else : 
 
-                      echo $start_date->format('M j') . ' - ' . $end_date->format('j, Y'); 
+                      echo $start_date->format('M j') . ' - ' . ($start_date->format('M') != $end_date->format('M') ? $end_date->format('M j, Y') : $end_date->format('j, Y')); 
   
                     endif;
                     
