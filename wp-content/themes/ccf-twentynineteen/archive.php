@@ -38,7 +38,7 @@ get_header(); ?>
                     $current_category_name = $current_category->name;
                 ?>
 
-                <div class="col-sm">
+                <div class="col-sm-6 <?php if ( $current_category_name !== 'CCF Blog' ) : ?>offset-sm-3<?php endif; ?>">
                     <div class="btn-toggle">
                         <button class="btn btn-block btn-primary" data-toggle="collapse" data-target="#all-topics"
                             aria-expanded="false" aria-controls="all-topics">
@@ -48,9 +48,9 @@ get_header(); ?>
                 </div>
                 <!-- .col -->
 
-                <?php if ( $current_category_name !== 'Cheetah Strides' ) : ?>
+                <?php if ( $current_category_name === 'CCF Blog' ) : ?>
 
-                    <div class="col-sm">
+                    <div class="col-sm-6">
                         <div class="btn-toggle">
                             <button class="btn btn-block btn-primary" data-toggle="collapse" data-target="#all-authors"
                                 aria-expanded="false" aria-controls="all-authors">
@@ -130,34 +130,84 @@ get_header(); ?>
 
                 <?php while ( have_posts() ) : the_post(); ?>
 
-                <div class="col-lg-4 mb-3 <?php echo ($press_releases ? 'border border-danger' : '')?>">
-                    
-                    <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                    
-                        <div>
+                    <?php if ( $press_releases ): ?>
 
-                            <span><?php echo get_the_date(); ?></span>
+                    <div class="col-lg-4 mb-3">
 
-                            <?php if( has_post_thumbnail() ):
-                                $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
-                            ?>
-                                            
-                            <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
-
-                            <?php else : ?>
-                            
-                            <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
-                            
-                            <?php endif; /* featured_image */ ?>
-
+                        <div class="card border h-100">
+                            <div class="card-body">
+                                <p class="fs-md text-muted"><?php echo get_the_date(); ?></h5>
+                                <p class="card-text h5"><?php the_title(); ?></p>
+                            </div>
+                            <div class="card-footer pt-0">
+                                <a class="btn btn-primary stretched-link" href="<?php the_permalink(); ?>">Read More</a>
+                            </div>
                         </div>
+                        
+                        <a class="featured-article d-none" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                        
+                            <div>
 
-                        <p class="h5"><?php the_title(); ?></p>
+                                <span><?php echo get_the_date(); ?></span>
 
-                    </a>
+                                <?php if( has_post_thumbnail() ):
+                                    $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
+                                ?>
+                                                
+                                <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
 
-                </div>
-                <!-- .col -->
+                                <?php else : ?>
+                                
+                                <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                                
+                                <?php endif; /* featured_image */ ?>
+
+                            </div>
+
+                            <p class="h5"><?php the_title(); ?></p>
+
+                        </a>
+
+                    </div>
+                    <!-- .col -->
+
+
+
+
+                    <?php else : ?>
+                
+                
+                
+                    <div class="col-lg-4 mb-3 <?php echo ($press_releases ? 'border border-danger' : '')?>">
+                        
+                        <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                        
+                            <div>
+
+                                <span><?php echo get_the_date(); ?></span>
+
+                                <?php if( has_post_thumbnail() ):
+                                    $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
+                                ?>
+                                                
+                                <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
+
+                                <?php else : ?>
+                                
+                                <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                                
+                                <?php endif; /* featured_image */ ?>
+
+                            </div>
+
+                            <p class="h5"><?php the_title(); ?></p>
+
+                        </a>
+
+                    </div>
+                    <!-- .col -->
+
+                <?php endif; ?>
 
                 <?php endwhile; /* have_posts */ ?>
 
