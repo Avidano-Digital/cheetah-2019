@@ -456,6 +456,13 @@ $leaflet-button-color: white;
     @include apply-background-image("african-hr", ".svg", false );
 }
 
+hr.cheetahs{
+    border-color: red;
+    width: $narrow-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 ////////////////////////////////////////
 // Kids
 ////////////////////////////////////////

@@ -744,6 +744,43 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5cd98023f0a05": {
+                    "key": "layout_5cd98023f0a05",
+                    "name": "graphic_separator_block",
+                    "label": "Graphic Separator Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cd9803ff0a06",
+                            "label": "Style",
+                            "name": "style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Cheetahs": "Cheetahs",
+                                "Pattern": "Pattern"
+                            },
+                            "default_value": [
+                                "Cheetahs"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "New Article Item",
@@ -805,5 +842,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1557670022
+    "modified": 1557758261
 }

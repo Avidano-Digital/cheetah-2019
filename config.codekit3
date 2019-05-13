@@ -25357,14 +25357,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c94c2dc82fb5.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/acf-json/group_5c94c2dc82fb5-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"/wp-content/themes/ccf-twentynineteen/acf-json/group_5c94d995f2973.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -39393,6 +39385,54 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/05/2018FactSheets_BTDC_web.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/2018FactSheets_BTDC_web.pdf",
+		"oF": 0
+		},
+	"/wp-content/uploads/2019/05/2018FactSheets_CCFFacilities_web.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/2018FactSheets_CCFFacilities_web.pdf",
+		"oF": 0
+		},
+	"/wp-content/uploads/2019/05/2018FactSheets_Cheetahs_web.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/2018FactSheets_Cheetahs_web.pdf",
+		"oF": 0
+		},
+	"/wp-content/uploads/2019/05/2018FactSheets_Education_web.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/2018FactSheets_Education_web.pdf",
+		"oF": 0
+		},
+	"/wp-content/uploads/2019/05/2018FactSheets_LaurieMarker_web.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/2018FactSheets_LaurieMarker_web.pdf",
+		"oF": 0
+		},
+	"/wp-content/uploads/2019/05/2018FactSheets_Research_web.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/2018FactSheets_Research_web.pdf",
+		"oF": 0
+		},
 	"/wp-content/uploads/2019/05/AfricanWildDog_1-250x250.jpg": {
 		"ft": 16384,
 		"iS": 16199,
@@ -39762,6 +39802,50 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/CameraTrap_FeaturedImage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/ccf-fund-cheetah-strides-no-15-250x250.jpg": {
+		"ft": 16384,
+		"iS": 17223,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/ccf-fund-cheetah-strides-no-15-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/ccf-fund-cheetah-strides-no-15.jpg": {
+		"ft": 16384,
+		"iS": 143447,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/ccf-fund-cheetah-strides-no-15.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/ccf-fund-cheetah-strides-no-17-250x250.jpg": {
+		"ft": 16384,
+		"iS": 15036,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/ccf-fund-cheetah-strides-no-17-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/ccf-fund-cheetah-strides-no-17.jpg": {
+		"ft": 16384,
+		"iS": 100614,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/ccf-fund-cheetah-strides-no-17.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

@@ -6,7 +6,7 @@ $wysiwyg = get_sub_field('wysiwyg');
 
 ?>
 
-<div class="text-block narrow mb-5">
+<div class="text-block narrow mb-4">
     <?php echo $wysiwyg; ?>
 </div>
 
@@ -585,6 +585,20 @@ $images = get_sub_field('images');
     <!-- .medium -->
 
     <?php endif; ?>
+
+<?php elseif( get_row_layout() == 'graphic_separator_block' ):
+
+
+    $style = get_sub_field('style');
+
+
+    // check
+    if ($style === 'Cheetahs') : ?>
+
+    <hr class="cheetahs my-4">
+
+    <?php endif; ?>
+
 
 <?php endif; /* text_block | video_block | banner_block | figure_block | two_figure_block | gallery_carousel_block  | thumnail_links_block | gallery_thumbnail_block */ ?>
 
