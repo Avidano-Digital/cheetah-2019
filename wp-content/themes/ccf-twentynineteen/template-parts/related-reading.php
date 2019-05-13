@@ -2,13 +2,28 @@
 
 global $post;
 
-$relatedTag = $post->post_name;
+if (is_single()) :
 
-$args = array( 
-    'posts_per_page' => 3,
-    'post_type' => 'Post',
-    'tag' => $relatedTag
-);
+    $categories = wp_get_post_categories($post->ID);
+
+    $args = array( 
+        'posts_per_page' => 3,
+        'post_type' => 'Post',
+        'category__in' => $categories,
+        'post__not_in' => array($post->ID)
+    );
+
+else :
+
+  $relatedTag = $post->post_name;
+
+  $args = array( 
+      'posts_per_page' => 3,
+      'post_type' => 'Post',
+      'tag' => $relatedTag
+  );
+
+endif;
 
 $relatedPosts = new WP_Query( $args );
 

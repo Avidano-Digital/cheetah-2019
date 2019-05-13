@@ -128,6 +128,7 @@ get_header(); ?>
         <?php get_template_part('template-parts/flexible-content-article'); ?>
 
         <?php get_template_part('template-parts/article-footer'); ?>
+        <?php get_template_part('template-parts/related-reading'); ?>
 
     </article>
     <!-- #primary-content -->
