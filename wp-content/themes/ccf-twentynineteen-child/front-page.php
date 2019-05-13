@@ -164,43 +164,63 @@
 
         <div class="row matrix-border">
 
-          <div class="col-md-6 d-md-flex mb-3 mb-md-0 col-xl-4 offset-xl-2">
-            <div class="card bg-light">
-              <div class="card-header bg-info text-white text-center font-weight-bold py-2">
-                September 29th, 2018
-              </div>
-              <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/images/events/02.jpg" alt="Placeholder">
-              <div class="card-body">
-                <h4 class="card-title mb-2">Discover Namibia</h4>
-                <p class="card-text fs-md">Join us for wine & cheese while taking a virtual tour of Namibia with professional
-                  photographer and travel consultant Vanessa Dewson.</p>
-              </div>
-              <div class="card-footer pt-0">
-                <a class="btn btn-primary btn-block" href="#">Event Details</a>
-              </div>
-            </div>
-          </div>
-          <!-- .col -->
+            <?php
 
-          <div class="col-md-6 d-md-flex col-xl-4">
-            <div class="card bg-light">
-              <div class="card-header bg-info text-white text-center font-weight-bold py-2">
-                October 26th, 2018
-              </div>
-              <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/images/events/01.jpg" alt="Placeholder">
-              <div class="card-body">
-                <h4 class="card-title mb-2">Dr. Laurie Marker Returns to Ottawa, Canada</h4>
-                <p class="card-text fs-md">We are pleased to announce that Dr. Laurie Marker, founder and executive director of
-                  Cheetah Conservation Fund (CCF),
-                  will be coming back to Canada this fall.</p>
-              </div>
-              <div class="card-footer pt-0">
-                <a class="btn btn-primary btn-block" href="#">Event Details</a>
-              </div>
-            </div>
-          </div>
-          <!-- .col -->
+            $args = array( 
+                'post_type' => 'events', 
+                'posts_per_page' => '3',
+                'order' => 'ASC',
+                'meta_key' => 'start_date',
+                'meta_type' => 'DATETIME',
+                'orderby' => 'meta_value',
+            );
+            
+            $loop = new WP_Query( $args );
 
+                while ( $loop->have_posts() ) : $loop->the_post();
+
+                    $date = new DateTime(get_field('start_date'));
+                    $today = DateTime::createFromFormat("U", time());
+                    $future_events = true;
+
+                    if ($date > $today) :
+
+                        $featured_image_id = get_post_thumbnail_id($post->ID);
+                        $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
+                        $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
+
+                ?>
+                            <div class="col-md-6 d-md-flex mb-3 mb-md-0 col-xl-4 offset-xl-2">
+                              <div class="card bg-light">
+                                <div class="card-header bg-info text-white text-center font-weight-bold py-2">
+                                  <?php echo $date->format('M j, Y'); ?>
+                                </div>
+                                <?php if ($featured_image) : ?>
+                                    <img class="card-img-top" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
+                                <?php else : ?>
+                                    <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                                <?php endif; ?>
+                                <div class="card-body">
+                                  <h4 class="card-title mb-2"><?php the_title(); ?></h4>
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a class="btn btn-primary btn-block" href="<?php the_permalink(); ?>">Event Details</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- .col -->
+                <?php
+
+                  else :
+                      $future_events = false;
+                  endif;
+                  
+              endwhile;
+
+              if ($future_events == false) :
+                  echo 'There are no upcoming events.';
+              endif;
+          ?>
 
         </div>
         <!-- .matrix-border -->

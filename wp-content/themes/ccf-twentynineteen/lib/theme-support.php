@@ -354,17 +354,19 @@
 
         if ($current_category_name !== 'Press Releases' && $current_category_name !== 'Cheetah Strides') :
 
-        foreach ($topics as $topic) :
+            echo '<li><a class="text-body" href="/ccf-blog" title="CCF Blog">All Topics</a></li>';
 
-            if ($topic->slug == 'ccf-blog') :
-                $name = 'All Topics';
-            else :
+            foreach ($topics as $topic) :
+
                 $name = $topic->cat_name;
-            endif;
 
-            echo '<li><a class="text-body" href="/' . $topic->slug . '" title="' . $topic->cat_name . '">' . $name . '</a></li>';
+                if ($name !== 'CCF Blog' && $name !== 'Press Releases' && $name !== 'Cheetah Strides') :
 
-        endforeach;
+                    echo '<li><a class="text-body" href="/' . $topic->slug . '" title="' . $topic->cat_name . '">' . $name . '</a></li>';
+
+                endif;
+
+            endforeach;
 
         else :
 
