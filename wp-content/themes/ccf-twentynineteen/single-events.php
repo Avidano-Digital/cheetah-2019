@@ -51,6 +51,8 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
               
               $start_date = get_field('start_date', false, false);
               $end_date = get_field('end_date', false, false);
+              $start_time = get_field('start_time');
+              $end_time = get_field('end_time');
 
               // make date object
 
@@ -62,9 +64,6 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
                 $end_date = null;
               }
 
-              $start_time = get_field('start_time');
-              $end_time = get_field('end_time');
-
               ?>
 
               <p class="f-sans-serif mb-0">
@@ -75,11 +74,11 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
                     
                     if (($start_date) && ($end_date == null)) : 
                     
-                      echo $start_date->format('M j, Y'); 
+                        echo $start_date->format('M j, Y'); 
 
                     else : 
 
-                      echo $start_date->format('M j') . ' - ' . ($start_date->format('M') != $end_date->format('M') ? $end_date->format('M j, Y') : $end_date->format('j, Y')); 
+                        echo $start_date->format('M j') . ' - ' . ($start_date->format('M') != $end_date->format('M') ? $end_date->format('M j, Y') : $end_date->format('j, Y')); 
   
                     endif;
                     
@@ -95,7 +94,7 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
                 
                   echo $start_time;
 
-                  if($end_time) : 
+                  if ($end_time) : 
 
                   echo ' - ' . $end_time; 
                   
