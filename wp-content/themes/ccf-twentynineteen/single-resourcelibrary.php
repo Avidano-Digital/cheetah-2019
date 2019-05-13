@@ -61,10 +61,6 @@ $resourceCategory = $resourceCategories[0];
                 <li>
                     <span class="text-muted"><?php the_date(); ?></span> 
                 </li>
-            
-                <li class="fs-md">
-                    <strong class="d-block">by&nbsp;<?php echo $author_names; ?></strong>
-                </li>
                 
             </ul>
     
@@ -135,23 +131,6 @@ $resourceCategory = $resourceCategories[0];
         <?php endif; ?>   
 
         <?php get_template_part('template-parts/flexible-content-article'); ?>
-
-        <?php 
-        
-        $pdf_fact_sheet = get_field('pdf_fact_sheet');
-
-        if( $pdf_fact_sheet ): ?>
-
-        <div class="medium my-5">
-
-            <?php echo do_shortcode('[pdf-embedder url="' . $pdf_fact_sheet['url'] .'"]'); ?>
-
-            <a class="btn btn-block btn-primary btn-lg my-3" href="<?php echo $pdf_fact_sheet['url']; ?>" title="Download Fact Sheet" target="_blank">Download Fact Sheet</a>
-
-        </div>
-        <!-- .medium -->
-
-        <?php endif; ?>
 
         <?php get_template_part('template-parts/article-footer'); ?>
 

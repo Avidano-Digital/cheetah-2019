@@ -58,7 +58,7 @@ get_header(); ?>
                       $avatar_placeholder = '/wp-content/uploads/2019/01/avatar-default.jpg';	
                   ?>
 
-                  <div class="rounded-circle" style="overflow:hidden;">
+                  <div class="rounded-circle overflow-hidden">
                     <?php if ( $avatar ) : ?>
                     <img src="<?php echo $avatar['url']; ?>" width="<?php echo $avatar_size; ?>" alt="<?php echo $avatar['alt']; ?>">
                     
