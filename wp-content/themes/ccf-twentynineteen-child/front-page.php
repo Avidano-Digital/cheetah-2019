@@ -168,6 +168,7 @@
 
             $args = array( 
                 'post_type' => 'events', 
+                'posts_per_page' => '3',
                 'order' => 'ASC',
                 'meta_key' => 'start_date',
                 'meta_type' => 'DATETIME',
@@ -176,37 +177,50 @@
             
             $loop = new WP_Query( $args );
 
-            while ( $loop->have_posts() ) : $loop->the_post();
+                while ( $loop->have_posts() ) : $loop->the_post();
 
-                $date = new DateTime(get_field('start_date'));
+                    $date = new DateTime(get_field('start_date'));
+                    $today = DateTime::createFromFormat("U", time());
+                    $future_events = true;
 
-                $featured_image_id = get_post_thumbnail_id($post->ID);
-                $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
-                $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
+                    if ($date > $today) :
 
-            ?>
+                        $featured_image_id = get_post_thumbnail_id($post->ID);
+                        $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
+                        $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
 
-                <div class="col-md-6 d-md-flex mb-3 mb-md-0 col-xl-4 offset-xl-2">
-                  <div class="card bg-light">
-                    <div class="card-header bg-info text-white text-center font-weight-bold py-2">
-                      <?php echo $date->format('M j, Y'); ?>
-                    </div>
-                    <?php if ($featured_image) : ?>
-                        <img class="card-img-top" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
-                    <?php else : ?>
-                        <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
-                    <?php endif; ?>
-                    <div class="card-body">
-                      <h4 class="card-title mb-2"><?php the_title(); ?></h4>
-                    </div>
-                    <div class="card-footer pt-0">
-                      <a class="btn btn-primary btn-block" href="<?php the_permalink(); ?>">Event Details</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- .col -->
+                ?>
+                            <div class="col-md-6 d-md-flex mb-3 mb-md-0 col-xl-4 offset-xl-2">
+                              <div class="card bg-light">
+                                <div class="card-header bg-info text-white text-center font-weight-bold py-2">
+                                  <?php echo $date->format('M j, Y'); ?>
+                                </div>
+                                <?php if ($featured_image) : ?>
+                                    <img class="card-img-top" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
+                                <?php else : ?>
+                                    <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                                <?php endif; ?>
+                                <div class="card-body">
+                                  <h4 class="card-title mb-2"><?php the_title(); ?></h4>
+                                </div>
+                                <div class="card-footer pt-0">
+                                  <a class="btn btn-primary btn-block" href="<?php the_permalink(); ?>">Event Details</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- .col -->
+                <?php
 
-          <?php endwhile; ?>
+                  else :
+                      $future_events = false;
+                  endif;
+                  
+              endwhile;
+
+              if ($future_events == false) :
+                  echo 'There are no upcoming events.';
+              endif;
+          ?>
 
         </div>
         <!-- .matrix-border -->
