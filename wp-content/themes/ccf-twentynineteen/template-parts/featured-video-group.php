@@ -18,7 +18,7 @@ if( $featured_videos ): ?>
         </div>
     </header>
 
-    <div class="row matrix-border">
+    <div class="row matrix-gutter">
 
         <?php
 

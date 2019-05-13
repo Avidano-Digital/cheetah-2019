@@ -58,7 +58,7 @@ $parent_title = get_the_title($post->post_parent);
 
                 <h2 class="f-cheetah-tracks display-3 mb-3 text-tertiary text-center">Helping cheetah stories</h2> 
 
-                <div class="row matrix-border">
+                <div class="row matrix-gutter">
 
                     <?php
 

@@ -126,7 +126,7 @@ get_header(); ?>
 
             <?php if ( have_posts() ) : ?>
 
-            <div class="row matrix-border posts">
+            <div class="row matrix-gutter posts">
 
                 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -139,44 +139,15 @@ get_header(); ?>
                                 <p class="fs-md text-muted"><?php echo get_the_date(); ?></h5>
                                 <p class="card-text h5"><?php the_title(); ?></p>
                             </div>
-                            <div class="card-footer pt-0">
-                                <a class="btn btn-primary stretched-link" href="<?php the_permalink(); ?>">Read More</a>
+                            <div class="card-footer fs-md pt-0">
+                                <a class="link text-secondary stretched-link" href="<?php the_permalink(); ?>">Read More</a>
                             </div>
                         </div>
-                        
-                        <a class="featured-article d-none" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                        
-                            <div>
-
-                                <span><?php echo get_the_date(); ?></span>
-
-                                <?php if( has_post_thumbnail() ):
-                                    $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
-                                ?>
-                                                
-                                <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
-
-                                <?php else : ?>
-                                
-                                <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
-                                
-                                <?php endif; /* featured_image */ ?>
-
-                            </div>
-
-                            <p class="h5"><?php the_title(); ?></p>
-
-                        </a>
-
+                    
                     </div>
                     <!-- .col -->
 
-
-
-
-                    <?php else : ?>
-                
-                
+                    <?php else : ?>                
                 
                     <div class="col-lg-4 mb-3 <?php echo ($press_releases ? 'border border-danger' : '')?>">
                         

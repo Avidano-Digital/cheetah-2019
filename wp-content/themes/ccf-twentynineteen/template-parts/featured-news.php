@@ -1,4 +1,4 @@
-<div class="row matrix-border">
+<div class="row matrix-gutter">
 
     <?php
 
@@ -14,7 +14,7 @@
     
     ?>
 
-    <div class="col-lg-4 mb-5 mb-lg-0">
+    <div class="col-lg-4 mb-3 mb-lg-0">
     
         <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
         
