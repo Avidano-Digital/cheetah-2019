@@ -48,7 +48,7 @@ define('DB_USER', 'root');
 
 /** MySQL database password */
 
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 
@@ -62,9 +62,9 @@ define('DB_CHARSET', 'utf8mb4');
 
 define('DB_COLLATE', '');
 
-define('WP_SITEURL', 'http://cheetah-2019/');
+// define('WP_SITEURL', 'http://cheetah/');
 
-define('WP_HOME', 'http://cheetah-2019/');
+// define('WP_HOME', 'http://cheetah/');
 
 /**#@+
 
@@ -147,15 +147,16 @@ define('WP_DEBUG', false);
 define('WP_ALLOW_MULTISITE', true);
 
 define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', false);
-define('DOMAIN_CURRENT_SITE', 'cheetah-2019');
+define('SUBDOMAIN_INSTALL', true);
+define('DOMAIN_CURRENT_SITE', 'cheetah');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
 
 define('ADMIN_COOKIE_PATH', '/');
 define('COOKIE_DOMAIN', '');
 define('COOKIEPATH', '');
 define('SITECOOKIEPATH', '');
-
-define('WP_MEMORY_LIMIT', '64M');
 
 /* That's all, stop editing! Happy blogging. */
 
@@ -163,7 +164,7 @@ define('WP_MEMORY_LIMIT', '64M');
 
 if ( !defined('ABSPATH') )
 
-	define('ABSPATH', dirname(__FILE__) . '/');
+  define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 

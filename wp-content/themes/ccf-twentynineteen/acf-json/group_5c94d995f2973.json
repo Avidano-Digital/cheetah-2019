@@ -19,16 +19,10 @@
             "field_type": "multi_select",
             "allow_null": 0,
             "add_term": 0,
-            "save_terms": 0,
-            "load_terms": 0,
+            "save_terms": 1,
+            "load_terms": 1,
             "return_format": "object",
-            "multiple": 0,
-            "choices": {
-                "Marker, Laurie, L.": "Marker, Laurie, L.",
-                "Potgieter, Gail C.": "Potgieter, Gail C.",
-                "Dennis, Sean D.": "Dennis, Sean D.",
-                "": ""
-            }
+            "multiple": 0
         }
     ],
     "location": [
@@ -48,5 +42,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1557737408
+    "modified": 1557850254
 }
