@@ -51,9 +51,9 @@ $inside_news = strpos($url, 'news');
 
         <div class="container-fluid shadow-sm z-index-900">
         
-            <div class="row align-items-center justify-content-between">
+            <div class="row justify-content-between bg-warning">
 
-                <div class="col-md-auto py-2">
+                <div class="col-md-auto py-2 bg-info">
 
                     <div class="d-flex justify-content-center justify-content-md-start align-items-center">
                         <a class="d-inline-block" href="/" title="<?php the_title(); ?>, home">
@@ -64,68 +64,116 @@ $inside_news = strpos($url, 'news');
                 </div>
                 <!-- .col -->
 
-                <div class="col d-xl-none py-2 border-top border-md-0">
+                <div class="col-lg-auto d-lg-flex border-top border-lg-0 bg-quaternary">
 
-                    <div class="row align-items-center justify-content-between justify-content-md-end">
+                    <!-- Mobile Toggle Buttons -->
 
-                        <div class="col-auto order-md-last">
-                        
-                            <button class="btn no-btn-style fs-lg" 
-                                type="button" 
-                                data-toggle="collapse" 
-                                data-target="#mobile-menu" 
-                                aria-expanded="false"
-                                aria-controls="mobile-menu">
-                                    <span class="fas fa-bars"></span>
-                                    <span class="sr-only">Main Navigation</span>
+                    <ul class="extensible-list horizontal justify-content-between my-2 d-lg-none">
+
+                        <li>
+                            <button class="navbar-toggler no-btn-style" type="button" data-toggle="collapse" data-target="#nav-primary"
+                                aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fas fa-bars fa-lg" role="img"></span>
                             </button>
-
-                        </div>
-                        <!-- .col -->
-
-                        <div class="col-auto">
-
-                            <ul class="extensible-list horizontal">
-
-                                <?php if ( is_child_theme() === false ) : ?>
-
-                                <li>
-                                    <a href="/kids" title="For Kids">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
-                                    </a>
-                                </li>
-                            
-                                <?php endif; ?>
-
-                                <li>
-                                    <a class="btn btn-primary donate" href="/donate" title="Donate">Donate</a>
-                                </li>
-                            
-                            </ul>
+                        </li>
                         
-                        </div>
-                        <!-- .col -->
+                        <li>
+                            <?php if (is_child_theme() === false) : ?>
+
+                            <a class="mx-1" href="/kids" title="For Kids">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
+                            </a>
                     
-                    </div>
-                    <!-- .row -->
+                            <?php endif; ?>
 
-                </div>
-                <!-- .col -->
+                            <a class="btn btn-primary donate" href="/donate" title="Donate">Donate</a>
+                        </li>
 
-                <div class="col-md-auto d-none d-xl-flex flex-column align-self-stretch">
+                    </ul>
 
-                    <div class="py-2">
-                        <nav id="secondary-navigation">
+                    <!-- Primary Navigation -->
+
+                    <div class="collapse d-lg-flex flex-column align-self-stretch mx-n2 mx-lg-0 bg-danger" id="nav-primary">
+
+                        <nav class="py-2">
                             <?php include( 'include/secondary-navigation.php' ); ?>
                         </nav>
-                    </div>
 
-                    <div class="mt-auto">
-                        <nav id="primary-navigation-desktop">
-                            <?php include( 'include/primary-navigation.php' ); ?>
+                        <nav class="nav mt-auto" role="navigation">
+
+                            <div class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" id="nav-item-01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" title="Nav Item">
+                                    Nav Item
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="nav-item-01">
+
+                                    <ul class="extensible-list">
+                                        <li class="leader">Who We Are</li>
+                                        <li><a href="#" title="Link">Link</a></li>
+                                        <li><a href="#" title="Link">Link</a></li>
+                                        <li><a href="#" title="Link">Link</a></li>
+                                    </ul>
+
+                                    <ul class="extensible-list">
+                                        <li class="leader">What We Do</li>
+                                        <li><a href="#" title="Link">Link</a></li>
+                                        <li><a href="#" title="Link">Link</a></li>
+                                        <li><a href="#" title="Link">Link</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <!-- .nav-item -->
+
+                            <div class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" id="nav-item-02" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" title="Nav Item">
+                                    Nav Item
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="nav-item-02">
+
+                                    <ul class="extensible-list">
+                                        <li><a href="#" title="Link">Link</a></li>
+                                        <li><a href="#" title="Link">Link</a></li>
+                                        <li><a href="#" title="Link">Link</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <!-- .nav-item -->
+
+                            <div class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" id="nav-item-03" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" title="Nav Item">
+                                    Nav Item
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="nav-item-03">
+
+                                    <ul class="extensible-list">
+                                        <li><a href="#" title="Link">Link</a></li>
+                                        <li><a href="#" title="Link">Link</a></li>
+                                        <li><a href="#" title="Link">Link</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <!-- .nav-item -->
+
                         </nav>
-                    </div>
 
+                    </div>
+                    <!-- .collapse -->
+                    
                 </div>
                 <!-- .col -->
 
@@ -134,10 +182,6 @@ $inside_news = strpos($url, 'news');
 
         </div>
         <!-- .container-fluid -->
-
-        <div id="mobile-menu" class="collapse bg-white d-xl-none">
-            <?php include( 'include/mobile-menu.php' ); ?>
-        </div>
 
     </header>
     <!-- #global-header -->

@@ -21,6 +21,222 @@ In this file:
 */
 
 ////////////////////////////////////////
+// B. Local header and primary nav
+////////////////////////////////////////
+
+// Primary Navigation variables set here override Bootstrap default component settings
+
+// Global Header background color
+$global-header-bg-color: white;
+
+// Global header border color
+$global-header-border-color: $border-color;
+
+// Primary nav font weight
+$primary-nav-link-font-weight: $font-weight-normal;
+
+// Set all links (and toggle buttons) in global header, not including links inside '#nyc-top-header'
+$primary-nav-link-color: $body-color;
+
+// Global header link active (current page) color
+$primary-nav-link-active-color: $secondary;
+
+// Use dark header settings (set the background color inside 'Reset variables for dark header' conditional below)
+$global-header-dark: false;
+
+// Make '.nav-item' selectors the same width regardless of text width
+$nav-pills-consistent-width: true;
+
+// Reset variables for dark header
+@if $global-header-dark {
+
+    $global-header-bg-color: $primary;
+
+    $global-header-border-color: rgba(black, 0.5);
+    $primary-nav-link-color: $white;
+}
+
+// Toggle button color
+$global-header-toggle-button-color: $primary-nav-link-color;
+
+#global-header {
+    background-color: $global-header-bg-color;
+
+    @if $global-header-dark {
+
+        #nyc-logo-placeholder {
+            fill: $white;
+        }
+
+        .goog-te-gadget,
+        .goog-logo-link {
+            color: $white;
+        }
+
+        .goog-logo-link img {
+            margin-left: .5rem;
+            margin-right: .5rem;
+            transform: scale(1.25);
+        }
+    }
+
+    // Remove border radius when global '$enable-rounded' is set to true
+
+    .btn,
+    .input,
+    .nav-link,
+    .dropdown-menu,
+    .form-control {
+        border-radius: 0;
+    }
+
+    button[data-toggle="collapse"] {
+        color: $global-header-toggle-button-color;
+    }
+
+    .nav-link,
+    .dropdown-menu a {
+        color: $primary-nav-link-color;
+    }
+
+    [class*="border-"] {
+        border-color: $global-header-border-color !important;
+    }
+
+    // Add opacity to toggle buttons on 'expanded'
+
+    button[data-toggle="collapse"] {
+        &[aria-expanded="true"] {
+            @extend .opacity-50;
+
+            @include transition;
+        }
+    }
+
+    // Set primary nav color and active states (both '.nav-pills' and '.nav-right')
+
+    .nav-link {
+        font-weight: $primary-nav-link-font-weight;
+
+        &.active {
+            text-decoration: underline;
+            color: $primary-nav-link-active-color;
+        }
+    }
+
+    // Primary Nav (.nav-pills)
+
+    .nav-pills {
+        @extend .nav-fill;
+
+        border-left: $border-width solid $global-header-border-color;
+
+        .nav-item {
+            border-right: $border-width solid $global-header-border-color;
+
+            @if $nav-pills-consistent-width {
+                @include media-breakpoint-up(lg) {
+                    flex: 1;
+                }
+            }
+        }
+
+        .nav-link {
+            background: transparent;
+
+            &.active {
+                text-decoration: underline;
+                color: $primary-nav-link-active-color;
+            }
+        }
+    }
+
+    // Set .dropdown-menu styles
+
+    .dropdown-menu {
+        border: none;
+        padding: $nav-link-padding-y $nav-link-padding-x;
+
+        @if $global-header-dark {
+            background-color: $global-header-bg-color;
+        }
+
+        background-color: $dark;
+
+        a {
+            @extend .text-white;
+        }
+
+        .leader {
+            @extend .text-primary;
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    // Remove unneeded margin from .dropdown-menu within nav
+
+    .nav:not(.nav-pills) {
+        .dropdown-menu {
+            margin: 0;
+        }
+    }
+
+    // Improve .dropdown-menu when present within .nav-pills
+
+    .nav-pills .dropdown-menu {
+        width: 100%;
+        left: 0;
+        margin: 0;
+
+        // When dropdowns are flush left or right, remove Bootrap transform and reposition y axis
+        transform: none !important;
+        top: 100% !important;
+    }
+
+    @include media-breakpoint-down(md) {
+        .nav-item {
+            border-top: 1px solid $global-header-border-color;
+            width: 100%;
+
+            // Left align nav items that are not dropdowns
+
+            &.nav-link {
+                text-align: left;
+            }
+        }
+
+        .nav-item {
+            background: none;
+        }
+
+        .dropdown-menu {
+            position: static !important;
+            width: 100%;
+            -webkit-transform: none !important;
+            transform: none !important;
+        }
+
+        .dropdown-toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @if $enable-caret {
+                &[aria-expanded="true"]::after {
+                    @include caret-up;
+                }
+            }
+        }
+    }
+}
+
+/* #global-header */
+
+////////////////////////////////////////
+// C. Skip Menu
+////////////////////////////////////////
+
+////////////////////////////////////////
 // A. Tab skipper
 ////////////////////////////////////////
 

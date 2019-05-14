@@ -25194,6 +25194,14 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen-child/footer.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen-child/front-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/front-page.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen-child/functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -26628,6 +26636,14 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/functions.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/header-back-up.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/header-back-up.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -27518,6 +27534,14 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/lib/enqueue-assets.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/lib/theme-support.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/lib/theme-support.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/page-ccf-kids.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -27540,6 +27564,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/page-donate.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/page-events.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page-events.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/page-resource-library.php": {
@@ -27718,12 +27750,28 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/searchform.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/single-events.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/single-events.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/single-resourcelibrary.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/single-resourcelibrary.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/single.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/style.css": {
@@ -27846,6 +27894,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/kids-header.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/template-parts/related-reading.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/related-reading.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/template-parts/section-join-the-race.php": {
