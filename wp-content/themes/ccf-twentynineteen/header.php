@@ -51,9 +51,9 @@ $inside_news = strpos($url, 'news');
 
         <div class="container-fluid shadow-sm z-index-900">
         
-            <div class="row justify-content-between bg-warning">
+            <div class="row justify-content-between">
 
-                <div class="col-md-auto py-2 bg-info">
+                <div class="col-md-auto py-2">
 
                     <div class="d-flex justify-content-center justify-content-md-start align-items-center">
                         <a class="d-inline-block" href="/" title="<?php the_title(); ?>, home">
@@ -63,14 +63,14 @@ $inside_news = strpos($url, 'news');
                     
                 </div>
                 <!-- .col -->
+                
+                <!-- Mobile Toggle Buttons -->
+                
+                <div class="col-md-auto d-md-flex d-lg-none align-self-center border-top border-md-0">
 
-                <div class="col-lg-auto d-lg-flex border-top border-lg-0 bg-quaternary">
+                    <ul class="extensible-list horizontal justify-content-between my-2">
 
-                    <!-- Mobile Toggle Buttons -->
-
-                    <ul class="extensible-list horizontal justify-content-between my-2 d-lg-none">
-
-                        <li>
+                        <li class="order-md-last">
                             <button class="navbar-toggler no-btn-style" type="button" data-toggle="collapse" data-target="#nav-primary"
                                 aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="fas fa-bars fa-lg" role="img"></span>
@@ -91,15 +91,44 @@ $inside_news = strpos($url, 'news');
 
                     </ul>
 
+                </div>
+                <!-- .col -->
+
+                <div class="col-lg-auto d-lg-flex">
+
                     <!-- Primary Navigation -->
 
-                    <div class="collapse d-lg-flex flex-column align-self-stretch mx-n2 mx-lg-0 bg-danger" id="nav-primary">
+                    <div class="collapse d-lg-flex flex-column align-self-stretch mx-n2 mx-lg-0 border-top border-lg-0" id="nav-primary">
 
                         <nav class="py-2">
-                            <?php include( 'include/secondary-navigation.php' ); ?>
+
+                            <ul class="extensible-list horizontal justify-content-center">
+
+                                <?php if (is_child_theme() === false) : ?>
+
+                                <li class="d-none d-lg-block">
+                                    <a href="/kids" title="For Kids">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
+                                    </a>
+                                </li>
+
+                                <?php endif; ?>
+                                
+                                <!-- Language --> 
+                                <li style="width:160px" dir="ltr">
+                                    <?php echo do_shortcode('[gtranslate]'); ?>
+                                </li>
+
+                                <!-- Search --> 
+                                <li style="width:160px" dir="ltr">
+                                    <?php get_search_form(); ?>
+                                </li>
+                                
+                            </ul>
+
                         </nav>
 
-                        <nav class="nav mt-auto" role="navigation">
+                        <nav class="nav mt-auto justify-content-end" role="navigation">
 
                             <div class="nav-item dropdown">
 
@@ -168,6 +197,12 @@ $inside_news = strpos($url, 'news');
 
                             </div>
                             <!-- .nav-item -->
+
+                            <div class="nav-item d-none d-lg-block">
+                                <a class="nav-link bg-primary" href="/donate" title="Nav Item">
+                                    Donate
+                                </a>
+                            </div>
 
                         </nav>
 

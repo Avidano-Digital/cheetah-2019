@@ -117,6 +117,7 @@ $global-header-toggle-button-color: $primary-nav-link-color;
 
     .nav-link {
         font-weight: $primary-nav-link-font-weight;
+        font-size: $fs-rg;
 
         &.active {
             text-decoration: underline;
@@ -226,6 +227,12 @@ $global-header-toggle-button-color: $primary-nav-link-color;
                     @include caret-up;
                 }
             }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .dropdown-toggle::after {
+            display: none;
         }
     }
 }
