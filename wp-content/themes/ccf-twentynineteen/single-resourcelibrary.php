@@ -61,6 +61,10 @@ $resourceCategory = $resourceCategories[0];
                 <li>
                     <span class="text-muted"><?php the_date(); ?></span> 
                 </li>
+
+                <li class="fs-md">
+                    <strong class="d-block">by&nbsp;<?php echo $author_names; ?></strong>
+                </li>
                 
             </ul>
     
