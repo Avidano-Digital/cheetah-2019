@@ -66,8 +66,7 @@
 
         register_nav_menus(
             array(
-                'Desktop' => esc_html__( 'Desktop', 'cheetah.org' ),
-                'Mobile' => esc_html__( 'Mobile', 'cheetah.org' ),
+                'Header' => esc_html__( 'Header', 'cheetah.org' ),
                 'Footer' => esc_html__( 'Footer', 'cheetah.org' )
             )
         );
@@ -694,3 +693,16 @@
 
     add_action('wp_ajax_get_ajax_posts', 'get_ajax_posts');
     add_action('wp_ajax_nopriv_get_ajax_posts', 'get_ajax_posts');
+
+    // Limit menu depth in admin panel to 2
+
+    if (is_child_theme()) :
+
+        function limit_menu_depth( $hook ) {
+            if ( $hook != 'nav-menus.php' ) return;
+            wp_add_inline_script( 'nav-menu', 'wpNavMenu.options.globalMaxDepth = 1;', 'after' );
+        }
+
+        add_action( 'admin_enqueue_scripts', 'limit_menu_depth' );
+
+    endif;

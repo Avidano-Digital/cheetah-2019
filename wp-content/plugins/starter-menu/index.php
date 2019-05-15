@@ -22,15 +22,39 @@ Author URI: http://fullwindsor.co
 
     $current_section = explode("/", substr($_SERVER['REQUEST_URI'], 1));
 
-    if ($current_section[1] == 'get-involved') {
-      $current_section = $current_section[1];
-    }
-    elseif ($current_section[0] == 'resource-library' || $current_section[0] == 'ccf-videos' || $current_section[0] == 'resource-category') {
-      $current_section = 'learn';
-    }
-    else {
-      $current_section = $current_section[0];
-    }
+    if (!is_child_theme()) :
+
+        if ($current_section[1] == 'get-involved') :
+
+          $current_section = $current_section[1];
+        
+        elseif ($current_section[0] == 'resource-library' || $current_section[0] == 'ccf-videos' || $current_section[0] == 'resource-category') :
+
+          $current_section = 'learn';
+        
+        elseif ($current_section[0] == 'events') :
+          
+          $current_section = 'get-involved';
+        
+        else :
+
+          $current_section = $current_section[0];
+
+        endif;
+
+    else :
+
+        if ($current_section[0] == 'events') :
+
+            $current_section = 'get-involved';
+
+        else :
+
+            $current_section = $current_section[0];
+
+        endif;
+
+    endif;
 
     $count = 0;
     $submenu = false;
@@ -113,172 +137,105 @@ Author URI: http://fullwindsor.co
 
     $closing_tags = '';
 
-    if ($menu_name == 'Desktop') {
+    if ($menu_name == 'Header') : 
 
-      foreach( $menuitems as $menuitem ):
+        echo '<nav class="nav mt-auto justify-content-end" role="navigation">';
 
-        $label = $menuitem->title;
-        $attr_title = $menuitem->attr_title;
-        $id = $menuitem->ID;
-        $url = $menuitem->url;
-        $classes = implode(' ',$menuitem->classes);
-        $parent = $menuitem->menu_item_parent;
-        $xfn = $menuitem->xfn;
-        $current = '';
+        foreach( $menuitems as $menuitem ):
 
-        // Compare current menu item with the current section
+            $attr_title = $menuitem->attr_title;          
+            $classes = implode(' ',$menuitem->classes);
+            $current = '';
+            $id = preg_replace("/[\s_]/", "-", preg_replace("/[\s-]+/", " ", preg_replace("/[^a-z0-9_\s-]/", "", strtolower($label))));
+            $label = $menuitem->title;
+            $parent = $menuitem->menu_item_parent;
+            $url = $menuitem->url;
+            $xfn = $menuitem->xfn;
 
-        if ($xfn == $current_section) {
-          $current = 'current';
-        }
+            // Compare current menu item with the current section
 
-        // If we've picked up the news menu item and are on a post
+            if ($xfn == $current_section) {
+              $current = 'active';
+            }
 
-        elseif ($xfn == 'news' && $current_post_type == 'post') {
-          $current = 'current';
-        }
+            // If we've picked up the news menu item and are on a post
 
-        // If we've picked up the News menu item and are on a taxonomy page
+            elseif ($xfn == 'news' && $current_post_type == 'post') {
+              $current = 'active';
+            }
 
-        elseif ($xfn == 'news' && $current_term && $current_section != 'learn') {
-          $current = 'current';
-        }
+            // If we've picked up the News menu item and are on a taxonomy page
 
-        if ($menuitem->item_type == 'childless_parent') {
-          echo '<li class="'.$current.'"><a class="'.$classes.'" href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></li>';
-          $count++;
-          continue;
-        }
+            elseif ($xfn == 'news' && $current_term && $current_section != 'learn') {
+              $current = 'active';
+            }
 
-        if ($menuitem->item_type == 'grandparent') {
-          echo '<li class="'.$current.'"><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a><ul class="extensible-list sub"><li><div class="row no-gutters mx-n2" style="width:480px;">';
-          $grandparent_closing_tags = '</div></li></ul></li>';
-          $count++;
-          continue;
-        }
+            if ($menuitem->item_type == 'childless_parent') :
+                echo '<div class="nav-item d-none d-lg-block"><a class="nav-link bg-primary '.$current.'" href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></div>';
+                $count++;
+                continue;
+            endif;
 
-        if ($menuitem->item_type == 'parent') {
-          echo '<div class="col-6"><ul class="extensible-list"><li class="leader" title="'.$attr_title.'">'.$label.'</li>';
-          $open_parent = $menuitems[$count];
-          $closing_tags = '</ul></div>';
-          $count++;
-          continue;
-        }
+            if ($menuitem->item_type == 'grandparent') {
+              echo '<div class="nav-item dropdown"><a class="nav-link dropdown-toggle '.$current.'" href="#" id="nav-'.$id.'" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="'.$attr_title.'" role="button">'.$label.'</a><div class="dropdown-menu" aria-labelledby="nav-'.$id.'"><div class="d-lg-flex">';
+              $grandparent_closing_tags = '</div></div></div>';
+              $count++;
+              continue;
+            }
 
-        if ($menuitem->item_type == 'orphaned_parent') {
-          echo '<li class="'.$current.'"><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a><ul class="extensible-list sub">';
-          $closing_tags = '</ul></li>';
-          $count++;
-          continue;
-        }
+            if ($menuitem->item_type == 'parent') {
+              echo '<ul class="extensible-list"><li class="leader">'.$label.'</li>';
+              $open_parent = $menuitems[$count];
+              $closing_tags = '</ul>';
+              $count++;
+              continue;
+            }
 
-        if ($menuitem->item_type == 'child') {
-          echo '<li><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></li>';
+            if ($menuitem->item_type == 'orphaned_parent') :
+                echo '<div class="nav-item dropdown"><a class="nav-link dropdown-toggle '.$current.'" href="'.$url.'" id="nav-'.$id.'" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="'.$attr_title.'" role="button">'.$label.'</a><div class="dropdown-menu" aria-labelledby="nav-'.$id.'"><ul class="extensible-list">';
+                $closing_tags = '</ul></div></div>';
+                $count++;
+                continue;
+            endif;
 
-          // Does this child item 1) have menu items that come after it? 2) have siblings?
+            if ($menuitem->item_type == 'child') :
+                echo '<li><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></li>';
 
-          if (array_key_exists($count + 1, $menuitems) && $menuitems[ $count + 1 ]->menu_item_parent == $parent) {
-            $count++;
-            continue;
-          }
+                // Does this child item 1) have menu items that come after it? and 2) have siblings?
 
-          // If not, output the closing tags of this child item's parent.
+                if (array_key_exists($count + 1, $menuitems) && $menuitems[ $count + 1 ]->menu_item_parent == $parent) :
+                    $count++;
+                    continue;
+                
 
-          else {
-            echo $closing_tags;
-            $closing_tags = '';            
-          }
+                // If not, output the closing tags of this child item's parent.
 
-          // Check to see if this item's parent has siblings 
+                else :
+                    echo $closing_tags;
+                    $closing_tags = '';            
+                endif;
 
-          if (array_key_exists($count + 1, $menuitems) && $open_parent && $menuitems[$count + 1]->menu_item_parent !== $open_parent->menu_item_parent) {
+                // Check to see if this item's parent has siblings 
 
-            // Output grandparent closing tags
+                if (array_key_exists($count + 1, $menuitems) && $open_parent && $menuitems[$count + 1]->menu_item_parent !== $open_parent->menu_item_parent) {
 
-            echo $grandparent_closing_tags;
+                  // Output grandparent closing tags
 
-            $open_parent = null;
+                  echo $grandparent_closing_tags;
 
-          }
+                  $open_parent = null;
 
-          $count++;
+                }
 
-        }
+                $count++;
 
-      endforeach; 
+            endif;
 
-    }
+        endforeach;
 
-    if ($menu_name == 'Mobile') {
+        echo '</nav>';
 
-      foreach( $menuitems as $menuitem ):
-
-        $label = $menuitem->title;
-        $attr_title = $menuitem->attr_title;
-        $id = $menuitem->ID;
-        $xfn = $menuitem->xfn;
-        $url = $menuitem->url;
-        $classes = implode(' ',$menuitem->classes);
-        $parent = $menuitem->menu_item_parent;
-
-        if ($menuitem->item_type == 'grandparent') {
-          echo '<div class="card"><a class="card-header collapse collapsed" id="acc-button-'.$xfn.'" data-toggle="collapse" href="#panel-'.$xfn.'" role="tab" aria-expanded="false" aria-controls="panel-'.$xfn.'" title="'.$attr_title.'"><span class="title">'.$label.'</span></a><div class="collapse" id="panel-'.$xfn.'" role="tabpanel" aria-labelledby="acc-button-'.$xfn.'" data-parent="#mobile-menu-accordion"><div class="card-body bg-dark">';
-          $grandparent_closing_tags = '</div></div></div>';
-          $count++;
-          continue;
-        }
-
-        if ($menuitem->item_type == 'parent') {
-          echo '<ul class="extensible-list"><li class="leader">'.$label.'</li>';
-          $open_parent = $menuitems[$count];
-          $closing_tags = '</ul>';
-          $count++;
-          continue;
-        }
-
-        if ($menuitem->item_type == 'orphaned_parent') {
-          echo '<div class="card"><a class="card-header collapse collapsed" id="acc-button-'.$xfn.'" data-toggle="collapse" href="#panel-'.$xfn.'" role="tab" aria-expanded="false" aria-controls="panel-'.$xfn.'" title="'.$attr_title.'"><span class="title">'.$label.'</span></a><div class="collapse" id="panel-'.$xfn.'" role="tabpanel" aria-labelledby="acc-button-'.$xfn.'" data-parent="#mobile-menu-accordion"><div class="card-body bg-dark"><ul class="extensible-list">';
-          $closing_tags = '</ul></div></div></div>';
-          $count++;
-          continue;
-        }
-
-        if ($menuitem->item_type == 'child') {
-          echo '<li><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></li>';
-
-          // Does this child item 1) have menu items that come after it? 2) have siblings?
-
-          if (array_key_exists($count + 1, $menuitems) && $menuitems[ $count + 1 ]->menu_item_parent == $parent) {
-            $count++;
-            continue;
-          }
-
-          // If not, output the closing tags of this child item's parent.
-
-          else {
-            echo $closing_tags;
-            $closing_tags = '';            
-          }
-
-          // Check to see if this item's parent has siblings 
-
-          if (array_key_exists($count + 1, $menuitems) && $open_parent && $menuitems[$count + 1]->menu_item_parent !== $open_parent->menu_item_parent) {
-
-            // Output grandparent closing tags
-
-            echo $grandparent_closing_tags;
-
-            $open_parent = null;
-
-          }
-
-          $count++;
-
-        }
-
-      endforeach; 
-
-    }
+    endif;
 
     if ($menu_name == 'Footer') {
 

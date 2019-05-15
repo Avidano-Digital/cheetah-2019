@@ -24,12 +24,6 @@ jQuery(document).ready(function ($) {
         }
     }
 
-    header_drop_downs.hoverIntent({
-        over: sub_nav_hover_on,
-        out: sub_nav_hover_off,
-        timeout: 300
-    });
-
     ////////////////////////////////////////
     // Lightbox
     ////////////////////////////////////////

@@ -61,14 +61,6 @@
             true 
         );
 
-        wp_enqueue_script( 
-            'hoverIntent', 
-            get_template_directory_uri() . '/js/vendor/jquery.hoverIntent.min.js', 
-            ['jquery'],
-            '1.0', 
-            true 
-        );
-
         // ekko lightbox
         wp_enqueue_script( 
             'lightbox-js', 
