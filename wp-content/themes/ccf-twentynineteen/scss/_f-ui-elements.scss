@@ -123,6 +123,10 @@ $global-header-toggle-button-color: $primary-nav-link-color;
             text-decoration: underline;
             color: $primary-nav-link-active-color;
         }
+
+        &[aria-expanded="true"]{
+            color: $text-muted;
+        }
     }
 
     // Primary Nav (.nav-pills)
@@ -156,10 +160,11 @@ $global-header-toggle-button-color: $primary-nav-link-color;
 
     .dropdown-menu {
         border: none;
-        padding: $nav-link-padding-x $nav-link-padding-x;
-
-
         background-color: $dark;
+
+        ul{
+            margin: $nav-link-padding-y $nav-link-padding-x;
+        }
 
         a {
             @extend .text-white;
@@ -174,8 +179,8 @@ $global-header-toggle-button-color: $primary-nav-link-color;
             background-color: $global-header-bg-color;
         }
 
-        >.d-flex{
-        width: 400px;
+        >div{
+            min-width: 480px;
         }
 
     }

@@ -132,15 +132,15 @@ $inside_news = strpos($url, 'news');
 
                             <div class="nav-item dropdown">
 
-                                <a class="nav-link dropdown-toggle" href="#" id="nav-item-01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="About Us">
+                                <a class="nav-link dropdown-toggle" href="#" id="about-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="About Us">
                                     About Us
                                 </a>
 
-                                <div class="dropdown-menu" aria-labelledby="nav-item-01">
+                                <div class="dropdown-menu" aria-labelledby="about-us">
 
-                                    <div class="d-flex mx-n2">
+                                    <div class="d-lg-flex">
                                     
-                                        <ul class="extensible-list mx-2">
+                                        <ul class="extensible-list">
                                             <li class="leader">What We Do</li>
                                             <li><a href="#" title="Conservation">Conservation</a></li>
                                             <li><a href="#" title="Research">Research</a></li>
@@ -148,7 +148,7 @@ $inside_news = strpos($url, 'news');
                                             <li><a href="#" title="International Cheetah Day">International Cheetah Day</a></li>
                                         </ul>
 
-                                        <ul class="extensible-list mx-2">
+                                        <ul class="extensible-list">
                                             <li class="leader">Who We Are</li>
                                             <li><a href="#" title="Mission and Vision">Mission and Vision</a></li>
                                             <li><a href="#" title="Dr. Laurie Marker">Dr. Laurie Marker</a></li>
@@ -165,9 +165,8 @@ $inside_news = strpos($url, 'news');
 
                             <div class="nav-item dropdown">
 
-                                <a class="nav-link dropdown-toggle" href="#" id="nav-item-02" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false" title="Nav Item">
-                                    Nav Item
+                                <a class="nav-link dropdown-toggle" href="#" id="nav-item-02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nav Item">
+                                    Get Involved
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="nav-item-02">
