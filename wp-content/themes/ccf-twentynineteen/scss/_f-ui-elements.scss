@@ -119,14 +119,15 @@ $global-header-toggle-button-color: $primary-nav-link-color;
         font-weight: $primary-nav-link-font-weight;
         font-size: $fs-lg;
 
+        &[aria-expanded="true"]{
+            color: $text-muted;
+        }
+
         &.active {
             text-decoration: underline;
             color: $primary-nav-link-active-color;
         }
 
-        &[aria-expanded="true"]{
-            color: $text-muted;
-        }
     }
 
     // Primary Nav (.nav-pills)
@@ -161,6 +162,7 @@ $global-header-toggle-button-color: $primary-nav-link-color;
     .dropdown-menu {
         border: none;
         padding: 0;
+        width: unset !important;
 
         ul{
             background-color: $dark;
@@ -219,12 +221,18 @@ $global-header-toggle-button-color: $primary-nav-link-color;
             background: none;
         }
 
-        .dropdown-menu {
+        .dropdown-menu, 
+        .dropdown-menu ul.extensible-list {
             position: static !important;
-            width: 100%;
+            width: 100% !important;
             -webkit-transform: none !important;
             transform: none !important;
         }
+
+        .dropdown-menu ul.extensible-list:not(:first-child){
+            padding-top: 0;
+        }
+
 
         .dropdown-toggle {
             display: flex;

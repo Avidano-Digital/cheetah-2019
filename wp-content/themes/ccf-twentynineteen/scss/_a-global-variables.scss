@@ -275,7 +275,7 @@ $theme-colors: (
 
 $body-color: $gray-900;
 $border-color: $gray-300;
-$text-muted: $gray-700;
+$text-muted: $gray-600;
 
 // Set grays for accessibility
 
@@ -335,13 +335,6 @@ $btn-font-weight: $font-weight-bold;
 $link-color: $blue;
 $link-hover-decoration: none;
 
-$nav-link-padding-y: .5rem;
-$nav-link-padding-x: 1rem !default;
-
-$caret-width: .2em;
-$caret-vertical-align: $caret-width;
-$caret-spacing: $caret-width * .25;
-
 
 ////////////////////////////////////////
 // K. Cards
@@ -362,21 +355,22 @@ $card-border-color: rgba($black, .2);
 // Global Components
 
 $component-active-color: $info;
-// $component-active-bg: $white;
-
-// Navs (.nav) and Input padding
 
 $input-btn-padding-x: ($grid-gutter-width/2);
+$nav-link-padding-y: .5rem;
 $nav-link-padding-x: $input-btn-padding-x;
-// $nav-link-padding-y: .75rem;
+
+$caret-width: 5px;
+$caret-vertical-align: $caret-width;
+$caret-spacing: $caret-width * .25;
 
 // List Group
 
-$list-group-bg:                     transparent;
-$list-group-border-color:           $border-color;
+$list-group-bg: transparent;
+$list-group-border-color: $border-color;
 
-$list-group-item-padding-y:         .75rem !default;
-$list-group-item-padding-x:         0;
+$list-group-item-padding-y: .75rem !default;
+$list-group-item-padding-x: 0;
 
 ////////////////////////////////////////
 // M. Box shadows
