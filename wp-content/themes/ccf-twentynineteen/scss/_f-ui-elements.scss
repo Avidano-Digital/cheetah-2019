@@ -160,14 +160,17 @@ $global-header-toggle-button-color: $primary-nav-link-color;
 
     .dropdown-menu {
         border: none;
-        background-color: $dark;
+        padding: 0;
 
         ul{
-            margin: $nav-link-padding-y $nav-link-padding-x;
+            background-color: $dark;
+            padding: $nav-link-padding-x;
+            min-width: 150px;
         }
 
         a {
             @extend .text-white;
+            white-space: nowrap;
         }
 
         .leader {
@@ -178,11 +181,6 @@ $global-header-toggle-button-color: $primary-nav-link-color;
         @if $global-header-dark {
             background-color: $global-header-bg-color;
         }
-
-        >div{
-            min-width: 480px;
-        }
-
     }
 
     // Remove unneeded margin from .dropdown-menu within nav

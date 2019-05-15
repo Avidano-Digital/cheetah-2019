@@ -64,32 +64,42 @@ $inside_news = strpos($url, 'news');
                 </div>
                 <!-- .col -->
                 
-                <!-- Mobile Toggle Buttons -->
+                <!-- Mobile Only Buttons -->
                 
-                <div class="col-md-auto d-md-flex d-lg-none align-self-center border-top border-md-0 py-2">
+                <div class="col-md-auto d-md-flex d-lg-none align-self-center border-top border-md-0">
 
-                    <ul class="extensible-list horizontal justify-content-between">
+                    <div class="row align-items-center justify-content-between py-2">
 
-                        <li class="order-md-last">
+                        <div class="col-auto order-md-last">
                             <button class="navbar-toggler no-btn-style" type="button" data-toggle="collapse" data-target="#nav-primary"
                                 aria-controls="nav-primary" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="fas fa-bars fa-lg" role="img"></span>
                             </button>
-                        </li>
-                        
-                        <li>
-                            <?php if (is_child_theme() === false) : ?>
+                        </div>
+                        <!-- .col -->
 
-                            <a class="mx-1" href="/kids" title="For Kids">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
-                            </a>
-                    
-                            <?php endif; ?>
+                        <div class="col-auto">
+                            <ul class="extensible-list horizontal">
+                                
+                                <?php if (is_child_theme() === false) : ?>
+                                
+                                <li>
+                                    <a href="/kids" title="For Kids">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
+                                    </a>
+                                </li>
+                                
+                                <?php endif; ?>
+                                
+                                <li>
+                                    <a class="btn btn-primary" href="/donate" title="Donate">Donate</a>
+                                </li>
 
-                            <a class="btn btn-primary donate" href="/donate" title="Donate">Donate</a>
-                        </li>
+                            </ul>
+                        </div>
+                        <!-- .col -->
 
-                    </ul>
+                    </div>
 
                 </div>
                 <!-- .col -->
