@@ -66,9 +66,9 @@ $inside_news = strpos($url, 'news');
                 
                 <!-- Mobile Toggle Buttons -->
                 
-                <div class="col-md-auto d-md-flex d-lg-none align-self-center border-top border-md-0">
+                <div class="col-md-auto d-md-flex d-lg-none align-self-center border-top border-md-0 py-2">
 
-                    <ul class="extensible-list horizontal justify-content-between my-2">
+                    <ul class="extensible-list horizontal justify-content-between">
 
                         <li class="order-md-last">
                             <button class="navbar-toggler no-btn-style" type="button" data-toggle="collapse" data-target="#nav-primary"
@@ -102,7 +102,7 @@ $inside_news = strpos($url, 'news');
 
                         <nav class="py-2">
 
-                            <ul class="extensible-list horizontal justify-content-center">
+                            <ul class="extensible-list horizontal justify-content-center justify-content-lg-end">
 
                                 <?php if (is_child_theme() === false) : ?>
 
@@ -132,26 +132,31 @@ $inside_news = strpos($url, 'news');
 
                             <div class="nav-item dropdown">
 
-                                <a class="nav-link dropdown-toggle" href="#" id="nav-item-01" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false" title="Nav Item">
-                                    Nav Item
+                                <a class="nav-link dropdown-toggle" href="#" id="nav-item-01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="About Us">
+                                    About Us
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="nav-item-01">
 
-                                    <ul class="extensible-list">
-                                        <li class="leader">Who We Are</li>
-                                        <li><a href="#" title="Link">Link</a></li>
-                                        <li><a href="#" title="Link">Link</a></li>
-                                        <li><a href="#" title="Link">Link</a></li>
-                                    </ul>
+                                    <div class="d-flex mx-n2">
+                                    
+                                        <ul class="extensible-list mx-2">
+                                            <li class="leader">What We Do</li>
+                                            <li><a href="#" title="Conservation">Conservation</a></li>
+                                            <li><a href="#" title="Research">Research</a></li>
+                                            <li><a href="#" title="Education">Education</a></li>
+                                            <li><a href="#" title="International Cheetah Day">International Cheetah Day</a></li>
+                                        </ul>
 
-                                    <ul class="extensible-list">
-                                        <li class="leader">What We Do</li>
-                                        <li><a href="#" title="Link">Link</a></li>
-                                        <li><a href="#" title="Link">Link</a></li>
-                                        <li><a href="#" title="Link">Link</a></li>
-                                    </ul>
+                                        <ul class="extensible-list mx-2">
+                                            <li class="leader">Who We Are</li>
+                                            <li><a href="#" title="Mission and Vision">Mission and Vision</a></li>
+                                            <li><a href="#" title="Dr. Laurie Marker">Dr. Laurie Marker</a></li>
+                                            <li><a href="#" title="Our Centre">Our Centre</a></li>
+                                            <li><a href="#" title="Staff and Board">Staff and Board</a></li>
+                                        </ul>
+
+                                    </div>
 
                                 </div>
 

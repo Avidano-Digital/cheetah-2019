@@ -117,7 +117,7 @@ $global-header-toggle-button-color: $primary-nav-link-color;
 
     .nav-link {
         font-weight: $primary-nav-link-font-weight;
-        font-size: $fs-rg;
+        font-size: $fs-lg;
 
         &.active {
             text-decoration: underline;
@@ -156,11 +156,8 @@ $global-header-toggle-button-color: $primary-nav-link-color;
 
     .dropdown-menu {
         border: none;
-        padding: $nav-link-padding-y $nav-link-padding-x;
+        padding: $nav-link-padding-x $nav-link-padding-x;
 
-        @if $global-header-dark {
-            background-color: $global-header-bg-color;
-        }
 
         background-color: $dark;
 
@@ -172,6 +169,15 @@ $global-header-toggle-button-color: $primary-nav-link-color;
             @extend .text-primary;
             font-weight: $font-weight-bold;
         }
+
+        @if $global-header-dark {
+            background-color: $global-header-bg-color;
+        }
+
+        >.d-flex{
+        width: 400px;
+        }
+
     }
 
     // Remove unneeded margin from .dropdown-menu within nav
@@ -223,6 +229,11 @@ $global-header-toggle-button-color: $primary-nav-link-color;
             align-items: center;
 
             @if $enable-caret {
+
+            .dropdown-toggle::after {
+                color: red;
+            }
+
                 &[aria-expanded="true"]::after {
                     @include caret-up;
                 }
@@ -230,11 +241,11 @@ $global-header-toggle-button-color: $primary-nav-link-color;
         }
     }
 
-    @include media-breakpoint-up(lg) {
-        .dropdown-toggle::after {
-            display: none;
-        }
-    }
+    // @include media-breakpoint-up(lg) {
+    //     .dropdown-toggle::after {
+    //         display: none;
+    //     }
+    // }
 }
 
 /* #global-header */

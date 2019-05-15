@@ -43,8 +43,7 @@ $grid-breakpoints: (
   md: $grid-bp-md,
   lg: $grid-bp-lg,
   xl: $grid-bp-xl,
-  xxl: $grid-bp-xxl,
-  // xxxl: $grid-bp-xxxl
+  xxl: $grid-bp-xxl
 );
 
 ////////////////////////////////////////
@@ -159,17 +158,17 @@ $font-weight-bold: 700;
 
 // Header Font Sizes
 
-$display1-size:   $font-size-base * 6;
-$display2-size:   $font-size-base * 5;
-$display3-size:   $font-size-base * 4;
-$display4-size:   $font-size-base * 3;
+$display1-size: $font-size-base * 6;
+$display2-size: $font-size-base * 5;
+$display3-size: $font-size-base * 4;
+$display4-size: $font-size-base * 3;
 
-$h1-font-size:    $font-size-base * 2.5;
-$h2-font-size:    $font-size-base * 2;
-$h3-font-size:    $font-size-base * 1.75;
-$h4-font-size:    $font-size-base * 1.5;
-$h5-font-size:    $font-size-base * 1.25;
-$h6-font-size:    $font-size-base * 1.125;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base * 1.125;
 
 // h1 - h6 font weight
 
@@ -336,6 +335,14 @@ $btn-font-weight: $font-weight-bold;
 $link-color: $blue;
 $link-hover-decoration: none;
 
+$nav-link-padding-y: .5rem;
+$nav-link-padding-x: 1rem !default;
+
+$caret-width: .2em;
+$caret-vertical-align: $caret-width;
+$caret-spacing: $caret-width * .25;
+
+
 ////////////////////////////////////////
 // K. Cards
 ////////////////////////////////////////
@@ -361,7 +368,7 @@ $component-active-color: $info;
 
 $input-btn-padding-x: ($grid-gutter-width/2);
 $nav-link-padding-x: $input-btn-padding-x;
-$nav-link-padding-y: .75rem;
+// $nav-link-padding-y: .75rem;
 
 // List Group
 
