@@ -20,6 +20,16 @@ In this file:
 
 */
 
+%fa-icon {
+    font-family: $font-awesome;
+    font-weight: 900;
+    font-size: inherit;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    color: currentColor;
+}
+
 ////////////////////////////////////////
 // B. Local header and primary nav
 ////////////////////////////////////////
@@ -113,6 +123,30 @@ $global-header-toggle-button-color: $primary-nav-link-color;
         }
     }
 
+    .dropdown-toggle {
+
+        &::after {
+            display: inline-block;
+            margin-left: .5rem;
+            vertical-align: .125rem;
+
+            content: "\f107";
+
+            @extend %fa-icon;
+            font-size: 1rem;
+
+        }
+
+        // &[aria-expanded="false"]::after {
+        //     content: "\f107";
+        // }
+
+        // &[aria-expanded="true"]::after {
+        //     content: "\f106";
+        // }
+
+    }
+
     // Donate 
 
     .nav-item.donate {
@@ -136,7 +170,6 @@ $global-header-toggle-button-color: $primary-nav-link-color;
         }
 
         &.active {
-            // text-decoration: underline;
             color: $primary-nav-link-active-color;
         }
 
@@ -664,16 +697,6 @@ $matrix-gutter-padding: $grid-gutter-width / 4;
 ////////////////////////////////////////
 // H. Accordion and button toggle 
 ////////////////////////////////////////
-
-%fa-icon {
-    font-family: $font-awesome;
-    font-weight: 900;
-    font-size: inherit;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    color: currentColor;
-}
 
 // Accordion Preferences
 

@@ -306,9 +306,9 @@ $border-width: 1px;
 
 $enable-rounded: false;
 
-// Enable Caret
+// Caret
 
-$enable-caret: true;
+$enable-caret: false;
 
 // Border Radius
 
@@ -359,10 +359,6 @@ $component-active-color: $info;
 $input-btn-padding-x: ($grid-gutter-width/2);
 $nav-link-padding-y: .5rem;
 $nav-link-padding-x: $input-btn-padding-x;
-
-$caret-width: 5px;
-$caret-vertical-align: $caret-width;
-$caret-spacing: $caret-width * .25;
 
 // List Group
 
