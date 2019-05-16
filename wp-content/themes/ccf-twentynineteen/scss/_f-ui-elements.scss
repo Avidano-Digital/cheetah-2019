@@ -113,6 +113,18 @@ $global-header-toggle-button-color: $primary-nav-link-color;
         }
     }
 
+    // Donate 
+
+    .nav-item.donate {
+        .nav-link {
+            background: $primary;
+        }
+
+        .nav-link.active {
+            color: $primary-nav-link-color !important;
+        }
+    }
+
     // Set primary nav color and active states (both '.nav-pills' and '.nav-right')
 
     .nav-link {
@@ -124,7 +136,7 @@ $global-header-toggle-button-color: $primary-nav-link-color;
         }
 
         &.active {
-            text-decoration: underline;
+            // text-decoration: underline;
             color: $primary-nav-link-active-color;
         }
 

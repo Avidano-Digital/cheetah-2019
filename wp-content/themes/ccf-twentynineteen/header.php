@@ -139,7 +139,7 @@ $inside_news = strpos($url, 'news');
                         </nav>
 
                         <?php starterMenu('Header'); ?>
-
+                        
                     </div>
                     <!-- .collapse -->
                     
