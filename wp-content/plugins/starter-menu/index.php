@@ -171,13 +171,13 @@ Author URI: http://fullwindsor.co
             }
 
             if ($menuitem->item_type == 'childless_parent') :
-                echo '<div class="nav-item d-none d-lg-block"><a class="nav-link bg-primary '.$current.'" href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></div>';
+                echo '<div class="nav-item '.$classes.'"><a class="nav-link '.$current.' " href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></div>';
                 $count++;
                 continue;
             endif;
 
             if ($menuitem->item_type == 'grandparent') {
-              echo '<div class="nav-item dropdown"><a class="nav-link dropdown-toggle '.$current.'" href="#" id="nav-'.$id.'" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="'.$attr_title.'" role="button">'.$label.'</a><div class="dropdown-menu" aria-labelledby="nav-'.$id.'"><div class="d-lg-flex">';
+              echo '<div class="nav-item dropdown '.$classes.'"><a class="nav-link dropdown-toggle '.$current.'" href="#" id="nav-'.$id.'" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="'.$attr_title.'" role="button">'.$label.'</a><div class="dropdown-menu" aria-labelledby="nav-'.$id.'"><div class="d-lg-flex">';
               $grandparent_closing_tags = '</div></div></div>';
               $count++;
               continue;
@@ -192,7 +192,7 @@ Author URI: http://fullwindsor.co
             }
 
             if ($menuitem->item_type == 'orphaned_parent') :
-                echo '<div class="nav-item dropdown"><a class="nav-link dropdown-toggle '.$current.'" href="'.$url.'" id="nav-'.$id.'" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="'.$attr_title.'" role="button">'.$label.'</a><div class="dropdown-menu" aria-labelledby="nav-'.$id.'"><ul class="extensible-list">';
+                echo '<div class="nav-item dropdown '.$classes.'"><a class="nav-link dropdown-toggle '.$current.'" href="'.$url.'" id="nav-'.$id.'" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="'.$attr_title.'" role="button">'.$label.'</a><div class="dropdown-menu" aria-labelledby="nav-'.$id.'"><ul class="extensible-list">';
                 $closing_tags = '</ul></div></div>';
                 $count++;
                 continue;

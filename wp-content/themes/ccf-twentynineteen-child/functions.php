@@ -8,6 +8,7 @@
 
     function remove_actions_parent_theme() {
         remove_action( 'init', 'create_parent_post_types' );
+        remove_action( 'init', 'tax_init' );
     };
 
     add_action('after_setup_theme', 'remove_actions_parent_theme');
@@ -22,6 +23,8 @@
         unset($page_templates['page-resource-library.php']);
         unset($page_templates['page-ccf-videos.php']);
         unset($page_templates['page-donate.php']);
+        unset($page_templates['page-subpage.php']);
+        unset($page_templates['page-videos.php']);
 
         return $page_templates;
     }

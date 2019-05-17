@@ -129,17 +129,21 @@ $inside_news = strpos($url, 'news');
                                     <?php echo do_shortcode('[gtranslate]'); ?>
                                 </li>
 
+                                <?php if (is_child_theme() === false) : ?>
+
                                 <!-- Search --> 
                                 <li style="width:160px" dir="ltr">
                                     <?php get_search_form(); ?>
                                 </li>
+
+                                <?php endif; ?>
                                 
                             </ul>
 
                         </nav>
 
                         <?php starterMenu('Header'); ?>
-
+                        
                     </div>
                     <!-- .collapse -->
                     

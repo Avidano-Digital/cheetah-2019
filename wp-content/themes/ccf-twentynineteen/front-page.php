@@ -224,7 +224,7 @@
           </div>
           <!-- .col -->
           <div class="col-md-auto">
-            <a class="link text-body" href="#">All News</a>
+            <a class="link text-body" href="/ccf-blog" title="News">All News</a>
           </div>
           <!-- .col -->
         </header>

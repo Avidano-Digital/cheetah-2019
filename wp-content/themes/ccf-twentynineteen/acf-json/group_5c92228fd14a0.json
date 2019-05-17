@@ -1,6 +1,6 @@
 {
     "key": "group_5c92228fd14a0",
-    "title": "Resource Library Category Fields",
+    "title": "Resource Library - Category Fields",
     "fields": [
         {
             "key": "field_5c9501a4fa9d6",
@@ -65,5 +65,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1557310187
+    "modified": 1558091271
 }
