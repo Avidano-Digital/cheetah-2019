@@ -184,7 +184,7 @@ Author URI: http://fullwindsor.co
             }
 
             if ($menuitem->item_type == 'parent') {
-              echo '<ul class="extensible-list"><li class="leader">'.$label.'</li>';
+              echo '<ul class="extensible-list"><li class="leader"><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></li>';
               $open_parent = $menuitems[$count];
               $closing_tags = '</ul>';
               $count++;
