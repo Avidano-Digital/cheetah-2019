@@ -1,11 +1,11 @@
 {
-    "key": "group_5c92228fd14a0",
-    "title": "Resource Library - Category Fields",
+    "key": "group_5c97742fd4dc2",
+    "title": "Author Info",
     "fields": [
         {
-            "key": "field_5c9501a4fa9d6",
-            "label": "Featured Image",
-            "name": "featured_image",
+            "key": "field_5c978e7f44777",
+            "label": "Avatar",
+            "name": "avatar",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -27,12 +27,12 @@
             "mime_types": ""
         },
         {
-            "key": "field_5c9222b9d399f",
-            "label": "Order",
-            "name": "order",
-            "type": "number",
-            "instructions": "Categories with a lower number will appear first.",
-            "required": 1,
+            "key": "field_5c9791cee06ea",
+            "label": "Bio",
+            "name": "bio",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -40,30 +40,43 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "min": "",
-            "max": "",
-            "step": ""
+            "tabs": "all",
+            "toolbar": "very_simple",
+            "media_upload": 0,
+            "delay": 0
         }
     ],
     "location": [
         [
             {
-                "param": "taxonomy",
+                "param": "post_type",
                 "operator": "==",
-                "value": "resource-category"
+                "value": "post"
             }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1558091271
+    "modified": 1558091410
 }

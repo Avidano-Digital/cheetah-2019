@@ -1,6 +1,6 @@
 {
     "key": "group_59862180599f7",
-    "title": "Video Post Type",
+    "title": "Video - Post Type",
     "fields": [
         {
             "key": "field_598621dd9e29e",
@@ -38,7 +38,7 @@
             }
         ]
     ],
-    "menu_order": 20,
+    "menu_order": 0,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -60,5 +60,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1557410682
+    "modified": 1558091312
 }

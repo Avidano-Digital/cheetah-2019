@@ -1,6 +1,6 @@
 {
     "key": "group_5c755d982a14a",
-    "title": "Event Detail",
+    "title": "Event Details",
     "fields": [
         {
             "key": "field_5c755da6dcfc2",
@@ -166,7 +166,7 @@
             }
         ]
     ],
-    "menu_order": 250,
+    "menu_order": 0,
     "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
@@ -186,5 +186,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1557515962
+    "modified": 1558091363
 }
