@@ -146,8 +146,8 @@ Author URI: http://fullwindsor.co
             $attr_title = $menuitem->attr_title;          
             $classes = implode(' ',$menuitem->classes);
             $current = '';
-            $id = preg_replace("/[\s_]/", "-", preg_replace("/[\s-]+/", " ", preg_replace("/[^a-z0-9_\s-]/", "", strtolower($label))));
             $label = $menuitem->title;
+            $id = preg_replace("/[\s_]/", "-", preg_replace("/[\s-]+/", " ", preg_replace("/[^a-z0-9_\s-]/", "", strtolower($label))));
             $parent = $menuitem->menu_item_parent;
             $url = $menuitem->url;
             $xfn = $menuitem->xfn;
