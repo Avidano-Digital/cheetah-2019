@@ -502,6 +502,9 @@ $images = get_sub_field('images');
 
     // vars
     $background_color = get_sub_field('background_color');
+    
+    $image = get_sub_field('image');
+
     $headline = get_sub_field('headline');   
     $text = get_sub_field('text');   
     $link = get_sub_field('link');
@@ -517,7 +520,11 @@ $images = get_sub_field('images');
     <div class="row no-gutters">
 
         <div class="col-lg-6">
-            <img src="https://placehold.it/1000x800.jpg" alt="Placeholder">
+            <?php if ($image): ?>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>">
+            <?php else : ?>
+                <img src="https://placehold.it/800x600.jpg" alt="Placeholder">
+            <?php endif; ?>
         </div>
         <!-- .col -->
 
@@ -527,6 +534,9 @@ $images = get_sub_field('images');
                 <div class="f-sans-serif mb-2">
                     <?php echo $text; ?>
                 </div>
+                <?php if ($link): ?>
+                    <a class="link stretched-link text-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                <?php endif; ?>
             </div>
         </div>
         <!-- .col -->
