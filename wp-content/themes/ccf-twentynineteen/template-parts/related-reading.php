@@ -34,7 +34,7 @@ if ( $relatedPosts->have_posts() ):
 
 <div class="container-fluid">
 
-    <div class="narrow py-6">
+    <div class="narrow my-5">
 
         <p class="h5 mb-2">Related Reading</p>
 
