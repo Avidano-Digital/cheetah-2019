@@ -8,7 +8,7 @@
 
     function remove_actions_parent_theme() {
         remove_action( 'init', 'create_parent_post_types' );
-        remove_action( 'init', 'tax_init' );
+        remove_action( 'init', 'parent_tax_init' );
     };
 
     add_action('after_setup_theme', 'remove_actions_parent_theme');

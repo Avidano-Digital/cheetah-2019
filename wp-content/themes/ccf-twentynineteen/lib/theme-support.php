@@ -207,7 +207,7 @@
     // Custom Taxonomies
     ////////////////////////////////////////
 
-    function tax_init() {
+    function parent_tax_init() {
 
         register_taxonomy(
             'resource-category',
@@ -268,6 +268,34 @@
             'public' => true
           )
         );
+
+        register_taxonomy(
+            'news-author',
+            'post',
+            array(
+              'labels' => array(
+              'name' => __( 'News Authors' ),
+              'singular_name' => __( 'News Authors' ),
+              'add_new_item' => 'Add News Author',
+              'new_item_name' => 'New News Author',
+              'edit_item' => 'Edit News Author',
+              'view_item' => 'View News Author',
+              'update_item' => 'Update News Author'
+            ),
+            'has_archive' => true,
+            'hierarchical' => false,
+            'parent_item'  => null,
+            'parent_item_colon' => null,
+            'show_in_nav_menus' => true,
+            'public' => true,
+            'meta_box_cb' => false // hides meta box, since we're using ACF
+          )
+        );
+    }
+
+    add_action( 'init', 'parent_tax_init' );
+
+    function tax_init() {
 
         register_taxonomy(
             'news-author',
