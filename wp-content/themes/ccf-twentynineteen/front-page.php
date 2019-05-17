@@ -48,7 +48,7 @@
                     <div class="text-white">
                         <h1><?php echo $headline; ?></h1>
                         <p class="fs-lg mb-2"><?php echo $text; ?></p>
-                        <a class="link text-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                        <a class="link text-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target'] ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     </div>
                 </div>
                 <!-- .align-self-center -->
@@ -109,7 +109,7 @@
                     <?php endif; ?>
 
                     <?php if( $link): ?>
-                    <a class="link text-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                    <a class="link text-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     <?php endif; ?>
 
                   </div>
@@ -151,7 +151,7 @@
                   <div class="align-self-end">
 
                     <?php if( $link): ?>
-                    <a class="btn btn-block btn-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                    <a class="btn btn-block btn-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     <?php endif; ?>
 
                   </div>
@@ -189,7 +189,7 @@
                 <div class="card-img-overlay d-flex">
                   <div class="align-self-end">
                     <?php if( $link ): ?>
-                      <a class="btn btn-block btn-primary stretched-link" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                      <a class="btn btn-block btn-primary stretched-link" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                     <?php endif; ?>
                   </div>
                 </div>
@@ -272,7 +272,7 @@
                 <div class="align-self-end">
                   <div class="text-white">
                     <h4 class="h3 font-weight-bold"><?php echo $headline; ?></h4>
-                    <a class="link text-primary" href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+                    <a class="link text-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
                   </div>
                 </div>
                 <!-- .align-self-center -->
@@ -339,7 +339,7 @@
 
         <?php if( $link ): ?>
         <a class="btn btn-lg btn-primary" href="<?php echo $link['url']; ?>"
-          title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+          title="<?php echo $link['title']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
         <?php endif; ?>
 
       </div>

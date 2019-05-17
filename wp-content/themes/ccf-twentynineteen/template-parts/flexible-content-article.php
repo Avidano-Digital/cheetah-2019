@@ -105,7 +105,7 @@ $quote_credit_title = $quote['credit_title'];
 
                                     <?php if ( $summary_link ) : ?>
                                       
-                                        <a class="link text-primary" href="<?php echo $link['url']; ?>">
+                                        <a class="link text-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>">
                                             <?php echo $summary_link['title']; ?>
                                         </a>
 
@@ -434,7 +434,7 @@ $count_b = 0;
             <?php else : ?>
                 <img src="https://placehold.it/600x400.jpg" alt="Placeholder">
             <?php endif; ?>
-            <a class="btn btn-block btn-lg btn-info stretched-link" href="<?php echo $link['url']; ?>" <?php if($modals): ?>data-toggle="modal"<?php endif; ?> title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+            <a class="btn btn-block btn-lg btn-info stretched-link" href="<?php echo $link['url']; ?>" <?php if($modals): ?>data-toggle="modal"<?php endif; ?> target="<?php echo $link['target']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
         </div>
         <!-- .col -->
 
@@ -535,7 +535,7 @@ $images = get_sub_field('images');
                     <?php echo $text; ?>
                 </div>
                 <?php if ($link): ?>
-                    <a class="link stretched-link text-primary" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
+                    <a class="link stretched-link text-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" title="<?php echo $link['title']; ?>"><?php echo $link['title']; ?></a>
                 <?php endif; ?>
             </div>
         </div>
@@ -567,7 +567,7 @@ $images = get_sub_field('images');
     ?>
 
     <div class="col-md">
-        <a class="btn btn-block btn-primary btn-lg" href="<?php echo $link['url'] ?>"><?php echo $link['title'] ?></a>
+        <a class="btn btn-block btn-primary btn-lg" href="<?php echo $link['url'] ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title'] ?></a>
     </div>
 
     <?php endwhile; ?>

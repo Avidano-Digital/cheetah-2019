@@ -27,7 +27,7 @@
 
                 <div class="card-img-overlay d-flex">
                     <div class="align-self-end">
-                        <a class="btn btn-block btn-primary stretched-link" href="<?php echo $link['url']; ?>" title="Resource Library">
+                        <a class="btn btn-block btn-primary stretched-link" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" title="Resource Library">
                             <?php echo $link['title']; ?></a>
                     </div>
                 </div>

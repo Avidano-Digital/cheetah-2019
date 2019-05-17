@@ -133,7 +133,7 @@ $parent_title = get_the_title($post->post_parent);
                                 </dt>
 
                                 <dd class="col-md-auto">
-                                    <a href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+                                    <a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
                                 </dd>
 
                             </dl>
