@@ -23,6 +23,8 @@
         unset($page_templates['page-resource-library.php']);
         unset($page_templates['page-ccf-videos.php']);
         unset($page_templates['page-donate.php']);
+        unset($page_templates['page-subpage.php']);
+        unset($page_templates['page-videos.php']);
 
         return $page_templates;
     }
