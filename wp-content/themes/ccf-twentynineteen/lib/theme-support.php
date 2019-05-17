@@ -293,7 +293,7 @@
         );
     }
 
-    add_action( 'init', __NAMESPACE__ . 'tax_init' );
+    add_action( 'init', 'tax_init' );
 
     ////////////////////////////////////////
     // Remove Dashboard Menu Items
