@@ -1,9 +1,5 @@
 <?php
 
-/*
-Template Name: Archive
-*/
-
 get_header(); ?>
 
 <main id="content">
