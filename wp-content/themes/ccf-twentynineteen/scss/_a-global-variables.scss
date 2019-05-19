@@ -397,9 +397,9 @@ $accessible-box-shadow: 0 0 0 $border-width $input-border-color;
 $form-group-margin-bottom: $spacer-4;
 
 $input-btn-padding-x: $spacer-2;
-$input-btn-focus-width: 0.15rem;
-$input-focus-border-color: $blue;
-$input-btn-focus-box-shadow: 0 0 0 2px rgba($blue, 0.75);
+// $input-btn-focus-width: 0.15rem;
+// $input-focus-border-color: $blue;
+// $input-btn-focus-box-shadow: 0 0 0 2px rgba($blue, 0.75);
 
 // Note: Since version 4.2.1, bootstrap added icons to validate
 // We use more descriptive Font Awesome icons, so we simply turn Bootstrap's validation icons off
