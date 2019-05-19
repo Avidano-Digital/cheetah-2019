@@ -44,7 +44,7 @@
           <!-- .gradient-overlay-y-black -->
 
             <div class="card-img-overlay d-flex">
-                <div class="align-self-end my-lg-3 medium-max-width">
+                <div class="align-self-end medium-max-width my-lg-3">
                     <div class="text-white">
                         <h1><?php echo $headline; ?></h1>
                         <p class="fs-lg mb-2"><?php echo $text; ?></p>
@@ -92,9 +92,9 @@
 
               <div class="card-img-overlay d-flex">
 
-                <div class="align-self-end">
+                <div class="align-self-end medium-max-width my-lg-3">
                   
-                  <div class="medium-max-width text-white">
+                  <div class="text-white">
 
                     <?php if( $headline): ?>
                     <h1>
