@@ -388,15 +388,15 @@
 
                     <div class="row matrix-border d-md-none">
                       <div class="col-sm">
-                        <a href="#1" class="btn btn-block btn-primary d-md-none">Conservation</a>
+                        <a class="btn btn-block btn-primary d-md-none" href="/about/what-we-do/conservation" title="Conservation">Conservation</a>
                       </div>
                       <!-- .col -->
                       <div class="col-sm">
-                        <a href="#1" class="btn btn-block btn-primary d-md-none">Research</a>
+                        <a class="btn btn-block btn-primary d-md-none" href="/about/what-we-do/research" title="Research">Research</a>
                       </div>
                       <!-- .col -->
                       <div class="col-sm">
-                        <a href="#1" class="btn btn-block btn-primary d-md-none">Education</a>
+                        <a class="btn btn-block btn-primary d-md-none" href="/about/what-we-do/education" title="Education">Education</a>
                       </div>
                       <!-- .col -->
                     </div>
@@ -405,22 +405,21 @@
                     <div class="d-none d-md-block">
 
                       <ul class="extensible-list horizontal text-center">
-                          <li>
+                          <li class="position-relative">
                               <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-conservation.jpg" alt="Placeholder">
-                              <a class="text-primary stretched-link d-block" href="#1" title="Conservation">
+                              <a class="text-primary stretched-link d-block" href="/about/what-we-do/conservation" title="Conservation">
                                   <strong>Conservation</strong>
                               </a>
                           </li>
-                          <li>
+                          <li class="position-relative">
                               <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-research.jpg" alt="Placeholder">
-                              <a class="text-primary stretched-link d-block" href="#2" title="Research">
+                              <a class="text-primary stretched-link d-block" href="/about/what-we-do/research" title="Research">
                                   <strong>Research</strong> 
                               </a>
                           </li>
-
-                          <li>
+                          <li class="position-relative">
                               <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-education.jpg" alt="Placeholder">
-                              <a class="text-primary stretched-link d-block" href="#3" title="Education">
+                              <a class="text-primary stretched-link d-block" href="/about/what-we-do/education" title="Education">
                                   <strong>Education</strong> 
                               </a>
                           </li>
