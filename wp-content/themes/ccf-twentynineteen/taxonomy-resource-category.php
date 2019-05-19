@@ -111,15 +111,12 @@
                                         <strong class="h5">
                                             <?php the_title(); ?>
                                         </strong>
-<?php
-                                        if (get_field('authors')) :                                        
-?>                                            
+
+                                        <?php if (get_field('authors')) : ?>                                            
                                             <p class="f-sans-serif text-muted fs-md">
                                                 By <?php the_field('authors'); ?>
                                             </p>
-<?php
-                                        endif;
-?>                                                                                
+                                        <?php endif; ?>                                                                                
                                     </a>
                                 </li>
 
@@ -131,6 +128,13 @@
 
                 </div>
                 <!-- .narrow -->
+
+                <div class="pagination justify-content-center">
+
+                    <?php echo custom_pagination(); ?>
+                    
+                </div>
+                <!-- .pagination -->
 
                 <?php get_template_part('template-parts/article-footer'); ?>
                   
