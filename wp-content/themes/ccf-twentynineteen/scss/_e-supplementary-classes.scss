@@ -55,10 +55,12 @@ In this file:
   margin-right: auto
 }
 
+.narrow-max-width,
 .narrow {
   max-width: $narrow-width;
 }
 
+.medium-max-width,
 .medium {
   max-width: $medium-width;
 }
