@@ -38,7 +38,8 @@ In this file:
 
 $background-image-path: '/wp-content/themes/ccf-twentynineteen/images/';
 
-@mixin apply-background-image($image: 'placeholder-1500x750',
+@mixin apply-background-image(
+  $image: 'placeholder-1500x750',
   $extension: '.jpg',
   $cover: true) {
 
