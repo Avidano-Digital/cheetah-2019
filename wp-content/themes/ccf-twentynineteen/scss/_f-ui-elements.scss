@@ -2,7 +2,8 @@
 
 In this file:
 
-// A. Tab skipper
+// A. Local header and primary nav
+// B. Skip Menu
 // C. Gradients
 // D. Featured panels
 // E. Banner with background
@@ -31,7 +32,7 @@ In this file:
 }
 
 ////////////////////////////////////////
-// B. Local header and primary nav
+// A. Local header and primary nav
 ////////////////////////////////////////
 
 // Primary Navigation variables set here override Bootstrap default component settings
@@ -285,38 +286,23 @@ $global-header-toggle-button-color: $primary-nav-link-color;
             align-items: center;
 
             @if $enable-caret {
-
-            .dropdown-toggle::after {
-                color: red;
-            }
-
                 &[aria-expanded="true"]::after {
                     @include caret-up;
                 }
             }
         }
     }
-
-    // @include media-breakpoint-up(lg) {
-    //     .dropdown-toggle::after {
-    //         display: none;
-    //     }
-    // }
 }
 
 /* #global-header */
 
 ////////////////////////////////////////
-// C. Skip Menu
-////////////////////////////////////////
-
-////////////////////////////////////////
-// A. Tab skipper
+// B. Skip Menu
 ////////////////////////////////////////
 
 // Visible only on keyboard tabbing
 
-.tab-skipper {
+.skip-menu {
     @extend .position-absolute;
     @extend .shadow;
 
@@ -325,14 +311,13 @@ $global-header-toggle-button-color: $primary-nav-link-color;
     z-index: 900;
     padding: $spacer-2;
     font-size: $fs-md;
-    background: theme-color("light");
+    background: $light;
     color: $body-color;
 
     &:hover {
         color: currentColor;
     }
 }
-
 
 ////////////////////////////////////////
 // C. Gradients
@@ -396,7 +381,7 @@ $global-header-toggle-button-color: $primary-nav-link-color;
         position: relative;
     }
 
-    img {
+    img.show-on-mobile {
         opacity: 1;
     }
 

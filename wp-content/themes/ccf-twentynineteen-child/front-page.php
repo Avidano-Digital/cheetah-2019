@@ -98,7 +98,7 @@
 
         <header class="text-center mb-4">
           <h3 class="display-4 mb-0">Latest News</h3>
-          <a class="blended-link fs-md" href="#">All News</a>
+          <a class="text-reset fs-md" href="#">All News</a>
         </header>
 
         <div class="row matrix-border">
@@ -183,7 +183,7 @@
 
                               <header class="text-center mb-4">
                                   <h3 class="display-4 mb-0">Upcoming Events</h3>
-                                  <a class="blended-link fs-md" href="#">All Events</a>
+                                  <a class="text-reset fs-md" href="#">All Events</a>
                               </header>
 
                               <div class="row matrix-border">
