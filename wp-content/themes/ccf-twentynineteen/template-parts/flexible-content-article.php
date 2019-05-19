@@ -496,7 +496,7 @@ $images = get_sub_field('images');
 
 <?php if( have_rows('callouts') ): ?>
 
-<div class="offset-gutter-x my-5">
+<div class="mx-n2 my-5">
 
     <?php while ( have_rows('callouts') ) : the_row(); 
 
@@ -547,7 +547,7 @@ $images = get_sub_field('images');
     <?php endwhile; ?>
 
 </div>
-<!-- .offset-gutter-x -->
+<!-- .mx-n2 -->
 
 <?php endif; ?>
 

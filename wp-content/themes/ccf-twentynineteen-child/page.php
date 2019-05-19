@@ -54,7 +54,7 @@ $parent_title = get_the_title($post->post_parent);
 
               <div class="sticky-top py-xl-5">
 
-                  <div class="btn-toggle d-xl-none offset-gutter-x">
+                  <div class="btn-toggle d-xl-none mx-n2">
 
                       <a class="btn btn-lg btn-block btn-primary" data-toggle="collapse" href="#aside-nav" aria-expanded="false" aria-controls="collapseExample">
                           <span class="title"><?php echo $parent_title; ?></span>

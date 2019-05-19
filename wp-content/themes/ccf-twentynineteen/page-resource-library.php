@@ -65,7 +65,7 @@ get_header(); ?>
                          
                 <div class="medium">
 
-                    <div class="accordion-group offset-gutter-x mt-6 border-bottom" id="acc-resource-library" role="tablist">
+                    <div class="accordion-group mx-n2 mt-6 border-bottom" id="acc-resource-library" role="tablist">
 
                         <?php
 

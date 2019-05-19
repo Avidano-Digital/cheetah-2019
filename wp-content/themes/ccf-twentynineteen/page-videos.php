@@ -41,9 +41,9 @@ get_header(); ?>
                 </div>
                 <!-- .medium -->
 
-                <div class="offset-gutter-x">
+                <div class="mx-n2">
 
-                    <div class="row matrix-border offset-gutter-x">
+                    <div class="row matrix-border mx-n2">
 
                         <div class="col-lg-6">
                             <div class="embed-responsive embed-responsive-16by9">
@@ -92,7 +92,7 @@ get_header(); ?>
                     <!-- .row -->
 
                 </div>
-                <!-- .offset-gutter-x -->
+                <!-- .mx-n2 -->
 
                 <?php get_template_part('template-parts/article-footer'); ?>
 

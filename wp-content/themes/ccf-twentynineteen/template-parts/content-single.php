@@ -23,7 +23,7 @@
                 </header>
 
                 <section>
-                    <div class="offset-gutter-x bg-danger">
+                    <div class="mx-n2 bg-danger">
 
                     <figure class="mb-5 container px-0">
                         <?php if ( has_post_thumbnail() ) {
