@@ -162,37 +162,6 @@
 
                     <?php endif; ?>
 
-
-
-
-                    <ul class="extensible-list horizontal fs-lg">
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fab fa-instagram"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fab fa-youtube"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fa-pinterest"></span>
-                            </a>
-                        </li>
-                    </ul>
-
                 </div>
                 <!-- .col -->
 
@@ -203,7 +172,6 @@
         <!-- .container -->
 
         <?php endif; ?>
-
 
     </div>
     <!-- .bg-light -->
