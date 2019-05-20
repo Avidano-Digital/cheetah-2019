@@ -3,40 +3,6 @@
     "title": "Event Details",
     "fields": [
         {
-            "key": "field_5c755da6dcfc2",
-            "label": "Start Date Time",
-            "name": "start_date_time",
-            "type": "date_time_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "display_format": "F j, Y g:i a",
-            "return_format": "F j, Y g:i a",
-            "first_day": 1
-        },
-        {
-            "key": "field_5cbd84323c1a8",
-            "label": "End Date Time",
-            "name": "end_date_time",
-            "type": "date_time_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "display_format": "F j, Y g:i a",
-            "return_format": "F j, Y g:i a",
-            "first_day": 1
-        },
-        {
             "key": "field_5cd545e6da520",
             "label": "Start Date",
             "name": "start_date",
@@ -186,5 +152,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1558091363
+    "modified": 1558268271
 }
