@@ -86,6 +86,12 @@
                 'title' => 'Paragraph',
                 'block' => 'p',
             ),
+
+            array(
+                'title' => 'Small',
+                'block' => 'p',
+                'classes' => 'f-sans-serif fs-md',
+            ),
             array(
                 'title' => 'Blockquote',
                 'block' => 'blockquote',

@@ -138,14 +138,6 @@ $global-header-toggle-button-color: $primary-nav-link-color;
 
         }
 
-        // &[aria-expanded="false"]::after {
-        //     content: "\f107";
-        // }
-
-        // &[aria-expanded="true"]::after {
-        //     content: "\f106";
-        // }
-
     }
 
     // Donate 
@@ -252,6 +244,7 @@ $global-header-toggle-button-color: $primary-nav-link-color;
     }
 
     @include media-breakpoint-down(md) {
+
         .nav-item {
             border-top: 1px solid $global-header-border-color;
             width: 100%;
@@ -266,6 +259,25 @@ $global-header-toggle-button-color: $primary-nav-link-color;
         .nav-item {
             background: none;
         }
+
+
+        .dropdown-toggle {
+
+            &[aria-expanded="false"]::after {
+                content: "\f107";
+            }
+
+            &[aria-expanded="true"]::after {
+                content: "\f106";
+            }
+
+        }
+
+
+
+
+
+
 
         .dropdown-menu, 
         .dropdown-menu ul.extensible-list {
