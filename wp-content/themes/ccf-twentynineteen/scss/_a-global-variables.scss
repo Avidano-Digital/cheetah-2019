@@ -457,5 +457,9 @@ $figure-caption-color: $text-muted;
 ////////////////////////////////////////
 
 $pagination-active-bg: $primary;
-$pagination-color: $text-muted;
+$pagination-color: $body-color;
 $pagination-bg: transparent;
+
+$pagination-hover-color: $text-muted;
+$pagination-hover-bg: $white;
+$pagination-hover-border-color: $border-color;
