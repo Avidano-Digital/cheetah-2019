@@ -126,6 +126,45 @@
 
                 <div class="col-lg-auto mb-2 mb-lg-0">
 
+                    <?php if ( have_rows('social_media_links', 'option') ): ?>
+
+                        <ul class="extensible-list horizontal fs-lg">
+
+                        <?php while ( have_rows('social_media_links', 'option') ): the_row();
+
+                            // vars
+                            $icon = get_sub_field('icon');
+                            $link = get_sub_field('link');
+
+                            ?>
+
+                            <li>
+
+                                <?php if ($link): ?>
+
+                                    <a class="text-body" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>" target="_blank">
+                                    
+                                    <?php if ($icon): ?>
+                                        <?php echo $icon; ?>
+                                    <?php else: ?>
+                                        <span><?php echo $link['title']; ?></span>
+                                    <?php endif; ?>
+                                    
+                                    </a>
+                                
+                                <?php endif; ?>
+
+                            </li>
+
+                        <?php endwhile; ?>
+
+                        </ul>
+
+                    <?php endif; ?>
+
+
+
+
                     <ul class="extensible-list horizontal fs-lg">
                         <li>
                             <a class="text-body" href="#">
