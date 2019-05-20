@@ -653,8 +653,8 @@
 
         function custom_pagination(){
 
-            $prev_arrow = is_rtl() ? '→' : '←';
-            $next_arrow = is_rtl() ? '←' : '→';
+            $prev_arrow = is_rtl() ? '<i class="fas fa-arrow-right fa-sm"></i>' : '<i class="fas fa-arrow-left fa-sm"></i>';
+            $next_arrow = is_rtl() ? '<i class="fas fa-arrow-left fa-sm"></i>' : '<i class="fas fa-arrow-right fa-sm"></i>';
             
             global $wp_query;
             $total = $wp_query->max_num_pages;
