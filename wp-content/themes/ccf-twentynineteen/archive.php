@@ -183,7 +183,7 @@ get_header(); ?>
 
         <?php endif; /* have_posts */ ?>
 
-        <div class="pagination justify-content-center">
+        <div class="pagination justify-content-center mt-3">
 
             <?php echo custom_pagination(); ?>
             
