@@ -596,19 +596,19 @@ $images = get_sub_field('images');
 
     <?php endif; ?>
 
-<?php elseif( get_row_layout() == 'graphic_separator_block' ):
+<?php elseif( get_row_layout() == 'divider_block' ):
 
+    $color = get_sub_field('color');
 
-    $style = get_sub_field('style');
+    if ($color === 'Dark') : ?>
 
+    <hr class="narrow my-4 border-dark">
 
-    // check
-    if ($style === 'Cheetahs') : ?>
+    <?php elseif ($color === 'Light') : ?>
 
-    <hr class="cheetahs my-4">
+    <hr class="narrow my-4">
 
     <?php endif; ?>
-
 
 <?php endif; /* text_block | video_block | banner_block | figure_block | two_figure_block | gallery_carousel_block  | thumnail_links_block | gallery_thumbnail_block */ ?>
 

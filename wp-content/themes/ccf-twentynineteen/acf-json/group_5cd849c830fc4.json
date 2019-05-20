@@ -36,8 +36,17 @@
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "format",
+        "send-trackbacks"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1558091445
+    "modified": 1558347150
 }
