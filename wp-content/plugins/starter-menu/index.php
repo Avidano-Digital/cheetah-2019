@@ -44,13 +44,13 @@ Author URI: http://fullwindsor.co
 
     else :
 
-        if ($current_section[0] == 'events') :
+        if ($current_section[2] == 'events') :
 
             $current_section = 'get-involved';
 
         else :
 
-            $current_section = $current_section[0];
+            $current_section = $current_section[1];
 
         endif;
 
