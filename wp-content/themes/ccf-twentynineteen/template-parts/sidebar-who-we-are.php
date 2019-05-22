@@ -1,20 +1,20 @@
 <div class="col-xl-3 bg-dark">
 
-    <div class="sticky-top py-xl-5">
+    <div class="sticky-top py-xl-4">
 
-        <div class="btn-toggle d-xl-none offset-gutter-x">
+        <div class="btn-toggle d-xl-none mx-n2">
 
-            <a class="btn btn-lg btn-block btn-primary" data-toggle="collapse" href="#aside-nav" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-block btn-lg btn-primary" data-toggle="collapse" data-target="#aside-nav" aria-expanded="false" aria-controls="aside-nav">
                 <span class="title">Who We Are</span>
-            </a>
-
+            </button>
+            
         </div>
 
-        <nav class="collapse d-xl-block mb-xl-5" id="aside-nav">
+        <nav class="collapse d-xl-block mb-xl-4" id="aside-nav">
 
             <?php $parent_title = get_the_title($post->post_parent); ?>
 
-            <ul class="extensible-list text-white py-4 py-xl-0">
+            <ul class="extensible-list text-white py-3 py-xl-0">
                 <li class="page_item <?php if ( is_page( 'mission-and-vision' ) || $parent_title == 'Mission and Vision' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/who-we-are/mission-and-vision/">Mission and Vision</a>
                 </li>
@@ -37,5 +37,7 @@
         <?php get_template_part('template-parts/aside-donate'); ?>
 
     </div>
+    <!-- .sticky-top -->
+
 </div>
 <!-- .col -->

@@ -56,7 +56,7 @@
 
                     <ul class="extensible-list">
                         <li>
-                            <a href="#" title="For Kids">
+                            <a href="/kids" title="For Kids">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/ccf-kids-logo.svg" alt="Placeholder">
                             </a>
                         </li>
@@ -74,54 +74,38 @@
 
     <div class="bg-light py-5">
 
-        <div class="container">
+        <?php if ( have_rows( 'footer_briefs', 'option') ): ?>
+        
+         <div class="container">
 
             <div class="row mb-4">
 
-                <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0">
-                    <h5>Cheetah Conservation Fund</h5>
-                    <p class="fs-md">Our Research and Education Centre is located in Otjiwarongo, Namibia. We encourage
-                        visitors to see our facilities in person.</p>
-                    <p class="fs-md"><a class="link text-body" href="#">Come Join Us!</a></p>
-                </div>
-                <!-- .col -->
+            <?php while ( have_rows('footer_briefs', 'option') ): the_row();
+
+                // vars
+                $headline = get_sub_field('headline');
+                $paragraph = get_sub_field('paragraph');
+
+                ?>
 
                 <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0">
 
-                    <h5>Where We Work</h5>
-                    <p class="fs-md">CCF is an international non-profit organization with fundraising
-                        operations located in: Australia, Canada, Italy, United Kingdom, and United States, working
-                        in cooperation with staff and partners around the world.</p>
-                    <p class="fs-md">
-                        <a class="link text-body" href="about-us/who-we-are/ccf-global/">CCF Global</a>
-                    </p>
-
+                    <?php if ($headline): ?>
+                    <h5><?php echo $headline; ?></h5>
+                    <?php endif; ?>
+                    
+                    <?php if ($paragraph): ?>
+                    <div class="fs-md">
+                        <?php echo $paragraph; ?></p>
+                    </div>
+                    <?php endif; ?>
                 </div>
                 <!-- .col -->
 
-                <div class="col-lg-6 col-xl-4">
-
-                    <h5>Support CCF</h5>
-
-                    <p class="fs-md">
-                        You can help save the cheetah from exinction. Support our science-based, results-driven conservation initiatives. Together, we can save the cheetah.
-                    </p>
-
-                    <ul class="extensible-list horizontal">
-                        <li>
-                            <a class="btn btn-sm btn-block btn-primary" href="/donate" title="Donate">Donate</a>
-                        </li>
-                        <li>
-                            <a class="btn btn-sm btn-block btn-primary" href="#" title="Sponsor a Cheetah">Sponsor a Cheetah</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- .col -->
+            <?php endwhile; ?>
 
             </div>
             <!-- .row -->
-
             <hr class="dark mb-2">
 
             <div class="row justify-content-between">
@@ -142,33 +126,41 @@
 
                 <div class="col-lg-auto mb-2 mb-lg-0">
 
-                    <ul class="extensible-list horizontal fs-lg">
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fab fa-instagram"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fab fa-youtube"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fa-pinterest"></span>
-                            </a>
-                        </li>
-                    </ul>
+                    <?php if ( have_rows('social_media_links', 'option') ): ?>
+
+                        <ul class="extensible-list horizontal fs-lg">
+
+                        <?php while ( have_rows('social_media_links', 'option') ): the_row();
+
+                            // vars
+                            $icon = get_sub_field('icon');
+                            $link = get_sub_field('link');
+
+                            ?>
+
+                            <li>
+
+                                <?php if ($link): ?>
+
+                                    <a class="text-body" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>" target="_blank">
+                                    
+                                    <?php if ($icon): ?>
+                                        <?php echo $icon; ?>
+                                    <?php else: ?>
+                                        <span><?php echo $link['title']; ?></span>
+                                    <?php endif; ?>
+                                    
+                                    </a>
+                                
+                                <?php endif; ?>
+
+                            </li>
+
+                        <?php endwhile; ?>
+
+                        </ul>
+
+                    <?php endif; ?>
 
                 </div>
                 <!-- .col -->
@@ -178,6 +170,8 @@
 
         </div>
         <!-- .container -->
+
+        <?php endif; ?>
 
     </div>
     <!-- .bg-light -->
@@ -189,7 +183,7 @@
             <p class="fs-sm text-white">
                 <span class="d-block d-sm-inline-block">© 2019 Cheetah Conservation Fund</span>
                 <span class="d-none d-sm-inline-block mx-1">•</span>
-                <a class="blended-link" href="#">Privacy Policy</a>
+                <a class="text-reset" href="#">Privacy Policy</a>
             </p>
         
         </div>
@@ -197,7 +191,6 @@
     
     </div>
     <!-- .bg-dark -->
-
 
 </footer>
 

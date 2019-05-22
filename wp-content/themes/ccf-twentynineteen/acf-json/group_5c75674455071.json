@@ -1,12 +1,12 @@
 {
-    "key": "group_5cd849c830fc4",
-    "title": "Article Featured Image Toggle",
+    "key": "group_5c75674455071",
+    "title": "CCF Events",
     "fields": [
         {
-            "key": "field_5cd849de51205",
-            "label": "Hide Feature on Post",
-            "name": "hide_feature_on_post",
-            "type": "true_false",
+            "key": "field_5c756749864bc",
+            "label": "Events Description",
+            "name": "events_description",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,25 +15,25 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "post"
+                "value": "page-ccf-events.php"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "side",
-    "style": "seamless",
+    "position": "normal",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -43,10 +43,13 @@
         "comments",
         "revisions",
         "slug",
+        "author",
         "format",
+        "categories",
+        "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1558347150
+    "modified": 1551199283
 }

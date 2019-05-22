@@ -1,12 +1,12 @@
 {
-    "key": "group_5cd70054aecbb",
-    "title": "News Author Avatar",
+    "key": "group_5c94c2dc82fb5",
+    "title": "Fact Sheets",
     "fields": [
         {
-            "key": "field_5cd70066b52f0",
-            "label": "Avatar",
-            "name": "avatar",
-            "type": "image",
+            "key": "field_5c94cc741c056",
+            "label": "PDF Fact Sheet",
+            "name": "pdf_fact_sheet",
+            "type": "file",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,13 +16,8 @@
                 "id": ""
             },
             "return_format": "array",
-            "preview_size": "thumbnail",
             "library": "all",
-            "min_width": "",
-            "min_height": "",
             "min_size": "",
-            "max_width": "",
-            "max_height": "",
             "max_size": "",
             "mime_types": ""
         }
@@ -30,19 +25,21 @@
     "location": [
         [
             {
-                "param": "taxonomy",
+                "param": "post_taxonomy",
                 "operator": "==",
-                "value": "news-author"
+                "value": "resource-category:fact-sheets"
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 500,
     "position": "normal",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1558091251
+    "modified": 1555923830
 }

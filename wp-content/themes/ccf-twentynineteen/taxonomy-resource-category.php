@@ -37,7 +37,7 @@
 
                 <div class="sticky-top py-xl-5">
 
-                    <div class="btn-toggle d-xl-none offset-gutter-x">
+                    <div class="btn-toggle d-xl-none mx-n2">
 
                         <a class="btn btn-lg btn-block btn-primary" data-toggle="collapse" href="#aside-nav" aria-expanded="false" aria-controls="collapseExample">
                             <span class="title">Learn</span>
@@ -111,15 +111,12 @@
                                         <strong class="h5">
                                             <?php the_title(); ?>
                                         </strong>
-<?php
-                                        if (get_field('authors')) :                                        
-?>                                            
+
+                                        <?php if (get_field('authors')) : ?>                                            
                                             <p class="f-sans-serif text-muted fs-md">
                                                 By <?php the_field('authors'); ?>
                                             </p>
-<?php
-                                        endif;
-?>                                                                                
+                                        <?php endif; ?>                                                                                
                                     </a>
                                 </li>
 
@@ -132,7 +129,12 @@
                 </div>
                 <!-- .narrow -->
 
-                <?php get_template_part('template-parts/article-footer'); ?>
+                <div class="pagination justify-content-center">
+
+                    <?php echo custom_pagination(); ?>
+                    
+                </div>
+                <!-- .pagination -->
                   
             </div>
             <!-- .col -->

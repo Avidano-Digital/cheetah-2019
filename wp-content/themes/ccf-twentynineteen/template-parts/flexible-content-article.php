@@ -496,7 +496,7 @@ $images = get_sub_field('images');
 
 <?php if( have_rows('callouts') ): ?>
 
-<div class="offset-gutter-x my-5">
+<div class="mx-n2 my-5">
 
     <?php while ( have_rows('callouts') ) : the_row(); 
 
@@ -547,7 +547,7 @@ $images = get_sub_field('images');
     <?php endwhile; ?>
 
 </div>
-<!-- .offset-gutter-x -->
+<!-- .mx-n2 -->
 
 <?php endif; ?>
 
@@ -596,19 +596,19 @@ $images = get_sub_field('images');
 
     <?php endif; ?>
 
-<?php elseif( get_row_layout() == 'graphic_separator_block' ):
+<?php elseif( get_row_layout() == 'divider_block' ):
 
+    $color = get_sub_field('color');
 
-    $style = get_sub_field('style');
+    if ($color === 'Light') : ?>
 
+    <hr class="narrow my-4">
 
-    // check
-    if ($style === 'Cheetahs') : ?>
+    <?php elseif ($color === 'Dark') : ?>
 
-    <hr class="cheetahs my-4">
+    <hr class="narrow my-4 border-dark">
 
     <?php endif; ?>
-
 
 <?php endif; /* text_block | video_block | banner_block | figure_block | two_figure_block | gallery_carousel_block  | thumnail_links_block | gallery_thumbnail_block */ ?>
 

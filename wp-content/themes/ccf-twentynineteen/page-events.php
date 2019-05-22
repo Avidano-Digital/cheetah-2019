@@ -108,7 +108,7 @@ $parent_title = get_the_title($post->post_parent);
                     
                     <?php endif; $first = true; ?>                        
                     
-                    <div class="text-block medium my-5 events">
+                    <div class="text-block medium my-4 events">
 
                         <h2 class="mb-3"><?php echo $group; ?></h2>
 
@@ -139,9 +139,18 @@ $parent_title = get_the_title($post->post_parent);
                                     <?php endif; ?>
 
                                     <div class="card-body">
+
+                                        <p class="has-icon f-sans-serif fs-md mb-1">
+                                            <span class="fas fa-map-marker-alt"></span>    
+                                            <span class="title"><?php the_field('location') ?></span>    
+                                        </p>
+                                        
                                         <h2 class="h5"><?php the_title(); ?></h2>
-                                        <p class="f-sans-serif fs-md bg-danger">
+                                        
+                                        <p class="f-sans-serif fs-md">
+
                                             <strong class="d-block"><?php the_field('start_date') ?></strong>
+
                                             <?php if ($time) : ?>
                                             <span class="text-muted"><?php echo $time; ?></span>
                                             <?php endif; ?>

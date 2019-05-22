@@ -2,8 +2,8 @@
 
 In this file:
 
-// A. Tab skipper
-// B. Custom Link
+// A. Local header and primary nav
+// B. Skip Menu
 // C. Gradients
 // D. Featured panels
 // E. Banner with background
@@ -17,6 +17,7 @@ In this file:
 // M. Carousel
 // N. Enlarge
 // O. Fixed-width Sidebar
+// B. Custom Link
 
 */
 
@@ -31,7 +32,7 @@ In this file:
 }
 
 ////////////////////////////////////////
-// B. Local header and primary nav
+// A. Local header and primary nav
 ////////////////////////////////////////
 
 // Primary Navigation variables set here override Bootstrap default component settings
@@ -136,14 +137,6 @@ $global-header-toggle-button-color: $primary-nav-link-color;
             font-size: 1rem;
 
         }
-
-        // &[aria-expanded="false"]::after {
-        //     content: "\f107";
-        // }
-
-        // &[aria-expanded="true"]::after {
-        //     content: "\f106";
-        // }
 
     }
 
@@ -251,6 +244,7 @@ $global-header-toggle-button-color: $primary-nav-link-color;
     }
 
     @include media-breakpoint-down(md) {
+
         .nav-item {
             border-top: 1px solid $global-header-border-color;
             width: 100%;
@@ -265,6 +259,25 @@ $global-header-toggle-button-color: $primary-nav-link-color;
         .nav-item {
             background: none;
         }
+
+
+        .dropdown-toggle {
+
+            &[aria-expanded="false"]::after {
+                content: "\f107";
+            }
+
+            &[aria-expanded="true"]::after {
+                content: "\f106";
+            }
+
+        }
+
+
+
+
+
+
 
         .dropdown-menu, 
         .dropdown-menu ul.extensible-list {
@@ -285,38 +298,23 @@ $global-header-toggle-button-color: $primary-nav-link-color;
             align-items: center;
 
             @if $enable-caret {
-
-            .dropdown-toggle::after {
-                color: red;
-            }
-
                 &[aria-expanded="true"]::after {
                     @include caret-up;
                 }
             }
         }
     }
-
-    // @include media-breakpoint-up(lg) {
-    //     .dropdown-toggle::after {
-    //         display: none;
-    //     }
-    // }
 }
 
 /* #global-header */
 
 ////////////////////////////////////////
-// C. Skip Menu
-////////////////////////////////////////
-
-////////////////////////////////////////
-// A. Tab skipper
+// B. Skip Menu
 ////////////////////////////////////////
 
 // Visible only on keyboard tabbing
 
-.tab-skipper {
+.skip-menu {
     @extend .position-absolute;
     @extend .shadow;
 
@@ -325,37 +323,13 @@ $global-header-toggle-button-color: $primary-nav-link-color;
     z-index: 900;
     padding: $spacer-2;
     font-size: $fs-md;
-    background: theme-color("light");
+    background: $light;
     color: $body-color;
 
     &:hover {
         color: currentColor;
     }
 }
-
-////////////////////////////////////////
-// B. Custom Link
-////////////////////////////////////////
-
-$custom-link: true;
-
-@if $custom-link {
-    .link {
-        @extend .f-sans-serif;
-
-        font-weight: $font-weight-bold;
-        color: currentColor;
-        cursor: pointer;
-
-        @include custom-underline;
-
-        @include hover-focus {
-            color: currentColor;
-
-            @include custom-underline;
-        }
-    }
-} // end if
 
 ////////////////////////////////////////
 // C. Gradients
@@ -419,8 +393,8 @@ $custom-link: true;
         position: relative;
     }
 
-    img {
-        @include opacity(1);
+    img.show-on-mobile {
+        opacity: 1;
     }
 
     .bg-white {
@@ -524,17 +498,16 @@ $custom-link: true;
 }
 
 ////////////////////////////////////////
-// E. Banner with background
+// G. Banner with background
 ////////////////////////////////////////
 
-$banner-with-background-opacity: 0.3;
-$banner-with-background-device-h: 250px;
-$banner-with-background-desktop-h: 350px;
+$banner-with-background-opacity: 0.2;
+$banner-with-background-height: 350px;
 
 .banner-with-background {
     position: relative;
     display: flex;
-    min-height: $banner-with-background-device-h;
+    min-height: $banner-with-background-height;
 
     >div {
         position: relative;
@@ -553,9 +526,9 @@ $banner-with-background-desktop-h: 350px;
         left: 0;
         z-index: auto;
 
-        @include opacity($banner-with-background-opacity);
-        @include apply-background-image;
+        opacity: $banner-with-background-opacity;
 
+        @include apply-background-image;
     }
 
     // Add your own backround classes and append them to the '.banner-with-background' selector
@@ -572,9 +545,6 @@ $banner-with-background-desktop-h: 350px;
         }
     }
 
-    @include media-breakpoint-up(lg) {
-        min-height: $banner-with-background-desktop-h;
-    }
 }
 
 ////////////////////////////////////////
@@ -704,7 +674,7 @@ $accordion-button-border: true;
 $accordion-button-shadow: false;
 
 $accordion-title-color: $body-color;
-$accordion-bg-color: $transparent;
+$accordion-bg-color: transparent;
 
 .btn-toggle,
 .accordion-group {
@@ -816,7 +786,7 @@ $nav-tab-active-font-weight: $font-weight-bold;
 
 @mixin device-nav-pills-and-tabs-settings {
   flex-direction: column;
-  border-color: $transparent;
+  border-color: transparent;
   margin-bottom: $spacer-2;
 
   .nav-item {
@@ -1045,7 +1015,7 @@ $carousel-indicator-height: auto;
         display: inline-block;
         padding: $spacer-2 $spacer-3;
 
-        @include background-opacity($white, 0.9);
+        background: rgba($white, 0.9);
     }
 }
 
