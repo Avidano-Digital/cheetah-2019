@@ -24,8 +24,11 @@
                 <li class="page_item <?php if ( is_page( 'our-centre' ) || $parent_title == 'Our Centre' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/who-we-are/our-centre/">Our Centre</a>
                 </li>
-                <li class="page_item <?php if ( is_page( 'staff-and-board' ) || $parent_title == 'Staff and Board' ) : ?>current_page_item<?php endif; ?>">
-                    <a href="#">Staff and Board</a>
+                <li class="page_item <?php if ( is_page( 'staff' ) || $parent_title == 'Staff' ) : ?>current_page_item<?php endif; ?>">
+                    <a href="#">Staff</a>
+                </li>
+                <li class="page_item <?php if ( is_page( 'governance' ) || $parent_title == 'Governance' ) : ?>current_page_item<?php endif; ?>">
+                    <a href="#">Governance</a>
                 </li>
                 <li class="page_item <?php if ( is_page( 'ccf-global' ) || $parent_title == 'CCF Global' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/who-we-are/ccf-global/">CCF Global</a>
