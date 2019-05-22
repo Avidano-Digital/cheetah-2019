@@ -28,15 +28,15 @@
     "location": [
         [
             {
-                "param": "post",
+                "param": "page",
                 "operator": "==",
-                "value": "1659"
+                "value": "219"
             }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -56,5 +56,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1558091293
+    "modified": 1558515907
 }
