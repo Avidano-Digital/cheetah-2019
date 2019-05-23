@@ -610,6 +610,6 @@ $images = get_sub_field('images');
 
     <?php endif; ?>
 
-<?php endif; /* text_block | video_block | banner_block | figure_block | two_figure_block | gallery_carousel_block  | thumnail_links_block | gallery_thumbnail_block */ ?>
+<?php endif; /* text_block | video_block | banner_block | figure_block | two_figure_block | gallery_carousel_block | thumnail_links_block | gallery_thumbnail_block */ ?>
 
 <?php endwhile; endif; /* article_content */ ?>

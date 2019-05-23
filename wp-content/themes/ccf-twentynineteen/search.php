@@ -4,64 +4,57 @@ get_header(); ?>
 
 <main id="content" role="main">
 
-    <div class="container-fluid bg-info cheetah-spots py-3">
+  <div class="bg-dark banner-with-background oculus">
 
+    <div class="container-fluid">
       <div class="narrow">
+        <h1 class="display-4 text-white text-center">
+        <?php printf( __( 'Search Results for: %s', 'shape' ), '<span class="d-block"><em>' . get_search_query() . '</em></span>' ); ?>
+        </h1>
+      </div>
+    </div>
+    <!-- .container -->
 
-        <ul class="extensible-list horizontal fs-md text-white text-shadow">
-          <li>
-            <a class="text-white" href="#">
-              Search Results
-            </a>
-          </li>
-        </ul>
+  </div>
+  <!-- .banner-with-background -->
+
+  <div class="container-fluid overflow-auto">
+
+    <div class="narrow my-5">
+
+    <?php if (have_posts()) : ?>
+
+      <ul class="my-4">
+      
+        <?php while (have_posts()) : the_post(); ?>
+      
+        <li>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        </li>
+    
+        <?php endwhile; ?>
+      
+      </ul>
+
+      <?php else : ?>
+
+        <p>No results</p>
+
+      <?php endif; ?>
+
+      <div class="pagination justify-content-center my-4">
+
+          <?php echo custom_pagination(); ?>
+          
+      </div>
+      <!-- .pagination -->
 
       </div>
-      <!-- .narrow -->
+      <!-- .my-5 -->
+
 
     </div>
     <!-- .container-fluid -->
-
-    <article class="container-fluid wide blog py-6" id="primary-content">
-
-        <header class="narrow mb-5">
-
-            <h1 class="display-4 mb-3"><?php printf( __( 'Search Results for: %s', 'shape' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-    
-        </header>      
-
-    </article>
-    <!-- #primary-content -->
-
-    <?php 
-
-        if ( have_posts() ) :
-    ?>
-            <ul>
-    <?php          
-                while ( have_posts() ) : the_post();
-
-    ?>
-                    <li>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </li>
-    <?php
-                endwhile;
-    ?>
-                </ul>
-    <?php
-
-        else :
-
-      ?>
-
-        No results.
-
-    <?php 
-
-        endif; 
-
-    ?>
 
     <section class="featured-panel responsive-lg">
 
