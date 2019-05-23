@@ -28,6 +28,10 @@
                                 
                 <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
                 
+                <?php else : ?>
+                
+                <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                
                 <?php endif; /* featured_image */ ?>
 
             </div>
