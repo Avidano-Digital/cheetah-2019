@@ -50,35 +50,7 @@ $parent_title = get_the_title($post->post_parent);
 
         <div class="row">
 
-          <div class="col-xl-3 bg-dark">
-
-              <div class="sticky-top py-xl-5">
-
-                  <div class="btn-toggle d-xl-none mx-n2">
-
-                      <a class="btn btn-lg btn-block btn-primary" data-toggle="collapse" href="#aside-nav" aria-expanded="false" aria-controls="collapseExample">
-                          <span class="title"><?php echo $parent_title; ?></span>
-                      </a>
-
-                  </div>
-
-                  <nav class="collapse d-xl-block mb-xl-5" id="aside-nav"> 
-
-                      <ul class="extensible-list text-white py-4 py-xl-0">
-                          <li class="page_item">
-                              <a href="/get-involved/visit-ccf/">Sidebar Menu Item</a>
-                          </li>
-                      </ul>
-
-                  </nav>
-
-                  <?php get_template_part('template-parts/aside-donate'); ?>
-
-              </div>
-              <!-- .sticky-top -->
-
-          </div>
-          <!-- .col -->
+            <?php include(locate_template('template-parts/sidebar-standard.php', false, false)); ?>
 
             <div class="col-xl-9 overflow-hidden">
 
