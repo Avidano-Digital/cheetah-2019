@@ -47,7 +47,7 @@ get_header(); ?>
 
         <div class="row">
 
-            <?php include(locate_template('template-parts/sidebar-standard.php', false, false)); ?>
+            <?php get_template_part('template-parts/sidebar-learn'); ?>
 
             <div class="col-xl-9 py-6">
 

@@ -50,7 +50,19 @@ $parent_title = get_the_title($post->post_parent);
 
         <div class="row">
 
-            <?php include(locate_template('template-parts/sidebar-standard.php', false, false)); ?>
+            <?php
+
+                if ($parent_title == "Who We Are" || $grandparent_title == "Who We Are"):
+                    get_template_part('template-parts/sidebar-who-we-are');
+                elseif ($parent_title == "What We Do" || $grandparent_title == "What We Do"):
+                    get_template_part('template-parts/sidebar-what-we-do');
+                elseif ($parent_title == "Get Involved" || $grandparent_title == "Get Involved"):
+                    get_template_part('template-parts/sidebar-get-involved');
+                elseif ($parent_title == "Learn" || $grandparent_title == "Learn"):
+                    get_template_part('template-parts/sidebar-learn');
+                endif;
+            
+            ?>
 
             <div class="col-xl-9 overflow-hidden">
 
