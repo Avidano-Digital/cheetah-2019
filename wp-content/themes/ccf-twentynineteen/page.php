@@ -96,6 +96,12 @@ $parent_title = get_the_title($post->post_parent);
 
                     endif;
 
+                    if (is_page('staff-alternate')):
+                    
+                    get_template_part('template-parts/staff-alternate');
+
+                    endif;
+
                     $partnership_group = get_field('partnership_group');
                     
                     $post_object = $partnership_group;
