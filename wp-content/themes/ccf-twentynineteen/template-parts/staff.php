@@ -47,7 +47,7 @@
         <!-- .row -->
 
     </div>
-    <!-- .medium -->
+    <!-- .narrow -->
 
 </div>
 <!-- .bg-light -->
