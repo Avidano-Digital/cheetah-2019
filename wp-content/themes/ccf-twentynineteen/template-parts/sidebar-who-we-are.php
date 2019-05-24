@@ -25,10 +25,10 @@
                     <a href="/about-us/who-we-are/our-centre/">Our Centre</a>
                 </li>
                 <li class="page_item <?php if ( is_page( 'staff' ) || $parent_title == 'Staff' ) : ?>current_page_item<?php endif; ?>">
-                    <a href="#">Staff</a>
+                    <a href="/about/who-we-are/staff">Staff</a>
                 </li>
                 <li class="page_item <?php if ( is_page( 'governance' ) || $parent_title == 'Governance' ) : ?>current_page_item<?php endif; ?>">
-                    <a href="#">Governance</a>
+                    <a href="/about/who-we-are/governance">Governance</a>
                 </li>
                 <li class="page_item <?php if ( is_page( 'ccf-global' ) || $parent_title == 'CCF Global' ) : ?>current_page_item<?php endif; ?>">
                     <a href="/about-us/who-we-are/ccf-global/">CCF Global</a>
