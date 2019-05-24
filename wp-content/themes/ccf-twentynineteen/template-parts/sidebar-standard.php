@@ -36,19 +36,23 @@
             );
 
             $children = get_children($args);
+
+            // var_dump($children);
         
             if ($children) :
 
             ?>
                     <ul class="extensible-list text-white py-3 py-xl-0">
                         <?php foreach ($children as $child) : ?>
-                            <?php echo $resource_library->ID ?>
-                            <li class="page_item <?php echo ($post->ID == $child->ID || $child->ID == $resource_library[0]->ID ? 'current_page_item': '') ?>">
+
+                        <li class="page_item <?php echo ($post->ID == $child->ID || $child->ID == $resource_library[0]->ID ? 'current_page_item': '') ?>">
                                 <a href="<?php the_permalink($child->ID); ?>" title="<?php echo $child->post_title; ?>"><?php echo $child->post_title; ?></a>
                             </li>
                         <? endforeach; ?>
                     </ul>
-                <?php endif; ?>
+                <?php endif; 
+                
+                ?>
         </nav>
 
         <?php get_template_part('template-parts/aside-donate'); ?>

@@ -31396,6 +31396,14 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen/page-general.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen/page-resource-library.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page-resource-library.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/page-subpage.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -31410,6 +31418,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/page-videos.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/page.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/protected-page.php": {
@@ -31598,6 +31614,14 @@
 		"oF": 1,
 		"oS": 3
 		},
+	"/wp-content/themes/ccf-twentynineteen/taxonomy-resource-category.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/taxonomy-resource-category.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen/template-parts/article-footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -31732,6 +31756,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/sidebar-learn.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/template-parts/sidebar-standard.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/sidebar-standard.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/template-parts/sidebar-what-we-do.php": {
