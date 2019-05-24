@@ -728,7 +728,7 @@
 
         function limit_menu_depth( $hook ) {
             if ( $hook != 'nav-menus.php' ) return;
-            wp_add_inline_script( 'nav-menu', 'wpNavMenu.options.globalMaxDepth = 1;', 'after' );
+            wp_add_inline_script( 'nav-menu', 'wpNavMenu.options.globalMaxDepth = 0;', 'after' );
         }
 
         add_action( 'admin_enqueue_scripts', 'limit_menu_depth' );
