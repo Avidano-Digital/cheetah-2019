@@ -24,17 +24,22 @@ get_header(); ?>
 
     <?php if (have_posts()) : ?>
 
-      <ul class="my-4">
-      
-        <?php while (have_posts()) : the_post(); ?>
-      
-        <li>
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        </li>
-    
-        <?php endwhile; ?>
-      
-      </ul>
+        <ul class="list-group list-group-flush mb-3">
+
+            <?php while (have_posts()) : the_post(); ?>
+
+                <li class="list-group-item">
+                    <a class="text-body" href="<?php the_permalink(); ?>">
+                        <p class="f-sans-serif fs-md mb-0"><?php echo get_the_date(); ?></p>
+                        <strong class="h5">
+                            <?php the_title(); ?>
+                        </strong>                                                                 
+                    </a>
+                </li>
+
+            <?php endwhile; ?>
+
+        </ul>
 
       <?php else : ?>
 
