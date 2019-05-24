@@ -42,7 +42,7 @@ Author URI: http://fullwindsor.co
 
             // Output the menu item
 
-            echo '<div class="nav-item"><a class="nav-link '.$current.' " href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></div>';
+            echo '<div class="nav-item" '. ($label == 'Donate' ? 'donate' : '') .'><a class="nav-link '.$current.' " href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></div>';
 
         endforeach;
 
