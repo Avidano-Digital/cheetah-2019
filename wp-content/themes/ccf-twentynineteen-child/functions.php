@@ -1,5 +1,28 @@
 <?php
 
+
+// Parent Post Types
+
+function create_child_post_types() {
+
+    register_post_type(
+        'Events',
+        array(
+            'labels' => array(
+            'name' => __('Events'),
+            'singular_name' => __('Event')
+        ),
+        'supports' => array( 'title', 'thumbnail' ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-calendar'
+        )
+    );
+
+}
+
+add_action( 'init', 'create_child_post_types' );
+
     ////////////////////////////////////////
     // Remove Parent Theme Features
     ////////////////////////////////////////

@@ -79,9 +79,9 @@
     // Custom Post Types
     ////////////////////////////////////////
 
-    // Shared Post Types
+    // Parent Post Types
 
-    function create_shared_post_types() {
+    function create_parent_post_types() {
 
         register_post_type(
             'Events',
@@ -96,14 +96,6 @@
             'menu_icon' => 'dashicons-calendar'
             )
         );
-        
-    }
-    
-    add_action('init', 'create_shared_post_types');
-
-    // Parent Post Types
-
-    function create_parent_post_types() {
         
         register_post_type( 'Videos',
             array(
