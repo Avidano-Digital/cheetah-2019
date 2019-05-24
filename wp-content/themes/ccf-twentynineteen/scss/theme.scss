@@ -647,3 +647,16 @@ hr.dark {
         border-color: $pagination-active-border-color;
     }
 }
+
+.staff-list{
+
+    h4{
+        @extend .h5;
+        margin-bottom: .25rem;;
+    }
+    p {
+        @extend .f-sans-serif;
+        font-size: $fs-md;
+        margin-bottom: 0; 
+    }
+}

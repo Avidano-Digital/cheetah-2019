@@ -338,7 +338,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, #bbox-root legend > div > label, .h5, .h6 {
+.h1, .h2, .h3, .h4, #bbox-root legend > div > label, .h5, .staff-list h4, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2; }
@@ -367,7 +367,7 @@ h4, .h4, #bbox-root legend > div > label {
     h4, .h4, #bbox-root legend > div > label {
       font-size: calc(1.275rem + 0.3vw) ; } }
 
-h5, .h5 {
+h5, .h5, .staff-list h4 {
   font-size: 1.25rem; }
 
 h6, .h6 {
@@ -9622,7 +9622,7 @@ In this file:
 .f-serif, p, .text-block > ul:not([class]) {
   font-family: Georgia, 'Times New Roman', Times, serif; }
 
-.f-sans-serif, .link, body, p.h1, p.h2, p.h3, p.h4, p.h5, p.h6, blockquote > p {
+.f-sans-serif, .link, body, p.h1, p.h2, p.h3, p.h4, p.h5, p.h6, blockquote > p, .staff-list p {
   font-family: 'Roboto', sans-serif; }
 
 .f-cheetah-tracks, #kids-tabs a.nav-item {
@@ -9660,7 +9660,7 @@ a.featured-article {
       margin-right: 1rem;
       padding: 0.25rem 0.5rem;
       bottom: 0; }
-  a.featured-article .h5 {
+  a.featured-article .h5, a.featured-article .staff-list h4, .staff-list a.featured-article h4 {
     font-weight: 700;
     padding-left: 1rem;
     padding-right: 1rem; }
@@ -9896,3 +9896,10 @@ hr.dark {
   color: #462B41;
   background-color: #fec34e;
   border-color: #fec34e; }
+
+.staff-list h4 {
+  margin-bottom: .25rem; }
+
+.staff-list p {
+  font-size: 1rem;
+  margin-bottom: 0; }
