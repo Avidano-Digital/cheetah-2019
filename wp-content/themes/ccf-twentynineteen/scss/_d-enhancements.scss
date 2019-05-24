@@ -284,7 +284,19 @@ $accessible-hover-focus: false;
 // Add visible underline to links within the #primary-content area
 
 #primary-content{
-  p > a:not([class]){ text-decoration: underline; }
+  p > a:not([class]){ 
+    color: currentColor;
+
+    // text-decoration: underline;
+    @include custom-underline($color: $primary,
+
+      $opacity: 0.75,
+
+      $height: 0.0875em,
+      $distance: 0.15em,
+
+      $direction: to right)
+  }
 } 
 
 ////////////////////////////////////////

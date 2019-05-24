@@ -8279,7 +8279,13 @@ html[dir="rtl"] [class*="border-"][class*="-left"] {
     text-decoration: underline; }
 
 #primary-content p > a:not([class]) {
-  text-decoration: underline; }
+  color: currentColor;
+  background-image: linear-gradient(to right, #fec34e 0%, #fec34e 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.0875em;
+  background-position: 0 100%;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em; }
 
 legend,
 .legend {

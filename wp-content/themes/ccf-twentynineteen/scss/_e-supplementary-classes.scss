@@ -310,7 +310,6 @@ ol {
 
   @include hover-focus {
     color: currentColor;
-
     @include custom-underline;
   }
 }
