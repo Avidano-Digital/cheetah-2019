@@ -90,6 +90,13 @@ $parent_title = get_the_title($post->post_parent);
 
                     endif;
 
+                    if (is_page('staff')):
+                    
+                    get_template_part('template-parts/staff');
+
+                    endif;
+
+
                     $partnership_group = get_field('partnership_group');
                     
                     $post_object = $partnership_group;
@@ -154,7 +161,6 @@ $parent_title = get_the_title($post->post_parent);
 
                     get_template_part('template-parts/article-footer');
                     get_template_part('template-parts/related-reading');
-                    // wp_reset_postdata();
 
                     ?>
 
