@@ -96,7 +96,6 @@ $parent_title = get_the_title($post->post_parent);
 
                     endif;
 
-
                     $partnership_group = get_field('partnership_group');
                     
                     $post_object = $partnership_group;

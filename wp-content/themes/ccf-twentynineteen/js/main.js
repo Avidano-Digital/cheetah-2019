@@ -168,28 +168,6 @@ jQuery(document).ready(function ($) {
     });
 
     ////////////////////////////////////////
-    // Events filter selects
-    ////////////////////////////////////////
-
-    $('.events-filter').change(function() {
-
-        var country = $('#countries').find(':selected').data('country-id');
-
-        if (!country) {
-            $('.events').fadeIn();
-            $('[data-country]').fadeIn();
-        }
-        else {
-            $('.events').fadeOut('fast',function(){
-                $("[data-country]").hide();
-                $("[data-country='" + country +"']").show();
-                $("[data-country='" + country +"']").parents('.events').fadeIn();
-            });
-        }
-
-    });
-
-    ////////////////////////////////////////
     // Modals
     ////////////////////////////////////////
 
@@ -222,5 +200,19 @@ jQuery(document).ready(function ($) {
     $('#all-authors').on('show.bs.collapse', function () {
         $('#all-topics').collapse('hide');
     });
+
+
+    ////////////////////////////////////////
+    // Accordion Scroll to Top
+    ////////////////////////////////////////
+
+    $('.collapse[role="tabpanel"]').on('shown.bs.collapse', function () {
+
+        var $panel = $(this).closest('.card');
+
+        $('html, body').animate({
+            scrollTop: $panel.offset().top
+        }, 500);
+    })
 
 }); // end document ready
