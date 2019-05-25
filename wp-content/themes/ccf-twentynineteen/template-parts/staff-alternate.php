@@ -1,16 +1,16 @@
 
-<div class="bg-light overflow-hidden">
+<div class="bg-light overflow-hidden mx-n2">
 
-    <div class="medium my-4">
+    <div class="narrow my-5">
 
-        <h2>Executive Staff</h2>
+        <h2 class="display-4 font-weight-light mb-3">Executive Staff</h2>
 
         <div class="row align-items-center my-3">
-            <div class="col-3">
-                <img class="rounded-circle" src="https://via.placeholder.com/250x250" alt="Placeholder">
+            <div class="col-4">
+                <img class="rounded-circle" src="<?php echo get_template_directory_uri(); ?>/images/ccf-staff-laurie-marker.jpg" alt="Placeholder">
             </div>
             <!-- .col -->
-            <div class="col-9">
+            <div class="col-8">
                 <h3 class="h5 mb-0">Laurie L. Marker, DPhil.</h3>
                 <p class="mb-0"><em>Founder, Executive Director</em></p>
                 <p><a href="#">About Dr. Laurie</a></p>
@@ -20,25 +20,25 @@
         <!-- .row -->
 
         <div class="row align-items-center my-3">
-            <div class="col-3">
-                <img class="rounded-circle" src="https://via.placeholder.com/250x250" alt="Placeholder">
+            <div class="col-4">
+                <img class="rounded-circle" src="<?php echo get_template_directory_uri(); ?>/images/ccf-staff-bruce-brewer.jpg" alt="Placeholder">
             </div>
             <!-- .col -->
-            <div class="col-9">
+            <div class="col-8">
                 <h3 class="h5 mb-0">Bruce Brewer, PhD</h3>
                 <p class="mb-0"><em>General Manager</em></p>
-                <p>1998 – Present (Bruce also runs the CCF Bushblok project)</p>
+                <p>(Bruce also runs the CCF Bushblok project)</p>
             </div>
             <!-- .col -->
         </div>
         <!-- .row -->
 
         <div class="row align-items-center my-3">
-            <div class="col-3">
-                <img class="rounded-circle" src="https://via.placeholder.com/250x250" alt="Placeholder">
+            <div class="col-4">
+                <img class="rounded-circle" src="<?php echo get_template_directory_uri(); ?>/images/ccf-staff-anne-schmidt-kuntzel.jpg" alt="Placeholder">
             </div>
             <!-- .col -->
-            <div class="col-9">
+            <div class="col-8">
                 <h3 class="h4 mb-0">Anne Schmidt-Küntzel</h3>
                 <p class="mb-0"><em>Research Geneticist and Assistant Director for Animal Health and Research</em></p>
             </div>
@@ -48,6 +48,7 @@
 
     </div>
     <!-- .narrow -->
+
 </div>
 <!-- .bg-light -->
 
