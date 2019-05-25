@@ -2,9 +2,6 @@
 
 get_header();
 
-$grandparent_title = get_the_title(intval(get_post($post->post_parent)->post_parent));
-$parent_title = get_the_title($post->post_parent);
-
 ?>
 
 <main id="content">
@@ -50,8 +47,6 @@ $parent_title = get_the_title($post->post_parent);
 
         <div class="row">
 
-            <?php include(locate_template('template-parts/sidebar-standard.php', false, false)); ?>
-
             <div class="col-xl-9 overflow-hidden">
 
                 <article class="my-6" id="primary-content">
@@ -62,12 +57,11 @@ $parent_title = get_the_title($post->post_parent);
                         </h1>
                     </header>
 
-                    <?php get_template_part('template-parts/flexible-content-article'); ?>
-
                     <?php
+                    
+                    get_template_part('template-parts/flexible-content-article');
 
                     get_template_part('template-parts/article-footer');
-                    get_template_part('template-parts/related-reading');
 
                     ?>
 
