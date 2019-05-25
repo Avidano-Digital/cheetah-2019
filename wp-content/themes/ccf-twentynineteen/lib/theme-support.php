@@ -79,9 +79,9 @@
     // Custom Post Types
     ////////////////////////////////////////
 
-    // Shared Post Types
+    // Parent Post Types
 
-    function create_shared_post_types() {
+    function create_parent_post_types() {
 
         register_post_type(
             'Events',
@@ -96,14 +96,6 @@
             'menu_icon' => 'dashicons-calendar'
             )
         );
-        
-    }
-    
-    add_action('init', 'create_shared_post_types');
-
-    // Parent Post Types
-
-    function create_parent_post_types() {
         
         register_post_type( 'Videos',
             array(
@@ -728,7 +720,7 @@
 
         function limit_menu_depth( $hook ) {
             if ( $hook != 'nav-menus.php' ) return;
-            wp_add_inline_script( 'nav-menu', 'wpNavMenu.options.globalMaxDepth = 1;', 'after' );
+            wp_add_inline_script( 'nav-menu', 'wpNavMenu.options.globalMaxDepth = 0;', 'after' );
         }
 
         add_action( 'admin_enqueue_scripts', 'limit_menu_depth' );
