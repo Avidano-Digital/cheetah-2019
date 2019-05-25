@@ -7550,6 +7550,22 @@
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/readme.txt",
 		"oF": 0
 		},
+	"/wp-content/plugins/child-starter-menu/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/child-starter-menu/index.php",
+		"oF": 0
+		},
+	"/wp-content/plugins/child-starter-menu/static.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/child-starter-menu/static.php",
+		"oF": 0
+		},
 	"/wp-content/plugins/classic-editor/classic-editor.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -28935,6 +28951,22 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5c75674455071.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5c75674455071-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/wp-content/themes/ccf-twentynineteen-child/archive-events.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/archive-events.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen-child/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -29017,14 +29049,6 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen-child/style-min.css",
 		"oF": 1,
 		"oS": 3
-		},
-	"/wp-content/themes/ccf-twentynineteen/___examples.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/___examples.php",
-		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/acf-json/group_59862180599f7.json": {
 		"ft": 524288,
@@ -31248,30 +31272,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/wp-content/themes/ccf-twentynineteen/include/mobile-menu.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/include/mobile-menu.php",
-		"oF": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/include/primary-navigation.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/include/primary-navigation.php",
-		"oF": 0
-		},
-	"/wp-content/themes/ccf-twentynineteen/include/secondary-navigation.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen/include/secondary-navigation.php",
-		"oF": 0
-		},
 	"/wp-content/themes/ccf-twentynineteen/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -31561,8 +31561,16 @@
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/css/theme.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
+		},
+	"/wp-content/themes/ccf-twentynineteen/search.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/search.php",
+		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/searchform.php": {
 		"cB": 0,
