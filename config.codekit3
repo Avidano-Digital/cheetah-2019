@@ -28959,12 +28959,36 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5cd5d3f182766.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5cd5d3f182766-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5cd70054aecbb.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5cd70054aecbb-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/wp-content/themes/ccf-twentynineteen-child/archive-events.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen-child/archive-events.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen-child/archive.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/archive.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen-child/footer.php": {
@@ -29038,6 +29062,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen-child/page.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen-child/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/single.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen-child/style.css": {
@@ -53935,6 +53967,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2019/05/carl-avidano-250x250.jpg": {
+		"ft": 16384,
+		"iS": 10396,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2019/05/carl-avidano-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2019/05/carl-avidano.jpg": {
+		"ft": 16384,
+		"iS": 14802,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2019/05/carl-avidano.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/wp-content/uploads/sites/2/2019/05/cheetah-conservation-fund-united-states-logo.svg": {

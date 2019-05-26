@@ -8,30 +8,6 @@ get_header(); ?>
 
 <main id="content" role="main">
 
-    <div class="container-fluid bg-info cheetah-spots py-3">
-
-      <div class="narrow">
-
-        <ul class="extensible-list horizontal fs-md text-white text-shadow">
-          <li>
-            <a class="text-white" href="/ccf-blog">
-              News
-            </a>
-          </li>
-          <li><span class="fa fa-caret-right" role="img"></span></li>
-          <li>
-            <a class="text-primary font-weight-bold" href="/ccf-blog">
-              CCF Blog
-            </a>
-          </li>
-        </ul>
-        
-      </div>
-      <!-- .narrow -->
-
-    </div>
-    <!-- .container-fluid -->
-
     <?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
 
     <article class="container-fluid wide blog py-6" id="primary-content">
@@ -39,11 +15,11 @@ get_header(); ?>
         <header class="narrow mb-5">
 
             <?php $postcat = get_the_category( $post->ID ); ?>
-            <?php foreach ($postcat as $cat): if ($cat->parent != 0 ): ?>
+            <?php foreach ($postcat as $cat): ?>
 
             <p class="mb-0"><a class="no-link-style text-body" href="#"><em><?php echo $cat->name; ?></em></a></p>
 
-            <?php endif; endforeach; ?> 
+            <?php endforeach; ?> 
 
             <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
             
