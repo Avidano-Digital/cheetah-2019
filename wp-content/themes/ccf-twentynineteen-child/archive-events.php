@@ -1,45 +1,43 @@
 <?php
 
+/*
+Template Name: Upcoming Events
+*/
+
 get_header();
 
 ?>
 
+<?php
+
+$featured_image_id = get_post_thumbnail_id($post->ID);
+$featured_image = wp_get_attachment_image_src($featured_image_id, 'full', false, '');
+$featured_image_alt = get_post_meta($featured_image_id, '_wp_attachment_image_alt', true);
+
+echo '<style>' .
+     '.banner-with-background.featured-image::before{' .
+     'background-image: url(' . $featured_image[0] .');' .
+     '</style>'
+?>
+
 <main id="content">
 
-    <section class="banner">
+    <div class="bg-dark banner-with-background featured-image">
 
-        <div class="card bg-white">
+        <div class="container">
 
-            <div class="gradient-overlay-y-black">
-
-                <?php
-                $featured_image_id = get_post_thumbnail_id($post->ID);
-                $featured_image = wp_get_attachment_image_src($featured_image_id, 'full', false, '');
-                $featured_image_alt = get_post_meta($featured_image_id, '_wp_attachment_image_alt', true);
-                ?>
-
-                <?php if ($featured_image): ?>
-                <img class="card-img"
-                    src="<?php echo $featured_image[0]; ?>"
-                    alt="<?php echo $featured_image_alt; ?>">
-                <?php else : ?>
-                <img class="card-img" src="http://via.placeholder.com/1500x500.jpg" alt="Placeholder">
-                <?php endif; ?>
-
+            <div class="text-white text-shadow">
+                <h1 class="display-3 text-white">
+                    <?php the_title(); ?>
+                </h1>
             </div>
-
-            <div class="card-img-overlay d-flex">
-                <div class="container-fluid align-self-end opacity-70">
-                    <h1 class="text-right text-secondary">
-                        <em>Events</em>
-                    </h1>
-                </div>
-                <!-- .align-self-center -->
-            </div>
+            <!-- .narrow -->
+        
         </div>
+        <!-- .container -->
 
-    </section>
-    <!-- .banner -->
+    </div>
+    <!-- .banner-with-background -->
 
     <article class="container-fluid">
 
