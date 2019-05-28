@@ -38,6 +38,8 @@ Author URI: http://fullwindsor.co
               $current = 'active';
             elseif (is_singular('post') && $label == 'News') :
               $current = 'active';
+            elseif (!is_post_type_archive('events') && is_archive() && $label == 'News') :
+              $current = 'active';
             endif;
 
             // Output the menu item

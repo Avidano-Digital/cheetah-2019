@@ -42,6 +42,8 @@
         
         });
 
+        add_theme_support( 'title-tag' );
+
         // Move Yoast to the Bottom
 
         function keep_yoast_below() {

@@ -24,7 +24,7 @@ echo '<style>' .
 
             <div class="text-white text-shadow">
                 <h1 class="display-3 text-white">
-                    <?php wp_title(); ?>
+                    <?php echo (is_home() ? single_post_title() : the_archive_title()); ?>
                 </h1>
             </div>
             <!-- .narrow -->

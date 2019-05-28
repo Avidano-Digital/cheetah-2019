@@ -15,7 +15,6 @@ $inside_news = strpos($url, 'news');
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><?php wp_title(); ?> • Cheetah Conservation Fund</title>
 
     <?php wp_head(); ?>
 
