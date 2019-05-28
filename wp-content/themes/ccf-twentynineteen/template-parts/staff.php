@@ -17,7 +17,7 @@ $bio = get_sub_field('bio');
         $name = get_sub_field('name');
         $title = get_sub_field('title');
         $link = get_sub_field('link');
-        $time = get_sub_field('time');
+        $start_year = get_sub_field('start_year');
 
         ?>
 
@@ -44,9 +44,9 @@ $bio = get_sub_field('bio');
                 
                 <?php endif; ?>
                 
-                <?php if ($time): ?>
+                <?php if ($start_year): ?>
                 <p class="mb-0">
-                    <em><?php echo $time; ?></em>
+                    <em><?php echo $start_year; ?> - Present</em>
                 </p>
                 <?php endif; ?>
 
@@ -140,14 +140,24 @@ $bio = get_sub_field('bio');
 
                         $name = get_sub_field('name');
                         $title = get_sub_field('title');
-                        $time = get_sub_field('time');
+                        $start_year = get_sub_field('start_year');
 
                         ?>
 
                         <li class="mb-2">
+
+                            <?php if ($name): ?>
                             <h4><?php echo $name; ?></h4>
-                            <p><em><?php echo $title; ?></em></p>
-                            <p><?php echo $time; ?></p>
+                            <?php endif; ?>
+
+                            <?php if ($title): ?>
+                            <p><?php echo $title; ?></p>
+                            <?php endif; ?>
+
+                            <?php if ($start_year): ?>
+                            <p><em><?php echo $start_year; ?> - Present</em></p>
+                            <?php endif; ?>
+
                         </li>
 
                          <?php endwhile; endif; /* staff_person */ ?>

@@ -134,8 +134,8 @@
                         },
                         {
                             "key": "field_5ced012628204",
-                            "label": "Time",
-                            "name": "time",
+                            "label": "Start Year",
+                            "name": "start_year",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -290,8 +290,8 @@
                                 },
                                 {
                                     "key": "field_5ced3e92f6e67",
-                                    "label": "Time",
-                                    "name": "time",
+                                    "label": "Start Year",
+                                    "name": "start_year",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -331,5 +331,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1559058918
+    "modified": 1559061511
 }
