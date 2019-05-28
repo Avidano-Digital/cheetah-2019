@@ -12,17 +12,22 @@ get_header();
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <div class="bg-dark banner-with-background oculus">
+    <div class="bg-info cheetah-spots">
 
-        <div class="container-fluid">
-            <div class="narrow">
-                <h1 class="display-4 text-white"><?php the_title(); ?></h1>
+        <div class="container py-4">
+
+            <div class="narrow text-white my-5">
+
+                <h1 class="display-4 text-primary text-shadow"><?php the_title(); ?></h1>
+
             </div>
+            <!-- .narrow -->
+
         </div>
-        <!-- .container -->
+        <!-- .container-fluid -->
 
     </div>
-    <!-- .banner-with-background -->
+    <!-- .container -->
 
     <div class="container-fluid overflow-auto">
 
