@@ -41,7 +41,7 @@ get_header(); ?>
             <?php $postcat = get_the_category( $post->ID ); ?>
             <?php foreach ($postcat as $cat): if ($cat->parent != 0 ): ?>
 
-            <p class="mb-0"><a class="no-link-style text-body" href="#"><em><?php echo $cat->name; ?></em></a></p>
+            <p class="mb-0"><a class="no-link-style text-body" href="<?php echo get_category_link($cat->cat_ID); ?>"><em><?php echo $cat->name; ?></em></a></p>
 
             <?php endif; endforeach; ?> 
 
