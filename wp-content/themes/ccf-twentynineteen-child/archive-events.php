@@ -18,7 +18,6 @@ echo '<style>' .
 
 <main id="content">
 
-
     <div class="bg-dark banner-with-background featured-image">
 
         <div class="container">
