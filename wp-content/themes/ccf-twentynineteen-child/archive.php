@@ -28,7 +28,7 @@ echo '<style>' .
 
             <div class="text-white text-shadow">
                 <h1 class="display-3 text-white">
-                    <?php the_title(); ?>
+                    News
                 </h1>
             </div>
             <!-- .narrow -->
@@ -48,23 +48,18 @@ echo '<style>' .
                 <div class="sticky-top py-lg-5">
 
                     <div class=" p-2">
-
                         <ul class="extensible-list fs-md">
-                            <li>
-                                <strong>Topics:</strong>
-                            </li>
-                            <li>
-                                <a href="#" title="Link">Link</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Link">Link</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Link">Link</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Link">Link</a>
-                            </li>
+                        <li><strong>Topics:</strong></li>
+                            
+                            <?php
+
+                            $categories = get_categories();
+                            foreach ($categories as $category): ?>
+
+                            <li><a class="text-muted" href="<?php echo get_category_link($category->cat_ID); ?>"><?php echo $category->name; ?></a></li>
+                            
+                            <?php endforeach; ?>
+
                         </ul>
                     
                     </div>
@@ -80,7 +75,7 @@ echo '<style>' .
 
                 <div class="my-5">
 
-                <?php
+                    <?php
 
                     global $post;
                     
@@ -96,13 +91,16 @@ echo '<style>' .
                     <div class="row align-items-center my-3">
 
                         <div class="col-lg-6">
-                            <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                <img class="w-100" src="https://via.placeholder.com/1000x563" alt="<?php the_title(); ?>">
+                            </a>
                         </div>
                         <!-- .col-6 -->
 
                         <div class="col-lg-6">
-                            <p class="fs-md text-muted"><?php echo $the_date; ?></p>
-                            <h5><?php the_title(); ?></h5>
+                            <p class="text-muted f-sans-serif mb-0 fs-md"><?php echo $the_date; ?></p>
+                            <h5 class="mb-0"><?php the_title(); ?></h5>
+                            <a class="link text-secondary stretched-link fs-md" href="<?php the_permalink(); ?>">Read More</a>
                         </div>
                         <!-- .col-6 -->
                     
@@ -110,55 +108,6 @@ echo '<style>' .
                     <!-- .row -->
 
                     <?php endforeach; wp_reset_postdata(); ?>
-
-                    <div class="row matrix-gutter d-none">
-
-                    <?php
-
-                    global $post;
-                    
-                    $postslist = get_posts();
-                    
-                    foreach ( $postslist as $post ) :
-                    setup_postdata( $post );
-                    
-                    $the_date = get_the_date();
-                    
-                    ?>
-
-                    <div class="col-lg-6 mb-3 mb-lg-0">
-                    
-                        <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                        
-                            <div>
-
-                                <span><?php echo $the_date; ?></span>
-
-                                <?php if( has_post_thumbnail() ):
-                                    $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
-                                ?>
-                                                
-                                <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
-                                
-                                <?php else : ?>
-                                
-                                <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
-                                
-                                <?php endif; /* featured_image */ ?>
-
-                            </div>
-
-                            <p class="h5"><?php the_title(); ?></p>
-
-                        </a>
-
-                    </div>
-                    <!-- .col -->
-
-                    <?php endforeach; wp_reset_postdata(); ?>
-
-                </div>
-                <!-- .row -->
 
                 </div>
                 <!-- .medium -->
@@ -169,60 +118,6 @@ echo '<style>' .
         </div>
         <!-- .row -->
     
-    
-    </div>
-
-    <div class="container py-5 d-none">
-    
-        <div class="row matrix-gutter">
-
-            <?php
-
-            global $post;
-            
-            $postslist = get_posts();
-            
-            foreach ( $postslist as $post ) :
-            setup_postdata( $post );
-            
-            $the_date = get_the_date();
-            
-            ?>
-
-            <div class="col-lg-4 mb-3 mb-lg-0">
-            
-                <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                
-                    <div>
-
-                        <span><?php echo $the_date; ?></span>
-
-                        <?php if( has_post_thumbnail() ):
-                            $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
-                        ?>
-                                        
-                        <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
-                        
-                        <?php else : ?>
-                        
-                        <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
-                        
-                        <?php endif; /* featured_image */ ?>
-
-                    </div>
-
-                    <p class="h5"><?php the_title(); ?></p>
-
-                </a>
-
-            </div>
-            <!-- .col -->
-
-            <?php endforeach; wp_reset_postdata(); ?>
-
-        </div>
-        <!-- .row -->
-        
     </div>
     <!-- .container -->
 

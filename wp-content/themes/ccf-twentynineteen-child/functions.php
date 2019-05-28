@@ -48,6 +48,7 @@ add_action( 'init', 'create_child_post_types' );
         unset($page_templates['page-donate.php']);
         unset($page_templates['page-subpage.php']);
         unset($page_templates['page-videos.php']);
+        unset($page_templates['page-events.php']);
 
         return $page_templates;
     }
