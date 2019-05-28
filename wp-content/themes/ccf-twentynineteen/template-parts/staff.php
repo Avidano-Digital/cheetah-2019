@@ -1,56 +1,70 @@
+<?php if (have_rows('executive_staff')): while (have_rows('executive_staff')): the_row();
 
-<div class="bg-light overflow-hidden mx-n2">
+$header = get_sub_field('header');
+$bio = get_sub_field('bio');
+
+?>
+
+<div class="bg-light overflow-hidden p-2 mx-n2">
 
     <div class="narrow my-5">
 
-        <h2 class="display-4 font-weight-light mb-3">Executive Staff</h2>
+        <h2 class="display-4 font-weight-light mb-3"><?php echo $header; ?></h2>
+
+        <?php if (have_rows('bio')): while (have_rows('bio')): the_row();
+
+        $avatar = get_sub_field('avatar');
+        $name = get_sub_field('name');
+        $title = get_sub_field('title');
+        $link = get_sub_field('link');
+        $time = get_sub_field('time');
+
+        ?>
 
         <div class="row align-items-center my-3">
+
             <div class="col-4">
-                <img class="rounded-circle" src="<?php echo get_template_directory_uri(); ?>/images/ccf-staff-laurie-marker.jpg" alt="Placeholder">
+                <img class="rounded-circle" src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>">
             </div>
             <!-- .col -->
+        
             <div class="col-8">
-                <h3 class="h5 mb-0">Laurie L. Marker, DPhil.</h3>
-                <p class="mb-0"><em>Founder, Executive Director</em></p>
-                <p><a href="#">About Dr. Laurie</a></p>
+                <h3 class="h5 mb-0"><?php echo $name; ?></h3>
+                
+                <?php if($title): ?>
+                <p class="mb-0">
+                    <?php echo $title; ?>
+                </p>
+                <?php endif; ?>
+
+                <?php if ($link): ?>
+                <p>
+                    <a href="<?php echo $link['url'] ?>" target="<?php echo $link['target']; ?>" <?php echo $link['title'] ?>><?php echo $link['title'] ?></a>
+                </p>
+                
+                <?php endif; ?>
+                
+                <?php if ($time): ?>
+                <p class="mb-0">
+                    <em><?php echo $time; ?></em>
+                </p>
+                <?php endif; ?>
+
             </div>
             <!-- .col -->
         </div>
         <!-- .row -->
 
-        <div class="row align-items-center my-3">
-            <div class="col-4">
-                <img class="rounded-circle" src="<?php echo get_template_directory_uri(); ?>/images/ccf-staff-bruce-brewer.jpg" alt="Placeholder">
-            </div>
-            <!-- .col -->
-            <div class="col-8">
-                <h3 class="h5 mb-0">Bruce Brewer, PhD</h3>
-                <p class="mb-0"><em>General Manager</em></p>
-                <p>(Bruce also runs the CCF Bushblok project)</p>
-            </div>
-            <!-- .col -->
-        </div>
-        <!-- .row -->
-
-        <div class="row align-items-center my-3">
-            <div class="col-4">
-                <img class="rounded-circle" src="<?php echo get_template_directory_uri(); ?>/images/ccf-staff-anne-schmidt-kuntzel.jpg" alt="Placeholder">
-            </div>
-            <!-- .col -->
-            <div class="col-8">
-                <h3 class="h4 mb-0">Anne Schmidt-Küntzel</h3>
-                <p class="mb-0"><em>Research Geneticist and Assistant Director for Animal Health and Research</em></p>
-            </div>
-            <!-- .col -->
-        </div>
-        <!-- .row -->
+        <?php endwhile; endif; /* bio */ ?>
 
     </div>
     <!-- .narrow -->
 
 </div>
 <!-- .bg-light -->
+
+<?php endwhile; endif; /* executive_staff */ ?>
+
 
 <div class="medium my-5">
 
