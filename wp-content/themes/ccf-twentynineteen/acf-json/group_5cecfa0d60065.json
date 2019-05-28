@@ -175,10 +175,10 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_5ced0672176a8",
-                    "label": "Country",
-                    "name": "country",
-                    "type": "group",
+                    "key": "field_5ced3df2f6e61",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -187,12 +187,35 @@
                         "class": "",
                         "id": ""
                     },
-                    "layout": "block",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ced3dfaf6e62",
+                    "label": "Staff List Group",
+                    "name": "staff_list_group",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
                     "sub_fields": [
                         {
-                            "key": "field_5ced069a176a9",
-                            "label": "Name",
-                            "name": "name",
+                            "key": "field_5ced3e2bf6e63",
+                            "label": "Header",
+                            "name": "header",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -209,9 +232,9 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5ced06d2176ab",
-                            "label": "Staff List Group",
-                            "name": "staff_list_group",
+                            "key": "field_5ced3e64f6e64",
+                            "label": "Staff Person",
+                            "name": "staff_person",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -224,13 +247,13 @@
                             "collapsed": "",
                             "min": 0,
                             "max": 0,
-                            "layout": "row",
+                            "layout": "table",
                             "button_label": "",
                             "sub_fields": [
                                 {
-                                    "key": "field_5ced06fe176ac",
-                                    "label": "Header",
-                                    "name": "header",
+                                    "key": "field_5ced3e7df6e65",
+                                    "label": "Name",
+                                    "name": "name",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -247,10 +270,10 @@
                                     "maxlength": ""
                                 },
                                 {
-                                    "key": "field_5ced20fe09e80",
-                                    "label": "Staff Person",
-                                    "name": "staff_person",
-                                    "type": "repeater",
+                                    "key": "field_5ced3e85f6e66",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -259,70 +282,30 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "collapsed": "",
-                                    "min": 0,
-                                    "max": 0,
-                                    "layout": "row",
-                                    "button_label": "",
-                                    "sub_fields": [
-                                        {
-                                            "key": "field_5ced214609e81",
-                                            "label": "Name",
-                                            "name": "name",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
-                                            "key": "field_5ced214d09e82",
-                                            "label": "Title",
-                                            "name": "title",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
-                                        },
-                                        {
-                                            "key": "field_5ced215209e83",
-                                            "label": "Time",
-                                            "name": "time",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": ""
-                                        }
-                                    ]
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ced3e92f6e67",
+                                    "label": "Time",
+                                    "name": "time",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 }
                             ]
                         }
@@ -348,5 +331,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1559048612
+    "modified": 1559051940
 }

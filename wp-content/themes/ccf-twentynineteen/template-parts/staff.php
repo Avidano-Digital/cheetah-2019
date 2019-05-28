@@ -67,23 +67,22 @@ $bio = get_sub_field('bio');
 
 
 
-<?php if (have_rows('staff_by_country')): ?>
+<?php if ( have_rows('staff_by_country') ): ?>
     
     <div class="medium my-5">
     
         <div class="nav nav-pills border device-md" role="tablist">
 
-        <?php while (have_rows('staff_by_country')): the_row();
+        <?php while ( have_rows('staff_by_country') ): the_row();
         
-        $country = get_sub_field('country');
-        
-        $name = $country['name'];
-
-        $append_id = str_replace(' ', '-', strtolower($name));
-
         ?>
 
-        <?php if($country): ?>
+        <?php if( have_rows('country') ): while( have_rows('country') ): the_row(); 
+		
+		$name = get_sub_field('name');
+		$append_id = str_replace(' ', '-', strtolower($name));
+
+		?>
 
         <a  class="nav-item nav-link flex-fill <?php if(get_row_index() == 1): ?>active<?php endif; ?>" 
             id="tab-btn-<?php echo $append_id; ?>" 
@@ -101,7 +100,7 @@ $bio = get_sub_field('bio');
             <?php echo $name; ?> / <?php echo get_row_index(); ?>
         </a>
 
-        <?php endif; /* country */ ?>
+        <?php endwhile; endif; /* country */ ?>
 
         <?php endwhile; /* staff_by_country */ ?>
 
@@ -113,15 +112,14 @@ $bio = get_sub_field('bio');
 
     <div class="tab-content narrow">
 
-    <?php while ( have_rows('staff_by_country') ): the_row();
-        
-        $country = get_sub_field('country');
-        
-        $name = $country['name'];
+        <?php while ( have_rows('staff_by_country') ): the_row(); ?>
 
-        $append_id = str_replace(' ', '-', strtolower($name));
+        <?php if( have_rows('country') ): while( have_rows('country') ): the_row(); 
+		
+		$name = get_sub_field('name');
+		$append_id = str_replace(' ', '-', strtolower($name));
 
-        ?>
+		?>
 
         <div    class="tab-pane fade show <?php if (get_row_index() == 1): ?>active<?php endif; ?>"
                 id="tab-<?php echo $append_id; ?>"
@@ -130,11 +128,7 @@ $bio = get_sub_field('bio');
         
             <h2 class="display-4 font-weight-light text-muted mb-3"><?php echo $name; ?> Staff</h2>
 
-
-
             <?php if (have_rows('staff_list_group')): ?>
-
-            WHOA!!!!!!
 
             <?php while (have_rows('staff_list_group')): the_row(); ?>
 
@@ -171,26 +165,19 @@ $bio = get_sub_field('bio');
                 <!-- .my-3 -->
 
             <?php endwhile; /* staff_list_group */ ?>
+            
             <?php endif; /* staff_list_group */ ?>
-
-
-
-
-
-
-
-
-
-
-
 
         </div>
         <!-- .tab-pane -->
+
+        <?php endwhile; endif; /* country */ ?>
 
         <?php endwhile; /* staff_by_country */ ?>
 
     </div>
     <!-- .tab-content -->
+
 
 <?php endif; /* staff_by_country */ ?>
 
