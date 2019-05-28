@@ -134,8 +134,8 @@
                         },
                         {
                             "key": "field_5ced012628204",
-                            "label": "Time",
-                            "name": "time",
+                            "label": "Start Year",
+                            "name": "start_year",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -169,15 +169,15 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": 0,
+            "min": 1,
             "max": 0,
-            "layout": "table",
-            "button_label": "",
+            "layout": "block",
+            "button_label": "Add Country",
             "sub_fields": [
                 {
                     "key": "field_5ced3df2f6e61",
-                    "label": "Name",
-                    "name": "name",
+                    "label": "Country",
+                    "name": "country",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -207,10 +207,10 @@
                         "id": ""
                     },
                     "collapsed": "",
-                    "min": 0,
+                    "min": 1,
                     "max": 0,
-                    "layout": "table",
-                    "button_label": "",
+                    "layout": "row",
+                    "button_label": "Add Staff List",
                     "sub_fields": [
                         {
                             "key": "field_5ced3e2bf6e63",
@@ -245,10 +245,10 @@
                                 "id": ""
                             },
                             "collapsed": "",
-                            "min": 0,
+                            "min": 1,
                             "max": 0,
-                            "layout": "table",
-                            "button_label": "",
+                            "layout": "row",
+                            "button_label": "Add Individual",
                             "sub_fields": [
                                 {
                                     "key": "field_5ced3e7df6e65",
@@ -290,8 +290,8 @@
                                 },
                                 {
                                     "key": "field_5ced3e92f6e67",
-                                    "label": "Time",
-                                    "name": "time",
+                                    "label": "Start Year",
+                                    "name": "start_year",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -331,5 +331,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1559051940
+    "modified": 1559061511
 }

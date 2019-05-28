@@ -17,7 +17,7 @@ $bio = get_sub_field('bio');
         $name = get_sub_field('name');
         $title = get_sub_field('title');
         $link = get_sub_field('link');
-        $time = get_sub_field('time');
+        $start_year = get_sub_field('start_year');
 
         ?>
 
@@ -44,9 +44,9 @@ $bio = get_sub_field('bio');
                 
                 <?php endif; ?>
                 
-                <?php if ($time): ?>
+                <?php if ($start_year): ?>
                 <p class="mb-0">
-                    <em><?php echo $time; ?></em>
+                    <em><?php echo $start_year; ?> - Present</em>
                 </p>
                 <?php endif; ?>
 
@@ -65,8 +65,6 @@ $bio = get_sub_field('bio');
 
 <?php endwhile; endif; /* executive_staff */ ?>
 
-
-
 <?php if ( have_rows('staff_by_country') ): ?>
     
     <div class="medium my-5">
@@ -75,14 +73,10 @@ $bio = get_sub_field('bio');
 
         <?php while ( have_rows('staff_by_country') ): the_row();
         
+		$country = get_sub_field('country');
+		$append_id = str_replace(' ', '-', strtolower($country));
+        
         ?>
-
-        <?php if( have_rows('country') ): while( have_rows('country') ): the_row(); 
-		
-		$name = get_sub_field('name');
-		$append_id = str_replace(' ', '-', strtolower($name));
-
-		?>
 
         <a  class="nav-item nav-link flex-fill <?php if(get_row_index() == 1): ?>active<?php endif; ?>" 
             id="tab-btn-<?php echo $append_id; ?>" 
@@ -97,10 +91,8 @@ $bio = get_sub_field('bio');
             <?php endif; ?>
 
             role="tab">
-            <?php echo $name; ?> / <?php echo get_row_index(); ?>
+            <?php echo $country; ?>
         </a>
-
-        <?php endwhile; endif; /* country */ ?>
 
         <?php endwhile; /* staff_by_country */ ?>
 
@@ -112,28 +104,29 @@ $bio = get_sub_field('bio');
 
     <div class="tab-content narrow">
 
-        <?php while ( have_rows('staff_by_country') ): the_row(); ?>
+        <?php while ( have_rows('staff_by_country') ): the_row(); 
+        
+        $country = get_sub_field('country');
+        $append_id = str_replace(' ', '-', strtolower($country));
 
-        <?php if( have_rows('country') ): while( have_rows('country') ): the_row(); 
-		
-		$name = get_sub_field('name');
-		$append_id = str_replace(' ', '-', strtolower($name));
-
-		?>
+        ?>
 
         <div    class="tab-pane fade show <?php if (get_row_index() == 1): ?>active<?php endif; ?>"
                 id="tab-<?php echo $append_id; ?>"
                 aria-labelledby="tab-btn<?php echo $append_id; ?>"
                 role="tabpanel">
         
-            <h2 class="display-4 font-weight-light text-muted mb-3"><?php echo $name; ?> Staff</h2>
+            <h2 class="display-4 font-weight-light text-muted mb-3"><?php echo $country; ?> Staff</h2>
 
             <?php if (have_rows('staff_list_group')): ?>
 
-            <?php while (have_rows('staff_list_group')): the_row(); ?>
+            <?php while (have_rows('staff_list_group')): the_row();
+            
+            $header = get_sub_field('header');
 
+            ?>
 
-                <div class="my-3 bg-danger py-5">
+                <div class="my-3">
                 
                     <?php if ($header): ?>
                     <h3 class="h2">
@@ -147,14 +140,24 @@ $bio = get_sub_field('bio');
 
                         $name = get_sub_field('name');
                         $title = get_sub_field('title');
-                        $time = get_sub_field('time');
+                        $start_year = get_sub_field('start_year');
 
                         ?>
 
                         <li class="mb-2">
+
+                            <?php if ($name): ?>
                             <h4><?php echo $name; ?></h4>
-                            <p><em><?php echo $title; ?></em></p>
-                            <p><?php echo $time; ?></p>
+                            <?php endif; ?>
+
+                            <?php if ($title): ?>
+                            <p><?php echo $title; ?></p>
+                            <?php endif; ?>
+
+                            <?php if ($start_year): ?>
+                            <p><em><?php echo $start_year; ?> - Present</em></p>
+                            <?php endif; ?>
+
                         </li>
 
                          <?php endwhile; endif; /* staff_person */ ?>
@@ -170,8 +173,6 @@ $bio = get_sub_field('bio');
 
         </div>
         <!-- .tab-pane -->
-
-        <?php endwhile; endif; /* country */ ?>
 
         <?php endwhile; /* staff_by_country */ ?>
 
