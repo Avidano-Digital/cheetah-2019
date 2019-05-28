@@ -1,9 +1,5 @@
 <?php
 
-/*
-Template Name: News
-*/
-
 get_header(); ?>
 
 <main id="content" role="main">
