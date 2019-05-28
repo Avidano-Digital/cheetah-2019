@@ -1,3 +1,58 @@
+<?php if (have_rows('governance_list_group')): ?>
+
+    <div class="narrow my-5 bg-danger">
+
+    <?php while ( have_rows('governance_list_group') ): the_row();
+                
+    $header = get_sub_field('header');
+
+    ?>
+
+    <div class="my-4">
+
+        <?php if ($header): ?>
+        <h3 class="h2">
+            <?php echo $header; ?>
+        </h3>
+        <?php endif; ?>
+
+        <ul class="extensible-list staff-list my-2">
+
+            <?php if (have_rows('staff_person')): while (have_rows('staff_person')): the_row();
+
+            $name = get_sub_field('name');
+            $title = get_sub_field('title');
+            $time = get_sub_field('time');
+
+            ?>
+
+            <li class="mb-2">
+                <h4><?php echo $name; ?></h4>
+                <p><em><?php echo $title; ?></em></p>
+                <p><?php echo $time; ?></p>
+            </li>
+
+            <?php endwhile; endif; /* staff_person */ ?>
+
+        </ul>
+
+    </div>
+    <!-- .my-4 -->
+
+    <hr class="narrow my-4">
+
+    <?php endwhile; /* governance_list_group */ ?>
+
+<?php endif; /* governance_list_group */ ?>
+
+
+
+
+
+
+
+
+
 <div class="narrow my-5">
 
         <div class="my-4">
