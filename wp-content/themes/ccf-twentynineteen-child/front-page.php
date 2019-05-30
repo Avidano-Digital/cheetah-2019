@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The front page template file
  *
@@ -22,6 +23,7 @@
 
         <div class="card bg-white">
           <div class="gradient-overlay-y-black">
+            <!-- <img class="card-img" src="https://via.placeholder.com/800x400" alt="Placeholder"> -->
             <img class="card-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/01.jpg" alt="Card image">
           </div>
 
@@ -29,7 +31,7 @@
             <div class="align-self-end">
               <div class="medium text-white text-center my-lg-3">
                 <h1 class="card-title display-4 mb-2 text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-                <a href="#" class="btn btn-lg btn-primary">Our Mission</a>
+                <a href="#" class="btn btn-lg btn-primary">About Us</a>
               </div>
             </div>
           </div>
