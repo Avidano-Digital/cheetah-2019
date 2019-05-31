@@ -122,5 +122,7 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
 
 </main>
 <!-- #content -->
+<?php get_template_part('template-parts/donate-panel'); ?>
+
 
 <?php get_footer(); ?>
