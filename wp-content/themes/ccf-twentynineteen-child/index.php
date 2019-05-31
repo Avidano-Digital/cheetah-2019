@@ -7,6 +7,7 @@ get_header();
 <?php
 
 $image = get_field('news_header_image', 'option');
+$current_category = get_query_var('cat');
 
 if ($image): ?>
 
@@ -27,8 +28,11 @@ if ($image): ?>
 
             <div class="text-white text-shadow">
                 <h1 class="display-3 text-white">
-                    <?php echo (is_home() ? single_post_title() : the_archive_title()); ?>
+                    News
                 </h1>
+                <?php if (!is_home()) : ?>
+                    <h2 class="h5 text-uppercase text-primary"><?php the_archive_title(); ?></h2>
+                <?php endif; ?>
             </div>
             <!-- .narrow -->
         
@@ -48,14 +52,14 @@ if ($image): ?>
 
                     <div class=" p-2">
                         <ul class="extensible-list fs-md">
-                        <li><strong>Topics:</strong></li>
+                        <li><a class="<?php echo ($current_category == $category->cat_ID ? 'text-body font-weight-bold' : 'text-muted' ) ?>" href="<?php  echo get_post_type_archive_link( 'post' ); ?>">All Topics</a></li>
                             
                         <?php
 
                         $categories = get_categories();
                         foreach ($categories as $category): ?>
 
-                        <li><a class="text-muted" href="<?php echo get_category_link($category->cat_ID); ?>"><?php echo $category->name; ?></a></li>
+                        <li><a class="<?php echo ($current_category == $category->cat_ID ? 'text-body font-weight-bold' : 'text-muted' ) ?>" href="<?php echo get_category_link($category->cat_ID); ?>"><?php echo $category->name; ?></a></li>
                         
                         <?php endforeach; ?>
 
