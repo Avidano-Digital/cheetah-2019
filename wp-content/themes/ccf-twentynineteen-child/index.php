@@ -6,12 +6,7 @@ get_header();
 
 <?php
 
-<<<<<<< HEAD
 $image = get_field('news_header_image', 'option');
-$current_category = get_query_var('cat');
-=======
-$image = get_field('banner_image', get_option('page_for_posts'));
->>>>>>> parent of 63ab514... banner images
 
 if ($image): ?>
 
@@ -56,14 +51,14 @@ if ($image): ?>
 
                     <div class=" p-2">
                         <ul class="extensible-list fs-md">
-                        <li><a class="<?php echo ($current_category == $category->cat_ID ? 'text-body font-weight-bold' : 'text-muted' ) ?>" href="<?php  echo get_post_type_archive_link( 'post' ); ?>">All Topics</a></li>
+                        <li><a class="<?php echo($current_category == $category->cat_ID ? 'text-body font-weight-bold' : 'text-muted') ?>" href="<?php  echo get_post_type_archive_link('post'); ?>">All Topics</a></li>
                             
                         <?php
 
                         $categories = get_categories();
                         foreach ($categories as $category): ?>
 
-                        <li><a class="<?php echo ($current_category == $category->cat_ID ? 'text-body font-weight-bold' : 'text-muted' ) ?>" href="<?php echo get_category_link($category->cat_ID); ?>"><?php echo $category->name; ?></a></li>
+                        <li><a class="<?php echo($current_category == $category->cat_ID ? 'text-body font-weight-bold' : 'text-muted') ?>" href="<?php echo get_category_link($category->cat_ID); ?>"><?php echo $category->name; ?></a></li>
                         
                         <?php endforeach; ?>
 
@@ -89,7 +84,7 @@ if ($image): ?>
                     $term_name = get_queried_object()->name;
                     $args = array( 'category_name' => $term_name);
                     
-                    $postslist = get_posts( $args );
+                    $postslist = get_posts($args);
                     
                     foreach ($postslist as $post) :
                     setup_postdata($post);

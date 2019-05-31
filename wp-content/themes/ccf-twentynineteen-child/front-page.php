@@ -152,10 +152,10 @@
           global $post;
           
           $args = array( 'posts_per_page' => 3, 'orderby' => 'date' );
-          $postslist = get_posts( $args );
+          $postslist = get_posts($args);
           
-          foreach ( $postslist as $post ) :
-          setup_postdata( $post );
+          foreach ($postslist as $post) :
+          setup_postdata($post);
           
           $the_date = get_the_date();
           
@@ -169,8 +169,8 @@
 
                       <span><?php echo $the_date; ?></span>
 
-                      <?php if( has_post_thumbnail() ):
-                          $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
+                      <?php if (has_post_thumbnail()):
+                          $featured_image_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                       ?>
                                       
                       <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
@@ -200,8 +200,8 @@
 
       <?php
 
-      $args = array( 
-          'post_type' => 'events', 
+      $args = array(
+          'post_type' => 'events',
           'posts_per_page' => '3',
           'order' => 'ASC',
           'meta_key' => 'start_date',
@@ -211,20 +211,20 @@
       
       $events_header = false;
 
-      $loop = new WP_Query( $args );
+      $loop = new WP_Query($args);
 
-      while ( $loop->have_posts() ) : $loop->the_post();
+      while ($loop->have_posts()) : $loop->the_post();
         
       $date = new DateTime(get_field('start_date'));
       $today = DateTime::createFromFormat("U", time());
       
-      if ($date > $today) : 
+      if ($date > $today) :
 
         $show_events = true;
 
         $featured_image_id = get_post_thumbnail_id($post->ID);
-        $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
-        $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
+        $featured_image = wp_get_attachment_image_src($featured_image_id, 'full', false, '');
+        $featured_image_alt = get_post_meta($featured_image_id, '_wp_attachment_image_alt', true);
 
       if ($events_header == false) :
 
@@ -285,18 +285,18 @@
               </div>
               <!-- .col -->
 
-          <?php 
+          <?php
 
-          endif; 
+          endif;
 
           $events_header = true;
           
-      endwhile; 
+      endwhile;
 
       if ($show_events) : ?>
             </div>
         </section>
-    <? endif ?>
+    <?php endif ?>
 
   </main>
   <!-- #content -->
