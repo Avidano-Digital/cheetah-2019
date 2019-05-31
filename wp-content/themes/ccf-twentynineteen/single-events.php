@@ -104,13 +104,23 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
               
               </p>
 
-              <p class="f-sans-serif fs-md mb-0">
-                <strong>Location:</strong> <?php the_field('location'); ?>
-              </p>
-              
-              <p class="f-sans-serif fs-md">
-                <strong>Venu:</strong> <?php the_field('venue'); if (get_field('google_map_link')) : ?>(<a href="<?php the_field('google_map_link'); ?>" target="_blank">Google Maps</a>)<?php endif; ?>  
-              </p>
+              <ul class="list-unstyled f-sans-serif fs-md">
+
+                <li class="mb-0 side-by-side">
+                  <span style="width:80px;"><strong>Location:</strong></span>
+                  <span><?php the_field('location'); ?></span>
+                  </li>
+                
+                <li class="side-by-side">
+                  <span style="width:80px;"><strong>Venu:</strong></span>
+                  <span>
+                    <?php the_field('venue'); if (get_field('google_map_link')) : ?><br>
+                    <a class="fs-sm" href="<?php the_field('google_map_link'); ?>" target="_blank">Google Maps</a>
+                  <?php endif; ?>
+                  </span>
+                </li>
+
+              </ul>
             
             </div>
             <!-- details -->

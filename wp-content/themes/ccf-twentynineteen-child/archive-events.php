@@ -63,7 +63,13 @@ if ($image): ?>
 
                                 <div class="col-lg-6">
                                     <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                        <img class="w-100" src="https://via.placeholder.com/1000x563" alt="<?php the_title(); ?>">
+
+                                    <?php if ($featured_image) : ?>
+                                        <img class="w-100" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
+                                    <?php else : ?>
+                                        <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                                    <?php endif; ?>
+                                    
                                     </a>
                                 </div>
                                 <!-- .col-6 -->

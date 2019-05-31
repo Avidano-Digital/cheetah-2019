@@ -142,7 +142,7 @@
 
         <header class="text-center mb-3">
             <h3 class="display-4 mb-0">Latest News</h3>
-            <a class="link text-body fs-md" href="#">All News</a>
+            <a class="link text-body fs-md" href="<?php echo get_site_url(); ?>/news">All News</a>
         </header>
 
         <div class="row matrix-gutter">
@@ -198,8 +198,7 @@
       </section>
       <!-- #latest-news -->
 
-      <?php
-
+  <?php
       $args = array(
           'post_type' => 'events',
           'posts_per_page' => '3',
@@ -210,24 +209,18 @@
       );
       
       $events_header = false;
-
       $loop = new WP_Query($args);
-
       while ($loop->have_posts()) : $loop->the_post();
         
       $date = new DateTime(get_field('start_date'));
       $today = DateTime::createFromFormat("U", time());
       
       if ($date > $today) :
-
         $show_events = true;
-
         $featured_image_id = get_post_thumbnail_id($post->ID);
         $featured_image = wp_get_attachment_image_src($featured_image_id, 'full', false, '');
         $featured_image_alt = get_post_meta($featured_image_id, '_wp_attachment_image_alt', true);
-
       if ($events_header == false) :
-
       ?>
 
       <section class="container" id="events">
@@ -286,17 +279,15 @@
               <!-- .col -->
 
           <?php
-
           endif;
-
           $events_header = true;
           
       endwhile;
-
       if ($show_events) : ?>
             </div>
         </section>
     <?php endif ?>
+
 
   </main>
   <!-- #content -->

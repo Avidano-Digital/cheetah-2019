@@ -17,12 +17,12 @@
               <div class="row matrix-border">
 
                 <div class="col-md-6">
-                  <a class="btn btn-lg btn-block btn-primary" href="/donate" title="Donate">Donate</a>
+                  <a class="btn btn-lg btn-block btn-primary" href="#1" title="Donate">Donate</a>
                 </div>
                 <!-- .col -->
 
                 <div class="col-md-6">
-                  <a class="btn btn-lg btn-block btn-primary" href="/donate/sponsor/" title="Volunteer">Volunteer</a>
+                  <a class="btn btn-lg btn-block btn-primary" href="#1" title="Volunteer">Volunteer</a>
                 </div>
                 <!-- .col -->
 
