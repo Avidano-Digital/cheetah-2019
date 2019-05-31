@@ -6,7 +6,7 @@ get_header();
 
 <?php
 
-$image = get_field('banner_image', get_option('page_for_posts'));
+$image = get_field('news_header_image', 'option');
 
 if ($image): ?>
 
