@@ -6,8 +6,12 @@ get_header();
 
 <?php
 
+<<<<<<< HEAD
 $image = get_field('news_header_image', 'option');
 $current_category = get_query_var('cat');
+=======
+$image = get_field('banner_image', get_option('page_for_posts'));
+>>>>>>> parent of 63ab514... banner images
 
 if ($image): ?>
 

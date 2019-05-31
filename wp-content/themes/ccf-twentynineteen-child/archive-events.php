@@ -6,7 +6,7 @@ get_header();
 
 <?php
 
-$image = get_field('events_header_image', 'option');
+$image = get_field('banner_image', get_option('page_for_posts'));
 
 if ($image): ?>
 
