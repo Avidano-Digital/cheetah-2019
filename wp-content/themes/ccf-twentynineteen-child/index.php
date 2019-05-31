@@ -6,15 +6,18 @@ get_header();
 
 <?php
 
-$featured_image_id = get_post_thumbnail_id($post->ID);
-$featured_image = wp_get_attachment_image_src($featured_image_id, 'full', false, '');
-$featured_image_alt = get_post_meta($featured_image_id, '_wp_attachment_image_alt', true);
+$image = get_field('banner_image', get_option('page_for_posts'));
 
-echo '<style>' .
-     '.banner-with-background.featured-image::before{' .
-     'background-image: url(' . $featured_image[0] .');' .
-     '</style>'
-?>
+if ($image): ?>
+
+    <style>
+     .banner-with-background.featured-image::before{
+        background-image: url(<?php echo $image['url']; ?>);
+        opacity : .4;
+     }
+     </style>
+
+<?php endif; ?>
 
 <main id="content">
 
@@ -47,14 +50,14 @@ echo '<style>' .
                         <ul class="extensible-list fs-md">
                         <li><strong>Topics:</strong></li>
                             
-                            <?php
+                        <?php
 
-                            $categories = get_categories();
-                            foreach ($categories as $category): ?>
+                        $categories = get_categories();
+                        foreach ($categories as $category): ?>
 
-                            <li><a class="text-muted" href="<?php echo get_category_link($category->cat_ID); ?>"><?php echo $category->name; ?></a></li>
-                            
-                            <?php endforeach; ?>
+                        <li><a class="text-muted" href="<?php echo get_category_link($category->cat_ID); ?>"><?php echo $category->name; ?></a></li>
+                        
+                        <?php endforeach; ?>
 
                         </ul>
                     
@@ -74,8 +77,11 @@ echo '<style>' .
                     <?php
 
                     global $post;
+                
+                    $term_name = get_queried_object()->name;
+                    $args = array( 'category_name' => $term_name);
                     
-                    $postslist = get_posts();
+                    $postslist = get_posts( $args );
                     
                     foreach ($postslist as $post) :
                     setup_postdata($post);
