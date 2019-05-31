@@ -13,7 +13,7 @@ if ($image): ?>
     <style>
      .banner-with-background.featured-image::before{
         background-image: url(<?php echo $image['url']; ?>);
-        opacity : .4;
+        opacity : .3;
      }
      </style>
 
@@ -26,7 +26,7 @@ if ($image): ?>
         <div class="container">
 
             <div class="text-white text-shadow">
-                <h1 class="display-3 text-white">
+                <h1 class="display-3 text-center">
                     Events
                 </h1>
             </div>
@@ -69,6 +69,7 @@ if ($image): ?>
                                 <!-- .col-6 -->
 
                                 <div class="col-lg-6">
+
                                     <p class="has-icon f-sans-serif fs-md mb-1">
                                         <span class="fas fa-map-marker-alt"></span>    
                                         <span class="title"><?php the_field('location') ?></span>    
@@ -76,7 +77,7 @@ if ($image): ?>
                                     
                                     <h2 class="h5"><?php the_title(); ?></h2>
                                     
-                                    <p class="f-sans-serif fs-md">
+                                    <p class="f-sans-serif fs-md mb-0">
 
                                         <strong class="d-block"><?php the_field('start_date') ?></strong>
 
@@ -84,6 +85,9 @@ if ($image): ?>
                                         <span class="text-muted"><?php echo $time; ?></span>
                                         <?php endif; ?>
                                     </p>
+                                    
+                                    <a class="link text-secondary stretched-link fs-md" href="<?php the_permalink(); ?>">Event Details</a>
+
                                 </div>
                                 <!-- .col-6 -->
                             

@@ -14,7 +14,7 @@ if ($image): ?>
     <style>
      .banner-with-background.featured-image::before{
         background-image: url(<?php echo $image['url']; ?>);
-        opacity : .4;
+        opacity : .3;
      }
      </style>
 
@@ -26,7 +26,7 @@ if ($image): ?>
 
         <div class="container">
 
-            <div class="text-white text-shadow">
+            <div class="text-white text-shadow text-center">
                 <h1 class="display-3 text-white">
                     News
                 </h1>

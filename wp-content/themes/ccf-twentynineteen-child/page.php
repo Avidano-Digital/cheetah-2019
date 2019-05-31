@@ -21,14 +21,13 @@ get_header();
 
      </style>
 
-
     <main id="content">
 
         <div class="bg-dark banner-with-background featured-image">
 
             <div class="container">
 
-                <div class="text-white text-shadow">
+                <div class="text-white text-shadow text-center">
                     <h1 class="display-3 text-white">
                         <?php the_title(); ?>
                     </h1>
@@ -42,24 +41,12 @@ get_header();
         <!-- .banner-with-background -->
 
         <div class="container">
+ <article class="my-6" id="primary-content">
 
-            <div class="row">
+                <?php get_template_part('template-parts/flexible-content-article'); ?>
 
-                <div class="col-lg-3 mt-5 border-lg-left mt-lg-0 order-lg-last">
+                </article>
 
-                    hello world!
-                
-                </div>
-                <!-- .col -->
-
-                <div class="col-lg-9 overflow-hidden" id="primary-content">
-
-
-                </div>
-                <!-- .col -->
-                
-            </div>
-            <!-- .row -->
         
         </div>
         <!-- .container -->
