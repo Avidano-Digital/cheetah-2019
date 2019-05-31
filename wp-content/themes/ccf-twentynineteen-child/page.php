@@ -26,10 +26,12 @@ get_header();
 
             <div class="card-img-overlay d-flex">
                 <div class="container align-self-center">
-                    <div class="narrow text-white text-center">
+                    <div class="narrow text-white text-center text-shadow my-3">
                     <h1 class="display-2">
                         <?php the_title(); ?>
                     </h1>
+                    <p class="fs-lg text-primary f-sans-serif mb-0"><strong>CCF United States</strong> </p>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis beatae soluta sed tempore dolorum.</p>
                     </div>
                 </div>
             </div>
@@ -43,52 +45,62 @@ get_header();
 
             <h2 class="display-4 text-center my-4">Who We Are</h2>
 
-            <div class="row matrix-gutter text-white text-center">
+            <div class="medium">
+
+            <div class="row matrix-gutter text-center my-4">
 
                 <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
-                    </div>
+                
+                    <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
+                    <p class="f-sans-serif mb-0"><strong>Full Name</strong></p>
+                    <p class="f-sans-serif mb-0">Professional Title</p>
+                
+                </div>
+                <!-- .col -->
+
+
+                <div class="col-md-4">
+                
+                    <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
+                    <p class="f-sans-serif mb-0"><strong>Full Name</strong></p>
+                    <p class="f-sans-serif mb-0">Professional Title</p>
+                
                 </div>
                 <!-- .col -->
 
                 <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
-                    </div>
+                
+                    <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
+                    <p class="f-sans-serif mb-0"><strong>Full Name</strong></p>
+                    <p class="f-sans-serif mb-0">Professional Title</p>
+                
+                </div>
+                <!-- .col -->
+
+
+                <div class="col-md-4">
+                
+                    <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
+                    <p class="f-sans-serif mb-0"><strong>Full Name</strong></p>
+                    <p class="f-sans-serif mb-0">Professional Title</p>
+                
                 </div>
                 <!-- .col -->
 
                 <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
-                    </div>
-                </div>
-                <!-- .col -->
-
-                <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
-                    </div>
-                </div>
-                <!-- .col -->
-
-                <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
-                    </div>
-                </div>
-                <!-- .col -->
-
-                <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
-                    </div>
+                
+                    <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
+                    <p class="f-sans-serif mb-0"><strong>Full Name</strong></p>
+                    <p class="f-sans-serif mb-0">Professional Title</p>
+                
                 </div>
                 <!-- .col -->
 
             </div>
             <!-- .row -->
+
+            </div>
+            <!-- .medium -->
 
         </div>
         <!-- #primary-content -->
@@ -96,66 +108,38 @@ get_header();
     </section>
     <!-- .container-fluid -->
 
+    <section class="py-6">
 
-    <section class="overflow-hidden">
+            <div class="container">
 
-        <div class="container my-5">
+                <div class="row">
 
-            <h2 class="display-4 text-center my-4">Our Mission</h2>
-
-            <div class="row matrix-gutter text-white text-center">
-
-                <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
+                    <div class="col-lg mb-3 mb-lg-0">
+                        <h2 class="h1">Lorem ipsum dolor sit amet consectetur elit</h2>
+                        <a class="btn btn-lg btn-primary mt-2 d-none d-lg-inline-block" href="#" aria-hidden="true" title="Button Link">Button Link</a>
                     </div>
-                </div>
-                <!-- .col -->
 
-                <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
-                    </div>
-                </div>
-                <!-- .col -->
+                    <div class="col-lg">
 
-                <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
-                    </div>
-                </div>
-                <!-- .col -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptas quod magni saepe. Expedita ab vitae quo, dolore modi nesciunt deserunt voluptatibus? Quidem ducimus est non quisquam exercitationem.
+                        </p>
 
-                <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
-                    </div>
-                </div>
-                <!-- .col -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima id quibusdam molestiae, et nisi nostrum exercitationem consectetur perferendis earum.
+                        </p>
 
-                <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
+                        <a href="#" class="btn btn-lg btn-primary mt-2 d-lg-none" title="Button Link">Button Link</a>
                     </div>
-                </div>
-                <!-- .col -->
+                    <!-- .col -->
 
-                <div class="col-md-4">
-                    <div class="bg-dark text-white p-4">
-                        <p>Column</p>
-                    </div>
                 </div>
-                <!-- .col -->
+                <!-- .row -->
 
             </div>
-            <!-- .row -->
-
-        </div>
-        <!-- #primary-content -->
-
-    </section>
-    <!-- .container-fluid -->
-
+            <!-- .container -->
+        
+        </section>
 
     <?php endwhile; endif; /* have_posts */ ?>
 
