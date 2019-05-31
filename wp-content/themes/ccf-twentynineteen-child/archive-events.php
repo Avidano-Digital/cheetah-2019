@@ -44,10 +44,8 @@ if ($image): ?>
             <div class="col-lg-9 overflow-hidden" id="primary-content">
 
                 <div class="my-5">
-
-                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-                        <div class="row matrix-gutter">
+                    
+                        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                             <?php
 
@@ -61,53 +59,39 @@ if ($image): ?>
 
                             ?>
 
-                            <div class="col-md-6">
 
-                                <div class="card border h-100">
-                                    
-                                    <?php if ($featured_image) : ?>
-                                        <img class="card-img-top" src="<?php echo $featured_image[0]; ?>" alt="<?php echo $featured_image_alt; ?>">
-                                    <?php else : ?>
-                                        <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
-                                    <?php endif; ?>
+                            <div class="row align-items-center my-3">
 
-                                    <div class="card-body">
-
-                                        <p class="has-icon f-sans-serif fs-md mb-1">
-                                            <span class="fas fa-map-marker-alt"></span>    
-                                            <span class="title"><?php the_field('location') ?></span>    
-                                        </p>
-                                        
-                                        <h2 class="h5"><?php the_title(); ?></h2>
-                                        
-                                        <p class="f-sans-serif fs-md">
-
-                                            <strong class="d-block"><?php the_field('start_date') ?></strong>
-
-                                            <?php if ($time) : ?>
-                                            <span class="text-muted"><?php echo $time; ?></span>
-                                            <?php endif; ?>
-                                        </p>
-                                    </div>
-                                    <!-- .card-body -->
-
-                                    <div class="card-footer py-2">
-                                        <a href="<?php the_permalink(); ?>"
-                                            class="btn btn-block btn-primary stretched-link">
-                                            Event Details
-                                        </a>
-                                    </div>
-                                    <!-- .card-footer -->
+                                <div class="col-lg-6">
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                        <img class="w-100" src="https://via.placeholder.com/1000x563" alt="<?php the_title(); ?>">
+                                    </a>
                                 </div>
-                                <!-- .card -->
+                                <!-- .col-6 -->
 
+                                <div class="col-lg-6">
+                                    <p class="has-icon f-sans-serif fs-md mb-1">
+                                        <span class="fas fa-map-marker-alt"></span>    
+                                        <span class="title"><?php the_field('location') ?></span>    
+                                    </p>
+                                    
+                                    <h2 class="h5"><?php the_title(); ?></h2>
+                                    
+                                    <p class="f-sans-serif fs-md">
+
+                                        <strong class="d-block"><?php the_field('start_date') ?></strong>
+
+                                        <?php if ($time) : ?>
+                                        <span class="text-muted"><?php echo $time; ?></span>
+                                        <?php endif; ?>
+                                    </p>
+                                </div>
+                                <!-- .col-6 -->
+                            
                             </div>
-                            <!-- .col -->
+                            <!-- .row -->
 
-                        </div>
-                        <!-- .row -->
-
-                    <?php endwhile; endif; wp_reset_postdata(); ?>
+                        <?php endwhile; endif; wp_reset_postdata(); ?>
 
                 </div>
                 <!-- .medium -->
