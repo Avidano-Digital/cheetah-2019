@@ -176,10 +176,9 @@
                       <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
 
                       <?php else : ?>
+                      
                       <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
 
-
-                      
                       <?php endif; /* featured_image */ ?>
 
                   </div>
@@ -209,40 +208,38 @@
           'meta_type' => 'DATETIME',
           'orderby' => 'meta_value',
       );
-
-      $events_header = false;
       
       $loop = new WP_Query( $args );
 
       $count = $wp_query->post_count;
+      
+      if ($count !== 0) : ?>
 
-      
-      while ( $loop->have_posts() ) : $loop->the_post();
-        
-      $date = new DateTime(get_field('start_date'));
-      $today = DateTime::createFromFormat("U", time());
-      
-      if ($date > $today) :
-      if ($events_header == false) : ?>
-      
       <section class="container" id="events">
 
         <header class="text-center mb-3">
-            <h3 class="display-4 mb-0">Upcoming Events / <?php echo $count; ?></h3>
+            <h3 class="display-4 mb-0">Upcoming Events</h3>
             <a class="link text-body fs-md" href="#">All Events</a>
         </header>
+        
+        <div class="row matrix-gutter justify-content-center">
 
-        <div class="row matrix-border">
+          <?php 
 
-          <?php endif;
+          while ( $loop->have_posts() ) : $loop->the_post();
+            
+          $date = new DateTime(get_field('start_date'));
+          $today = DateTime::createFromFormat("U", time());
+          
+          if ($date > $today) : 
 
-          $featured_image_id = get_post_thumbnail_id($post->ID);
-          $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
-          $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
+            $featured_image_id = get_post_thumbnail_id($post->ID);
+            $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
+            $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
 
           ?>
 
-          <div class="col-md-4 <?php if ($count == 1): ?>offset-md-4 <?php endif; ?> <?php if ($count == 2): ?>offset-md-2 <?php endif; ?>">
+          <div class="col-md-4">
 
             <div class="card border h-100">
 
@@ -286,62 +283,14 @@
           </div>
           <!-- .col -->
 
-          <?php if ( $events_header == false ) : ?>
+          <?php endif; endwhile; ?>
 
         </div>
-        <!-- .matrix-border -->
-
-      </section>
-      <!-- #videos -->
-
-      <?php $events_header = true; endif; endif; endwhile; ?>
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="my-6 d-none">
-      
-      <div class="container my-5" id="latest-news">
-
-        <header class="row align-items-end justify-content-between mb-3">
-          <div class="col-md-auto">
-            <h2 class="display-4">Latest News</h2>
-          </div>
-          <!-- .col -->
-          <div class="col-md-auto">
-            <a class="link text-body" href="#">All News</a>
-          </div>
-          <!-- .col -->
-        </header>
         <!-- .row -->
 
-        <?php get_template_part('template-parts/featured-news'); ?>
-
-      </div>
-      <!-- #latest-news -->
-
-      <?php get_template_part('template-parts/featured-video-group'); ?>
-
     </section>
+
+    <?php endif; /* $count */ ?>
 
   </main>
   <!-- #content -->
