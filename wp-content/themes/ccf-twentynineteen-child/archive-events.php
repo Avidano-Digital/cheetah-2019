@@ -59,7 +59,6 @@ if ($image): ?>
 
                             ?>
 
-
                             <div class="row align-items-center my-3">
 
                                 <div class="col-lg-6">
@@ -101,18 +100,11 @@ if ($image): ?>
             
             <div class="col-lg-3 mt-5 border-lg-left mt-lg-0">
 
-                <div class="sticky-top py-lg-5">
+                <div class="px-2 py-4">
 
-                    <div class=" p-2">
-
-                        <ul class="extensible-list fs-md">
-                            <li>
-                                <strong>HELLO:</strong>
-                            </li>
-                        </ul>
-                    
-                    </div>
-                    <!-- .bg-light -->
+                    <p>
+                        Check this page often for updates and new events added to our tours.
+                    </p>
 
                 </div>
                 <!-- .bg-light -->
@@ -125,6 +117,9 @@ if ($image): ?>
 
     </div>
     <!-- .container-fluid -->
+
+  <?php get_template_part('template-parts/donate-panel'); ?>
+
 </main>
 <!-- #content -->
 

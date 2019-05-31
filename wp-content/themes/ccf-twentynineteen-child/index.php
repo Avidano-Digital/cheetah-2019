@@ -7,6 +7,7 @@ get_header();
 <?php
 
 $image = get_field('news_header_image', 'option');
+$current_category = get_query_var('cat');
 
 if ($image): ?>
 
@@ -47,9 +48,9 @@ if ($image): ?>
 
             <div class="col-lg-3 mt-5 border-lg-left mt-lg-0 order-lg-last">
 
-                <div class="sticky-top py-lg-5">
+                <div class="sticky-top">
 
-                    <div class=" p-2">
+                    <div class="px-2 py-4">
                         <ul class="extensible-list fs-md">
                         <li><a class="<?php echo($current_category == $category->cat_ID ? 'text-body font-weight-bold' : 'text-muted') ?>" href="<?php  echo get_post_type_archive_link('post'); ?>">All Topics</a></li>
                             
@@ -128,5 +129,7 @@ if ($image): ?>
 
 </main>
 <!-- #content -->
+
+<?php get_template_part('template-parts/donate-panel'); ?>
 
 <?php get_footer(); ?>
