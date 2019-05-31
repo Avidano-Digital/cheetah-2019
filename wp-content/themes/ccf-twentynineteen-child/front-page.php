@@ -209,88 +209,94 @@
           'orderby' => 'meta_value',
       );
       
+      $events_header = false;
+
       $loop = new WP_Query( $args );
 
-      $count = $wp_query->post_count;
+      while ( $loop->have_posts() ) : $loop->the_post();
+        
+      $date = new DateTime(get_field('start_date'));
+      $today = DateTime::createFromFormat("U", time());
       
-      if ($count !== 0) : ?>
+      if ($date > $today) : 
+
+        $show_events = true;
+
+        $featured_image_id = get_post_thumbnail_id($post->ID);
+        $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
+        $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
+
+      if ($events_header == false) :
+
+      ?>
 
       <section class="container" id="events">
 
-        <header class="text-center mb-3">
-            <h3 class="display-4 mb-0">Upcoming Events</h3>
-            <a class="link text-body fs-md" href="#">All Events</a>
-        </header>
-        
-        <div class="row matrix-gutter justify-content-center">
+          <header class="text-center mb-3">
+              <h3 class="display-4 mb-0">Upcoming Events</h3>
+              <a class="link text-body fs-md" href="<?php echo get_site_url(); ?>/events">All Events</a>
+          </header>
+          
+          <div class="row matrix-gutter justify-content-center">
+
+      <?php endif; /* $events_header */ ?>
+
+              <div class="col-md-4">
+
+                <div class="card border h-100">
+
+                  <?php if ($featured_image) : ?>
+                  <img class="card-img-top" src="<?php echo $featured_image[0]; ?>"
+                    alt="<?php echo $featured_image_alt; ?>">
+                  <?php else : ?>
+                  <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                  <?php endif; ?>
+
+                  <div class="card-body">
+
+                    <p class="has-icon f-sans-serif fs-md mb-1">
+                      <span class="fas fa-map-marker-alt"></span>
+                      <span class="title"><?php the_field('location') ?></span>
+                    </p>
+
+                    <h2 class="h5"><?php the_title(); ?></h2>
+
+                    <p class="f-sans-serif fs-md">
+
+                      <strong class="d-block"><?php the_field('start_date') ?></strong>
+
+                      <?php if ($time) : ?>
+                      <span class="text-muted"><?php echo $time; ?></span>
+                      <?php endif; ?>
+                    </p>
+                  </div>
+                  <!-- .card-body -->
+
+                  <div class="card-footer py-2">
+                    <a href="<?php the_permalink(); ?>" class="btn btn-block btn-primary stretched-link">
+                      Event Details
+                    </a>
+                  </div>
+                  <!-- .card-footer -->
+
+                </div>
+                <!-- .card -->
+
+              </div>
+              <!-- .col -->
 
           <?php 
 
-          while ( $loop->have_posts() ) : $loop->the_post();
-            
-          $date = new DateTime(get_field('start_date'));
-          $today = DateTime::createFromFormat("U", time());
+          endif; 
+
+          $events_header = true;
           
-          if ($date > $today) : 
+      endwhile; 
 
-            $featured_image_id = get_post_thumbnail_id($post->ID);
-            $featured_image = wp_get_attachment_image_src($featured_image_id,'full', false, '');
-            $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
-
-          ?>
-
-          <div class="col-md-4">
-
-            <div class="card border h-100">
-
-              <?php if ($featured_image) : ?>
-              <img class="card-img-top" src="<?php echo $featured_image[0]; ?>"
-                alt="<?php echo $featured_image_alt; ?>">
-              <?php else : ?>
-              <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
-              <?php endif; ?>
-
-              <div class="card-body">
-
-                <p class="has-icon f-sans-serif fs-md mb-1">
-                  <span class="fas fa-map-marker-alt"></span>
-                  <span class="title"><?php the_field('location') ?></span>
-                </p>
-
-                <h2 class="h5"><?php the_title(); ?></h2>
-
-                <p class="f-sans-serif fs-md">
-
-                  <strong class="d-block"><?php the_field('start_date') ?></strong>
-
-                  <?php if ($time) : ?>
-                  <span class="text-muted"><?php echo $time; ?></span>
-                  <?php endif; ?>
-                </p>
-              </div>
-              <!-- .card-body -->
-
-              <div class="card-footer py-2">
-                <a href="<?php the_permalink(); ?>" class="btn btn-block btn-primary stretched-link">
-                  Event Details
-                </a>
-              </div>
-              <!-- .card-footer -->
-
+      if ($show_events) : ?>
             </div>
-            <!-- .card -->
-
-          </div>
-          <!-- .col -->
-
-          <?php endif; endwhile; ?>
-
-        </div>
-        <!-- .row -->
-
-    </section>
-
-    <?php endif; /* $count */ ?>
+        </section>
+    <? endif ?>
 
   </main>
   <!-- #content -->
