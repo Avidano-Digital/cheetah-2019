@@ -140,7 +140,7 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
 
     <?php endwhile; endif; /* have_posts */ ?>
 
-    <?php get_template_part('template-parts/section-join-the-race'); ?>
+    <?php get_template_part('template-parts/donate-panel'); ?>
 
 </main>
 <!-- #content -->
