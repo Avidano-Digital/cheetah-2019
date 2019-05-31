@@ -292,7 +292,10 @@
 
     <?php endif; /* $count */ ?>
 
+
   </main>
   <!-- #content -->
-
+  
+  <?php get_template_part('template-parts/donate-panel'); ?>
+  
   <?php get_footer(); ?>
