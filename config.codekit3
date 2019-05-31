@@ -29064,6 +29064,14 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen-child/index.php",
 		"oF": 0
 		},
+	"/wp-content/themes/ccf-twentynineteen-child/page-about.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/page-about.php",
+		"oF": 0
+		},
 	"/wp-content/themes/ccf-twentynineteen-child/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -32148,7 +32156,7 @@
 		"oAP": "/wp-content/uploads/2016/03/cropped_cheetahstrides11-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/03/cropped_cheetahstrides11.jpg": {
@@ -32159,7 +32167,7 @@
 		"oAP": "/wp-content/uploads/2016/03/cropped_cheetahstrides11.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2016/03/soil-microbial-communities-following-bush-removal-in-a-namibian-savanna.pdf": {
@@ -36581,7 +36589,7 @@
 		"oAP": "/wp-content/uploads/2019/01/dr-laurie-marker-photo-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/01/dr-laurie-marker-photo.jpg": {
@@ -36592,7 +36600,7 @@
 		"oAP": "/wp-content/uploads/2019/01/dr-laurie-marker-photo.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/01/dr-laurie-marker-with-cheetah-vintage-250x250.jpg": {
