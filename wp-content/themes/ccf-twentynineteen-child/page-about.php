@@ -120,7 +120,6 @@ get_header();
 
                     <div class="col-lg mb-3 mb-lg-0">
                         <h2 class="h1">Lorem ipsum dolor sit amet consectetur elit</h2>
-                        <a class="btn btn-lg btn-primary mt-2 d-none d-lg-inline-block" href="#" aria-hidden="true" title="Button Link">Button Link</a>
                     </div>
 
                     <div class="col-lg">
@@ -133,7 +132,6 @@ get_header();
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima id quibusdam molestiae, et nisi nostrum exercitationem consectetur perferendis earum.
                         </p>
 
-                        <a href="#" class="btn btn-lg btn-primary mt-2 d-lg-none" title="Button Link">Button Link</a>
                     </div>
                     <!-- .col -->
 
@@ -146,6 +144,8 @@ get_header();
         </section>
 
     <?php endwhile; endif; /* have_posts */ ?>
+
+    <?php get_template_part('template-parts/donate-panel'); ?>
 
 </main>
 <!-- #content -->

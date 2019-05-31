@@ -50,7 +50,7 @@
 
             <div class="row">
 
-                <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0">
+                <div class="col-lg-6 col-xl-4 mb-3 mb-xl-0">
                     <h5 class="mb-0">Cheetah Conservation Fund</h5>
                     <div class="fs-md">
                         <p class="f-sans-serif text-muted"><strong>United States</strong></p>
@@ -62,19 +62,6 @@
                         </p>
                         <p class="fs-md"><a class="link text-body" href="#">Contact Us</a></p>
                     </div>
-                </div>
-                <!-- .col -->
-
-                <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0 d-none">
-
-                    <h5>Where We Work</h5>
-                    <p class="fs-md">CCF is an international non-profit organization with fundraising
-                        operations located in: Australia, Canada, Italy, United Kingdom, and United States, working
-                        in cooperation with staff and partners around the world.</p>
-                    <p class="fs-md">
-                        <a class="link text-body" href="about-us/who-we-are/ccf-global/">CCF Global</a>
-                    </p>
-
                 </div>
                 <!-- .col -->
 
@@ -99,33 +86,41 @@
 
                     <h5>Follow Us</h5>
 
-                    <ul class="extensible-list horizontal fs-lg">
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fab fa-instagram"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fab fa-youtube"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#">
-                                <span class="fab fa-pinterest"></span>
-                            </a>
-                        </li>
-                    </ul>
+                    <?php if (have_rows('social_media_links', 'option')): ?>
+
+                        <ul class="extensible-list horizontal fs-lg">
+
+                        <?php while (have_rows('social_media_links', 'option')): the_row();
+
+                            // vars
+                            $icon = get_sub_field('icon');
+                            $link = get_sub_field('link');
+
+                            ?>
+
+                            <li>
+
+                                <?php if ($link): ?>
+
+                                    <a class="text-body" href="<?php echo $link['url']; ?>" title="<?php echo $link['title']; ?>" target="_blank">
+                                    
+                                    <?php if ($icon): ?>
+                                        <?php echo $icon; ?>
+                                    <?php else: ?>
+                                        <span><?php echo $link['title']; ?></span>
+                                    <?php endif; ?>
+                                    
+                                    </a>
+                                
+                                <?php endif; ?>
+
+                            </li>
+
+                        <?php endwhile; ?>
+
+                        </ul>
+
+                    <?php endif; ?>
 
                 </div>
                 <!-- .col -->
@@ -146,7 +141,7 @@
             <p class="fs-sm text-white">
                 <span class="d-block d-sm-inline-block">© 2019 Cheetah Conservation Fund</span>
                 <span class="d-none d-sm-inline-block mx-1">•</span>
-                <a class="blended-link" href="#">Privacy Policy</a>
+                <a class="text-reset" href="#">Privacy Policy</a>
             </p>
         
         </div>
