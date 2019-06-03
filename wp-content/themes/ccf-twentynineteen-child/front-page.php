@@ -210,17 +210,21 @@
       
       $events_header = false;
       $loop = new WP_Query($args);
+
       while ($loop->have_posts()) : $loop->the_post();
         
       $date = new DateTime(get_field('start_date'));
       $today = DateTime::createFromFormat("U", time());
       
       if ($date > $today) :
+
         $show_events = true;
         $featured_image_id = get_post_thumbnail_id($post->ID);
         $featured_image = wp_get_attachment_image_src($featured_image_id, 'full', false, '');
         $featured_image_alt = get_post_meta($featured_image_id, '_wp_attachment_image_alt', true);
-      if ($events_header == false) :
+
+        if ($events_header == false) :
+
       ?>
 
       <section class="container" id="events">
@@ -243,7 +247,7 @@
                     alt="<?php echo $featured_image_alt; ?>">
                   <?php else : ?>
                   <img class="card-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
-                  <?php endif; ?>
+                  <?php endif; /* $featured_image */ ?>
 
                   <div class="card-body">
 
@@ -260,7 +264,7 @@
 
                       <?php if ($time) : ?>
                       <span class="text-muted"><?php echo $time; ?></span>
-                      <?php endif; ?>
+                      <?php endif; /* $time */ ?>
                     </p>
                   </div>
                   <!-- .card-body -->
@@ -278,16 +282,25 @@
               </div>
               <!-- .col -->
 
-          <?php
-          endif;
-          $events_header = true;
-          
-      endwhile;
-      if ($show_events) : ?>
-            </div>
-        </section>
-    <?php endif ?>
+          <?php 
 
+          $events_header = true;
+
+          endif; /* $date > $today */
+
+      endwhile; /* have_posts() */
+     
+      if ($events_header) : ?>
+
+            </div>
+
+        </section>
+
+      <?php
+
+      endif; /* $events_header */
+
+      ?>
 
   </main>
   <!-- #content -->
