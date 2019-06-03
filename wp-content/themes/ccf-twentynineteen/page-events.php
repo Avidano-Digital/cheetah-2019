@@ -54,7 +54,7 @@ $parent_title = get_the_title($post->post_parent);
 
         <div class="row">
 
-            <?php get_template_part('template-parts/sidebar-get-involved'); ?>
+            <?php include(locate_template('template-parts/sidebar-standard.php', false, false)); ?>
 
             <div class="col-xl-9 overflow-hidden">
 
