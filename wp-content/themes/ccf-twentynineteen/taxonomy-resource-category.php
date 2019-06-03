@@ -47,7 +47,15 @@
                         
                     </div>
                     
-                    <?php starterMenu($parent_title); ?>
+                    <?php 
+
+                    if (is_nav_menu($parent_title)) :
+
+                    starterMenu($parent_title); 
+
+                    endif; // is_nav_menu($parent_title)
+
+                    ?>
 
                     <?php get_template_part('template-parts/aside-donate'); ?>
 
