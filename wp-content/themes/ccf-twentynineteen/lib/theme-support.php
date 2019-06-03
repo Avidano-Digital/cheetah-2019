@@ -69,7 +69,11 @@
         register_nav_menus(
             array(
                 'Header' => esc_html__( 'Header', 'cheetah.org' ),
-                'Footer' => esc_html__( 'Footer', 'cheetah.org' )
+                'Footer' => esc_html__( 'Footer', 'cheetah.org' ),
+                'What We Do' => esc_html__( 'What We Do', 'cheetah.org' ),
+                'Who We Are' => esc_html__( 'Who We Are', 'cheetah.org' ),
+                'Get Involved' => esc_html__( 'Get Involved', 'cheetah.org' ),
+                'Learn' => esc_html__( 'Learn', 'cheetah.org' ),
             )
         );
 

@@ -237,9 +237,9 @@ Author URI: http://fullwindsor.co
 
     endif;
 
-    if ($menu_name == 'Footer') {
+    if ($menu_name == 'Footer') :
 
-      foreach( $menuitems as $menuitem ):
+      foreach($menuitems as $menuitem) :
 
         $label = $menuitem->title;
         $attr_title = $menuitem->attr_title;
@@ -249,33 +249,32 @@ Author URI: http://fullwindsor.co
         $classes = implode(' ',$menuitem->classes);
         $parent = $menuitem->menu_item_parent;
 
-        if ($menuitem->item_type == 'orphaned_parent') {
+        if ($menuitem->item_type == 'orphaned_parent') :
           echo '<div class="col-lg-4 col-xl-2 mb-3 mb-xl-0 mx-auto"><ul class="extensible-list"><li><span class="font-weight-bold mb-2">'.$label.'</span></li>';
           $closing_tags = '</ul></div>';
           $count++;
           continue;
-        }
+        endif;
 
-        if ($menuitem->item_type == 'child') {
+        if ($menuitem->item_type == 'child') :
           echo '<li><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a></li>';
 
           // Does this child item 1) have menu items that come after it? 2) have siblings?
 
-          if (array_key_exists($count + 1, $menuitems) && $menuitems[ $count + 1 ]->menu_item_parent == $parent) {
+          if (array_key_exists($count + 1, $menuitems) && $menuitems[ $count + 1 ]->menu_item_parent == $parent) :
             $count++;
             continue;
-          }
 
           // If not, output the closing tags of this child item's parent.
 
-          else {
+          else :
             echo $closing_tags;
             $closing_tags = '';            
-          }
+          endif; // array_key_exists($count + 1, $menuitems)
 
           // Check to see if this item's parent has siblings 
 
-          if (array_key_exists($count + 1, $menuitems) && $open_parent && $menuitems[$count + 1]->menu_item_parent !== $open_parent->menu_item_parent) {
+          if (array_key_exists($count + 1, $menuitems) && $open_parent && $menuitems[$count + 1]->menu_item_parent !== $open_parent->menu_item_parent) :
 
             // Output grandparent closing tags
 
@@ -283,15 +282,40 @@ Author URI: http://fullwindsor.co
 
             $open_parent = null;
 
-          }
+          endif; // array_key_exists($count + 1, $menuitems)
 
           $count++;
 
-        }
+        endif; // $menuitem->item_type == 'child'
 
-      endforeach; 
+      endforeach; // $menuitems as $menuitem
 
-    }
+    endif; // $menu_name == 'Footer'
+
+    if ($menu_name == 'What We Do' || $menu_name == 'Who We Are' || $menu_name == 'Learn'  || $menu_name == 'Get Involved' ) :
+
+      global $post;
+
+      echo '<nav class="collapse d-xl-block mb-xl-4" id="aside-nav"><ul class="extensible-list text-white py-3 py-xl-0">';
+
+      foreach($menuitems as $menuitem) :
+
+        $label = $menuitem->title;
+        $attr_title = $menuitem->attr_title;
+        $url = $menuitem->url;
+        $classes = implode(' ',$menuitem->classes);
+
+        if (is_tax('resource-category')) :
+            $resource_library = get_posts(array('name' => 'resource-library', 'post_type' => 'page', 'post_status' => 'publish', 'numberposts' => 1));
+        endif;
+        
+        echo '<li class="page_item '.($post->ID == $menuitem->object_id || $resource_library[0]->ID == $menuitem->object_id ? 'current_page_item': '').'"><a href="'.$url.'" title="'.$attr_title.'">'.$label.'</a>';
+
+      endforeach; // $menuitems as $menuitem
+
+      echo '</ul></nav>';
+
+    endif; // $menu_name == 'What We Do'
 
   }
 

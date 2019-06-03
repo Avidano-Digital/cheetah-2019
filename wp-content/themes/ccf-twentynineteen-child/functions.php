@@ -59,6 +59,10 @@ add_action( 'init', 'create_child_post_types' );
 
     function remove_parent_theme_locations() {
         unregister_nav_menu( 'Footer' );
+        unregister_nav_menu( 'What We Do' );
+        unregister_nav_menu( 'Who We Are' );
+        unregister_nav_menu( 'Get Involved' );
+        unregister_nav_menu( 'Learn' );
     }
 
     add_action( 'after_setup_theme', 'remove_parent_theme_locations', 20 );

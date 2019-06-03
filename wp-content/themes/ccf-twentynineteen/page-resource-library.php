@@ -4,7 +4,11 @@
 Template Name: Resource Library
 */
 
-get_header(); ?>
+get_header(); 
+
+$parent_title = get_the_title($post->post_parent);
+
+?>
 
 <main id="content">
 
@@ -47,7 +51,27 @@ get_header(); ?>
 
         <div class="row">
 
-            <?php include(locate_template('template-parts/sidebar-standard.php', false, false)); ?>
+            <div class="col-xl-3 bg-dark">
+
+                <div class="sticky-top py-xl-4">
+
+                    <div class="btn-toggle d-xl-none mx-n2">
+
+                        <button class="btn btn-block btn-lg btn-primary" data-toggle="collapse" data-target="#aside-nav" aria-expanded="false" aria-controls="aside-nav">
+                            <span class="title"><?php echo $parent_title; ?></span>
+                        </button>
+                        
+                    </div>
+                    
+                    <?php starterMenu($parent_title); ?>
+
+                    <?php get_template_part('template-parts/aside-donate'); ?>
+
+                </div>
+                <!-- .sticky-top -->
+
+            </div>
+            <!-- .col -->
 
             <div class="col-xl-9 py-6">
 
