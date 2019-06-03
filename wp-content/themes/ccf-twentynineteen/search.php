@@ -29,8 +29,27 @@ get_header(); ?>
             <?php while (have_posts()) : the_post(); ?>
 
                 <li class="list-group-item">
+                    <?php 
+
+                    $post_type = get_post_type();
+                    
+                    if ($post_type == 'post') :
+                        $section = 'News';
+                    elseif ($post_type == 'events') :
+                        $section = 'Events';
+                    elseif ($post_type == 'resourcelibrary') :
+                        $section = 'Resource Library';
+                    elseif ($post_type == 'videos') :
+                        $section = 'Videos';
+                    elseif ($post_type == 'partnerships') :
+                        $section = 'Partnerships';
+                    elseif ($post_type == 'page') :
+                        $section = get_the_title($post->post_parent);
+                    endif; 
+
+                    ?>
                     <a class="text-body" href="<?php the_permalink(); ?>">
-                        <p class="f-sans-serif fs-md mb-0"><?php echo get_the_date(); ?></p>
+                        <p class="f-sans-serif fs-md mb-0"><?php echo $section . ' | ' . get_the_date(); ?></p>
                         <strong class="h5">
                             <?php the_title(); ?>
                         </strong>                                                                 
