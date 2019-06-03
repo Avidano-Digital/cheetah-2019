@@ -87,6 +87,11 @@
                 'block' => 'p',
             ),
             array(
+                'title' => 'Small',
+                'block' => 'p',
+                'classes' => 'f-sans-serif fs-md text-muted',
+            ),
+            array(
                 'title' => 'Blockquote',
                 'block' => 'blockquote',
                 'classes' => 'pullout my-3',

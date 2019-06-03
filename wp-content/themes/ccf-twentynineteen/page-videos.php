@@ -14,6 +14,7 @@ $parent_title = get_the_title($post->post_parent);
 <main id="content">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
     <section class="banner">
 
         <div class="card bg-white">
@@ -65,84 +66,52 @@ $parent_title = get_the_title($post->post_parent);
 
                 <div class="text-block narrow mb-5">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore debitis provident natus, unde fugit
-                        voluptatibus quia.
+                        <?php the_content(); ?>
                     </p>
                 </div>
 
-                <div class="medium mb-6">
+                <?php $ccf_videos = get_field('ccf_videos');
 
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
-                            allowTransparency="true" allowfullscreen="true"></iframe>
-                    </div>
+                $post_objects = $ccf_videos;
 
-                </div>
-                <!-- .medium -->
+                if ($ccf_videos): ?>
 
                 <div class="mx-n2">
 
-                    <div class="row matrix-border mx-n2">
+                    <div class="row matrix-gutter">
+
+                        <?php
+
+                        if ($post_objects) :
+                        foreach ($post_objects as $post) :
+                        setup_postdata($post);
+
+                        $video_url = get_field('video_url');
+                        $video_id = substr(strrchr($video_url, '/'), 1);
+                        ?>
 
                         <div class="col-lg-6">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI"
-                                    frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                                <?php if (strpos($video_url, 'vimeo') !== false) : ?>
+                                    <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <?php else : ?>
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                                <?php endif; ?>
                             </div>
                         </div>
                         <!-- .col -->
-                        <div class="col-lg-6">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI"
-                                    frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
-                            </div>
-                        </div>
-                        <!-- .col -->
-                        <div class="col-lg-6">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI"
-                                    frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
-                            </div>
-                        </div>
-                        <!-- .col -->
-                        <div class="col-lg-6">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI"
-                                    frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
-                            </div>
-                        </div>
-                        <!-- .col -->
-                        <div class="col-lg-6">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI"
-                                    frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
-                            </div>
-                        </div>
-                        <!-- .col -->
-                        <div class="col-lg-6">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI"
-                                    frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
-                            </div>
-                        </div>
-                        <!-- .col -->
+
+                        <?php endforeach; endif; wp_reset_postdata(); /* post_objects */?>
 
                     </div>
-                    <!-- .row -->
+                    <!-- .matrix-border -->
 
                 </div>
                 <!-- .mx-n2 -->
 
+                <?php endif; /* featured_videos */ ?>
+
                 <?php get_template_part('template-parts/article-footer'); ?>
-
-
-
-
-
-
-
-
-
 
             </div>
             <!-- .col -->
