@@ -29015,14 +29015,6 @@
 		"oAP": "/wp-content/themes/ccf-twentynineteen-child/footer.php",
 		"oF": 0
 		},
-	"/wp-content/themes/ccf-twentynineteen-child/front-page.1.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/ccf-twentynineteen-child/front-page.1.php",
-		"oF": 0
-		},
 	"/wp-content/themes/ccf-twentynineteen-child/front-page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -46106,7 +46098,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Book_Featured-1500-x-500-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Book_Featured-1500-x-500.jpg": {
@@ -46117,7 +46109,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Book_Featured-1500-x-500.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/BrianBadger_Soin_1-250x250.jpg": {
@@ -48476,7 +48468,7 @@
 		"oAP": "/wp-content/uploads/2019/05/EducationTeam_2019_NewsBlog_Figures_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/EducationUpdate_Outreach_2017-250x250.jpg": {
@@ -48605,7 +48597,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_1.jpg": {
@@ -48616,29 +48608,29 @@
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_2-250x250.jpg": {
 		"ft": 16384,
-		"iS": 14636,
+		"iS": 14165,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_2-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_2.jpg": {
 		"ft": 16384,
-		"iS": 106201,
+		"iS": 105248,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_3-250x250.jpg": {
@@ -48671,18 +48663,18 @@
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_4-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_4.jpg": {
 		"ft": 16384,
-		"iS": 97030,
+		"iS": 96064,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_5-250x250.jpg": {
@@ -48693,7 +48685,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_5-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_5.jpg": {
@@ -48715,7 +48707,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_6-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_6.jpg": {
@@ -48737,7 +48729,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_7-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_7.jpg": {
@@ -48748,7 +48740,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_7.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_FeaturedImage-250x250.jpg": {
@@ -48759,7 +48751,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_FeaturedImage-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ElfiStark_FeaturedImage.jpg": {
@@ -48770,7 +48762,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ElfiStark_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/evidence-for-chronic-stress-in-captive-but-not-free-ranging-cheetahs-acinonyx-jubatus-based-on-adrenal-morphology-and-function.pdf": {
@@ -48797,7 +48789,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Evie_1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Evie_1.jpg": {
@@ -48808,7 +48800,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Evie_1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Evie_FeaturedImage-250x250.jpg": {
@@ -48830,7 +48822,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Evie_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/factors-affecting-leopard-panthera-pardus-spatial-ecology-with-particular-reference-to-namibian-farmlands.pdf": {
@@ -48859,24 +48851,24 @@
 		},
 	"/wp-content/uploads/2019/05/FarmerCarnivoreHotline_1-250x250.jpg": {
 		"ft": 16384,
-		"iS": 10916,
+		"iS": 10463,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/FarmerCarnivoreHotline_1-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FarmerCarnivoreHotline_1.jpg": {
 		"ft": 16384,
-		"iS": 65331,
+		"iS": 64415,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/FarmerCarnivoreHotline_1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FarmerCarnivoreHotline_2-250x250.jpg": {
@@ -48942,7 +48934,7 @@
 		"oAP": "/wp-content/uploads/2019/05/FarmerHelpHotline_2017V2_WarmBrownLightNumbers_web-e1508778756411.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FilmCrews_2017-250x250.jpg": {
@@ -49002,13 +48994,13 @@
 		},
 	"/wp-content/uploads/2019/05/FilmCrews_FeaturedImage.jpg": {
 		"ft": 16384,
-		"iS": 269858,
+		"iS": 268921,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/FilmCrews_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FourStar_FeaturedImage-250x250.jpg": {
@@ -49118,7 +49110,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Foxlights_4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FrontPage_EventBlock_500x250-250x250.jpg": {
@@ -49129,7 +49121,7 @@
 		"oAP": "/wp-content/uploads/2019/05/FrontPage_EventBlock_500x250-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FrontPage_EventBlock_500x250.jpg": {
@@ -49140,7 +49132,7 @@
 		"oAP": "/wp-content/uploads/2019/05/FrontPage_EventBlock_500x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FrontPage_FallTour2019_500x250-250x250.jpg": {
@@ -49151,7 +49143,7 @@
 		"oAP": "/wp-content/uploads/2019/05/FrontPage_FallTour2019_500x250-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FrontPage_FallTour2019_500x250.jpg": {
@@ -49162,7 +49154,7 @@
 		"oAP": "/wp-content/uploads/2019/05/FrontPage_FallTour2019_500x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FrontPage_Visit_500x250-250x250.jpg": {
@@ -49173,12 +49165,12 @@
 		"oAP": "/wp-content/uploads/2019/05/FrontPage_Visit_500x250-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FrontPage_Visit_500x250.jpg": {
 		"ft": 16384,
-		"iS": 53854,
+		"iS": 52937,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/FrontPage_Visit_500x250.jpg",
@@ -49195,7 +49187,7 @@
 		"oAP": "/wp-content/uploads/2019/05/FrontPage_Volunteer_500x250-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FrontPage_Volunteer_500x250.jpg": {
@@ -49206,7 +49198,7 @@
 		"oAP": "/wp-content/uploads/2019/05/FrontPage_Volunteer_500x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Genetics-laboratory-wish-list_March14.pdf": {
@@ -50805,7 +50797,7 @@
 		"oAP": "/wp-content/uploads/2019/05/IWT_BornFree_1000-600-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/IWT_BornFree_1000-600.jpg": {
@@ -51850,7 +51842,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_11_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_12_1000-600-250x250.jpg": {
@@ -51861,7 +51853,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_12_1000-600-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_12_1000-600.jpg": {
@@ -51872,7 +51864,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_12_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_13_1000-600-250x250.jpg": {
@@ -51883,7 +51875,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_13_1000-600-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_13_1000-600.jpg": {
@@ -51894,7 +51886,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_13_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_14_1000-600-250x250.jpg": {
@@ -51905,7 +51897,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_14_1000-600-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_14_1000-600.jpg": {
@@ -51916,7 +51908,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_14_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_1500x500-250x250.jpg": {
@@ -52125,7 +52117,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_8_1000-600-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_8_1000-600.jpg": {
@@ -52136,7 +52128,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_8_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_9_1000-600-250x250.jpg": {
@@ -52158,7 +52150,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_9_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_Acinonyx-pardinensis_1000-600-250x250.jpg": {
@@ -52224,7 +52216,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_AboutCheetahs_HWC_ColorCalloutBlock_800x600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_AboutCheetahs_IWT_ColorCalloutBlock_800x600-250x250.jpg": {
@@ -52378,7 +52370,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Learn_HabitatLoss_4_1000x600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/Learn_HabitatLoss_5_1000x600-250x250.jpg": {
@@ -53862,7 +53854,7 @@
 		"oAP": "/wp-content/uploads/2019/05/Scat_ColorCalloutBlock_800x600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ScatSniffers_2-FeaturedImage-250x250.jpg": {
@@ -55597,6 +55589,50 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/06/event-01-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18223,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/event-01-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/event-01.jpg": {
+		"ft": 16384,
+		"iS": 141405,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/event-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/support-dogs-saving-cheetahs-03-250x250.jpg": {
+		"ft": 16384,
+		"iS": 20035,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/support-dogs-saving-cheetahs-03-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/support-dogs-saving-cheetahs-03.jpg": {
+		"ft": 16384,
+		"iS": 156033,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/support-dogs-saving-cheetahs-03.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/sites/2/2019/05/carl-avidano-250x250.jpg": {
 		"ft": 16384,
 		"iS": 10396,
@@ -55756,6 +55792,72 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/sites/2/2019/05/event-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-02-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18267,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-02-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-02.jpg": {
+		"ft": 16384,
+		"iS": 114404,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-03-250x250.jpg": {
+		"ft": 16384,
+		"iS": 20035,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-03-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-03.jpg": {
+		"ft": 16384,
+		"iS": 156033,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-03.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-04-250x250.jpg": {
+		"ft": 16384,
+		"iS": 18769,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-04-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-04.jpg": {
+		"ft": 16384,
+		"iS": 129072,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2019/05/support-dogs-saving-cheetahs-04.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
