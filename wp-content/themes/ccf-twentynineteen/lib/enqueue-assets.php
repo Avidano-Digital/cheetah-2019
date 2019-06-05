@@ -15,7 +15,7 @@
             );
         }
         
-        if (is_page('cheetah-facts') || is_singular('ccf-kids')) {
+        if (is_page('cheetah-facts') || is_page('cheetah-facts') || is_singular('ccf-kids')) {
 
             wp_enqueue_style(
                 'cheetah-tracks',

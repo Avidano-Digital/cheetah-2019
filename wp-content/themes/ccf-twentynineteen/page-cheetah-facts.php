@@ -62,7 +62,7 @@ $parent_title = get_the_title($post->post_parent);
                     <div class="rounded-lg overflow-hidden mb-4">
                     
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Y_zNbiB3kE" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
                         </div>
 
                     </div>
@@ -131,7 +131,7 @@ $parent_title = get_the_title($post->post_parent);
                             <div class="narrow rounded-lg overflow-hidden mb-4">
 
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gYZXGZ5WrFI" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
                                 </div>
 
                             </div>
