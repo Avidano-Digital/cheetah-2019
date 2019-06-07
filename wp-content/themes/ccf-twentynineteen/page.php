@@ -120,15 +120,17 @@ $parent_title = get_the_title($post->post_parent);
 
                     endif;
 
-                    $partnership_group = get_field('partnership_group');
+                    $partnership_groups = get_field('partnership_groups');
                     
-                    $post_object = $partnership_group;
+                    $post_objects = $partnership_groups;
 
-                    if ($post_object):
+                    if ($post_objects):
+                    foreach($post_objects as $post) :
+                    setup_postdata( $post ); 
 
-                        // override $post
-                        $post = $post_object;
-                        setup_postdata($post);
+                        // // override $post
+                        // $post = $post_object;
+                        // setup_postdata($post);
 
                         $description = get_field('description');
 
@@ -178,9 +180,9 @@ $parent_title = get_the_title($post->post_parent);
                     </div>
                     <!-- .narrow -->
 
-                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+                    <?php endforeach; endif; wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 
-                    <?php endif;
+                    <?php /* endif; */
 
                     get_template_part('template-parts/article-footer');
                     get_template_part('template-parts/related-reading');
