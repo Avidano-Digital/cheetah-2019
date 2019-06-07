@@ -41,12 +41,14 @@ get_header();
         <!-- .banner-with-background -->
 
         <div class="container">
- <article class="my-6" id="primary-content">
+
+            <article class="my-6" id="primary-content">
 
                 <?php get_template_part('template-parts/flexible-content-article'); ?>
 
-                </article>
+                <?php the_field('code'); ?>
 
+            </article>
         
         </div>
         <!-- .container -->

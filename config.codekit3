@@ -28999,6 +28999,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5cfa99293954a.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5cfa99293954a-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/wp-content/themes/ccf-twentynineteen-child/archive-events.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -31727,6 +31735,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/content.php",
+		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen/template-parts/corporate-giving.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/corporate-giving.php",
 		"oF": 0
 		},
 	"/wp-content/themes/ccf-twentynineteen/template-parts/donate-panel.php": {
@@ -52583,6 +52599,204 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-city-of-little-rock.png": {
+		"ft": 32768,
+		"iS": 6591,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-city-of-little-rock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-concierge-unlimited-international.png": {
+		"ft": 32768,
+		"iS": 5655,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-concierge-unlimited-international.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-decatur-park-district.png": {
+		"ft": 32768,
+		"iS": 15157,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-decatur-park-district.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Logo-Dental-Warehouse.png": {
+		"ft": 32768,
+		"iS": 17857,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Logo-Dental-Warehouse.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-dlc-laboratories.png": {
+		"ft": 32768,
+		"iS": 12373,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-dlc-laboratories.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-dtex-systems.png": {
+		"ft": 32768,
+		"iS": 9035,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-dtex-systems.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-early-warning.png": {
+		"ft": 32768,
+		"iS": 4751,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-early-warning.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-extraordinary-journeys.png": {
+		"ft": 32768,
+		"iS": 5996,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-extraordinary-journeys.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-foley-and-larder-llp.png": {
+		"ft": 32768,
+		"iS": 9415,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-foley-and-larder-llp.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Logo-Mango-ASfrican-Safaries.png": {
+		"ft": 32768,
+		"iS": 7842,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Logo-Mango-ASfrican-Safaries.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-montereybay-whale-watch.png": {
+		"ft": 32768,
+		"iS": 24690,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-montereybay-whale-watch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-natural-habitat-adventures.png": {
+		"ft": 32768,
+		"iS": 15500,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-natural-habitat-adventures.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Logo-Piper-and-Heath-Travel.png": {
+		"ft": 32768,
+		"iS": 18286,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Logo-Piper-and-Heath-Travel.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-swarthmore-presbyterian-church.png": {
+		"ft": 32768,
+		"iS": 9993,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-swarthmore-presbyterian-church.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-the-chickasaw-nation.png": {
+		"ft": 32768,
+		"iS": 40809,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-the-chickasaw-nation.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/Logo-Utopia-Scientific.png": {
+		"ft": 32768,
+		"iS": 9744,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Logo-Utopia-Scientific.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-wieden-kennedy.png": {
+		"ft": 32768,
+		"iS": 6950,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-wieden-kennedy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/logo-wildlife-protection-solutions.png": {
+		"ft": 32768,
+		"iS": 18617,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/logo-wildlife-protection-solutions.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/LosingBattles_1-250x250.jpg": {
