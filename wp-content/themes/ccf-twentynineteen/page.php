@@ -120,6 +120,12 @@ $parent_title = get_the_title($post->post_parent);
 
                     endif;
 
+                    if (is_page('corporate-giving')):
+                    
+                    get_template_part('template-parts/corporate-giving');
+
+                    endif;
+
                     $partnership_groups = get_field('partnership_groups');
                     
                     $post_objects = $partnership_groups;
@@ -131,73 +137,6 @@ $parent_title = get_the_title($post->post_parent);
                     $description = get_field('description');
 
                     ?>
-                    
-                    <?php if (is_page('corporate-giving')): ?>
-
-                    <div class="medium mb-5">
-
-                        <h3>
-                            <?php the_title(); ?>
-                        </h3>
-
-                        <p>
-                            <?php echo $description; ?>
-                        </p>
-
-                        <?php if (have_rows('partners')): ?>
-
-                        <div class="my-3">
-                        
-                            <div class="row matrix-gutter my-3">
-                            
-                            <?php while (have_rows('partners')): the_row();
-
-                            $logo = get_sub_field('logo');
-                            $name = get_sub_field('name');
-                            $link = get_sub_field('link');
-
-                            ?>
-
-                            <div class="col-6 col-md-3">
-
-                                <div class="card partner h-100 bg-white border text-white">
-
-                                    <?php if ($logo): ?>
-                                        <img class="card-img" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
-                                    <?php else : ?>
-                                        <img class="card-img" src="https://via.placeholder.com/200x200" alt="Placeholder">
-                                    <?php endif; ?>
-
-                                    <div class="card-img-overlay bg-opacity-black-75 d-flex">
-
-                                        <div class="align-self-center w-100 fs-md text-center text-white text-shadow">
-                                            <p class="card-title font-weight-bold f-sans-serif"><?php echo $name; ?></p>
-                                            
-                                            <?php if ($link) : ?>
-                                            <a class="stretched-link link text-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
-                                            <?php endif; ?>
-                                        
-                                        </div>
-                                        <!-- .align-self-center -->
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <!-- .col -->
-
-                            <?php endwhile; ?>
-
-                        </div>
-                        <!-- .my-4 -->
-
-                        <?php endif; ?>
-
-                    </div>
-                    <!-- .narrow -->
-
-                    <?php else: ?>
 
                     <div class="narrow mb-5">
 
@@ -217,6 +156,7 @@ $parent_title = get_the_title($post->post_parent);
 
                             $name = get_sub_field('name');
                             $link = get_sub_field('link');
+                            
                             ?>
 
                             <dl class="row justify-content-between border-top py-2 mb-0 fs-md">
@@ -234,14 +174,12 @@ $parent_title = get_the_title($post->post_parent);
                             <?php endwhile; ?>
 
                         </div>
-                        <!-- .my-4 -->
+                        <!-- .my-3 -->
 
                         <?php endif; ?>
 
                     </div>
                     <!-- .narrow -->
-
-                   <?php endif; ?>
 
                     <?php endforeach; endif; wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 

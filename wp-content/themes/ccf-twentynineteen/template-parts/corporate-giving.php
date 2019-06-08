@@ -1,52 +1,164 @@
 
-<section>
+<?php if (have_rows('top_tier')): 
 
-    <?php
-
-    $partnership_groups = get_field('partnership_groups');
+    while (have_rows('top_tier')): the_row();
+        
+    $headline = get_sub_field('headline');
+    $description = get_sub_field('description');
     
-    $post_objects = $partnership_groups;
-
-    if ($post_objects):
-    
-    foreach($post_objects as $post) :
-    setup_postdata( $post ); 
-    $description = get_field('description');
-
     ?>
 
-    <div class="medium">
-    
-        <h2>the_title()</h2>
+    <section class="my-4">
+
+        <header class="narrow">
+            <h2><?php echo $headline; ?></h2>
+            <p><?php echo $description; ?></p>
+        </header>
         
-        <div class="row matrix-gutter my-3">
+        <?php if (have_rows('donors')): ?>
 
-            <div class="col-md-4">
-                <div class="bg-dark text-white text-center p-4">
-                    <p>Column</p>
+        <div class="medium my-3">
+        
+            <div class="row matrix-gutter my-3">
+            
+            <?php while (have_rows('donors')): the_row();
+
+            $logo = get_sub_field('logo');
+            $name = get_sub_field('name');
+            $link = get_sub_field('link');
+
+            ?>
+
+            <div class="col-6 col-md-3">
+
+                <div class="card partner h-100 bg-white border text-white">
+
+                    <?php if ($logo): ?>
+                        <img class="card-img" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+                    <?php else : ?>
+                        <img class="card-img" src="https://via.placeholder.com/200x200" alt="Placeholder">
+                    <?php endif; ?>
+
+                    <div class="card-img-overlay bg-opacity-black-75 d-flex">
+
+                        <div class="align-self-center w-100 fs-md text-center text-white text-shadow">
+                            <p class="card-title font-weight-bold f-sans-serif"><?php echo $name; ?></p>
+                            
+                            <?php if ($link) : ?>
+                            <a class="stretched-link link text-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+                            <?php endif; ?>
+                        
+                        </div>
+                        <!-- .align-self-center -->
+
+                    </div>
+
                 </div>
+                <!-- .card -->
+
             </div>
             <!-- .col -->
 
-            <div class="col-md-4">
-                <div class="bg-dark text-white text-center p-4">
-                    <p>Column</p>
-                </div>
-            </div>
-            <!-- .col -->
-
-            <div class="col-md-4">
-                <div class="bg-dark text-white text-center p-4">
-                    <p>Column</p>
-                </div>
-            </div>
-            <!-- .col -->
+            <?php endwhile; ?>
 
         </div>
-        <!-- .row -->
+        <!-- .my-4 -->
+
+        <?php endif; ?>
+
+    </section>
+
+    <hr class="narrow my-4">
     
-    </div>
+<?php endwhile; endif; /* top_tier */ ?>
 
-     <?php endforeach; endif; wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+<?php if (have_rows('middle_tier')):
 
-</section>
+    while (have_rows('middle_tier')): the_row();
+        
+    $headline = get_sub_field('headline');
+    $description = get_sub_field('description');
+    
+    ?>
+
+    <section class="my-4">
+
+        <header class="narrow">
+            <h2><?php echo $headline; ?></h2>
+            <p><?php echo $description; ?></p>
+        </header>
+        
+        <?php if (have_rows('donors')): ?>
+
+        <div class="narrow my-3">
+        
+            <?php while (have_rows('donors')): the_row();
+
+            $name = get_sub_field('name');
+            $link = get_sub_field('link');
+
+            ?>
+
+            <dl class="row justify-content-between border-top py-2 mb-0 fs-md">
+
+                <dt class="col-md">
+                    <?php echo $name; ?>
+                </dt>
+
+                <dd class="col-md-auto">
+                    <a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+                </dd>
+
+            </dl>
+
+            <?php endwhile; ?>
+
+        <?php endif; ?>
+
+    </section>
+
+    <hr class="narrow my-4">
+    
+<?php endwhile; endif; /* middle_tier */ ?>
+
+<?php if (have_rows('lower_tier')):
+
+    while (have_rows('lower_tier')): the_row();
+        
+    $headline = get_sub_field('headline');
+    $description = get_sub_field('description');
+    
+    ?>
+
+    <section class="my-4">
+
+        <header class="narrow">
+            <h2><?php echo $headline; ?></h2>
+            <p><?php echo $description; ?></p>
+        </header>
+        
+        <?php if (have_rows('donors')): ?>
+
+        <div class="narrow my-3">
+        
+            <?php while (have_rows('donors')): the_row();
+
+            $name = get_sub_field('name');
+
+            ?>
+
+            <dl class="row justify-content-between border-top py-2 mb-0 fs-md">
+
+                <dt class="col-md">
+                    <?php echo $name; ?>
+                </dt>
+
+            </dl>
+
+            <?php endwhile; ?>
+
+        <?php endif; ?>
+
+    </section>
+    
+<?php endwhile; endif; /* middle_tier */ ?>
