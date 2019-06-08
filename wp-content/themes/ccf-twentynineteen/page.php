@@ -158,23 +158,31 @@ $parent_title = get_the_title($post->post_parent);
 
                             ?>
 
-                            <div class="col-md-3">
+                            <div class="col-6 col-md-3">
 
-                                <div class="card h-100 bg-white border">
+                                <div class="card partner h-100 bg-white border text-white">
 
                                     <?php if ($logo): ?>
-                                        <img class="card-img my-auto" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+                                        <img class="card-img" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
                                     <?php else : ?>
-                                        <img class="card-img" src="https://via.placeholder.com/200x100" alt="Placeholder">
+                                        <img class="card-img" src="https://via.placeholder.com/200x200" alt="Placeholder">
                                     <?php endif; ?>
 
-                                    <div class="card-body d-none">
-                                        <p><?php echo $name; ?></p>
-                                        <p><a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a></p>
+                                    <div class="card-img-overlay bg-opacity-black-75 d-flex">
+
+                                        <div class="align-self-center w-100 fs-md text-center text-white text-shadow">
+                                            <p class="card-title font-weight-bold f-sans-serif"><?php echo $name; ?></p>
+                                            
+                                            <?php if ($link) : ?>
+                                            <a class="stretched-link link text-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+                                            <?php endif; ?>
+                                        
+                                        </div>
+                                        <!-- .align-self-center -->
+
                                     </div>
 
                                 </div>
-                                <!-- .card -->
 
                             </div>
                             <!-- .col -->

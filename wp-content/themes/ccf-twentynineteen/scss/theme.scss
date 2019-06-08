@@ -19,6 +19,7 @@ In this file:
 @import "d-enhancements.scss";
 @import "e-supplementary-classes.scss";
 @import "f-ui-elements.scss";
+
 // @import "g-dev-tools.scss";
 // @import "h-donate.scss";
 
@@ -106,6 +107,7 @@ form[role="search"] {
 
 #gtranslate_selector {
     @extend .form-control;
+
     @extend .form-control-sm;
 }
 
@@ -147,7 +149,7 @@ a.featured-article {
             background: $primary;
             margin-left: $spacer-2;
             margin-right: $spacer-2;
-            padding: ($spacer-1/2) $spacer-1;
+            padding: ($spacer-1 / 2) $spacer-1;
             bottom: 0;
         }
     }
@@ -221,6 +223,7 @@ span.fa-circle {
 
 .leaflet-popup-content-wrapper {
     @extend .rounded;
+
     @extend .shadow;
 
     // padding: $spacer-1;
@@ -239,12 +242,10 @@ span.fa-circle {
 
         &.city {
             color: $text-muted;
-            margin-bottom: ($spacer-1/2);
-            
+            margin-bottom: $spacer-1 / 2;
         }
-        &.type {
-        }
-        
+
+        &.type {}
 
         &.info {}
     }
@@ -351,10 +352,10 @@ $leaflet-button-color: white;
     border-top: none;
     height: 20px;
 
-    @include apply-background-image("african-hr", ".svg", false );
+    @include apply-background-image("african-hr", ".svg", false);
 }
 
-hr.cheetahs{
+hr.cheetahs {
     border-color: red;
     width: $narrow-width;
     margin-left: auto;
@@ -372,19 +373,21 @@ hr.cheetahs{
 #kids-tabs {
     @extend .text-center;
 
-    .nav{
-      flex-direction: row;
+    .nav {
+        flex-direction: row;
     }
 
     a.nav-item {
         @extend .f-cheetah-tracks;
+
         @extend .bg-primary;
+
         @extend .py-2;
+
         @extend .flex-even;
 
         font-size: $fs-xl;
         color: $body-color;
-
         border-top-left-radius: $border-radius-lg;
         border-top-right-radius: $border-radius-lg;
 
@@ -394,15 +397,14 @@ hr.cheetahs{
     }
 
     @include media-breakpoint-down(sm) {
+        .nav {
+            flex-direction: column;
+        }
 
-      .nav {
-        flex-direction: column;
-      }
-
-      a:last-child {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
+        a:last-child {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
     }
 }
 
@@ -550,7 +552,6 @@ figcaption a {
 }
 
 figure {
-
     &.left,
     &.right {
         display: block;
@@ -636,14 +637,16 @@ hr.dark {
 
 #all-topics,
 #all-authors {
-    ul{
+    ul {
         column-count: 2;
     }
 }
 
 .page-numbers {
     @extend .page-item;
+
     @extend .page-link;
+
     &.current {
         z-index: 1;
         color: $pagination-active-color;
@@ -652,15 +655,39 @@ hr.dark {
     }
 }
 
-.staff-list{
-
-    h4{
+.staff-list {
+    h4 {
         @extend .h5;
-        margin-bottom: .25rem;;
+
+        margin-bottom: .25rem;
     }
+
     p {
         @extend .f-sans-serif;
+
         font-size: $fs-md;
-        margin-bottom: 0; 
+        margin-bottom: 0;
+    }
+}
+
+.card {
+
+    &.partner {
+
+        @include hover-focus {
+
+            .card-img-overlay {
+                @include transition;
+                opacity: 1;
+            }
+        }
+
+        .card-img-overlay {
+            opacity: 0;
+        }
+
+        a.stretched-link {
+
+        }
     }
 }
