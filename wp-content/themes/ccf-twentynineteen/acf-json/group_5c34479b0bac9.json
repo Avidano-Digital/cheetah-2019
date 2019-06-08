@@ -401,29 +401,6 @@
                     "min": "",
                     "max": "",
                     "return_format": "object"
-                },
-                {
-                    "key": "field_5cf4cceb7a57c",
-                    "label": "Videos (copy)",
-                    "name": "videos_copy",
-                    "type": "relationship",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "videos"
-                    ],
-                    "taxonomy": "",
-                    "filters": "",
-                    "elements": "",
-                    "min": "",
-                    "max": "",
-                    "return_format": "object"
                 }
             ]
         },
@@ -609,5 +586,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1559547132
+    "modified": 1559983145
 }
