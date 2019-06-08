@@ -45024,7 +45024,7 @@
 		"oAP": "/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow10_1000-600-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow10_1000-600.jpg": {
@@ -45035,7 +45035,7 @@
 		"oAP": "/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow10_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow11_1000-600-250x250.jpg": {
@@ -45057,7 +45057,7 @@
 		"oAP": "/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow11_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow12_1000-600-250x250.jpg": {
@@ -45156,7 +45156,7 @@
 		"oAP": "/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow16_1000-600-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow16_1000-600.jpg": {
@@ -45178,7 +45178,7 @@
 		"oAP": "/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow17_1000-600-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow17_1000-600.jpg": {
@@ -45189,7 +45189,7 @@
 		"oAP": "/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow17_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow18_1000-600-250x250.jpg": {
@@ -45200,7 +45200,7 @@
 		"oAP": "/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow18_1000-600-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow18_1000-600.jpg": {
@@ -45211,7 +45211,7 @@
 		"oAP": "/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow18_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow19_1000-600-250x250.jpg": {
@@ -45233,7 +45233,7 @@
 		"oAP": "/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow19_1000-600.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/about_whoweare_dlm_slideshow1_newsblog_figures_1000-600-250x250.jpg": {
@@ -46430,7 +46430,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ccf-staff-anne-schmidt-kuntzel.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ccf-staff-bruce-brewer-250x250.jpg": {
@@ -46441,7 +46441,7 @@
 		"oAP": "/wp-content/uploads/2019/05/ccf-staff-bruce-brewer-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/ccf-staff-bruce-brewer.jpg": {
@@ -46615,7 +46615,7 @@
 		"oAP": "/wp-content/uploads/2019/05/cheetah-conservation-fund-staff-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/cheetah-conservation-fund-staff.jpg": {
@@ -46626,7 +46626,7 @@
 		"oAP": "/wp-content/uploads/2019/05/cheetah-conservation-fund-staff.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/cheetah-conservation-strategies-in-namibia-a-model-for-the-future.pdf": {
@@ -46656,7 +46656,7 @@
 		"oAP": "/wp-content/uploads/2019/05/cheetah-not-a-pet.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/cheetah-not-a-rug-250x250.jpg": {
@@ -48890,6 +48890,39 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/05/FarmerCarnivoreHotline_2-e1559679127117.jpg": {
+		"ft": 16384,
+		"iS": 16811,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/FarmerCarnivoreHotline_2-e1559679127117.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/FarmerCarnivoreHotline_2-e1559679215298.jpg": {
+		"ft": 16384,
+		"iS": 16772,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/FarmerCarnivoreHotline_2-e1559679215298.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/FarmerCarnivoreHotline_2-e1559679224170.jpg": {
+		"ft": 16384,
+		"iS": 33759,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/FarmerCarnivoreHotline_2-e1559679224170.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2019/05/FarmerCarnivoreHotline_2.jpg": {
 		"ft": 16384,
 		"iS": 102867,
@@ -49008,7 +49041,7 @@
 		"oAP": "/wp-content/uploads/2019/05/FilmCrews_FeaturedImage.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FourStar_FeaturedImage-250x250.jpg": {
@@ -49184,7 +49217,7 @@
 		"oAP": "/wp-content/uploads/2019/05/FrontPage_Visit_500x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/FrontPage_Volunteer_500x250-250x250.jpg": {
@@ -52711,6 +52744,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/05/Logo-Monterey-Bay-Whale-Watch.png": {
+		"ft": 32768,
+		"iS": 24690,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/Logo-Monterey-Bay-Whale-Watch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/wp-content/uploads/2019/05/logo-montereybay-whale-watch.png": {
 		"ft": 32768,
 		"iS": 24690,
@@ -52735,7 +52779,7 @@
 		},
 	"/wp-content/uploads/2019/05/Logo-Piper-and-Heath-Travel.png": {
 		"ft": 32768,
-		"iS": 18286,
+		"iS": 9753,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/Logo-Piper-and-Heath-Travel.png",
 		"oF": 0,
@@ -52750,8 +52794,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/logo-swarthmore-presbyterian-church.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -52761,8 +52805,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/logo-the-chickasaw-nation.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -52772,8 +52816,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/Logo-Utopia-Scientific.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -52783,8 +52827,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/logo-wieden-kennedy.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -52794,8 +52838,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/05/logo-wildlife-protection-solutions.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -53913,6 +53957,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/RunningWildRace_Event_FeaturedImage_1000x563-Recovered-250x250.jpg": {
+		"ft": 16384,
+		"iS": 23469,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/RunningWildRace_Event_FeaturedImage_1000x563-Recovered-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/05/RunningWildRace_Event_FeaturedImage_1000x563-Recovered.jpg": {
+		"ft": 16384,
+		"iS": 179366,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/05/RunningWildRace_Event_FeaturedImage_1000x563-Recovered.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/sahelo-saharan-interest-group-wildlife-surveys-central-ahaggar-mountains.pdf": {
@@ -55517,7 +55583,7 @@
 		"oAP": "/wp-content/uploads/2019/05/WishList_Page-Featured-1500-x-500-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/05/WishList_Page-Featured-1500-x-500.jpg": {
@@ -55795,9 +55861,75 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/wp-content/uploads/2019/06/AboutCCF_Learn_HabitaLoss_Biodiversity_2_1200x800-Banner-250x250.jpg": {
+		"ft": 16384,
+		"iS": 15710,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/AboutCCF_Learn_HabitaLoss_Biodiversity_2_1200x800-Banner-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/AboutCCF_Learn_HabitaLoss_Biodiversity_2_1200x800-Banner.jpg": {
+		"ft": 16384,
+		"iS": 214730,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/AboutCCF_Learn_HabitaLoss_Biodiversity_2_1200x800-Banner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/aboutccf_learn_habitatloss_1_1200x800-banner-250x250.jpg": {
+		"ft": 16384,
+		"iS": 17422,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/aboutccf_learn_habitatloss_1_1200x800-banner-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/aboutccf_learn_habitatloss_1_1200x800-banner.jpg": {
+		"ft": 16384,
+		"iS": 249767,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/aboutccf_learn_habitatloss_1_1200x800-banner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/Brian_Event_FeaturedImage_1000x563-250x250.jpg": {
+		"ft": 16384,
+		"iS": 9574,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/Brian_Event_FeaturedImage_1000x563-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/Brian_Event_FeaturedImage_1000x563.jpg": {
+		"ft": 16384,
+		"iS": 62638,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/Brian_Event_FeaturedImage_1000x563.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wp-content/uploads/2019/06/ccf-books-a-future-for-cheetahs-250x250.jpg": {
 		"ft": 16384,
-		"iS": 21183,
+		"iS": 20638,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/06/ccf-books-a-future-for-cheetahs-250x250.jpg",
@@ -55825,7 +55957,7 @@
 		"oAP": "/wp-content/uploads/2019/06/ccf-books-cheetah-biology-and-conservation-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/06/ccf-books-cheetah-biology-and-conservation.jpg": {
@@ -55836,7 +55968,7 @@
 		"oAP": "/wp-content/uploads/2019/06/ccf-books-cheetah-biology-and-conservation.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/06/ccf-books-cheetahs-a-celebration-of-speed-and-elegance-250x250.jpg": {
@@ -55847,7 +55979,7 @@
 		"oAP": "/wp-content/uploads/2019/06/ccf-books-cheetahs-a-celebration-of-speed-and-elegance-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/06/ccf-books-cheetahs-a-celebration-of-speed-and-elegance.jpg": {
@@ -55858,7 +55990,7 @@
 		"oAP": "/wp-content/uploads/2019/06/ccf-books-cheetahs-a-celebration-of-speed-and-elegance.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/06/ccf-books-chewbaaka-250x250.jpg": {
@@ -55869,7 +56001,7 @@
 		"oAP": "/wp-content/uploads/2019/06/ccf-books-chewbaaka-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/06/ccf-books-chewbaaka.jpg": {
@@ -55880,7 +56012,7 @@
 		"oAP": "/wp-content/uploads/2019/06/ccf-books-chewbaaka.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/06/ccf-cheetah-mark-segal-250x250.jpg": {
@@ -55891,7 +56023,7 @@
 		"oAP": "/wp-content/uploads/2019/06/ccf-cheetah-mark-segal-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/06/ccf-cheetah-mark-segal.jpg": {
@@ -55900,6 +56032,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/06/ccf-cheetah-mark-segal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/cheetah-conservation-fund-corporate-giving-250x250.jpg": {
+		"ft": 16384,
+		"iS": 24054,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/cheetah-conservation-fund-corporate-giving-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/cheetah-conservation-fund-corporate-giving.jpg": {
+		"ft": 16384,
+		"iS": 287562,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/cheetah-conservation-fund-corporate-giving.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -55913,7 +56067,7 @@
 		"oAP": "/wp-content/uploads/2019/06/event-01-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/06/event-01.jpg": {
@@ -55922,6 +56076,248 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/06/event-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/FarmerCarnivoreHelpHotline_1-250x250.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/FarmerCarnivoreHelpHotline_1-250x250.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/FarmerCarnivoreHelpHotline_1.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/FarmerCarnivoreHelpHotline_1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_1_Figures_1000-600-250x250.jpg": {
+		"ft": 16384,
+		"iS": 14279,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_1_Figures_1000-600-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_1_Figures_1000-600.jpg": {
+		"ft": 16384,
+		"iS": 101387,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_1_Figures_1000-600.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_2_Figures_1000-600-250x250.jpg": {
+		"ft": 16384,
+		"iS": 16021,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_2_Figures_1000-600-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_2_Figures_1000-600.jpg": {
+		"ft": 16384,
+		"iS": 175026,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_2_Figures_1000-600.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_Featured-1500-x-500-250x250.jpg": {
+		"ft": 16384,
+		"iS": 14684,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_Featured-1500-x-500-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_Featured-1500-x-500.jpg": {
+		"ft": 16384,
+		"iS": 119002,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_ChewSociety_Featured-1500-x-500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_CMC_Page-Featured-1500-x-500-250x250.jpg": {
+		"ft": 16384,
+		"iS": 19135,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_CMC_Page-Featured-1500-x-500-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_CMC_Page-Featured-1500-x-500.jpg": {
+		"ft": 16384,
+		"iS": 173867,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_CMC_Page-Featured-1500-x-500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_DonorAdvisedFunds_Page-Featured-1500-x-500-1-250x250.jpg": {
+		"ft": 16384,
+		"iS": 28381,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_DonorAdvisedFunds_Page-Featured-1500-x-500-1-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_DonorAdvisedFunds_Page-Featured-1500-x-500-1.jpg": {
+		"ft": 16384,
+		"iS": 356286,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_DonorAdvisedFunds_Page-Featured-1500-x-500-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_DonorAdvisedFunds_Page-Featured-1500-x-500-250x250.jpg": {
+		"ft": 16384,
+		"iS": 23336,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_DonorAdvisedFunds_Page-Featured-1500-x-500-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_DonorAdvisedFunds_Page-Featured-1500-x-500.jpg": {
+		"ft": 16384,
+		"iS": 233720,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_DonorAdvisedFunds_Page-Featured-1500-x-500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_GiftDonations_Page-Featured-1500-x-500-250x250.jpg": {
+		"ft": 16384,
+		"iS": 24907,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_GiftDonations_Page-Featured-1500-x-500-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_GiftDonations_Page-Featured-1500-x-500.jpg": {
+		"ft": 16384,
+		"iS": 242152,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_GiftDonations_Page-Featured-1500-x-500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_OldCar_Page-Featured-1500-x-500-250x250.jpg": {
+		"ft": 16384,
+		"iS": 17546,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_OldCar_Page-Featured-1500-x-500-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_OldCar_Page-Featured-1500-x-500.jpg": {
+		"ft": 16384,
+		"iS": 178163,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_OldCar_Page-Featured-1500-x-500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_Stocks_Page-Featured-1500-x-500-250x250.jpg": {
+		"ft": 16384,
+		"iS": 9422,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_Stocks_Page-Featured-1500-x-500-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/GetInvolved_WaysToGive_Stocks_Page-Featured-1500-x-500.jpg": {
+		"ft": 16384,
+		"iS": 121521,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/GetInvolved_WaysToGive_Stocks_Page-Featured-1500-x-500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/Governance_Page-Featured-1500-x-500-250x250.jpg": {
+		"ft": 16384,
+		"iS": 19025,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/Governance_Page-Featured-1500-x-500-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/Governance_Page-Featured-1500-x-500.jpg": {
+		"ft": 16384,
+		"iS": 158186,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/Governance_Page-Featured-1500-x-500.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -55935,7 +56331,7 @@
 		"oAP": "/wp-content/uploads/2019/06/support-dogs-saving-cheetahs-03-250x250.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/wp-content/uploads/2019/06/support-dogs-saving-cheetahs-03.jpg": {
@@ -55944,6 +56340,50 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/2019/06/support-dogs-saving-cheetahs-03.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/WaysToGive_ChewSociety_Page-Featured-1500-x-500-250x250.jpg": {
+		"ft": 16384,
+		"iS": 24185,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/WaysToGive_ChewSociety_Page-Featured-1500-x-500-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/WaysToGive_ChewSociety_Page-Featured-1500-x-500.jpg": {
+		"ft": 16384,
+		"iS": 239681,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/WaysToGive_ChewSociety_Page-Featured-1500-x-500.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/WaysToGive_Stocks_Brooks_1200x800-Banner-250x250.jpg": {
+		"ft": 16384,
+		"iS": 13007,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/WaysToGive_Stocks_Brooks_1200x800-Banner-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/2019/06/WaysToGive_Stocks_Brooks_1200x800-Banner.jpg": {
+		"ft": 16384,
+		"iS": 130711,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/2019/06/WaysToGive_Stocks_Brooks_1200x800-Banner.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
