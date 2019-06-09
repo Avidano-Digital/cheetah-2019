@@ -120,7 +120,7 @@ get_header(); ?>
 
         <div class="medium mb-5">
 
-          <figure class="figure my-0">
+          <figure class="figure">
             <img class="figure-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
             <?php if( $featured_image_caption ): ?>
             <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>

@@ -43,100 +43,105 @@ $resourceCategory = $resourceCategories[0];
             
     ?>
 
-    <article class="container-fluid blog py-6" id="primary-content">
+    <article class="container-fluid blog overflow-hidden" id="primary-content">
 
-        <header class="narrow mb-5">
+        <div class="my-6">
 
-            <?php $postcat = get_the_category( $post->ID ); ?>
-            <?php foreach ($postcat as $cat): if ($cat->parent != 0 ): ?>
+            <header class="narrow my-5">
 
-            <p class="mb-0"><a class="no-link-style text-body" href="#"><em><?php echo $cat->name; ?></em></a></p>
+                <?php $postcat = get_the_category( $post->ID ); ?>
+                <?php foreach ($postcat as $cat): if ($cat->parent != 0 ): ?>
 
-            <?php endif; endforeach; ?> 
+                <p class="mb-0"><a class="no-link-style text-body" href="#"><em><?php echo $cat->name; ?></em></a></p>
 
-            <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
+                <?php endif; endforeach; ?> 
 
-            <ul class="list-unstyled fs-md">
+                <h1 class="display-4 mb-2"><?php the_title(); ?></h1>
 
-                <li>
-                    <span class="text-muted"><?php the_date(); ?></span> 
-                </li>
+                <ul class="list-unstyled fs-md">
 
-                <li class="fs-md">
-                    <strong class="d-block">by&nbsp;<?php echo $author_names; ?></strong>
-                </li>
-                
-            </ul>
-    
-        </header>
+                    <li>
+                        <span class="text-muted"><?php the_date(); ?></span> 
+                    </li>
 
-        <?php if( has_post_thumbnail() ):
-            $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
-        ?>
+                    <?php if ($authors) : ?>
 
-        <div class="medium mb-5">
+                    <li class="fs-md bg-danger">
+                        <strong class="d-block">by&nbsp;<?php echo $author_names; ?></strong>
+                    </li>
 
-        <figure class="figure my-0">
-            <img class="figure-img" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>" />
-            <?php if( $featured_image_caption ): ?>
-                <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
-            <?php endif; ?>
-        </figure>
-
-        </div>
-        <!-- .narrow -->
-
-        <?php endif; /* has_post_thumbnail */ ?>
-
-        <?php $featured_image = get_field('featured_image');  
+                    <?php endif; ?>
+                    
+                </ul>
         
-        if( $featured_image ): ?>
+            </header>
 
-        <div class="medium mb-5">
+            <?php if( has_post_thumbnail() ):
+                $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
+            ?>
 
-            <figure class="figure my-0">
-                <img class="figure-img" src="<?php echo $featured_image['image']; ?>" alt="<?php the_title(); ?>" />
-                <?php if( $featured_image['caption'] ): ?>
-                <figcaption class="figure-caption"><?php echo $featured_image['caption'] ?></figcaption>
+            <div class="medium mb-5">
+
+            <figure class="figure">
+                <img class="figure-img" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>" />
+                <?php if( $featured_image_caption ): ?>
+                    <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
                 <?php endif; ?>
             </figure>
 
-        </div>
-        <!-- .narrow -->
+            </div>
+            <!-- .medium -->
 
-        <?php endif; /* featured_image */ ?>
+            <?php endif; /* has_post_thumbnail */ ?>
 
-        <?php
-
-        $video_url = get_field('video_url');
-        $video_id = substr( strrchr( $video_url, '/' ), 1 );
-
-        if ( get_field('video_url') ): 
+            <?php $featured_image = get_field('featured_image');  
         
-        ?>
+            if( $featured_image ): ?>
 
-        <div class="video-block medium my-6">
+            <div class="medium mb-5">
 
-            <div class="rounded">
+                <figure class="figure">
+                    <img class="figure-img" src="<?php echo $featured_image['image']; ?>" alt="<?php the_title(); ?>" />
+                    <?php if( $featured_image['caption'] ): ?>
+                    <figcaption class="figure-caption"><?php echo $featured_image['caption'] ?></figcaption>
+                    <?php endif; ?>
+                </figure>
+
+            </div>
+            <!-- .medium -->
+
+            <?php endif; /* featured_image */ ?>
+
+            <?php
+
+            $video_url = get_field('video_url');
+            $video_id = substr( strrchr( $video_url, '/' ), 1 );
+
+            if ( get_field('video_url') ): 
+            
+            ?>
+
+            <div class="video-block medium my-5">
 
                 <div class="embed-responsive embed-responsive-16by9">
-                  <?php if (strpos($video_url,'vimeo') !== false) : ?>
-                      <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                  <?php else : ?>
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
-                  <?php endif; ?>
+                    <?php if (strpos($video_url,'vimeo') !== false) : ?>
+                        <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <?php else : ?>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                    <?php endif; ?>
                 </div>
 
             </div>
-            <!-- .wide -->
+            <!-- .video-block -->
+
+            <?php endif; ?>   
+
+            <?php get_template_part('template-parts/flexible-content-article'); ?>
+
+            <?php get_template_part('template-parts/article-footer'); ?>
 
         </div>
-
-        <?php endif; ?>   
-
-        <?php get_template_part('template-parts/flexible-content-article'); ?>
-
-        <?php get_template_part('template-parts/article-footer'); ?>
+        <!-- .my-6 -->
 
     </article>
     <!-- #primary-content -->
