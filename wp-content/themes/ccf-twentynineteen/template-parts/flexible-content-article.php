@@ -6,7 +6,7 @@ $wysiwyg = get_sub_field('wysiwyg');
 
 ?>
 
-<div class="text-block narrow my-4">
+<div class="text-block narrow mb-4">
     <?php echo $wysiwyg; ?>
 </div>
 
@@ -162,7 +162,7 @@ $caption = $image['caption'];
 
 ?>
 
-<div class="figure-block medium my-5">
+<div class="figure-block medium my-4">
 
     <figure class="figure my-0">
 
@@ -213,7 +213,7 @@ $enlarge_b = $figure_b['enlarge'];
 
 ?>
 
-<div class="two-figure-block my-5 mx-n2">
+<div class="two-figure-block my-4 mx-n2">
 
     <div class="row matrix-gutter">
 
@@ -409,7 +409,7 @@ $count_b = 0;
 
 <?php if( have_rows('links') ): ?>
 
-<div class="thumbnail-links-block my-5">
+<div class="thumbnail-links-block my-4">
 
     <div class="medium">
 
@@ -454,7 +454,7 @@ $images = get_sub_field('images');
 
 <?php if( $images ): ?>
 
-<div class="gallery-thumbnails medium my-5">
+<div class="gallery-thumbnails medium my-4">
 
     <div class="row matrix-gutter">
 
@@ -491,7 +491,7 @@ $images = get_sub_field('images');
 
 <?php if( have_rows('callouts') ): ?>
 
-<div class="mx-n2 my-5">
+<div class="color-callout-block my-5 mx-n2">
 
     <?php while ( have_rows('callouts') ) : the_row(); 
 
@@ -550,7 +550,7 @@ $images = get_sub_field('images');
 
 <?php if( have_rows('buttons') ): ?>
 
-<div class="narrow my-5">
+<div class="narrow my-4">
 
     <div class="row matrix-border">
 
@@ -580,7 +580,7 @@ $images = get_sub_field('images');
 
     if ($embed_pdf): ?>
 
-    <div class="medium my-5">
+    <div class="medium my-4">
 
         <?php echo do_shortcode('[pdf-embedder url="' . $embed_pdf['url'] .'"]'); ?>
 
