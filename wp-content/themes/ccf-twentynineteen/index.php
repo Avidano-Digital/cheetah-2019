@@ -127,7 +127,7 @@ get_header(); ?>
 
             <?php if ( have_posts() ) : ?>
 
-            <div class="row matrix-gutter posts my-2">
+            <div class="row matrix-gutter justify-content-center posts my-2">
 
                 <?php while ( have_posts() ) : the_post(); ?>
 

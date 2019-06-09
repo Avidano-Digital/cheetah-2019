@@ -63,29 +63,11 @@ get_header(); ?>
             $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
             $featured_image_caption = get_the_post_thumbnail_caption( get_the_ID() );
         ?>
-
-          <?php if ( get_field('hide_feature_on_post') === false ): ?>
             
-            <div class="medium mb-5">
-
-              <figure class="figure my-0">
-                <img class="figure-img" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>" />
-                <?php if( $featured_image_caption ): ?>
-                <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
-                <?php endif; ?>
-              </figure>
-
-            </div>
-            <!-- .medium -->
-
-          <?php endif; ?>
-
-        <?php else: ?>
-
         <div class="medium mb-5">
 
           <figure class="figure my-0">
-            <img class="figure-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+            <img class="figure-img" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>" />
             <?php if( $featured_image_caption ): ?>
             <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
             <?php endif; ?>
@@ -94,7 +76,7 @@ get_header(); ?>
         </div>
         <!-- .medium -->
 
-        <?php endif; /* has_post_thumbnail */ ?>
+        <?php endif; ?>
 
         <?php get_template_part('template-parts/flexible-content-article'); ?>
 
