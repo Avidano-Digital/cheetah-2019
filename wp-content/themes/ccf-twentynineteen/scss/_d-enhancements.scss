@@ -16,8 +16,6 @@ In this file:
 // A. Generic Tags
 ////////////////////////////////////////
 
-html{ background: $dark; }
-
 body{
   position: relative;
 
@@ -54,6 +52,7 @@ img {
 // Remove Unneeded figure margins
 
 .figure {
+  @extend .mb-0;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -99,7 +98,7 @@ hr {
 
 // Right-to-left language translation
 
-html[dir="rtl"]{ 
+html[dir="rtl"] {
 
   .text-right {
     text-align: left !important;
@@ -142,8 +141,9 @@ html[dir="rtl"]{
   // Apply right justification all text
 
   body,
-  .dropdown-item
-  { text-align: right; }
+  .dropdown-menu {
+    text-align: right;
+  }
 
   // Change position of .dropdown-menu within nav
 
@@ -151,47 +151,35 @@ html[dir="rtl"]{
     .dropdown-menu {
       right: 0;
       left: unset;
-      text-align: right;
     }
   }
-
 
   // Apply left justification to all extensible-list selectors excluding those that are centered 
 
-  .extensible-list:not(.justify-content-center){
-    &.horizontal{
-      justify-content: flex-end !important;
+  .extensible-list:not(.justify-content-center) {
+    .horizontal {
+      justify-content: flex-start !important;
     }
   }
 
-  ul{
-    margin-block-start: 0 !important;
-    margin-block-end: 0 !important;
+  // Apply margin to opposite side of the icon (found in _e-ui-elements.scss)
 
-  }
-  // Flip accordion and button toggles (found in _e-ui-elements.scss) from right to left
-
-  .accordion-group,  
-  .btn-toggle
-  { 
-    a[data-toggle="collapse"]{
+  .accordion-group,
+  .btn-toggle {
+    [data-toggle="collapse"] {
       &::after {
         margin-left: 0;
-        margin-right: auto;
+        margin-right: $spacer-2;
       }
     }
   }
 
-  // Mobile Menu Float
-
-  #device-menu a.dropdown-item{ float: right !important; }
-
   // Flip Custom Control Background from left to right
 
-  .custom-control-label{
-    &::before, 
-    &::after
-    {
+  .custom-control-label {
+
+    &::before,
+    &::after {
       right: -($custom-control-gutter + $custom-control-indicator-size);
     }
   }
@@ -200,6 +188,28 @@ html[dir="rtl"]{
 
   .custom-control {
     padding-right: ($custom-control-gutter + $custom-control-indicator-size);
+  }
+
+  .sidebar-fixed-width {
+    @include media-breakpoint-up(xl) {
+      border-left: none;
+      border-right: $border-width solid $border-color;
+    }
+  }
+
+  // Flip icon and padding on visible search 
+  // (when '.search-in-nav' is present within '#nav-primary')
+
+  #global-header .nav-item-search {
+    button {
+      right: unset;
+      left: $nav-link-padding-x;
+    }
+
+    input {
+      padding-left: calc(#{$nav-item-search-button-width} + #{$nav-link-padding-x});
+      padding-right: $nav-link-padding-x;
+    }
   }
 
   // Flip border 'left' and 'right'
@@ -216,7 +226,38 @@ html[dir="rtl"]{
     }
   }
 
-} // end RTL
+  // Flip 'offset-x' margins
+
+  [class*="offset-"] {
+    margin-left: 0;
+  }
+
+  @each $breakpoint,
+  $breakpoint-val in $grid-breakpoints {
+
+    @media(min-width: #{$breakpoint-val}) {
+
+      @for $i from 1 through $grid-columns - 1 {
+
+        @if $breakpoint=='xs' {
+          .offset-#{$i} {
+            margin-right: calc(100% / 12 * #{$i});
+          }
+
+        }
+
+        @else {
+          .offset-#{$breakpoint}-#{$i} {
+            margin-right: calc(100% / 12 * #{$i});
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// end RTL
 
 // Add 'text-decoration: underline' on particular ':focus' selectors
 
@@ -271,7 +312,9 @@ $accessible-hover-focus: false;
     }
   }
 
-} // end if
+} 
+
+// end if
 
 .text-reset {
   text-decoration: underline;
@@ -288,14 +331,13 @@ $accessible-hover-focus: false;
     color: currentColor;
 
     // text-decoration: underline;
-    @include custom-underline($color: $primary,
-
+    @include custom-underline(
+      $color: $primary,
       $opacity: 0.75,
-
       $height: 0.0875em,
       $distance: 0.15em,
-
-      $direction: to right)
+      $direction: to right
+    )
   }
 } 
 
@@ -363,25 +405,51 @@ label,
 }
 
 ////////////////////////////////////////
-// E. Font size media queries
+// E. Tables
 ////////////////////////////////////////
 
-@include media-breakpoint-down(md){
-  .display-1{ font-size: $display1-size * 0.75; }
-  .display-2{ font-size: $display2-size * 0.75; }
-  .display-3{ font-size: $display3-size * 0.75; }
-  .display-4{ font-size: $display4-size * 0.75; }
+// Remove Bootstrap's Default doouble bottom border on <th>  
+
+thead th {
+  @extend .border-bottom-0;
 }
 
-@include media-breakpoint-down(sm){
-  main{
-    .fs-xl{ font-size: $fs-lg; }
-    .fs-lg{ font-size: $fs-rg; }
+////////////////////////////////////////
+// F. Font size media queries
+////////////////////////////////////////
+
+@include media-breakpoint-down(md) {
+  .display-1 {
+    font-size: $display1-size * 0.75;
+  }
+
+  .display-2 {
+    font-size: $display2-size * 0.75;
+  }
+
+  .display-3 {
+    font-size: $display3-size * 0.75;
+  }
+
+  .display-4 {
+    font-size: $display4-size * 0.75;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  main {
+    .fs-xl {
+      font-size: $fs-lg;
+    }
+
+    .fs-lg {
+      font-size: $fs-rg;
+    }
   }
 }
 
 ////////////////////////////////////////
-// F. Sticky top
+// G. Sticky top
 ////////////////////////////////////////
 
 // Fix Bootstrap's 'sticky-top' class in Safari
@@ -390,14 +458,14 @@ label,
 @supports (position: -webkit-sticky) or (position: sticky) {
   .sticky-top {
     position: sticky;
-    position:-webkit-sticky;
+    position: -webkit-sticky;
     top: 0;
-    z-index: 1020; 
+    z-index: 1020;
   }
 }
 
 ////////////////////////////////////////
-// G. Internet Explorer 
+// H. Internet Explorer 
 ////////////////////////////////////////
 
 @media screen and (-ms-high-contrast: active),

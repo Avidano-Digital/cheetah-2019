@@ -376,7 +376,7 @@
 
                     <ul class="list-unstyled fs-md mb-5">
                       <li>
-                        <span class="fas fa-circle fa-fw text-quaternary"></span>
+                        <span class="fas fa-circle fa-fw" style="color:#896258;"></span>
                         <span class="mx-1">Cheetah range pre-1900</span>
                       <li>
                         <span class="fas fa-circle fa-fw text-primary"></span>

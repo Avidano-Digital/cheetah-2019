@@ -194,14 +194,9 @@ $sides: "",
 // Apply to <btn> or <a> with a Font Awesome icon <span> to ensure icon doesn't inherit 
 // text decoration underline on hover
 
-$title-margin: 0.125em;
+$icon-margin: 0.5em;
 
 .has-icon {
-
-  span.title {
-    margin-left: $title-margin;
-    margin-right: $title-margin;
-  }
 
   &:hover {
     text-decoration: none;
@@ -216,6 +211,25 @@ $title-margin: 0.125em;
       text-decoration: underline;
     }
   }
+
+  // Position icon and title to either side
+
+  &.disperse {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &:not(.disperse) {
+
+    span.title {
+      margin-left: $icon-margin
+    }
+
+  }
+
 }
 
 ////////////////////////////////////////
