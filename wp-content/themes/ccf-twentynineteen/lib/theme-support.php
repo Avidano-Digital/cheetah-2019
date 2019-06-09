@@ -375,7 +375,7 @@
         $current_category_name = $current_category->name;
         $topics = get_categories();
 
-        echo '<ul class="extensible-list fs-md">';
+        echo '<ul class="extensible-list fs-md" data-name="' . $current_category_name . '">';
 
         if ($current_category_name !== 'Press Releases' && $current_category_name !== 'Cheetah Strides') :
 

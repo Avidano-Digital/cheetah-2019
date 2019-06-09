@@ -635,12 +635,18 @@ hr.dark {
 // Modal
 ////////////////////////////////////////
 
-#all-topics,
-#all-authors {
-    ul {
-        column-count: 2;
+#all-topics ul[data-name="CCF Blog"],
+#all-authors ul {
+    column-count: 2;
+}
+
+#all-topics ul {
+    &:not([data-name="CCF Blog"]){
+        justify-content: center;
+        text-align: center;
     }
 }
+
 
 .page-numbers {
     @extend .page-item;

@@ -2,7 +2,7 @@
 
 get_header(); ?>
 
-<main id="content">
+<main id="content" role="main">
 
     <div class="bg-dark banner-with-background banner-news d-flex">
 
@@ -30,14 +30,14 @@ get_header(); ?>
 
         <div class="narrow">
 
-            <div class="row matrix-gutter">
+            <div class="row matrix-gutter justify-content-center">
 
                 <?php
                     $current_category = get_category(get_query_var('cat'));
                     $current_category_name = $current_category->name;
                 ?>
 
-                <div class="col-sm-6 <?php if ( $current_category_name !== 'CCF Blog' ) : ?>offset-sm-3<?php endif; ?>">
+                <div class="col-sm-6">
                     <div class="btn-toggle">
                         <button class="btn btn-block btn-primary" data-toggle="collapse" data-target="#all-topics"
                             aria-expanded="false" aria-controls="all-topics">
@@ -115,17 +115,19 @@ get_header(); ?>
     
     ?>
 
-    <div class="container py-6">
+    <div class="container overflow-hidden">
 
-        <?php if ($page_heading) : ?>
+        <div class="my-5">
 
-        <h1 class="text-center mb-3 font-weight-light "><?php echo $page_heading; ?></h1>
-        
-        <?php endif; ?>
+            <?php if ($page_heading) : ?>
+
+            <h1 class="text-center font-weight-light my-2"><?php echo $page_heading; ?></h1>
+            
+            <?php endif; ?>
 
             <?php if ( have_posts() ) : ?>
 
-            <div class="row matrix-gutter posts">
+            <div class="row matrix-gutter posts my-2">
 
                 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -191,8 +193,12 @@ get_header(); ?>
             <?php echo custom_pagination(); ?>
             
         </div>
+        
+        </div>
+        <!-- .my-5 -->
 
     </div>
+    <!-- .container -->
 
 </main>
 <!-- #content -->

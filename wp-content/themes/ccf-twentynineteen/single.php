@@ -36,9 +36,9 @@ get_header(); ?>
 
     <article class="container-fluid wide blog overflow-hidden" id="primary-content">
 
-      <div class="my-5">
+      <div class="my-6">
 
-        <header class="narrow my-4">
+        <header class="narrow my-5">
 
             <?php $postcat = get_the_category( $post->ID ); ?>
             <?php foreach ($postcat as $cat): if ($cat->parent != 0 ): ?>
