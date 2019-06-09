@@ -6,7 +6,7 @@ $wysiwyg = get_sub_field('wysiwyg');
 
 ?>
 
-<div class="text-block narrow mb-4">
+<div class="text-block narrow my-4">
     <?php echo $wysiwyg; ?>
 </div>
 
@@ -28,20 +28,15 @@ $video_id = substr( strrchr( $video_url, '/' ), 1 );
 
 ?>
 
-<div class="video-block medium my-5">
+<div class="video-block medium my-4">
 
-    <div class="rounded">
-
-        <div class="embed-responsive embed-responsive-16by9">
-            <?php if (strpos($video_url,'vimeo') !== false) : ?>
-                <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            <?php else : ?>
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
-            <?php endif; ?>
-        </div>
-
+    <div class="embed-responsive embed-responsive-16by9">
+        <?php if (strpos($video_url,'vimeo') !== false) : ?>
+            <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <?php else : ?>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+        <?php endif; ?>
     </div>
-    <!-- .wide -->
 
 </div>
 <!-- .video_block -->
