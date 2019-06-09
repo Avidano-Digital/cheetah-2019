@@ -14,7 +14,7 @@
 
  get_header(); ?>
 
-  <main class="overflow-auto" id="content" role="main">
+  <main class="overflow-hidden" id="content" role="main">
 
     <section id="introduction">
 

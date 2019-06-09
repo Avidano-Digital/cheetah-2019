@@ -14,7 +14,7 @@ if( $featured_videos ): ?>
             <h2 class="display-4"><?php echo $headline; ?></h2>
         </div>
         <div class="col-md-auto">
-            <a class="link text-body" href="#">All Videos</a>
+            <a class="link text-body" href="<?php echo get_site_url(); ?>/learn/ccf-videos">All Videos</a>
         </div>
     </header>
 
