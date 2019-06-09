@@ -21,6 +21,9 @@ $inside_news = strpos($url, 'news');
 </head>
 
 <body <?php body_class(); ?>>
+    
+    <!-- For keyboard users -->
+    <a class="sr-only sr-only-focusable skip-menu" href="#content" title="Skip Header">Skip Header</a>
 
     <header id="global-header">
 

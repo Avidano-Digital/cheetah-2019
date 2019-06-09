@@ -317,13 +317,13 @@ $global-header-toggle-button-color: $primary-nav-link-color;
 .skip-menu {
     @extend .position-absolute;
     @extend .shadow;
+    z-index: 20000;
 
+    padding: $spacer-1 !important;
     top: $spacer;
     left: $spacer;
-    z-index: 900;
-    padding: $spacer-2;
     font-size: $fs-md;
-    background: $light;
+    background: rgba($light, 0.85);
     color: $body-color;
 
     &:hover {
@@ -526,18 +526,18 @@ $global-header-toggle-button-color: $primary-nav-link-color;
 // G. Banner with background
 ////////////////////////////////////////
 
-$banner-with-background-opacity: 0.2;
 $banner-with-background-height: 350px;
+$banner-with-background-opacity: 0.25;
 
 .banner-with-background {
     position: relative;
-    display: flex;
+    overflow: hidden;
+
     min-height: $banner-with-background-height;
 
-    >div {
+    >* {
         position: relative;
-        z-index: 100;
-        align-self: center;
+        z-index: auto;
     }
 
     &::before {

@@ -4,10 +4,12 @@ get_header(); ?>
 
 <main id="content">
 
-    <div class="bg-dark banner-with-background banner-news">
+    <div class="bg-dark banner-with-background banner-news d-flex">
 
-        <div class="container-fluid">
-            <div class="narrow text-white text-center text-shadow">
+        <div class="container-fluid my-auto">
+
+            <div class="narrow text-white text-center text-shadow my-3">
+            
                 <h1 class="display-3 text-white mb-2">
                     Cheetah News
                 </h1>
@@ -15,6 +17,7 @@ get_header(); ?>
                 <ul class="extensible-list horizontal justify-content-center responsive-md fs-lg" id="news-menu">
                     <?php listParentCategoriesMenu(); ?>
                 </ul>
+                
             </div>
             <!-- .narrow -->
         </div>
