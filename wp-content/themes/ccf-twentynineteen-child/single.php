@@ -1,22 +1,31 @@
 <?php
 
+/*
+Template Name: News
+*/
+
 get_header(); ?>
 
 <main id="content" role="main">
 
     <?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
 
-    <article class="container-fluid wide blog py-6" id="primary-content">
+    <article class="container-fluid wide blog overflow-hidden" id="primary-content">
 
-        <header class="narrow mb-5">
+      <div class="my-6">
+
+        <header class="narrow my-5">
 
             <?php $postcat = get_the_category( $post->ID ); ?>
-            <?php foreach ($postcat as $cat): ?>
-            <p class="mb-0"><a class="no-link-style text-body" href="<?php echo get_category_link($cat->cat_ID); ?>"><em><?php echo $cat->name; ?></em></a></p>
+            <?php foreach ($postcat as $cat): if ($cat->parent != 0 ): ?>
 
-            <?php endforeach; ?> 
+            <p class="mb-0">
+              <a class="no-link-style text-body" href="<?php echo get_category_link($cat->cat_ID); ?>"><em><?php echo $cat->name; ?></em></a>
+            </p>
 
-            <h1 class="display-4 mb-3"><?php the_title(); ?></h1>
+            <?php endif; endforeach; ?> 
+
+            <h1 class="display-4 mb-2"><?php the_title(); ?></h1>
             
             <ul class="extensible-list horizontal">
 
@@ -60,13 +69,16 @@ get_header(); ?>
         </header>
 
         <?php if( has_post_thumbnail() ):
-            $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
-            $featured_image_caption = get_the_post_thumbnail_caption( get_the_ID() );
+        
+        $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
+        $featured_image_caption = get_the_post_thumbnail_caption( get_the_ID() );
+        
         ?>
-            
-        <div class="medium mb-5">
 
-          <figure class="figure my-0">
+        <div class="medium my-4">
+
+          <figure class="figure">
+            
             <img class="figure-img" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>" />
             <?php if( $featured_image_caption ): ?>
             <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
@@ -76,13 +88,30 @@ get_header(); ?>
         </div>
         <!-- .medium -->
 
-        <?php endif; ?>
+        <?php else: ?>
+
+        <div class="medium mb-5">
+
+          <figure class="figure">
+            <img class="figure-img" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+            <?php if( $featured_image_caption ): ?>
+            <figcaption class="figure-caption"><?php echo $featured_image_caption ?></figcaption>
+            <?php endif; ?>
+          </figure>
+
+        </div>
+        <!-- .medium -->
+
+        <?php endif; /* has_post_thumbnail */ ?>
 
         <?php get_template_part('template-parts/flexible-content-article'); ?>
 
         <?php get_template_part('template-parts/article-footer'); ?>
         
         <?php get_template_part('template-parts/related-reading'); ?>
+
+      </div>
+      <!-- .my-6 -->
 
     </article>
     <!-- #primary-content -->

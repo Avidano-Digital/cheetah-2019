@@ -145,7 +145,7 @@
             <a class="link text-body fs-md" href="<?php echo get_site_url(); ?>/news">All News</a>
         </header>
 
-        <div class="row matrix-gutter">
+        <div class="row matrix-gutter justify-content-center">
 
           <?php
 

@@ -112,7 +112,7 @@ $featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt
                   </li>
                 
                 <li class="side-by-side">
-                  <span style="width:80px;"><strong>Venu:</strong></span>
+                  <span style="width:80px;"><strong>Venue:</strong></span>
                   <span>
                     <?php the_field('venue'); if (get_field('google_map_link')) : ?><br>
                     <a class="fs-sm" href="<?php the_field('google_map_link'); ?>" target="_blank">Google Maps</a>
