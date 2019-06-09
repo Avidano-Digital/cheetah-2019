@@ -81,173 +81,184 @@ $parent_title = get_the_title($post->post_parent);
             </div>
             <!-- .col -->
 
-            <div class="col-xl-9 py-6">
+            <div class="col-xl-9 overflow-hidden" id="primary-content">
 
-                <header class="medium mb-4">
-                    <h1 class="display-4 text-center">
-                        <?php the_title(); ?>
-                    </h1>
-                </header>
+                <div class="my-5">
 
-                <div class="text-block narrow mb-5">
-                    <p>
-                        <?php the_content(); ?>
-                    </p>
-                </div>
-                         
-                <div class="medium">
+                    <header class="medium my-3">
+                        <h1 class="display-4 text-center">
+                            <?php the_title(); ?>
+                        </h1>
+                    </header>
 
-                    <div class="accordion-group mx-n2 mt-6 border-bottom" id="acc-resource-library" role="tablist">
-
-                        <?php
-
-                        $args = array(
-                            'meta_key'  => 'order',
-                            'orderby'   => 'meta_value',
-                            'order'     => 'ASC',
-                            'taxonomy'  => 'resource-category'
-                        );
-
-                        $categories = get_categories($args);
-                        $category_count = 0;
+                    <div class="text-block narrow mb-4">
+                        <p>
+                            <?php the_content(); ?>
+                        </p>
+                    </div>
                         
-                        foreach( $categories as $category ) :
-                            $category_count++;
-                            $visibility = '';
-                            $expanded = 'false';
-                            $description = $category->description;
-                            $image = get_field('featured_image', 'term_' . $category->term_id);
+                    <div class="medium">
+
+                        <div class="accordion-group mx-n2 border-bottom" id="acc-resource-library" role="tablist">
+
+                            <?php
+
+                            $args = array(
+                                'meta_key'  => 'order',
+                                'orderby'   => 'meta_value',
+                                'order'     => 'ASC',
+                                'taxonomy'  => 'resource-category'
+                            );
+
+                            $categories = get_categories($args);
+                            $category_count = 0;
                             
-                            if ($category_count == 1) :
-                                $visibility = 'show';
-                                $expanded = 'true';
-                            endif;
-                        ?>
+                            foreach( $categories as $category ) :
+                                $category_count++;
+                                $visibility = '';
+                                $expanded = 'false';
+                                $description = $category->description;
+                                $image = get_field('featured_image', 'term_' . $category->term_id);
+                                
+                                if ($category_count == 1) :
+                                    $visibility = 'show';
+                                    $expanded = 'true';
+                                endif;
+                            ?>
 
-                        <div class="card">
+                            <div class="card">
 
-                            <a class="card-header h4 collapse collapsed" id="acc-button-<?php echo $category->slug; ?>" data-toggle="collapse" href="#acc-panel-<?php echo $category->slug; ?>"
-                                role="tab" aria-expanded="<?php echo $expanded; ?>" aria-controls="acc-panel-<?php echo $category->slug; ?>">
-                                <span class="title" role="heading" aria-level="2"><?php echo $category->name; ?></span>
-                            </a>
+                                <a class="card-header h4 collapse collapsed" id="acc-button-<?php echo $category->slug; ?>" data-toggle="collapse" href="#acc-panel-<?php echo $category->slug; ?>"
+                                    role="tab" aria-expanded="<?php echo $expanded; ?>" aria-controls="acc-panel-<?php echo $category->slug; ?>">
+                                    <span class="title" role="heading" aria-level="2"><?php echo $category->name; ?></span>
+                                </a>
 
-                                <div class="collapse <?php echo $visibility; ?>" id="acc-panel-<?php echo $category->slug; ?>" role="tabpanel" aria-labelledby="acc-button-<?php echo $category->slug; ?>" data-parent="#acc-resource-library">
+                                    <div class="collapse <?php echo $visibility; ?>" id="acc-panel-<?php echo $category->slug; ?>" role="tabpanel" aria-labelledby="acc-button-<?php echo $category->slug; ?>" data-parent="#acc-resource-library">
 
-                                    <div class="card-body bg-light py-6">
+                                        <div class="card-body bg-light py-5">
 
-                                        <div class="narrow">
+                                            <div class="narrow">
 
-                                            <?php if ($image) : ?>
-                                                <img class="mb-5 rounded" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
-                                            <?php endif; ?>
-                                            <?php if ($description) : ?>
+                                                <?php if ($image) : ?>
+                                                <div class="mb-4">
+                                                    <img class="rounded" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
+                                                </div>
+                                                <!-- .mb-4 -->
 
-                                            <p class="mb-5">
-                                                <?php echo $description; ?>
-                                            </p>
-                                            
-                                            <?php endif; ?>                                            
-
-                                            <ul class="list-group list-group-flush mb-3">
-
-                                                <?php
+                                                <?php endif; ?>
                                                 
-                                                $posts = get_posts(
-                                                    array(
-                                                        'numberposts'   => 5,
-                                                        'post_type'     => 'resourcelibrary',
-                                                        'tax_query'     => array(
-                                                            array(
-                                                                'taxonomy' => 'resource-category',
-                                                                'terms' => $category->term_id
+                                                <?php if ($description) : ?>
+
+                                                <p class="mb-4">
+                                                    <?php echo $description; ?>
+                                                </p>
+                                                
+                                                <?php endif; ?>                                            
+
+                                                <ul class="list-group list-group-flush mb-3">
+
+                                                    <?php
+                                                    
+                                                    $posts = get_posts(
+                                                        array(
+                                                            'numberposts'   => 5,
+                                                            'post_type'     => 'resourcelibrary',
+                                                            'tax_query'     => array(
+                                                                array(
+                                                                    'taxonomy' => 'resource-category',
+                                                                    'terms' => $category->term_id
+                                                                )
                                                             )
                                                         )
-                                                    )
-                                                );
+                                                    );
 
-                                                if ($posts) :
-                                                    
-                                                    foreach( $posts as $post ) :
+                                                    if ($posts) :
                                                         
-                                                        setup_postdata($post);
-                                                        
-                                                        if ( $category->slug == 'lectures-and-presentations' ) :
-                                                            $video_url = get_field('video_url');
-                                                            $video_id = substr( strrchr( $video_url, '/' ), 1 );
-                                                        ?>
-                                                        <li class="list-group-item">
+                                                        foreach( $posts as $post ) :
+                                                            
+                                                            setup_postdata($post);
+                                                            
+                                                            if ( $category->slug == 'lectures-and-presentations' ) :
+                                                                $video_url = get_field('video_url');
+                                                                $video_id = substr( strrchr( $video_url, '/' ), 1 );
+                                                            ?>
+                                                            <li class="list-group-item">
 
-                                                            <div class="row align-items-center">
-                                                                <div class="col-md-6 mb-3 mb-md-0">
-                                                                    <div class="embed-responsive embed-responsive-16by9">
-                                                                        <?php if (strpos($video_url,'vimeo') !== false) : ?>
-                                                                            <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                                                        <?php else : ?>
-                                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
-                                                                        <?php endif; ?>
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-md-6 mb-3 mb-md-0">
+                                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                                            <?php if (strpos($video_url,'vimeo') !== false) : ?>
+                                                                                <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                                                            <?php else : ?>
+                                                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $video_id; ?>" frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
+                                                                            <?php endif; ?>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <!-- .col -->
+                                                                    <!-- .col -->
 
-                                                                <div class="col-md-6">
+                                                                    <div class="col-md-6">
+                                                                        <a class="text-body" href="<?php the_permalink(); ?>">
+                                                                            <p class="f-sans-serif fs-md mb-0">
+                                                                                <?php echo get_the_date(); ?></p>
+                                                                            <strong>
+                                                                                <?php the_title(); ?>
+                                                                            </strong>
+                                                                        </a>
+                                                                    </div>
+                                                                    <!-- .col -->
+
+                                                                </div>
+                                                                <!-- .row -->
+
+                                                            </li>
+
+                                                            <?php else : ?>
+
+                                                                <li class="list-group-item">
                                                                     <a class="text-body" href="<?php the_permalink(); ?>">
-                                                                        <p class="f-sans-serif fs-md mb-0">
-                                                                            <?php echo get_the_date(); ?></p>
+                                                                        <p class="f-sans-serif fs-md mb-0"><?php echo get_the_date(); ?></p>
                                                                         <strong>
                                                                             <?php the_title(); ?>
                                                                         </strong>
                                                                     </a>
-                                                                </div>
-                                                                <!-- .col -->
-
-                                                            </div>
-                                                            <!-- .row -->
-
-                                                        </li>
-
-                                                        <?php else : ?>
-
-                                                            <li class="list-group-item">
-                                                                <a class="text-body" href="<?php the_permalink(); ?>">
-                                                                    <p class="f-sans-serif fs-md mb-0"><?php echo get_the_date(); ?></p>
-                                                                    <strong>
-                                                                        <?php the_title(); ?>
-                                                                    </strong>
-                                                                </a>
-                                                            </li>                              
+                                                                </li>                              
+                                                            
+                                                            <?php endif; ?>
                                                         
-                                                        <?php endif; ?>
+                                                        <?php endforeach; ?>
                                                     
-                                                    <?php endforeach; ?>
+                                                    <?php endif; ?>
                                                 
-                                                <?php endif; ?>
-                                            
-                                            </ul>
+                                                </ul>
 
-                                            <a class="link text-secondary" href="<?php echo get_site_url() . '/resource-category/' . $category->slug; ?>" class="link">
-                                                See All
-                                            </a>
+                                                <a class="link text-secondary" href="<?php echo get_site_url() . '/resource-category/' . $category->slug; ?>" title="See All">
+                                                    See All
+                                                </a>
+
+                                            </div>
+                                            <!-- .narrow -->
 
                                         </div>
-                                        <!-- .narrow -->
+                                        <!-- .card-body -->
 
                                     </div>
+                                    <!-- .collapse -->
 
                                 </div>
-                                <!-- .collapse -->
+                                <!-- .card -->
 
-                            </div>
-                            <!-- .card -->
+                            <?php endforeach; ?>
 
-                        <?php endforeach; ?>
-
+                        </div>
+                        <!-- .accordion-group -->
+                    
                     </div>
-                    <!-- .accordion-group -->
-                   
-                </div>
-                <!-- .medium -->
+                    <!-- .medium -->
 
-                <?php get_template_part('template-parts/article-footer'); ?>
+                    <?php get_template_part('template-parts/article-footer'); ?>
+
+                </div>
+                <!-- .my-5 -->
                   
             </div>
             <!-- .col -->

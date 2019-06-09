@@ -189,7 +189,7 @@ $parent_title = get_the_title($post->post_parent);
                     ?>
 
                 </div>
-                <!-- #primary-content -->
+                <!-- .my-5 -->
 
             </div>
             <!-- .col -->
