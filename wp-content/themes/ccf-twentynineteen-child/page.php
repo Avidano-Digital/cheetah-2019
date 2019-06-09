@@ -21,7 +21,7 @@ get_header();
 
      </style>
 
-    <main id="content">
+    <main id="content" role="main">
 
         <div class="bg-dark banner-with-background featured-image">
 

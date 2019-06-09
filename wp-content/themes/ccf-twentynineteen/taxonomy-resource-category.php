@@ -7,7 +7,7 @@
 
 ?>
 
-<main id="content">
+<main id="content" role="main">
 
     <?php
         $args = array(

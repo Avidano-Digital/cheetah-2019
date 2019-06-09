@@ -7,7 +7,7 @@ $resourceCategory = $resourceCategories[0];
 
 ?>
 
-<main id="content">
+<main id="content" role="main">
 
     <div class="container-fluid bg-info cheetah-spots py-3">
 

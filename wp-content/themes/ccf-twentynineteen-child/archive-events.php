@@ -19,7 +19,7 @@ if ($image): ?>
 
 <?php endif; ?>
 
-<main id="content">
+<main id="content" role="main">
 
     <div class="bg-dark banner-with-background featured-image">
 

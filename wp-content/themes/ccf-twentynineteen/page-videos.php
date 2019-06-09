@@ -11,7 +11,7 @@ $parent_title = get_the_title($post->post_parent);
 
 ?>
 
-<main id="content">
+<main id="content" role="main">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
