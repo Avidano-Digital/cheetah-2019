@@ -23,7 +23,7 @@
             );
         }
 
-        if (is_page_template('page-donate.php') || is_page_template('page-general.php'))  {
+        if (is_page_template('page-donate.php') || is_page_template('page-general.php') || is_page('newsletter'))  {
         
         wp_enqueue_style(
             'form-css',
