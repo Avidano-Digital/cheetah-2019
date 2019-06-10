@@ -35,6 +35,10 @@ get_header();
 
             <div class="narrow">
                 <?php the_content(); ?>
+
+                <?php if (is_page('newsletter')) : ?>
+                    <div id="bbox-root"></div>
+                <?php endif; ?>
             </div>
             <!-- .narrow -->
 
@@ -48,5 +52,18 @@ get_header();
 
 </main>
 <!-- #content -->
+
+<?php if (is_page('newsletter')) : ?>
+    <script type="text/javascript">
+           window.bboxInit = function () {
+               bbox.showForm('97d435e6-40ec-41a7-b8e5-2a4eacf55d9c');
+           };
+           (function () {
+               var e = document.createElement('script'); e.async = true;
+               e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+               document.getElementsByTagName('head')[0].appendChild(e);
+           } ());
+    </script>
+<?php endif; ?>
 
 <?php get_footer(); ?>
