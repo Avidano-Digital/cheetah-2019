@@ -23,10 +23,14 @@
             );
         }
 
-        wp_enqueue_style( 
-            'form-css', 
+        if (is_page_template('page-donate.php') || is_page_template('page-general.php'))  {
+        
+        wp_enqueue_style(
+            'form-css',
             get_template_directory_uri() . '/css/forms.css'
         );
+        
+        }
 
         wp_enqueue_style( 
             'theme', 

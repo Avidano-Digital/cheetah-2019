@@ -59,7 +59,11 @@ if ($image): ?>
                         $categories = get_categories();
                         foreach ($categories as $category): ?>
 
+                        <?php if($category->slug !== 'ccf-blog'): ?> 
+
                         <li><a class="<?php echo($current_category == $category->cat_ID ? 'text-body font-weight-bold' : 'text-muted') ?>" href="<?php echo get_category_link($category->cat_ID); ?>"><?php echo $category->name; ?></a></li>
+                        
+                        <?php endif; ?>
                         
                         <?php endforeach; ?>
 
