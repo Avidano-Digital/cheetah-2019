@@ -5450,6 +5450,16 @@
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/acf.php",
 		"oF": 0
 		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-dark-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-dark-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-dark.css": {
 		"aP": 1,
 		"bl": 0,
@@ -5457,6 +5467,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-dark-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-field-group-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-field-group-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -5470,6 +5490,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-global-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-global-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-global.css": {
 		"aP": 1,
 		"bl": 0,
@@ -5477,6 +5507,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-global-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-input-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-input-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -5562,8 +5602,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/images/acf-logo.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5573,7 +5613,7 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/images/spinner.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"/wp-content/plugins/advanced-custom-fields-pro/assets/images/spinner@2x.gif": {
 		"ft": 4194304,
@@ -5581,7 +5621,7 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/images/spinner@2x.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/images/ui-bg_highlight-soft_0_ffffff_1x100.png": {
 		"ft": 32768,
@@ -5589,8 +5629,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/images/ui-bg_highlight-soft_0_ffffff_1x100.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5600,8 +5640,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/images/ui-icons_444444_256x240.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5611,8 +5651,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/images/ui-icons_DDDDDD_256x240.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5622,10 +5662,20 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/images/ui-icons_ffffff_256x240.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.css": {
 		"aP": 1,
@@ -5637,6 +5687,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.min-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.min-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -5644,6 +5704,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/3/select2-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/3/select2-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -5693,8 +5763,8 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/3/select2.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5704,10 +5774,20 @@
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/3/select2x2.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.css": {
 		"aP": 1,
@@ -5752,6 +5832,16 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.min-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.min-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -5773,6 +5863,16 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.css": {
 		"aP": 1,
 		"bl": 0,
@@ -5793,6 +5893,16 @@
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
+		},
+	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min.css": {
 		"aP": 1,
@@ -6137,22 +6247,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-check-screen.php",
-		"oF": 0
-		},
-	"/wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-query-terms.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-query-terms.php",
-		"oF": 0
-		},
-	"/wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-query.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-query.php",
 		"oF": 0
 		},
 	"/wp-content/plugins/advanced-custom-fields-pro/includes/ajax/class-acf-ajax-upgrade.php": {

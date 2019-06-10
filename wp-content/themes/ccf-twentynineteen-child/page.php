@@ -23,9 +23,9 @@ get_header();
 
     <main id="content" role="main">
 
-        <div class="bg-dark banner-with-background featured-image">
+        <div class="bg-dark banner-with-background featured-image d-flex flex-column">
 
-            <div class="container">
+            <div class="container my-auto">
 
                 <div class="text-white text-shadow text-center">
                     <h1 class="display-3 text-white">

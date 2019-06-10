@@ -10,20 +10,20 @@ $image = get_field('events_header_image', 'option');
 
 if ($image): ?>
 
-    <style>
-     .banner-with-background.featured-image::before{
+<style>
+    .banner-with-background.featured-image::before{
         background-image: url(<?php echo $image['url']; ?>);
         opacity : .3;
-     }
-     </style>
+    }
+</style>
 
 <?php endif; ?>
 
 <main id="content" role="main">
 
-    <div class="bg-dark banner-with-background featured-image">
+    <div class="bg-dark banner-with-background featured-image d-flex flex-column">
 
-        <div class="container">
+        <div class="container my-auto">
 
             <div class="text-white text-shadow">
                 <h1 class="display-3 text-center">
