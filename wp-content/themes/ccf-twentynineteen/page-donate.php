@@ -46,7 +46,7 @@ endif;
 
         <div class="container-fluid my-auto">
             <div class="narrow text-white text-center text-shadow">
-                <a class="shadow-lg mb-2 d-inline-block" href="#1" style="max-width:200px;">
+                <a class="shadow-lg mb-2 d-inline-block" href="https://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=6617" target="_blank">
                     <img class="rounded" src="<?php echo get_template_directory_uri(); ?>/images/charity-navigator-four-star-badge.svg" alt="Charity Navigator Four Star Rating">
                 </a>
                 <h1 class="display-4 text-primary">
@@ -134,9 +134,6 @@ endif;
                             CCF is a registered Trust in Namibia (Incorporated Association Not For Gain, with
                             Registration
                             Number 21/20002/341).
-                        </p>
-                        <p>
-                            CCF USA is a Registered Non Profit 501(c) 3: #31-1726923.
                         </p>
                     </div>
                 </div>

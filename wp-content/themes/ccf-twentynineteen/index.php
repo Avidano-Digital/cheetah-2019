@@ -33,8 +33,15 @@ get_header(); ?>
             <div class="row matrix-gutter justify-content-center">
 
                 <?php
+                
                     $current_category = get_category(get_query_var('cat'));
                     $current_category_name = $current_category->name;
+
+                    if ( $current_category_name !== 'Cheetah Strides' && $current_category_name !== 'Press Releases'){
+                         $in_blog = true;
+
+                    }
+
                 ?>
 
                 <div class="col-sm-6">
@@ -47,7 +54,7 @@ get_header(); ?>
                 </div>
                 <!-- .col -->
 
-                <?php if ( $current_category_name === 'CCF Blog' ) : ?>
+                <?php if ($in_blog) : ?>
 
                     <div class="col-sm-6">
                         <div class="btn-toggle">
