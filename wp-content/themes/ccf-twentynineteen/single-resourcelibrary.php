@@ -66,7 +66,7 @@ $resourceCategory = $resourceCategories[0];
 
                     <?php if ($authors) : ?>
 
-                    <li class="fs-md bg-danger">
+                    <li class="fs-md">
                         <strong class="d-block">by&nbsp;<?php echo $author_names; ?></strong>
                     </li>
 
