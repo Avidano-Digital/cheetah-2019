@@ -25,53 +25,60 @@ endif;
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-        <div class="bg-dark banner-with-background banner-donate">
+    <?php
+    
+    $featured_image_id = get_post_thumbnail_id($post->ID);
+    $featured_image = wp_get_attachment_image_src($featured_image_id, 'full', false, '');
+    $featured_image_alt = get_post_meta($featured_image_id, '_wp_attachment_image_alt', true);
+    
+    ?>
 
-            <div class="container-fluid">
-                <div class="narrow text-white text-center text-shadow">
-                    <h1>
-                        <span class="d-block text-primary fs-rg text-uppercase">Donate to CCF</span>
-                        <span class="display-4 text-white">Join us in the race to save the cheetah</span>
-                    </h1>
-                </div>
-                <!-- .narrow -->
+    <style>
+
+        .banner-with-background.featured-image::before{
+            background-image: url(<?php echo $featured_image[0]; ?>);
+            opacity : .4;
+        }
+
+    </style>
+
+    <div class="bg-dark banner-with-background featured-image d-flex flex-column">
+
+        <div class="container-fluid my-auto">
+            <div class="narrow text-white text-center text-shadow">
+                <a class="shadow-lg mb-2 d-inline-block" href="#1" style="max-width:200px;">
+                    <img class="rounded" src="<?php echo get_template_directory_uri(); ?>/images/charity-navigator-four-star-badge.svg" alt="Charity Navigator Four Star Rating">
+                </a>
+                <h1 class="display-4 text-primary">
+                    Donate with Confidence
+                </h1>
+                <p class="fs-lg">Support the best in scientific research, educational programming, and conservation.</p>
             </div>
-            <!-- .container -->
-
+            <!-- .narrow -->
         </div>
-        <!-- .banner-with-background -->
+        <!-- .container -->
+
+    </div>
+    <!-- .banner-with-background -->
 
     <div class="container">
 
         <div class="row">
 
-            <div class="col-lg-8 overflow-hidden">
+            <div class="col-lg-8 overflow-hidden" id="primary-content">
 
-                <div class="my-5" id="primary-content">
+                <div class="my-5">
 
-                    <div class="narrow my-4">
-                    
-                        <div class="nav nav-pills device-md" id="donate-tabs" role="tablist">
-
-                            <a class="nav-item nav-link flex-fill <?php echo ($type == 'once' ? 'active' : '') ?>" id="tab-btn-01-a" href="/donate/"
-                            aria-controls="tab-01-a" aria-selected="<?php echo ($type == 'once' ? 'true' : 'false') ?>" role="tab">
+                    <div class="medium my-4">
+                        <div class="list-group list-group-horizontal-md text-center">
+                            <a class="list-group-item list-group-item-action flex-fill <?php echo($type == 'once' ? 'active' : ''); ?>" href="<?php echo get_site_url(); ?>/donate" title="Donate Once">
                                 Donate Once
                             </a>
-
-                            <a class="nav-item nav-link flex-fill <?php echo ($type == 'recurring' ? 'active' : '') ?>" id="tab-btn-01-b" href="/donate/recurring/"
-                            aria-controls="tab-01-b" aria-selected="<?php echo ($type == 'recurring' ? 'true' : 'false') ?>" role="tab">
-                                Recurring Gift
-                            </a>
-
-                            <a class="nav-item nav-link flex-fill <?php echo ($type == 'sponsor' ? 'active' : '') ?>" id="tab-btn-01-c" href="/donate/sponsor/"
-                            aria-controls="tab-01-c" aria-selected="<?php echo ($type == 'sponsor' ? 'true' : 'false') ?>" role="tab">
-                                Sponsor
-                            </a>
-
+                            <a class="list-group-item list-group-item-action flex-fill <?php echo($type == 'recurring' ? 'active' : ''); ?>" href="<?php echo get_site_url(); ?>/donate/recurring" title="Donate Once">Recurring Gift</a>
+                            <a class="list-group-item list-group-item-action flex-fill <?php echo($type == 'sponsor' ? 'active' : ''); ?>" href="<?php echo get_site_url(); ?>/donate/sponsor" title="Sponsor">Sponsor</a>
                         </div>
-                        <!-- .nav -->
-
                     </div>
+                    <!-- .narrow -->
 
                     <div class="narrow my-4">
                     
@@ -82,7 +89,7 @@ endif;
                     <?php get_template_part('template-parts/article-footer'); ?>
 
                 </div>
-                <!-- #primary-content -->
+                <!-- .my-5 -->
 
             </div>
             <!-- .col -->
@@ -91,16 +98,16 @@ endif;
 
                 <div class="card border my-5">
                     <div class="card-header border-bottom text-center">
-                        Donate with confidence
+                        International Donors
                     </div>
+                    
                     <div class="card-body">
                         <div class="fs-md">
                             <p>
-                                When you give to Cheetah Conservation Fund, you are supporting
-                                the best in scientific research, educational programming, and conservation.
+                                Donations made on this page will be processed by the Cheetah Conservation Fund USA.  CCF USA is a Registered Non Profit 501(c) 3: #31-1726923.
                             </p>
                             <p>
-                                To donate to CCF via one of our international affiliates please use the links below:
+                                To donate in another country and receive all eligible benefits, please visit your country's affiliated page:
                             </p>
                             <ul class="extensible-list">
                                 <li><a href="https://cheetahconservationfund.ca/donate/" target="_blank">Canada</a></li>
@@ -113,31 +120,32 @@ endif;
                 </div>
                 <!-- .card -->
 
-                <div class="card border my-5">
-                    <div class="card-header border-bottom text-center">
-                        Helpful Information
-                    </div>
-                    <div class="card-body">
-                        <div class="fs-md">
-                            <p>
-                                If you are having difficulty completing your donation, please call <strong class="no-wrap">1-866-909-3399</strong>
-                            </p>
+            <div class="card border my-5">
+                <div class="card-header border-bottom text-center">
+                    Helpful Information
+                </div>
+                <div class="card-body">
+                    <div class="fs-md">
+                        <p>
+                            If you are having difficulty completing your donation, please call <strong class="no-wrap">1-866-909-3399</strong>
+                        </p>
 
-                            <p>
-                                CCF is a registered Trust in Namibia (Incorporated Association Not For Gain, with
-                                Registration
-                                Number 21/20002/341).
-                            </p>
-                            <p>
-                                CCF USA is a Registered Non Profit 501(c) 3: #31-1726923.
-                            </p>
-                        </div>
+                        <p>
+                            CCF is a registered Trust in Namibia (Incorporated Association Not For Gain, with
+                            Registration
+                            Number 21/20002/341).
+                        </p>
+                        <p>
+                            CCF USA is a Registered Non Profit 501(c) 3: #31-1726923.
+                        </p>
                     </div>
                 </div>
-                <!-- .card -->
+            </div>
+            <!-- .card -->
 
             </div>
             <!-- .col -->
+
         </div>
         <!-- .row -->
 

@@ -52,6 +52,11 @@
                 "param": "page",
                 "operator": "!=",
                 "value": "554"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "page-donate.php"
             }
         ]
     ],
@@ -77,5 +82,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1560153878
+    "modified": 1560154206
 }

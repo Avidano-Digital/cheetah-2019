@@ -224,7 +224,7 @@
           </div>
           <!-- .col -->
           <div class="col-md-auto">
-            <a class="link text-body" href="/ccf-blog" title="News">All News</a>
+            <a class="link text-body" href="<?php echo get_site_url(); ?>/ccf-blog" title="All News">All News</a>
           </div>
           <!-- .col -->
         </header>
