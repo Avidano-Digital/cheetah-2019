@@ -114,7 +114,7 @@
 
                     <ul class="extensible-list horizontal fs-lg">
                         <li>
-                            <a class="no-btn-style text-body" href="#">
+                            <a class="no-btn-style text-body" href="#" data-toggle="modal" data-target="#newsletterModal">
                                 <span class="far fa-envelope-open"></span>
                                 <span class="mx-1 font-weight-bold fs-md">CCF Newsletters</span>
                             </a>
@@ -193,6 +193,38 @@
     <!-- .bg-dark -->
 
 </footer>
+
+<!-- Newsletter Modal -->
+
+<div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newsletterModalLabel">CCF Newsletters</h5>
+        <div class="col-auto">
+            <button class="no-btn-style" type="button" data-dismiss="modal" aria-label="Close">
+                <span class="fas fa-times"></span>
+                <span class="sr-only">Close</span>
+            </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div id="bbox-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+       window.bboxInit = function () {
+           bbox.showForm('97d435e6-40ec-41a7-b8e5-2a4eacf55d9c');
+       };
+       (function () {
+           var e = document.createElement('script'); e.async = true;
+           e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+           document.getElementsByTagName('head')[0].appendChild(e);
+       } ());
+</script>
 
 <?php wp_footer(); ?>
 
