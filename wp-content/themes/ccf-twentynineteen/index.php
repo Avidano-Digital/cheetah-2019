@@ -99,36 +99,13 @@ get_header(); ?>
     </div>
     <!-- .container-fluid -->
 
-    <?php 
-
-    $page_heading = '';
-
-    if (get_query_var('taxonomy') == 'news-author') :
-
-    $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
-    $page_heading = $term->name;
-    
-    elseif (get_query_var('category_name') && get_query_var('category_name') != 'ccf-blog'):
-    
-        $page_heading = get_category_by_slug(get_query_var('category_name'))->cat_name;
-
-        if ($page_heading == 'Press Releases') :
-
-          $press_releases = true;
-
-        endif;
-        
-    endif;
-    
-    ?>
-
     <div class="container overflow-hidden">
 
         <div class="my-5">
 
-            <?php if ($page_heading) : ?>
+            <?php if ($current_category_name != 'CCF Blog' && $current_category_name != 'Press Releases' && $current_category_name != 'Cheetah Strides') : ?>
 
-            <h1 class="text-center font-weight-light my-2"><?php echo $page_heading; ?></h1>
+            <h1 class="text-center font-weight-light my-2"><?php echo $current_category_name; ?></h1>
             
             <?php endif; ?>
 
@@ -138,7 +115,7 @@ get_header(); ?>
 
                 <?php while ( have_posts() ) : the_post(); ?>
 
-                    <?php if ( $press_releases ): ?>
+                    <?php if ( $current_category_name == 'Press Releases' ): ?>
 
                     <div class="col-lg-4 mb-3">
 
@@ -157,7 +134,7 @@ get_header(); ?>
 
                     <?php else : ?>                
                 
-                    <div class="col-lg-4 mb-3 <?php echo ($press_releases ? 'border border-danger' : '')?>">
+                    <div class="col-lg-4 mb-3">
                         
                         <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                         
