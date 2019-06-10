@@ -34730,6 +34730,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen/css/forms.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/css/forms-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/wp-content/themes/ccf-twentynineteen/css/theme.css": {
 		"aP": 1,
 		"bl": 0,
@@ -35884,6 +35894,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen/scss/forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen/css/forms.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
 	"/wp-content/themes/ccf-twentynineteen/scss/theme.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -36146,26 +36169,6 @@
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen/template-parts/staff.php",
 		"oF": 0
-		},
-	"/wp-content/themes/css/theme-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/css/theme-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/wp-content/themes/css/theme.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/wp-content/themes/css/theme-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/wp-content/themes/index.php": {
 		"cB": 0,

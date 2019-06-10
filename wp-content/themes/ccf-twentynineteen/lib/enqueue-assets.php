@@ -24,6 +24,11 @@
         }
 
         wp_enqueue_style( 
+            'form-css', 
+            get_template_directory_uri() . '/css/forms.css'
+        );
+
+        wp_enqueue_style( 
             'theme', 
             get_template_directory_uri() . '/css/theme.css'
         );
