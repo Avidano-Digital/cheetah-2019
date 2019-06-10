@@ -84,9 +84,9 @@ $parent_title = get_the_title($post->post_parent);
             </div>
             <!-- .col -->
 
-            <div class="col-xl-9 overflow-hidden">
+            <div class="col-xl-9 overflow-hidden" id="primary-content">
 
-                <article class="my-6" id="primary-content">
+                <div class="my-5">
 
                     <header class="medium my-3">
                         <h1 class="display-4 text-center">
@@ -211,7 +211,7 @@ $parent_title = get_the_title($post->post_parent);
 
                     <?php get_template_part('template-parts/article-footer'); ?>
             
-                </article>
+                </div>
                 <!-- #primary-content -->
 
             </div>
