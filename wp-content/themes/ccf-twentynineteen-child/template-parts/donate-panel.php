@@ -12,17 +12,12 @@
                 Support CCF United States
               </h2>
 
-              <p class="text-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quam earum impedit.</p>
+              <p class="text-shadow">Through fundraising, outreach, and education we work within the USA to support Cheetah Conservation Fund.</p>
 
-              <div class="row matrix-border">
-
-                <div class="col-md-6">
-                  <a class="btn btn-lg btn-block btn-primary" href="#1" title="Donate">Donate</a>
-                </div>
-                <!-- .col -->
+              <div class="row justify-content-center">
 
                 <div class="col-md-6">
-                  <a class="btn btn-lg btn-block btn-primary" href="#1" title="Volunteer">Volunteer</a>
+                  <a class="btn btn-lg btn-block btn-primary" href="/donate" title="Donate">Donate</a>
                 </div>
                 <!-- .col -->
 
