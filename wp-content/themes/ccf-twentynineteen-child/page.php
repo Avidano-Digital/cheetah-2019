@@ -42,11 +42,9 @@ get_header();
 
         <div class="container">
 
-            <article class="my-6" id="primary-content">
+            <article class="my-5" id="primary-content">
 
                 <?php get_template_part('template-parts/flexible-content-article'); ?>
-
-                <?php the_field('code'); ?>
 
             </article>
         

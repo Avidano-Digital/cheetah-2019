@@ -80,7 +80,7 @@ if ($image): ?>
 
             <div class="col-lg-9 overflow-hidden" id="primary-content">
 
-                <div class="my-5">
+                <div class="my-5 bg-danger">
 
                     <?php
 
