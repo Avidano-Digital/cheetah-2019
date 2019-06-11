@@ -45,14 +45,14 @@ endif;
     <div class="bg-dark banner-with-background featured-image d-flex flex-column">
 
         <div class="container-fluid my-auto">
-            <div class="narrow text-white text-center text-shadow">
-                <a class="shadow-lg mb-2 d-inline-block" href="https://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=6617" target="_blank">
-                    <img class="rounded" src="<?php echo get_template_directory_uri(); ?>/images/charity-navigator-four-star-badge.svg" alt="Charity Navigator Four Star Rating">
-                </a>
+            <div class="narrow text-white text-center text-shadow my-3">
                 <h1 class="display-4 text-primary">
                     Donate with Confidence
                 </h1>
                 <p class="fs-lg">Support the best in scientific research, educational programming, and conservation.</p>
+                <a class="shadow-lg my-2 d-inline-block" href="https://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=6617" target="_blank">
+                    <img class="rounded" src="<?php echo get_template_directory_uri(); ?>/images/charity-navigator-four-star-badge.svg" alt="Charity Navigator Four Star Rating">
+                </a>
             </div>
             <!-- .narrow -->
         </div>
@@ -60,6 +60,18 @@ endif;
 
     </div>
     <!-- .banner-with-background -->
+
+    <div class="container-fluid bg-light py-2">
+        <div class="narrow text-center fs-md">
+            <p>
+                <em>
+                    Donations made on this page will be processed by the Cheetah Conservation Fund USA. CCF USA is a Registered Non Profit 501(c) 3: #31-1726923.
+                </em>
+            </p>
+        </div>
+
+    </div>
+    <!--  -->
 
     <div class="container">
 
@@ -104,9 +116,6 @@ endif;
                     <div class="card-body">
                         <div class="fs-md">
                             <p>
-                                Donations made on this page will be processed by the Cheetah Conservation Fund USA.  CCF USA is a Registered Non Profit 501(c) 3: #31-1726923.
-                            </p>
-                            <p>
                                 To donate in another country and receive all eligible benefits, please visit your country's affiliated page:
                             </p>
                             <ul class="extensible-list">
@@ -127,13 +136,12 @@ endif;
                 <div class="card-body">
                     <div class="fs-md">
                         <p>
-                            If you are having difficulty completing your donation, please call <strong class="no-wrap">1-866-909-3399</strong>
+                            If you are having difficulty completing your donation, please call <strong class="no-wrap">1-866-909-3399</strong>.
                         </p>
 
                         <p>
                             CCF is a registered Trust in Namibia (Incorporated Association Not For Gain, with
-                            Registration
-                            Number 21/20002/341).
+                            Registration Number 21/20002/341).
                         </p>
                     </div>
                 </div>

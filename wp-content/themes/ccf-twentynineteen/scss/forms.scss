@@ -12,6 +12,7 @@
 @import "../bootstrap/scss/buttons";
 @import "../bootstrap/scss/custom-forms";
 @import "../bootstrap/scss/type";
+@import "../bootstrap/scss/alert";
 
 ////////////////////////////////////////
 // B. Icon
@@ -81,6 +82,7 @@ $col-b-width: 30%;
     // Spinner
 
     #bbox-msg-wrapper {
+
         >img {
             display: none;
         }
@@ -94,6 +96,22 @@ $col-b-width: 30%;
             content: "\f110";
             @extend %fa-spin;
         }
+    }
+
+    // Validation 
+    
+    $alert-color: darken($warning, 35%);
+
+    div.BBFormErrorBlock {
+        @extend .alert-warning;
+        font-size: $fs-md;
+        // background-color: $warning;
+        color: darken($warning, 35%);
+        border-color: rgba($alert-color, 0.25);
+        padding: $spacer-2;
+        max-width: unset;
+        margin-bottom: $spacer-2;
+        border-radius: 0;
     }
 
     // Generic tags
@@ -502,3 +520,4 @@ $col-b-width: 30%;
         margin-bottom: unset !important;
     }
 }
+
