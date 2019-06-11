@@ -1,21 +1,56 @@
 @import "a-global-variables.scss";
 
 ////////////////////////////////////////
-// A. Required Bootstrap imports
+// A. Bootstrap imports
 ////////////////////////////////////////
 
 @import "../bootstrap/scss/functions";
 @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins";
 
-////////////////////////////////////////
-// A. Required Bootstrap imports
-////////////////////////////////////////
-
 @import "../bootstrap/scss/forms";
 @import "../bootstrap/scss/buttons";
 @import "../bootstrap/scss/custom-forms";
 @import "../bootstrap/scss/type";
+
+////////////////////////////////////////
+// B. Icon
+////////////////////////////////////////
+
+%fa-icon {
+    font-family: $font-awesome;
+    font-weight: 900;
+    font-size: inherit;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    color: currentColor;
+}
+
+%fa-spin {
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
 
 ////////////////////////////////////////
 // Blackbaud Forms
@@ -25,6 +60,7 @@ $col-a-width: 70%;
 $col-b-width: 30%;
 
 #bbox-root {
+
     // Global resets
 
     #mongo-form,
@@ -38,6 +74,28 @@ $col-b-width: 30%;
         padding: 0;
     }
 
+    div.BBFormContainer {
+        background-color: transparent !important;
+    }
+
+    // Spinner
+
+    #bbox-msg-wrapper {
+        >img {
+            display: none;
+        }
+
+        text-align: center;
+
+        &::after {
+            color: $secondary;
+            position: absolute;
+            @extend %fa-icon;
+            content: "\f110";
+            @extend %fa-spin;
+        }
+    }
+
     // Generic tags
 
     input:not([type="checkbox"]),
@@ -45,10 +103,6 @@ $col-b-width: 30%;
     textarea {
         width: 100%;
         border-radius: 0;
-    }
-
-    input[type="checkbox"]{
-        background:  red !important;
     }
 
     input[type="text"],
@@ -171,9 +225,6 @@ $col-b-width: 30%;
 
     div.BBFormSection {
         margin-bottom: $form-group-margin-bottom;
-
-        // background: rgba(yellow, 0.5);
-
     }
 
     div.BBFormFieldContainer {
@@ -317,7 +368,6 @@ $col-b-width: 30%;
 
     .BBFormSectionGiftAttributes,
     .BBDFormSectionComments {
-        background: green;
         display: none;
     }
 
@@ -368,5 +418,87 @@ $col-b-width: 30%;
         #DCCreditType {
             margin-left: 0 !important;
         }
+    }
+}
+
+////////////////////////////////////////
+// Mongo Forms
+////////////////////////////////////////
+
+#bbox-root{
+
+    [data-bbox-part-id='97d435e6-40ec-41a7-b8e5-2a4eacf55d9c'].BBFormContainer {
+        background-color: transparent !important;
+    }
+    #BBPanelHeading,
+    #bboxevent_priceselect_divAddedDonation{
+        display: none;
+    }
+
+    .BBFormTable {
+        background: transparent;
+        border-radius: 0;
+        padding: 0;
+        border-color: $border-color;
+    }
+
+    .BBFormTableHeader{
+        // background-color: $light;
+        border: none;
+    }
+
+    .BBFormTableHeaderCell{
+        padding: $spacer-2;
+        font-size: $fs-md;
+    }
+    
+    .BBFormTableFooter,
+    .BBFormTableHeaderCell,
+    .BBFormColTotal,
+    .BBTableRowCellFinePrint,
+    .BBFormColHidden{
+        display: none;
+    }
+
+    .BBFormColQty {
+        margin-left: auto;
+        float: right;
+    }
+
+    .BBFormTableRow{
+        padding: $spacer-2;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $border-color;
+
+        &[data-price-id="26"] {
+            border-bottom: none !important;
+
+        }
+    }
+
+
+    .BBFormTableRowCell {
+        padding: 0;
+        margin: 0;
+
+        &.BBFormColPriceName{
+            width: unset;
+        }
+
+        &.BBFormColQty {
+            width: 100%;
+            margin-top: $spacer-2;
+            margin-bottom: $spacer-2;
+
+            select{
+                width: 100%;
+            }
+
+        }
+    }
+  
+    #bbox-root div.BBFormSection {
+        margin-bottom: unset !important;
     }
 }

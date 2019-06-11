@@ -16,7 +16,7 @@ get_header();
 
         <div class="container py-4">
 
-            <div class="narrow text-white my-5">
+            <div class="narrow text-white">
 
                 <h1 class="display-4 text-primary text-shadow"><?php the_title(); ?></h1>
 
@@ -33,12 +33,16 @@ get_header();
 
         <div class="my-5">
 
-            <div class="narrow">
+            <div class="narrow my-4">
                 <?php the_content(); ?>
+            </div>
 
-                <?php if (is_page('newsletter')) : ?>
-                    <div id="bbox-root"></div>
-                <?php endif; ?>
+            <?php if (is_page('newsletter')) : ?>
+
+            <div class="narrow my-4" id="bbox-root"></div>
+            
+            <?php endif; ?>
+
             </div>
             <!-- .narrow -->
 
