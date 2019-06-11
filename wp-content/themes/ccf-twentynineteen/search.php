@@ -4,25 +4,27 @@ get_header(); ?>
 
 <main id="content" role="main">
 
-  <div class="bg-dark banner-with-background oculus">
+    <div class="bg-info cheetah-spots">
 
-    <div class="container-fluid">
-      <div class="narrow">
-        <h1 class="display-4 text-white text-center">
-        <?php printf( __( 'Search Results for: %s', 'shape' ), '<span class="d-block"><em>' . get_search_query() . '</em></span>' ); ?>
-        </h1>
-      </div>
+        <div class="container py-4">
+
+            <div class="narrow">
+                <h1 class="display-4 text-white text-center text-shadow">
+                    <?php printf( __( 'Search Results for: %s', 'shape' ), '<span class="d-block text-primary"><em>' . get_search_query() . '</em></span>' ); ?>
+                </h1>
+            </div>
+
+        </div>
+        <!-- .container-fluid -->
+
     </div>
     <!-- .container -->
 
-  </div>
-  <!-- .banner-with-background -->
-
-  <div class="container-fluid overflow-auto">
+  <div class="container-fluid overflow-auto" id="primary-content">
 
     <div class="narrow my-5">
 
-    <?php if (have_posts()) : ?>
+        <?php if (have_posts()) : ?>
 
         <ul class="list-group list-group-flush mb-3">
 
@@ -60,22 +62,21 @@ get_header(); ?>
 
         </ul>
 
-      <?php else : ?>
+        <?php else : ?>
 
         <p>No results</p>
 
-      <?php endif; ?>
+        <?php endif; ?>
 
-      <div class="pagination justify-content-center my-4">
+        <div class="pagination justify-content-center my-4">
 
-          <?php echo custom_pagination(); ?>
-          
-      </div>
-      <!-- .pagination -->
+            <?php echo custom_pagination(); ?>
+            
+        </div>
+        <!-- .pagination -->
 
       </div>
       <!-- .my-5 -->
-
 
     </div>
     <!-- .container-fluid -->

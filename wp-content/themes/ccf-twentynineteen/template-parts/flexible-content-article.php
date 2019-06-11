@@ -88,9 +88,9 @@ $quote_credit_title = $quote['credit_title'];
 
                                 <?php if( $type == 'Summary' ) : ?>
 
-                                <h3 class="text-primary">
+                                <h2 class="h3 text-primary">
                                     <?php echo $summary_headline; ?>
-                                </h3>
+                                </h2>
 
                                 <div class="text-white">
 
@@ -146,6 +146,7 @@ $quote_credit_title = $quote['credit_title'];
                 </figcaption>
             </div>
         </div>
+
     </figure>
     <!-- figure -->
 
