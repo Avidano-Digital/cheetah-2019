@@ -136,8 +136,8 @@ get_header(); ?>
                 
                     <div class="col-lg-4 mb-3">
                         
-                        <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                        
+                        <div class="featured-article">
+        
                             <div>
 
                                 <span><?php echo get_the_date(); ?></span>
@@ -147,7 +147,7 @@ get_header(); ?>
                                 ?>
                                                 
                                 <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
-
+                                
                                 <?php else : ?>
                                 
                                 <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
@@ -156,9 +156,12 @@ get_header(); ?>
 
                             </div>
 
-                            <p class="h5"><?php the_title(); ?></p>
+                            <a class="stretched-link text-body" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                            <span class=""><?php the_title(); ?></span> 
+                            </a>
 
-                        </a>
+                        </div>
+                        <!-- .featured-article -->
 
                     </div>
                     <!-- .col -->

@@ -53,87 +53,6 @@
     </section>
     <!-- #introduction -->
 
-    <section class="bg-light py-6 d-none">
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg mb-3 mb-lg-0">
-            <h2 class="h1">Lorem ipsum dolor sit amet consectetur elit</h2>
-            <a class="btn btn-lg btn-primary mt-2 d-none d-lg-inline-block" href="#" aria-hidden="true"
-              title="Button Link">Button Link</a>
-          </div>
-
-          <div class="col-lg">
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptas quod magni saepe. Expedita ab
-              vitae quo, dolore modi nesciunt deserunt voluptatibus? Quidem ducimus est non quisquam exercitationem.
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima id quibusdam molestiae, et nisi
-              nostrum exercitationem consectetur perferendis earum.
-            </p>
-
-            <a href="#" class="btn btn-lg btn-primary mt-2 d-lg-none" title="Button Link">Button Link</a>
-          </div>
-          <!-- .col -->
-
-        </div>
-        <!-- .row -->
-
-      </div>
-      <!-- .container -->
-
-    </section>
-
-    <section class="bg-light pattern-border-top-bottom py-6 d-none">
-
-      <div class="container">
-
-        <div class="medium mb-4">
-
-            <div class="rounded-lg overflow-hidden mb-4">
-            
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0hyNVlYVTNo" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
-                </div>
-
-            </div>
-            <!-- .rounded-lg -->
-        </div>
-        <!-- .narrow -->
-
-        <div class="medium">
-
-            <div class="row matrix-gutter">
-                <div class="col-md-6">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur perspiciatis ab? Saepe incidunt doloribus eligendi quas sequi odit.
-                    </p>
-                </div>
-                <!-- .col -->
-                <div class="col-md-6">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae neque quasi omnis dolores optio.
-                    </p>
-                </div>
-                <!-- .col -->
-            
-            </div>
-            <!-- .row -->
-        
-        </div>
-        <!-- .medium -->
-
-
-      </div>
-      <!-- .container -->
-
-    </section>
-
     <section class="py-5 py-xl-7">
 
       <h2 class="sr-only">News and Events</h2>
@@ -156,36 +75,37 @@
           
           foreach ($postslist as $post) :
           setup_postdata($post);
-          
-          $the_date = get_the_date();
-          
+                    
           ?>
 
           <div class="col-lg-4 mb-5 mb-lg-0">
           
-              <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-              
-                  <div>
+              <div class="featured-article">
+        
+                <div>
 
-                      <span><?php echo $the_date; ?></span>
+                    <span><?php echo get_the_date(); ?></span>
 
-                      <?php if (has_post_thumbnail()):
-                          $featured_image_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
-                      ?>
-                                      
-                      <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
+                    <?php if( has_post_thumbnail() ):
+                        $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
+                    ?>
+                                    
+                    <img class="w-100" src="<?php echo $featured_image_url; ?>" alt="<?php the_title(); ?>">
+                    
+                    <?php else : ?>
+                    
+                    <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                    
+                    <?php endif; /* featured_image */ ?>
 
-                      <?php else : ?>
-                      
-                      <img class="w-100" src="https://via.placeholder.com/1000x563" alt="Placeholder">
+                </div>
 
-                      <?php endif; /* featured_image */ ?>
+                <a class="stretched-link text-body" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                  <span class=""><?php the_title(); ?></span> 
+                </a>
 
-                  </div>
-
-                  <p class="h5"><?php the_title(); ?></p>
-
-              </a>
+            </div>
+            <!-- .featured-article -->
 
           </div>
           <!-- .col -->

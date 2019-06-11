@@ -10,17 +10,15 @@
     foreach ( $postslist as $post ) :
     setup_postdata( $post );
     
-    $the_date = get_the_date();
-    
     ?>
 
     <div class="col-lg-4 mb-3 mb-lg-0">
     
-        <a class="featured-article" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+        <div class="featured-article">
         
             <div>
 
-                <span><?php echo $the_date; ?></span>
+                <span><?php echo get_the_date(); ?></span>
 
                 <?php if( has_post_thumbnail() ):
                     $featured_image_url = get_the_post_thumbnail_url( get_the_ID(),'full' );
@@ -36,9 +34,12 @@
 
             </div>
 
-            <p class="h5"><?php the_title(); ?></p>
+            <a class="stretched-link text-body" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+               <span class=""><?php the_title(); ?></span> 
+            </a>
 
-        </a>
+        </div>
+        <!-- .featured-article -->
 
     </div>
     <!-- .col -->

@@ -39,7 +39,7 @@ $bio = get_sub_field('bio');
 
                 <?php if ($link): ?>
                 <p>
-                    <a href="<?php echo $link['url'] ?>" target="<?php echo $link['target']; ?>" <?php echo $link['title'] ?>><?php echo $link['title'] ?></a>
+                    <a href="<?php echo $link['url'] ?>" <?php if($link['target']) : ?>target="<?php echo $link['target'] ?>"<?php endif; ?> <?php echo $link['title'] ?>><?php echo $link['title'] ?></a>
                 </p>
                 
                 <?php endif; ?>

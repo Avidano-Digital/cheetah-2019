@@ -45,7 +45,7 @@
                             <p class="card-title font-weight-bold f-sans-serif"><?php echo $name; ?></p>
                             
                             <?php if ($link) : ?>
-                            <a class="stretched-link link text-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+                            <a class="stretched-link link text-primary" href="<?php echo $link['url']; ?>" <?php if($link['target']) : ?>target="<?php echo $link['target'] ?>"<?php endif; ?>><?php echo $link['title']; ?></a>
                             <?php endif; ?>
                         
                         </div>
@@ -106,7 +106,7 @@
                 </dt>
 
                 <dd class="col-md-auto">
-                    <a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+                    <a href="<?php echo $link['url']; ?>" <?php if($link['target']) : ?>target="<?php echo $link['target'] ?>"<?php endif; ?>><?php echo $link['title']; ?></a>
                 </dd>
 
             </dl>

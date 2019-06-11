@@ -136,7 +136,7 @@ form[role="search"] {
 // Featured Panels and Blocks
 ////////////////////////////////////////
 
-a.featured-article {
+.featured-article {
     color: $body-color;
 
     div {
@@ -154,11 +154,13 @@ a.featured-article {
         }
     }
 
-    .h5 {
-        font-weight: $font-weight-bold;
+    a{
         padding-left: $spacer-2;
         padding-right: $spacer-2;
+        font-weight: $font-weight-bold;
+        display: block;
     }
+
 }
 
 ////////////////////////////////////////
