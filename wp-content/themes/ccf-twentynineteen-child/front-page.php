@@ -13,7 +13,12 @@
  * @version 1.0
  */
 
- get_header(); ?>
+ get_header(); 
+
+ $banner_image = get_field('image');
+ $link = get_field('link');
+
+ ?>
 
   <main class="overflow-auto" id="content" role="main">
 
@@ -22,27 +27,30 @@
       <div class="featured-panel responsive-lg">
 
         <div class="card bg-white">
-          <div class="gradient-overlay-x-black">
-            <!-- <img class="card-img" src="https://via.placeholder.com/800x400" alt="Placeholder"> -->
-            <img class="card-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/01.jpg" alt="Card image">
-          </div>
+            <div class="gradient-overlay-x-black">
+                <?php if ($banner_image) : ?>
 
-          <div class="card-img-overlay d-flex">
-            <div class="align-self-center">
+                <img class="card-img" src="<?php echo $banner_image['url']; ?>" alt="<?php echo $banner_image['alt']; ?>">
 
-              <div class="container text-white">
-
-                <div class="narrow-max-width">
-                  <h1 class="display-3 mb-2  text-shadow">Devoted to Saving Cheetahs in the Wild</h1>
-                  <a href="#" class="btn btn-lg btn-primary">About Us</a>
-                </div>
-
-              </div>
-              <!-- .comtainer -->
-
+                <?php endif; /* banner_image */ ?>
             </div>
-            <!-- .align-self-center -->
-          </div>
+
+            <div class="card-img-overlay d-flex">
+                <div class="align-self-center">
+
+                    <div class="container text-white">
+
+                        <div class="narrow-max-width">
+                            <h1 class="display-3 mb-2  text-shadow"><?php the_field('headline'); ?></h1>
+                            <a href="<?php echo $link['url']; ?>" class="btn btn-lg btn-primary"><?php echo $link['title']; ?></a>
+                        </div>
+
+                    </div>
+                    <!-- .comtainer -->
+
+                </div>
+                <!-- .align-self-center -->
+            </div>
 
         </div>
         <!-- .card -->
