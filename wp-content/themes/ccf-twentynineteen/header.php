@@ -58,9 +58,7 @@ $inside_news = strpos($url, 'news');
                 <div class="col-md-auto py-2">
 
                     <div class="d-flex justify-content-center justify-content-md-start align-items-center">
-                        <a class="d-inline-block" href="/" title="<?php the_title(); ?>, home">
-                            <?php the_custom_logo(); ?>
-                        </a>
+                        <?php the_custom_logo(); ?>
                     </div>
                     
                 </div>
