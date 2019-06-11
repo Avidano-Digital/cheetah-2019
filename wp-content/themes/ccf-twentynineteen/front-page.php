@@ -271,7 +271,7 @@
               <div class="card-img-overlay d-flex">
                 <div class="align-self-end">
                   <div class="text-white">
-                    <h4 class="h3 font-weight-bold"><?php echo $headline; ?></h4>
+                    <h3><?php echo $headline; ?></h3>
                     <a class="link text-primary" href="<?php echo $link['url']; ?>" <?php if($link['target']) : ?>target="<?php echo $link['target'] ?>"<?php endif; ?>><?php echo $link['title']; ?></a>
                   </div>
                 </div>
@@ -327,7 +327,7 @@
             <img class="rounded-circle mx-auto mb-4" src="<?php echo $image['url']; ?>"
               alt="<?php echo $image['alt']; ?>">
             <h4 class="text-info"><?php echo $headline; ?></h4>
-            <p><?php echo $text; ?></p>
+            <?php echo $text; ?>
           </div>
 
           <?php endwhile;  ?>

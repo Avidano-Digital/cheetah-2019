@@ -91,12 +91,12 @@
                 <div class="col-lg-6 col-xl-4 mb-4 mb-xl-0">
 
                     <?php if ($headline): ?>
-                    <h5><?php echo $headline; ?></h5>
+                    <h2 class="h5"><?php echo $headline; ?></h2>
                     <?php endif; ?>
                     
                     <?php if ($paragraph): ?>
                     <div class="fs-md">
-                        <?php echo $paragraph; ?></p>
+                        <?php echo $paragraph; ?>
                     </div>
                     <?php endif; ?>
                 </div>
