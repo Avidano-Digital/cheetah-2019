@@ -33175,14 +33175,6 @@
 		"oAP": "/wp-content/plugins/wordpress-seo/wpml-config.xml",
 		"oF": 0
 		},
-	"/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5c35ab91cc482.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5c35ab91cc482-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5c36f13d671cd.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -33263,6 +33255,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5cffcd71b5ae3.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/acf-json/group_5cffcd71b5ae3-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/wp-content/themes/ccf-twentynineteen-child/archive-events.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -33294,6 +33294,17 @@
 		"oA": 0,
 		"oAP": "/wp-content/themes/ccf-twentynineteen-child/functions.php",
 		"oF": 0
+		},
+	"/wp-content/themes/ccf-twentynineteen-child/images/avatar-generic.jpg": {
+		"ft": 16384,
+		"iS": 80308864,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/themes/ccf-twentynineteen-child/images/avatar-generic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"/wp-content/themes/ccf-twentynineteen-child/images/donate.jpg": {
 		"ft": 16384,
@@ -61568,6 +61579,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wp-content/uploads/sites/2/2019/06/avatar-poala-bari.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2019/06/ccf-united-states-home-250x250.jpg": {
+		"ft": 16384,
+		"iS": 14823,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2019/06/ccf-united-states-home-250x250.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wp-content/uploads/sites/2/2019/06/ccf-united-states-home.jpg": {
+		"ft": 16384,
+		"iS": 177602,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wp-content/uploads/sites/2/2019/06/ccf-united-states-home.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

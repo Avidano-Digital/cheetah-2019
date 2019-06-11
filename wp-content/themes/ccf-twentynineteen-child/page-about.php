@@ -34,8 +34,8 @@ get_header();
                     <h1 class="display-2">
                         <?php the_title(); ?>
                     </h1>
-                    <p class="fs-lg text-primary f-sans-serif mb-0"><strong><?php the_field('banner_headline'); ?></strong> </p>
-                    <p class="lead"><?php the_field('banner_description'); ?></p>
+                    <p class="fs-lg text-primary f-sans-serif mb-0"><strong><?php the_field('subheader'); ?></strong> </p>
+                    <p class="lead"><?php the_field('description'); ?></p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ get_header();
 
     </div>
 
-    <?php if( have_rows('personnel') ): ?>
+    <?php if( have_rows('who_we_are') ): ?>
 
     <section class="overflow-hidden bg-light">
 
@@ -55,22 +55,24 @@ get_header();
 
             <div class="row matrix-gutter text-center my-4">
 
-              <?php while ( have_rows('personnel') ) : the_row(); 
+                <?php while ( have_rows('who_we_are') ) : the_row(); 
 
-                $person_photo = get_sub_field('photo');
+                $name = get_sub_field('name');
+                $title = get_sub_field('title');
+                $avatar = get_sub_field('avatar');
 
-              ?>
+                ?>
 
                 <div class="col-md-4">
                 
-                    <?php if ($person_photo) : ?>
-                        <img class="rounded-circle mb-1" src="<?php echo $person_photo['sizes']['thumbnail']; ?>" alt="<?php echo $person_photo['alt']; ?>">
+                    <?php if ($avatar) : ?>
+                        <img class="rounded-circle mb-1" src="<?php echo $avatar['url']; ?>" width="200px" height="200px" alt="<?php echo $name; ?>">
                     <?php else : ?>
-                        <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
-                    <?php endif; /* person_photo */ ?>
+                        <img class="rounded-circle mb-1" src="<?php echo get_stylesheet_directory_uri(); ?>/images/avatar-generic.jpg" width="200px" height="200px" alt="<?php echo $name; ?>">
+                    <?php endif; /* avatar */ ?>
 
-                    <p class="f-sans-serif mb-0"><strong><?php the_sub_field('name'); ?></strong></p>
-                    <p class="f-sans-serif mb-0"><?php the_sub_field('subtitle'); ?></p>
+                    <p class="f-sans-serif mb-0"><strong><?php echo $name; ?></strong></p>
+                    <p class="f-sans-serif mb-0"><?php echo $title; ?></p>
                 
                 </div>
                 <!-- .col -->
