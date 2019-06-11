@@ -359,87 +359,93 @@
           alt="Placeholder">
 
         <div class="card-img-overlay d-flex p-0">
+
           <div class="container-fluid align-self-center">
+          
             <div class="wide px-lg-2">
 
-              <div class="row">
-                <div class="col-xl-5">
+                <div class="row">
+                  <div class="col-xl-5">
 
-                  <div class="narrow text-white mb-5 mb-xl-0">
+                    <div class="narrow text-white mb-5 mb-xl-0">
 
-                    <h2 class="h1 text-primary">Shrinking habitat</h2>
+                      <h2 class="h1 text-primary">Shrinking habitat</h2>
 
-                    <p class="mb-3">
-                      In the last 100 years, the world has lost 90% of the wild cheetah population. Today, one-third of
-                      wild cheetahs live in southern Africa. CCF is working across Africa to save the species throughout its range.
-                    </p>
+                      <p class="mb-3">
+                        In the last 100 years, the world has lost 90% of the wild cheetah population. Today, one-third of
+                        wild cheetahs live in southern Africa. CCF is working across Africa to save the species throughout its range.
+                      </p>
 
-                    <ul class="list-unstyled fs-md mb-5">
-                      <li>
-                        <span class="fas fa-circle fa-fw" style="color:#896258;"></span>
-                        <span class="mx-1">Cheetah range pre-1900</span>
-                      <li>
-                        <span class="fas fa-circle fa-fw text-primary"></span>
-                        <span class="mx-1">Cheetah range today</span>
-                      <li>
-                        <span class="fas fa-star fa-fw text-white"></span>
-                        <span class="mx-1">CCF Headquarters, Namibia</span>
-                    </ul>
-
-                    <div class="row matrix-border d-md-none">
-                      <div class="col-sm">
-                        <a class="btn btn-block btn-primary d-md-none" href="/about/what-we-do/conservation" title="Conservation">Conservation</a>
-                      </div>
-                      <!-- .col -->
-                      <div class="col-sm">
-                        <a class="btn btn-block btn-primary d-md-none" href="/about/what-we-do/research" title="Research">Research</a>
-                      </div>
-                      <!-- .col -->
-                      <div class="col-sm">
-                        <a class="btn btn-block btn-primary d-md-none" href="/about/what-we-do/education" title="Education">Education</a>
-                      </div>
-                      <!-- .col -->
-                    </div>
-                    <!-- .row -->
-
-                    <div class="d-none d-md-block">
-
-                      <ul class="extensible-list horizontal text-center">
-                          <li class="position-relative">
-                              <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-conservation.jpg" alt="Placeholder">
-                              <a class="text-primary stretched-link d-block" href="/about/what-we-do/conservation" title="Conservation">
-                                  <strong>Conservation</strong>
-                              </a>
-                          </li>
-                          <li class="position-relative">
-                              <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-research.jpg" alt="Placeholder">
-                              <a class="text-primary stretched-link d-block" href="/about/what-we-do/research" title="Research">
-                                  <strong>Research</strong> 
-                              </a>
-                          </li>
-                          <li class="position-relative">
-                              <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-education.jpg" alt="Placeholder">
-                              <a class="text-primary stretched-link d-block" href="/about/what-we-do/education" title="Education">
-                                  <strong>Education</strong> 
-                              </a>
-                          </li>
+                      <ul class="list-unstyled fs-md mb-5">
+                        <li>
+                          <span class="fas fa-circle fa-fw" style="color:#896258;"></span>
+                          <span class="mx-1">Cheetah range pre-1900</span>
+                        <li>
+                          <span class="fas fa-circle fa-fw text-primary"></span>
+                          <span class="mx-1">Cheetah range today</span>
+                        <li>
+                          <span class="fas fa-star fa-fw text-white"></span>
+                          <span class="mx-1">CCF Headquarters, Namibia</span>
                       </ul>
+
+                      <div class="row matrix-border d-md-none">
+                        <div class="col-sm">
+                          <a class="btn btn-block btn-primary d-md-none" href="/about/what-we-do/conservation" title="Conservation">Conservation</a>
+                        </div>
+                        <!-- .col -->
+                        <div class="col-sm">
+                          <a class="btn btn-block btn-primary d-md-none" href="/about/what-we-do/research" title="Research">Research</a>
+                        </div>
+                        <!-- .col -->
+                        <div class="col-sm">
+                          <a class="btn btn-block btn-primary d-md-none" href="/about/what-we-do/education" title="Education">Education</a>
+                        </div>
+                        <!-- .col -->
+                      </div>
+                      <!-- .row -->
+
+                      <div class="d-none d-md-block">
+
+                        <ul class="extensible-list horizontal text-center">
+                            <li class="position-relative">
+                                <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-conservation.jpg" alt="Placeholder">
+                                <a class="text-primary stretched-link d-block" href="/about/what-we-do/conservation" title="Conservation">
+                                    <strong>Conservation</strong>
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-research.jpg" alt="Placeholder">
+                                <a class="text-primary stretched-link d-block" href="/about/what-we-do/research" title="Research">
+                                    <strong>Research</strong> 
+                                </a>
+                            </li>
+                            <li class="position-relative">
+                                <img class="h5 rounded-circle mb-2 shadow" src="<?php echo get_template_directory_uri(); ?>/images/ccf-education.jpg" alt="Placeholder">
+                                <a class="text-primary stretched-link d-block" href="/about/what-we-do/education" title="Education">
+                                    <strong>Education</strong> 
+                                </a>
+                            </li>
+                        </ul>
+                      </div>
+
                     </div>
+                    <!-- .narrow -->
 
                   </div>
-                  <!-- .narrow -->
-
+                  <!-- .col -->
                 </div>
-                <!-- .col -->
+                <!-- .row -->
+
               </div>
               <!-- .row -->
-
             </div>
-            <!-- .row -->
-          </div>
-          <!-- .container-fluid -->
+            <!-- .container-fluid -->
+
         </div>
+        <!-- .card-img-overlay -->
+
       </div>
+      <!-- .card -->
 
     </section>
 
