@@ -60,7 +60,7 @@
                             Suite 200<br>
                             Alexandria, VA 22314
                         </p>
-                        <p class="fs-md"><a class="link text-body" href="#">Contact Us</a></p>
+                        <p class="fs-md"><a class="link text-body" href="mailTo:info@cheetah.org">Contact Us</a></p>
                     </div>
                 </div>
                 <!-- .col -->
