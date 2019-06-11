@@ -35,7 +35,7 @@
                 <?php endif; /* banner_image */ ?>
             </div>
 
-            <div class="card-img-overlay d-flex">
+            <div class="card-img-overlay d-flex border-bottom border-lg-0">
                 <div class="align-self-center">
 
                     <div class="container text-white">

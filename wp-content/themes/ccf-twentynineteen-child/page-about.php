@@ -97,6 +97,10 @@ get_header();
 
         while( have_rows('mission_statement') ): the_row(); 
 
+        $headline = get_sub_field('headline');
+        $description = get_sub_field('description');
+        $link = get_sub_field('link');
+
     ?>
 
     <section class="py-6">
@@ -106,12 +110,18 @@ get_header();
             <div class="row">
 
                 <div class="col-lg mb-3 mb-lg-0">
-                    <h2 class="h1"><?php the_sub_field('headline'); ?></h2>
+                    <h2 class="h1"><?php echo $headline; ?></h2>
                 </div>
 
                 <div class="col-lg">
 
-                    <?php the_sub_field('description'); ?>
+                    <?php echo $description; ?>
+
+                    <?php if($link): ?>
+
+                    <a class="btn btn-primary btn-lg mt-2" href="<?php echo $link['url']; ?>"><?php echo $link['title']; ?></a>
+
+                    <?php endif; ?>
 
                 </div>
                 <!-- .col -->
