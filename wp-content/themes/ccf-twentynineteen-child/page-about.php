@@ -34,14 +34,16 @@ get_header();
                     <h1 class="display-2">
                         <?php the_title(); ?>
                     </h1>
-                    <p class="fs-lg text-primary f-sans-serif mb-0"><strong>CCF United States</strong> </p>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis beatae soluta sed tempore dolorum.</p>
+                    <p class="fs-lg text-primary f-sans-serif mb-0"><strong><?php the_field('banner_headline'); ?></strong> </p>
+                    <p class="lead"><?php the_field('banner_description'); ?></p>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
+
+    <?php if( have_rows('personnel') ): ?>
 
     <section class="overflow-hidden bg-light">
 
@@ -53,52 +55,27 @@ get_header();
 
             <div class="row matrix-gutter text-center my-4">
 
+              <?php while ( have_rows('personnel') ) : the_row(); 
+
+                $person_photo = get_sub_field('photo');
+
+              ?>
+
                 <div class="col-md-4">
                 
-                    <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
-                    <p class="f-sans-serif mb-0"><strong>Full Name</strong></p>
-                    <p class="f-sans-serif mb-0">Professional Title</p>
+                    <?php if ($person_photo) : ?>
+                        <img class="rounded-circle mb-1" src="<?php echo $person_photo['sizes']['thumbnail']; ?>" alt="<?php echo $person_photo['alt']; ?>">
+                    <?php else : ?>
+                        <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
+                    <?php endif; /* person_photo */ ?>
+
+                    <p class="f-sans-serif mb-0"><strong><?php the_sub_field('name'); ?></strong></p>
+                    <p class="f-sans-serif mb-0"><?php the_sub_field('subtitle'); ?></p>
                 
                 </div>
                 <!-- .col -->
 
-
-                <div class="col-md-4">
-                
-                    <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
-                    <p class="f-sans-serif mb-0"><strong>Full Name</strong></p>
-                    <p class="f-sans-serif mb-0">Professional Title</p>
-                
-                </div>
-                <!-- .col -->
-
-                <div class="col-md-4">
-                
-                    <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
-                    <p class="f-sans-serif mb-0"><strong>Full Name</strong></p>
-                    <p class="f-sans-serif mb-0">Professional Title</p>
-                
-                </div>
-                <!-- .col -->
-
-
-                <div class="col-md-4">
-                
-                    <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
-                    <p class="f-sans-serif mb-0"><strong>Full Name</strong></p>
-                    <p class="f-sans-serif mb-0">Professional Title</p>
-                
-                </div>
-                <!-- .col -->
-
-                <div class="col-md-4">
-                
-                    <img class="rounded-circle mb-1" src="https://via.placeholder.com/200x200" alt="Placeholder">
-                    <p class="f-sans-serif mb-0"><strong>Full Name</strong></p>
-                    <p class="f-sans-serif mb-0">Professional Title</p>
-                
-                </div>
-                <!-- .col -->
+              <?php endwhile; ?>
 
             </div>
             <!-- .row -->
@@ -112,36 +89,40 @@ get_header();
     </section>
     <!-- .container-fluid -->
 
+    <?php endif; /* have_rows */ ?>
+
+    <?php if( have_rows('mission_statement') ): 
+
+        while( have_rows('mission_statement') ): the_row(); 
+
+    ?>
+
     <section class="py-6">
 
-            <div class="container">
+        <div class="container">
 
-                <div class="row">
+            <div class="row">
 
-                    <div class="col-lg mb-3 mb-lg-0">
-                        <h2 class="h1">Lorem ipsum dolor sit amet consectetur elit</h2>
-                    </div>
+                <div class="col-lg mb-3 mb-lg-0">
+                    <h2 class="h1"><?php the_sub_field('headline'); ?></h2>
+                </div>
 
-                    <div class="col-lg">
+                <div class="col-lg">
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptas quod magni saepe. Expedita ab vitae quo, dolore modi nesciunt deserunt voluptatibus? Quidem ducimus est non quisquam exercitationem.
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima id quibusdam molestiae, et nisi nostrum exercitationem consectetur perferendis earum.
-                        </p>
-
-                    </div>
-                    <!-- .col -->
+                    <?php the_sub_field('description'); ?>
 
                 </div>
-                <!-- .row -->
+                <!-- .col -->
 
             </div>
-            <!-- .container -->
-        
-        </section>
+            <!-- .row -->
+
+        </div>
+        <!-- .container -->
+    
+    </section>
+
+    <?php endwhile; endif; /* have_rows */ ?>
 
     <?php endwhile; endif; /* have_posts */ ?>
 
