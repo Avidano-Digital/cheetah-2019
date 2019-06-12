@@ -159,7 +159,7 @@
 
           <header class="text-center mb-3">
               <h3 class="display-4 mb-0">Upcoming Events</h3>
-              <a class="link text-body fs-md" href="<?php echo get_site_url(); ?>/events">All Events</a>
+              <a class="link text-body fs-md" href="<?php echo home_url(); ?>/events">All Events</a>
           </header>
           
           <div class="row matrix-gutter justify-content-center">
