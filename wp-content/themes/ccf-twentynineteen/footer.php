@@ -183,7 +183,7 @@
             <p class="fs-sm text-white">
                 <span class="d-block d-sm-inline-block">© 2019 Cheetah Conservation Fund</span>
                 <span class="d-none d-sm-inline-block mx-1">•</span>
-                <a class="text-reset" href="#">Privacy Policy</a>
+                <a class="text-reset" href="<?php echo home_url(); ?>/privacy-policy">Privacy Policy</a>
             </p>
         
         </div>
