@@ -43,9 +43,6 @@ get_header();
             
             <?php endif; ?>
 
-            </div>
-            <!-- .narrow -->
-
         </div>
         <!-- .my-5 -->
 

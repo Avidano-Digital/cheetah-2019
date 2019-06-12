@@ -69,7 +69,7 @@
 
         <header class="text-center mb-3">
             <h3 class="display-4 mb-0">Latest News</h3>
-            <a class="link text-body fs-md" href="<?php echo get_site_url(); ?>/news">All News</a>
+            <a class="link text-body fs-md" href="<?php echo home_url(); ?>/news">All News</a>
         </header>
 
         <div class="row matrix-gutter justify-content-center">

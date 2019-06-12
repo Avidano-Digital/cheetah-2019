@@ -429,7 +429,9 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ""
+                            "mime_types": "",
+                            "return_format": "array",
+                            "preview_size": "medium"
                         }
                     ],
                     "min": "",
@@ -553,7 +555,9 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ""
+                            "mime_types": "",
+                            "return_format": "array",
+                            "preview_size": "medium"
                         }
                     ],
                     "min": "",
@@ -852,6 +856,13 @@
                 "operator": "==",
                 "value": "page-subpage.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "protected-page.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -871,5 +882,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1558771129
+    "modified": 1560373023
 }

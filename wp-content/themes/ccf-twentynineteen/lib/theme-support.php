@@ -520,6 +520,7 @@
 
         $a = shortcode_atts( array(
           'category' => 'resident',
+          'non-payment' => null
         ), $atts );
 
         $args = array( 
@@ -603,7 +604,11 @@
                                         </div>
                                         <!-- .col -->
                                         <div class="col">
+                                            <?php if ($a['non-payment']) : ?> 
+                                            <a href="/sponsorship-form" class="btn btn-block btn-primary">Sponsor</a>
+                                            <?php else : ?>
                                             <a href="/donate/sponsor" class="btn btn-block btn-primary">Sponsor</a>
+                                            <?php endif; ?>
                                         </div>
                                         <!-- .col -->
                                         <div class="col-auto">
@@ -736,7 +741,7 @@
     function custom_password_form() {
         global $post;
         $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
-        $html = '<form class="protected-post-form" action="' . esc_url(home_url('wp-login.php?action=postpass', 'login_post')) . '" method="post"><label class="pass-label" for="' . $label . '"></label><input name="post_password" id="' . $label . '" type="password" style="background: #ffffff; border:1px solid #999; color:#333333; padding:10px;" size="20" /><input type="submit" name="Submit" class="button" value="' . esc_attr__( "Submit" ) . '" /></form><p style="font-size:14px;margin:0px;"></p>';
+        $html = '<form class="protected-post-form" action="' . esc_url(home_url('wp-login.php?action=postpass', 'login_post')) . '" method="post"><label class="pass-label" for="' . $label . '"></label><input class="form-control" name="post_password" id="' . $label . '" type="password" style="" size="20" /><br><input type="submit" name="Submit" class="btn btn-primary form-control" value="' . esc_attr__( "Submit" ) . '" /></form>';
         return $html;
     }
 
