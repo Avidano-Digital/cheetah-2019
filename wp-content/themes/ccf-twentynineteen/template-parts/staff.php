@@ -98,7 +98,7 @@ $bio = get_sub_field('bio');
 
         </div>
         <!-- .nav -->
-        
+
 	</div>
     <!-- .medium -->
 
