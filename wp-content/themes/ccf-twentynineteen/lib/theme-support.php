@@ -736,7 +736,7 @@
     function custom_password_form() {
         global $post;
         $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
-        $html = '<form class="protected-post-form" action="' . esc_url(site_url('wp-login.php?action=postpass', 'login_post')) . '" method="post"><label class="pass-label" for="' . $label . '"></label><input name="post_password" id="' . $label . '" type="password" style="background: #ffffff; border:1px solid #999; color:#333333; padding:10px;" size="20" /><input type="submit" name="Submit" class="button" value="' . esc_attr__( "Submit" ) . '" /></form><p style="font-size:14px;margin:0px;"></p>';
+        $html = '<form class="protected-post-form" action="' . esc_url(home_url('wp-login.php?action=postpass', 'login_post')) . '" method="post"><label class="pass-label" for="' . $label . '"></label><input name="post_password" id="' . $label . '" type="password" style="background: #ffffff; border:1px solid #999; color:#333333; padding:10px;" size="20" /><input type="submit" name="Submit" class="button" value="' . esc_attr__( "Submit" ) . '" /></form><p style="font-size:14px;margin:0px;"></p>';
         return $html;
     }
 

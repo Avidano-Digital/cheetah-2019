@@ -231,7 +231,7 @@ $parent_title = get_the_title($post->post_parent);
                                                 
                                                 </ul>
 
-                                                <a class="link text-secondary" href="<?php echo get_site_url() . '/resource-category/' . $category->slug; ?>" title="See All">
+                                                <a class="link text-secondary" href="<?php echo home_url() . '/resource-category/' . $category->slug; ?>" title="See All">
                                                     See All
                                                 </a>
 

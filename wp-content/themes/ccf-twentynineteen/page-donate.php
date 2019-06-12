@@ -83,11 +83,11 @@ endif;
 
                     <div class="medium my-4">
                         <div class="list-group list-group-horizontal-md text-center">
-                            <a class="list-group-item list-group-item-action flex-fill <?php echo($type == 'once' ? 'active' : ''); ?>" href="<?php echo get_site_url(); ?>/donate" title="Donate Once">
+                            <a class="list-group-item list-group-item-action flex-fill <?php echo($type == 'once' ? 'active' : ''); ?>" href="<?php echo home_url(); ?>/donate" title="Donate Once">
                                 Donate Once
                             </a>
-                            <a class="list-group-item list-group-item-action flex-fill <?php echo($type == 'recurring' ? 'active' : ''); ?>" href="<?php echo get_site_url(); ?>/donate/recurring" title="Donate Once">Recurring Gift</a>
-                            <a class="list-group-item list-group-item-action flex-fill <?php echo($type == 'sponsor' ? 'active' : ''); ?>" href="<?php echo get_site_url(); ?>/donate/sponsor" title="Sponsor">Sponsor</a>
+                            <a class="list-group-item list-group-item-action flex-fill <?php echo($type == 'recurring' ? 'active' : ''); ?>" href="<?php echo home_url(); ?>/donate/recurring" title="Donate Once">Recurring Gift</a>
+                            <a class="list-group-item list-group-item-action flex-fill <?php echo($type == 'sponsor' ? 'active' : ''); ?>" href="<?php echo home_url(); ?>/donate/sponsor" title="Sponsor">Sponsor</a>
                         </div>
                     </div>
                     <!-- .narrow -->

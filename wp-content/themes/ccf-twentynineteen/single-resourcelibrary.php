@@ -15,11 +15,11 @@ $resourceCategory = $resourceCategories[0];
 
             <ul class="extensible-list horizontal fs-md text-white text-shadow">
                 <li>
-                    <a class="text-white" href="<?php echo get_site_url() . '/learn/resource-library'; ?>">Resource Library</a>
+                    <a class="text-white" href="<?php echo home_url() . '/learn/resource-library'; ?>">Resource Library</a>
                 </li>
                 <li><span class="fa fa-caret-right" role="img"></span></li>
                 <li>
-                    <a class="text-primary font-weight-bold" href="<?php echo get_site_url() . '/resource-category/' . $resourceCategory->slug; ?>"><?php echo $resourceCategory->name; ?></a>
+                    <a class="text-primary font-weight-bold" href="<?php echo home_url() . '/resource-category/' . $resourceCategory->slug; ?>"><?php echo $resourceCategory->name; ?></a>
                 </li>
             </ul>
 
