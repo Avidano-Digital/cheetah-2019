@@ -82,19 +82,11 @@ if ($image): ?>
 
                 <div class="my-5">
 
-                    <?php
+                    <?php 
 
-                    global $post;
-                
-                    $term_name = get_queried_object()->name;
-                    $args = array( 'category_name' => $term_name);
-                    
-                    $postslist = get_posts($args);
-                    
-                    foreach ($postslist as $post) :
-                    setup_postdata($post);
-                    
-                    ?>
+                    if ( have_posts() ) :
+
+                    while ( have_posts() ) : the_post(); ?>
 
                     <div class="row align-items-center my-3">
 
@@ -128,7 +120,13 @@ if ($image): ?>
                     </div>
                     <!-- .row -->
 
-                    <?php endforeach; wp_reset_postdata(); ?>
+                    <?php endwhile; endif; /* have_posts */?>
+
+                    <div class="pagination justify-content-center">
+
+                        <?php echo custom_pagination(); ?>
+                        
+                    </div>
 
                 </div>
                 <!-- .medium -->
