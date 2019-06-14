@@ -161,7 +161,9 @@ $parent_title = get_the_title($post->post_parent);
                                 <h2 class="f-cheetah-tracks display-3 mb-1 text-tertiary">Become a CCF Kid!</h2>
 
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque libero quaerat porro cupiditate sequi ea amet iure nisi illo nostrum.
+                                    Get help from the grown ups to share your cheetah stories from school projects to
+                                    fundraisers by sending us an email. Your submissions may be published to our site,
+                                    where you can spend time with the cheetahs!
                                 </p>
 
                                 <a href="#" class="btn btn-lg btn-block btn-primary">
