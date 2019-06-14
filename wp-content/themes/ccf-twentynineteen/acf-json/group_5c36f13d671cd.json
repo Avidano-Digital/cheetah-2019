@@ -589,6 +589,30 @@
                             "button_label": "",
                             "sub_fields": [
                                 {
+                                    "key": "field_5cdd38e759ade",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
                                     "key": "field_5c386af0d0a33",
                                     "label": "Background Color",
                                     "name": "background_color",
@@ -614,30 +638,6 @@
                                     "return_format": "value",
                                     "ajax": 0,
                                     "placeholder": ""
-                                },
-                                {
-                                    "key": "field_5cdd38e759ade",
-                                    "label": "Image",
-                                    "name": "image",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
                                 },
                                 {
                                     "key": "field_5c386b4fd0a34",
@@ -863,6 +863,13 @@
                 "operator": "==",
                 "value": "protected-page.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-legal.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -882,5 +889,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1560373023
+    "modified": 1560428525
 }
