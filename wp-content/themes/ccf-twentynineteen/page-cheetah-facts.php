@@ -71,7 +71,7 @@ $parent_title = get_the_title($post->post_parent);
                     <div class="row matrix-gutter">
                         <div class="col-md-6">
                             <p>
-                                Unlike other “big cats”, a classification that includes: lions, tigers, leopards, jaguars and cougars)
+                                Unlike other “big cats”, a classification that includes: lions, tigers, leopards, and jaguars)
                                 cheetahs don’t roar. They growl when facing danger, and they vocalize with sounds more equivalent to a
                                 high-pitched chirp or bubble.
                             </p>
