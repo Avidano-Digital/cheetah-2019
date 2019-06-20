@@ -44,8 +44,21 @@ if ($image): ?>
             <div class="col-lg-9 overflow-hidden" id="primary-content">
 
                 <div class="my-5">
+
+                  <?php
+                    $args = array(
+                        'post_type' => 'events',
+                        'order' => 'ASC',
+                        'meta_key' => 'start_date',
+                        'meta_type' => 'DATETIME',
+                        'orderby' => 'meta_value',
+                    );
+
+                    $the_query = new WP_Query( $args );
+
+                  ?>
                     
-                        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                        <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
                             <?php
 
@@ -101,6 +114,12 @@ if ($image): ?>
                             <!-- .row -->
 
                         <?php endwhile; endif; wp_reset_postdata(); ?>
+
+                        <div class="pagination justify-content-center">
+
+                            <?php echo custom_pagination(); ?>
+                            
+                        </div>
 
                 </div>
                 <!-- .medium -->
